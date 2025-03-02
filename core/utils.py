@@ -55,7 +55,8 @@ class PrintUtils(object):
     GREEN = colorama.Fore.GREEN + colorama.Style.BRIGHT
     RED = colorama.Fore.RED + colorama.Style.BRIGHT
     GREY = colorama.Fore.WHITE+ colorama.Style.NORMAL
-    YELLOW = colorama.Fore.YELLOW + colorama.Style.BRIGHT
+    YELLOW = colorama.Fore.YELLOW + colorama.Style.NORMAL
+    DARKGREY = colorama.Fore.LIGHTBLACK_EX + colorama.Style.BRIGHT
     RESET_COLORS = colorama.Style.RESET_ALL
 
     # Pretty printing
@@ -102,7 +103,7 @@ class PrintUtils(object):
         title += ' ...'
         title += (cls.PP_LEN - 1 - len(title)) * '.'
         title += ' '
-        print(f'{cls.WHITE}{title}{cls.RESET_COLORS}', end='')
+        print(f'{cls.GREY}{title}{cls.RESET_COLORS}', end='')
 
         # Flush
         sys.stdout.flush()
@@ -117,7 +118,7 @@ class PrintUtils(object):
         """
 
         # Print status
-        status = f'{cls.WHITE}[  {cls.GREEN}OK{cls.WHITE}  ]{cls.RESET_COLORS}' if fail_message is None else f'{cls.WHITE}[ {cls.RED}FAIL{cls.WHITE} ]{cls.RESET_COLORS}'
+        status = f'{cls.GREY}[  {cls.GREEN}OK{cls.GREY}  ]{cls.RESET_COLORS}' if fail_message is None else f'{cls.GREY}[ {cls.RED}FAIL{cls.GREY} ]{cls.RESET_COLORS}'
         print(status)
 
         # Indicate we are not in a stage
@@ -137,7 +138,7 @@ class PrintUtils(object):
         """
 
         # Prints the error message
-        print(f'{cls.RED}ERROR{cls.WHITE}: {message}{cls.RESET_COLORS}')
+        print(f'{cls.RED}ERROR{cls.GREY}: {message}{cls.RESET_COLORS}')
 
     @classmethod
     def print_extra(cls, message):
@@ -159,12 +160,10 @@ class PrintUtils(object):
         # Validate we are not in a stage
         assert not cls._in_stage, Exception('Cannot dump extra while in a stage')
         
-        # Print messages and replace strings and numbers with pretty colors
+        # Print messages and replace special strings with pretty colors
         for message in cls._extra:
-            msg = re.sub(r'\d+', lambda m:f'{cls.YELLOW}{m.group(0)}{cls.GREY}', message)
-            msg = re.sub(r'\".+?\"', lambda m:f'{cls.YELLOW}{m.group(0)}{cls.GREY}', msg)
-            msg = re.sub(r'\*.+?\*', lambda m:f'{cls.YELLOW}{m.group(0)}{cls.GREY}', msg)
-            print(f'{cls.GREY}{msg}{cls.RESET_COLORS}')
+            msg = re.sub(r'\*.+?\*', lambda m:f'{cls.YELLOW}{m.group(0)[1:-1]}{cls.DARKGREY}', msg)
+            print(f'{cls.DARKGREY}{msg}{cls.RESET_COLORS}')
         
         # Reset extra
         cls._extra = []
