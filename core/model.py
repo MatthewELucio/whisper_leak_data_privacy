@@ -1,5 +1,6 @@
 from core.utils import OsUtils
 from core.utils import PrintUtils
+from core.utils import NetworkUtils
 
 import hashlib
 import os
@@ -14,16 +15,29 @@ class Datapoint(object):
             Creates an instance.
         """
 
-        # Save paths
+        # Save members
         self.pcap_path = pcap_path
         self.seq_path = seq_path
+
+        # Cleanup (best-effort) if data does not exist in case of leftovers
+        if not self.exists():
+            assert OsUtils.del_file(pcap_path), Exception(f'Failed deleting existing file *{pcap_path}*')
+            assert OsUtils.del_file(seq_path), Exception(f'Failed deleting existing file *{seq_path}*')
+
+    def exists(self):
+        """
+            Indicates if the datapoint actually exists.
+        """
+
+        # Indicate
+        return os.path.isfile(self.pcap_path) and os.path.isfile(self.seq_path)
 
 class TrainingSetCollector(object):
     """
         The training set collector.
     """
 
-    def __init__(self, prompts, repeat_count, out_directory_base):
+    def __init__(self, prompts, repeat_count, out_directory_base, remote_tls_port):
         """
             Creates an instance.
         """
@@ -31,6 +45,7 @@ class TrainingSetCollector(object):
         # Save members
         self._prompts = prompts
         self._repeat_count = repeat_count
+        self._remote_tls_port = remote_tls_port
 
         # Create a hash of the prompts
         prompts_hash = hashlib.sha1() 
@@ -44,7 +59,7 @@ class TrainingSetCollector(object):
 
     def get_datapoint(self, prompt, index):
         """
-            Gets a datapoint for the given prompt and index. Returns None if datapoint doesn't exist.
+            Gets a datapoint for the given prompt and index.
         """
 
         # Get the file paths
@@ -52,27 +67,22 @@ class TrainingSetCollector(object):
         pcap_path = f'{base_path}.pcap'
         seq_path = f'{base_path}.seq'
 
-        # If both files exist - return an appropriate object
-        if os.path.isfile(pcap_path) and os.path.isfile(seq_path):
-            return Datapoint(pcap_path, seq_path)
-
-        # Attempt to delete leftovers (e.g. if a reboot happened unexpectedly)
-        assert OsUtils.del_file(pcap_path), Exception(f'Failed deleting existing file *{pcap_path}*')
-        assert OsUtils.del_file(seq_path), Exception(f'Failed deleting existing file *{seq_path}*')
-
-        # Indicate no datapoint exists
-        return None
+        # Return the datapoint
+        return Datapoint(pcap_path, seq_path)
     
-    def get_training_set(self):
+    def get_training_set(self, chatbot):
         """
-            Gets or generates the training set.
+            Gets or generates the training set for the given chatbot.
         """
 
         # Start as a stage
         PrintUtils.start_stage('Generating training set')
+
+        # Saves state
         skip_count = 0
         curr_count = 0
         training_set = {}
+        last_local_ports = set()
 
         # Iterate each prompt and either fetch existing data or truly generate data for it
         for prompt in self._prompts:
@@ -89,10 +99,18 @@ class TrainingSetCollector(object):
 
                 # Fetch the datapoint for the prompt
                 datapoint = self.get_datapoint(prompt, index)
-                if datapoint is not None:
+                if datapoint.exists():
                     skip_count += 1
                     training_set[prompt].append(datapoint)
                     continue
+
+                # Perform sniffing to collect data
+                NetworkUtils.start_sniffing_tls(self._remote_tls_port)
+                chatbot.send_prompt(prompt)
+                new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
+                capture = NetworkUtils.stop_sniffing_tls()
+                new_local_ports = new_local_ports - last_local_ports
+                import pdb; pdb.set_trace()
 
         # Finish stage
         PrintUtils.start_stage('Generating training set', override_prev=True)

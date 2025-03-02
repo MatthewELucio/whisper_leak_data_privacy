@@ -27,4 +27,4 @@ class Gemini(ChatbotBase):
         # Send prompt with a clean histoy
         chat = self._model.start_chat(history=[])
         response = chat.send_message(prompt)
-
+ 

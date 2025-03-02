@@ -103,8 +103,8 @@ def main():
         PrintUtils.end_stage()
 
         # Get the training set
-        collector = TrainingSetCollector(prompts, args.repetition, os.path.join(get_self_dir(), 'training_set'))
-        training_set = collector.get_training_set()
+        collector = TrainingSetCollector(prompts, args.repetition, os.path.join(get_self_dir(), 'training_set'), args.tlsport)
+        training_set = collector.get_training_set(chatbot_obj)
 
     # Handle exceptions
     except Exception as ex:
