@@ -162,7 +162,7 @@ class PrintUtils(object):
         
         # Print messages and replace special strings with pretty colors
         for message in cls._extra:
-            msg = re.sub(r'\*.+?\*', lambda m:f'{cls.YELLOW}{m.group(0)[1:-1]}{cls.DARKGREY}', msg)
+            msg = re.sub(r'\*.+?\*', lambda m:f'{cls.YELLOW}{m.group(0)[1:-1]}{cls.DARKGREY}', message)
             print(f'{cls.DARKGREY}{msg}{cls.RESET_COLORS}')
         
         # Reset extra
