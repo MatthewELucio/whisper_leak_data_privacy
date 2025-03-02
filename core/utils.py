@@ -29,6 +29,38 @@ class OsUtils(object):
     """
 
     @staticmethod
+    def del_file(path):
+        """
+            Tries to delete a file (best-effort).
+            Indicates whether the file doesn't exist afterwards.
+        """
+
+        # Best-effort deletion
+        try:
+            os.unlink(path)
+        except Exception:
+            pass
+
+        # Indicate result
+        return not os.path.isfile(path)
+
+    @staticmethod
+    def mkdir(path):
+        """
+            Try to make a directory (best-effort).
+            Indicates whether the directory exists afterwards.
+        """
+
+        # Best-effort creation
+        try:
+            os.mkdir(path)
+        except Exception:
+            pass
+
+        # Indicate result
+        return os.path.isdir(path)
+
+    @staticmethod
     def is_high_privileges():
         """
             Indicates if we run in high privileges.
@@ -96,7 +128,7 @@ class PrintUtils(object):
 
         # Potentially override
         if override_prev:
-            print('\r' + (' ' * cls.PP_LEN) + '\r')
+            print('\r' + (' ' * cls.PP_LEN) + '\r', end='')
 
         # Print title
         title = message[:cls.PP_LEN - 5]

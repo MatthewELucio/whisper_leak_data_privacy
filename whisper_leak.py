@@ -3,8 +3,17 @@ from core.utils import PrintUtils
 from core.utils import OsUtils
 from core.utils import ThrowingArgparse
 from core.chatbot_base import ChatbotLoaderUtils
+from core.model import TrainingSetCollector
 
 import os
+
+def get_self_dir():
+    """
+        Get the self directory.
+    """
+
+    # Return the self directory
+    return os.path.dirname(os.path.abspath(__file__))
 
 def parse_arguments():
     """
@@ -16,9 +25,8 @@ def parse_arguments():
     parser = ThrowingArgparse()
     parser.add_argument('-c', '--chatbot', help='The chatbot', required=True)
     parser.add_argument('-a', '--apikey', help='The API key for the chatbot', required=True)
-    parser.add_argument('-q', '--queries', help='The queries (prompts) file path', required=True)
-    parser.add_argument('-o', '--output', help='The output directory path', required=True)
-    parser.add_argument('-r', '--repetition',type=int,  help='The repetition count per query', default=5)
+    parser.add_argument('-p', '--prompts', help='The prompts file path', required=True)
+    parser.add_argument('-r', '--repetition',type=int,  help='The repetition count per prompt', default=5)
     parser.add_argument('-t', '--tlsport', type=int, help='The remote TLS port', default=443)
     args = parser.parse_args()
     assert args.repetition > 0, Exception(f'Invalid repetition count: {args.repetition}')
@@ -35,7 +43,7 @@ def get_chatbot_object(chatbot_name, api_key, tls_port):
 
     # Load all chatbots
     PrintUtils.start_stage('Loading chatbots')
-    chatbots = ChatbotLoaderUtils.load_chatbots(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'chatbots'))
+    chatbots = ChatbotLoaderUtils.load_chatbots(os.path.join(get_self_dir(), 'chatbots'))
     assert len(chatbots) > 0, Exception('Could not load any chatbots')
     chatbot_names = ', '.join([ f'*{name}*' for name in chatbots.keys() ])
     PrintUtils.print_extra(f'Loaded chatbots: {chatbot_names}')
@@ -85,14 +93,18 @@ def main():
         # Get the chatbot object
         chatbot_obj = get_chatbot_object(args.chatbot, args.apikey, args.tlsport)
 
-        # Read queries
-        PrintUtils.start_stage('Reading queries (prompts)')
-        with open(args.queries, 'r') as fp:
-            queries = [ line.strip() for line in fp.read().split('\n') if len(line.strip()) > 0 ]
-        assert len(queries) > 0, Exception('Could not load any queries')
-        PrintUtils.print_extra(f'Loaded *{len(queries)}* queries')
-        PrintUtils.print_extra(f'Requiring a total of *{len(queries) * args.repetition}* data points')
+        # Read prompts 
+        PrintUtils.start_stage('Reading prompts')
+        with open(args.prompts, 'r') as fp:
+            prompts = [ line.strip() for line in fp.read().split('\n') if len(line.strip()) > 0 ]
+        assert len(prompts) > 0, Exception('Could not load any prompts')
+        PrintUtils.print_extra(f'Loaded *{len(prompts)}* prompts')
+        PrintUtils.print_extra(f'Requiring a total of *{len(prompts) * args.repetition}* datapoints')
         PrintUtils.end_stage()
+
+        # Get the training set
+        collector = TrainingSetCollector(prompts, args.repetition, os.path.join(get_self_dir(), 'training_set'))
+        training_set = collector.get_training_set()
 
     # Handle exceptions
     except Exception as ex:
