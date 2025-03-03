@@ -37,9 +37,9 @@ def parse_arguments():
     # Return the parsed arguments
     return args
 
-def get_chatbot_object(chatbot_name, api_key, tls_port):
+def get_chatbot_class(chatbot_name):
     """
-        Get the chatbot object from the given chatbot name.
+        Get the chatbot class from the given chatbot name.
     """
 
     # Load all chatbots
@@ -50,16 +50,15 @@ def get_chatbot_object(chatbot_name, api_key, tls_port):
     PrintUtils.print_extra(f'Loaded chatbots: {chatbot_names}')
     PrintUtils.end_stage()
 
-    # Validating chatbot class exists and initialize it
+    # Validating chatbot class exists
     PrintUtils.start_stage('Initializing chatbot class')
     chatbot_class = chatbots.get(chatbot_name, None)
     assert chatbot_class is not None, Exception(f'Chatbot "{chatbot_name}" does not exist')
-    chatbot_obj = chatbot_class(api_key, tls_port)
     PrintUtils.print_extra(f'Using chatbot *{chatbot_name}*')
     PrintUtils.end_stage()
 
-    # Return the object
-    return chatbot_obj
+    # Return the class
+    return chatbot_class
 
 def main():
     """
@@ -92,7 +91,7 @@ def main():
         PrintUtils.end_stage()
 
         # Get the chatbot object
-        chatbot_obj = get_chatbot_object(args.chatbot, api_key, args.tlsport)
+        chatbot_class = get_chatbot_class(args.chatbot)
 
         # Read prompts 
         PrintUtils.start_stage('Reading prompts')
@@ -105,7 +104,7 @@ def main():
 
         # Get the training set
         collector = TrainingSetCollector(prompts, args.repetition, os.path.join(get_self_dir(), 'training_set'), args.tlsport)
-        training_set = collector.get_training_set(chatbot_obj)
+        training_set = collector.get_training_set(chatbot_class, api_key)
 
     # Handle exceptions
     except Exception as ex:

@@ -21,6 +21,8 @@ class Datapoint(object):
         self.pcap_path = pcap_path
         self.seq_path = seq_path
         self.seq = None
+        self.local_port = 0
+        self.remote_port = 0
 
         # Cleanup (best-effort) if data does not exist in case of leftovers
         if not self.exists():
@@ -50,9 +52,14 @@ class Datapoint(object):
         # Deserialize the sequence data
         self.seq = []
         with open(self.seq_path, 'rb') as fp:
+
+            # Read the local and remote ports
+            self.local_port, self.remote_port = struct.unpack('<HH', fp.read(struct.calcsize('<HH')))
+
+            # Read the sequence itself
             while True:
                 chunk = fp.read(struct.calcsize('<dL'))
-                if len(chunk != struct.calcsize('<dL')):
+                if len(chunk) == 0:
                     break
                 self.seq.append(struct.unpack('<dL', chunk))
 
@@ -107,6 +114,7 @@ class Datapoint(object):
 
             # Commit data to sequence file
             with open(self.seq_path, 'wb') as fp:
+                serialized_seq += struct.pack('<HH', local_port, remote_port)
                 fp.write(serialized_seq)
 
         # Cleanup
@@ -154,9 +162,9 @@ class TrainingSetCollector(object):
         # Return the datapoint
         return Datapoint(pcap_path, seq_path)
     
-    def get_training_set(self, chatbot):
+    def get_training_set(self, chatbot_class, api_key):
         """
-            Gets or generates the training set for the given chatbot.
+            Gets or generates the training set for the given chatbot class.
         """
 
         # Start as a stage
@@ -188,9 +196,14 @@ class TrainingSetCollector(object):
                     training_set[prompt].append(datapoint)
                     continue
 
-                # Perform sniffing to collect data
+                # Start sniffing to collect data
                 NetworkUtils.start_sniffing_tls(datapoint.pcap_path, self._remote_tls_port)
-                chatbot.send_prompt(prompt)
+
+                # Create a chatbot object to make sure we get fresh connections
+                chatbot_obj = chatbot_class(api_key, self._remote_tls_port)
+                chatbot_obj.send_prompt(prompt)
+
+                # Discover new ports and stop sniffing
                 new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
                 NetworkUtils.stop_sniffing_tls()
                 new_local_ports = [ port for port in new_local_ports if last_local_port != port ]
