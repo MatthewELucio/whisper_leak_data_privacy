@@ -1,1 +1,70 @@
-# whisper_leak
+# About
+Whisper Leak is a proof-of-concept attack for side-channel attack on Large Language Model chatbots.  
+The idea is that communications between a user and the chatbot is TLS-encrypted, but:
+
+1. Chatbots generate tokens one-at-a-time since it's computationally expensive, and humans do not like to wait. Therefore, even if the data is encrypted, the data is sent in chunks with certain times between each chunk.
+2. The TLS channel often uses stream ciphers such as [AES-GCM](https://en.wikipedia.org/wiki/Galois/Counter_Mode) or [ChaCha20](https://en.wikipedia.org/wiki/ChaCha20-Poly1305), which means data sizes might be linear to the token reported.
+
+Therefore, there are inherent side-channel attack ideas assuming an adversary can train a large model and sniff packets between the client and the chatbot.  
+
+## How to use
+The following commandline illustrate how to use Whisper Leak:
+
+```
+./whisper_leak.py -c gemini -a ./api_key.txt -p ./prompts.txt -r 10
+```
+
+The flags are:
+- `-c` - the chatbot name.
+- `-a` - the API key filename.
+- `-p` - the prompts (line-seperated).
+- `-r` - an optional repeat count per prompt.
+
+When used, a directory called `training_set` is created and will contain the training set (see more on training below).
+
+## Software architecture
+Whisper Leak was built to be easily extensible for different chatbots and models.  
+In a nutshell, the flow of the program is as follows:
+1. Given a chatbot (with a suitable API key) and prompts, generate labeled data by experimenting with the chatbot. Note training data persists to save the costly retraining.
+2. Extract a *sequence* from training data. The sequence is a list of `TLS ApplicationData` packet sizes, split by the time between packets in milliseconds.
+3. Build a model from the sequence.
+
+### Chatbot interfaces
+All chatbot interfaces exist as Python files under the `chatbots` directory.  
+They all must inherit from `ChatbotBase` base class, and implement methods to send prompts *asynchronously* be finishes.  
+The following code illustrate how to implement such an interface:
+
+```python
+from core.chatbot_base import ChatbotBase
+
+class CustomChatbot(ChatbotBase):
+    """
+        Custom chatbot.
+    """
+
+    def __init__(self, api_key, remote_tls_port=443):
+        """
+            Creates an instance.
+        """
+
+        # Call superclass
+        super().__init__(api_key, remote_tls_port)
+
+        # TODO - more initialization code that might use the API key etc.
+        pass
+
+    def send_prompt(self, prompt):
+        """
+            Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
+        """
+
+        # TODO - send prompt and get responses asynchronously while waiting for them
+        pass 
+```
+
+### Training
+The training is done by matching prompts with sniffed TLS data.  
+Since we do not want to retrain the data everytime we run Whisper Leak, a directory called `training_set` is created.  
+In it, a directory with a rolling hash of the prompts is saved. This assures changes to the prompts create new training sets, but data could be reused assuming prompts do not change.  
+When collecting data, a `pcap` file is saved for each prompt and each repetition, alongside a `sequence` file.  
+The `pcap` file contains the raw sniffing of data, while the `sequence` file is the serialization of the aforementioned `ApplicationData` byte sizes and times between those chunks of data.
