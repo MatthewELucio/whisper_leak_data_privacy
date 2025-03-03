@@ -5,6 +5,7 @@ from core.utils import NetworkUtils
 import hashlib
 import os
 import pyshark
+import struct
 
 class Datapoint(object):
     """
@@ -97,7 +98,7 @@ class Datapoint(object):
                 if hasattr(packet.tls, 'app_data'):
                     timestamp = float(packet.sniff_time.timestamp())
                     data_length = int(packet.length)
-                    self.seq.append(timestamp - prev_sniff_time, data_length)
+                    self.seq.append((timestamp - prev_sniff_time, data_length))
                     serialized_seq += struct.pack('<dL', timestamp - prev_sniff_time, data_length)
                     prev_sniff_time = timestamp
 
