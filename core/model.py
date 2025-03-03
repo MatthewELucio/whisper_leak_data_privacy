@@ -4,6 +4,7 @@ from core.utils import NetworkUtils
 
 import hashlib
 import os
+import pyshark
 
 class Datapoint(object):
     """
@@ -18,11 +19,16 @@ class Datapoint(object):
         # Save members
         self.pcap_path = pcap_path
         self.seq_path = seq_path
+        self.seq = None
 
         # Cleanup (best-effort) if data does not exist in case of leftovers
         if not self.exists():
-            assert OsUtils.del_file(pcap_path), Exception(f'Failed deleting existing file *{pcap_path}*')
-            assert OsUtils.del_file(seq_path), Exception(f'Failed deleting existing file *{seq_path}*')
+            assert OsUtils.del_file(pcap_path), Exception(f'Failed deleting existing file: {pcap_path}')
+            assert OsUtils.del_file(seq_path), Exception(f'Failed deleting existing file: {seq_path}')
+
+        # Load sequence preemptively
+        else:
+            self.load_seq()
 
     def exists(self):
         """
@@ -31,6 +37,83 @@ class Datapoint(object):
 
         # Indicate
         return os.path.isfile(self.pcap_path) and os.path.isfile(self.seq_path)
+
+    def load_seq(self):
+        """
+            Load the sequence from the sequence file.
+        """
+
+        # Validate datapoint exists
+        assert self.exists(), Exception('Datapoint does not exist')
+
+        # Deserialize the sequence data
+        self.seq = []
+        with open(self.seq_path, 'rb') as fp:
+            while True:
+                chunk = fp.read(struct.calcsize('<dL'))
+                if len(chunk != struct.calcsize('<dL')):
+                    break
+                self.seq.append(struct.unpack('<dL', chunk))
+
+        # Validate we have data
+        assert len(self.seq) > 0, Exception(f'Empty data for sequence file: {self.seq_path}')
+
+    def generate_seq(self, local_port, remote_port):
+        """
+            Runs the analysis on the PCAP path and writes the sequence file.
+            Note this also automatically populates the sequence data in the datapoint.
+        """
+
+        # Validate PCAP file exists
+        assert os.path.isfile(self.pcap_path), Exception(f'PCAP file does not exist: {self.pcap_path}')
+
+        # Capture file will require cleanups
+        cap = None
+        try:
+
+            # Run the analysis
+            cap = pyshark.FileCapture(self.pcap_path, display_filter=f'tcp.port == {local_port} && tcp.port == {remote_port}')
+            serialized_seq = b''
+            self.seq = []
+            client_hello_found = False
+            prev_sniff_time = None
+
+            # Iterate all packets
+            for packet in cap:
+                
+                # Only handle TLS
+                if not hasattr(packet, 'tls'):
+                    continue
+
+                # Check for ClientHello packets
+                if hasattr(packet.tls, 'handshake_type') and packet.tls.handshake_type == '1':
+                    client_hello_found = True
+                    prev_sniff_time = float(packet.sniff_time.timestamp())
+                    continue
+                
+                # Check for ApplicationData only if we have seen ClientHello
+                if not client_hello_found:
+                    continue
+                if hasattr(packet.tls, 'app_data'):
+                    timestamp = float(packet.sniff_time.timestamp())
+                    data_length = int(packet.length)
+                    self.seq.append(timestamp - prev_sniff_time, data_length)
+                    serialized_seq += struct.pack('<dL', timestamp - prev_sniff_time, data_length)
+                    prev_sniff_time = timestamp
+
+            # Validate some data was acquired
+            assert len(self.seq) > 0, Exception(f'PCAP file has no data: {self.pcap_path}')
+
+            # Commit data to sequence file
+            with open(self.seq_path, 'wb') as fp:
+                fp.write(serialized_seq)
+
+        # Cleanup
+        finally:
+
+            # Close capture
+            if cap is not None:
+                cap.close()
 
 class TrainingSetCollector(object):
     """
@@ -105,17 +188,22 @@ class TrainingSetCollector(object):
                     continue
 
                 # Perform sniffing to collect data
-                NetworkUtils.start_sniffing_tls(self._remote_tls_port)
+                NetworkUtils.start_sniffing_tls(datapoint.pcap_path, self._remote_tls_port)
                 chatbot.send_prompt(prompt)
                 new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
-                capture = NetworkUtils.stop_sniffing_tls()
+                NetworkUtils.stop_sniffing_tls()
                 new_local_ports = [ port for port in new_local_ports if last_local_port != port ]
                 assert len(new_local_ports) > 0, Exception('No new local TLS ports detected')
                 assert len(new_local_ports) == 1, Exception('Ambiguity in local TLS ports')
                 last_local_port = new_local_ports[0]
 
+                # Perform the analysis
+                datapoint.generate_seq(last_local_port, self._remote_tls_port)
+
         # Finish stage
         PrintUtils.start_stage('Generating training set', override_prev=True)
+        if skip_count > 0:
+            PrintUtils.print_extra(f'Datapoints pre-existed: *{skip_count}*')
         PrintUtils.end_stage()
 
 

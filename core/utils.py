@@ -1,5 +1,4 @@
 import os
-import pyshark
 import colorama
 import sys
 import ctypes
@@ -8,6 +7,8 @@ import base64
 import argparse
 import time
 import psutil
+import subprocess
+import signal
 
 # Initialize colorama
 colorama.init()
@@ -207,9 +208,8 @@ class NetworkUtils(object):
         Network utilities.
     """
 
-    # Sniffng handle and pending result
+    # Sniffng handle
     _sniffer = None
-    _sniffer_result = None
 
     @staticmethod
     def get_self_local_ports(remote_port):
@@ -221,17 +221,16 @@ class NetworkUtils(object):
         return set([ conn.laddr.port for conn in psutil.net_connections(kind='inet') if hasattr(conn.laddr, 'port') and getattr(conn.raddr, 'port', None) == remote_port and conn.status == 'ESTABLISHED' and conn.pid == os.getpid() ])
 
     @classmethod
-    def start_sniffing_tls(cls, remote_port=443):
+    def start_sniffing_tls(cls, pcap_file_path, remote_port=443):
         """
             Starts sniffing TLS.
         """
 
         # Validate sniffing is not being done
-        assert (cls._sniffer is None) and (cls._sniffer_result is None), Exception('Active sniffing already performed')
+        assert cls._sniffer is None, Exception('Active sniffing already performed')
 
         # Starts a live capture
-        cls._sniffer = pyshark.LiveCapture(bpf_filter=f'tcp port {remote_port}', display_filter='tls')
-        cls._sniffer_result = cls._sniffer.sniff_continuously()
+        cls._sniffer = subprocess.Popen([ 'tcpdump', '-w', pcap_file_path, f'tcp port {remote_port}'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
         # Sleep for a while
         time.sleep(2)
@@ -239,24 +238,19 @@ class NetworkUtils(object):
     @classmethod
     def stop_sniffing_tls(cls, best_effort=False):
         """
-            Stops sniffing TLS and returns the sniffing result back.
-            Supply best_effort to try a best-effort stop, which will return None is no active sniffing is being done.
+            Stops sniffing TLS. Supply best_effort to try a best-effort stop, which will just return if no active sniffing is being done.
         """
 
         # Validate sniffing is being done
-        if cls._sniffer is None or cls._sniffer_result is None:
+        if cls._sniffer is None:
             assert best_effort, Exception('Active sniffing has not started')
-            return None
+            return
 
         # Sleep for a while
         time.sleep(2)
 
         # Stops the live capture
-        cls._sniffer.close()
-        
-        # Nullify and return result
-        result = cls._sniffer_result
+        cls._sniffer.send_signal(signal.SIGINT)
+        cls._sniffer.wait()
         cls._sniffer = None
-        cls._sniffer_result = None
-        return result
 
