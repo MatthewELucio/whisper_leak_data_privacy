@@ -114,7 +114,7 @@ class Datapoint(object):
 
             # Commit data to sequence file
             with open(self.seq_path, 'wb') as fp:
-                serialized_seq += struct.pack('<HH', local_port, remote_port)
+                serialized_seq = struct.pack('<HH', local_port, remote_port) + serialized_seq
                 fp.write(serialized_seq)
 
         # Cleanup
@@ -211,12 +211,14 @@ class TrainingSetCollector(object):
                 if len(new_local_ports) == 1:
                     last_local_port = new_local_ports[0]
 
-                # Perform the analysis
+                # Perform the analysis and set the data
                 datapoint.generate_seq(last_local_port, self._remote_tls_port)
+                training_set[prompt].append(datapoint)
 
-        # Finish stage
+        # Finish stage and return the training set
         PrintUtils.start_stage('Generating training set', override_prev=True)
         if skip_count > 0:
             PrintUtils.print_extra(f'Datapoints pre-existed: *{skip_count}*')
         PrintUtils.end_stage()
+        return training_set
 
