@@ -73,7 +73,7 @@ class Datapoint(object):
         try:
 
             # Run the analysis
-            cap = pyshark.FileCapture(self.pcap_path, display_filter=f'tcp.port == {local_port} && tcp.port == {remote_port}')
+            cap = pyshark.FileCapture(self.pcap_path, display_filter=f'tcp.port == {local_port} || tcp.port == {remote_port}')
             serialized_seq = b''
             self.seq = []
             client_hello_found = False
@@ -87,7 +87,7 @@ class Datapoint(object):
                     continue
 
                 # Check for ClientHello packets
-                if hasattr(packet.tls, 'handshake_type') and packet.tls.handshake_type == '1':
+                if hasattr(packet.tls, 'handshake_type') and packet.tls.handshake_type == '1' and int(packet.tcp.dstport) == remote_port and int(packet.tcp.srcport) == local_port:
                     client_hello_found = True
                     prev_sniff_time = float(packet.sniff_time.timestamp())
                     continue
@@ -95,7 +95,7 @@ class Datapoint(object):
                 # Check for ApplicationData only if we have seen ClientHello
                 if not client_hello_found:
                     continue
-                if hasattr(packet.tls, 'app_data'):
+                if hasattr(packet.tls, 'app_data') and int(packet.tcp.dstport) == local_port and int(packet.tcp.srcport) == remote_port:
                     timestamp = float(packet.sniff_time.timestamp())
                     data_length = int(packet.length)
                     self.seq.append((timestamp - prev_sniff_time, data_length))
@@ -194,9 +194,9 @@ class TrainingSetCollector(object):
                 new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
                 NetworkUtils.stop_sniffing_tls()
                 new_local_ports = [ port for port in new_local_ports if last_local_port != port ]
-                assert len(new_local_ports) > 0, Exception('No new local TLS ports detected')
-                assert len(new_local_ports) == 1, Exception('Ambiguity in local TLS ports')
-                last_local_port = new_local_ports[0]
+                assert len(new_local_ports) < 2, Exception('Ambiguity in local TLS ports')
+                if len(new_local_ports) == 1:
+                    last_local_port = new_local_ports[0]
 
                 # Perform the analysis
                 datapoint.generate_seq(last_local_port, self._remote_tls_port)
@@ -206,5 +206,4 @@ class TrainingSetCollector(object):
         if skip_count > 0:
             PrintUtils.print_extra(f'Datapoints pre-existed: *{skip_count}*')
         PrintUtils.end_stage()
-
 
