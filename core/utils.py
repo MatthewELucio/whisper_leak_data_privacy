@@ -7,6 +7,7 @@ import re
 import base64
 import argparse
 import time
+import psutil
 
 # Initialize colorama
 colorama.init()
@@ -230,19 +231,22 @@ class NetworkUtils(object):
 
         # Starts a live capture
         cls._sniffer = pyshark.LiveCapture(bpf_filter=f'tcp port {remote_port}', display_filter='tls')
-        cls._sniffer_result = cls._sniffer.live_capture.sniff_continuously()
+        cls._sniffer_result = cls._sniffer.sniff_continuously()
 
         # Sleep for a while
         time.sleep(2)
 
     @classmethod
-    def stop_sniffing_tls(cls):
+    def stop_sniffing_tls(cls, best_effort=False):
         """
             Stops sniffing TLS and returns the sniffing result back.
+            Supply best_effort to try a best-effort stop, which will return None is no active sniffing is being done.
         """
 
         # Validate sniffing is being done
-        assert (cls._sniffer is not None) and (cls._sniffer_result is not None), Exception('Active sniffing has not started')
+        if cls._sniffer is None or cls._sniffer_result is None:
+            assert best_effort, Exception('Active sniffing has not started')
+            return None
 
         # Sleep for a while
         time.sleep(2)
@@ -251,7 +255,7 @@ class NetworkUtils(object):
         cls._sniffer.close()
         
         # Nullify and return result
-        result = list(cls._sniffer_result)
+        result = cls._sniffer_result
         cls._sniffer = None
         cls._sniffer_result = None
         return result

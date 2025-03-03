@@ -2,6 +2,7 @@
 from core.utils import PrintUtils
 from core.utils import OsUtils
 from core.utils import ThrowingArgparse
+from core.utils import NetworkUtils
 from core.chatbot_base import ChatbotLoaderUtils
 from core.model import TrainingSetCollector
 
@@ -84,14 +85,14 @@ def main():
         api_key = args.apikey
         try:
             with open(args.apikey, 'r') as fp:
-                api_key = fp.read()
+                api_key = fp.read().strip()
         except Exception:
             PrintUtils.print_extra('*WARNING*: Treating API key as a *literal string*')
             PrintUtils.print_extra('Consider using a path for the API key in the future')
         PrintUtils.end_stage()
 
         # Get the chatbot object
-        chatbot_obj = get_chatbot_object(args.chatbot, args.apikey, args.tlsport)
+        chatbot_obj = get_chatbot_object(args.chatbot, api_key, args.tlsport)
 
         # Read prompts 
         PrintUtils.start_stage('Reading prompts')
@@ -115,6 +116,12 @@ def main():
         
         # Print error
         PrintUtils.print_error(ex)
+
+    # Cleanups
+    finally:
+
+        # Cleanup any sniffing that may still be happening
+        NetworkUtils.stop_sniffing_tls(best_effort=True)
 
 if __name__ == '__main__':
     main()

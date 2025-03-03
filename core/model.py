@@ -82,7 +82,7 @@ class TrainingSetCollector(object):
         skip_count = 0
         curr_count = 0
         training_set = {}
-        last_local_ports = set()
+        last_local_port = 0
 
         # Iterate each prompt and either fetch existing data or truly generate data for it
         for prompt in self._prompts:
@@ -109,8 +109,10 @@ class TrainingSetCollector(object):
                 chatbot.send_prompt(prompt)
                 new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
                 capture = NetworkUtils.stop_sniffing_tls()
-                new_local_ports = new_local_ports - last_local_ports
-                import pdb; pdb.set_trace()
+                new_local_ports = [ port for port in new_local_ports if last_local_port != port ]
+                assert len(new_local_ports) > 0, Exception('No new local TLS ports detected')
+                assert len(new_local_ports) == 1, Exception('Ambiguity in local TLS ports')
+                last_local_port = new_local_ports[0]
 
         # Finish stage
         PrintUtils.start_stage('Generating training set', override_prev=True)
