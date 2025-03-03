@@ -67,4 +67,11 @@ The training is done by matching prompts with sniffed TLS data.
 Since we do not want to retrain the data everytime we run Whisper Leak, a directory called `training_set` is created.  
 In it, a directory with a rolling hash of the prompts is saved. This assures changes to the prompts create new training sets, but data could be reused assuming prompts do not change.  
 When collecting data, a `pcap` file is saved for each prompt and each repetition, alongside a `sequence` file.  
-The `pcap` file contains the raw sniffing of data, while the `sequence` file is the serialization of the aforementioned `ApplicationData` byte sizes and times between those chunks of data.
+The `pcap` file contains the raw sniffing of data, while the `sequence` file is the serialization of the aforementioned `ApplicationData` byte sizes and times between those chunks of data.  
+The `sequence` files have a `.seq` as an extension, and have the following format:
+- 2 bytes, little Endian unsigned integer: local TLS port
+- 2 bytes, little Endian unsigned integer: remote TLS port
+- A sequence of datapoints, each datapoint has:
+    - 8 bytes, little Endian, IEEE754 (double precision float-point): time between packets in milliseconds
+    - 4 bytes, little Endian unsigned integer: ApplicationData size in bytes
+
