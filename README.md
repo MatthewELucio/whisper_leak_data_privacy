@@ -17,7 +17,7 @@ python3 -m pip install -r ./requirements.txt
 Secondly, there are two modes of operation, and therefore two executable files.
 
 ### Training
-Run `whisper_leak_train.py`.  
+Run `whisper_leak_train.py`. Note it performs network sniffing, thus requiring to run in high privileges.  
 The following commandline illustrate how to use Whisper Leak:
 
 ```
