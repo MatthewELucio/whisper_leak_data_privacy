@@ -8,19 +8,30 @@ The idea is that communications between a user and the chatbot is TLS-encrypted,
 Therefore, there are inherent side-channel attack ideas assuming an adversary can train a large model and sniff packets between the client and the chatbot.  
 
 ## How to use
+First, install the requirements:
+
+```
+python3 -m pip install -r ./requirements.txt
+```
+
+Secondly, there are two modes of operation, and therefore two executable files.
+
+### Training
+Run `whisper_leak_train.py`.  
 The following commandline illustrate how to use Whisper Leak:
 
 ```
-./whisper_leak.py -c gemini -a ./api_key.txt -p ./prompts.txt -r 10
+./whisper_leak_train.py -c gemini -a ./api_key.txt -p ./prompts.txt -r 10
 ```
 
 The flags are:
 - `-c` - the chatbot name.
 - `-a` - the API key filename.
 - `-p` - the prompts (line-seperated).
-- `-r` - an optional repeat count per prompt.
+- `-r` - an *optional* repeat count per prompt.
+- `-t` - an *optional* integer for the TLS port used by the chatbot (443 by default).
 
-When used, a directory called `training_set` is created and will contain the training set (see more on training below).
+When used, a directory called `training_set` is created and will contain the training set (see more on training in the software architecture piece).
 
 ## Software architecture
 Whisper Leak was built to be easily extensible for different chatbots and models.  
