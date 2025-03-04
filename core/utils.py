@@ -32,6 +32,18 @@ class OsUtils(object):
     """
 
     @staticmethod
+    def suppress_stderr():
+        """
+            Supresses writes to STDERR.
+            This is useful due to certain modules such as Pyshark.
+        """
+
+        # Override fd 2 (STDERR)
+        devnull = os.open(os.devnull, os.O_WRONLY)
+        os.dup2(devnull, 2)
+        os.close(devnull)
+
+    @staticmethod
     def del_file(path):
         """
             Tries to delete a file (best-effort).

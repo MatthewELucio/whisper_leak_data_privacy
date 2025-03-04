@@ -73,6 +73,23 @@ class CustomChatbot(ChatbotBase):
         pass 
 ```
 
+#### Asyncio
+There are some issues with the `asyncio` module since the chatbot modules are loaded with `importlib`.  
+The best way I found to solve that issue is to create a new loop if there isn't one.  
+For example, if we assume an `async` method called `send_prompt_async`, you could do the following:
+
+```python
+# Make sure we have an asyncio loop
+try:
+    loop = asyncio.get_running_loop()
+except RuntimeError:
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+
+# Send prompt
+loop.run_until_complete(self.send_prompt_async(prompt))
+```
+
 ### Sniffing
 To create labeled data, we need to sniff network packets.  
 No matter how much I tried, I always got problems with `pyshark` (at least on macOS), which is the reason I use `subprocess` to spawn `tcpdump`.  

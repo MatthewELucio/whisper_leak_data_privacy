@@ -1,6 +1,7 @@
 from core.chatbot_base import ChatbotBase
 
 import google.generativeai as genai
+import asyncio
 
 class Gemini(ChatbotBase):
     """
@@ -24,7 +25,13 @@ class Gemini(ChatbotBase):
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
         """
 
+        # Make sure we have an asyncio loop
+        try:
+            loop = asyncio.get_running_loop()
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+
         # Send prompt with a clean histoy
         chat = self._model.start_chat(history=[])
-        response = chat.send_message(prompt)
- 
+        loop.run_until_complete(chat.send_message_async(prompt))

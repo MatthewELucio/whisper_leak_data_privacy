@@ -68,6 +68,9 @@ def main():
     # Catch-all
     try:
 
+        # Suppress STDERR
+        OsUtils.suppress_stderr()
+
         # Print logo
         PrintUtils.print_logo()
 
