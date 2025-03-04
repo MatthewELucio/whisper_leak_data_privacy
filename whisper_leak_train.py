@@ -106,6 +106,9 @@ def main():
         collector = TrainingSetCollector(prompts, args.repetition, os.path.join(get_self_dir(), 'training_set'), args.tlsport)
         training_set = collector.get_training_set(chatbot_class, api_key)
 
+        # Prepare the classifier
+        classifier = collector.prepare_classifier(training_set)
+
     # Handle exceptions
     except Exception as ex:
 
