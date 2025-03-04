@@ -73,6 +73,15 @@ class CustomChatbot(ChatbotBase):
         pass 
 ```
 
+### Sniffing
+To create labeled data, we need to sniff network packets.  
+No matter how much I tried, I always got problems with `pyshark` (at least on macOS), which is the reason I use `subprocess` to spawn `tcpdump`.  
+Therefore, our algorithm does the following:
+1. Starts sniffing using `tcpdump` with a filter that looks for the remote port.
+2. Performs the chatbot interaction.
+3. Finds new TCP local sockets by our own process.
+4. Stops sniffing and only take into account TLS cases where the local port is the port we have discovered.
+
 ### Training
 The training is done by matching prompts with sniffed TLS data.  
 Since we do not want to retrain the data everytime we run Whisper Leak, a directory called `training_set` is created.  
