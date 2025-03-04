@@ -265,7 +265,7 @@ def eval_epoch(model, dataloader, criterion, device):
 # Hyperparameter grid: trying different kernel widths.
 kernel_width_list = [3, 5, 7]
 learning_rate = 0.001
-num_epochs = 10  # Adjust the number of epochs as needed.
+num_epochs = 100  # Adjust the number of epochs as needed.
 batch_size = 32
 num_folds = 5
 
