@@ -172,6 +172,9 @@ class TrainingSetCollector(object):
             Prepares the classifier for the given training set.
         """
 
+        # Start a stage
+        PrintUtils.start_stage('Preparing classifier')
+
         # Split training set to data (x) and labels (y)
         x = []
         y = []
@@ -207,6 +210,7 @@ class TrainingSetCollector(object):
         model.fit(x_scaled, y)
 
         # Return classifier
+        PrintUtils.end_stage()
         return model
 
     def get_training_set(self, chatbot_class, api_key):
