@@ -236,7 +236,8 @@ class TrainingSetCollector(object):
             for index in range(self._repeat_count):
 
                 # Update progress
-                PrintUtils.start_stage(f'Generating training set ({curr_count} / {len(all_prompts) * self._repeat_count})', override_prev=True)
+                percentage = (curr_count * 100) // (len(all_prompts) * self._repeat_count)
+                PrintUtils.start_stage(f'Generating training set ({curr_count} / {len(all_prompts) * self._repeat_count} = {percentage}%)', override_prev=True)
                 curr_count += 1
 
                 # Fetch the datapoint for the prompt
