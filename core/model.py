@@ -144,23 +144,18 @@ class TrainingSetCollector(object):
         self._repeat_count = repeat_count
         self._remote_tls_port = remote_tls_port
 
-        # Create a hash of the prompts
-        prompts_hash = hashlib.sha1() 
-        for prompt in prompts:
-            prompts_hash.update(prompt.encode())
-
-        # Get the output directory for the prompts
-        OsUtils.mkdir(out_directory_base)
-        self._out_dir = os.path.join(out_directory_base, prompts_hash.hexdigest())
+        # Create and save the output directory
+        self._out_dir = out_directory_base
         assert OsUtils.mkdir(self._out_dir), Exception(f'Could not get or make directory "{self._out_dir}"')
 
-    def get_datapoint(self, prompt, index):
+    def get_datapoint(self, prompt, index, chatbot_name):
         """
-            Gets a datapoint for the given prompt and index.
+            Gets a datapoint for the given prompt, an index and the chatbot name.
         """
 
         # Get the file paths
-        base_path = os.path.join(self._out_dir, f'{hashlib.sha1(prompt.encode()).hexdigest()}_{index}')
+        chatbot_name_normalized = chatbot_name.replace(' ', '_')
+        base_path = os.path.join(self._out_dir, f'{hashlib.sha1(prompt.encode()).hexdigest()}_{index}_{chatbot_name_normalized}')
         pcap_path = f'{base_path}.pcap'
         seq_path = f'{base_path}.seq'
 
@@ -241,7 +236,7 @@ class TrainingSetCollector(object):
                 curr_count += 1
 
                 # Fetch the datapoint for the prompt
-                datapoint = self.get_datapoint(prompt, index)
+                datapoint = self.get_datapoint(prompt, index, chatbot_class.__name__)
                 if datapoint.exists():
                     skip_count += 1
                     training_set[prompt].append(datapoint)
