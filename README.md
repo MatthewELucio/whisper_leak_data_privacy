@@ -6,6 +6,7 @@ The idea is that communications between a user and the chatbot is TLS-encrypted,
 2. The TLS channel often uses stream ciphers such as [AES-GCM](https://en.wikipedia.org/wiki/Galois/Counter_Mode) or [ChaCha20](https://en.wikipedia.org/wiki/ChaCha20-Poly1305), which means data sizes might be linear to the token reported.
 
 Therefore, there are inherent side-channel attack ideas assuming an adversary can train a large model and sniff packets between the client and the chatbot.  
+In this project, we demonstrate how a passive sniffer can distinguish a set of prompts (we call *positive prompts*) from a set of "normal looking" prompts (which we call *negative prompts*).
 
 ## How to use
 First, install the requirements:
@@ -21,13 +22,14 @@ Run `whisper_leak_train.py`. Note it performs network sniffing, thus requiring t
 The following commandline illustrate how to use Whisper Leak:
 
 ```
-./whisper_leak_train.py -c gemini -a ./api_key.txt -p ./prompts.txt -r 10
+./whisper_leak_train.py -c gemini -a ./api_key.txt -p ./positive_prompts.txt -n ./negative_prompts.txt -r 10
 ```
 
 The flags are:
 - `-c` - the chatbot name.
 - `-a` - the API key filename.
-- `-p` - the prompts (line-seperated).
+- `-p` - the positive prompts (line-seperated).
+- `-n` - the negative prompts (line-seperated).
 - `-r` - an *optional* repeat count per prompt.
 - `-t` - an *optional* integer for the TLS port used by the chatbot (443 by default).
 

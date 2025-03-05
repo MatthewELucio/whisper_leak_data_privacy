@@ -134,13 +134,14 @@ class TrainingSetCollector(object):
         The training set collector.
     """
 
-    def __init__(self, prompts, repeat_count, out_directory_base, remote_tls_port):
+    def __init__(self, positive_prompts, negative_prompts, repeat_count, out_directory_base, remote_tls_port):
         """
             Creates an instance.
         """
 
         # Save members
-        self._prompts = prompts
+        self._positive_prompts = positive_prompts
+        self._negative_prompts = negative_prompts
         self._repeat_count = repeat_count
         self._remote_tls_port = remote_tls_port
 
@@ -222,8 +223,11 @@ class TrainingSetCollector(object):
         training_set = {}
         last_local_port = 0
 
+        # Save all prompts
+        all_prompts = self._positive_prompts + self._negative_prompts
+
         # Iterate each prompt and either fetch existing data or truly generate data for it
-        for prompt in self._prompts:
+        for prompt in all_prompts:
            
             # Add prompt
             training_set[prompt] = []
@@ -232,7 +236,7 @@ class TrainingSetCollector(object):
             for index in range(self._repeat_count):
 
                 # Update progress
-                PrintUtils.start_stage(f'Generating training set ({curr_count} / {len(self._prompts) * self._repeat_count})', override_prev=True)
+                PrintUtils.start_stage(f'Generating training set ({curr_count} / {len(all_prompts) * self._repeat_count})', override_prev=True)
                 curr_count += 1
 
                 # Fetch the datapoint for the prompt

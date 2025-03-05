@@ -16,6 +16,20 @@ def get_self_dir():
     # Return the self directory
     return os.path.dirname(os.path.abspath(__file__))
 
+def get_prompts(filepath, prompt_type):
+    """
+        Gets prompts.
+    """
+
+    # Read prompts 
+    PrintUtils.start_stage(f'Reading {prompt_type} prompts')
+    with open(filepath, 'r') as fp:
+        prompts = [ line.strip() for line in fp.read().split('\n') if len(line.strip()) > 0 ]
+    assert len(prompts) > 0, Exception('Could not load any prompts')
+    PrintUtils.print_extra(f'Loaded *{len(prompts)}* prompts')
+    PrintUtils.end_stage()
+    return prompts
+
 def parse_arguments():
     """
         Parse arguments.
@@ -26,7 +40,8 @@ def parse_arguments():
     parser = ThrowingArgparse()
     parser.add_argument('-c', '--chatbot', help='The chatbot', required=True)
     parser.add_argument('-a', '--apikey', help='The API key for the chatbot', required=True)
-    parser.add_argument('-p', '--prompts', help='The prompts file path', required=True)
+    parser.add_argument('-p', '--pprompts', help='The positive prompts file path', required=True)
+    parser.add_argument('-n', '--nprompts', help='The negative prompts file path', required=True)
     parser.add_argument('-r', '--repetition',type=int,  help='The repetition count per prompt', default=5)
     parser.add_argument('-t', '--tlsport', type=int, help='The remote TLS port', default=443)
     args = parser.parse_args()
@@ -96,17 +111,12 @@ def main():
         # Get the chatbot object
         chatbot_class = get_chatbot_class(args.chatbot)
 
-        # Read prompts 
-        PrintUtils.start_stage('Reading prompts')
-        with open(args.prompts, 'r') as fp:
-            prompts = [ line.strip() for line in fp.read().split('\n') if len(line.strip()) > 0 ]
-        assert len(prompts) > 0, Exception('Could not load any prompts')
-        PrintUtils.print_extra(f'Loaded *{len(prompts)}* prompts')
-        PrintUtils.print_extra(f'Requiring a total of *{len(prompts) * args.repetition}* datapoints')
-        PrintUtils.end_stage()
-
+        # Read prompts
+        positive_prompts = get_prompts(args.pprompts, 'positive')
+        negative_prompts = get_prompts(args.nprompts, 'negative')
+        
         # Get the training set
-        collector = TrainingSetCollector(prompts, args.repetition, os.path.join(get_self_dir(), 'training_set'), args.tlsport)
+        collector = TrainingSetCollector(positive_prompts, negative_prompts, args.repetition, os.path.join(get_self_dir(), 'training_set'), args.tlsport)
         training_set = collector.get_training_set(chatbot_class, api_key)
 
         # Prepare the classifier
