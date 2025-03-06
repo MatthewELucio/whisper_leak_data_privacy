@@ -57,12 +57,12 @@ class Datapoint(object):
         assert 'local_port' in seq and isinstance(seq['local_port'], int) and seq['local_port'] > 0 and seq['local_port'] <= 0xFFFF, Exception(f'Missing or invalid local port data in sequence file: {self.seq_path}')
         assert 'remote_port' in seq and isinstance(seq['remote_port'], int) and seq['remote_port'] > 0 and seq['remote_port'] <= 0xFFFF, Exception(f'Missing or invalid remote port data in sequence file: {self.seq_path}')
         assert 'temperature' in seq and isinstance(seq['temperature'], float) and seq['temperature'] >= 0, Exception(f'Missing or invalid temperature in sequence file: {self.seq_path}')
-        assert 'sequence' in seq and isinstance(seq['sequence'], list) and len(seq['sequence']) > 0, Exception(f'Missing or invalid sequence data in sequence file: {self.seq_path}')
-        for item in seq['sequence']:
-            assert isinstance(item, dict), Exception(f'Missing or invalid sequence data in sequence file: {self.seq_path}')
-            assert 'time_diff' in item and isinstance(item['time_diff'], float) and item['time_diff'] >= 0, Exception(f'Missing or invalid time difference in sequence in file: {self.seq_path}')
-            assert 'data_length' in item and isinstance(item['data_length'], int) and item['data_length'] >= 0, Exception(f'Missing or invalid data length in sequence in file: {self.seq_path}')
- 
+        assert 'prompt' in seq and isinstance(seq['prompt'], str) and len(seq['prompt']) > 0, Exception(f'Missing or invalid prompt in sequence file: {self.seq_path}')
+        assert 'data_lengths' in seq and isinstance(seq['data_lengths'], list) and len([ val for val in seq['data_lengths'] if (not isinstance(val, int)) or val < 0 ]) == 0, Exception(f'Missing or invalid data lengths in sequence file: {self.seq_path}')
+        assert 'time_diffs' in seq and isinstance(seq['time_diffs'], list) and len([ val for val in seq['time_diffs'] if (not isinstance(val, float)) or val < 0 ]) == 0, Exception(f'Missing or invalid time differences list in sequence file: {self.seq_path}')
+        assert len(seq['data_lengths']) == len(seq['time_diffs']), Exception(f'Time differences and data lenghts size mismatch in sequence file: {self.seq_path}')
+        assert len(seq['data_lengths']) > 0, Exception('No data found in sequence file: {self.seq_path}')
+
     def load_seq(self):
         """
             Load the sequence from the sequence file.
@@ -90,7 +90,7 @@ class Datapoint(object):
         with open(self.seq_path, 'w') as fp:
             json.dump(self.seq, fp, indent=2)
 
-    def generate_seq(self, local_port, remote_port, temperature):
+    def generate_seq(self, local_port, remote_port, prompt, temperature):
         """
             Runs the analysis on the PCAP path and writes the sequence file.
             Note this also automatically populates the sequence data in the datapoint.
@@ -107,8 +107,10 @@ class Datapoint(object):
             self.seq = {}
             self.seq['local_port'] = local_port
             self.seq['remote_port'] = remote_port
+            self.seq['prompt'] = prompt
             self.seq['temperature'] = temperature
-            self.seq['sequence'] = []
+            self.seq['data_lengths'] = []
+            self.seq['time_diffs'] = []
 
             # Run the analysis
             cap = pyshark.FileCapture(self.pcap_path, display_filter=f'tcp.port == {local_port} || tcp.port == {remote_port}')
@@ -134,7 +136,8 @@ class Datapoint(object):
                 if hasattr(packet.tls, 'app_data') and int(packet.tcp.dstport) == local_port and int(packet.tcp.srcport) == remote_port:
                     timestamp = float(packet.sniff_time.timestamp())
                     data_length = int(packet.length)
-                    self.seq['sequence'].append({ 'time_diff': timestamp - prev_sniff_time, 'data_length': data_length })
+                    self.seq['data_lengths'].append(data_length)
+                    self.seq['time_diffs'].append(timestamp - prev_sniff_time)
                     prev_sniff_time = timestamp
 
             # Validate some data was acquired
@@ -285,7 +288,7 @@ class TrainingSetCollector(object):
                     last_local_port = new_local_ports[0]
 
                 # Perform the analysis and set the data
-                datapoint.generate_seq(last_local_port, self._remote_tls_port, temperature)
+                datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, temperature)
                 training_set[prompt].append(datapoint)
 
         # Finish stage and return the training set
