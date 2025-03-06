@@ -3,7 +3,7 @@ from core.utils import PrintUtils
 from core.utils import OsUtils
 from core.utils import ThrowingArgparse
 from core.utils import NetworkUtils
-from core.chatbot_base import ChatbotLoaderUtils
+from core.chatbot_utils import ChatbotUtils
 from core.model import TrainingSetCollector
 
 import os
@@ -59,7 +59,7 @@ def get_chatbot_class(chatbot_name):
 
     # Load all chatbots
     PrintUtils.start_stage('Loading chatbots')
-    chatbots = ChatbotLoaderUtils.load_chatbots(os.path.join(get_self_dir(), 'chatbots'))
+    chatbots = ChatbotUtils.load_chatbots(os.path.join(get_self_dir(), 'chatbots'))
     assert len(chatbots) > 0, Exception('Could not load any chatbots')
     chatbot_names = ', '.join([ f'*{name}*' for name in chatbots.keys() ])
     PrintUtils.print_extra(f'Loaded chatbots: {chatbot_names}')
@@ -131,7 +131,8 @@ def main():
         if PrintUtils.is_in_stage():
             PrintUtils.end_stage(fail_message=ex, throw_on_fail=False)
        
-        # Save error
+        # Save error and print it as an extra
+        PrintUtils.print_extra(f'Error: {ex}')
         last_error = ex
 
     # Handle cancel operations

@@ -1,4 +1,4 @@
-from core.chatbot_base import ChatbotBase
+from core.chatbot_utils import ChatbotBase
 
 import google.generativeai as genai
 import asyncio
@@ -34,6 +34,7 @@ class Gemini(ChatbotBase):
     def send_prompt(self, prompt, temperature):
         """
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
+            Returns a tuple of (response, local_port) - if local port cannot be determined return (response, None).
         """
 
         # Make sure we have an asyncio loop
@@ -44,7 +45,10 @@ class Gemini(ChatbotBase):
             asyncio.set_event_loop(loop)
 
         # Get the response
-        return loop.run_until_complete(chat.send_message_async(prompt, temperature))
+        response = loop.run_until_complete(chat.send_message_async(prompt, temperature))
+
+        # Return the response and do not indicate local port.
+        return (response, None)
 
     def get_temperature(self):
         """

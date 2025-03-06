@@ -4,6 +4,7 @@ import importlib.util
 import inspect
 import os
 import sys
+import httpx
 
 class ChatbotBase(ABC):
     """
@@ -23,6 +24,7 @@ class ChatbotBase(ABC):
     def send_prompt(self, prompt, temperature):
         """
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
+            Returns a tuple of (response, local_port) - if local port cannot be determined return (response, None).
         """
         pass
 
@@ -33,11 +35,45 @@ class ChatbotBase(ABC):
         """
         pass
 
-class ChatbotLoaderUtils(object):
+class LocalPortSaverTransport(httpx.HTTPTransport):
     """
-        Loader utilities for chatbot classes.
+        An HTTP transport that saves the local port as a member.
+        Useful to be used as an HTTP client transport.
     """
-    
+
+    def handle_request(self, request):
+        """
+            Handles a request.
+        """
+
+        # Handle the request
+        response = super().handle_request(request)
+
+        # Get the port from the pool
+        assert len(self._pool.connections) > 0, Exception('Expecting at least one connection')
+        local_port = self._pool.connections[-1]._connection._network_stream._sock.getsockname()[1]
+        if local_port > 0 and local_port <= 0xFFFF:
+            if hasattr(self, 'local_port'):
+                assert self.local_port == local_port, Exception(f'Local port already indicated previously: {self.local_port} vs. {local_port}')
+            else:
+                self.local_port = local_port
+
+        # Return the response
+        return response
+
+    def get_local_port(self):
+        """
+            Gets the local port or None if not found.
+        """
+
+        # Either return the local port or None
+        return getattr(self, 'local_port', None)
+
+class ChatbotUtils(object):
+    """
+        Utilities for chatbot classes.
+    """
+
     @staticmethod
     def load_chatbots(base_path):
         """

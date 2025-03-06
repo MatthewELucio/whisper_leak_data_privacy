@@ -69,9 +69,11 @@ class CustomChatbot(ChatbotBase):
     def send_prompt(self, prompt, temperature):
         """
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
+            Returns a tuple of (response, local_port) - if local port cannot be determined return (response, None).
         """
 
         # TODO - send prompt and get responses asynchronously while waiting for them - return the response eventually
+        # TODO - try to fetch the local TCP port if possible
         pass
 
     def get_temperature(self):

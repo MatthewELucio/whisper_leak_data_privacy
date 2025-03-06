@@ -1,6 +1,8 @@
-from core.chatbot_base import ChatbotBase
+from core.chatbot_utils import ChatbotBase
+from core.chatbot_utils import LocalPortSaverTransport
 
 from openai import OpenAI
+import httpx
 
 class DeepseekV3OpenRouter(ChatbotBase):
     """
@@ -15,12 +17,14 @@ class DeepseekV3OpenRouter(ChatbotBase):
         # Call superclass
         super().__init__(api_key, remote_tls_port)
 
-        # Create client
-        self._client = OpenAI(base_url='https://openrouter.ai/api/v1', api_key=api_key)
+        # Create client that also saves the local port
+        self._transport = LocalPortSaverTransport()
+        self._client = OpenAI(base_url=f'https://openrouter.ai:{remote_tls_port}/api/v1', api_key=api_key, http_client=httpx.Client(transport=self._transport))
 
     def send_prompt(self, prompt, temperature):
         """
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
+            Returns a tuple of (response, local_port) - if local port cannot be determined return (response, None).
         """
 
         # Send prompt
@@ -31,7 +35,7 @@ class DeepseekV3OpenRouter(ChatbotBase):
                 response += chunk.choices[0].delta.content
 
         # Return response
-        return response
+        return (response, self._transport.get_local_port())
 
     def get_temperature(self):
         """
