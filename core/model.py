@@ -284,9 +284,9 @@ class TrainingSetCollector(object):
                 assert len(response) > 0, Exception(f'Got empty response for prompt: {prompt}')
 
                 # Discover new ports and stop sniffing (unless local port was provided by chatbot)
-                new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
-                NetworkUtils.stop_sniffing_tls()
                 if local_port is None:
+                    new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
+                    NetworkUtils.stop_sniffing_tls()
                     new_local_ports = [ port for port in new_local_ports if last_local_port != port ]
                     assert len(new_local_ports) < 2, Exception('Ambiguity in local TLS ports')
                     if len(new_local_ports) == 1:
@@ -294,6 +294,7 @@ class TrainingSetCollector(object):
                 else:
                     assert local_port > 0 and local_port <= 0xFFFF, Exception(f'Invalid port indicated by chatbot: {local_port}')
                     last_local_port = local_port
+                    NetworkUtils.stop_sniffing_tls()
 
                 # Perform the analysis and set the data
                 datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, response, temperature)
