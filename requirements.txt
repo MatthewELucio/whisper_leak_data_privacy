@@ -1,4 +1,7 @@
 colorama==0.4.6
-protobuf==5.29.3
+numpy==2.2.3
+openai==1.65.4
+protobuf==6.30.0
 psutil==7.0.0
 pyshark==0.6
+scikit_learn==1.6.1
