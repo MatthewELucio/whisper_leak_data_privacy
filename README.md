@@ -1,3 +1,5 @@
+![Screenshot](screenshot.png)
+
 # About
 Whisper Leak is a proof-of-concept attack for side-channel attack on Large Language Model chatbots.  
 The idea is that communications between a user and the chatbot is TLS-encrypted, but:
