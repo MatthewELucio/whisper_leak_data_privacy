@@ -81,6 +81,7 @@ def main():
     """
 
     # Catch-all
+    is_user_cancelled = False
     try:
 
         # Suppress STDERR
@@ -128,7 +129,7 @@ def main():
         # Optionally fail stage
         if PrintUtils.is_in_stage():
             PrintUtils.end_stage(fail_message=ex, throw_on_fail=False)
-        
+       
         # Print error
         PrintUtils.print_error(ex)
 
@@ -136,13 +137,22 @@ def main():
     except KeyboardInterrupt:
         if PrintUtils.is_in_stage():
             PrintUtils.end_stage(fail_message='', throw_on_fail=False)
-        PrintUtils.print_extra(f'Operation *cancelled* by user')
+        PrintUtils.print_extra(f'Operation *cancelled* by user - please wait for cleanup code to complete')
+        is_user_cancelled = True
 
     # Cleanups
     finally:
 
         # Cleanup any sniffing that may still be happening
+        PrintUtils.start_stage('Running cleanup code')
         NetworkUtils.stop_sniffing_tls(best_effort=True)
+        PrintUtils.end_stage()
+
+        # Print final status
+        if is_user_cancelled:
+            PrintUtils.print_extra(f'Operation *cancelled* by user')
+        else:
+            PrintUtils.print_extra(f'Finished successfully')
 
 if __name__ == '__main__':
     main()

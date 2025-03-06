@@ -87,8 +87,8 @@ class Datapoint(object):
 
         # Validate sequence and save it
         self.__class__._validate_seq(self.seq)
-        with open(self.seq_path, 'wb') as fp:
-            json.dump(self.seq, fp, indent=2, ensure_ascii=False)
+        with open(self.seq_path, 'w') as fp:
+            json.dump(self.seq, fp, indent=2)
 
     def generate_seq(self, local_port, remote_port, prompt, temperature):
         """
