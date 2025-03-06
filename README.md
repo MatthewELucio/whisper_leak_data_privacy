@@ -71,7 +71,7 @@ class CustomChatbot(ChatbotBase):
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
         """
 
-        # TODO - send prompt and get responses asynchronously while waiting for them
+        # TODO - send prompt and get responses asynchronously while waiting for them - return the response eventually
         pass
 
     def get_temperature(self):

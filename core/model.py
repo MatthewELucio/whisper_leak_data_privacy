@@ -58,6 +58,7 @@ class Datapoint(object):
         assert 'remote_port' in seq and isinstance(seq['remote_port'], int) and seq['remote_port'] > 0 and seq['remote_port'] <= 0xFFFF, Exception(f'Missing or invalid remote port data in sequence file: {self.seq_path}')
         assert 'temperature' in seq and isinstance(seq['temperature'], float) and seq['temperature'] >= 0, Exception(f'Missing or invalid temperature in sequence file: {self.seq_path}')
         assert 'prompt' in seq and isinstance(seq['prompt'], str) and len(seq['prompt']) > 0, Exception(f'Missing or invalid prompt in sequence file: {self.seq_path}')
+        assert 'response' in seq and isinstance(seq['response'], str) and len(seq['response']) > 0, Exception(f'Missing or invalid response in sequence file: {self.seq_path}')
         assert 'data_lengths' in seq and isinstance(seq['data_lengths'], list) and len([ val for val in seq['data_lengths'] if (not isinstance(val, int)) or val < 0 ]) == 0, Exception(f'Missing or invalid data lengths in sequence file: {self.seq_path}')
         assert 'time_diffs' in seq and isinstance(seq['time_diffs'], list) and len([ val for val in seq['time_diffs'] if (not isinstance(val, float)) or val < 0 ]) == 0, Exception(f'Missing or invalid time differences list in sequence file: {self.seq_path}')
         assert len(seq['data_lengths']) == len(seq['time_diffs']), Exception(f'Time differences and data lenghts size mismatch in sequence file: {self.seq_path}')
@@ -90,7 +91,7 @@ class Datapoint(object):
         with open(self.seq_path, 'w') as fp:
             json.dump(self.seq, fp, indent=2)
 
-    def generate_seq(self, local_port, remote_port, prompt, temperature):
+    def generate_seq(self, local_port, remote_port, prompt, response, temperature):
         """
             Runs the analysis on the PCAP path and writes the sequence file.
             Note this also automatically populates the sequence data in the datapoint.
@@ -108,6 +109,7 @@ class Datapoint(object):
             self.seq['local_port'] = local_port
             self.seq['remote_port'] = remote_port
             self.seq['prompt'] = prompt
+            self.seq['response'] = response
             self.seq['temperature'] = temperature
             self.seq['data_lengths'] = []
             self.seq['time_diffs'] = []
@@ -277,7 +279,9 @@ class TrainingSetCollector(object):
                 # Create a chatbot object to make sure we get fresh connections
                 chatbot_obj = chatbot_class(api_key, self._remote_tls_port)
                 temperature = chatbot_obj.get_temperature()
-                chatbot_obj.send_prompt(prompt, temperature)
+                response = chatbot_obj.send_prompt(prompt, temperature)
+                assert isinstance(response, str), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
+                assert len(response) > 0, Exception(f'Got empty response for prompt: {prompt}')
 
                 # Discover new ports and stop sniffing
                 new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
@@ -288,7 +292,7 @@ class TrainingSetCollector(object):
                     last_local_port = new_local_ports[0]
 
                 # Perform the analysis and set the data
-                datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, temperature)
+                datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, response, temperature)
                 training_set[prompt].append(datapoint)
 
         # Finish stage and return the training set

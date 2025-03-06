@@ -2,9 +2,9 @@ from core.chatbot_base import ChatbotBase
 
 from openai import OpenAI
 
-class DeepseekR1OpenRouter(ChatbotBase):
+class DeepseekV3OpenRouter(ChatbotBase):
     """
-        Deepseek R1 over OpenRouter chatbot.
+        Deepseek V3 over OpenRouter chatbot.
     """
 
     def __init__(self, api_key, remote_tls_port=443):
@@ -24,10 +24,14 @@ class DeepseekR1OpenRouter(ChatbotBase):
         """
 
         # Send prompt
-        stream = self._client.chat.completions.create(extra_body={}, model='deepseek/deepseek-r1', messages=[ { 'role': 'user', 'content': prompt } ], stream=True, temperature=temperature)
+        response = ''
+        stream = self._client.chat.completions.create(extra_body={}, model='deepseek/deepseek-chat', messages=[ { 'role': 'user', 'content': prompt } ], stream=True, temperature=temperature)
         for chunk in stream:
-            if chunk.choices[0].delta.content is not None:
-                pass
+            if chunk.choices[0].delta.content:
+                response += chunk.choices[0].delta.content
+
+        # Return response
+        return response
 
     def get_temperature(self):
         """

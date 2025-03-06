@@ -20,6 +20,17 @@ class Gemini(ChatbotBase):
         genai.configure(api_key=api_key)
         self._model = genai.GenerativeModel('gemini-2.0-flash')
 
+    async def _get_response(self, prompt, temperature):
+        """
+            Gets a response asynchronously.
+        """
+
+        # Run asynchronously
+        generation_config = genai.GenerationConfig(temperature=temperature)
+        chat = self._model.start_chat(history=[])
+        response = await chat.send_message_async(prompt, generation_config=generation_config)
+        return response.text
+
     def send_prompt(self, prompt, temperature):
         """
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
@@ -32,10 +43,8 @@ class Gemini(ChatbotBase):
             loop = asyncio.new_event_loop()
             asyncio.set_event_loop(loop)
 
-        # Send prompt with a clean histoy
-        generation_config = genai.GenerationConfig(temperature=temperature)
-        chat = self._model.start_chat(history=[])
-        loop.run_until_complete(chat.send_message_async(prompt, generation_config=generation_config))
+        # Get the response
+        return loop.run_until_complete(chat.send_message_async(prompt, temperature))
 
     def get_temperature(self):
         """
