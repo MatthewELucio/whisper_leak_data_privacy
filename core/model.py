@@ -56,7 +56,7 @@ class Datapoint(object):
         assert isinstance(seq, dict), Exception('Invalid sequence type')
         assert 'local_port' in seq and isinstance(seq['local_port'], int) and seq['local_port'] > 0 and seq['local_port'] <= 0xFFFF, Exception(f'Missing or invalid local port data in sequence file: {self.seq_path}')
         assert 'remote_port' in seq and isinstance(seq['remote_port'], int) and seq['remote_port'] > 0 and seq['remote_port'] <= 0xFFFF, Exception(f'Missing or invalid remote port data in sequence file: {self.seq_path}')
-        assert 'temperature' in seq and isinstance(seq['temperature'], float) and len(seq['temperature']) >= 0, Exception(f'Missing or invalid temperature in sequence file: {self.seq_path}')
+        assert 'temperature' in seq and isinstance(seq['temperature'], float) and seq['temperature'] >= 0, Exception(f'Missing or invalid temperature in sequence file: {self.seq_path}')
         assert 'sequence' in seq and isinstance(seq['sequence'], list) and len(seq['sequence']) > 0, Exception(f'Missing or invalid sequence data in sequence file: {self.seq_path}')
         for item in seq['sequence']:
             assert isinstance(item, dict), Exception(f'Missing or invalid sequence data in sequence file: {self.seq_path}')
@@ -88,7 +88,7 @@ class Datapoint(object):
         # Validate sequence and save it
         self.__class__._validate_seq(self.seq)
         with open(self.seq_path, 'w') as fp:
-            json.dumps(self.seq, fp)
+            json.dump(self.seq, fp, indent=2)
 
     def generate_seq(self, local_port, remote_port, temperature):
         """

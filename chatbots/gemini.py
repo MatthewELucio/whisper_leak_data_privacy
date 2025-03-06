@@ -46,8 +46,8 @@ class Gemini(ChatbotBase):
         # Return a random number between 0 and 2 at a 0.1 granularity in a Bell-Curve
         while True:
             
-            # Generate a random value from a normal distribution
-            value = random.gauss(mean, std_dev)
+            # Generate a random value from a normal distribution centered around 1.0
+            value = random.gauss(1.0, 0.3)
 
             # Clip the value to the specified range
             if 0.0 <= value and value <= 2.0:
