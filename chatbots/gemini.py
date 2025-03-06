@@ -19,7 +19,7 @@ class Gemini(ChatbotBase):
 
         # Create model
         genai.configure(api_key=api_key)
-        self._model = genai.GenerativeModel('gemini-1.5-flash')
+        self._model = genai.GenerativeModel('gemini-2.0-flash')
 
     def send_prompt(self, prompt, temperature):
         """
@@ -34,13 +34,22 @@ class Gemini(ChatbotBase):
             asyncio.set_event_loop(loop)
 
         # Send prompt with a clean histoy
+        generation_config = genai.GenerationConfig(temperature=temperature)
         chat = self._model.start_chat(history=[])
-        loop.run_until_complete(chat.send_message_async(prompt))
+        loop.run_until_complete(chat.send_message_async(prompt, generation_config=generation_config))
 
     def get_temperature(self):
         """
             Gets the temperature of the model.
         """
 
-        # Return a random number between 0 and 2 at a 0.1 granularity
-        return random.randint(0, 20) / 10
+        # Return a random number between 0 and 2 at a 0.1 granularity in a Bell-Curve
+        while True:
+            
+            # Generate a random value from a normal distribution
+            value = random.gauss(mean, std_dev)
+
+            # Clip the value to the specified range
+            if 0.0 <= value and value <= 2.0:
+                return value
+
