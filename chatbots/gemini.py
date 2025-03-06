@@ -2,7 +2,6 @@ from core.chatbot_base import ChatbotBase
 
 import google.generativeai as genai
 import asyncio
-import random
 
 class Gemini(ChatbotBase):
     """
@@ -43,13 +42,5 @@ class Gemini(ChatbotBase):
             Gets the temperature of the model.
         """
 
-        # Return a random number between 0 and 2 at a 0.1 granularity in a Bell-Curve
-        while True:
-            
-            # Generate a random value from a normal distribution centered around 1.0
-            value = random.gauss(1.0, 0.3)
-
-            # Clip the value to the specified range
-            if 0.0 <= value and value <= 2.0:
-                return value
-
+        # For now we just return the default of 1.0
+        return 1.0
