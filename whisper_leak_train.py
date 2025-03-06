@@ -82,6 +82,7 @@ def main():
 
     # Catch-all
     is_user_cancelled = False
+    last_error = None
     try:
 
         # Suppress STDERR
@@ -130,8 +131,8 @@ def main():
         if PrintUtils.is_in_stage():
             PrintUtils.end_stage(fail_message=ex, throw_on_fail=False)
        
-        # Print error
-        PrintUtils.print_error(ex)
+        # Save error
+        last_error = ex
 
     # Handle cancel operations
     except KeyboardInterrupt:
@@ -149,7 +150,9 @@ def main():
         PrintUtils.end_stage()
 
         # Print final status
-        if is_user_cancelled:
+        if last_error is not None:
+            PrintUtils.print_error(last_error)
+        elif is_user_cancelled:
             PrintUtils.print_extra(f'Operation *cancelled* by user')
         else:
             PrintUtils.print_extra(f'Finished successfully')
