@@ -66,13 +66,21 @@ class CustomChatbot(ChatbotBase):
         # TODO - more initialization code that might use the API key etc.
         pass
 
-    def send_prompt(self, prompt):
+    def send_prompt(self, prompt, temperature):
         """
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
         """
 
         # TODO - send prompt and get responses asynchronously while waiting for them
-        pass 
+        pass
+
+    def get_temperature(self):
+        """
+            Gets the temperature of the model.
+        """
+
+        # TODO - get temperature (can be random)
+        pass
 ```
 
 #### Asyncio

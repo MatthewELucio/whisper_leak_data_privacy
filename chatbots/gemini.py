@@ -2,6 +2,7 @@ from core.chatbot_base import ChatbotBase
 
 import google.generativeai as genai
 import asyncio
+import random
 
 class Gemini(ChatbotBase):
     """
@@ -20,7 +21,7 @@ class Gemini(ChatbotBase):
         genai.configure(api_key=api_key)
         self._model = genai.GenerativeModel('gemini-1.5-flash')
 
-    def send_prompt(self, prompt):
+    def send_prompt(self, prompt, temperature):
         """
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
         """
@@ -35,3 +36,11 @@ class Gemini(ChatbotBase):
         # Send prompt with a clean histoy
         chat = self._model.start_chat(history=[])
         loop.run_until_complete(chat.send_message_async(prompt))
+
+    def get_temperature(self):
+        """
+            Gets the temperature of the model.
+        """
+
+        # Return a random number between 0 and 2 at a 0.1 granularity
+        return random.randint(0, 20) / 10

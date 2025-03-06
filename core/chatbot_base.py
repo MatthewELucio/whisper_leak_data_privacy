@@ -20,9 +20,16 @@ class ChatbotBase(ABC):
         self._remote_tls_port = remote_tls_port
 
     @abstractmethod
-    def send_prompt(self, prompt):
+    def send_prompt(self, prompt, temperature):
         """
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
+        """
+        pass
+
+    @abstractmethod
+    def get_temperature(self):
+        """
+            Gets the temperature of the model.
         """
         pass
 
