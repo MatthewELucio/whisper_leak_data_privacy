@@ -23,15 +23,8 @@ class DeepseekR1OpenRouter(ChatbotBase):
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
         """
 
-        # Make sure we have an asyncio loop
-        try:
-            loop = asyncio.get_running_loop()
-        except RuntimeError:
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-
         # Send prompt
-        stream = client.chat.completions.create(extra_body={}, model='deepseek/deepseek-r1', messages=[ { 'role': 'user', 'content': prompt } ], stream=True, temperature=temperature)
+        stream = self._client.chat.completions.create(extra_body={}, model='deepseek/deepseek-r1', messages=[ { 'role': 'user', 'content': prompt } ], stream=True, temperature=temperature)
         for chunk in stream:
             if chunk.choices[0].delta.content is not None:
                 pass
