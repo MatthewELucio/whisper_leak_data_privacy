@@ -132,6 +132,12 @@ def main():
         # Print error
         PrintUtils.print_error(ex)
 
+    # Handle cancel operations
+    except KeyboardInterrupt:
+        if PrintUtils.is_in_stage():
+            PrintUtils.end_stage(fail_message='', throw_on_fail=False)
+        PrintUtils.print_extra(f'Operation *cancelled* by user')
+
     # Cleanups
     finally:
 
