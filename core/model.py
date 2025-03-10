@@ -34,13 +34,16 @@ class Datapoint(object):
         else:
             self.load_seq()
 
-    def exists(self):
+    def exists(self, include_pcap=False):
         """
-            Indicates if the datapoint actually exists.
+            Indicates if the datapoint actually exists (we only account for the sequence file).
         """
 
-        # Indicate
-        return os.path.isfile(self.pcap_path) and os.path.isfile(self.seq_path)
+        # Indicate files exist
+        if include_pcap:
+            if not os.path.isfile(self.pcap_path):
+                return False
+        return os.path.isfile(self.seq_path)
 
     @staticmethod
     def _validate_seq(seq):
