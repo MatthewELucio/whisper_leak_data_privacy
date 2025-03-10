@@ -2,10 +2,6 @@ from core.utils import OsUtils
 from core.utils import PrintUtils
 from core.utils import NetworkUtils
 
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import classification_report
-
 import numpy
 import hashlib
 import os

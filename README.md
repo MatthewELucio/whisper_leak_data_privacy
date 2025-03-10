@@ -24,14 +24,13 @@ Run `whisper_leak_train.py`. Note it performs network sniffing, thus requiring t
 The following commandline illustrate how to use Whisper Leak:
 
 ```
-./whisper_leak_train.py -c gemini -a ./api_key.txt -p ./positive_prompts.txt -n ./negative_prompts.txt -r 10
+./whisper_leak_train.py -c gemini -a ./api_key.txt -p ./prompts.json -r 10
 ```
 
 The flags are:
 - `-c` - the chatbot name.
 - `-a` - the API key filename.
-- `-p` - the positive prompts (line-seperated).
-- `-n` - the negative prompts (line-seperated).
+- `-p` - the JSON prompts file, contains both positive and negative prompts.
 - `-r` - an *optional* repeat count per prompt.
 - `-t` - an *optional* integer for the TLS port used by the chatbot (443 by default).
 
