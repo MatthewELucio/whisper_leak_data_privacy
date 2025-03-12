@@ -28,10 +28,8 @@ def parse_arguments():
     parser.add_argument('-c', '--chatbot', help='The chatbot', required=True)
     parser.add_argument('-a', '--apikey', help='The API key for the chatbot', required=True)
     parser.add_argument('-p', '--prompts', help='The prompts JSON file path', required=True)
-    parser.add_argument('-r', '--repetition',type=int,  help='The repetition count per prompt', default=5)
     parser.add_argument('-t', '--tlsport', type=int, help='The remote TLS port', default=443)
     args = parser.parse_args()
-    assert args.repetition > 0, Exception(f'Invalid repetition count: {args.repetition}')
     assert args.tlsport > 0 and args.tlsport <= 0xFFFF, Exception(f'Invalid remote TLS port: {args.tlsport}')
     PrintUtils.end_stage()
 
@@ -60,6 +58,37 @@ def get_chatbot_class(chatbot_name):
 
     # Return the class
     return chatbot_class
+
+def read_prompts(json_path):
+    """
+        Reads prompts file and validate its structure.
+    """
+
+    # Read prompts
+    PrintUtils.start_stage(f'Reading prompts')
+    with open(json_path, 'r') as fp:
+        contents = json.load(fp)
+
+    # Validate the file structure
+    assert isinstance(contents, dict), Exception('Invalid format for prompts JSON file')
+    prompt_types = [ 'positive', 'negative' ]
+    for prompt_type in prompt_types:
+        prompts_data = contents.get(prompt_type, None)
+        assert prompts_data is not None, Exception(f'Missing {prompt_type} prompts')
+        assert isinstance(prompts_data, dict), Exception(f'Invalid structure for {prompt_type} prompts')
+        repeats = prompts_data.get('repeat', None)
+        assert repeats is not None, Exception(f'Missing key "repeat" in {prompt_type} prompts')
+        assert isinstance(repeats, int) and repeats > 0, Exception(f'Invalid repeat value in {prompt_type} prompts')
+        prompts = prompts_data.get('prompts', None)
+        assert prompts is not None, Exception(f'Missing key "prompts" in {prompt_type} prompts')
+        assert isinstance(prompts, list), Exception(f'Invalid structure for prompts in {prompts_type} prompts')
+        assert len(prompts) > 0, Exception(f'The prompt list for {prompt_type} prompts is empty')
+        assert len([ elem for elem in prompts if not isinstance(elem, str) ]) == 0, Exception('Invalid prompt format in {prompts_type} prompts')
+        PrintUtils.print_extra(f'Loaded *{len(prompts)}* {prompt_type} prompts with repetition of *{repeats}*')
+
+    # Return result
+    PrintUtils.end_stage()
+    return contents
 
 def main():
     """
@@ -100,20 +129,11 @@ def main():
         chatbot_class = get_chatbot_class(args.chatbot)
 
         # Read prompts
-        PrintUtils.start_stage(f'Reading prompts')
-        with open(args.prompts, 'r') as fp:
-            prompts = json.load(fp)
-        assert isinstance(prompts, dict), Exception('Invalid format for prompts JSON file')
-        positive_prompts, negative_prompts = prompts.get('positive', []), prompts.get('negative', [])
-        assert isinstance(positive_prompts, list) and len([ elem for elem in positive_prompts if not isinstance(elem, str) ]) == 0, Exception('Invalid format in positive prompts')
-        assert isinstance(negative_prompts, list) and len([ elem for elem in negative_prompts if not isinstance(elem, str) ]) == 0, Exception('Invalid format in negative prompts')
-        assert len(positive_prompts) > 0, Exception('Missing positive prompts')
-        assert len(negative_prompts) > 0, Exception('Missing negative prompts')
-        PrintUtils.print_extra(f'Loaded *{len(positive_prompts) + len(negative_prompts)}* prompts (*{len(positive_prompts)}* positive and *{len(negative_prompts)}* negative)')
-        PrintUtils.end_stage()
+        prompts = read_prompts(args.prompts)
         
-        # Get the training set
-        collector = TrainingSetCollector(positive_prompts, negative_prompts, args.repetition, os.path.join(get_self_dir(), 'training_set'), args.tlsport)
+        # Build the training set
+        training_set_path = os.path.join(get_self_dir(), 'training_set')
+        collector = TrainingSetCollector(prompts['positive']['prompts'], prompts['positive']['repeat'], prompts['negative']['prompts'], prompts['negative']['repeat'], training_set_path, args.tlsport)
         training_set = collector.get_training_set(chatbot_class, api_key)
 
     # Handle exceptions

@@ -159,15 +159,16 @@ class TrainingSetCollector(object):
         The training set collector.
     """
 
-    def __init__(self, positive_prompts, negative_prompts, repeat_count, out_directory_base, remote_tls_port):
+    def __init__(self, positive_prompts, positive_repeats, negative_prompts, negative_repeats, out_directory_base, remote_tls_port):
         """
             Creates an instance.
         """
 
         # Save members
         self._positive_prompts = positive_prompts
+        self._positive_repeats = positive_repeats
         self._negative_prompts = negative_prompts
-        self._repeat_count = repeat_count
+        self._negative_repeats = negative_repeats
         self._remote_tls_port = remote_tls_port
 
         # Create and save the output directory
@@ -249,20 +250,24 @@ class TrainingSetCollector(object):
         last_local_port = 0
 
         # Save all prompts
-        all_prompts = self._positive_prompts + self._negative_prompts
+        all_prompts = self._negative_prompts + self._positive_prompts
+        total_datapoints = (len(self._positive_prompts) * self._positive_repeats) + (len(self._negative_prompts) * self._negative_repeats)
 
         # Iterate each prompt and either fetch existing data or truly generate data for it
+        curr_index = 0
         for prompt in all_prompts:
            
             # Add prompt
             training_set[prompt] = []
 
             # Handle the repeat count
-            for index in range(self._repeat_count):
+            repeats = self._negative_repeats if curr_index < len(self._negative_prompts) else self._positive_repeats
+            curr_index += 1
+            for index in range(repeats):
 
                 # Update progress
-                percentage = (curr_count * 100) // (len(all_prompts) * self._repeat_count)
-                PrintUtils.start_stage(f'Generating training set ({curr_count} / {len(all_prompts) * self._repeat_count} = {percentage}%)', override_prev=True)
+                percentage = (curr_count * 100) // total_datapoints
+                PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%)', override_prev=True)
                 curr_count += 1
 
                 # Fetch the datapoint for the prompt
