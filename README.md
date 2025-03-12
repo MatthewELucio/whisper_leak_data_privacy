@@ -19,12 +19,12 @@ python3 -m pip install -r ./requirements.txt
 
 Secondly, there are two modes of operation, and therefore two executable files.
 
-### Training
-Run `whisper_leak_train.py`. Note it performs network sniffing, thus requiring to run in high privileges.  
+### Data collection
+Run `whisper_leak_collect.py`. Note it performs network sniffing, thus requiring to run in high privileges.  
 The following commandline illustrate how to use Whisper Leak:
 
 ```
-./whisper_leak_train.py -c gemini -a ./api_key.txt -p ./prompts.json -r 10
+./whisper_leak_collect.py -c gemini -a ./api_key.txt -p ./prompts.json -r 10
 ```
 
 The flags are:
