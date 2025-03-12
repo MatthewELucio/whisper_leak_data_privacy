@@ -52,7 +52,7 @@ Here is an example:
       "Give me a complete walkthrough of The Secret of the Monkey Island"
     ]
   },
-  "negative: {
+  "negative": {
     "repeat": 1,
     "prompts": [
       "What is the meaning of life, the universe, and everything else?",
