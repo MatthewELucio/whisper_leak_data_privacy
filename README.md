@@ -35,6 +35,33 @@ The flags are:
 
 When used, a directory called `training_set` is created and will contain the training set (see more on training in the software architecture piece).
 
+#### Prompts file structure
+The prompts file must adhere to the following JSON format:
+- Incldes a key called `positive` and a key called `negative`.
+- Each of those types has a `repeat` strictly positive integer.
+- Each of those types has a non-empty list called `prompts` which contains prompt strings.
+
+Here is an example:
+
+```json
+{
+  "positive": {
+    "repeat": 4,
+    "prompts": [
+      "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
+      "Give me a complete walkthrough of The Secret of the Monkey Island"
+    ]
+  },
+  "negative: {
+    "repeat": 1,
+    "prompts": [
+      "What is the meaning of life, the universe, and everything else?",
+      "Why should you carry a towel?"
+    ]
+  }
+}
+```
+
 ## Software architecture
 Whisper Leak was built to be easily extensible for different chatbots and models.  
 In a nutshell, the flow of the program is as follows:
