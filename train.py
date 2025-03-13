@@ -9,12 +9,21 @@ import torch.optim as optim
 from torch.utils.data import DataLoader, Subset
 from sklearn.model_selection import train_test_split
 import numpy as np
+import pandas as pd
+from tqdm import tqdm
+
 
 # Import local modules
-from core.classifier import *
-from core.visualization import (set_plot_style, plot_training_curves, plot_roc_curve, 
-                              plot_precision_recall_curve, plot_confusion_matrix, 
-                              plot_score_distribution, create_model_dashboard)
+from core.classifier import (
+    CNNBinaryClassifier, RNNBinaryClassifier, prepare_data, calculate_norm_params, 
+    normalize_dataframe, EarlyStopping, set_seed, train_epoch, 
+    eval_epoch, get_prediction_scores
+)
+from core.visualization import (
+    set_plot_style, plot_training_curves, plot_roc_curve, 
+    plot_precision_recall_curve, plot_confusion_matrix, 
+    plot_score_distribution, create_model_dashboard
+)
 
 # Configure logging
 def setup_logging():
@@ -45,8 +54,9 @@ def main():
     
     BATCH_SIZE = 32
     EPOCHS = 200
-    PATIENCE = 10
+    PATIENCE = 5
     LEARNING_RATE = 0.00001
+    #LEARNING_RATE = 0.0001
     KERNEL_WIDTH = 3  # Best kernel width from cross-validation
     
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -58,9 +68,8 @@ def main():
     logging.info(f"Loading data from {input_folder} and {input_prompts}")
     files = glob.glob('./training_set/*.seq')
     data = []
-    for i, file in enumerate(files):
-        if i % 1000 == 0:
-            logging.info(f"Loading file {i}/{len(files)}: {file}")
+    progress_bar = tqdm(files, desc="Loading")
+    for file in progress_bar:
         with open(file, 'r', encoding='utf8') as f:
             data.append(json.load(f))
     df = pd.DataFrame(data)
@@ -89,6 +98,7 @@ def main():
     logging.info("Preparing data")
     df_train, max_len = prepare_data(df_train)
     df_test, _ = prepare_data(df_test)
+    logging.info(f"Max sequence length being used for model (90th percentile): {max_len}")
     
     # Calculate normalization parameters
     time_norm_params, size_norm_params = calculate_norm_params(df_train, max_len)
@@ -98,9 +108,13 @@ def main():
     df_test_normalized = normalize_dataframe(df_test, time_norm_params, size_norm_params, max_len)
     
     # Save normalization parameters for inference
-    save_normalization_params(time_norm_params, size_norm_params, max_len, 'models/normalization_params.npz')
+    normalization_params = (time_norm_params, size_norm_params, max_len)
+    CNNBinaryClassifier.save_normalization_params(
+        time_norm_params, size_norm_params, max_len, 'models/normalization_params.npz'
+    )
     
-    # Create datasets
+    # Create datasets and loaders for training
+    from core.classifier import PreprocessedTextDataset
     train_dataset = PreprocessedTextDataset(df_train_normalized, max_len)
     test_dataset = PreprocessedTextDataset(df_test_normalized, max_len)
     logging.info("Datasets created.")
@@ -116,9 +130,19 @@ def main():
     val_loader = DataLoader(val_subset, batch_size=BATCH_SIZE, shuffle=False)
     test_loader = DataLoader(test_dataset, batch_size=BATCH_SIZE, shuffle=False)
     
-    # Initialize model
-    model = CNNBinaryClassifier(KERNEL_WIDTH, max_len).to(device)
-    logging.info(f"Model created: {model}")
+    # Choose model architecture (CNN or RNN)
+    model_type = "CNN"  # Could be "CNN" or "RNN"
+    
+    if model_type == "CNN":
+        model = CNNBinaryClassifier(KERNEL_WIDTH, max_len).to(device)
+        model_path = 'models/cnn_binary_classifier.pth'
+    elif model_type == "RNN":
+        model = RNNBinaryClassifier(KERNEL_WIDTH, max_len).to(device)
+        model_path = 'models/rnn_binary_classifier.pth'
+    else:
+        raise ValueError(f"Unsupported model type: {model_type}")
+        
+    logging.info(f"Model created: {model.__class__.__name__}")
     
     # Define loss and optimizer
     criterion = nn.BCELoss()
@@ -167,11 +191,7 @@ def main():
     model.load_state_dict(torch.load('models/checkpoint.pt'))
     
     # Save the final model
-    save_model(
-        model, 
-        'models/cnn_binary_classifier.pth', 
-        normalization_params=(time_norm_params, size_norm_params, max_len)
-    )
+    model.save(model_path, normalization_params=normalization_params)
     
     # Get predictions on validation set for evaluation
     val_scores, val_labels = get_prediction_scores(model, val_loader, device)
@@ -228,6 +248,28 @@ def main():
     logging.info(f"Negative Pred Value: {npv:.4f}")
     logging.info(f"Accuracy:           {accuracy:.4f}")
     logging.info(f"F1 Score:           {f1:.4f}")
+    
+    # Test the inference function
+    logging.info("Testing inference function...")
+    sample_row = df_test.iloc[0]
+    time_diffs, data_lengths = sample_row['time_diffs'], sample_row['data_lengths']
+    
+    # Test with tuple input
+    prob, pred = model.inference(
+        (time_diffs, data_lengths), 
+        device, 
+        normalization_params=normalization_params
+    )
+    logging.info(f"Inference result (tuple input): prob={prob:.4f}, pred={pred}")
+    
+    # Test with DataFrame input
+    sample_df = df_test.iloc[[0]]
+    probs, preds = model.inference(
+        sample_df,
+        device,
+        normalization_params=normalization_params
+    )
+    logging.info(f"Inference result (DataFrame input): prob={probs[0]:.4f}, pred={preds[0]}")
     
     logging.info("Training complete!")
 

@@ -1,3 +1,4 @@
+# classifier.py
 import ast
 import numpy as np
 import pandas as pd
@@ -9,10 +10,142 @@ import logging
 from tqdm import tqdm
 import random
 
-class CNNBinaryClassifier(nn.Module):
+class BaseClassifier(nn.Module):
+    """Base classifier class that can be extended by different model architectures."""
+    def __init__(self, kernel_width=3, max_len=100):
+        super().__init__()
+        self.kernel_width = kernel_width
+        self.max_len = max_len
+        
+    def forward(self, x):
+        """Forward pass to be implemented by subclasses."""
+        raise NotImplementedError("Subclasses must implement forward method")
+    
+    def save(self, filepath, normalization_params=None):
+        """Save model state dictionary and optionally normalization parameters."""
+        torch.save(self.state_dict(), filepath)
+        logging.info(f"Model saved to {filepath}")
+        
+        if normalization_params:
+            time_norm_params, size_norm_params, max_len = normalization_params
+            norm_filepath = filepath.replace('.pth', '_norm_params.npz')
+            self.save_normalization_params(time_norm_params, size_norm_params, max_len, norm_filepath)
+    
+    @classmethod
+    def load(cls, filepath, kernel_width, max_len, device):
+        """Load model from file."""
+        model = cls(kernel_width, max_len).to(device)
+        model.load_state_dict(torch.load(filepath, map_location=device))
+        model.eval()
+        logging.info(f"Model loaded from {filepath}")
+        return model
+    
+    def inference(self, input_data, device, normalization_params=None):
+        """
+        Run inference on input data.
+        
+        Args:
+            input_data: Can be a DataFrame or a tuple of (time_diffs, data_lengths)
+            device: The device to run inference on
+            normalization_params: Optional normalization parameters
+            
+        Returns:
+            Predicted probabilities and binary predictions
+        """
+        self.eval()
+        
+        # Handle different input types
+        if isinstance(input_data, pd.DataFrame):
+            # If DataFrame is provided, normalize it and create a dataset
+            if normalization_params is None:
+                raise ValueError("Normalization parameters must be provided for DataFrame input")
+                
+            time_norm_params, size_norm_params, max_len = normalization_params
+            df_normalized = normalize_dataframe(input_data, time_norm_params, size_norm_params, max_len)
+            dataset = PreprocessedTextDataset(df_normalized, max_len)
+            dataloader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=False)
+            
+            all_probs = []
+            with torch.no_grad():
+                for X, _ in dataloader:
+                    X = X.to(device)
+                    output = self(X)
+                    all_probs.extend(output.cpu().numpy().flatten())
+            
+            all_probs = np.array(all_probs)
+            predictions = (all_probs > 0.5).astype(int)
+            
+            return all_probs, predictions
+            
+        elif isinstance(input_data, tuple) and len(input_data) == 2:
+            # If tuple of arrays is provided, normalize directly
+            time_diffs, data_lengths = input_data
+            
+            if normalization_params is None:
+                raise ValueError("Normalization parameters must be provided for raw input")
+                
+            time_norm_params, size_norm_params, max_len = normalization_params
+            
+            # Normalize and prepare input
+            normalized_time = []
+            normalized_size = []
+            
+            for i, val in enumerate(time_diffs):
+                if i < max_len:
+                    mean, std = time_norm_params[i]
+                    normalized_time.append((val - mean) / std)
+                    
+            for i, val in enumerate(data_lengths):
+                if i < max_len:
+                    mean, std = size_norm_params[i]
+                    normalized_size.append((val - mean) / std)
+            
+            # Pad sequences
+            time_padded = np.zeros(max_len)
+            size_padded = np.zeros(max_len)
+            
+            time_padded[:len(normalized_time)] = normalized_time[:max_len]
+            size_padded[:len(normalized_size)] = normalized_size[:max_len]
+            
+            # Prepare tensor
+            sample = np.stack([time_padded, size_padded], axis=0)
+            tensor_input = torch.tensor(sample, dtype=torch.float32).unsqueeze(0).to(device)
+            
+            # Run inference
+            with torch.no_grad():
+                output = self(tensor_input)
+                prob = output.cpu().numpy().flatten()[0]
+                prediction = 1 if prob > 0.5 else 0
+                
+            return prob, prediction
+        else:
+            raise ValueError("Input must be either a DataFrame or a tuple of (time_diffs, data_lengths)")
+    
+    @staticmethod
+    def save_normalization_params(time_norm_params, size_norm_params, max_len, filename="normalization_params.npz"):
+        """Save normalization parameters to a file."""
+        np.savez(
+            filename, 
+            time_norm_params=np.array(time_norm_params, dtype=object),
+            size_norm_params=np.array(size_norm_params, dtype=object),
+            max_len=np.array([max_len])
+        )
+        logging.info(f"Normalization parameters saved to {filename}")
+    
+    @staticmethod
+    def load_normalization_params(filename="normalization_params.npz"):
+        """Load normalization parameters from file."""
+        loaded = np.load(filename, allow_pickle=True)
+        time_norm_params = loaded['time_norm_params']
+        size_norm_params = loaded['size_norm_params']
+        max_len = int(loaded['max_len'][0])
+        return time_norm_params, size_norm_params, max_len
+
+
+class CNNBinaryClassifier(BaseClassifier):
     """CNN model for binary classification of sequential data."""
     def __init__(self, kernel_width, max_len):
-        super().__init__()
+        super().__init__(kernel_width, max_len)
         # More layers for better reasoning
         self.conv1 = nn.Conv2d(1, 32, kernel_size=(2, kernel_width), padding=(0, kernel_width // 2))
         self.bn1 = nn.BatchNorm2d(32)
@@ -61,24 +194,146 @@ class CNNBinaryClassifier(nn.Module):
         return x
 
 
-def save_model(model, filepath, normalization_params=None):
-    """Save model state dictionary and optionally normalization parameters."""
-    torch.save(model.state_dict(), filepath)
-    logging.info(f"Model saved to {filepath}")
+class RNNBinaryClassifier(BaseClassifier):
+    """Enhanced RNN model for binary classification of sequential data."""
+    def __init__(self, kernel_width, max_len, hidden_size=128, num_layers=2, dropout_rate=0.3):
+        super().__init__(kernel_width, max_len)
+        self.hidden_size = hidden_size
+        self.num_layers = num_layers
+        self.max_len = max_len
+        
+        # Feature embedding layers to better represent the inputs
+        self.time_embedding = nn.Sequential(
+            nn.Linear(1, 32),
+            nn.ReLU(),
+            nn.LayerNorm(32)
+        )
+        
+        self.size_embedding = nn.Sequential(
+            nn.Linear(1, 32),
+            nn.ReLU(),
+            nn.LayerNorm(32)
+        )
+        
+        # Combined feature dimension after embedding
+        self.feature_dim = 64  # 32 + 32
+        
+        # Main LSTM layer
+        self.lstm = nn.LSTM(
+            input_size=self.feature_dim,
+            hidden_size=hidden_size,
+            num_layers=num_layers,
+            batch_first=True,
+            bidirectional=True,
+            dropout=dropout_rate if num_layers > 1 else 0
+        )
+        
+        # Attention mechanism for focusing on important parts of the sequence
+        self.attention = nn.Sequential(
+            nn.Linear(hidden_size * 2, 128),  # *2 for bidirectional
+            nn.Tanh(),
+            nn.Linear(128, 1)
+        )
+        
+        # Multiple fully connected layers with batch normalization
+        self.fc_layers = nn.Sequential(
+            nn.Linear(hidden_size * 2, hidden_size),
+            nn.BatchNorm1d(hidden_size),
+            nn.ReLU(),
+            nn.Dropout(dropout_rate),
+            nn.Linear(hidden_size, 64),
+            nn.BatchNorm1d(64),
+            nn.ReLU(),
+            nn.Dropout(dropout_rate),
+            nn.Linear(64, 1)
+        )
+        
+        # Initialize weights
+        self._init_weights()
+        
+    def _init_weights(self):
+        """Initialize weights for faster convergence."""
+        for name, param in self.lstm.named_parameters():
+            if 'weight' in name:
+                nn.init.orthogonal_(param)
+            elif 'bias' in name:
+                nn.init.constant_(param, 0.0)
+                
+        for m in self.modules():
+            if isinstance(m, nn.Linear):
+                nn.init.xavier_uniform_(m.weight)
+                if m.bias is not None:
+                    nn.init.constant_(m.bias, 0.0)
     
-    if normalization_params:
-        time_norm_params, size_norm_params, max_len = normalization_params
-        norm_filepath = filepath.replace('.pth', '_norm_params.npz')
-        save_normalization_params(time_norm_params, size_norm_params, max_len, norm_filepath)
+    def _apply_attention(self, lstm_output, mask=None):
+        """Apply attention mechanism to LSTM output."""
+        # lstm_output shape: [batch_size, seq_len, hidden_size*2]
+        attention_weights = self.attention(lstm_output)  # [batch_size, seq_len, 1]
+        
+        # Apply mask if provided (for padded sequences)
+        if mask is not None:
+            attention_weights = attention_weights.masked_fill(mask.unsqueeze(2) == 0, float('-inf'))
+        
+        attention_weights = torch.softmax(attention_weights, dim=1)
+        
+        # Apply attention weights to LSTM output
+        context_vector = torch.sum(attention_weights * lstm_output, dim=1)  # [batch_size, hidden_size*2]
+        return context_vector, attention_weights
+        
+    def forward(self, x):
+        """
+        Forward pass through the network.
+        
+        Args:
+            x: Input tensor of shape [batch_size, 2, max_len]
+        """
+        batch_size = x.size(0)
+        
+        # Create a mask for padding (1 for real values, 0 for padding)
+        # Assuming padding values are exactly 0
+        mask = (x.sum(dim=1) != 0).float()  # [batch_size, max_len]
+        
+        # Split time and size features
+        time_features = x[:, 0, :].unsqueeze(2)  # [batch_size, max_len, 1]
+        size_features = x[:, 1, :].unsqueeze(2)  # [batch_size, max_len, 1]
+        
+        # Apply embedding layers
+        time_embedded = self.time_embedding(time_features)  # [batch_size, max_len, 32]
+        size_embedded = self.size_embedding(size_features)  # [batch_size, max_len, 32]
+        
+        # Concatenate embedded features
+        embedded = torch.cat([time_embedded, size_embedded], dim=2)  # [batch_size, max_len, 64]
+        
+        # Pack the padded sequence for LSTM efficiency
+        # This helps the LSTM ignore padded time steps
+        packed_embedded = nn.utils.rnn.pack_padded_sequence(
+            embedded, 
+            lengths=mask.sum(dim=1).cpu().int(),
+            batch_first=True,
+            enforce_sorted=False
+        )
+        
+        # Pass through LSTM
+        packed_output, _ = self.lstm(packed_embedded)
+        
+        # Unpack the sequence
+        lstm_output, _ = nn.utils.rnn.pad_packed_sequence(
+            packed_output, 
+            batch_first=True,
+            total_length=self.max_len
+        )
+        
+        # Apply attention mechanism
+        context_vector, _ = self._apply_attention(lstm_output, mask)
+        
+        # Pass through fully connected layers with batch normalization
+        output = self.fc_layers(context_vector)
+        
+        # Apply sigmoid for binary classification
+        output = torch.sigmoid(output)
+        
+        return output
 
-
-def load_model(filepath, kernel_width, max_len, device):
-    """Load model from file."""
-    model = CNNBinaryClassifier(kernel_width, max_len).to(device)
-    model.load_state_dict(torch.load(filepath, map_location=device))
-    model.eval()
-    logging.info(f"Model loaded from {filepath}")
-    return model
 
 
 class PreprocessedTextDataset(Dataset):
@@ -110,15 +365,12 @@ class PreprocessedTextDataset(Dataset):
 
 def prepare_data(df):
     """Load and prepare datasets from a dataframe files."""
-    logging.info("Loading datasets...")
 
     # Preprocess datasets
-    logging.info("Preprocessing datasets...")
     df['time_diffs'] = df['time_diffs'].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
     df['data_lengths'] = df['data_lengths'].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
 
     len_90p = int(np.percentile(df['data_lengths'].apply(len), 90))
-    logging.info(f"Sequence length (90th percentile): {len_90p}")
 
     return df, len_90p
 
@@ -181,26 +433,6 @@ def normalize_dataframe(df, time_norm_params, size_norm_params, max_len):
     df_normalized['normalized_data_lengths'] = normalized_data_lengths
     
     return df_normalized
-
-
-def save_normalization_params(time_norm_params, size_norm_params, max_len, filename="normalization_params.npz"):
-    """Save normalization parameters to a file."""
-    np.savez(
-        filename, 
-        time_norm_params=np.array(time_norm_params, dtype=object),
-        size_norm_params=np.array(size_norm_params, dtype=object),
-        max_len=np.array([max_len])
-    )
-    logging.info(f"Normalization parameters saved to {filename}")
-
-
-def load_normalization_params(filename="normalization_params.npz"):
-    """Load normalization parameters from file."""
-    loaded = np.load(filename, allow_pickle=True)
-    time_norm_params = loaded['time_norm_params']
-    size_norm_params = loaded['size_norm_params']
-    max_len = int(loaded['max_len'][0])
-    return time_norm_params, size_norm_params, max_len
 
 
 class EarlyStopping:
