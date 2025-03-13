@@ -2,15 +2,11 @@ from core.utils import OsUtils
 from core.utils import PrintUtils
 from core.utils import NetworkUtils
 
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import classification_report
-
 import numpy
 import hashlib
 import os
 import pyshark
-import struct
+import json
 
 class Datapoint(object):
     """
@@ -38,13 +34,34 @@ class Datapoint(object):
         else:
             self.load_seq()
 
-    def exists(self):
+    def exists(self, include_pcap=False):
         """
-            Indicates if the datapoint actually exists.
+            Indicates if the datapoint actually exists (we only account for the sequence file).
         """
 
-        # Indicate
-        return os.path.isfile(self.pcap_path) and os.path.isfile(self.seq_path)
+        # Indicate files exist
+        if include_pcap:
+            if not os.path.isfile(self.pcap_path):
+                return False
+        return os.path.isfile(self.seq_path)
+
+    @staticmethod
+    def _validate_seq(seq):
+        """
+            Validates a sequence.
+        """
+
+        # Validate all fields
+        assert isinstance(seq, dict), Exception('Invalid sequence type')
+        assert 'local_port' in seq and isinstance(seq['local_port'], int) and seq['local_port'] > 0 and seq['local_port'] <= 0xFFFF, Exception(f'Missing or invalid local port data in sequence file: {self.seq_path}')
+        assert 'remote_port' in seq and isinstance(seq['remote_port'], int) and seq['remote_port'] > 0 and seq['remote_port'] <= 0xFFFF, Exception(f'Missing or invalid remote port data in sequence file: {self.seq_path}')
+        assert 'temperature' in seq and isinstance(seq['temperature'], float) and seq['temperature'] >= 0, Exception(f'Missing or invalid temperature in sequence file: {self.seq_path}')
+        assert 'prompt' in seq and isinstance(seq['prompt'], str) and len(seq['prompt']) > 0, Exception(f'Missing or invalid prompt in sequence file: {self.seq_path}')
+        assert 'response' in seq and isinstance(seq['response'], str) and len(seq['response']) > 0, Exception(f'Missing or invalid response in sequence file: {self.seq_path}')
+        assert 'data_lengths' in seq and isinstance(seq['data_lengths'], list) and len([ val for val in seq['data_lengths'] if (not isinstance(val, int)) or val < 0 ]) == 0, Exception(f'Missing or invalid data lengths in sequence file: {self.seq_path}')
+        assert 'time_diffs' in seq and isinstance(seq['time_diffs'], list) and len([ val for val in seq['time_diffs'] if (not isinstance(val, float)) or val < 0 ]) == 0, Exception(f'Missing or invalid time differences list in sequence file: {self.seq_path}')
+        assert len(seq['data_lengths']) == len(seq['time_diffs']), Exception(f'Time differences and data lenghts size mismatch in sequence file: {self.seq_path}')
+        assert len(seq['data_lengths']) > 0, Exception('No data found in sequence file: {self.seq_path}')
 
     def load_seq(self):
         """
@@ -55,23 +72,25 @@ class Datapoint(object):
         assert self.exists(), Exception('Datapoint does not exist')
 
         # Deserialize the sequence data
-        self.seq = []
-        with open(self.seq_path, 'rb') as fp:
+        with open(self.seq_path, 'r') as fp:
+            
+            # Load as JSON
+            self.seq = json.load(fp)
 
-            # Read the local and remote ports
-            self.local_port, self.remote_port = struct.unpack('<HH', fp.read(struct.calcsize('<HH')))
+        # Validate JSON
+        self.__class__._validate_seq(self.seq)
+    
+    def save_seq(self):
+        """
+            Saves the sequence to the sequence file.
+        """
 
-            # Read the sequence itself
-            while True:
-                chunk = fp.read(struct.calcsize('<dL'))
-                if len(chunk) == 0:
-                    break
-                self.seq.append(struct.unpack('<dL', chunk))
+        # Validate sequence and save it
+        self.__class__._validate_seq(self.seq)
+        with open(self.seq_path, 'w') as fp:
+            json.dump(self.seq, fp, indent=2)
 
-        # Validate we have data
-        assert len(self.seq) > 0, Exception(f'Empty data for sequence file: {self.seq_path}')
-
-    def generate_seq(self, local_port, remote_port):
+    def generate_seq(self, local_port, remote_port, prompt, response, temperature):
         """
             Runs the analysis on the PCAP path and writes the sequence file.
             Note this also automatically populates the sequence data in the datapoint.
@@ -84,10 +103,18 @@ class Datapoint(object):
         cap = None
         try:
 
+            # Start building the sequence
+            self.seq = {}
+            self.seq['local_port'] = local_port
+            self.seq['remote_port'] = remote_port
+            self.seq['prompt'] = prompt
+            self.seq['response'] = response
+            self.seq['temperature'] = temperature
+            self.seq['data_lengths'] = []
+            self.seq['time_diffs'] = []
+
             # Run the analysis
             cap = pyshark.FileCapture(self.pcap_path, display_filter=f'tcp.port == {local_port} || tcp.port == {remote_port}')
-            serialized_seq = b''
-            self.seq = []
             client_hello_found = False
             prev_sniff_time = None
 
@@ -110,17 +137,15 @@ class Datapoint(object):
                 if hasattr(packet.tls, 'app_data') and int(packet.tcp.dstport) == local_port and int(packet.tcp.srcport) == remote_port:
                     timestamp = float(packet.sniff_time.timestamp())
                     data_length = int(packet.length)
-                    self.seq.append((timestamp - prev_sniff_time, data_length))
-                    serialized_seq += struct.pack('<dL', timestamp - prev_sniff_time, data_length)
+                    self.seq['data_lengths'].append(data_length)
+                    self.seq['time_diffs'].append(timestamp - prev_sniff_time)
                     prev_sniff_time = timestamp
 
             # Validate some data was acquired
             assert len(self.seq) > 0, Exception(f'PCAP file has no data: {self.pcap_path}')
 
-            # Commit data to sequence file
-            with open(self.seq_path, 'wb') as fp:
-                serialized_seq = struct.pack('<HH', local_port, remote_port) + serialized_seq
-                fp.write(serialized_seq)
+            # Write the sequence file
+            self.save_seq()
 
         # Cleanup
         finally:
@@ -134,33 +159,30 @@ class TrainingSetCollector(object):
         The training set collector.
     """
 
-    def __init__(self, prompts, repeat_count, out_directory_base, remote_tls_port):
+    def __init__(self, positive_prompts, positive_repeats, negative_prompts, negative_repeats, out_directory_base, remote_tls_port):
         """
             Creates an instance.
         """
 
         # Save members
-        self._prompts = prompts
-        self._repeat_count = repeat_count
+        self._positive_prompts = positive_prompts
+        self._positive_repeats = positive_repeats
+        self._negative_prompts = negative_prompts
+        self._negative_repeats = negative_repeats
         self._remote_tls_port = remote_tls_port
 
-        # Create a hash of the prompts
-        prompts_hash = hashlib.sha1() 
-        for prompt in prompts:
-            prompts_hash.update(prompt.encode())
-
-        # Get the output directory for the prompts
-        OsUtils.mkdir(out_directory_base)
-        self._out_dir = os.path.join(out_directory_base, prompts_hash.hexdigest())
+        # Create and save the output directory
+        self._out_dir = out_directory_base
         assert OsUtils.mkdir(self._out_dir), Exception(f'Could not get or make directory "{self._out_dir}"')
 
-    def get_datapoint(self, prompt, index):
+    def get_datapoint(self, prompt, index, chatbot_name):
         """
-            Gets a datapoint for the given prompt and index.
+            Gets a datapoint for the given prompt, an index and the chatbot name.
         """
 
         # Get the file paths
-        base_path = os.path.join(self._out_dir, f'{hashlib.sha1(prompt.encode()).hexdigest()}_{index}')
+        chatbot_name_normalized = chatbot_name.replace(' ', '_')
+        base_path = os.path.join(self._out_dir, f'{hashlib.sha1(prompt.encode()).hexdigest()}_{index}_{chatbot_name_normalized}')
         pcap_path = f'{base_path}.pcap'
         seq_path = f'{base_path}.seq'
 
@@ -227,21 +249,29 @@ class TrainingSetCollector(object):
         training_set = {}
         last_local_port = 0
 
+        # Save all prompts
+        all_prompts = self._negative_prompts + self._positive_prompts
+        total_datapoints = (len(self._positive_prompts) * self._positive_repeats) + (len(self._negative_prompts) * self._negative_repeats)
+
         # Iterate each prompt and either fetch existing data or truly generate data for it
-        for prompt in self._prompts:
+        curr_index = 0
+        for prompt in all_prompts:
            
             # Add prompt
             training_set[prompt] = []
 
             # Handle the repeat count
-            for index in range(self._repeat_count):
+            repeats = self._negative_repeats if curr_index < len(self._negative_prompts) else self._positive_repeats
+            curr_index += 1
+            for index in range(repeats):
 
                 # Update progress
-                PrintUtils.start_stage(f'Generating training set ({curr_count} / {len(self._prompts) * self._repeat_count})', override_prev=True)
+                percentage = (curr_count * 100) // total_datapoints
+                PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%)', override_prev=True)
                 curr_count += 1
 
                 # Fetch the datapoint for the prompt
-                datapoint = self.get_datapoint(prompt, index)
+                datapoint = self.get_datapoint(prompt, index, chatbot_class.__name__)
                 if datapoint.exists():
                     skip_count += 1
                     training_set[prompt].append(datapoint)
@@ -252,18 +282,26 @@ class TrainingSetCollector(object):
 
                 # Create a chatbot object to make sure we get fresh connections
                 chatbot_obj = chatbot_class(api_key, self._remote_tls_port)
-                chatbot_obj.send_prompt(prompt)
+                temperature = chatbot_obj.get_temperature()
+                response, local_port = chatbot_obj.send_prompt(prompt, temperature)
+                assert isinstance(response, str), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
+                assert len(response) > 0, Exception(f'Got empty response for prompt: {prompt}')
 
-                # Discover new ports and stop sniffing
-                new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
-                NetworkUtils.stop_sniffing_tls()
-                new_local_ports = [ port for port in new_local_ports if last_local_port != port ]
-                assert len(new_local_ports) < 2, Exception('Ambiguity in local TLS ports')
-                if len(new_local_ports) == 1:
-                    last_local_port = new_local_ports[0]
+                # Discover new ports and stop sniffing (unless local port was provided by chatbot)
+                if local_port is None:
+                    new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
+                    NetworkUtils.stop_sniffing_tls()
+                    new_local_ports = [ port for port in new_local_ports if last_local_port != port ]
+                    assert len(new_local_ports) < 2, Exception('Ambiguity in local TLS ports')
+                    if len(new_local_ports) == 1:
+                        last_local_port = new_local_ports[0]
+                else:
+                    assert local_port > 0 and local_port <= 0xFFFF, Exception(f'Invalid port indicated by chatbot: {local_port}')
+                    last_local_port = local_port
+                    NetworkUtils.stop_sniffing_tls()
 
                 # Perform the analysis and set the data
-                datapoint.generate_seq(last_local_port, self._remote_tls_port)
+                datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, response, temperature)
                 training_set[prompt].append(datapoint)
 
         # Finish stage and return the training set

@@ -3,10 +3,11 @@ from core.utils import PrintUtils
 from core.utils import OsUtils
 from core.utils import ThrowingArgparse
 from core.utils import NetworkUtils
-from core.chatbot_base import ChatbotLoaderUtils
+from core.chatbot_utils import ChatbotUtils
 from core.model import TrainingSetCollector
 
 import os
+import json
 
 def get_self_dir():
     """
@@ -26,11 +27,9 @@ def parse_arguments():
     parser = ThrowingArgparse()
     parser.add_argument('-c', '--chatbot', help='The chatbot', required=True)
     parser.add_argument('-a', '--apikey', help='The API key for the chatbot', required=True)
-    parser.add_argument('-p', '--prompts', help='The prompts file path', required=True)
-    parser.add_argument('-r', '--repetition',type=int,  help='The repetition count per prompt', default=5)
+    parser.add_argument('-p', '--prompts', help='The prompts JSON file path', required=True)
     parser.add_argument('-t', '--tlsport', type=int, help='The remote TLS port', default=443)
     args = parser.parse_args()
-    assert args.repetition > 0, Exception(f'Invalid repetition count: {args.repetition}')
     assert args.tlsport > 0 and args.tlsport <= 0xFFFF, Exception(f'Invalid remote TLS port: {args.tlsport}')
     PrintUtils.end_stage()
 
@@ -44,7 +43,7 @@ def get_chatbot_class(chatbot_name):
 
     # Load all chatbots
     PrintUtils.start_stage('Loading chatbots')
-    chatbots = ChatbotLoaderUtils.load_chatbots(os.path.join(get_self_dir(), 'chatbots'))
+    chatbots = ChatbotUtils.load_chatbots(os.path.join(get_self_dir(), 'chatbots'))
     assert len(chatbots) > 0, Exception('Could not load any chatbots')
     chatbot_names = ', '.join([ f'*{name}*' for name in chatbots.keys() ])
     PrintUtils.print_extra(f'Loaded chatbots: {chatbot_names}')
@@ -60,13 +59,49 @@ def get_chatbot_class(chatbot_name):
     # Return the class
     return chatbot_class
 
+def read_prompts(json_path):
+    """
+        Reads prompts file and validate its structure.
+    """
+
+    # Read prompts
+    PrintUtils.start_stage(f'Reading prompts')
+    with open(json_path, 'r') as fp:
+        contents = json.load(fp)
+
+    # Validate the file structure
+    assert isinstance(contents, dict), Exception('Invalid format for prompts JSON file')
+    prompt_types = [ 'positive', 'negative' ]
+    for prompt_type in prompt_types:
+        prompts_data = contents.get(prompt_type, None)
+        assert prompts_data is not None, Exception(f'Missing {prompt_type} prompts')
+        assert isinstance(prompts_data, dict), Exception(f'Invalid structure for {prompt_type} prompts')
+        repeats = prompts_data.get('repeat', None)
+        assert repeats is not None, Exception(f'Missing key "repeat" in {prompt_type} prompts')
+        assert isinstance(repeats, int) and repeats > 0, Exception(f'Invalid repeat value in {prompt_type} prompts')
+        prompts = prompts_data.get('prompts', None)
+        assert prompts is not None, Exception(f'Missing key "prompts" in {prompt_type} prompts')
+        assert isinstance(prompts, list), Exception(f'Invalid structure for prompts in {prompts_type} prompts')
+        assert len(prompts) > 0, Exception(f'The prompt list for {prompt_type} prompts is empty')
+        assert len([ elem for elem in prompts if not isinstance(elem, str) ]) == 0, Exception('Invalid prompt format in {prompts_type} prompts')
+        PrintUtils.print_extra(f'Loaded *{len(prompts)}* {prompt_type} prompts with repetition of *{repeats}*')
+
+    # Return result
+    PrintUtils.end_stage()
+    return contents
+
 def main():
     """
         Main routine.
     """
 
     # Catch-all
+    is_user_cancelled = False
+    last_error = None
     try:
+
+        # Suppress STDERR
+        OsUtils.suppress_stderr()
 
         # Print logo
         PrintUtils.print_logo()
@@ -93,21 +128,13 @@ def main():
         # Get the chatbot object
         chatbot_class = get_chatbot_class(args.chatbot)
 
-        # Read prompts 
-        PrintUtils.start_stage('Reading prompts')
-        with open(args.prompts, 'r') as fp:
-            prompts = [ line.strip() for line in fp.read().split('\n') if len(line.strip()) > 0 ]
-        assert len(prompts) > 0, Exception('Could not load any prompts')
-        PrintUtils.print_extra(f'Loaded *{len(prompts)}* prompts')
-        PrintUtils.print_extra(f'Requiring a total of *{len(prompts) * args.repetition}* datapoints')
-        PrintUtils.end_stage()
-
-        # Get the training set
-        collector = TrainingSetCollector(prompts, args.repetition, os.path.join(get_self_dir(), 'training_set'), args.tlsport)
+        # Read prompts
+        prompts = read_prompts(args.prompts)
+        
+        # Build the training set
+        training_set_path = os.path.join(get_self_dir(), 'training_set')
+        collector = TrainingSetCollector(prompts['positive']['prompts'], prompts['positive']['repeat'], prompts['negative']['prompts'], prompts['negative']['repeat'], training_set_path, args.tlsport)
         training_set = collector.get_training_set(chatbot_class, api_key)
-
-        # Prepare the classifier
-        classifier = collector.prepare_classifier(training_set)
 
     # Handle exceptions
     except Exception as ex:
@@ -115,15 +142,33 @@ def main():
         # Optionally fail stage
         if PrintUtils.is_in_stage():
             PrintUtils.end_stage(fail_message=ex, throw_on_fail=False)
-        
-        # Print error
-        PrintUtils.print_error(ex)
+       
+        # Save error and print it as an extra
+        PrintUtils.print_extra(f'Error: {ex}')
+        last_error = ex
+
+    # Handle cancel operations
+    except KeyboardInterrupt:
+        if PrintUtils.is_in_stage():
+            PrintUtils.end_stage(fail_message='', throw_on_fail=False)
+        PrintUtils.print_extra(f'Operation *cancelled* by user - please wait for cleanup code to complete')
+        is_user_cancelled = True
 
     # Cleanups
     finally:
 
         # Cleanup any sniffing that may still be happening
+        PrintUtils.start_stage('Running cleanup code')
         NetworkUtils.stop_sniffing_tls(best_effort=True)
+        PrintUtils.end_stage()
+
+        # Print final status
+        if last_error is not None:
+            PrintUtils.print_error(last_error)
+        elif is_user_cancelled:
+            PrintUtils.print_extra(f'Operation *cancelled* by user')
+        else:
+            PrintUtils.print_extra(f'Finished successfully')
 
 if __name__ == '__main__':
     main()
