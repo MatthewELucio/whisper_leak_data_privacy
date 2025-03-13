@@ -69,7 +69,7 @@ def main():
     logging.info("Loading prompts.json")
     with open('prompts.json', 'r', encoding='utf8') as f:
         prompts = json.load(f)
-    df['target'] = df['prompt'].apply(lambda x: 1 if x in prompts['positive'] else 0)
+    df['target'] = df['prompt'].apply(lambda x: 1 if x in prompts['positive']['prompts'] else 0)
 
     # Split into train and test sets. Hold out 20% of unique 'prompts' values for test set.
     logging.info("Splitting into train and test sets")
