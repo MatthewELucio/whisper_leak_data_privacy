@@ -4,3 +4,4 @@ psutil==7.0.0
 pyshark==0.6
 scikit-learn
 pandas
+tqdm
