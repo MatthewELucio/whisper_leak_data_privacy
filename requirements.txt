@@ -7,3 +7,4 @@ pyshark==0.6
 scikit_learn==1.6.1
 pandas
 tqdm
+torch==1.12.1
