@@ -138,16 +138,40 @@ Therefore, our algorithm does the following:
 3. Finds new TCP local sockets by our own process.
 4. Stops sniffing and only take into account TLS cases where the local port is the port we have discovered.
 
-### Training
-The training is done by matching prompts with sniffed TLS data.  
+### Datapoints
+Data collection and training are done by matching prompts with sniffed TLS data.  
 Since we do not want to retrain the data everytime we run Whisper Leak, a directory called `training_set` is created.  
 In it, files starting with the hash of the prompts are saved. This assures changes to the prompts create new training sets, but data could be reused assuming prompts do not change.  
+The filename format is: `<prompt_sha1>_<index>_<chatbotname>[.pcap|.seq]`.  
 When collecting data, a `pcap` file is saved for each prompt and each repetition, alongside a `sequence` file.  
 The `pcap` file contains the raw sniffing of data, while the `sequence` file is the serialization of the aforementioned `ApplicationData` byte sizes and times between those chunks of data.  
-The `sequence` files have a `.seq` as an extension, and have the following format:
-- 2 bytes, little Endian unsigned integer: local TLS port
-- 2 bytes, little Endian unsigned integer: remote TLS port
-- A sequence of datapoints, each datapoint has:
-    - 8 bytes, little Endian, IEEE754 (double precision float-point): time between packets in milliseconds
-    - 4 bytes, little Endian unsigned integer: ApplicationData size in bytes
+The `sequence` files have a `.seq` as an extension, and is in JSON format. It has the following data:
+- The `local_port` that was used (as an integer between 1 and 65535).
+- The `remote_port` of the server (as an integer between 1 and 65535).
+- The `prompt` (as a non-empty string).
+- The server's `response` (as a non-empty string).
+- The `temperature` (as a floating-point number between 0.0 and 2.0).
+- A non-empty non-negative integer array with the name `data_lengths`, each of which represents TLS Application Data data sizes.
+- A non-empty non-negative floating-point array with the name `time_diffs`, each of which represents the time in milliseconds between the last communication.
+The two arrays must have the same size, and the first element in `time_diffs` represent the time between the TLS handshake and the first TLS application data.
+
+For example:
+
+```json
+{
+  "local_port": 39798,
+  "remote_port": 443,
+  "prompt": "What is the meaning of life?",
+  "response": "I think it is 42",
+  "temperature": 1.0,
+  "data_lengths": [
+    104,
+    1337
+  ],
+  "time_diffs": [
+    7331,
+    666
+  ]
+}
+```
 
