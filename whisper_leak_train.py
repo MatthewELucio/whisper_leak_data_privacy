@@ -22,13 +22,15 @@ from core.visualization import create_model_dashboard
 from core.utils import ThrowingArgparse
 from core.utils import PrintUtils
 from core.utils import OsUtils
+from core.chatbot_utils import ChatbotUtils
 
 import json
 import os
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import DataLoader, Subset
+from torch.utils.data import DataLoader
+from torch.utils.data import Subset
 from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
@@ -46,12 +48,20 @@ def parse_arguments():
         Parse arguments.
     """
 
+    # Load all chatbots
+    PrintUtils.start_stage('Loading chatbots')
+    chatbots = ChatbotUtils.load_chatbots(os.path.join(get_self_dir(), 'chatbots'))
+    assert len(chatbots) > 0, Exception('Could not load any chatbots')
+    chatbot_names = ', '.join([ f'*{name}*' for name in chatbots.keys() ])
+    PrintUtils.print_extra(f'Loaded chatbots: {chatbot_names}')
+    PrintUtils.end_stage()
+
     # Parsing arguments
     PrintUtils.start_stage('Parsing command-line arguments')
     parser = ThrowingArgparse()
-    parser.add_argument('-c', '--chatbot', help='The chatbot. (DeepSeekV3OpenRouter or TBD)', required=True)
-    parser.add_argument('-m', '--modeltype', help='The model type. CNN or LSTM.', default="CNN")
-    parser.add_argument('-p', '--prompts', help='The prompts JSON file path', default="prompts.json")
+    parser.add_argument('-c', '--chatbot', help='The chatbot.', required=True)
+    parser.add_argument('-m', '--modeltype', help='The model type (CNN or LSTM).', default='CNN')
+    parser.add_argument('-p', '--prompts', help='The prompts JSON file path', default='prompts.json')
     parser.add_argument('-s', '--seed', type=int, help='The random seed', default=42)
     parser.add_argument('-b', '--batchsize', type=int, help='The batch size', default=32)
     parser.add_argument('-e', '--epochs', type=int, help='The number of epochs', default=200)
@@ -339,11 +349,6 @@ def main():
 
     # Handle exceptions
     except Exception as ex:
-
-        import traceback
-        sss = traceback.format_exc()
-        print(sss)
-        import pdb; pdb.set_trace()
 
         # Optionally fail stage
         if PrintUtils.is_in_stage():
