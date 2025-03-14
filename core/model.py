@@ -189,52 +189,6 @@ class TrainingSetCollector(object):
         # Return the datapoint
         return Datapoint(pcap_path, seq_path)
 
-    def prepare_classifier(self, training_set):
-        """
-            Prepares the classifier for the given training set.
-        """
-
-        # Start a stage
-        PrintUtils.start_stage('Preparing classifier')
-
-        # Split training set to data (x) and labels (y)
-        x = []
-        y = []
-
-        # Iterate the entire training set
-        for label, samples in training_set.items():
-
-            # Create feature vectors from all samples
-            feature_vectors = []
-            for sample in samples:
-
-                # Extract statistical features
-                times, sizes = zip(*sample.seq)
-                feature_vector = [
-                    numpy.mean(times), numpy.std(times), numpy.min(times), numpy.max(times),  # Time stats
-                    numpy.mean(sizes), numpy.std(sizes), numpy.min(sizes), numpy.max(sizes),  # Size stats
-                ]
-                feature_vectors.append(feature_vector)
-            
-            # Aggregate all samples per label
-            x.append(numpy.mean(feature_vectors, axis=0))  # Take mean across samples
-            y.append(label)
-
-        # Turn into numpy arrays
-        x, y = numpy.array(x), numpy.array(y)
-
-        # Normalize
-        scaler = StandardScaler()
-        x_scaled = scaler.fit_transform(x)
-
-        # Train classifier
-        model = RandomForestClassifier(n_estimators=100, random_state=42)
-        model.fit(x_scaled, y)
-
-        # Return classifier
-        PrintUtils.end_stage()
-        return model
-
     def get_training_set(self, chatbot_class, api_key):
         """
             Gets or generates the training set for the given chatbot class.
