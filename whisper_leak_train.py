@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from core.classifier import CNNBinaryClassifier
-from core.classifier import RNNBinaryClassifier
+from core.classifier import LSTMBinaryClassifier
 from core.classifier import prepare_data
 from core.classifier import calculate_norm_params
 from core.classifier import normalize_dataframe
@@ -49,15 +49,15 @@ def parse_arguments():
     # Parsing arguments
     PrintUtils.start_stage('Parsing command-line arguments')
     parser = ThrowingArgparse()
-    parser.add_argument('-c', '--chatbot', help='The chatbot', required=True)
-    parser.add_argument('-m', '--modeltype', help='The model type', required=True)
-    parser.add_argument('-p', '--prompts', help='The prompts JSON file path', required=True)
+    parser.add_argument('-c', '--chatbot', help='The chatbot. (DeepSeekV3OpenRouter or TBD)', required=True)
+    parser.add_argument('-m', '--modeltype', help='The model type. CNN or LSTM.', default="CNN")
+    parser.add_argument('-p', '--prompts', help='The prompts JSON file path', default="prompts.json")
     parser.add_argument('-s', '--seed', type=int, help='The random seed', default=42)
     parser.add_argument('-b', '--batchsize', type=int, help='The batch size', default=32)
     parser.add_argument('-e', '--epochs', type=int, help='The number of epochs', default=200)
     parser.add_argument('-P', '--patience', type=int, help='The patience value', default=5)
     parser.add_argument('-k', '--kernelwidth', type=int, help='The kernel width', default=3)
-    parser.add_argument('-l', '--learningrate', type=float, help='The learning rate', default=0.00001)
+    parser.add_argument('-l', '--learningrate', type=float, help='The learning rate', default=0.0001)
     parser.add_argument('-t', '--testsize', type=int, help='The test size in percentage', default=20)
     args = parser.parse_args()
     assert args.seed >= 0, Exception(f'Invalid random seed: {args.seed}')
@@ -121,7 +121,8 @@ def main():
             with open(files[file_index], 'r') as fp:
                 data.append(json.load(fp))
             percentage = (file_index * 100) // len(files)
-            PrintUtils.start_stage(f'Loading sequences data ({file_index} / {len(files)} = {percentage}%)', override_prev=True)
+            if file_index % 10 == 0:
+                PrintUtils.start_stage(f'Loading sequences data ({file_index} / {len(files)} = {percentage}%)', override_prev=True)
         df = pd.DataFrame(data)
         PrintUtils.end_stage()
 
@@ -186,15 +187,15 @@ def main():
         test_loader = DataLoader(test_dataset, batch_size=args.batchsize, shuffle=False)
         PrintUtils.end_stage()
     
-        # Choose model architecture (CNN or RNN)
-        PrintUtils.start_stage('Instanciating model')
+        # Choose model architecture (CNN or LSTM)
+        PrintUtils.start_stage('Instantiating model')
         model_type = args.modeltype.upper()
         if model_type == 'CNN':
             model = CNNBinaryClassifier(args.kernelwidth, max_len).to(device)
             model_path = os.path.join(models_dir, 'cnn_binary_classifier.pth')
-        elif model_type == 'RNN':
-            model = RNNBinaryClassifier(args.kernelwidth, max_len).to(device)
-            model_path = os.path.join(models_dir, 'rnn_binary_classifier.pth')
+        elif model_type == 'LSTM':
+            model = LSTMBinaryClassifier(args.kernelwidth, max_len).to(device)
+            model_path = os.path.join(models_dir, 'lstm_binary_classifier.pth')
         else:
             raise Exception(f'Unsupported model type: {args.modeltype}')
         PrintUtils.print_extra(f'Model created: *{model.__class__.__name__}*')
@@ -212,17 +213,17 @@ def main():
         PrintUtils.end_stage()
         
         # Training loop
-        PrintUtils.start_stage('Training')
         train_losses, val_losses = [], []
         train_accs, val_accs = [], []
         best_epoch = 0
+        PrintUtils.start_stage('Training model')
         for epoch in range(args.epochs):
 
             # Log
             PrintUtils.start_stage(f'Training (epoch {epoch+1} / {args.epochs})', override_prev=True)
             
             # Train and validate
-            train_loss, train_acc = train_epoch(model, train_loader, criterion, optimizer, device)
+            train_loss, train_acc = train_epoch(model, train_loader, criterion, optimizer, device, epoch, args.epochs)
             val_loss, val_acc = eval_epoch(model, val_loader, criterion, device)
             
             # Store metrics
@@ -231,17 +232,19 @@ def main():
             train_accs.append(train_acc)
             val_accs.append(val_acc)
             PrintUtils.start_stage(f'Training (epoch {epoch+1} / {args.epochs}): train loss: {train_loss:.4f}, train acc: {train_acc:.4f}, val loss: {val_loss:.4f}, val acc: {val_acc:.4f}', override_prev=True)
+            PrintUtils.end_stage()
             
             # Early stopping check
             early_stopping(val_acc, model)
             if early_stopping.early_stop:
-                PrintUtils.start_stage(f'Training (epoch {epoch+1} / {args.epochs}): early stopping triggered', override_prev=True)
+                PrintUtils.print_extra(f'Training (epoch {epoch+1} / {args.epochs}): early stopping triggered')
                 best_epoch = epoch + 1 - args.patience
                 break
             best_epoch = epoch + 1
-    
-        PrintUtils.end_stage()
+            
+        
         PrintUtils.print_extra(f'Best model found at epoch *{best_epoch}*')
+        PrintUtils.start_stage('Saving model')
         
         # Load the best model
         model.load_state_dict(torch.load(os.path.join(models_dir, 'checkpoint.pt')))
@@ -249,29 +252,26 @@ def main():
         # Save the final model
         model.save(model_path, normalization_params=normalization_params)
         
-        # Get predictions on validation set for evaluation
-        val_scores, val_labels = get_prediction_scores(model, val_loader, device)
-        val_preds = (val_scores > 0.5).astype(int)
+        # Get predictions on test set for evaluation
+        PrintUtils.end_stage()
+        PrintUtils.start_stage('Inferencing on test dataset and generating metrics')
+        test_scores, test_labels = get_prediction_scores(model, test_loader, device)
+        test_preds = (test_scores > 0.5).astype(int)
         
         # Plot training curves
         plot_training_curves(train_losses, val_losses, train_accs, val_accs, best_epoch, os.path.join(results_dir, 'training_curves.png'))
         
         # Plot ROC curve
-        plot_roc_curve(val_labels, val_scores, os.path.join(results_dir, 'roc_curve.png'))
+        plot_roc_curve(test_labels, test_scores, os.path.join(results_dir, 'roc_curve.png'))
         
         # Plot Precision-Recall curve
-        plot_precision_recall_curve(val_labels, val_scores, os.path.join(results_dir, 'precision_recall_curve.png'))
+        plot_precision_recall_curve(test_labels, test_scores, os.path.join(results_dir, 'precision_recall_curve.png'))
         
         # Plot confusion matrix
-        conf_matrix = plot_confusion_matrix(val_labels, val_preds, os.path.join(results_dir, 'confusion_matrix.png'))
+        conf_matrix = plot_confusion_matrix(test_labels, test_preds, os.path.join(results_dir, 'confusion_matrix.png'))
         
         # Generate model dashboard
-        create_model_dashboard(val_scores, val_labels, train_accs, val_accs, best_epoch,  os.path.join(results_dir, 'model_performance_dashboard.png'))
-     
-        # Run on test set and save predictions
-        PrintUtils.start_stage('Running inference on test dataset')
-        test_scores, _ = get_prediction_scores(model, test_loader, device)
-        test_preds = (test_scores > 0.5).astype(int)
+        create_model_dashboard(test_scores, test_labels, train_accs, val_accs, best_epoch,  os.path.join(results_dir, 'model_performance_dashboard.png'))
         
         # Plot prediction score distribution
         plot_score_distribution(test_scores, os.path.join(results_dir, 'prediction_score_distribution.png'))
@@ -303,6 +303,16 @@ def main():
         PrintUtils.print_extra(f'Negative Pred Value: {npv:.4f}')
         PrintUtils.print_extra(f'Accuracy:           {accuracy:.4f}')
         PrintUtils.print_extra(f'F1 Score:           {f1:.4f}')
+        # Also write to output file
+        with open(os.path.join(results_dir, 'confusion_matrix_metrics.txt'), 'w') as f:
+            f.write(f'Confusion Matrix Metrics:\n')
+            f.write(f'Sensitivity/Recall: {sensitivity:.4f}\n')
+            f.write(f'Specificity:        {specificity:.4f}\n')
+            f.write(f'Precision:          {precision_val:.4f}\n')
+            f.write(f'Negative Pred Value: {npv:.4f}\n')
+            f.write(f'Accuracy:           {accuracy:.4f}\n')
+            f.write(f'F1 Score:           {f1:.4f}\n')
+        PrintUtils.print_extra(f'Confusion matrix metrics saved to *confusion_matrix_metrics.txt*')
         
         # Test the inference function
         PrintUtils.start_stage('Testing inference function')

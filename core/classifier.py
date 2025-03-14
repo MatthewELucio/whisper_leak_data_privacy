@@ -233,7 +233,7 @@ class CNNBinaryClassifier(BaseClassifier):
         # Return result
         return x
 
-class RNNBinaryClassifier(BaseClassifier):
+class LSTMBinaryClassifier(BaseClassifier):
     """
         Enhanced RNN model for binary classification of sequential data.
     """
@@ -546,7 +546,7 @@ class EarlyStopping(object):
             self.save_checkpoint(val_acc, model)
         elif score <= self.best_score + self.delta:
             self.counter += 1
-            PrintUtils.print_extea(f'EarlyStopping counter: *{self.counter}* out of *{self.patience}*')
+            PrintUtils.print_extra(f'EarlyStopping counter: *{self.counter}* out of *{self.patience}*')
             if self.counter >= self.patience:
                 self.early_stop = True
         else:
@@ -580,7 +580,7 @@ def set_seed(seed=42):
         torch.cuda.manual_seed_all(seed)
     PrintUtils.print_extra(f'Random seed set to *{seed}*')
 
-def train_epoch(model, dataloader, criterion, optimizer, device):
+def train_epoch(model, dataloader, criterion, optimizer, device, epoch, max_epochs):
     """
         Train the model for one epoch.
     """
@@ -605,7 +605,8 @@ def train_epoch(model, dataloader, criterion, optimizer, device):
         total += y.size(0)
         
         # Update progress bar
-        PrintUtils.start_stage(f'Training (loss = {loss.item():.4f}, accuracy = {correct/total:.4f})', override_prev=True)
+        PrintUtils.start_stage(f'Training (epoch {epoch+1} / {max_epochs}): {100.0*total/len(dataloader.dataset):.2f}% (loss = {loss.item():.4f}, accuracy = {correct/total:.4f})', override_prev=True)
+        #PrintUtils.print_extra(f'Epoch {epoch} (loss = {loss.item():.4f}, accuracy = {correct/total:.4f})')
    
     # Return epoch loss and accuracy
     epoch_loss = total_loss / len(dataloader.dataset)
