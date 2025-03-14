@@ -188,14 +188,15 @@ def main():
     
         # Choose model architecture (CNN or RNN)
         PrintUtils.start_stage('Instanciating model')
-        if args.modeltype == 'CNN':
+        model_type = args.modeltype.upper()
+        if model_type == 'CNN':
             model = CNNBinaryClassifier(args.kernelwidth, max_len).to(device)
             model_path = os.path.join(models_dir, 'cnn_binary_classifier.pth')
-        elif args.modeltype == 'RNN':
+        elif model_type == 'RNN':
             model = RNNBinaryClassifier(args.kernelwidth, max_len).to(device)
             model_path = os.path.join(models_dir, 'rnn_binary_classifier.pth')
         else:
-            raise Exception(f'Unsupported model type: {model_type}')
+            raise Exception(f'Unsupported model type: {args.modeltype}')
         PrintUtils.print_extra(f'Model created: *{model.__class__.__name__}*')
     
         # Define loss and optimizer
