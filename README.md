@@ -17,11 +17,13 @@ First, install the requirements:
 python3 -m pip install -r ./requirements.txt
 ```
 
-Secondly, there are two modes of operation, and therefore two executable files.
+Secondly, there are several modes of operation, and several executable files, corresponding to stages:
+- `whisper_leak_collect.py` - for data collection.
+- `whisper_leak_train.py` - training on collected data.
 
 ### Data collection
 Run `whisper_leak_collect.py`. Note it performs network sniffing, thus requiring to run in high privileges.  
-The following commandline illustrate how to use Whisper Leak:
+The following commandline illustrates how to use the Whisper Leak data collector:
 
 ```
 ./whisper_leak_collect.py -c gemini -a ./api_key.txt -p ./prompts.json
@@ -61,6 +63,25 @@ Here is an example:
   }
 }
 ```
+
+### Training
+Run `whisper_leak_train.py`. The following command illustrates how to use the Whisper Leak training module:
+
+```
+./whisper_leak_train.py -c gemini -m LSTM -p ./prompts.json -s 42
+```
+
+The flags are:
+- `-c` - the chatbot name.
+- `-p` - the JSON prompts file, contains both positive and negative prompts. See previous section for details of the file structure.
+- `-m` - the model type; currently supports LSTM or CNN.
+- `-s` - the random seed (default: 42).
+- `-b` - the batch size (default: 32).
+- `-e` - the number of epochs (default: 200).
+- `-P` - the patience value (default: 5).
+- `-k` - kernel width (default: 3).
+- `-l` - learning rate (default: 0.0001).
+- `-t` - test size percentage (default: 20).
 
 ## Software architecture
 Whisper Leak was built to be easily extensible for different chatbots and models.  
