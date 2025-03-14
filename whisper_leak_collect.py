@@ -51,7 +51,7 @@ def get_chatbot_class(chatbot_name):
 
     # Validating chatbot class exists
     PrintUtils.start_stage('Initializing chatbot class')
-    chatbot_class = chatbots.get(chatbot_name, None)
+    chatbot_class = chatbots.get(chatbot_name.lower(), None)
     assert chatbot_class is not None, Exception(f'Chatbot "{chatbot_name}" does not exist')
     PrintUtils.print_extra(f'Using chatbot *{chatbot_class.__name__}*')
     PrintUtils.end_stage()
