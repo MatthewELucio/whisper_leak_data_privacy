@@ -3,3 +3,4 @@ api_key*.txt
 training_set/
 models/
 results/
+*.swp
