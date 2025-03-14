@@ -590,8 +590,6 @@ def train_epoch(model, dataloader, criterion, optimizer, device):
     total_loss = 0
     correct = 0
     total = 0
-    
-    PrintUtils.start_stage('Training')
     for X, y in dataloader:
         X, y = X.to(device), y.to(device).unsqueeze(1)
         
@@ -610,7 +608,6 @@ def train_epoch(model, dataloader, criterion, optimizer, device):
         PrintUtils.start_stage(f'Training (loss = {loss.item():.4f}, accuracy = {correct/total:.4f})', override_prev=True)
    
     # Return epoch loss and accuracy
-    PrintUtils.end_stage()
     epoch_loss = total_loss / len(dataloader.dataset)
     epoch_acc = correct / total
     return epoch_loss, epoch_acc

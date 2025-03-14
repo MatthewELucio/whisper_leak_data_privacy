@@ -330,6 +330,11 @@ def main():
     # Handle exceptions
     except Exception as ex:
 
+        import traceback
+        sss = traceback.format_exc()
+        print(sss)
+        import pdb; pdb.set_trace()
+
         # Optionally fail stage
         if PrintUtils.is_in_stage():
             PrintUtils.end_stage(fail_message=ex, throw_on_fail=False)
