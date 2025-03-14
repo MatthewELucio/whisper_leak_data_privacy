@@ -219,7 +219,7 @@ def main():
         for epoch in range(args.epochs):
 
             # Log
-            PrintUtils.start_stage('Training (epoch {epoch+1} / {args.epochs})', override_prev=True)
+            PrintUtils.start_stage(f'Training (epoch {epoch+1} / {args.epochs})', override_prev=True)
             
             # Train and validate
             train_loss, train_acc = train_epoch(model, train_loader, criterion, optimizer, device)
@@ -230,12 +230,12 @@ def main():
             val_losses.append(val_loss)
             train_accs.append(train_acc)
             val_accs.append(val_acc)
-            PrintUtils.start_stage('Training (epoch {epoch+1} / {args.epochs}): train loss: {train_loss:.4f}, train acc: {train_acc:.4f}, val loss: {val_loss:.4f}, val acc: {val_acc:.4f}', override_prev=True)
+            PrintUtils.start_stage(f'Training (epoch {epoch+1} / {args.epochs}): train loss: {train_loss:.4f}, train acc: {train_acc:.4f}, val loss: {val_loss:.4f}, val acc: {val_acc:.4f}', override_prev=True)
             
             # Early stopping check
             early_stopping(val_acc, model)
             if early_stopping.early_stop:
-                PrintUtils.start_stage('Training (epoch {epoch+1} / {args.epochs}): early stopping triggered')
+                PrintUtils.start_stage(f'Training (epoch {epoch+1} / {args.epochs}): early stopping triggered', override_prev=True)
                 best_epoch = epoch + 1 - args.patience
                 break
             best_epoch = epoch + 1
