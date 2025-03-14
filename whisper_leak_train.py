@@ -157,7 +157,6 @@ def main():
         PrintUtils.print_extra(f'Max sequence length being used for model (90th percentile): *{max_len}*')
         
         # Calculate normalization parameters
-        PrintUtils.start_stage('Calculating normalization parameters')
         time_norm_params, size_norm_params = calculate_norm_params(df_train, max_len)
         
         # Normalize dataframes
@@ -169,7 +168,6 @@ def main():
         CNNBinaryClassifier.save_normalization_params(
             time_norm_params, size_norm_params, max_len, os.path.join(models_dir, 'normalization_params.npz')
         )
-        PrintUtils.end_stage()
         
         # Create datasets and loaders for training
         PrintUtils.start_stage('Creating datasets and loaders')
