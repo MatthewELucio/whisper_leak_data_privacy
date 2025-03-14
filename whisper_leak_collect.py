@@ -164,11 +164,11 @@ def main():
 
         # Print final status
         if last_error is not None:
-            PrintUtils.print_error(last_error)
+            PrintUtils.print_error(f'{last_error}\n')
         elif is_user_cancelled:
-            PrintUtils.print_extra(f'Operation *cancelled* by user')
+            PrintUtils.print_extra(f'Operation *cancelled* by user\n')
         else:
-            PrintUtils.print_extra(f'Finished successfully')
+            PrintUtils.print_extra(f'Finished successfully\n')
 
 if __name__ == '__main__':
     main()
