@@ -8,3 +8,6 @@ scikit_learn==1.6.1
 pandas
 torch==1.12.1
 seaborn
+google.generativeai
+httpx
+openai
