@@ -69,6 +69,7 @@ def parse_arguments():
     parser.add_argument('-k', '--kernelwidth', type=int, help='The kernel width', default=3)
     parser.add_argument('-l', '--learningrate', type=float, help='The learning rate', default=0.0001)
     parser.add_argument('-t', '--testsize', type=int, help='The test size in percentage', default=20)
+    parser.add_argument('-v', '--validsize', type=int, help='The validation size in percentage taken from train set', default=5)
     args = parser.parse_args()
     assert args.seed >= 0, Exception(f'Invalid random seed: {args.seed}')
     assert args.batchsize > 0, Exception(f'Invalid batch size: {args.batchsize}')
@@ -77,6 +78,7 @@ def parse_arguments():
     assert args.kernelwidth > 0, Exception(f'Invalid kernel width: {args.kernelwidth}')
     assert args.learningrate > 0 and args.learningrate < 1, Exception(f'Invalid learning rate: {args.learningrate}')
     assert args.testsize > 0 and args.testsize < 100, Exception(f'Invalid test size percentage: {args.testsize}')
+    assert args.validsize > 0 and args.validsize < 100, Exception(f'Invalid validation size percentage: {args.validsize}')
     assert len(args.chatbot) > 0, Exception('Chatbot name cannot be empty')
     PrintUtils.end_stage()
 
@@ -148,15 +150,24 @@ def main():
         # Split into train and test sets and hold out a percentage of unique 'prompts' values for test set
         PrintUtils.start_stage('Splitting into train and test sets')
         unique_prompts = df.drop_duplicates(subset=['prompt'])[['prompt', 'target']]
-        train_prompts, test_prompts = train_test_split(
+        train_and_val_prompts, test_prompts = train_test_split(
             unique_prompts['prompt'],
             test_size=args.testsize / 100,
             random_state=args.seed,
             stratify=unique_prompts['target']
         )
-        train_prompts = set(train_prompts)
         test_prompts = set(test_prompts)
+        train_prompts, val_prompts = train_test_split(
+            train_and_val_prompts,
+            test_size=args.validsize / 100,
+            random_state=args.seed,
+            stratify=unique_prompts[unique_prompts['prompt'].isin(train_and_val_prompts)]['target']
+        )
+        train_prompts = set(train_prompts)
+        val_prompts = set(val_prompts)
+
         df_train = df[df['prompt'].isin(train_prompts)]
+        df_val = df[df['prompt'].isin(val_prompts)]
         df_test = df[df['prompt'].isin(test_prompts)]
         PrintUtils.end_stage()
 
@@ -168,11 +179,12 @@ def main():
         PrintUtils.print_extra(f'Max sequence length being used for model (90th percentile): *{max_len}*')
         
         # Calculate normalization parameters
-        time_norm_params, size_norm_params = calculate_norm_params(df_train, max_len)
+        time_norm_params, size_norm_params = calculate_norm_params(df_train)
         
         # Normalize dataframes
-        df_train_normalized = normalize_dataframe(df_train, time_norm_params, size_norm_params, max_len)
-        df_test_normalized = normalize_dataframe(df_test, time_norm_params, size_norm_params, max_len)
+        df_train_normalized = normalize_dataframe(df_train, time_norm_params, size_norm_params)
+        df_val_normalized = normalize_dataframe(df_val, time_norm_params, size_norm_params)
+        df_test_normalized = normalize_dataframe(df_test, time_norm_params, size_norm_params)
         
         # Save normalization parameters for inference
         normalization_params = (time_norm_params, size_norm_params, max_len)
@@ -183,17 +195,12 @@ def main():
         # Create datasets and loaders for training
         PrintUtils.start_stage('Creating datasets and loaders')
         train_dataset = PreprocessedTextDataset(df_train_normalized, max_len)
+        val_dataset = PreprocessedTextDataset(df_val_normalized, max_len)
         test_dataset = PreprocessedTextDataset(df_test_normalized, max_len)
-
-        # Split training data for validation
-        train_indices, val_indices = train_test_split(
-            range(len(train_dataset)), test_size=args.testsize / 100, random_state=args.seed)
-        train_subset = Subset(train_dataset, train_indices)
-        val_subset = Subset(train_dataset, val_indices)
         
         # Create data loaders
-        train_loader = DataLoader(train_subset, batch_size=args.batchsize, shuffle=True)
-        val_loader = DataLoader(val_subset, batch_size=args.batchsize, shuffle=False)
+        train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
+        val_loader = DataLoader(val_dataset, batch_size=args.batchsize, shuffle=False)
         test_loader = DataLoader(test_dataset, batch_size=args.batchsize, shuffle=False)
         PrintUtils.end_stage()
     
@@ -315,6 +322,11 @@ def main():
         PrintUtils.print_extra(f'F1 Score:           {f1:.4f}')
         # Also write to output file
         with open(os.path.join(results_dir, 'confusion_matrix_metrics.txt'), 'w') as f:
+            f.write(f'Confusion Matrix:\n')
+            f.write(f'              Predicted Negative  Predicted Positive\n')
+            f.write(f'Actual Negative      {tn:<18} {fp}\n')
+            f.write(f'Actual Positive      {fn:<18} {tp}\n\n')
+
             f.write(f'Confusion Matrix Metrics:\n')
             f.write(f'Sensitivity/Recall: {sensitivity:.4f}\n')
             f.write(f'Specificity:        {specificity:.4f}\n')
@@ -356,6 +368,7 @@ def main():
 
         # Save error and print it as an extra
         PrintUtils.print_extra(f'Error: {ex}')
+        
         last_error = ex
 
     # Handle cancel operations

@@ -80,7 +80,7 @@ class BaseClassifier(nn.Module):
             
             # Normalize
             time_norm_params, size_norm_params, max_len = normalization_params
-            df_normalized = normalize_dataframe(input_data, time_norm_params, size_norm_params, max_len)
+            df_normalized = normalize_dataframe(input_data, time_norm_params, size_norm_params)
             dataset = PreprocessedTextDataset(df_normalized, max_len)
             dataloader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=False)
            
@@ -107,16 +107,16 @@ class BaseClassifier(nn.Module):
             time_norm_params, size_norm_params, max_len = normalization_params
             
             # Normalize and prepare input
+            time_mean, time_std = time_norm_params
+            size_mean, size_std = size_norm_params
+
             normalized_time = []
+            for val in time_diffs[:max_len]:  # Trim to max_len
+                normalized_time.append((val - time_mean) / time_std)
+
             normalized_size = []
-            for i, val in enumerate(time_diffs):
-                if i < max_len:
-                    mean, std = time_norm_params[i]
-                    normalized_time.append((val - mean) / std)
-            for i, val in enumerate(data_lengths):
-                if i < max_len:
-                    mean, std = size_norm_params[i]
-                    normalized_size.append((val - mean) / std)
+            for val in data_lengths[:max_len]:
+                normalized_size.append((val - size_mean) / size_std)
             
             # Pad sequences
             time_padded = np.zeros(max_len)
@@ -442,7 +442,76 @@ def prepare_data(df):
     len_90p = int(np.percentile(df['data_lengths'].apply(len), 90))
     return df, len_90p
 
-def calculate_norm_params(data, max_len):
+def calculate_norm_params(data):
+    """
+    Calculate a single set of normalization parameters for time_diffs and data_lengths.
+    Uses Z-score normalization (standardization).
+    """
+    # Log
+    PrintUtils.start_stage('Calculating global normalization parameters')
+    
+    # Flatten the lists to calculate global statistics
+    all_time_vals = [val for row in data['time_diffs'] for val in row]
+    all_size_vals = [val for row in data['data_lengths'] for val in row]
+    
+    # Calculate mean and standard deviation for time_diffs
+    time_mean = np.mean(all_time_vals)
+    time_std = np.std(all_time_vals)
+    if time_std <= 0:
+        time_std = 1.0  # Avoid division by zero
+    
+    # Calculate mean and standard deviation for data_lengths
+    size_mean = np.mean(all_size_vals)
+    size_std = np.std(all_size_vals)
+    if size_std <= 0:
+        size_std = 1.0  # Avoid division by zero
+    
+    # Log the normalization parameters
+    PrintUtils.print_extra(f'Global time normalization: mean=*{time_mean:.4f}*, std=*{time_std:.4f}*')
+    PrintUtils.print_extra(f'Global size normalization: mean=*{size_mean:.4f}*, std=*{size_std:.4f}*')
+    
+    # Return the normalization parameters
+    PrintUtils.end_stage()
+    return (time_mean, time_std), (size_mean, size_std)
+
+def normalize_dataframe(df, time_norm_params, size_norm_params):
+    """
+    Normalize time_diffs and data_lengths in the dataframe using Z-score normalization.
+    Applies a single normalization strategy for each column.
+    """
+    # Log
+    PrintUtils.start_stage('Normalizing dataframe features with Z-scaling')
+    
+    # Create deep copy to avoid modifying the original dataframe
+    df_normalized = df.copy()
+    
+    # Calculate normalization parameters
+    (time_mean, time_std) = time_norm_params
+    (size_mean, size_std) = size_norm_params
+    
+    # Apply normalization
+    normalized_time_diffs = []
+    normalized_data_lengths = []
+    
+    for idx, row in df.iterrows():
+        time_vals, size_vals = row['time_diffs'], row['data_lengths']
+        
+        # Normalize time_diffs
+        norm_time = [(val - time_mean) / time_std for val in time_vals]
+        normalized_time_diffs.append(norm_time)
+        
+        # Normalize data_lengths
+        norm_size = [(val - size_mean) / size_std for val in size_vals]
+        normalized_data_lengths.append(norm_size)
+    
+    # Add normalized features to the dataframe
+    df_normalized['normalized_time_diffs'] = normalized_time_diffs
+    df_normalized['normalized_data_lengths'] = normalized_data_lengths
+    
+    PrintUtils.end_stage()
+    return df_normalized
+
+def calculate_norm_params_old(data, max_len):
     """
         Calculate normalization parameters for each position in the sequence.
     """
@@ -474,7 +543,7 @@ def calculate_norm_params(data, max_len):
     PrintUtils.end_stage()
     return time_norm_params, size_norm_params
 
-def normalize_dataframe(df, time_norm_params, size_norm_params, max_len):
+def normalize_dataframe_old(df, time_norm_params, size_norm_params, max_len):
     """
         Normalize time_diffs and data_lengths in the dataframe.
     """
