@@ -9,7 +9,6 @@ import time
 import psutil
 import subprocess
 import signal
-import platform
 import tempfile
 
 # Initialize colorama
@@ -218,141 +217,100 @@ class PrintUtils(object):
         cls._extra = []
 
 class NetworkUtils:
-    """Network utilities with cross-platform support for packet capture."""
+    """
+        Network utilities with cross-platform support for packet capture.
+    """
 
     # Sniffing handle
     _sniffer = None
     _capture_file = None
-    _platform = platform.system().lower()
 
     @staticmethod
     def get_self_local_ports(remote_port):
         """
-        Gets local TCP ports by self process connected to the given remote port.
-        
-        Args:
-            remote_port (int): The remote port to filter connections by
-            
-        Returns:
-            set: Set of local port numbers with established connections
+            Gets local TCP ports by self process connected to the given remote port.
+            Return the set of local port numbers with established connections
         """
-        return set([
-            conn.laddr.port 
-            for conn in psutil.net_connections(kind='inet') 
-            if (hasattr(conn.laddr, 'port') and 
-                getattr(conn.raddr, 'port', None) == remote_port and 
-                conn.status == 'ESTABLISHED' and 
-                conn.pid == os.getpid())
-        ])
+
+        # Returns all local ports
+        return set([ conn.laddr.port for conn in psutil.net_connections(kind='inet') if (getattr(conn.raddr, 'port', None) == remote_port and conn.status == 'ESTABLISHED' and conn.pid == os.getpid()) ])
 
     @classmethod
     def start_sniffing_tls(cls, pcap_file_path, remote_port=443):
         """
-        Starts sniffing TLS traffic.
-        
-        Args:
-            pcap_file_path (str): Path to save the capture file
-            remote_port (int): Port number to filter traffic on (default: 443)
-            
-        Raises:
-            Exception: If sniffing is already active or command fails
+            Starts sniffing TLS traffic.
         """
+
         # Validate sniffing is not being done
         if cls._sniffer is not None:
             raise Exception('Active sniffing already in progress')
 
+        # Save the capture file
         cls._capture_file = pcap_file_path
         
-        try:
-            if cls._platform == 'linux' or cls._platform == 'darwin':
-                # Unix-based systems use tcpdump
-                cls._sniffer = subprocess.Popen(
-                    ['tcpdump', '-w', pcap_file_path, f'tcp port {remote_port}'],
-                    stdout=subprocess.DEVNULL, 
-                    stderr=subprocess.DEVNULL
-                )
-            elif cls._platform == 'windows':
-                # For Windows, use pktmon
-                # First, reset any existing filters
-                subprocess.run(['pktmon', 'filter', 'remove'], 
-                              stdout=subprocess.DEVNULL, 
-                              stderr=subprocess.DEVNULL)
-                
-                # Add TCP filter for the specified port
-                subprocess.run(['pktmon', 'filter', 'add', '-t', 'tcp', '-p', str(remote_port)],
-                              stdout=subprocess.DEVNULL, 
-                              stderr=subprocess.DEVNULL)
-                
-                # Start capture with the filtered port
-                cls._sniffer = subprocess.Popen(
-                    ['pktmon', 'start', '-c', '-f', pcap_file_path + '.etl'], 
-                    stdout=subprocess.DEVNULL,
-                    stderr=subprocess.DEVNULL
-                )
-            else:
-                raise Exception(f"Unsupported platform: {cls._platform}")
-                
-            # Wait for capture to initialize
-            time.sleep(2)
+        # Handle POSIX
+        if sys.platform in ('linux', 'darwin'):
+        
+            # Unix-based systems use tcpdump
+            cls._sniffer = subprocess.Popen([ 'tcpdump', '-w', pcap_file_path, f'tcp port {remote_port}' ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        elif sys.platform == 'win32':
+
+            # For Windows, use pktmon (we first reset any existing filters)
+            subprocess.run([ 'pktmon', 'filter', 'remove' ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             
-        except Exception as e:
-            cls._sniffer = None
-            raise Exception(f"Failed to start packet capture: {str(e)}")
+            # Add TCP filter for the specified port
+            subprocess.run([ 'pktmon', 'filter', 'add', '-t', 'tcp', '-p', str(remote_port) ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+            
+            # Start capture with the filtered port
+            cls._sniffer = subprocess.Popen([ 'pktmon', 'start', '-c', '-f', pcap_file_path + '.etl' ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        else:
+            raise Exception(f'Unsupported platform: "{sys.platform}"')
+            
+        # Wait for capture to initialize
+        time.sleep(2)
 
     @classmethod
     def stop_sniffing_tls(cls, best_effort=False):
         """
-        Stops sniffing TLS traffic.
-        
-        Args:
-            best_effort (bool): If True, don't raise exception when no sniffing is active
-            
-        Raises:
-            Exception: If no active sniffing is found and best_effort is False
+            Stops sniffing TLS traffic.
         """
+
         # Validate sniffing is being done
         if cls._sniffer is None:
             if best_effort:
                 return
             raise Exception('No active sniffing has been started')
 
-        try:
-            # Allow packets to finish processing
-            time.sleep(2)
+        # Allow packets to finish processing
+        time.sleep(2)
+       
+        # Handle POSIX
+        if sys.platform in ('linux', 'darwin'):
+
+            # Send a SIGINT and wait
+            cls._sniffer.send_signal(signal.SIGINT)
+            cls._sniffer.wait(timeout=5)
+
+        # Handle Windows
+        elif cls._platform == 'windows':
+
+            # Windows: stop pktmon and convert ETL to PCAP
+            subprocess.run([ 'pktmon', 'stop' ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
             
-            if cls._platform == 'linux' or cls._platform == 'darwin':
-                # Unix-based: send SIGINT to tcpdump
-                cls._sniffer.send_signal(signal.SIGINT)
-                cls._sniffer.wait(timeout=5)
-            elif cls._platform == 'windows':
-                # Windows: stop pktmon and convert ETL to PCAP
-                subprocess.run(['pktmon', 'stop'], 
-                              stdout=subprocess.DEVNULL, 
-                              stderr=subprocess.DEVNULL)
-                
-                # Convert the ETL file to PCAP format
-                etl_file = cls._capture_file + '.etl'
-                subprocess.run(
-                    ['pktmon', 'etl2pcap', etl_file, '--out', cls._capture_file],
-                    stdout=subprocess.DEVNULL,
-                    stderr=subprocess.DEVNULL
-                )
-                
-                # Clean up the ETL file
-                try:
-                    os.remove(etl_file)
-                except:
-                    pass  # Best effort cleanup
-                
-                # Remove the filters
-                subprocess.run(['pktmon', 'filter', 'remove'], 
-                              stdout=subprocess.DEVNULL, 
-                              stderr=subprocess.DEVNULL)
-                
-        except Exception as e:
-            if not best_effort:
-                raise Exception(f"Error stopping packet capture: {str(e)}")
-        finally:
-            cls._sniffer = None
-            cls._capture_file = None
+            # Convert the ETL file to PCAP format
+            etl_file = cls._capture_file + '.etl'
+            subprocess.run([ 'pktmon', 'etl2pcap', etl_file, '--out', cls._capture_file ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+
+            # Validate PCAP exists
+            assert os.path.isfile(cls._capture_file), Exception('Conversion from ETL to PCAP failed')
+            
+            # Clean up the ETL file
+            OsUtils.del_file(etl_file)
+            
+            # Remove the filters
+            subprocess.run([ 'pktmon', 'filter', 'remove' ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        
+        # Nullify members
+        cls._sniffer = None
+        cls._capture_file = None
 
