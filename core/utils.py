@@ -285,7 +285,7 @@ class NetworkUtils:
                 
                 # Start capture with the filtered port
                 cls._sniffer = subprocess.Popen(
-                    ['pktmon', 'start', '--etl', '-f', pcap_file_path + '.etl'], 
+                    ['pktmon', 'start', '-c', '-f', pcap_file_path + '.etl'], 
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.DEVNULL
                 )
@@ -333,7 +333,7 @@ class NetworkUtils:
                 # Convert the ETL file to PCAP format
                 etl_file = cls._capture_file + '.etl'
                 subprocess.run(
-                    ['pktmon', 'etl2pcap', etl_file, cls._capture_file],
+                    ['pktmon', 'etl2pcap', etl_file, '--out', cls._capture_file],
                     stdout=subprocess.DEVNULL,
                     stderr=subprocess.DEVNULL
                 )
