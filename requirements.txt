@@ -11,3 +11,4 @@ seaborn
 google.generativeai
 httpx
 openai
+pyshark
