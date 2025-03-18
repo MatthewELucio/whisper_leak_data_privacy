@@ -45,8 +45,7 @@ class Datapoint(object):
                 return False
         return os.path.isfile(self.seq_path)
 
-    @staticmethod
-    def _validate_seq(seq):
+    def _validate_seq(self, seq):
         """
             Validates a sequence.
         """
@@ -57,7 +56,7 @@ class Datapoint(object):
         assert 'remote_port' in seq and isinstance(seq['remote_port'], int) and seq['remote_port'] > 0 and seq['remote_port'] <= 0xFFFF, Exception(f'Missing or invalid remote port data in sequence file: {self.seq_path}')
         assert 'temperature' in seq and isinstance(seq['temperature'], float) and seq['temperature'] >= 0, Exception(f'Missing or invalid temperature in sequence file: {self.seq_path}')
         assert 'prompt' in seq and isinstance(seq['prompt'], str) and len(seq['prompt']) > 0, Exception(f'Missing or invalid prompt in sequence file: {self.seq_path}')
-        assert 'response' in seq and isinstance(seq['response'], str) and len(seq['response']) > 0, Exception(f'Missing or invalid response in sequence file: {self.seq_path}')
+        assert 'response' in seq and isinstance(seq['response'], str), Exception(f'Missing or invalid response in sequence file: {self.seq_path}')
         assert 'data_lengths' in seq and isinstance(seq['data_lengths'], list) and len([ val for val in seq['data_lengths'] if (not isinstance(val, int)) or val < 0 ]) == 0, Exception(f'Missing or invalid data lengths in sequence file: {self.seq_path}')
         assert 'time_diffs' in seq and isinstance(seq['time_diffs'], list) and len([ val for val in seq['time_diffs'] if (not isinstance(val, float)) or val < 0 ]) == 0, Exception(f'Missing or invalid time differences list in sequence file: {self.seq_path}')
         assert len(seq['data_lengths']) == len(seq['time_diffs']), Exception(f'Time differences and data lenghts size mismatch in sequence file: {self.seq_path}')
@@ -78,7 +77,7 @@ class Datapoint(object):
             self.seq = json.load(fp)
 
         # Validate JSON
-        self.__class__._validate_seq(self.seq)
+        self._validate_seq(self.seq)
     
     def save_seq(self):
         """
@@ -86,7 +85,7 @@ class Datapoint(object):
         """
 
         # Validate sequence and save it
-        self.__class__._validate_seq(self.seq)
+        self._validate_seq(self.seq)
         with open(self.seq_path, 'w') as fp:
             json.dump(self.seq, fp, indent=2)
 
@@ -189,7 +188,7 @@ class TrainingSetCollector(object):
         # Return the datapoint
         return Datapoint(pcap_path, seq_path)
 
-    def get_training_set(self, chatbot_class, api_key):
+    def get_training_set(self, chatbot_class, api_key, allow_empty_responses=False):
         """
             Gets or generates the training set for the given chatbot class.
         """
@@ -239,7 +238,8 @@ class TrainingSetCollector(object):
                 temperature = chatbot_obj.get_temperature()
                 response, local_port = chatbot_obj.send_prompt(prompt, temperature)
                 assert isinstance(response, str), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
-                assert len(response) > 0, Exception(f'Got empty response for prompt: {prompt}')
+                if not allow_empty_responses:
+                    assert len(response) > 0, Exception(f'Got empty response for prompt: {prompt}')
 
                 # Discover new ports and stop sniffing (unless local port was provided by chatbot)
                 if local_port is None:

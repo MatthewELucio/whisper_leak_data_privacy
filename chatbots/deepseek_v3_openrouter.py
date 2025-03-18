@@ -31,7 +31,7 @@ class DeepseekV3OpenRouter(ChatbotBase):
         response = ''
         stream = self._client.chat.completions.create(extra_body={}, model='deepseek/deepseek-chat', messages=[ { 'role': 'user', 'content': prompt } ], stream=True, temperature=temperature)
         for chunk in stream:
-            if chunk.choices[0].delta.content:
+            if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0 and chunk.choices[0].delta.content:
                 response += chunk.choices[0].delta.content
 
         # Return response

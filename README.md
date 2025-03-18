@@ -34,6 +34,7 @@ The flags are:
 - `-a` - the API key filename.
 - `-p` - the JSON prompts file, contains both positive and negative prompts and their repeat counts.
 - `-t` - an *optional* integer for the TLS port used by the chatbot (443 by default).
+- `-e` - whether to allow empty responses or not (not allowing by default).
 
 When used, a directory called `training_set` is created and will contain the training set (see more on training in the software architecture piece).
 
