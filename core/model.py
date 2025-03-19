@@ -188,7 +188,7 @@ class TrainingSetCollector(object):
         # Return the datapoint
         return Datapoint(pcap_path, seq_path)
 
-    def get_training_set(self, chatbot_class, api_key, allow_empty_responses=False):
+    def get_training_set(self, chatbot_class, allow_empty_responses=False):
         """
             Gets or generates the training set for the given chatbot class.
         """
@@ -234,7 +234,7 @@ class TrainingSetCollector(object):
                 NetworkUtils.start_sniffing_tls(datapoint.pcap_path, self._remote_tls_port)
 
                 # Create a chatbot object to make sure we get fresh connections
-                chatbot_obj = chatbot_class(api_key, self._remote_tls_port)
+                chatbot_obj = chatbot_class(self._remote_tls_port)
                 temperature = chatbot_obj.get_temperature()
                 response, local_port = chatbot_obj.send_prompt(prompt, temperature)
                 assert isinstance(response, str), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')

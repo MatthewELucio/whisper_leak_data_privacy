@@ -1,21 +1,29 @@
+import os
 from core.chatbot_utils import ChatbotBase
 from core.chatbot_utils import LocalPortSaverTransport
 
 from openai import OpenAI
 import httpx
+from dotenv import load_dotenv
 
 class DeepseekV3OpenRouter(ChatbotBase):
     """
         Deepseek V3 over OpenRouter chatbot.
     """
 
-    def __init__(self, api_key, remote_tls_port=443):
+    def __init__(self, remote_tls_port=443):
         """
             Creates an instance.
         """
 
         # Call superclass
-        super().__init__(api_key, remote_tls_port)
+        super().__init__(remote_tls_port)
+
+        # Load environment variables from .env file
+        load_dotenv()
+        api_key = os.getenv('OPENROUTER_API_KEY')
+        if not api_key:
+            raise ValueError("OPENROUTER_API_KEY is not set in the environment variables.")
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()

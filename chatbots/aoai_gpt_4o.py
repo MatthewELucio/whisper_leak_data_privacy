@@ -1,27 +1,38 @@
+import os
 from core.chatbot_utils import ChatbotBase
 from core.chatbot_utils import LocalPortSaverTransport
 
 from openai import AzureOpenAI
 import httpx
+from dotenv import load_dotenv
 
 class AzureGPT4o(ChatbotBase):
     """
         Azure GPT 4o chatbot.
     """
 
-    def __init__(self, api_key, remote_tls_port=443):
+    def __init__(self, remote_tls_port=443):
         """
             Creates an instance.
         """
 
         # Call superclass
-        super().__init__(api_key, remote_tls_port)
+        super().__init__(remote_tls_port)
+
+        # Load environment variables from .env file
+        load_dotenv()
+
+        # Validate environment variables
+        if not os.getenv('AZURE_OPENAI_ENDPOINT'):
+            raise ValueError("AZURE_OPENAI_ENDPOINT is not set in the environment variables.")
+        if not os.getenv('AZURE_OPENAI_API_KEY'):
+            raise ValueError("AZURE_OPENAI_API_KEY is not set in the environment variables.")
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
         self._client = AzureOpenAI(
-            azure_endpoint=f'https://stg-mc-ncus-openai-api.openai.azure.com',
-            api_key=api_key,
+            azure_endpoint=os.getenv('AZURE_OPENAI_ENDPOINT'),
+            api_key=os.getenv('AZURE_OPENAI_API_KEY'),
             api_version='2024-02-01',
             http_client=httpx.Client(transport=self._transport))
 
