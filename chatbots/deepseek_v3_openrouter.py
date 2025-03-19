@@ -40,7 +40,7 @@ class DeepseekV3OpenRouter(ChatbotBase):
         """
 
         # Send prompt
-        response = ''
+        response = []
         stream = self._client.chat.completions.create(
             model='deepseek/deepseek-chat',
             messages=[ { 'role': 'user', 'content': prompt } ],
@@ -57,7 +57,7 @@ class DeepseekV3OpenRouter(ChatbotBase):
         for chunk in stream:
             assert chunk.provider == 'DeepSeek', Exception(f'Unexpected provider: {chunk.provider}')
             if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0 and chunk.choices[0].delta.content:
-                response += chunk.choices[0].delta.content
+                response.append(chunk.choices[0].delta.content)
 
         # Return response
         return (response, self._transport.get_local_port())

@@ -71,7 +71,7 @@ class AmazonNovaLiteV1(ChatbotBase):
 
         chunk_count = 0
         time_to_first_token = None
-        full_response = ""
+        full_response = []
 
         stream = response.get("body")
         if stream:
@@ -87,7 +87,7 @@ class AmazonNovaLiteV1(ChatbotBase):
 
                         chunk_count += 1
                         text_chunk = content_block_delta.get("delta", {}).get("text", "")
-                        full_response += text_chunk
+                        full_response.append(text_chunk)
                         print(text_chunk, end="")
 
         return full_response, self._transport.get_local_port()

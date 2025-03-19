@@ -36,11 +36,11 @@ class GeminiFlash(ChatbotBase):
         """
 
         # Send prompt
-        response = ''
+        response = []
         stream = self._client.chat.completions.create(extra_body={}, model='gemini-2.0-flash', messages=[ { 'role': 'user', 'content': prompt } ], stream=True, temperature=temperature)
         for chunk in stream:
             if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0 and chunk.choices[0].delta.content:
-                response += chunk.choices[0].delta.content
+                response.append(chunk.choices[0].delta.content)
 
         # Return response
         return (response, self._transport.get_local_port())

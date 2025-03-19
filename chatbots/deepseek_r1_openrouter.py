@@ -46,37 +46,32 @@ class DeepseekR1OpenRouter(ChatbotBase):
         """
 
         # Send prompt
-        response = ''
+        response = []
         
-        try:
-            # Use the correct model ID for DeepSeek R1
-            stream = self._client.chat.completions.create(
-                model="deepseek/deepseek-r1",  # Use the correct model ID
-                messages=[
-                    {"role": "user", "content": prompt}
-                ],
-                stream=True,
-                max_tokens=4000,
-                temperature=temperature,
-                # Specify the provider routing in extra_body
-                extra_body={
-                    "provider": {
-                        "order": ["DeepSeek"],
-                        'allow_fallbacks': False
-                    },
-                }
-            )
-            
-            for chunk in stream:
-                #print(chunk)
-                assert chunk.provider == 'DeepSeek', Exception(f'Unexpected provider: {chunk.provider}')
-                if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0:
-                    if chunk.choices[0].delta.content is not None:
-                        response += chunk.choices[0].delta.content
+        # Use the correct model ID for DeepSeek R1
+        stream = self._client.chat.completions.create(
+            model="deepseek/deepseek-r1",  # Use the correct model ID
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
+            stream=True,
+            max_tokens=4000,
+            temperature=temperature,
+            # Specify the provider routing in extra_body
+            extra_body={
+                "provider": {
+                    "order": ["DeepSeek"],
+                    'allow_fallbacks': False
+                },
+            }
+        )
         
-        except Exception as e:
-            # Handle any exceptions that might occur
-            response = f"Error: {str(e)}"
+        for chunk in stream:
+            #print(chunk)
+            assert chunk.provider == 'DeepSeek', Exception(f'Unexpected provider: {chunk.provider}')
+            if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0:
+                if chunk.choices[0].delta.content is not None:
+                    response.append(chunk.choices[0].delta.content)
             
         # Return response
         return (response, self._transport.get_local_port())

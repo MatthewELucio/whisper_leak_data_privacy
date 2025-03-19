@@ -43,7 +43,7 @@ class AzureGPT4o(ChatbotBase):
         """
 
         # Send prompt
-        response = ''
+        response = []
         stream = self._client.chat.completions.create(
             extra_body={},
             model='gpt-4o-adhoc',
@@ -53,7 +53,7 @@ class AzureGPT4o(ChatbotBase):
         )
         for chunk in stream:
             if len(chunk.choices) > 0 and chunk.choices[0].delta.content:
-                response += chunk.choices[0].delta.content
+                response.append(chunk.choices[0].delta.content)
 
         # Return response
         return (response, self._transport.get_local_port())

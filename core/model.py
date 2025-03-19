@@ -109,7 +109,9 @@ class Datapoint(object):
             self.seq['local_port'] = local_port
             self.seq['remote_port'] = remote_port
             self.seq['prompt'] = prompt
-            self.seq['response'] = response
+            self.seq['response'] = "".join(response)
+            self.seq['response_tokens'] = response
+            self.seq['response_token_count'] = len(response)
             self.seq['temperature'] = temperature
             self.seq['data_lengths'] = []
             self.seq['time_diffs'] = []
@@ -214,7 +216,7 @@ class TrainingSetCollector(object):
         # Iterate each prompt and either fetch existing data or truly generate data for it
         curr_index = 0
         failed = 0
-        length, avg_size = 0, 0
+        data_length, avg_size, token_count = 0, 0.0, 0
         for prompt in all_prompts:
            
             # Add prompt
@@ -227,7 +229,7 @@ class TrainingSetCollector(object):
 
                 # Update progress
                 percentage = (curr_count * 100) // total_datapoints
-                PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%), {failed} failed. Latest: {length} events, {avg_size} bytes per event.', override_prev=True)
+                PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%), {failed} failed. Latest: {data_length} events, {avg_size:.1f} bytes per event, {token_count} tokens.', override_prev=True)
                 curr_count += 1
 
                 # Fetch the datapoint for the prompt
@@ -245,8 +247,8 @@ class TrainingSetCollector(object):
                 temperature = chatbot_obj.get_temperature()
                 try:
                     response, local_port = chatbot_obj.send_prompt(prompt, temperature)
-                    assert isinstance(response, str), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
-                    assert len(response) > 0, Exception(f'Got empty response for prompt: {prompt}')
+                    assert isinstance(response, list), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
+                    assert len(response) > 0 and len("".join(response)) > 0, Exception(f'Got empty response for prompt: {prompt}')
 
                     # Discover new ports and stop sniffing (unless local port was provided by chatbot)
                     if local_port is None:
@@ -262,7 +264,8 @@ class TrainingSetCollector(object):
                         NetworkUtils.stop_sniffing_tls()
 
                     # Perform the analysis and set the data
-                    length, avg_size = datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, response, temperature)
+                    data_length, avg_size = datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, response, temperature)
+                    token_count = len(response)
                     training_set[prompt].append(datapoint)
                 except Exception as e:
                     PrintUtils.print_extra(f'Failed to generate training set for prompt: {prompt}')
