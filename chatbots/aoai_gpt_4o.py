@@ -1,12 +1,12 @@
 from core.chatbot_utils import ChatbotBase
 from core.chatbot_utils import LocalPortSaverTransport
 
-from openai import OpenAI, AzureOpenAI
+from openai import AzureOpenAI
 import httpx
 
 class AzureGPT4o(ChatbotBase):
     """
-        Deepseek V3 over OpenRouter chatbot.
+        Azure GPT 4o chatbot.
     """
 
     def __init__(self, api_key, remote_tls_port=443):
@@ -22,7 +22,7 @@ class AzureGPT4o(ChatbotBase):
         self._client = AzureOpenAI(
             azure_endpoint=f'https://stg-mc-ncus-openai-api.openai.azure.com',
             api_key=api_key,
-            api_version="2024-02-01",
+            api_version='2024-02-01',
             http_client=httpx.Client(transport=self._transport))
 
     def send_prompt(self, prompt, temperature):
