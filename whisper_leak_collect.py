@@ -28,7 +28,6 @@ def parse_arguments():
     parser.add_argument('-c', '--chatbot', help='The chatbot', required=True)
     parser.add_argument('-p', '--prompts', help='The prompts JSON file path', required=True)
     parser.add_argument('-t', '--tlsport', type=int, help='The remote TLS port', default=443)
-    parser.add_argument('-e', '--empty', help='Whether to permit empty responses', action='store_true')
     args = parser.parse_args()
     assert args.tlsport > 0 and args.tlsport <= 0xFFFF, Exception(f'Invalid remote TLS port: {args.tlsport}')
     PrintUtils.end_stage()
@@ -123,7 +122,7 @@ def main():
         # Build the training set
         training_set_path = os.path.join(get_self_dir(), 'training_set')
         collector = TrainingSetCollector(prompts['positive']['prompts'], prompts['positive']['repeat'], prompts['negative']['prompts'], prompts['negative']['repeat'], training_set_path, args.tlsport)
-        training_set = collector.get_training_set(chatbot_class, args.empty)
+        training_set = collector.get_training_set(chatbot_class)
 
     # Handle exceptions
     except Exception as ex:
