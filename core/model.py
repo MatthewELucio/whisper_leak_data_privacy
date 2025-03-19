@@ -260,8 +260,7 @@ class TrainingSetCollector(object):
                 except Exception as e:
                     PrintUtils.print_extra(f'Failed to generate training set for prompt: {prompt}')
                     PrintUtils.print_extra(f'Exception: {str(e)}')
-                    if NetworkUtils.is_sniffing():
-                        NetworkUtils.stop_sniffing_tls()
+                    NetworkUtils.stop_sniffing_tls()
                     continue
                     
 
