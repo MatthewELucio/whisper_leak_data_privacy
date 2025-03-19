@@ -93,6 +93,8 @@ class Datapoint(object):
         """
             Runs the analysis on the PCAP path and writes the sequence file.
             Note this also automatically populates the sequence data in the datapoint.
+
+            Returns: (number of data points collected, average data length)
         """
 
         # Validate PCAP file exists
@@ -152,6 +154,9 @@ class Datapoint(object):
             # Close capture
             if cap is not None:
                 cap.close()
+        
+        # Return the number of data points collected, and average data length
+        return len(self.seq['data_lengths']), numpy.mean(self.seq['data_lengths']) if len(self.seq['data_lengths']) > 0 else 0.0
 
 class TrainingSetCollector(object):
     """
@@ -209,6 +214,7 @@ class TrainingSetCollector(object):
         # Iterate each prompt and either fetch existing data or truly generate data for it
         curr_index = 0
         failed = 0
+        length, avg_size = 0, 0
         for prompt in all_prompts:
            
             # Add prompt
@@ -221,7 +227,7 @@ class TrainingSetCollector(object):
 
                 # Update progress
                 percentage = (curr_count * 100) // total_datapoints
-                PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%), {failed} queries failed', override_prev=True)
+                PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%), {failed} failed. Latest: {length} events, {avg_size} bytes per event.', override_prev=True)
                 curr_count += 1
 
                 # Fetch the datapoint for the prompt
@@ -256,7 +262,7 @@ class TrainingSetCollector(object):
                         NetworkUtils.stop_sniffing_tls()
 
                     # Perform the analysis and set the data
-                    datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, response, temperature)
+                    length, avg_size = datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, response, temperature)
                     training_set[prompt].append(datapoint)
                 except Exception as e:
                     PrintUtils.print_extra(f'Failed to generate training set for prompt: {prompt}')

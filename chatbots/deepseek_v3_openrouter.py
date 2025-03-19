@@ -27,7 +27,11 @@ class DeepseekV3OpenRouter(ChatbotBase):
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
-        self._client = OpenAI(base_url=f'https://openrouter.ai:{remote_tls_port}/api/v1', api_key=api_key, http_client=httpx.Client(transport=self._transport))
+        self._client = OpenAI(
+            base_url=f'https://openrouter.ai:{remote_tls_port}/api/v1',
+            api_key=api_key,
+            http_client=httpx.Client(transport=self._transport)
+        )
 
     def send_prompt(self, prompt, temperature):
         """
@@ -37,8 +41,21 @@ class DeepseekV3OpenRouter(ChatbotBase):
 
         # Send prompt
         response = ''
-        stream = self._client.chat.completions.create(extra_body={}, model='deepseek/deepseek-chat', messages=[ { 'role': 'user', 'content': prompt } ], stream=True, temperature=temperature)
+        stream = self._client.chat.completions.create(
+            model='deepseek/deepseek-chat',
+            messages=[ { 'role': 'user', 'content': prompt } ],
+            stream=True,
+            temperature=temperature,
+            # Specify the provider routing in extra_body
+            extra_body={
+                "provider": {
+                    "order": ["DeepSeek"],
+                    'allow_fallbacks': False
+                },
+            }
+        )
         for chunk in stream:
+            assert chunk.provider == 'DeepSeek', Exception(f'Unexpected provider: {chunk.provider}')
             if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0 and chunk.choices[0].delta.content:
                 response += chunk.choices[0].delta.content
 

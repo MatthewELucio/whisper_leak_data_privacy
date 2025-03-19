@@ -56,17 +56,20 @@ class DeepseekR1OpenRouter(ChatbotBase):
                     {"role": "user", "content": prompt}
                 ],
                 stream=True,
+                max_tokens=4000,
                 temperature=temperature,
                 # Specify the provider routing in extra_body
                 extra_body={
-                    #"route": "deepseek/deepseek-r1",
-                    "provider": {"order": ["DeepSeek"]},
-                    'allow_fallbacks': False
+                    "provider": {
+                        "order": ["DeepSeek"],
+                        'allow_fallbacks': False
+                    },
                 }
             )
             
             for chunk in stream:
-                #print(chunk)  # Debugging line to see the chunk data
+                #print(chunk)
+                assert chunk.provider == 'DeepSeek', Exception(f'Unexpected provider: {chunk.provider}')
                 if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0:
                     if chunk.choices[0].delta.content is not None:
                         response += chunk.choices[0].delta.content

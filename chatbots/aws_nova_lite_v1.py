@@ -51,7 +51,7 @@ class AmazonNovaLiteV1(ChatbotBase):
             }
         ]
         message_list = [{"role": "user", "content": [{"text": prompt}]}]
-        inf_params = {"maxTokens": 500, "topP": 0.9, "topK": 20, "temperature": temperature}
+        inf_params = {"maxTokens": 3000, "temperature": temperature}
 
         request_body = {
             "schemaVersion": "messages-v1",
