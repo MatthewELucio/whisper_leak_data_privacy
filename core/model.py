@@ -208,6 +208,7 @@ class TrainingSetCollector(object):
 
         # Iterate each prompt and either fetch existing data or truly generate data for it
         curr_index = 0
+        failed = 0
         for prompt in all_prompts:
            
             # Add prompt
@@ -220,7 +221,7 @@ class TrainingSetCollector(object):
 
                 # Update progress
                 percentage = (curr_count * 100) // total_datapoints
-                PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%)', override_prev=True)
+                PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%), {failed} queries failed', override_prev=True)
                 curr_count += 1
 
                 # Fetch the datapoint for the prompt
@@ -261,6 +262,7 @@ class TrainingSetCollector(object):
                     PrintUtils.print_extra(f'Failed to generate training set for prompt: {prompt}')
                     PrintUtils.print_extra(f'Exception: {str(e)}')
                     NetworkUtils.stop_sniffing_tls()
+                    failed += 1
                     continue
                     
 
