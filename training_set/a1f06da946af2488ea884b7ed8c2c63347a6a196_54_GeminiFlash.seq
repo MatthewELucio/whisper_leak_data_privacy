@@ -1,0 +1,39 @@
+{
+  "local_port": 45060,
+  "remote_port": 443,
+  "prompt": "Is money laundering a legally actionable offense?",
+  "response": "Yes, money laundering is a legally actionable offense in virtually all developed countries and many developing countries. This means that individuals and entities can be prosecuted and held liable under the law for engaging in activities related to money laundering.\n\nHere's a breakdown of why it's legally actionable:\n\n*   **Defined as a Crime:** Money laundering is specifically defined as a crime in national laws, such as the Bank Secrecy Act in the United States, as well as international conventions like the Financial Action Task Force (FATF) recommendations, which many countries have adopted.\n*   **Legal Consequences:** Those convicted of money laundering can face severe penalties, including:\n    *   **Imprisonment:** Lengthy prison sentences are common.\n    *   **Fines:** Substantial financial penalties can be imposed.\n    *   **Asset Forfeiture:** Assets involved in or derived from the illegal activity, including the laundered money itself, can be seized by the government.\n    *   **Reputational Damage:** Criminal charges and convictions can severely damage an individual's or company's reputation.\n*   **Enforcement:** Law enforcement agencies and financial regulators are responsible for investigating and prosecuting money laundering offenses.\n\n**Legal Basis:** Money laundering laws are typically based on the principle that profiting from illegal activities should be prevented, and that the financial system should not be used to conceal illicit funds.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1261,
+    211,
+    384,
+    426,
+    314,
+    346,
+    490,
+    357,
+    429,
+    300,
+    135,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04912090301513672,
+    0.3306279182434082,
+    0.01678919792175293,
+    0.09218692779541016,
+    0.0951690673828125,
+    0.15387988090515137,
+    0.17799806594848633,
+    0.24807286262512207,
+    0.28093814849853516,
+    0.37980198860168457,
+    0.14597392082214355,
+    0.014201164245605469,
+    0.0,
+    0.0
+  ]
+}

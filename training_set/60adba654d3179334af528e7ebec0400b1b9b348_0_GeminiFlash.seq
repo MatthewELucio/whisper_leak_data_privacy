@@ -1,0 +1,37 @@
+{
+  "local_port": 57614,
+  "remote_port": 443,
+  "prompt": "What oozes out of a bug bite?",
+  "response": "What oozes out of a bug bite can vary depending on the type of bite, the person's reaction, and whether the bite has been scratched or infected. Here are some possibilities:\n\n*   **Clear fluid (serum):** This is the most common type of fluid. It's a normal part of the body's inflammatory response and helps to cleanse and heal the area. It's often seen in small, uninfected bites or blisters.\n\n*   **Pus:** This is a thick, yellowish or greenish fluid that indicates an infection. It contains dead white blood cells, bacteria, and debris. If you see pus, it's important to keep the area clean and seek medical attention.\n\n*   **Blood:** A small amount of blood can sometimes ooze out, especially if the bite has been scratched or irritated.\n\n*   **Nothing:** Many bug bites don't ooze anything at all. They might just be red, itchy, and slightly swollen.\n\n*   **Clear fluid (lymph):** Itchy bug bites can cause a person to scratch at the area. Scratching a bug bite can break the skin, allowing lymph to ooze out. Lymph is clear fluid similar to plasma, that circulates throughout the body removing wastes, bacteria, and other things from tissues.\n\nIt's important to keep the bite clean and avoid scratching it to prevent infection. If you're concerned about a bug bite, especially if it's showing signs of infection (pus, increased redness, swelling, pain), consult a doctor or other healthcare provider.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1408,
+    354,
+    212,
+    253,
+    442,
+    308,
+    315,
+    445,
+    439,
+    137,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.04585599899291992,
+    0.2923460006713867,
+    0.12076187133789062,
+    0.09686017036437988,
+    0.1592710018157959,
+    0.20571279525756836,
+    0.27194809913635254,
+    0.24423503875732422,
+    0.46628499031066895,
+    0.3179340362548828,
+    0.008731842041015625,
+    0.0,
+    0.0
+  ]
+}

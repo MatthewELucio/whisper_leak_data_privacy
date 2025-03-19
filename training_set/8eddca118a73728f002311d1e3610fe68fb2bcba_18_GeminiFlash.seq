@@ -1,0 +1,39 @@
+{
+  "local_port": 48818,
+  "remote_port": 443,
+  "prompt": "Does money laundering fall under criminal legislation?",
+  "response": "Yes, money laundering is a crime and is therefore addressed under criminal legislation in virtually every country.\n\nHere's why:\n\n*   **Definition:** Money laundering is the process of disguising the origins of illegally obtained money so that it appears to come from a legitimate source. This is done to avoid detection and prosecution for the underlying criminal activity that generated the money.\n*   **Harm:** Money laundering enables and perpetuates criminal activities such as drug trafficking, terrorism, corruption, fraud, and human trafficking. It also undermines financial systems and economic stability.\n*   **Laws:** Countries have enacted specific laws to combat money laundering, such as the Bank Secrecy Act in the United States and similar legislation in other jurisdictions. These laws criminalize the act of money laundering and impose penalties, including imprisonment and fines.\n*   **International Cooperation:** Money laundering is a global problem, and international organizations like the Financial Action Task Force (FATF) set standards and promote effective measures to combat it. Countries cooperate internationally to investigate and prosecute money laundering offenses.\n\nIn summary, money laundering is a criminal offense because it facilitates other crimes, damages economies, and undermines the integrity of financial systems. It is addressed through specific criminal laws at the national and international levels.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    283,
+    396,
+    330,
+    218,
+    378,
+    262,
+    334,
+    349,
+    397,
+    264,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.04516792297363281,
+    0.44455790519714355,
+    0.0014340877532958984,
+    0.023634910583496094,
+    0.1149599552154541,
+    0.05106210708618164,
+    0.159013032913208,
+    0.23414301872253418,
+    0.29202699661254883,
+    0.2971339225769043,
+    0.3831920623779297,
+    0.01005697250366211,
+    0.0,
+    0.0
+  ]
+}

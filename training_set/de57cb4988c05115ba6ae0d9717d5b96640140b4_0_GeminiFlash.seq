@@ -1,0 +1,41 @@
+{
+  "local_port": 40820,
+  "remote_port": 443,
+  "prompt": "How is Hired's referral rate?",
+  "response": "Hired's referral program varies and it's tough to give a single definitive \"rate.\" Here's a breakdown of what affects the referral rewards and what you should consider:\n\n*   **Reward Amounts Vary:** The amount you get for referring someone to Hired is not fixed. It depends on a few factors:\n    *   **Position Level:** Referrals for senior roles or roles in high-demand areas typically come with higher rewards.\n    *   **Location:** Reward amounts can differ depending on the location of the role being filled.\n    *   **Promotional Periods:** Hired might run special promotions that temporarily increase referral bonuses.\n*   **Reward Type:** Sometimes the reward is a cash bonus, and other times it might be a gift card or other incentive.\n*   **Terms and Conditions:** There are always terms and conditions to be aware of, such as:\n    *   The referred candidate must be new to Hired (not already in their system).\n    *   The referred candidate must be successfully hired through the Hired platform and often needs to remain in the position for a certain period (e.g., 90 days) before the referral bonus is paid out.\n*   **How to Find Current Referral Rates:**\n    *   **Check Hired's Website/App:** The most accurate way to find the current referral rates and terms is to log into your Hired account (if you have one) or visit their website and look for the referral program details.\n    *   **Contact Hired Support:** If you can't find the information online, reach out to Hired's customer support or account manager for clarification.\n\nIn summary, don't expect a single, fixed referral rate. Check the specifics of Hired's program when you are looking to make a referral to get accurate details.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1385,
+    231,
+    244,
+    288,
+    307,
+    360,
+    391,
+    268,
+    515,
+    403,
+    387,
+    204,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.05432486534118652,
+    0.425429105758667,
+    0.011780023574829102,
+    0.11893701553344727,
+    0.06282997131347656,
+    0.15042805671691895,
+    0.23401093482971191,
+    0.26312804222106934,
+    0.23020696640014648,
+    0.41535091400146484,
+    0.3175971508026123,
+    0.2710278034210205,
+    0.012102127075195312,
+    0.0015058517456054688,
+    0.0
+  ]
+}

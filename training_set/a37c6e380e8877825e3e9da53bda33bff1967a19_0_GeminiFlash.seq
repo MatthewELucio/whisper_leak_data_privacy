@@ -1,0 +1,27 @@
+{
+  "local_port": 50274,
+  "remote_port": 443,
+  "prompt": "What is the favorite sport of Melania Trump?",
+  "response": "While Melania Trump has been seen at various sporting events, she hasn't publicly stated a specific favorite sport.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1372,
+    340,
+    405,
+    162,
+    140,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.045855045318603516,
+    0.3417239189147949,
+    0.03088092803955078,
+    0.07029008865356445,
+    0.02753305435180664,
+    0.012823820114135742,
+    0.004422187805175781,
+    0.0
+  ]
+}

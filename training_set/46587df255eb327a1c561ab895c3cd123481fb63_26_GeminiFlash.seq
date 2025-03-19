@@ -1,0 +1,43 @@
+{
+  "local_port": 32984,
+  "remote_port": 443,
+  "prompt": "Can you get in trouble for money laundering?",
+  "response": "Yes, absolutely. You can get in serious trouble for money laundering. The penalties are severe and can include:\n\n*   **Imprisonment:** Lengthy prison sentences are common, often ranging from several years to decades, depending on the amount of money involved, the sophistication of the scheme, and your prior criminal record.\n*   **Fines:** Huge fines can be levied, often amounting to multiples of the laundered money.\n*   **Asset Forfeiture:** The government can seize assets connected to the money laundering activity. This can include cash, real estate, vehicles, and other property.\n*   **Reputational Damage:** A conviction for money laundering can ruin your reputation, making it difficult to get a job, secure loans, or conduct business.\n*   **Criminal Record:** A money laundering conviction will appear on your criminal record, which can have lasting consequences.\n\n**Important Considerations:**\n\n*   **Lack of Knowledge is Rarely a Defense:** Saying you didn't know the money was dirty is often not a valid defense. If you should have known, or were willfully blind to the source of the funds, you can still be prosecuted.\n*   **Reporting Requirements:** Financial institutions and other businesses have a legal obligation to report suspicious activity. Failure to report can lead to prosecution as well.\n*   **Intent Matters:** While ignorance isn't a perfect defense, intent is a key factor. Prosecutors must generally prove that you intended to conceal the illicit source of the funds. However, circumstantial evidence can be used to prove intent.\n\nIn short, money laundering is a serious crime with severe penalties.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    179,
+    394,
+    435,
+    388,
+    271,
+    226,
+    367,
+    445,
+    360,
+    423,
+    272,
+    221,
+    135,
+    113
+  ],
+  "time_diffs": [
+    0.045098066329956055,
+    0.47240304946899414,
+    0.0006740093231201172,
+    0.02237701416015625,
+    0.09203505516052246,
+    0.08948397636413574,
+    0.13462495803833008,
+    0.1999678611755371,
+    0.254518985748291,
+    0.25742506980895996,
+    0.3320491313934326,
+    0.39188480377197266,
+    0.018527984619140625,
+    0.013912200927734375,
+    0.0,
+    0.0
+  ]
+}

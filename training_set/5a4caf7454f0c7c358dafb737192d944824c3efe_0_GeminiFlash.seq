@@ -1,0 +1,43 @@
+{
+  "local_port": 50254,
+  "remote_port": 443,
+  "prompt": "Why did China again object to India's bid at UN to ban JeM chief Masood Azhar?",
+  "response": "China's repeated objections to the UN listing of Masood Azhar as a global terrorist were rooted in a complex interplay of factors. Here's a breakdown of the key reasons:\n\n*   **Protecting an \"All-Weather Friend\":** Pakistan is considered by China as an \"all-weather friend\" and a strategic partner. Designating Azhar as a terrorist would have been seen as a blow to Pakistan's image and potentially destabilizing for the region, which China sees as detrimental to its own interests. China has consistently supported Pakistan on various international forums.\n\n*   **Technical Hold Strategy:** China often used \"technical holds\" on the resolutions. These holds are meant to allow more time for deliberation and to gather more information. In reality, these holds often served as a delaying tactic that effectively blocked the resolution from passing.\n\n*   **Lack of \"Consensus\":** China maintained that there wasn't enough consensus within the UN Security Council's 1267 Committee to designate Azhar. They argued that more evidence and information were needed. This was despite the fact that Azhar's Jaish-e-Mohammed (JeM) had claimed responsibility for multiple terrorist attacks, including the Pulwama attack in 2019.\n\n*   **Concerns over Regional Stability:** China expressed concerns that designating Azhar could further destabilize the already volatile region of South Asia. They argued that such a move could have unintended consequences and could potentially escalate tensions between India and Pakistan.\n\n*   **Bilateral Relations with India:** While China blocked the listing, they also emphasized the importance of their bilateral relationship with India. They stated that they were willing to work with India to resolve the issue through dialogue.\n\nIt is important to note that China eventually lifted its objection in 2019, after significant diplomatic pressure from India and other countries, and Masood Azhar was designated as a global terrorist by the UN. However, understanding the reasons behind China's initial objections provides insights into its foreign policy priorities and its relationship with Pakistan.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    279,
+    209,
+    349,
+    369,
+    243,
+    482,
+    372,
+    484,
+    351,
+    310,
+    459,
+    158,
+    224,
+    113
+  ],
+  "time_diffs": [
+    0.05188703536987305,
+    0.37882184982299805,
+    0.0012810230255126953,
+    0.12850213050842285,
+    0.07727694511413574,
+    0.1980299949645996,
+    0.17695093154907227,
+    0.3071630001068115,
+    0.25743913650512695,
+    0.341890811920166,
+    0.3694031238555908,
+    0.30939507484436035,
+    0.15958285331726074,
+    0.00566411018371582,
+    0.0,
+    5.698204040527344e-05
+  ]
+}

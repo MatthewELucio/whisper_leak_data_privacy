@@ -1,0 +1,37 @@
+{
+  "local_port": 59268,
+  "remote_port": 443,
+  "prompt": "Can you get in trouble for money laundering?",
+  "response": "Yes, you can absolutely get in trouble for money laundering. It is a serious crime with severe legal consequences. These consequences vary depending on the jurisdiction, the amount of money involved, and the complexity of the scheme, but they typically include:\n\n*   **Criminal charges:** Money laundering is a federal crime in the United States and is also a crime in many other countries.\n*   **Imprisonment:** Sentences can range from several years to decades in prison.\n*   **Fines:** Fines can be substantial, often exceeding the amount of money laundered.\n*   **Asset forfeiture:** The government can seize assets involved in the money laundering scheme, including cash, property, and other valuables.\n*   **Reputational damage:** A conviction for money laundering can severely damage a person's reputation, making it difficult to find employment or secure loans.\n*   **Civil penalties:** In addition to criminal charges, individuals and businesses may also face civil penalties for money laundering violations.\n\nThe specific laws and penalties related to money laundering vary by jurisdiction, but generally, the act is illegal across the globe.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1352,
+    209,
+    449,
+    273,
+    476,
+    360,
+    436,
+    435,
+    235,
+    306,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.05418992042541504,
+    0.6927869319915771,
+    0.035809993743896484,
+    0.04483509063720703,
+    0.08715987205505371,
+    0.15218305587768555,
+    0.15586113929748535,
+    0.21408390998840332,
+    0.229935884475708,
+    0.16237401962280273,
+    0.01335000991821289,
+    6.318092346191406e-05,
+    0.0002129077911376953
+  ]
+}

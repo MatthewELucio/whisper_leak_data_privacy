@@ -1,0 +1,35 @@
+{
+  "local_port": 52524,
+  "remote_port": 443,
+  "prompt": "What is your review of Some (2004 movie)?",
+  "response": "I can't provide you with a review of a movie called \"Some\" (2004) because there isn't a widely known or readily identifiable film with that title and year. It's possible that:\n\n*   **The title is slightly different:** There might be a minor variation in the spelling or punctuation.\n*   **It's a very obscure independent film:** Many low-budget or experimental films have limited distribution and are not widely documented.\n*   **The date is incorrect:** The film may have been released in a different year.\n*   **It's a localized or foreign film:** Some films are only released in specific regions.\n\nTo help me give you a review, could you please provide more information about the movie? For example:\n\n*   **Director:** Who directed the movie?\n*   **Actors:** Who starred in the movie?\n*   **Plot Summary:** What is the movie about?\n*   **Alternative Titles:** Was it known by any other names?\n*   **Country of Origin:** Where was the film produced?\n\nWith more information, I can try to locate the film and provide a relevant review or summary of opinions about it.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1296,
+    374,
+    405,
+    442,
+    383,
+    379,
+    357,
+    380,
+    300,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.04752492904663086,
+    0.3182699680328369,
+    0.1398310661315918,
+    0.07689595222473145,
+    0.20916008949279785,
+    0.1582028865814209,
+    0.23995113372802734,
+    0.22708582878112793,
+    0.24808716773986816,
+    0.0074999332427978516,
+    0.0,
+    0.0
+  ]
+}

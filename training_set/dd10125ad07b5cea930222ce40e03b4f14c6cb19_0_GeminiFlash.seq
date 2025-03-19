@@ -1,0 +1,39 @@
+{
+  "local_port": 38790,
+  "remote_port": 443,
+  "prompt": "How do I know if some one has read my direct message on instagram?",
+  "response": "Instagram provides a few indicators to tell if someone has read your direct message:\n\n*   **\"Seen\" Text:** Underneath your message, if the recipient has opened and viewed it, you'll see the word \"Seen\" accompanied by a timestamp (e.g., \"Seen 10m ago\").\n\n*   **Last Active Status:** If the user has turned on their last active status, you might see a general indication of when they were last active on Instagram. This doesn't guarantee they saw your message, but it can be a clue.\n\n**Important Considerations:**\n\n*   **Read Receipts Turned Off:** Users have the option to turn off read receipts. If they've done this, you won't see the \"Seen\" status even if they've viewed your message.\n*   **Group Chats:** Read receipts work in group chats, but the \"Seen\" indicator will appear only when everyone in the group has viewed the message.\n*   **Message Requests:** If you're messaging someone who doesn't follow you, your message may go into their \"Message Requests\" folder. They won't get a notification, and you won't see \"Seen\" until they accept the request and open the message.\n*   **Previewing Messages:** Users can preview messages from the notification screen or on their lock screen without opening the direct message. In this case, you won't see \"Seen\" because they haven't technically opened the message within the Instagram app.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    98,
+    309,
+    411,
+    383,
+    331,
+    383,
+    289,
+    308,
+    312,
+    131,
+    224,
+    113
+  ],
+  "time_diffs": [
+    0.046740055084228516,
+    0.3060009479522705,
+    0.0014009475708007812,
+    0.15598702430725098,
+    0.10880303382873535,
+    0.1811380386352539,
+    0.23207688331604004,
+    0.27892017364501953,
+    0.2791168689727783,
+    0.3499009609222412,
+    0.2521681785583496,
+    0.00881195068359375,
+    0.00010895729064941406,
+    8.392333984375e-05
+  ]
+}

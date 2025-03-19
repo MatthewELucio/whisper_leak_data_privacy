@@ -1,0 +1,31 @@
+{
+  "local_port": 39086,
+  "remote_port": 443,
+  "prompt": "Has California ever voted for a Republican in the general election?",
+  "response": "Yes, California has voted for a Republican in the general election for president. The last time California voted for a Republican presidential candidate was in 1988 when they voted for George H.W. Bush.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    273,
+    307,
+    414,
+    402,
+    159,
+    285,
+    133,
+    113
+  ],
+  "time_diffs": [
+    0.04511594772338867,
+    0.4430370330810547,
+    0.001438140869140625,
+    0.03541398048400879,
+    0.04204702377319336,
+    0.08568382263183594,
+    0.03639507293701172,
+    0.014866113662719727,
+    0.0015978813171386719,
+    0.0
+  ]
+}

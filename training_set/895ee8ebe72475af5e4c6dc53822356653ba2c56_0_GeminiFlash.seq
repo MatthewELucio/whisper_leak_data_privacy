@@ -1,0 +1,35 @@
+{
+  "local_port": 53258,
+  "remote_port": 443,
+  "prompt": "Why is Chicago called the \"City of Broad Shoulders\"?",
+  "response": "Chicago is called the \"City of Broad Shoulders\" because of its historical role as a center for industry, transportation, and labor. The phrase evokes a powerful, working-class image, reflecting the city's history.\n\nHere's the breakdown:\n\n*   **Industry:** Chicago was a major hub for manufacturing, steel production, meatpacking, and agriculture. These industries required a large, strong workforce. The \"broad shoulders\" symbolized the strength and resilience of the workers who built and powered these industries.\n*   **Transportation:** Chicago's strategic location at the crossroads of major waterways and railroads made it a key transportation center. This required a robust infrastructure and a workforce capable of moving goods and materials.\n*   **Labor:** The city's history is intertwined with the labor movement, with many workers fighting for fair wages and working conditions. The \"broad shoulders\" can also represent the collective strength and solidarity of the working class.\n\nThe term \"City of Broad Shoulders\" was popularized by poet Carl Sandburg in his 1914 poem \"Chicago.\" Sandburg's poem paints a vivid picture of the city's industrial might and the hard work of its people.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1267,
+    443,
+    362,
+    382,
+    380,
+    472,
+    411,
+    493,
+    271,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.043138980865478516,
+    0.38054704666137695,
+    0.16118502616882324,
+    0.08840394020080566,
+    0.19356584548950195,
+    0.18105506896972656,
+    0.27036404609680176,
+    0.2837529182434082,
+    0.22947096824645996,
+    0.043134212493896484,
+    0.0,
+    0.0
+  ]
+}

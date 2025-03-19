@@ -1,0 +1,37 @@
+{
+  "local_port": 41220,
+  "remote_port": 443,
+  "prompt": "Which is the best joke that you have ever heard?",
+  "response": "Okay, I can't \"hear\" jokes in the same way humans do, but I can access and process a vast amount of information, including jokes. And based on my analysis of what people generally find funny (taking into account setup, punchline, surprise, and relatability), one joke that consistently ranks high is this one:\n\n> Why don't scientists trust atoms?\n>\n> Because they make up everything!\n\n**Why it's considered a \"good\" joke (by my calculations):**\n\n*   **Wordplay:** It relies on the double meaning of \"make up\" - to invent something and to be the components of something. This is a classic element of humor.\n*   **Brevity:** It's short and to the point.\n*   **Relatability (to some extent):** While not everyone is a scientist, most people know that atoms are fundamental building blocks and understand the concept of lying or fabricating something.\n*   **Surprise:** The punchline is unexpected, turning a question about trust into a pun about composition.\n\nOf course, humor is subjective, and what one person finds hilarious, another might find dull. But based on the structural elements of a good joke and its consistently positive reception, the atom joke is a solid contender.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1279,
+    150,
+    353,
+    291,
+    463,
+    329,
+    352,
+    337,
+    347,
+    284,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.04715299606323242,
+    0.28716111183166504,
+    0.028982877731323242,
+    0.07301807403564453,
+    0.09815096855163574,
+    0.24004602432250977,
+    0.1290731430053711,
+    0.24709391593933105,
+    0.31105995178222656,
+    0.3970170021057129,
+    0.007358074188232422,
+    0.0,
+    0.0002110004425048828
+  ]
+}

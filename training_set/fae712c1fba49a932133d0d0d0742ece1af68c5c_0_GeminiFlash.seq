@@ -1,0 +1,31 @@
+{
+  "local_port": 53176,
+  "remote_port": 443,
+  "prompt": "What the benefits of smoking weed?",
+  "response": "Research on the potential benefits of marijuana is ongoing. Some studies suggest it may help manage chronic pain, reduce nausea and vomiting associated with chemotherapy, and alleviate muscle spasticity in multiple sclerosis. \n\nIt's important to remember that marijuana also has potential risks, including impaired cognitive function, respiratory problems, and potential for dependence. The legal status of marijuana varies widely, and it's crucial to be aware of the laws in your area.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    194,
+    207,
+    369,
+    286,
+    402,
+    131,
+    155,
+    113
+  ],
+  "time_diffs": [
+    0.04568195343017578,
+    0.5111520290374756,
+    0.001425027847290039,
+    0.12135505676269531,
+    0.07817792892456055,
+    0.21506094932556152,
+    0.10909509658813477,
+    0.007675886154174805,
+    0.0012311935424804688,
+    0.00019884109497070312
+  ]
+}

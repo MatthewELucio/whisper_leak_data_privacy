@@ -1,0 +1,35 @@
+{
+  "local_port": 41194,
+  "remote_port": 443,
+  "prompt": "Is internal hard drive a primary storage device or secondary storage device?",
+  "response": "An internal hard drive is a **secondary storage device**.\n\nHere's why:\n\n*   **Primary storage** (like RAM) is directly accessible by the CPU and is used to store data and instructions that the CPU is actively working on. It's fast and volatile (data is lost when power is turned off).\n*   **Secondary storage** (like hard drives, SSDs, and USB drives) is used for long-term storage of data and programs. It is slower than primary storage but non-volatile (data is retained when power is turned off). The CPU cannot directly access data stored on secondary storage; it must first be loaded into primary storage.\n\nSince an internal hard drive stores data persistently and the CPU doesn't directly access it for immediate operations, it is classified as secondary storage.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1473,
+    290,
+    376,
+    289,
+    310,
+    215,
+    261,
+    304,
+    133,
+    134,
+    113
+  ],
+  "time_diffs": [
+    0.045886993408203125,
+    0.30245399475097656,
+    0.013736963272094727,
+    0.09804606437683105,
+    0.030981063842773438,
+    0.163222074508667,
+    0.15903902053833008,
+    0.2508368492126465,
+    0.09642815589904785,
+    0.008685827255249023,
+    0.0,
+    0.0
+  ]
+}

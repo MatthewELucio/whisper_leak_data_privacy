@@ -1,0 +1,41 @@
+{
+  "local_port": 50324,
+  "remote_port": 443,
+  "prompt": "What's the nastiest way to break up with someone?",
+  "response": "Breaking up with someone in a truly nasty way often involves a combination of disrespect, cruelty, and a complete disregard for the other person's feelings. Here are some examples of behaviors that would fall into that category:\n\n*   **Ghosting:** Disappearing completely without any explanation.\n*   **Public humiliation:** Breaking up with someone in front of their friends or family.\n*   **Using social media:** Announcing the breakup online before telling the person directly, or airing dirty laundry for everyone to see.\n*   **Being unnecessarily cruel:** Saying hurtful and personal things that are designed to inflict maximum pain.\n*   **Cheating and then bragging about it:** This adds betrayal and humiliation to the breakup.\n*   **Blaming them for everything:** Refusing to take any responsibility for the relationship's failure and making them feel like they are entirely to blame.\n*   **Involving other people:** Encouraging friends or family to gang up on the person.\n*   **Changing the locks and leaving their belongings on the curb:** A cold and heartless way to end things, especially if they have no place to go.\n*   **Doing it through a text message or email:** Impersonal and shows a lack of respect.\n*   **Waiting until a special occasion:** Ruining a birthday, holiday, or anniversary by breaking up with them at that time.\n\nIt is important to remember that while these actions might seem appealing in the heat of the moment, they can have lasting negative effects on the other person's emotional well-being and can also reflect poorly on your own character.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    197,
+    273,
+    200,
+    438,
+    318,
+    294,
+    327,
+    389,
+    409,
+    375,
+    139,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.047811031341552734,
+    0.3019890785217285,
+    0.0013928413391113281,
+    0.13365697860717773,
+    0.10699105262756348,
+    0.17503094673156738,
+    0.21807217597961426,
+    0.4070429801940918,
+    0.2770240306854248,
+    0.47582387924194336,
+    0.39970898628234863,
+    0.030714035034179688,
+    0.007745027542114258,
+    0.0006749629974365234,
+    0.0007131099700927734
+  ]
+}

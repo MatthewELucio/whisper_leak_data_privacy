@@ -1,0 +1,39 @@
+{
+  "local_port": 44950,
+  "remote_port": 443,
+  "prompt": "Which is your favorite JUMLA of PM MODI?",
+  "response": "As an AI, I am not capable of having opinions or preferences. However, I can share some examples of widely known slogans and statements (\"jumlas\") associated with Prime Minister Modi:\n\n*   **\"Sabka Saath, Sabka Vikas, Sabka Vishwas, Sabka Prayaas\"** (Together with all, Development for all, Trust of all, Effort of all): This slogan emphasizes inclusive growth and collective effort.\n*   **\"Acche Din Aane Wale Hain\"** (Good days are about to come): This was a popular slogan during the 2014 election campaign, promising positive change and progress.\n*   **\"Make in India\"**: This initiative encourages domestic manufacturing and aims to transform India into a global manufacturing hub.\n*   **\"Startup India, Standup India\"**: This promotes entrepreneurship and aims to empower new businesses and innovation.\n*   **\"Swachh Bharat Abhiyan\"** (Clean India Mission): A nationwide campaign focused on improving sanitation and cleanliness across the country.\n*    **\"Atmanirbhar Bharat\"** (Self-reliant India): This slogan promotes economic independence and self-sufficiency for India.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    223,
+    280,
+    342,
+    348,
+    371,
+    331,
+    394,
+    265,
+    283,
+    142,
+    177,
+    113
+  ],
+  "time_diffs": [
+    0.04469609260559082,
+    0.43738293647766113,
+    0.0014951229095458984,
+    0.013042926788330078,
+    0.07231903076171875,
+    0.16309285163879395,
+    0.17042803764343262,
+    0.17329716682434082,
+    0.26467394828796387,
+    0.25114893913269043,
+    0.26953601837158203,
+    0.012109041213989258,
+    0.0,
+    0.0
+  ]
+}

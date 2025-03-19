@@ -1,0 +1,39 @@
+{
+  "local_port": 35492,
+  "remote_port": 443,
+  "prompt": "Is Xiaomi Redmi Note 3 up gradable to Marshmallow?",
+  "response": "Yes, the Xiaomi Redmi Note 3 (both the Snapdragon and MediaTek versions) **is upgradable to Android Marshmallow**.\n\nHowever, there are a few key details to be aware of:\n\n*   **Official Updates:** Xiaomi released official MIUI updates based on Android Marshmallow for both versions of the Redmi Note 3.\n*   **MIUI Version:** The upgrade will typically bring you to a version of MIUI (Xiaomi's custom Android skin) that is based on Marshmallow.\n*   **Checking for Updates:** You can check for available updates in your phone's settings:\n    *   Go to \"Settings\" > \"About phone\" > \"System update\"\n*   **Custom ROMs:** If for some reason you cannot upgrade through the official channels, you can always install a custom ROM based on Marshmallow or even newer versions of Android.  However, this is a more advanced process.\n\nKeep in mind that software support for the Redmi Note 3 has officially ended, meaning there will be no further official Android updates from Xiaomi beyond what was originally released.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    104,
+    295,
+    280,
+    219,
+    387,
+    418,
+    407,
+    388,
+    435,
+    305,
+    221,
+    113
+  ],
+  "time_diffs": [
+    0.04798388481140137,
+    0.3609189987182617,
+    0.0014820098876953125,
+    0.0478060245513916,
+    0.04542803764343262,
+    0.07943987846374512,
+    0.20204806327819824,
+    0.1839580535888672,
+    0.30705809593200684,
+    0.26972293853759766,
+    0.18336796760559082,
+    0.011193037033081055,
+    0.0,
+    0.0
+  ]
+}

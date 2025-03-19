@@ -1,0 +1,41 @@
+{
+  "local_port": 36184,
+  "remote_port": 443,
+  "prompt": "When being sworn in as a witness in a court of law, and you are asked if you swear to tell the truth what happens if you say no?",
+  "response": "If you refuse to take the oath or affirmation to tell the truth, the whole truth, and nothing but the truth, in most jurisdictions, you **will likely not be allowed to testify**.\n\nHere's a breakdown of what could happen:\n\n*   **Refusal to Testify:** The court cannot compel you to testify without taking the oath or affirmation. The oath or affirmation is a fundamental requirement for ensuring the integrity of the legal process.\n*   **Consequences:**\n    *   **Contempt of Court:** You could be held in contempt of court for refusing to obey a lawful order of the court (taking the oath/affirmation). Contempt of court can result in fines, imprisonment, or both. The specific penalties vary by jurisdiction and the judge's discretion.\n    *   **Disqualification as a Witness:** Without the oath or affirmation, your testimony is generally inadmissible. The court needs assurance that you are committed to telling the truth.\n*   **Alternatives:** Some people object to swearing an oath for religious or personal reasons. In most courts, you can make an **affirmation** instead of swearing an oath. An affirmation is a solemn declaration that you will tell the truth and carries the same legal weight as an oath.\n*   **Explanation:** If you have a valid reason for refusing the oath (e.g., religious objection to swearing), you should explain it to the judge. The judge may allow an alternative affirmation that satisfies the legal requirements.\n\nIn summary, refusing to take the oath or affirmation has serious consequences. Unless you have a legitimate and legally recognized reason (and offer a valid alternative like affirmation), you will be considered uncooperative and could face penalties, including being barred from testifying and/or being held in contempt of court.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1487,
+    146,
+    344,
+    290,
+    296,
+    261,
+    332,
+    372,
+    385,
+    409,
+    306,
+    266,
+    161,
+    113
+  ],
+  "time_diffs": [
+    0.046730995178222656,
+    0.3438999652862549,
+    0.03415393829345703,
+    0.05878114700317383,
+    0.08617401123046875,
+    0.1829829216003418,
+    0.18012309074401855,
+    0.27420902252197266,
+    0.32507991790771484,
+    0.4178040027618408,
+    0.4230659008026123,
+    0.21048712730407715,
+    0.009253978729248047,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

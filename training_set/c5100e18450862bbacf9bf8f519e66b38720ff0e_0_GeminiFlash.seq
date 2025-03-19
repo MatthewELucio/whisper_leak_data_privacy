@@ -1,0 +1,37 @@
+{
+  "local_port": 39892,
+  "remote_port": 443,
+  "prompt": "Do you think the promise made by BJP of giving 15 lakhs to every Indians account will be true?",
+  "response": "Promises made during election campaigns are always a hot topic, and the BJP's promise of depositing 15 lakhs in every Indian's account is no exception. Here's a breakdown of the situation:\n\n*   **The Original Promise:** During the 2014 election campaign, BJP leaders, including Narendra Modi, talked about bringing back black money stashed abroad and distributing it to Indian citizens. The figure of 15 lakhs was often mentioned in this context.\n\n*   **The Reality:** After coming to power, the BJP government clarified that the 15 lakhs promise was more of a figurative statement to highlight the scale of black money allegedly held abroad. They stated that it wasn't a realistic promise to deposit that amount into every citizen's account.\n\n*   **Current Status:** The government has focused on initiatives to curb black money and bring illicit funds back into the country through various measures like demonetization and stricter tax laws. However, the promise of 15 lakhs per person has not been fulfilled.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    234,
+    307,
+    311,
+    316,
+    411,
+    326,
+    501,
+    417,
+    136,
+    182,
+    113
+  ],
+  "time_diffs": [
+    0.04421114921569824,
+    0.2635359764099121,
+    0.0031909942626953125,
+    0.1515369415283203,
+    0.11439800262451172,
+    0.1750481128692627,
+    0.17910289764404297,
+    0.3254399299621582,
+    0.2537071704864502,
+    0.0755770206451416,
+    0.008258819580078125,
+    0.0,
+    0.0
+  ]
+}

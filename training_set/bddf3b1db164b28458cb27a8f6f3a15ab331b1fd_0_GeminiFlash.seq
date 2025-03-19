@@ -1,0 +1,29 @@
+{
+  "local_port": 51882,
+  "remote_port": 443,
+  "prompt": "Who is the singer of chanakya title song?",
+  "response": "The title song of the TV series \"Chanakya\" was sung by **Bhupinder Singh**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    215,
+    176,
+    330,
+    269,
+    286,
+    214,
+    113
+  ],
+  "time_diffs": [
+    0.04780411720275879,
+    0.3670649528503418,
+    0.0014569759368896484,
+    0.0016651153564453125,
+    0.0976710319519043,
+    0.014868021011352539,
+    0.015018939971923828,
+    0.0014450550079345703,
+    0.006500959396362305
+  ]
+}

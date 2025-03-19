@@ -1,0 +1,39 @@
+{
+  "local_port": 47210,
+  "remote_port": 443,
+  "prompt": "Is money laundering a legally actionable offense?",
+  "response": "Yes, money laundering is a legally actionable offense in most jurisdictions around the world, including the United States, the United Kingdom, and many other countries. This means that individuals and entities who engage in money laundering can be prosecuted in a court of law and face significant penalties, including:\n\n*   **Criminal charges:** Money laundering is typically a criminal offense, meaning that those convicted can face imprisonment. The length of the sentence can vary depending on the amount of money laundered, the nature of the underlying crime, and the jurisdiction.\n\n*   **Fines:** In addition to imprisonment, individuals and entities convicted of money laundering can also be subject to substantial fines. These fines can be very large, sometimes exceeding the amount of money laundered.\n\n*   **Asset forfeiture:** Governments can seize assets that are connected to money laundering activities. This can include the money that was laundered, as well as any property or assets that were purchased with the laundered funds.\n\n*   **Civil penalties:** In some cases, individuals and entities may also face civil penalties for money laundering. These penalties can be imposed by government agencies or regulatory bodies, and can include fines, injunctions, and other sanctions.\n\n*   **Reputational damage:** Being accused or convicted of money laundering can severely damage a person's or company's reputation, making it difficult to conduct business or obtain financing in the future.\n\nThe specific laws and penalties related to money laundering can vary from one jurisdiction to another, but the general principle is the same: money laundering is a serious crime that can have significant legal and financial consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1299,
+    397,
+    241,
+    236,
+    438,
+    385,
+    400,
+    301,
+    427,
+    548,
+    245,
+    225,
+    113
+  ],
+  "time_diffs": [
+    0.04793381690979004,
+    0.2788400650024414,
+    0.016856908798217773,
+    0.046778202056884766,
+    0.0972449779510498,
+    0.17987680435180664,
+    0.20326709747314453,
+    0.2630319595336914,
+    0.30275607109069824,
+    0.3304569721221924,
+    0.31694793701171875,
+    0.008871078491210938,
+    0.0,
+    7.510185241699219e-05
+  ]
+}

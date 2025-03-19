@@ -1,0 +1,31 @@
+{
+  "local_port": 47244,
+  "remote_port": 443,
+  "prompt": "Why did you convert to Christianity?",
+  "response": "As a large language model, I don't have personal beliefs or experiences, so I can't convert to any religion. I am an AI and do not have the capacity for faith or religious affiliation. My purpose is to provide information and complete tasks as instructed.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    254,
+    163,
+    245,
+    313,
+    440,
+    151,
+    132,
+    113
+  ],
+  "time_diffs": [
+    0.04865312576293945,
+    0.33762502670288086,
+    0.0017309188842773438,
+    0.0416259765625,
+    0.04471993446350098,
+    0.03727412223815918,
+    0.14002609252929688,
+    0.008584976196289062,
+    0.0034279823303222656,
+    0.0016560554504394531
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 41670,
+  "remote_port": 443,
+  "prompt": "What methods did you use to skip school?",
+  "response": "I am an AI and do not have the ability to skip school. I am also programmed to be a helpful and harmless AI assistant. Therefore, I cannot provide you with any methods for skipping school. Skipping school can have negative consequences, and it is important to attend classes and fulfill your educational responsibilities.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    231,
+    286,
+    293,
+    223,
+    350,
+    245,
+    232,
+    113
+  ],
+  "time_diffs": [
+    0.04519009590148926,
+    0.291456937789917,
+    0.0014770030975341797,
+    0.02750110626220703,
+    0.07820296287536621,
+    0.11393594741821289,
+    0.13120698928833008,
+    0.010371923446655273,
+    0.0032432079315185547,
+    0.00021982192993164062
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 33900,
+  "remote_port": 443,
+  "prompt": "When and where was the song Londa Badnam Hua Nasiban Tere Liye originated?",
+  "response": "The song \"Londa Badnam Hua Nasiban Tere Liye\" originated in **Pakistan** and became popular around **2006-2007**. It's a Pashto song, originally performed by the Pashto singer **Ghazala Javed**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    151,
+    366,
+    319,
+    354,
+    454,
+    300,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.045957088470458984,
+    0.3577089309692383,
+    0.0014309883117675781,
+    0.026528120040893555,
+    0.08622503280639648,
+    0.0858759880065918,
+    0.14298081398010254,
+    0.009865999221801758,
+    0.00139617919921875,
+    0.0001900196075439453
+  ]
+}

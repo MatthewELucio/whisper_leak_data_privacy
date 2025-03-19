@@ -1,0 +1,41 @@
+{
+  "local_port": 43244,
+  "remote_port": 443,
+  "prompt": "Where can I download \"The Manhattan GRE set of 8 strategy guides\"?",
+  "response": "Finding legitimate download links for copyrighted material like the Manhattan Prep GRE Strategy Guides can be tricky. You want to make sure you're getting them legally and from a trusted source. Here's how you can typically access them:\n\n**1. Purchase from Manhattan Prep Directly:**\n\n*   **Best and Safest Option:** The most reliable way is to buy the books directly from Manhattan Prep's website.  They often have bundles and discounts. This ensures you get the latest edition and support the authors/company.  You may be able to purchase them in print or ebook format.\n\n**2. Consider a GRE Prep Course:**\n\n*   **Value Added:** Many GRE prep courses offered by Manhattan Prep (and other companies) include these strategy guides as part of the course materials. This is often a worthwhile investment if you want structured learning and expert instruction.\n\n**3. Check for Used Copies:**\n\n*   **Cost Effective:** Look for used copies on sites like:\n    *   Amazon\n    *   eBay\n    *   Facebook Marketplace\n    *   Local used bookstores\n\n**4. Check Your Local Library:**\n\n*   **Free Resource:** Your local library might have copies of the Manhattan Prep GRE guides available for borrowing.\n\n**Why Avoid Unofficial Download Sites:**\n\n*   **Copyright Infringement:** Downloading copyrighted material from unofficial sources is illegal.\n*   **Security Risks:**  These sites often contain malware, viruses, and other harmful software.\n*   **Outdated Material:** Unofficial downloads are often older editions, so the content may be outdated and no longer relevant to the current GRE.\n*   **Poor Quality:** Scans or copies from unofficial sources are often of poor quality and difficult to read.\n\n**In summary, the best approach is to purchase the books legally from Manhattan Prep or a reputable retailer, consider a prep course that includes the guides, or check your local library.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    127,
+    357,
+    262,
+    449,
+    274,
+    304,
+    420,
+    369,
+    322,
+    403,
+    177,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.04418301582336426,
+    0.38369178771972656,
+    0.0014472007751464844,
+    0.12253594398498535,
+    0.14252686500549316,
+    0.1413891315460205,
+    0.263185977935791,
+    0.23457789421081543,
+    0.24052810668945312,
+    0.4172670841217041,
+    0.3669559955596924,
+    0.3735649585723877,
+    0.009449958801269531,
+    0.0,
+    0.0
+  ]
+}

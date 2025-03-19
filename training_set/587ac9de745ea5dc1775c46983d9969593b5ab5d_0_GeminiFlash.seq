@@ -1,0 +1,37 @@
+{
+  "local_port": 44650,
+  "remote_port": 443,
+  "prompt": "Who is the best actor in world?",
+  "response": "That's a fun question! The \"best\" actor is completely subjective and depends on what you value in a performance. There's no single right answer.\n\nHere are some actors who are frequently cited as being among the greatest, often appearing on \"best of\" lists and award nominations. They are widely known for their exceptional talent, versatility, and impact on cinema.\n\n**Here are some frequently mentioned names, often cited for their technical skill, range, and impact:**\n\n*   **Marlon Brando:** Groundbreaking method acting, naturalism.\n*   **Daniel Day-Lewis:** Known for his intense preparation and disappearing into roles.\n*   **Robert De Niro:** Early intensity, later comedic roles, incredible range.\n*   **Al Pacino:** Charisma, intensity, and iconic performances.\n*   **Meryl Streep:** Versatility, accent work, consistent excellence.\n*   **Cate Blanchett:** Range, transformation, ability to inhabit diverse characters.\n\nUltimately, the \"best\" actor is a matter of personal taste. I'd recommend exploring the work of the actors mentioned above, and others who pique your interest, to form your own opinion!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1506,
+    309,
+    390,
+    272,
+    348,
+    383,
+    516,
+    421,
+    349,
+    241,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.048352956771850586,
+    0.38285112380981445,
+    0.03668498992919922,
+    0.060205936431884766,
+    0.10116386413574219,
+    0.20194506645202637,
+    0.21408510208129883,
+    0.40614891052246094,
+    0.19217205047607422,
+    0.2329568862915039,
+    0.013343095779418945,
+    0.0,
+    5.507469177246094e-05
+  ]
+}

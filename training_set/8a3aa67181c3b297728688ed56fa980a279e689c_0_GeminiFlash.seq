@@ -1,0 +1,39 @@
+{
+  "local_port": 39752,
+  "remote_port": 443,
+  "prompt": "Can European citizens live and work in the Bahamas?",
+  "response": "The situation regarding European citizens living and working in the Bahamas is **not as straightforward as free movement within the EU**.  Here's a breakdown:\n\n*   **No automatic right:** Being a citizen of a European country does not automatically grant the right to live and work in the Bahamas. The Bahamas is an independent country with its own immigration laws.\n\n*   **Work Permits and Visas:** European citizens generally need a work permit and the appropriate visa to live and work in the Bahamas legally. The process is similar to that faced by citizens of other non-Bahamian countries.\n\n*   **Sponsorship Required:** Usually, a prospective employer in the Bahamas needs to sponsor the European citizen's work permit application. The employer typically has to demonstrate that they couldn't find a qualified Bahamian citizen to fill the position.\n\n*   **Categories of Permits:** There are different categories of work permits, usually dependent on the type of job, the duration of employment, and the skills required.\n\n*   **Residency:** After a period of legal residence (typically several years), a European citizen might be able to apply for permanent residency, subject to meeting specific requirements such as financial stability, good character, and demonstrating contribution to the Bahamian society.\n\n**In summary, a European citizen cannot simply move to the Bahamas to live and work without going through the proper immigration channels, obtaining a work permit, and often securing sponsorship from a Bahamian employer.** It's crucial to consult the official website of the Bahamas Immigration Department or the nearest Bahamian embassy or consulate for the most accurate and up-to-date information.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    230,
+    221,
+    370,
+    374,
+    305,
+    475,
+    393,
+    399,
+    555,
+    177,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.04955101013183594,
+    0.436492919921875,
+    0.0014719963073730469,
+    0.08651399612426758,
+    0.10797286033630371,
+    0.2021160125732422,
+    0.16699814796447754,
+    0.2829608917236328,
+    0.25209999084472656,
+    0.3619260787963867,
+    0.3394639492034912,
+    0.009042024612426758,
+    0.00012493133544921875,
+    5.91278076171875e-05
+  ]
+}

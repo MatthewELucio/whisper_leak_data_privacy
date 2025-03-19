@@ -1,0 +1,27 @@
+{
+  "local_port": 60102,
+  "remote_port": 443,
+  "prompt": "Where did Sheldon Cooper get his PhD?",
+  "response": "Sheldon Cooper obtained his PhD from **Caltech (California Institute of Technology)**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    174,
+    272,
+    309,
+    229,
+    170,
+    113
+  ],
+  "time_diffs": [
+    0.04469895362854004,
+    0.4267542362213135,
+    0.0014297962188720703,
+    0.013312101364135742,
+    0.06097698211669922,
+    0.010255098342895508,
+    0.001428842544555664,
+    0.0
+  ]
+}

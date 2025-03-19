@@ -1,0 +1,27 @@
+{
+  "local_port": 53776,
+  "remote_port": 443,
+  "prompt": "How many people audition for Indian idol every year?",
+  "response": "While the exact number of auditions for Indian Idol varies each year, it's consistently in the millions. Some reports and statements from the show's producers suggest it can be anywhere from **millions** to **tens of millions** of hopefuls across the country. It's a massively popular show!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1397,
+    297,
+    331,
+    440,
+    235,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.047640085220336914,
+    0.2814309597015381,
+    0.12064504623413086,
+    0.11887693405151367,
+    0.18222904205322266,
+    0.007884979248046875,
+    0.0015571117401123047,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 39978,
+  "remote_port": 443,
+  "prompt": "Can I get infected with an STD from getting oral sex without protection?",
+  "response": "Yes, you can get infected with an STD from receiving or performing oral sex without protection. Some STDs that can be spread through oral sex include:\n\n*   **Herpes:** Can be spread through skin-to-skin contact.\n*   **Gonorrhea:** Can infect the throat.\n*   **Chlamydia:** Can infect the throat.\n*   **Syphilis:** Can cause sores in the mouth.\n*   **HPV (Human Papillomavirus):** Can cause genital warts or oral cancer.\n*   **HIV (Human Immunodeficiency Virus):** Although the risk is lower than with vaginal or anal sex, it is still possible.\n\nUsing condoms or dental dams during oral sex can help reduce the risk of transmission. Regular STD testing is also important for sexually active individuals.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    299,
+    265,
+    376,
+    220,
+    308,
+    300,
+    383,
+    323,
+    244,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.04280996322631836,
+    0.47588205337524414,
+    0.0013828277587890625,
+    0.012536048889160156,
+    0.17900991439819336,
+    0.12611699104309082,
+    0.1340491771697998,
+    0.16997289657592773,
+    0.2432701587677002,
+    0.11554980278015137,
+    0.0156400203704834,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 51674,
+  "remote_port": 443,
+  "prompt": "Do women lactate when they are pregnant?",
+  "response": "Some women do produce a small amount of milk (colostrum) during pregnancy, usually in the later stages. However, it's not the same as full lactation. It's more of a precursor, preparing the breasts for breastfeeding after birth.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1292,
+    224,
+    397,
+    427,
+    187,
+    155,
+    113
+  ],
+  "time_diffs": [
+    0.04877614974975586,
+    0.3090670108795166,
+    0.11091494560241699,
+    0.11312508583068848,
+    0.16605591773986816,
+    0.01077890396118164,
+    0.0,
+    0.001703023910522461
+  ]
+}

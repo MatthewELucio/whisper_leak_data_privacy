@@ -1,0 +1,29 @@
+{
+  "local_port": 44696,
+  "remote_port": 443,
+  "prompt": "Did Luis von Ahn himself learn languages from Duolingo?",
+  "response": "No, Luis von Ahn did not learn languages from Duolingo himself. He is a co-founder of Duolingo and is fluent in multiple languages prior to the launch of Duolingo.\n\nHis native language is Spanish, and he is also fluent in English.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1440,
+    188,
+    228,
+    206,
+    390,
+    314,
+    139,
+    113
+  ],
+  "time_diffs": [
+    0.049237966537475586,
+    0.3936960697174072,
+    0.0037369728088378906,
+    0.08813095092773438,
+    0.10895991325378418,
+    0.13018107414245605,
+    0.01279306411743164,
+    0.0016298294067382812,
+    0.0
+  ]
+}

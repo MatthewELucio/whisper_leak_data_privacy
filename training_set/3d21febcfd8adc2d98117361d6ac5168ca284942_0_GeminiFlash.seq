@@ -1,0 +1,35 @@
+{
+  "local_port": 52488,
+  "remote_port": 443,
+  "prompt": "Is Melania Trump actually fluent in French, Serbian and German?",
+  "response": "While Melania Trump speaks several languages, her fluency levels are debated. Here's what's generally accepted:\n\n*   **Slovenian:** Native language\n*   **English:** Fluent\n*   **French:** Widely reported as fluent, and she has been observed speaking French in public settings. However, some native speakers have commented on her accent and grammatical errors, suggesting she may not be perfectly fluent.\n*   **Serbian:** Reported as fluent. Serbian and Slovenian are closely related, so fluency in one often aids in understanding the other.\n*   **German:** Reported as being able to understand and speak German. It's also quite possible she is fluent, since she worked in Milan, Italy in the modeling industry for a long period of time.\n\n**In summary:** She is definitely fluent in Slovenian and English. She likely has a high level of proficiency in French and Serbian. German would likely fall into at least a conversational level.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    256,
+    326,
+    249,
+    291,
+    480,
+    458,
+    493,
+    310,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.055780887603759766,
+    0.30985403060913086,
+    0.0014719963073730469,
+    0.11000514030456543,
+    0.09856700897216797,
+    0.1849379539489746,
+    0.18999385833740234,
+    0.25008416175842285,
+    0.27992701530456543,
+    0.011459827423095703,
+    1.1920928955078125e-06,
+    0.0
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 59994,
+  "remote_port": 443,
+  "prompt": "I got 753 rank in Aiims and I have not attended to 1 at counseling. will I am eligible for second and third counseling?",
+  "response": "Congratulations on securing a rank of 753 in AIIMS!\n\nRegarding your eligibility for subsequent rounds of counseling (2nd and 3rd), here's a breakdown:\n\n*   **Yes, you are generally eligible.** The standard process for AIIMS counseling allows candidates who didn't attend the first round to participate in subsequent rounds. Not attending the first round doesn't disqualify you.\n\n**Important Considerations:**\n\n*   **Seat Availability:** Your chances in later rounds depend heavily on the number of seats that remain vacant after each round. With a rank of 753, you likely have a good chance, but the exact number of available seats and the cutoff for each round will determine your final outcome.\n\n*   **Official Information:** The most important thing is to **carefully read the official information bulletin and notices published by AIIMS** for the specific counseling process you are participating in. This is where you'll find the definitive rules, regulations, and schedules.\n\n**What to do now:**\n\n1.  **Monitor AIIMS Website:** Consistently check the official AIIMS exam website (usually the one you used to register for the exam) for updates, announcements, and seat availability information related to the second and third rounds of counseling.\n2.  **Review Counseling Guidelines:** Thoroughly read the counseling guidelines document available on the AIIMS website. This will give you detailed information about the process, required documents, and other important instructions.\n3.  **Be Prepared:** Have all your necessary documents ready in case you are called for counseling in the subsequent rounds.\n4.  **Attend Counseling (If Called):** If your rank falls within the cutoff for the second or third round, be sure to attend the counseling session at the designated time and place.\n\nBy staying informed and following the official guidelines, you'll maximize your chances of securing a seat in the course and college of your choice. Good luck!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    96,
+    268,
+    360,
+    350,
+    433,
+    484,
+    321,
+    395,
+    344,
+    436,
+    271,
+    156,
+    113
+  ],
+  "time_diffs": [
+    0.04675602912902832,
+    0.38518691062927246,
+    0.0014500617980957031,
+    0.12653207778930664,
+    0.06909489631652832,
+    0.2808189392089844,
+    0.1930830478668213,
+    0.32913708686828613,
+    0.3181009292602539,
+    0.31009507179260254,
+    0.37692689895629883,
+    0.3321809768676758,
+    0.01198720932006836,
+    0.0,
+    0.0
+  ]
+}

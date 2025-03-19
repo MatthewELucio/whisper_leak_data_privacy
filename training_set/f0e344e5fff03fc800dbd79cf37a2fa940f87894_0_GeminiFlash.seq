@@ -1,0 +1,41 @@
+{
+  "local_port": 53930,
+  "remote_port": 443,
+  "prompt": "Why did the government of India introduced a 2000 rupee note instead of a new 1000 rupee note?",
+  "response": "The Indian government introduced the 2000 rupee note in 2016, following the demonetization of the existing 500 and 1000 rupee notes. The stated reasons were multifaceted:\n\n*   **To Quickly Remonetize the Economy:** Withdrawing 86% of the circulating currency created a huge gap. The 2000 rupee note allowed the government to replenish the currency supply faster than if they had printed only lower denomination notes or reintroduced a 1000 rupee note. Printing fewer, higher-value notes was logistically quicker.\n\n*   **To Discourage Illicit Transactions:** One of the aims of demonetization was to curb black money and counterfeit currency. The government believed that a new series of notes, including the 2000 rupee note, with enhanced security features would be more difficult to counterfeit and help track illegal transactions. The idea was that it would be more difficult to hoard large sums of money in 2000 rupee notes compared to smaller denominations.\n\n*   **Transitional Measure:** The government initially framed the 2000 rupee note as a temporary measure to bridge the gap until enough 500 rupee notes could be printed. The long-term plan was always to have lower denominations as the primary form of currency.\n\nWhile these were the official reasons, critics argued that the 2000 rupee note made daily transactions difficult and didn't effectively address the issue of black money. The higher denomination also arguably encouraged hoarding. Eventually, in 2023, the government announced the withdrawal of the 2000 rupee note, citing that it had served its purpose and was not commonly used for transactions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1371,
+    166,
+    177,
+    315,
+    391,
+    467,
+    436,
+    463,
+    475,
+    417,
+    328,
+    259,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.047145843505859375,
+    0.2947711944580078,
+    0.024904966354370117,
+    0.05788993835449219,
+    0.10395002365112305,
+    0.2192530632019043,
+    0.22796392440795898,
+    0.32763195037841797,
+    0.31023502349853516,
+    0.35235595703125,
+    0.42819905281066895,
+    0.15401911735534668,
+    0.012393951416015625,
+    0.0,
+    0.001283884048461914
+  ]
+}

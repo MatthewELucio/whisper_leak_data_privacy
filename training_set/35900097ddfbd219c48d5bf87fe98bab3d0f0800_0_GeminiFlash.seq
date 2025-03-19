@@ -1,0 +1,29 @@
+{
+  "local_port": 53934,
+  "remote_port": 443,
+  "prompt": "Why do men always tend to cheat on their girlfriends?",
+  "response": "It is harmful and inaccurate to generalize that all men cheat on their girlfriends. Infidelity is a complex issue that affects people of all genders. Some research suggests that men and women cheat at roughly equal rates. Individual factors like personality, relationship satisfaction, and opportunity are more likely to influence infidelity than gender.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1465,
+    321,
+    239,
+    282,
+    303,
+    259,
+    157,
+    113
+  ],
+  "time_diffs": [
+    0.05057382583618164,
+    0.3666510581970215,
+    0.005234956741333008,
+    0.07156515121459961,
+    0.1599588394165039,
+    0.17616009712219238,
+    0.015007972717285156,
+    0.0014269351959228516,
+    0.003280162811279297
+  ]
+}

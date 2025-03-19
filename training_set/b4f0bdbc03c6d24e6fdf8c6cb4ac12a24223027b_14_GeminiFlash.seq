@@ -1,0 +1,41 @@
+{
+  "local_port": 53044,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law in virtually every developed country prohibits money laundering.\n\nHere's a breakdown:\n\n*   **Money laundering** is the process of disguising the origins of illegally obtained money so that it appears to come from a legitimate source.\n*   **Laws against money laundering are widespread.** They exist at both national and international levels.\n*   **Key Legal Frameworks:**\n    *   **The United States:** The primary laws are the Bank Secrecy Act (BSA) and related provisions in the US Code.\n    *   **Internationally:** The Financial Action Task Force (FATF) is an inter-governmental body that sets standards and promotes effective implementation of legal, regulatory, and operational measures for combating money laundering, terrorist financing, and other related threats to the integrity of the international financial system. Many countries have laws based on FATF recommendations.\n*   **Consequences:** Penalties for money laundering can be severe, including:\n    *   **Imprisonment:** Lengthy prison sentences are common.\n    *   **Fines:** Substantial monetary penalties can be imposed.\n    *   **Asset forfeiture:** The assets involved in the money laundering scheme (and sometimes other assets) can be seized by the government.\n\n**In summary, money laundering is illegal globally and subject to strict legal prohibitions.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    175,
+    152,
+    292,
+    201,
+    310,
+    434,
+    328,
+    467,
+    344,
+    248,
+    157,
+    169,
+    113
+  ],
+  "time_diffs": [
+    0.045102834701538086,
+    0.2997591495513916,
+    0.0014319419860839844,
+    0.035325050354003906,
+    0.07108497619628906,
+    0.07912206649780273,
+    0.19393301010131836,
+    0.16409993171691895,
+    0.3298940658569336,
+    0.22526288032531738,
+    0.3506619930267334,
+    0.08053994178771973,
+    0.00903010368347168,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 53814,
+  "remote_port": 443,
+  "prompt": "Is money laundering subject to legal prosecution?",
+  "response": "Yes, money laundering is subject to legal prosecution in most countries around the world. It is a serious crime with significant penalties, including:\n\n*   **Imprisonment:** Often lengthy prison sentences, ranging from several years to life imprisonment, depending on the jurisdiction and the scale of the offense.\n*   **Fines:** Substantial fines that can be many times the amount of money laundered.\n*   **Asset Forfeiture:** The confiscation of assets involved in or derived from the money laundering activities, including cash, property, and other valuables.\n*   **Civil Penalties:** In addition to criminal penalties, civil fines and sanctions may also be imposed.\n\nMoney laundering laws are designed to combat organized crime, terrorism, drug trafficking, and other illegal activities by targeting the financial networks that enable these crimes.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    196,
+    324,
+    254,
+    272,
+    434,
+    427,
+    534,
+    229,
+    263,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.04622006416320801,
+    0.29558897018432617,
+    0.0013659000396728516,
+    0.01448202133178711,
+    0.06490492820739746,
+    0.10001111030578613,
+    0.17323803901672363,
+    0.21606707572937012,
+    0.2881028652191162,
+    0.07155799865722656,
+    0.012237071990966797,
+    0.0,
+    0.0
+  ]
+}

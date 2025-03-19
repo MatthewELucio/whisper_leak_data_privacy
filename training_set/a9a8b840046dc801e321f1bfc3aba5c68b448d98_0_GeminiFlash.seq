@@ -1,0 +1,35 @@
+{
+  "local_port": 52282,
+  "remote_port": 443,
+  "prompt": "What does worm meat taste like?",
+  "response": "The taste of worm meat can vary depending on the species of worm, its diet, and how it's prepared. However, some common descriptions include:\n\n*   **Earthy:** This is a frequently mentioned characteristic. It can be similar to the taste of soil or mushrooms.\n*   **Nutty:** Some people find a nutty flavor, particularly when the worms are roasted or dried.\n*   **Gamey:** Certain species can have a wild, gamey taste, somewhat like venison or other wild meats.\n*   **Mushy/Gritty texture:** The texture can be off-putting to some. Properly preparing worms will help mitigate these textures.\n\nIt's worth noting that many people season or prepare worms with other ingredients to enhance the flavor and make them more palatable.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1317,
+    385,
+    301,
+    296,
+    306,
+    337,
+    322,
+    182,
+    241,
+    153,
+    113
+  ],
+  "time_diffs": [
+    0.04595613479614258,
+    0.4320669174194336,
+    0.050048112869262695,
+    0.04888796806335449,
+    0.061042070388793945,
+    0.20104479789733887,
+    0.17188715934753418,
+    0.3132028579711914,
+    0.04723215103149414,
+    0.016980886459350586,
+    4.9114227294921875e-05,
+    0.0013339519500732422
+  ]
+}

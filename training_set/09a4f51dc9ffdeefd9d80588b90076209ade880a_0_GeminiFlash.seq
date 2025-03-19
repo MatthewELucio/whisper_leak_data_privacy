@@ -1,0 +1,27 @@
+{
+  "local_port": 42854,
+  "remote_port": 443,
+  "prompt": "Does Gary Johnson have any chance left at winning the presidency?",
+  "response": "Given that the election has already taken place and the results are in, Gary Johnson mathematically has no chance of winning the presidency.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    223,
+    398,
+    339,
+    305,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.045736074447631836,
+    0.3188669681549072,
+    0.0015239715576171875,
+    0.11752796173095703,
+    0.06589198112487793,
+    0.0067861080169677734,
+    0.003181934356689453,
+    0.0
+  ]
+}

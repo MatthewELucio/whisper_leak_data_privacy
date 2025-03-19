@@ -1,0 +1,41 @@
+{
+  "local_port": 41852,
+  "remote_port": 443,
+  "prompt": "Does Volkswagen Passat 2004 have the AUX port?",
+  "response": "The presence of an AUX port in a 2004 Volkswagen Passat is **unlikely** in the stock configuration.\n\nHere's why:\n\n*   **Early 2000s Technology:** Auxiliary inputs were not standard features in many cars from the early 2000s. They were becoming more common, but often found on higher trim levels or as optional extras.\n*   **Aftermarket Options:** It's possible a previous owner installed an aftermarket stereo with an AUX input or used an adapter that plugs into the CD changer port to provide an AUX input.\n\n**How to Check:**\n\n1.  **Inspect the Radio Faceplate:** Look for a 3.5mm headphone jack on the front of the radio.\n2.  **Check the Center Console and Glove Box:** Some manufacturers would place the AUX port in these locations.\n3.  **Check the Owner's Manual:** If you have the original owner's manual, it may describe the audio system's features.\n4.  **Look for Aftermarket Modifications:** See if the radio looks like it was replaced, or if there are any wires or adapters plugged into the back of the radio (you may need to remove the radio to check this).\n\nIf you don't find a factory AUX port, you can explore aftermarket solutions like:\n\n*   **FM Transmitter:** A device that plugs into your phone and broadcasts audio over an FM radio frequency.\n*   **Bluetooth Adapter:** Similar to an FM transmitter, but uses Bluetooth to connect to your phone.\n*   **CD Changer Adapter:** Plugs into the CD changer port on the back of the radio and provides an AUX input.\n*   **Replacing the Head Unit:** The most involved solution, but allows you to install a modern stereo with AUX, Bluetooth, and other features.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    117,
+    413,
+    208,
+    363,
+    432,
+    464,
+    369,
+    400,
+    417,
+    454,
+    230,
+    150,
+    113
+  ],
+  "time_diffs": [
+    0.04627394676208496,
+    0.3807060718536377,
+    0.0014340877532958984,
+    0.12934398651123047,
+    0.07916903495788574,
+    0.2230839729309082,
+    0.11093497276306152,
+    0.35225486755371094,
+    0.2529411315917969,
+    0.40151500701904297,
+    0.3521289825439453,
+    0.268902063369751,
+    0.01652693748474121,
+    0.0,
+    0.0
+  ]
+}

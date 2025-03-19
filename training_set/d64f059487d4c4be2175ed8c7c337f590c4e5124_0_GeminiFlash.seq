@@ -1,0 +1,35 @@
+{
+  "local_port": 35970,
+  "remote_port": 443,
+  "prompt": "Who is the Necromancer in The Hobbit?",
+  "response": "The Necromancer in *The Hobbit* is actually **Sauron**.\n\nInitially, he is presented as a mysterious and malevolent figure haunting Dol Guldur, a ruined fortress in Mirkwood. He is described as being powerful in the arts of necromancy (hence the name), raising the dead and summoning spirits.\n\nHowever, it is later revealed that the Necromancer is none other than Sauron, gradually regaining his strength after his defeat in the Second Age. His presence in Dol Guldur is a prelude to his return to power and his ultimate goal of dominating Middle-earth. Gandalf investigates the Necromancer, driven by suspicion, eventually discovering the truth about his identity.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    276,
+    367,
+    370,
+    285,
+    473,
+    314,
+    381,
+    205,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.04426288604736328,
+    0.648712158203125,
+    0.001461029052734375,
+    0.027417898178100586,
+    0.048753976821899414,
+    0.08530902862548828,
+    0.26180410385131836,
+    0.18425798416137695,
+    0.21596002578735352,
+    0.009244918823242188,
+    0.0,
+    0.0
+  ]
+}

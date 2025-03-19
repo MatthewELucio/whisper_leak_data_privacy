@@ -1,0 +1,41 @@
+{
+  "local_port": 44336,
+  "remote_port": 443,
+  "prompt": "What's the worst emotion a person can feel and why?",
+  "response": "There's no single \"worst\" emotion, as the impact of an emotion is highly subjective and depends on the individual, the context, and the intensity. However, some emotions are frequently considered particularly difficult and damaging:\n\n*   **Prolonged, intense despair/hopelessness:** This can be incredibly debilitating, leading to a lack of motivation, social withdrawal, and even suicidal ideation. It can feel like being trapped in a dark pit with no way out.\n\n*   **Uncontrollable rage/hatred:** This can lead to destructive behaviors, damage relationships, and cause significant harm to oneself and others. The intense physiological response associated with rage can also be detrimental to physical health.\n\n*   **Overwhelming, chronic anxiety:** This can manifest as panic attacks, constant worry, and a feeling of being on edge. It can interfere with daily life, relationships, and the ability to function effectively.\n\n*   **Profound, enduring grief:** While grief is a natural response to loss, when it becomes prolonged and debilitating, it can lead to isolation, depression, and difficulty moving forward.\n\n*   **Crippling shame:** This is the feeling that you are fundamentally flawed or unworthy. It can lead to self-destructive behaviors, difficulty forming healthy relationships, and a deep sense of isolation.\n\n*   **Emptiness/Numbness:** While seeming like the absence of feeling, this can be incredibly distressing. It can feel like a disconnection from life, a lack of purpose, and an inability to experience joy or connection.\n\nUltimately, the \"worst\" emotion is the one that causes the most significant and lasting harm to an individual's well-being, relationships, and ability to live a fulfilling life. It's also important to remember that experiencing difficult emotions is a part of being human, and seeking support and developing coping mechanisms can help individuals navigate these challenges.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    181,
+    322,
+    428,
+    327,
+    306,
+    373,
+    347,
+    345,
+    483,
+    508,
+    206,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.04738616943359375,
+    0.274702787399292,
+    0.0014410018920898438,
+    0.10662698745727539,
+    0.06399011611938477,
+    0.229111909866333,
+    0.17815518379211426,
+    0.3270258903503418,
+    0.2511770725250244,
+    0.349902868270874,
+    0.42792797088623047,
+    0.36524415016174316,
+    0.01054692268371582,
+    0.0,
+    4.9114227294921875e-05
+  ]
+}

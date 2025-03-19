@@ -1,0 +1,29 @@
+{
+  "local_port": 54204,
+  "remote_port": 443,
+  "prompt": "What are Ramdev Baba's view on Rajiv Radheshyam Dixit's death?",
+  "response": "Some sources claim that Ramdev Baba has expressed doubts about the circumstances surrounding Rajiv Dixit's death and has suggested that it may not have been a natural death. However, there is no official statement from Ramdev Baba on the matter.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    232,
+    455,
+    378,
+    325,
+    228,
+    136,
+    113
+  ],
+  "time_diffs": [
+    0.045165061950683594,
+    0.31143784523010254,
+    0.0015380382537841797,
+    0.10744094848632812,
+    0.1060340404510498,
+    0.10906410217285156,
+    0.01174783706665039,
+    0.0017430782318115234,
+    0.0028820037841796875
+  ]
+}

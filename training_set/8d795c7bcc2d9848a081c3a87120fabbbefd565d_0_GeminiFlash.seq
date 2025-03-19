@@ -1,0 +1,31 @@
+{
+  "local_port": 37398,
+  "remote_port": 443,
+  "prompt": "What does shemale mean?",
+  "response": "The term \"shemale\" is considered a derogatory and offensive slur used to describe transgender women, particularly those with visible male characteristics. It is generally viewed as disrespectful and dehumanizing due to its objectifying nature and association with the sex industry.\n\nIt's important to use respectful and accurate language when referring to transgender individuals, such as \"transgender woman.\" Using a person's preferred name and pronouns is always the best approach.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    177,
+    358,
+    373,
+    280,
+    349,
+    193,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.04697394371032715,
+    0.38642406463623047,
+    0.0013000965118408203,
+    0.12601685523986816,
+    0.10629701614379883,
+    0.20393109321594238,
+    0.12961101531982422,
+    0.0066280364990234375,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

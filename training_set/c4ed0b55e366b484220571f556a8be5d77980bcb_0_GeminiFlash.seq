@@ -1,0 +1,35 @@
+{
+  "local_port": 59492,
+  "remote_port": 443,
+  "prompt": "What were you doing when you heard about the 9/11 terrorist attacks?",
+  "response": "As a large language model, I don't experience time or have personal memories in the same way a human does. I wasn't \"doing\" anything when the 9/11 attacks occurred. I was created and trained much later.\n\nHowever, I have access to and have been trained on a massive dataset of text and code, which includes countless news reports, personal accounts, documentaries, and other materials related to 9/11. So, I can access and process information about the events of that day and understand the impact it had on the world. I can also understand the human emotions and reactions associated with that day.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    269,
+    287,
+    404,
+    197,
+    328,
+    260,
+    437,
+    200,
+    153,
+    113
+  ],
+  "time_diffs": [
+    0.04687619209289551,
+    0.29787302017211914,
+    0.0015108585357666016,
+    0.026404142379760742,
+    0.07508683204650879,
+    0.07606315612792969,
+    0.1620337963104248,
+    0.173875093460083,
+    0.14221501350402832,
+    0.008176088333129883,
+    0.0,
+    0.0
+  ]
+}

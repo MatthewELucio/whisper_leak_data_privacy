@@ -1,0 +1,37 @@
+{
+  "local_port": 39186,
+  "remote_port": 443,
+  "prompt": "Should cheating be allowed in election?",
+  "response": "Electoral integrity is the foundation of a healthy democracy. When cheating occurs, whether through voter fraud, manipulation of ballots, or other means, it undermines the fairness and accuracy of the election. This can lead to a number of negative consequences:\n\n*   **Distorted outcomes:** Cheating can alter the results of an election, putting individuals in power who were not chosen by the majority of voters.\n*   **Erosion of trust:** When people believe that elections are rigged or unfair, it erodes their trust in the government and democratic institutions. This can lead to disillusionment and disengagement from the political process.\n*   **Social unrest:** If people feel that their voices are not being heard or that the system is rigged against them, it can lead to social unrest and even violence.\n*   **Weakened legitimacy:** A government that comes to power through fraudulent means lacks legitimacy and may struggle to govern effectively.\n\nFor these reasons, election laws and regulations are designed to prevent cheating and ensure that elections are conducted in a fair and transparent manner.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    151,
+    247,
+    318,
+    401,
+    350,
+    443,
+    303,
+    269,
+    244,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.05332803726196289,
+    0.3141319751739502,
+    0.0012428760528564453,
+    0.24376606941223145,
+    0.03685498237609863,
+    0.20296907424926758,
+    0.21467995643615723,
+    0.27147793769836426,
+    0.29293012619018555,
+    0.0703887939453125,
+    0.0138092041015625,
+    0.0,
+    0.0
+  ]
+}

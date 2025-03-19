@@ -1,0 +1,41 @@
+{
+  "local_port": 48860,
+  "remote_port": 443,
+  "prompt": "Is money laundering subject to legal prosecution?",
+  "response": "Yes, money laundering is subject to legal prosecution in virtually every country with a developed legal system. It is a serious crime with significant penalties, including:\n\n*   **Imprisonment:** Often ranging from several years to life imprisonment, depending on the severity of the crime, the amount of money laundered, and the jurisdiction.\n*   **Fines:** Substantial financial penalties that can be many times the amount of money laundered.\n*   **Asset Forfeiture:** The confiscation of assets involved in or derived from the money laundering activity. This can include real estate, vehicles, bank accounts, and other property.\n*   **Reputational Damage:** Conviction can severely damage a person's or company's reputation, making it difficult to obtain employment, credit, or conduct business.\n*   **Other Penalties:** Depending on the jurisdiction and specific circumstances, other penalties may include restrictions on business activities, revocation of licenses, and increased scrutiny from regulatory authorities.\n\nLaws and regulations to combat money laundering are in place at the international, national, and local levels, such as the **Bank Secrecy Act (BSA)** in the United States, the **Proceeds of Crime Act 2002** in the United Kingdom, and international organizations like the **Financial Action Task Force (FATF)**.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    205,
+    343,
+    385,
+    370,
+    396,
+    305,
+    504,
+    506,
+    393,
+    160,
+    164,
+    154,
+    113
+  ],
+  "time_diffs": [
+    0.04509902000427246,
+    0.3157060146331787,
+    0.0014069080352783203,
+    0.011335134506225586,
+    0.0641930103302002,
+    0.08798885345458984,
+    0.16710710525512695,
+    0.1639249324798584,
+    0.2981910705566406,
+    0.27571606636047363,
+    0.3546419143676758,
+    0.0,
+    0.012695074081420898,
+    8.702278137207031e-05,
+    5.2928924560546875e-05
+  ]
+}

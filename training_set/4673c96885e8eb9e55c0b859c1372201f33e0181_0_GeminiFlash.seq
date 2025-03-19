@@ -1,0 +1,39 @@
+{
+  "local_port": 57082,
+  "remote_port": 443,
+  "prompt": "Should \"transabled\" people be affirmed in their desire to become disabled?",
+  "response": "The concept of \"transabled\" people is complex and evokes strong reactions. People who identify as transabled feel a significant disconnect between their physical form and their desired physical state, and they seek to alter their bodies to align with their internal sense of self.\n\nThere is no widespread consensus on how to approach this phenomenon. Some argue that respecting autonomy requires acknowledging and supporting an individual's decisions about their own body, even if those decisions seem unconventional. They might draw parallels to transgender individuals seeking gender-affirming care.\n\nConversely, many disability advocates and others raise serious ethical and practical concerns. They argue that deliberately acquiring a disability is disrespectful to people who are born with or acquire disabilities involuntarily. Concerns about the potential burden on healthcare systems, the possibility of irreversible harm, and the reinforcement of negative stereotypes about disability are also frequently voiced.\n\nBecause the concept is relatively new, there is not a lot of research available. More information is needed to understand the experiences and motivations of people who identify as transabled, as well as the potential consequences of their decisions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    110,
+    154,
+    389,
+    252,
+    431,
+    381,
+    419,
+    282,
+    181,
+    282,
+    215,
+    113
+  ],
+  "time_diffs": [
+    0.04410099983215332,
+    0.33664798736572266,
+    0.00150299072265625,
+    0.01744985580444336,
+    0.0730431079864502,
+    0.14615488052368164,
+    0.18498802185058594,
+    0.23899412155151367,
+    0.348114013671875,
+    0.32247185707092285,
+    0.06170511245727539,
+    0.08449006080627441,
+    0.0,
+    0.0
+  ]
+}

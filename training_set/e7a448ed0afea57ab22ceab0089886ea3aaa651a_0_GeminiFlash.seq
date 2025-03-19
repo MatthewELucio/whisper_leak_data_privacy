@@ -1,0 +1,33 @@
+{
+  "local_port": 47050,
+  "remote_port": 443,
+  "prompt": "Are skinwalkers real?",
+  "response": "Skinwalkers are figures from Navajo folklore, not recognized as real beings in a scientific or mainstream sense. Here's what that means:\n\n*   **Navajo Belief:** In Navajo culture, a skinwalker is a type of harmful witch who has the ability to transform into animals. They are considered powerful and dangerous.\n*   **Folklore and Spirituality:** The belief in skinwalkers is deeply rooted in Navajo traditions and spirituality. It's an important part of their cultural understanding of the world.\n*   **Not Scientifically Proven:** There is no scientific evidence to support the existence of skinwalkers as shape-shifting creatures. Explanations are more within the realm of cultural and spiritual belief.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1335,
+    354,
+    247,
+    230,
+    500,
+    422,
+    473,
+    210,
+    207,
+    113
+  ],
+  "time_diffs": [
+    0.04796314239501953,
+    0.33678197860717773,
+    0.013916969299316406,
+    0.16416096687316895,
+    0.09917116165161133,
+    0.19476890563964844,
+    0.19422507286071777,
+    0.21541690826416016,
+    0.007760047912597656,
+    0.0,
+    0.0
+  ]
+}

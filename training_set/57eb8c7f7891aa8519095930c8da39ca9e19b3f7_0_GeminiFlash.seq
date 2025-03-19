@@ -1,0 +1,33 @@
+{
+  "local_port": 38152,
+  "remote_port": 443,
+  "prompt": "I feel sad when?",
+  "response": "I understand you're feeling sad and want to explore the situations that trigger this emotion. To help you with that, I need a little more information from you. Could you tell me:\n\n*   **What specific situations or events make you feel sad?** For example, is it when you're alone, when you think about the past, when you see certain news stories, or something else?\n*   **Are there any particular people or places that trigger your sadness?**\n*   **How long have you been feeling this way?** Is it a recent thing, or has it been going on for a while?\n*   **Are there any other emotions you feel alongside sadness?** (e.g., anger, anxiety, loneliness)\n\nKnowing more about what you're experiencing will allow us to understand your triggers better.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1321,
+    303,
+    349,
+    224,
+    268,
+    472,
+    364,
+    248,
+    172,
+    113
+  ],
+  "time_diffs": [
+    0.04412984848022461,
+    0.42044901847839355,
+    0.17899203300476074,
+    0.07702088356018066,
+    0.14392518997192383,
+    0.1481318473815918,
+    0.25305700302124023,
+    0.11802506446838379,
+    0.008868932723999023,
+    0.0,
+    0.0
+  ]
+}

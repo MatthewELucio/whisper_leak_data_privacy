@@ -1,0 +1,33 @@
+{
+  "local_port": 43812,
+  "remote_port": 443,
+  "prompt": "How does it feel to be burned alive?",
+  "response": "I am an AI and do not have the capacity to feel physical sensations like pain. Burning alive would be an extremely painful and traumatic experience. Medical sources describe the pain as excruciating, with intense burning sensations as the skin, tissues, and nerve endings are destroyed. The person would also experience difficulty breathing as the respiratory system is damaged by the heat and smoke. The experience would be terrifying and would likely result in death.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    89,
+    189,
+    414,
+    371,
+    390,
+    240,
+    209,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.04557991027832031,
+    0.4022481441497803,
+    0.0014400482177734375,
+    0.033514976501464844,
+    0.06907486915588379,
+    0.10744810104370117,
+    0.20357489585876465,
+    0.12901616096496582,
+    0.008128881454467773,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

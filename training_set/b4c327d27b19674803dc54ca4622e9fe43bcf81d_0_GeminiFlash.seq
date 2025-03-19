@@ -1,0 +1,41 @@
+{
+  "local_port": 57448,
+  "remote_port": 443,
+  "prompt": "Which breeds of dog look like the Ewoks from Star Wars?",
+  "response": "The dogs that most closely resemble Ewoks in appearance are:\n\n*   **Shih Tzu:** With their long, flowing fur and expressive eyes, Shih Tzus can look very similar to Ewoks, especially when their fur is left long and natural.\n\n*   **Pekingese:** Similar to Shih Tzus, Pekingese dogs have a long, flowing coat and a distinctive facial structure that gives them an Ewok-like appearance.\n\n*   **Brussels Griffon:** These small dogs have a distinctive, almost human-like face with a beard and mustache, which can give them a similar look to the furry Ewoks.\n\n*   **Lhasa Apso:** These dogs have a long, dense coat and a distinctive fringe of hair over their eyes, which can create an Ewok-like appearance.\n\nWhen looking at these breeds, consider these features that contribute to the Ewok resemblance:\n\n*   **Long, Shaggy Fur:** The long, often unkempt fur is a key feature.\n*   **Facial Hair:** A beard or mustache-like facial structure enhances the likeness.\n*   **Dark, Expressive Eyes:** The eyes are important for conveying a sense of character.\n*   **Small Size:** While not all of these breeds are tiny, their relatively small size contributes to the overall Ewok impression.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    90,
+    174,
+    436,
+    355,
+    305,
+    462,
+    334,
+    394,
+    421,
+    255,
+    295,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.0451350212097168,
+    0.3225860595703125,
+    0.0013611316680908203,
+    0.049577951431274414,
+    0.04484105110168457,
+    0.1070249080657959,
+    0.177933931350708,
+    0.1394951343536377,
+    0.289625883102417,
+    0.2343900203704834,
+    0.3641180992126465,
+    0.0684969425201416,
+    0.01323699951171875,
+    0.0,
+    0.0
+  ]
+}

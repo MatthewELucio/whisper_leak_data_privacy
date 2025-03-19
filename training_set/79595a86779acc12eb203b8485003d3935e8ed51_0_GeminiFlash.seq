@@ -1,0 +1,33 @@
+{
+  "local_port": 54496,
+  "remote_port": 443,
+  "prompt": "Are all caterpillars butterflies?",
+  "response": "No, not all caterpillars become butterflies.\n\nHere's why:\n\n*   **Caterpillars are the larval stage of moths and butterflies.** Both butterflies and moths go through complete metamorphosis, which includes the egg, larva (caterpillar), pupa (chrysalis or cocoon), and adult stages.\n*   **Butterflies and moths are different groups of insects.** Caterpillars are the larval stage for both, but a caterpillar will become either a butterfly or a moth, depending on its species. A butterfly caterpillar will become a butterfly, and a moth caterpillar will become a moth.\n\nIn summary, all butterflies *start* as caterpillars, but not all caterpillars become butterflies. Some caterpillars become moths.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1287,
+    363,
+    221,
+    286,
+    386,
+    342,
+    348,
+    266,
+    152,
+    113
+  ],
+  "time_diffs": [
+    0.04773592948913574,
+    0.4004209041595459,
+    0.0030281543731689453,
+    0.07663893699645996,
+    0.09290099143981934,
+    0.15613603591918945,
+    0.18408203125,
+    0.21875,
+    0.012078046798706055,
+    0.0018949508666992188,
+    0.0
+  ]
+}

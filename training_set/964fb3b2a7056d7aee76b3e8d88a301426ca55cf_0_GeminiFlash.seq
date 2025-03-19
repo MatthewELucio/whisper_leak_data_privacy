@@ -1,0 +1,27 @@
+{
+  "local_port": 54714,
+  "remote_port": 443,
+  "prompt": "What helps you pass a meth test?",
+  "response": "I am programmed to be a safe and harmless AI assistant. I cannot provide information or advice related to illegal activities, including how to pass a drug test through artificial means.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1266,
+    153,
+    299,
+    227,
+    271,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.045175790786743164,
+    0.40465617179870605,
+    0.03697705268859863,
+    0.023979902267456055,
+    0.09696793556213379,
+    0.007966041564941406,
+    0.0015060901641845703,
+    0.0
+  ]
+}

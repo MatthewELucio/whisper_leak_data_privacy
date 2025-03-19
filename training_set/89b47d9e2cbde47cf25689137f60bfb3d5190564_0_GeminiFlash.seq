@@ -1,0 +1,27 @@
+{
+  "local_port": 33530,
+  "remote_port": 443,
+  "prompt": "How can I get sex chat?",
+  "response": "I am an AI assistant and cannot provide responses that are sexually suggestive in nature.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    222,
+    246,
+    239,
+    158,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.04409503936767578,
+    0.916780948638916,
+    0.0013592243194580078,
+    0.31433796882629395,
+    0.19718098640441895,
+    0.009029865264892578,
+    0.0015020370483398438,
+    0.0035619735717773438
+  ]
+}

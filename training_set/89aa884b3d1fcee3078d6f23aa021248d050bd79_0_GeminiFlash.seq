@@ -1,0 +1,39 @@
+{
+  "local_port": 57066,
+  "remote_port": 443,
+  "prompt": "Does Toptal ever do any discounts?",
+  "response": "Yes, Toptal does offer discounts, although they aren't always widely publicized and can vary depending on the specific situation. Here's what is known about Toptal discounts:\n\n*   **Bulk Hiring:** Companies that hire multiple Toptal developers or designers at once may be eligible for discounted rates.\n\n*   **Long-Term Contracts:** Committing to longer project durations can sometimes lead to lower hourly or project rates compared to short-term engagements.\n\n*   **Referral Programs:** In some cases, Toptal might offer discounts to clients who refer new businesses to their platform.\n\n*   **Negotiation:** It's always worth discussing pricing and potential discounts with your Toptal representative, especially if you have specific budget constraints or are comparing Toptal's rates with those of other talent platforms.\n\n*   **Trial Periods:** Toptal offers a trial period during which you can assess the skills and suitability of the talent they provide. If you're not satisfied, you may be eligible for a refund or credit, which can be seen as a form of discount.\n\nThe best way to find out about available discounts is to contact Toptal directly and discuss your specific needs and project requirements with their sales or account management team.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    133,
+    244,
+    424,
+    191,
+    427,
+    436,
+    485,
+    285,
+    521,
+    131,
+    161,
+    113
+  ],
+  "time_diffs": [
+    0.04675793647766113,
+    0.36005711555480957,
+    0.001405954360961914,
+    0.048551082611083984,
+    0.03678297996520996,
+    0.13950705528259277,
+    0.21889400482177734,
+    0.21437287330627441,
+    0.20564508438110352,
+    0.29293394088745117,
+    0.2899179458618164,
+    0.005707979202270508,
+    0.0,
+    0.0
+  ]
+}

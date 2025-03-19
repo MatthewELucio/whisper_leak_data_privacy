@@ -1,0 +1,35 @@
+{
+  "local_port": 32944,
+  "remote_port": 443,
+  "prompt": "Can I get ob with CA intermediate?",
+  "response": "\"OB\" can refer to a few things, so let's clarify which one you're asking about:\n\n*   **Obsessive-Compulsive Disorder (OCD):** No, completing CA Intermediate does not directly cause or lead to OCD. OCD is a mental health condition with complex causes, and academic achievements are not a direct factor. However, stress and anxiety related to exams like CA Intermediate *could* potentially exacerbate pre-existing tendencies towards OCD if someone is already vulnerable.\n\n*   **Other Business (OB) or Outside Business Interests:** Yes, it's possible to have \"Other Business\" interests while studying for CA Intermediate. Many students manage part-time jobs, internships, or small businesses alongside their studies. However, it's important to manage time effectively and ensure that these activities don't negatively impact your studies.\n\n*   **Operation Black Board (OBB):** This is an educational initiative primarily in India. It's not directly related to CA Intermediate studies.\n\nIf you meant something else by \"OB\", please clarify, and I'll do my best to answer your question.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    280,
+    239,
+    291,
+    497,
+    294,
+    408,
+    384,
+    192,
+    172,
+    113
+  ],
+  "time_diffs": [
+    0.04697012901306152,
+    0.29889488220214844,
+    0.10224795341491699,
+    0.07609200477600098,
+    0.23900318145751953,
+    0.22390294075012207,
+    0.3042008876800537,
+    0.23601698875427246,
+    0.13392305374145508,
+    0.0076999664306640625,
+    0.0,
+    0.0
+  ]
+}

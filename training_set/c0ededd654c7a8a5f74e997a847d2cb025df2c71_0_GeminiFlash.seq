@@ -1,0 +1,35 @@
+{
+  "local_port": 43316,
+  "remote_port": 443,
+  "prompt": "How is Americium classified?",
+  "response": "Americium (Am) is classified as a **transuranic actinide element**.\n\nHere's a breakdown:\n\n*   **Actinide:** This refers to a series of 15 metallic chemical elements with atomic numbers 89 (actinium) through 103 (lawrencium) in the periodic table. They are all radioactive.\n\n*   **Transuranic:** This means that Americium's atomic number (95) is higher than that of uranium (92), making it an element that is heavier than uranium and not found naturally in significant quantities on Earth. It is synthesized artificially.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    127,
+    237,
+    237,
+    221,
+    371,
+    414,
+    439,
+    138,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.049365997314453125,
+    0.30622291564941406,
+    0.001560211181640625,
+    0.08359479904174805,
+    0.027868032455444336,
+    0.07816505432128906,
+    0.18406295776367188,
+    0.24102306365966797,
+    0.1650390625,
+    0.009737968444824219,
+    0.0,
+    0.0
+  ]
+}

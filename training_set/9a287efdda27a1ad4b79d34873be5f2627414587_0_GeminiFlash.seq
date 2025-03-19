@@ -1,0 +1,31 @@
+{
+  "local_port": 33584,
+  "remote_port": 443,
+  "prompt": "Which raw materials are needed for photosynthesis?",
+  "response": "The raw materials needed for photosynthesis are:\n\n*   **Carbon dioxide (CO2):** This is taken from the air through tiny pores called stomata on the leaves of plants.\n\n*   **Water (H2O):** This is absorbed from the soil by the roots of plants and transported to the leaves.\n\n*   **Sunlight:** Although not a raw material itself, sunlight is the energy source that drives the entire process.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1280,
+    244,
+    320,
+    202,
+    387,
+    288,
+    130,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.046871185302734375,
+    0.33992576599121094,
+    0.0498201847076416,
+    0.04708290100097656,
+    0.06274199485778809,
+    0.14530706405639648,
+    0.12213301658630371,
+    0.02701091766357422,
+    0.0,
+    0.0016319751739501953
+  ]
+}

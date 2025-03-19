@@ -1,0 +1,39 @@
+{
+  "local_port": 55966,
+  "remote_port": 443,
+  "prompt": "What are the top 10 countries of Instagram users?",
+  "response": "Based on the most recent available data (usually updated annually, so keep in mind this is approximate and may shift slightly), here are the estimated top 10 countries with the most Instagram users:\n\n1.  **India:** Holds the top spot with a massive user base.\n2.  **United States:**  Has a very large number of users.\n3.  **Brazil:** A significant and growing Instagram market.\n4.  **Indonesia:**  A large and active user base in Southeast Asia.\n5.  **Turkey:** Has a considerable number of Instagram users.\n6.  **Mexico:** Another large market in North America.\n7.  **Japan:** A developed market with strong Instagram adoption.\n8.  **United Kingdom:** A significant European market for Instagram.\n9.  **Germany:**  Another key European market.\n10. **Italy:** Rounding out the top 10.\n\n**Important Considerations:**\n\n*   **Data Fluctuations:** These rankings are estimates and can change. Different sources may have slightly varying numbers.\n*   **Active vs. Total Users:**  Some reports might focus on monthly active users, while others look at the total registered user count.\n*   **Growth:**  The relative growth rates in these countries are also important. Some markets are maturing, while others are still experiencing rapid expansion.\n\nTo get the most up-to-date information, I recommend checking reputable sources like:\n\n*   **Statista**\n*   **Hootsuite (We Are Social)**\n*   **Various marketing and social media statistics websites**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1345,
+    247,
+    342,
+    424,
+    429,
+    321,
+    292,
+    471,
+    338,
+    403,
+    218,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.04871010780334473,
+    0.3070249557495117,
+    0.12404394149780273,
+    0.1009070873260498,
+    0.19703888893127441,
+    0.16205716133117676,
+    0.2520318031311035,
+    0.28315210342407227,
+    0.3938770294189453,
+    0.3755168914794922,
+    0.03709816932678223,
+    0.008853912353515625,
+    0.0,
+    0.0
+  ]
+}

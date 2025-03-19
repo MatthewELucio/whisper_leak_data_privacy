@@ -1,0 +1,29 @@
+{
+  "local_port": 33802,
+  "remote_port": 443,
+  "prompt": "Are people born gay or do they choose it?",
+  "response": "Research suggests that sexual orientation is likely the result of a combination of genetic, hormonal, and environmental factors. Scientists generally believe that people do not choose their sexual orientation.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    97,
+    286,
+    351,
+    364,
+    294,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.04621410369873047,
+    0.4135730266571045,
+    0.0013439655303955078,
+    0.026544809341430664,
+    0.07100319862365723,
+    0.09212899208068848,
+    0.01769089698791504,
+    0.001519918441772461,
+    0.0
+  ]
+}

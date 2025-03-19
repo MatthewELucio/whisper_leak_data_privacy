@@ -1,0 +1,29 @@
+{
+  "local_port": 43400,
+  "remote_port": 443,
+  "prompt": "Who sang the awesome \"Huppa Lumia Lumia\" song in the background of the Ormie the Pig video?",
+  "response": "The catchy song \"Huppa Lumia Lumia\" in the Ormie the Pig video is performed by **Alon Oleartchik**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    170,
+    231,
+    268,
+    407,
+    220,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.045796871185302734,
+    0.30411410331726074,
+    0.0015828609466552734,
+    0.009232044219970703,
+    0.08725214004516602,
+    0.07891678810119629,
+    0.00887918472290039,
+    0.0,
+    0.001428842544555664
+  ]
+}

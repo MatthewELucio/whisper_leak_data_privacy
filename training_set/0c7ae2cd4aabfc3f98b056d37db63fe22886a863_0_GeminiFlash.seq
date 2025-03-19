@@ -1,0 +1,27 @@
+{
+  "local_port": 54854,
+  "remote_port": 443,
+  "prompt": "Which is correct, \"five hundred dollars\" or \"five hundred dollar\"?",
+  "response": "\"Five hundred dollars\" is correct.\n\nThe word \"dollars\" is plural because it refers to more than one dollar.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1446,
+    224,
+    236,
+    183,
+    149,
+    211,
+    113
+  ],
+  "time_diffs": [
+    0.053073883056640625,
+    0.2989342212677002,
+    0.05038881301879883,
+    0.050228118896484375,
+    0.04622793197631836,
+    0.012859106063842773,
+    0.0016608238220214844,
+    0.0
+  ]
+}

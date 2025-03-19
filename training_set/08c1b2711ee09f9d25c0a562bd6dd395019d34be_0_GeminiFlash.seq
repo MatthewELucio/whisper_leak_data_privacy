@@ -1,0 +1,39 @@
+{
+  "local_port": 34464,
+  "remote_port": 443,
+  "prompt": "What are the the most consumed meats in the world?",
+  "response": "According to various sources and recent data, here are the most consumed meats in the world, ranked in order:\n\n1.  **Pork:** Pork is the most widely consumed meat globally, accounting for around 36% of meat intake worldwide.\n2.  **Poultry:** Poultry, mainly chicken, is a close second, representing about 33% of global meat consumption. Its affordability and versatility make it a popular choice in many countries.\n3.  **Beef:** Beef comes in third, accounting for approximately 24% of global meat consumption.\n4.  **Mutton & Goat:** Mutton and goat meat make up a smaller portion of global consumption, at about 5% worldwide.\n5.  **Fish and Seafood:** While technically not \"meat\" in the same sense as land-based animals, fish and seafood are a significant source of protein and are widely consumed globally, representing a significant portion of animal protein intake.\n\n**Important Considerations:**\n\n*   **Regional Variations:** Consumption patterns vary significantly by region, culture, and religion. For example, pork consumption is very low in Muslim-majority countries.\n*   **Data Fluctuation:** These rankings can shift slightly from year to year based on economic factors, disease outbreaks, and changing consumer preferences.\n*   **Developing vs. Developed Countries:** Meat consumption tends to be higher in developed countries compared to developing countries.\n*   **Definition of Meat:** The definition of \"meat\" can influence the ranking. Some data may include fish and seafood, while others focus solely on land-based animal meat.\n\n**In summary, pork and poultry are the dominant meats consumed globally, followed by beef, with mutton, goat and fish/seafood contributing significantly to regional and global diets.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1423,
+    419,
+    388,
+    465,
+    244,
+    257,
+    445,
+    477,
+    416,
+    289,
+    298,
+    124,
+    113
+  ],
+  "time_diffs": [
+    0.04748392105102539,
+    0.3554251194000244,
+    0.1119699478149414,
+    0.09287500381469727,
+    0.18903708457946777,
+    0.1462268829345703,
+    0.30186009407043457,
+    0.28041791915893555,
+    0.31124305725097656,
+    0.3521289825439453,
+    0.21933889389038086,
+    0.010224103927612305,
+    0.0,
+    0.0
+  ]
+}

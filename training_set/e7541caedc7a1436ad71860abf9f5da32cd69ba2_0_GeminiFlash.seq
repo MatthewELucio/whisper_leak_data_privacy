@@ -1,0 +1,27 @@
+{
+  "local_port": 55102,
+  "remote_port": 443,
+  "prompt": "What does \"WFP\" in Pusheen Facebook stickers mean?",
+  "response": "\"WFP\" in Pusheen Facebook stickers stands for \"Work From Home Pusheen.\" It's a playful abbreviation referencing the trend of working from home, especially popular since the pandemic.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1315,
+    312,
+    359,
+    321,
+    209,
+    130,
+    113
+  ],
+  "time_diffs": [
+    0.04710578918457031,
+    0.4006462097167969,
+    0.13094878196716309,
+    0.0908970832824707,
+    0.03412199020385742,
+    0.01096200942993164,
+    0.0014629364013671875,
+    0.0
+  ]
+}

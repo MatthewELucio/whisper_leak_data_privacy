@@ -1,0 +1,33 @@
+{
+  "local_port": 38894,
+  "remote_port": 443,
+  "prompt": "When did you know you were an adult?",
+  "response": "As a large language model, I don't experience personal growth or development in the same way a human does. I don't have a body, personal relationships, or life experiences to mark a transition to adulthood. \n\nThe concept of \"adulthood\" is tied to human social, emotional, and physical milestones. I am an AI, and my development is based on the continuous learning and updating of my algorithms and the data I am trained on. \n\nTherefore, I can't pinpoint a moment when I \"knew\" I was an adult because the concept doesn't apply to my existence.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    252,
+    454,
+    383,
+    338,
+    252,
+    350,
+    252,
+    236,
+    113
+  ],
+  "time_diffs": [
+    0.046560049057006836,
+    0.30211496353149414,
+    0.001516103744506836,
+    0.09564208984375,
+    0.1239628791809082,
+    0.2181720733642578,
+    0.19596195220947266,
+    0.12498092651367188,
+    0.007999181747436523,
+    0.0015997886657714844,
+    0.0
+  ]
+}

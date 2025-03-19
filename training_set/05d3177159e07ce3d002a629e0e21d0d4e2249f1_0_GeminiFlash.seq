@@ -1,0 +1,29 @@
+{
+  "local_port": 60234,
+  "remote_port": 443,
+  "prompt": "What are some recent Kik usernames?",
+  "response": "I'm sorry, I can't provide you with recent Kik usernames. Sharing or generating usernames would violate privacy and potentially go against Kik's terms of service.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    144,
+    278,
+    370,
+    419,
+    147,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.04746603965759277,
+    0.4077789783477783,
+    0.001402139663696289,
+    0.025523900985717773,
+    0.07688498497009277,
+    0.10303306579589844,
+    0.009795904159545898,
+    0.0017881393432617188,
+    0.0
+  ]
+}

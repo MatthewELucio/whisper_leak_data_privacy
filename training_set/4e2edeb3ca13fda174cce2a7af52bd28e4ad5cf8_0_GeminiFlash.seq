@@ -1,0 +1,35 @@
+{
+  "local_port": 49124,
+  "remote_port": 443,
+  "prompt": "What's the definition of vote margin?",
+  "response": "The vote margin refers to the **difference in the number of votes between the winning candidate or option and the runner-up candidate or option in an election or vote.**\n\nIn simpler terms, it's how much the winner beat the loser by.\n\nFor example:\n\n*   If Candidate A gets 55% of the vote and Candidate B gets 45%, the vote margin is 10% (55% - 45%).\n*   If Option X receives 100,000 votes and Option Y receives 80,000 votes, the vote margin is 20,000 votes (100,000 - 80,000).\n\nThe vote margin is often expressed as a percentage, but it can also be expressed as the absolute number of votes.  A large vote margin indicates a decisive victory, while a small vote margin indicates a close race.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1321,
+    225,
+    237,
+    309,
+    234,
+    421,
+    175,
+    439,
+    244,
+    152,
+    113
+  ],
+  "time_diffs": [
+    0.061456918716430664,
+    0.4149808883666992,
+    0.004534006118774414,
+    0.10901403427124023,
+    0.0766291618347168,
+    0.2010939121246338,
+    0.17318511009216309,
+    0.19237279891967773,
+    0.2308499813079834,
+    0.009404182434082031,
+    0.0,
+    0.00011396408081054688
+  ]
+}

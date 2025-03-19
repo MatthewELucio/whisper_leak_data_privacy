@@ -1,0 +1,29 @@
+{
+  "local_port": 55614,
+  "remote_port": 443,
+  "prompt": "Would someone be committing a crime if they laundered money?",
+  "response": "Yes, money laundering is a crime in most jurisdictions around the world. The specific laws and penalties vary depending on the country and the amount of money involved, but it is generally considered a serious offense.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1483,
+    270,
+    426,
+    360,
+    334,
+    302,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.04684805870056152,
+    0.36589884757995605,
+    0.03285503387451172,
+    0.05890297889709473,
+    0.07817602157592773,
+    0.04003000259399414,
+    0.00908517837524414,
+    0.0014607906341552734,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 60920,
+  "remote_port": 443,
+  "prompt": "Do Asian college students eat American, delivery food?",
+  "response": "Yes, Asian college students eat American delivery food.\n\nHere's why:\n\n*   **Variety of tastes:** Like any other diverse group, Asian college students have a wide range of tastes and preferences. Some may prefer American food, while others may prefer Asian cuisine, or a mix of both.\n*   **Convenience:** College students, in general, often rely on delivery food due to busy schedules, late-night study sessions, and limited cooking facilities. American delivery options like pizza, burgers, and sandwiches are widely available and convenient.\n*   **Cultural exchange:** Exposure to different cultures and cuisines is a common part of the college experience. Asian students might be interested in trying American food and incorporating it into their diet.\n*   **Social factors:** Sharing food is a social activity, and Asian students may order American delivery food with friends from diverse backgrounds.\n*   **Availability and cost:** American delivery food is often readily available and can be relatively affordable, making it an attractive option for students on a budget.\n\nIt's important to avoid making generalizations about the food preferences of any group of people based on their ethnicity.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    116,
+    397,
+    383,
+    380,
+    316,
+    486,
+    346,
+    437,
+    207,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04518413543701172,
+    0.40018486976623535,
+    0.0012249946594238281,
+    0.09409213066101074,
+    0.09188199043273926,
+    0.1561739444732666,
+    0.16879510879516602,
+    0.2136549949645996,
+    0.2598400115966797,
+    0.1588120460510254,
+    0.006139993667602539,
+    0.0011959075927734375,
+    0.0
+  ]
+}

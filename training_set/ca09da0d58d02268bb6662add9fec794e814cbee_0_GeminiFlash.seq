@@ -1,0 +1,31 @@
+{
+  "local_port": 59624,
+  "remote_port": 443,
+  "prompt": "I haven't seen Arvind Kejriwal in real life. Have you?",
+  "response": "As a large language model, I don't have the ability to see or experience the real world. I can't see people like Arvind Kejriwal or anything else. My knowledge is based on the information I've been trained on.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    183,
+    158,
+    383,
+    427,
+    397,
+    248,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04781484603881836,
+    0.36198997497558594,
+    0.0014400482177734375,
+    0.07244205474853516,
+    0.03581500053405762,
+    0.09420299530029297,
+    0.12301301956176758,
+    0.009849071502685547,
+    0.0017108917236328125,
+    0.0015521049499511719
+  ]
+}

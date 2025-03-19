@@ -1,0 +1,39 @@
+{
+  "local_port": 49374,
+  "remote_port": 443,
+  "prompt": "How often should we trim our pubic hair?",
+  "response": "How often you trim your pubic hair is entirely a personal choice! There's no medical reason to trim or not to trim. Some people prefer to be completely bare, some like to keep it neatly trimmed, and others prefer to leave it natural.\n\nHere's a breakdown of factors that might influence your decision:\n\n*   **Personal preference:** This is the biggest factor. What makes you feel most comfortable and confident?\n*   **Hygiene:** While not directly related to hygiene, some people feel cleaner when trimmed. Others find that trimming can sometimes lead to irritation, which can have the opposite effect.\n*   **Partner preference:** Open communication with your partner(s) is key.\n*   **Activities:** Certain activities, like swimming or wearing certain types of clothing, might make you prefer a specific style.\n*   **Sensitivity:** Some people find the regrowth process itchy or irritating, which might influence how often they trim.\n\n**If you do choose to trim, consider these points:**\n\n*   **Technique:** Whether you're shaving, waxing, or using trimming scissors, proper technique is crucial to avoid irritation, ingrown hairs, or cuts.\n*   **Hygiene:** Keep your tools clean to prevent infection.\n*   **Moisturize:** After trimming, moisturizing can help soothe the skin.\n\n**In summary, there's no right or wrong answer. Trim as often (or as little) as you like, based on what works best for you!**",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    163,
+    421,
+    359,
+    359,
+    321,
+    442,
+    360,
+    391,
+    261,
+    167,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.04822492599487305,
+    0.2804830074310303,
+    0.0015020370483398438,
+    0.09242796897888184,
+    0.11089611053466797,
+    0.16808199882507324,
+    0.1730949878692627,
+    0.27001500129699707,
+    0.3221127986907959,
+    0.31495118141174316,
+    0.25846385955810547,
+    0.005589008331298828,
+    0.0,
+    0.0
+  ]
+}

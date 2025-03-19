@@ -1,0 +1,37 @@
+{
+  "local_port": 48740,
+  "remote_port": 443,
+  "prompt": "Do love spells really work?",
+  "response": "Whether love spells \"really work\" is a matter of belief and perspective.\n\n*   **For those who believe in magic and the power of intention:** Love spells are seen as tools to focus energy and intention towards a desired outcome. They may believe that these spells can influence events, attract a specific person, or improve existing relationships. The perceived effectiveness depends on their belief system, the skill of the spellcaster, and the alignment of the spell with the universe.\n*   **For skeptics:** Love spells are viewed as superstition or wishful thinking. Any perceived success is attributed to coincidence, psychological factors (such as increased confidence or taking actions to improve oneself), or the placebo effect. They believe that love is based on compatibility, mutual attraction, and effort, and that spells have no actual power to manipulate these factors.\n\nIt's worth noting that many practitioners of magic emphasize the importance of ethical considerations. Attempting to control or manipulate another person's free will is often seen as unethical and potentially harmful.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1457,
+    213,
+    433,
+    340,
+    362,
+    279,
+    362,
+    342,
+    406,
+    233,
+    150,
+    113
+  ],
+  "time_diffs": [
+    0.0516359806060791,
+    0.42714715003967285,
+    0.0014100074768066406,
+    0.08650898933410645,
+    0.09397482872009277,
+    0.23293805122375488,
+    0.1699080467224121,
+    0.32179903984069824,
+    0.3093600273132324,
+    0.030908823013305664,
+    0.010337114334106445,
+    0.0,
+    0.0
+  ]
+}

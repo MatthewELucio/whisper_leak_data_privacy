@@ -1,0 +1,27 @@
+{
+  "local_port": 51148,
+  "remote_port": 443,
+  "prompt": "What song is used in \"Blue Car\"?",
+  "response": "The song used in the movie \"Blue Car\" is **\"The Scientist\" by Coldplay**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    139,
+    222,
+    273,
+    172,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.05576801300048828,
+    0.4039649963378906,
+    0.0013570785522460938,
+    0.025578022003173828,
+    0.04224801063537598,
+    0.010577917098999023,
+    0.0016388893127441406,
+    0.0
+  ]
+}

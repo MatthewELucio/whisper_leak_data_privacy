@@ -1,0 +1,27 @@
+{
+  "local_port": 52542,
+  "remote_port": 443,
+  "prompt": "Would someone be committing a crime if they laundered money?",
+  "response": "Yes, money laundering is a crime in most countries, including the United States.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    297,
+    300,
+    307,
+    182,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.046996116638183594,
+    0.2830770015716553,
+    0.0014929771423339844,
+    0.013283014297485352,
+    0.07507777214050293,
+    0.0059661865234375,
+    0.0015230178833007812,
+    0.0
+  ]
+}

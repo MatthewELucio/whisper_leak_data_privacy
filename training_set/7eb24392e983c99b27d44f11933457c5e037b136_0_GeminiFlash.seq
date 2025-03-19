@@ -1,0 +1,37 @@
+{
+  "local_port": 52934,
+  "remote_port": 443,
+  "prompt": "Has any Modi supporter turned into a Kejriwal supporter?",
+  "response": "While it's challenging to quantify exact numbers, there are anecdotal accounts and analyses suggesting some shifts in political allegiance.\n\n*   **Anecdotal Evidence:** News reports and social media discussions sometimes feature individuals who initially supported Modi but later expressed admiration for Kejriwal's governance model, particularly in areas like education and healthcare in Delhi.\n*   **Shifting Priorities:** Some voters might prioritize local governance and tangible benefits (like improved schools or healthcare) over national-level issues or ideological alignment, leading them to support a different party in state elections.\n*   **Disillusionment:** Some initial Modi supporters may have become disillusioned with the BJP's performance on certain issues (like economic growth, job creation, or handling of social issues) and become open to considering alternative political options.\n\nIt is important to note that these are anecdotal observations and do not represent a widespread trend. Political affiliations are complex and can be influenced by a multitude of factors.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    269,
+    138,
+    231,
+    274,
+    398,
+    343,
+    369,
+    499,
+    265,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.04919600486755371,
+    0.3875119686126709,
+    0.001519918441772461,
+    0.013325929641723633,
+    0.12624621391296387,
+    0.10718894004821777,
+    0.17386388778686523,
+    0.2666471004486084,
+    0.3285849094390869,
+    0.16279196739196777,
+    0.006980180740356445,
+    0.0,
+    0.0
+  ]
+}

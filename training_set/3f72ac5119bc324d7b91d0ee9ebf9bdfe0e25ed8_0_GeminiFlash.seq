@@ -1,0 +1,31 @@
+{
+  "local_port": 52640,
+  "remote_port": 443,
+  "prompt": "Do you have a favorite child and why?",
+  "response": "As a large language model, I don't have personal feelings, emotions, or relationships like humans do. Therefore, I can't have a favorite child. I am designed to be unbiased and provide information and assistance equally to all users.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    109,
+    171,
+    212,
+    205,
+    437,
+    310,
+    229,
+    113
+  ],
+  "time_diffs": [
+    0.047183990478515625,
+    0.4419581890106201,
+    0.001466989517211914,
+    0.03452587127685547,
+    0.040014028549194336,
+    0.04999494552612305,
+    0.06959009170532227,
+    0.019294023513793945,
+    0.0016498565673828125,
+    0.0
+  ]
+}

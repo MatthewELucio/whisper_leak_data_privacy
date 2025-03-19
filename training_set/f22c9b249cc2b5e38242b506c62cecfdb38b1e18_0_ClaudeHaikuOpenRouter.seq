@@ -1,0 +1,43 @@
+{
+  "local_port": 41466,
+  "remote_port": 443,
+  "prompt": "What does the Tagalog word \"salamat\" mean in English?",
+  "response": "In English, \"salamat\" means \"thank you\" or \"thanks\". It is a common expression of gratitude in the Tagalog language, which is spoken primarily in the Philippines.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    987,
+    432,
+    431,
+    434,
+    425,
+    422,
+    412,
+    415,
+    415,
+    425,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.016582012176513672,
+    0.059211015701293945,
+    0.29811882972717285,
+    0.10999202728271484,
+    0.09594416618347168,
+    0.08610796928405762,
+    0.09092903137207031,
+    0.04858088493347168,
+    0.09190201759338379,
+    0.04667496681213379,
+    0.03888893127441406,
+    0.044103145599365234,
+    0.10575199127197266,
+    0.01559305191040039,
+    0.0,
+    0.0
+  ]
+}

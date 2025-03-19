@@ -1,0 +1,31 @@
+{
+  "local_port": 33908,
+  "remote_port": 443,
+  "prompt": "Which sex position girls like the most?",
+  "response": "There's no single sex position that all girls like most. Preferences vary greatly from person to person. Some may enjoy missionary for its intimacy, while others prefer cowgirl for the feeling of control. Open communication with your partner is the best way to discover what they enjoy.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    249,
+    334,
+    324,
+    393,
+    293,
+    294,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.046762943267822266,
+    0.4138619899749756,
+    0.001764059066772461,
+    0.051442861557006836,
+    0.024000167846679688,
+    0.15990591049194336,
+    0.16819000244140625,
+    0.011723995208740234,
+    0.0,
+    0.001934051513671875
+  ]
+}

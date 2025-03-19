@@ -1,0 +1,39 @@
+{
+  "local_port": 33082,
+  "remote_port": 443,
+  "prompt": "I have given class 10 exam in 2014 ,and I am giving 12 exam in 2017 .am I eligible for JEE 2017 as I will appear for 1st time?",
+  "response": "Let's analyze the JEE eligibility criteria for 2017 based on your provided information:\n\n*   **Year of passing Class 10:** 2014\n*   **Year of appearing for Class 12:** 2017\n\nGenerally, JEE Main eligibility includes a certain period after passing Class 10 (high school) and appearing for Class 12.\n\nBased on official JEE Main 2017 information:\n\n*   The candidate must have passed Class 12/equivalent examination in **2015** or **2016** or be appearing for the same in **2017**.\n*   **Restrictions on Attempts:** A candidate could attempt JEE (Main) for a maximum of three consecutive years.\n\n**Analysis:**\n\nSince you are appearing for Class 12 in 2017, this meets the requirement that the candidate must pass Class 12/equivalent examination in 2015 or 2016, or appear in 2017.\n\n**Conclusion:**\n\nBased on the information provided, you would have been **eligible** to appear for JEE Main 2017, provided you meet all other criteria such as age limits or other specific requirements.\n\n***\n**Disclaimer:** *While I have provided an answer based on my knowledge, please verify eligibility with the official JEE Main website or conducting body to confirm compliance with all current rules and regulations.*",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    217,
+    415,
+    311,
+    239,
+    360,
+    489,
+    395,
+    434,
+    538,
+    162,
+    123,
+    113
+  ],
+  "time_diffs": [
+    0.04668903350830078,
+    0.3642570972442627,
+    0.0013289451599121094,
+    0.09822797775268555,
+    0.09992098808288574,
+    0.1812000274658203,
+    0.16616606712341309,
+    0.2632758617401123,
+    0.2369551658630371,
+    0.2893829345703125,
+    0.28867506980895996,
+    0.007779836654663086,
+    0.0,
+    5.698204040527344e-05
+  ]
+}

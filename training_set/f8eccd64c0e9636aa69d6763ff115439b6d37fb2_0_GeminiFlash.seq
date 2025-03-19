@@ -1,0 +1,37 @@
+{
+  "local_port": 58916,
+  "remote_port": 443,
+  "prompt": "What are some ways to lose 25 pounds in one month?",
+  "response": "Losing 25 pounds in one month is generally considered an unhealthy and unsustainable goal. Rapid weight loss like this can lead to various health problems, including:\n\n*   **Muscle loss:** When you drastically restrict calories, your body may break down muscle tissue for energy.\n*   **Nutrient deficiencies:** Extreme diets often lack essential vitamins and minerals.\n*   **Metabolic slowdown:** Your metabolism can decrease as your body tries to conserve energy.\n*   **Gallstones:** Rapid weight loss increases the risk of gallstone formation.\n*   **Electrolyte imbalances:** These imbalances can lead to heart problems and other serious complications.\n*   **Dehydration:** Restrictive diets can sometimes lead to dehydration.\n*   **Increased risk of regaining weight:** Extreme diets are often difficult to maintain long-term, leading to weight cycling.\n\nA more realistic and healthy weight loss goal is 1-2 pounds per week, which translates to 4-8 pounds per month.\n\nIf you're determined to lose weight, consult with a doctor or a registered dietitian. They can help you create a safe and effective weight loss plan based on your individual needs and health status.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1321,
+    364,
+    368,
+    207,
+    414,
+    367,
+    431,
+    342,
+    412,
+    139,
+    151,
+    113
+  ],
+  "time_diffs": [
+    0.04934406280517578,
+    0.29610300064086914,
+    0.019217967987060547,
+    0.066986083984375,
+    0.07019901275634766,
+    0.18597102165222168,
+    0.14163899421691895,
+    0.24754881858825684,
+    0.24853301048278809,
+    0.27126312255859375,
+    0.011474847793579102,
+    0.0,
+    1.1920928955078125e-06
+  ]
+}

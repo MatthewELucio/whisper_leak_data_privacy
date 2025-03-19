@@ -1,0 +1,25 @@
+{
+  "local_port": 32864,
+  "remote_port": 443,
+  "prompt": "What is the name of our pm?",
+  "response": "The current Prime Minister of the UK is Rishi Sunak.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1292,
+    382,
+    356,
+    215,
+    150,
+    113
+  ],
+  "time_diffs": [
+    0.0466761589050293,
+    0.47011685371398926,
+    0.012853145599365234,
+    0.07928204536437988,
+    0.009389877319335938,
+    0.0035440921783447266,
+    0.0
+  ]
+}

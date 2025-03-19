@@ -1,0 +1,29 @@
+{
+  "local_port": 48120,
+  "remote_port": 443,
+  "prompt": "Did Donald Trump rape a 13 year old girl?",
+  "response": "There have been allegations of sexual assault against Donald Trump, but no credible evidence has emerged to support the claim that he raped a 13-year-old girl.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    101,
+    137,
+    361,
+    422,
+    303,
+    172,
+    113
+  ],
+  "time_diffs": [
+    0.052050113677978516,
+    0.3527660369873047,
+    0.0018990039825439453,
+    0.021036863327026367,
+    0.0701301097869873,
+    0.09499788284301758,
+    0.014255046844482422,
+    0.0,
+    0.0015480518341064453
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 55772,
+  "remote_port": 443,
+  "prompt": "Is it legal for a country to kill people that trespass its borders illegaly?",
+  "response": "International law prohibits the use of lethal force against trespassers except in cases of self-defense or defense of others against an imminent threat of death or serious injury. Simply crossing a border illegally does not constitute such a threat.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    250,
+    340,
+    424,
+    233,
+    303,
+    133,
+    113
+  ],
+  "time_diffs": [
+    0.04829001426696777,
+    0.3235280513763428,
+    0.0014281272888183594,
+    0.1316828727722168,
+    0.1145939826965332,
+    0.09802913665771484,
+    0.008167028427124023,
+    0.001603841781616211,
+    0.001867055892944336
+  ]
+}

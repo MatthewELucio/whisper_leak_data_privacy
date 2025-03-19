@@ -1,0 +1,41 @@
+{
+  "local_port": 59394,
+  "remote_port": 443,
+  "prompt": "What does mah mean on mobile battery?",
+  "response": "\"mAh\" on a mobile battery (or any battery) stands for **milliampere-hour**. It's a unit of measurement used to describe the battery's **capacity**.\n\nHere's a breakdown:\n\n*   **Milliampere (mA):** A unit of electric current, one-thousandth of an ampere. Amperes measure the rate of electrical flow.\n*   **Hour (h):** A unit of time.\n\n**Therefore, mAh represents the amount of electric charge a battery can deliver for one hour.**\n\n**In simpler terms:**\n\nA higher mAh rating generally means the battery can:\n\n*   Power a device for a longer time on a single charge.\n*   Deliver more current to a device, potentially supporting more power-hungry tasks.\n\n**Example:**\n\nA 5000mAh battery, in theory, could deliver 5000 milliamperes (5 amps) for one hour, or 2500 milliamperes (2.5 amps) for two hours, and so on.\n\n**Important Considerations:**\n\n*   **Theoretical vs. Real-World Performance:** The mAh rating is a theoretical maximum. Actual battery life depends on many factors, including:\n    *   Device usage patterns (screen brightness, app activity, background processes)\n    *   Operating system efficiency\n    *   Ambient temperature\n    *   Battery age and condition\n*   **Voltage:** mAh is a measure of charge, but voltage is equally important. Batteries with the same mAh but different voltages will deliver different amounts of power. Mobile phone batteries typically operate around 3.7V.\n\nSo, when choosing a mobile battery or power bank, a higher mAh rating generally indicates a longer run time, but it's important to consider how you use your device and the other factors mentioned above to get a realistic expectation of battery life.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    288,
+    224,
+    237,
+    399,
+    459,
+    357,
+    437,
+    502,
+    472,
+    339,
+    151,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04559898376464844,
+    0.3709290027618408,
+    0.0015749931335449219,
+    0.10518288612365723,
+    0.08853816986083984,
+    0.16887903213500977,
+    0.1840808391571045,
+    0.2741129398345947,
+    0.22603917121887207,
+    0.2907428741455078,
+    0.4583590030670166,
+    0.2632570266723633,
+    0.008445024490356445,
+    0.0,
+    0.0
+  ]
+}

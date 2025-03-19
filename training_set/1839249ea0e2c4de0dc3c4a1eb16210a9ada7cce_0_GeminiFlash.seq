@@ -1,0 +1,35 @@
+{
+  "local_port": 50958,
+  "remote_port": 443,
+  "prompt": "Is CNN biased against Trump?",
+  "response": "Studies and reports from various organizations suggest a complex relationship between CNN and Donald Trump, with perceptions of bias varying depending on the analysis and the period examined.\n\n*   **Pew Research Center:** A 2020 study found that CNN's coverage of Trump was overwhelmingly negative during his presidency.\n\n*   **Harvard Kennedy School's Shorenstein Center:** A 2018 study analyzing coverage during Trump's first 100 days in office found that CNN's coverage was among the most negative compared to other major news outlets.\n\n*   **Media Bias/Fact Check:** This organization rates CNN as left-biased and notes that while they generally report factually, they often publish opinions that favor a liberal viewpoint.\n\nIt's important to note that perceptions of bias can be subjective. Some argue that CNN's coverage is simply a reflection of Trump's actions and statements, while others believe the network actively seeks to portray him in a negative light.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1469,
+    409,
+    409,
+    427,
+    299,
+    351,
+    473,
+    391,
+    290,
+    124,
+    113
+  ],
+  "time_diffs": [
+    0.04538702964782715,
+    0.36649203300476074,
+    0.12993502616882324,
+    0.13392400741577148,
+    0.19599080085754395,
+    0.1771712303161621,
+    0.34212279319763184,
+    0.27184319496154785,
+    0.044449806213378906,
+    0.017300128936767578,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

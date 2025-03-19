@@ -1,0 +1,35 @@
+{
+  "local_port": 60540,
+  "remote_port": 443,
+  "prompt": "Do girls also have fake account in Facebook bearing male names?",
+  "response": "Yes, girls can and do create fake accounts on Facebook with male names. There are various reasons why someone might do this, regardless of gender:\n\n*   **Privacy:** To browse anonymously without revealing their real identity.\n*   **Entertainment:** For role-playing, online games, or other forms of online fun.\n*   **Research:** To research or monitor activities in online groups or communities without being identified.\n*   **Catfishing:** To deceive others for malicious purposes (though this is illegal and harmful).\n*   **Online gaming:** To participate in some online games with a desired persona.\n*   **Avoid harrassment:** To avoid being harassed or targeted by unwanted attention.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    99,
+    327,
+    352,
+    289,
+    346,
+    460,
+    398,
+    252,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.04736590385437012,
+    0.29833412170410156,
+    0.0013899803161621094,
+    0.014587879180908203,
+    0.08410501480102539,
+    0.100067138671875,
+    0.2621479034423828,
+    0.1761031150817871,
+    0.24249982833862305,
+    0.005418062210083008,
+    0.00019788742065429688,
+    5.316734313964844e-05
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 50372,
+  "remote_port": 443,
+  "prompt": "Does money laundering fall under criminal legislation?",
+  "response": "Yes, money laundering is a crime and falls under criminal legislation in virtually every country. It's a specific offense with dedicated laws aimed at preventing and punishing it.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1405,
+    185,
+    320,
+    267,
+    179,
+    229,
+    113
+  ],
+  "time_diffs": [
+    0.04542899131774902,
+    0.35014891624450684,
+    0.016388893127441406,
+    0.07207417488098145,
+    0.1122438907623291,
+    0.016716957092285156,
+    0.0014700889587402344,
+    0.0
+  ]
+}

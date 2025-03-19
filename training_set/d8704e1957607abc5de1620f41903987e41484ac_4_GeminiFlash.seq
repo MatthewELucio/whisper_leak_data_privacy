@@ -1,0 +1,41 @@
+{
+  "local_port": 57800,
+  "remote_port": 443,
+  "prompt": "Is money laundering a contravention of legal standards?",
+  "response": "Yes, money laundering is a contravention of legal standards in virtually every jurisdiction around the world. It is a criminal offense.\n\nHere's why:\n\n*   **Definition of Money Laundering:** Money laundering is the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source. This typically involves a series of transactions designed to disguise the true source and ownership of the funds.\n\n*   **Illegality:** Because money laundering is inherently linked to other criminal activities (the predicate offenses that generate the dirty money), and because it facilitates further criminal activity, it is almost universally outlawed.\n\n*   **Laws Against Money Laundering:** Countries have specific laws that prohibit money laundering. These laws often include:\n    *   **Criminalizing the act:** Making it a crime to engage in money laundering activities.\n    *   **Reporting requirements:** Requiring financial institutions and other designated businesses to report suspicious transactions.\n    *   **Due diligence obligations:** Requiring businesses to verify the identity of their customers and understand the nature of their transactions.\n    *   **Asset forfeiture:** Allowing the government to seize assets derived from or used in money laundering.\n\n*   **International Standards:** International bodies like the Financial Action Task Force (FATF) set global standards for combating money laundering and terrorist financing. Countries are expected to implement these standards into their own laws.\n\nIn short, engaging in money laundering is a serious crime with legal consequences, and it directly contravenes legal standards designed to prevent and combat criminal activity.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    137,
+    361,
+    444,
+    378,
+    454,
+    464,
+    310,
+    417,
+    415,
+    432,
+    234,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.0473170280456543,
+    0.30925893783569336,
+    0.0015060901641845703,
+    0.013556957244873047,
+    0.0745539665222168,
+    0.07149600982666016,
+    0.21389007568359375,
+    0.16629385948181152,
+    0.28025293350219727,
+    0.2566361427307129,
+    0.3533499240875244,
+    0.2503190040588379,
+    0.006504058837890625,
+    0.0,
+    0.0
+  ]
+}

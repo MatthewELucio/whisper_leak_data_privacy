@@ -1,0 +1,25 @@
+{
+  "local_port": 52648,
+  "remote_port": 443,
+  "prompt": "How do you write 15 December 2016 without using numbers?",
+  "response": "Fifteenth of December, two thousand and sixteen.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    108,
+    314,
+    273,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.050776004791259766,
+    1.0371031761169434,
+    0.0013668537139892578,
+    0.05062603950500488,
+    0.009048938751220703,
+    0.0,
+    0.0012540817260742188
+  ]
+}

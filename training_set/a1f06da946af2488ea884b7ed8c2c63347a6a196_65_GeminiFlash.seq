@@ -1,0 +1,43 @@
+{
+  "local_port": 55152,
+  "remote_port": 443,
+  "prompt": "Is money laundering a legally actionable offense?",
+  "response": "Yes, money laundering is a legally actionable offense in virtually every country. It is a crime under both federal and state laws (in the United States, for example).  It is also often subject to civil forfeiture laws, meaning assets involved in the crime can be seized even without a criminal conviction in some cases.\n\nHere's why and what makes it legally actionable:\n\n*   **Defined as a Crime:** Laws specifically define money laundering as a crime. These laws outline prohibited activities such as concealing the source of illegally obtained money, disguising the ownership of illicit funds, and using dirty money to finance legitimate businesses or activities.\n*   **Penalties:** Violating money laundering laws can result in severe penalties, including:\n    *   **Imprisonment:** Lengthy prison sentences are common.\n    *   **Fines:** Substantial monetary fines.\n    *   **Asset Forfeiture:** Seizure of assets involved in the laundering process, including the laundered money itself, property purchased with it, and other related assets.\n*   **International Cooperation:** Money laundering is a global problem, and countries have established international treaties and agreements to cooperate in investigating and prosecuting money laundering offenses. This includes sharing information, extraditing suspects, and coordinating law enforcement efforts.\n*   **Legal Framework:** Countries have robust legal frameworks in place to combat money laundering. These frameworks typically include:\n    *   **Anti-Money Laundering (AML) Laws:** Comprehensive laws that address all aspects of money laundering.\n    *   **Know Your Customer (KYC) Regulations:** Requirements for financial institutions to verify the identity of their customers and monitor their transactions.\n    *   **Suspicious Activity Reporting (SAR) Requirements:** Obligations for financial institutions to report suspicious transactions to law enforcement.\n\nIf you are unsure about something, seek the advice of a qualified legal professional in your jurisdiction.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    214,
+    159,
+    365,
+    414,
+    412,
+    437,
+    403,
+    339,
+    435,
+    545,
+    398,
+    275,
+    225,
+    113
+  ],
+  "time_diffs": [
+    0.04661393165588379,
+    0.3233468532562256,
+    0.0014200210571289062,
+    0.013293027877807617,
+    0.10204505920410156,
+    0.08333492279052734,
+    0.25268006324768066,
+    0.18212509155273438,
+    0.30407285690307617,
+    0.2673931121826172,
+    0.4232029914855957,
+    0.28848695755004883,
+    0.32630109786987305,
+    0.00998687744140625,
+    0.0,
+    0.0
+  ]
+}

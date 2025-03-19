@@ -1,0 +1,41 @@
+{
+  "local_port": 55054,
+  "remote_port": 443,
+  "prompt": "What is the weather in orlando like in January?",
+  "response": "Orlando in January typically has mild and pleasant weather, making it a popular destination for those escaping colder climates. Here's a general overview:\n\n*   **Temperature:** The average high temperature is around 72\u00b0F (22\u00b0C), and the average low is around 52\u00b0F (11\u00b0C). However, temperatures can fluctuate, and it's not uncommon to experience cooler days or even brief cold snaps.\n\n*   **Sunshine:** January is one of the drier months in Orlando, and you can expect plenty of sunshine. The days are typically clear and sunny.\n\n*   **Rain:** Rainfall is generally low in January.\n\n*   **Humidity:** The humidity is usually lower than in the summer months, making the weather more comfortable.\n\n**What to Pack:**\n\nGiven the range of temperatures, it's best to pack layers. Consider bringing:\n\n*   Lightweight clothing (short-sleeved shirts, shorts, etc.) for warmer days\n*   Jeans or long pants\n*   Sweater or light jacket for cooler evenings\n*   A heavier jacket or coat, just in case of a cold snap\n*   Comfortable walking shoes (especially if you plan on visiting theme parks)\n*   Sunscreen and sunglasses\n\n**Things to Note:**\n\n*   While the weather is generally mild, it can be unpredictable. Check the forecast closer to your travel date.\n*   Even if it's warm during the day, evenings can get chilly, especially near water.\n*   January is a popular time to visit Orlando, so expect larger crowds at theme parks and other attractions.\n\nOverall, Orlando in January offers a comfortable and enjoyable escape from winter, with mostly sunny skies and mild temperatures.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    129,
+    326,
+    452,
+    333,
+    422,
+    453,
+    463,
+    293,
+    388,
+    401,
+    262,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.0510859489440918,
+    0.34971189498901367,
+    0.001728057861328125,
+    0.10953092575073242,
+    0.0988311767578125,
+    0.12228894233703613,
+    0.19388389587402344,
+    0.24431419372558594,
+    0.2582688331604004,
+    0.36458897590637207,
+    0.3737030029296875,
+    0.20884418487548828,
+    0.005733966827392578,
+    0.0,
+    0.0
+  ]
+}

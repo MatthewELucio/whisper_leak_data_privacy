@@ -1,0 +1,35 @@
+{
+  "local_port": 60406,
+  "remote_port": 443,
+  "prompt": "What are the \"scientific reasons\" that some people are born with sexual/romantic preferences to people of the same gender?",
+  "response": "Research suggests that a combination of genetic, hormonal, and environmental factors likely contributes to same-sex attraction.\n\n*   **Genetics:** Twin studies have shown that identical twins are more likely to share the same sexual orientation than fraternal twins, suggesting a genetic component. Several genes have been identified that may be associated with sexual orientation, but no single \"gay gene\" has been found.\n*   **Hormones:** Exposure to certain hormones in the womb may influence sexual orientation. For example, some research suggests that differences in prenatal androgen exposure may play a role.\n*   **Environment:** While the exact role of environmental factors is not fully understood, some studies suggest that social and cultural influences may also contribute to the development of sexual orientation.\n\nIt's important to note that sexual orientation is complex and likely influenced by a combination of these factors. More research is needed to fully understand the underlying causes of same-sex attraction.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    235,
+    333,
+    286,
+    330,
+    401,
+    495,
+    334,
+    262,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.04680895805358887,
+    0.2769138813018799,
+    0.0012311935424804688,
+    0.17000794410705566,
+    0.17473387718200684,
+    0.05587911605834961,
+    0.2002239227294922,
+    0.2337169647216797,
+    0.20993614196777344,
+    0.007944822311401367,
+    5.221366882324219e-05,
+    0.0
+  ]
+}

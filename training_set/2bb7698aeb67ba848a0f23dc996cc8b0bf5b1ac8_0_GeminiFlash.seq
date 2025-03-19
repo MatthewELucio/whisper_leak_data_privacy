@@ -1,0 +1,39 @@
+{
+  "local_port": 48846,
+  "remote_port": 443,
+  "prompt": "How is the word 'precariously' used in a sentence?",
+  "response": "Here are a few examples of how the word \"precariously\" can be used in a sentence:\n\n*   **The vase sat precariously on the edge of the table, threatening to topple over with the slightest movement.** (Here, \"precariously\" describes the dangerous and unstable position of the vase.)\n*   **He balanced precariously on the narrow beam, his arms outstretched for support.** (This sentence describes someone in a physically unstable situation.)\n*   **The company was precariously close to bankruptcy after the failed product launch.** (In this case, \"precariously\" describes a situation that is risky and could easily lead to a negative outcome.)\n*   **She lived precariously, working odd jobs and never knowing where her next meal would come from.** (Here, \"precariously\" describes a life lacking security and stability.)\n*   **The government held power precariously, relying on a fragile coalition to maintain its majority.** (This sentence describes a political situation that is unstable and could collapse easily.)\n\nIn general, \"precariously\" is used to describe something that is unstable, insecure, or dangerous, and could easily fall, fail, or collapse.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    143,
+    363,
+    356,
+    204,
+    482,
+    279,
+    457,
+    340,
+    455,
+    160,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.05160689353942871,
+    0.3360722064971924,
+    0.0014460086822509766,
+    0.05846691131591797,
+    0.019917964935302734,
+    0.12526607513427734,
+    0.1590428352355957,
+    0.19207406044006348,
+    0.28912806510925293,
+    0.2751319408416748,
+    0.20739412307739258,
+    0.006803989410400391,
+    5.984306335449219e-05,
+    0.0
+  ]
+}

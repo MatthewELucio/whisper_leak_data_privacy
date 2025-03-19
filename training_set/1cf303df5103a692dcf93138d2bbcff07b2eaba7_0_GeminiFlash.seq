@@ -1,0 +1,39 @@
+{
+  "local_port": 49648,
+  "remote_port": 443,
+  "prompt": "In which attempt is NET/SET exam cleared approximately?",
+  "response": "There's no \"approximate\" attempt for clearing the NET/SET exam. It varies wildly from person to person and depends on many factors:\n\n*   **Preparation Level:** The most significant factor. Someone who prepares rigorously for 6 months with dedicated study and practice is more likely to clear it in their first or second attempt than someone who studies sporadically for a couple of weeks.\n\n*   **Background Knowledge:** A strong foundation in the subject matter definitely helps. If you have a solid grasp of the concepts from your Master's degree, you'll have a head start.\n\n*   **Exam Strategy:** Understanding the exam pattern, time management, and knowing how to answer questions strategically are crucial.\n\n*   **Question Paper Difficulty:** The difficulty level of the question paper varies from year to year.\n\n*   **Subject Area:** Certain subjects may have a higher cut-off or more competitive candidates.\n\n*   **Individual Aptitude:** Some people naturally grasp concepts faster and perform better under pressure.\n\n**Anecdotally:**\n\n*   Many students clear it in their **first or second attempt** with dedicated preparation.\n*   Some might take **3-4 attempts** or even more.\n*   Some very well-prepared candidates may clear it on their **first attempt itself**.\n\n**In summary:** There's no predictable \"attempt number.\" The best approach is to focus on thorough preparation, understanding the exam pattern, and developing effective test-taking strategies. Don't get discouraged if it takes more than one attempt; learn from your mistakes and keep improving. Good Luck!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    291,
+    248,
+    365,
+    439,
+    338,
+    475,
+    293,
+    434,
+    337,
+    146,
+    192,
+    113
+  ],
+  "time_diffs": [
+    0.04721808433532715,
+    0.29760193824768066,
+    0.0014679431915283203,
+    0.13859295845031738,
+    0.07297396659851074,
+    0.25319910049438477,
+    0.18178892135620117,
+    0.2527589797973633,
+    0.2893249988555908,
+    0.32030510902404785,
+    0.4362790584564209,
+    0.005296945571899414,
+    0.0,
+    0.0
+  ]
+}

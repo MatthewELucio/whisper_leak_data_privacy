@@ -1,0 +1,41 @@
+{
+  "local_port": 32864,
+  "remote_port": 443,
+  "prompt": "What is your opinion of President Barack Obama?",
+  "response": "Barack Obama served as the 44th President of the United States from 2009 to 2017. His presidency was marked by a number of significant policy initiatives and events, both domestic and international.\n\nDomestically, Obama signed the Affordable Care Act (often referred to as Obamacare) into law, which aimed to expand health insurance coverage. He also oversaw the American Recovery and Reinvestment Act of 2009, a stimulus package designed to address the Great Recession. Other key domestic policies included the Dodd-Frank Wall Street Reform and Consumer Protection Act, intended to regulate the financial industry, and the repeal of \"Don't Ask, Don't Tell,\" which allowed openly gay people to serve in the military.\n\nIn foreign policy, Obama ended the Iraq War, authorized the raid that killed Osama bin Laden, and negotiated the Iran nuclear deal (Joint Comprehensive Plan of Action) with several other world powers. He also normalized relations with Cuba after decades of estrangement.\n\nObama's presidency has been the subject of considerable debate and analysis. Supporters often point to his efforts to expand healthcare access, address the economic crisis, and restore America's image abroad. Critics, on the other hand, have raised concerns about the Affordable Care Act, the growth of the national debt, and his foreign policy decisions. His legacy continues to be discussed and reevaluated in American politics and history.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    217,
+    232,
+    260,
+    330,
+    446,
+    292,
+    317,
+    401,
+    470,
+    307,
+    297,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.045105934143066406,
+    0.3315720558166504,
+    0.0015649795532226562,
+    0.03254985809326172,
+    0.0408320426940918,
+    0.09611296653747559,
+    0.1553189754486084,
+    0.19092416763305664,
+    0.20899486541748047,
+    0.2437281608581543,
+    0.35394883155822754,
+    0.11310315132141113,
+    0.010905981063842773,
+    0.0,
+    4.982948303222656e-05
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 43748,
+  "remote_port": 443,
+  "prompt": "What is a good diet after?",
+  "response": "Okay, let's talk about a good diet after... but I need a little more information to give you the best advice.  \"After\" what, specifically?  To give you accurate recommendations, I need to know what your diet needs to be **after**.\n\nFor example, are you interested in finding the right diet:\n\n*   **After a surgery or medical procedure?** If so, what type of surgery or procedure?\n*   **After an illness?** Which illness?\n*   **After a period of unhealthy eating?**\n*   **After giving birth?**\n*   **After a workout?**\n*   **After fasting?**\n*   **After a specific diet you were following?**\n\nI would also need information such as your **age, gender, activity levels, goals, and any existing health conditions**.\n\nThe more details you give me, the better I can tailor the advice to your specific circumstances.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1293,
+    235,
+    258,
+    410,
+    353,
+    334,
+    213,
+    286,
+    262,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.04778599739074707,
+    0.3248450756072998,
+    0.015120983123779297,
+    0.10703706741333008,
+    0.10089278221130371,
+    0.14524602890014648,
+    0.17039012908935547,
+    0.26805901527404785,
+    0.24174904823303223,
+    0.006745815277099609,
+    0.0,
+    0.0
+  ]
+}

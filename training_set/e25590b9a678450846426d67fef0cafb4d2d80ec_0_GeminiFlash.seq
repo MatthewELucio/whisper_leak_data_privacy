@@ -1,0 +1,41 @@
+{
+  "local_port": 35104,
+  "remote_port": 443,
+  "prompt": "Why was Divya Bharti's death so controversial?",
+  "response": "Divya Bharti's death in 1993 was highly controversial due to a combination of factors:\n\n*   **Unexplained Circumstances:** The official cause of death was ruled as accidental fall from her fifth-floor apartment window. However, many found it difficult to believe that a healthy 19-year-old could accidentally fall in such a manner.\n*   **Possible Suicide:** Some speculated that she committed suicide due to depression or problems in her personal life. She had a whirlwind marriage to Sajid Nadiadwala, and rumors of marital issues were circulating.\n*   **Speculation of Murder:** Another theory suggested that she was murdered. Theories included involvement of the Mumbai underworld or her husband's connections. Some believed that the fall was staged.\n*   **Lack of Conclusive Evidence:** Despite a thorough investigation, police found no conclusive evidence to support either suicide or murder. This lack of clarity fueled speculation and conspiracy theories.\n*   **Media Frenzy:** The death of a popular actress at such a young age generated intense media coverage. This amplified rumors and speculation, contributing to the controversy.\n*   **Mumbai Underworld Connection:** During that period, the Mumbai underworld was active in the Bollywood industry, and there were allegations of extortion and involvement in various crimes. This led to suspicion that her death might be connected to the underworld.\n\nThe controversy surrounding Divya Bharti's death persists because the lack of a definitive explanation allows room for speculation and conjecture.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    257,
+    277,
+    423,
+    337,
+    261,
+    329,
+    335,
+    464,
+    436,
+    279,
+    263,
+    214,
+    113
+  ],
+  "time_diffs": [
+    0.04672503471374512,
+    0.37918901443481445,
+    0.001068115234375,
+    0.04877495765686035,
+    0.04783797264099121,
+    0.0841360092163086,
+    0.21924901008605957,
+    0.21291685104370117,
+    0.3200550079345703,
+    0.290999174118042,
+    0.3689889907836914,
+    0.1966559886932373,
+    0.009892940521240234,
+    0.0,
+    5.1021575927734375e-05
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 49708,
+  "remote_port": 443,
+  "prompt": "Has USA been destabilizing the world since 1050?",
+  "response": "No, the United States of America did not exist in 1050. The country was founded much later, in 1776. Therefore, it could not have been destabilizing the world in 1050.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    200,
+    325,
+    208,
+    398,
+    202,
+    161,
+    113
+  ],
+  "time_diffs": [
+    0.044834136962890625,
+    0.3967728614807129,
+    0.0014619827270507812,
+    0.09649300575256348,
+    0.05887913703918457,
+    0.07817482948303223,
+    0.009949207305908203,
+    0.0017158985137939453,
+    0.0
+  ]
+}

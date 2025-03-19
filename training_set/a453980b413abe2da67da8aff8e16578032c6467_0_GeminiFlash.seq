@@ -1,0 +1,37 @@
+{
+  "local_port": 60530,
+  "remote_port": 443,
+  "prompt": "Should India strike Pakistan now after Uri terror attack?",
+  "response": "The attack on the Indian army base in Uri in 2016 led to a lot of public discussion about how India should respond. Some people argued for military action against Pakistan, believing it was necessary to deter future attacks and hold Pakistan accountable. Others cautioned against military action, highlighting the risk of escalation and potential for a larger conflict.\n\nUltimately, India chose a different path, conducting surgical strikes against militant launchpads across the Line of Control. This action was intended to send a message to Pakistan while minimizing the risk of a full-blown war.\n \nThere are many factors that governments consider when deciding how to respond to such an event, including:\n *   The desire to protect national security and deter future attacks\n *   The potential consequences of military action, including the risk of escalation and civilian casualties\n *   The need to maintain international support and avoid isolation\n *   The importance of upholding international law and norms.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    156,
+    335,
+    428,
+    227,
+    353,
+    466,
+    470,
+    340,
+    246,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.047618865966796875,
+    0.3335080146789551,
+    0.0014300346374511719,
+    0.012466907501220703,
+    0.11911201477050781,
+    0.1150200366973877,
+    0.22209405899047852,
+    0.28609395027160645,
+    0.3830709457397461,
+    0.20768404006958008,
+    0.00522613525390625,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

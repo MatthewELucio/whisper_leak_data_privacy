@@ -1,0 +1,37 @@
+{
+  "local_port": 40008,
+  "remote_port": 443,
+  "prompt": "How are the Earth and the moon similar?",
+  "response": "The Earth and the Moon share several similarities, although they also have significant differences. Here are some key similarities:\n\n*   **Made of similar materials:** Both are primarily made of silicate rocks and metals. They have a core, mantle, and crust structure, although the proportions and composition differ.\n\n*   **Spherical Shape:** Both are roughly spherical in shape due to gravity pulling mass towards the center.\n\n*   **Solid surfaces:** Both the Earth and the Moon have a solid, rocky surface.\n\n*   **Affected by impacts:** Both have impact craters, although erosion and geological activity have erased many on Earth.\n\n*   **Interact gravitationally:** The Earth's gravity holds the Moon in orbit, and the Moon's gravity causes tides on Earth.\n\n*   **Orbit the sun** Both the Earth and the moon orbit the sun.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    276,
+    323,
+    313,
+    237,
+    256,
+    303,
+    323,
+    269,
+    206,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.04785513877868652,
+    0.4259049892425537,
+    0.0014319419860839844,
+    0.02749800682067871,
+    0.07503795623779297,
+    0.10103297233581543,
+    0.19122719764709473,
+    0.19287586212158203,
+    0.33216309547424316,
+    0.11233091354370117,
+    0.01344609260559082,
+    4.792213439941406e-05,
+    8.296966552734375e-05
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 47854,
+  "remote_port": 443,
+  "prompt": "How does a homeopathic medicine work?",
+  "response": "Homeopathy is a controversial alternative medicine practice that is not scientifically supported by medical evidence. According to homeopathic principles, remedies are prepared by repeatedly diluting a substance in water or alcohol, with the belief that the more",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    139,
+    405,
+    405,
+    418,
+    463,
+    461,
+    457,
+    449,
+    444,
+    569,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.01788806915283203,
+    0.22612500190734863,
+    0.4082810878753662,
+    0.4129149913787842,
+    0.11300301551818848,
+    0.0,
+    0.0014460086822509766,
+    0.13453102111816406,
+    0.14203691482543945,
+    0.18304204940795898,
+    0.1754460334777832,
+    0.21782898902893066,
+    0.0018088817596435547,
+    0.015536069869995117,
+    0.0
+  ]
+}

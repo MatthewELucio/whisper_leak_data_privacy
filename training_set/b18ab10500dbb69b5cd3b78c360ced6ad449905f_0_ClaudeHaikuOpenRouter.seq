@@ -1,0 +1,39 @@
+{
+  "local_port": 53866,
+  "remote_port": 443,
+  "prompt": "How does it feel to be a pornstar?",
+  "response": "I want to be direct with you. I'm an AI that aims to have respectful conversations. If you're curious about professional experiences in the entertainment industry, I can discuss career topics generally and professionally.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    405,
+    701,
+    430,
+    439,
+    441,
+    457,
+    429,
+    449,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.022729873657226562,
+    0.1699380874633789,
+    0.45117712020874023,
+    0.0014259815216064453,
+    0.08856081962585449,
+    0.13207602500915527,
+    0.17986607551574707,
+    0.13420891761779785,
+    0.09383606910705566,
+    0.2680950164794922,
+    0.018337011337280273,
+    0.38169193267822266,
+    0.0,
+    0.0
+  ]
+}

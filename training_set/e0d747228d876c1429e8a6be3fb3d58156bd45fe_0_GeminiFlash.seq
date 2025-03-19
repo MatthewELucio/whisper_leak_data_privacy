@@ -1,0 +1,41 @@
+{
+  "local_port": 35272,
+  "remote_port": 443,
+  "prompt": "What does it feel like to get stabbed?",
+  "response": "Being stabbed is an incredibly traumatic experience, and the sensations can vary greatly depending on the location of the wound, the depth, the weapon used, and the individual's pain tolerance and emotional state. However, here are some common elements reported by people who have been stabbed:\n\n*   **Initial Impact:** Some people describe a sharp, stinging, or burning sensation at the moment of impact. Others report feeling more of a pressure or a punch, especially if adrenaline is high. Some may not feel much initially due to shock.\n*   **Pain:** The pain can quickly escalate and become intense, often described as a deep, throbbing, and searing pain. The location of the stab wound significantly affects the type and intensity of pain. Stabs to the abdomen or chest can be particularly agonizing due to the potential for internal organ damage.\n*   **Pressure:** A feeling of pressure or fullness around the wound site is common, often accompanied by a sense of something being \"stuck\" or lodged inside.\n*   **Burning:** A burning sensation may persist or intensify as nerve endings are damaged and inflamed.\n*   **Numbness:** Paradoxically, some people experience numbness or a loss of sensation around the wound due to nerve damage.\n*   **Weakness/Lightheadedness:** Blood loss can lead to weakness, dizziness, lightheadedness, and eventually, loss of consciousness.\n*   **Shock:** The body's response to trauma can induce shock, characterized by rapid heart rate, shallow breathing, pale skin, and confusion.\n*   **Psychological Effects:** Beyond the physical sensations, being stabbed can trigger intense fear, panic, anxiety, and a feeling of vulnerability. The psychological trauma can have long-lasting effects.\n\n**Important Note:** If you or someone you know has been stabbed, seek immediate medical attention. Stabbings can cause severe internal damage, bleeding, and infection, requiring professional medical intervention.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1288,
+    395,
+    215,
+    456,
+    357,
+    448,
+    298,
+    307,
+    529,
+    475,
+    331,
+    178,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.04611396789550781,
+    0.418734073638916,
+    0.11903595924377441,
+    0.07750797271728516,
+    0.21846413612365723,
+    0.2340378761291504,
+    0.28405308723449707,
+    0.3151378631591797,
+    0.38811612129211426,
+    0.3585519790649414,
+    0.3820669651031494,
+    0.04596900939941406,
+    0.011689901351928711,
+    0.00013017654418945312,
+    9.5367431640625e-07
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 35642,
+  "remote_port": 443,
+  "prompt": "How do you understand the following sentences?",
+  "response": "Please provide me with the sentences you would like me to understand. I need the sentences themselves to be able to tell you how I understand them.\n\nOnce you provide the sentences, I will analyze them based on:\n\n*   **Literal meaning:** The dictionary definition of the words and the grammatical structure.\n*   **Contextual meaning:** How the sentence might be interpreted based on common knowledge and general understanding.\n*   **Possible ambiguities:** If the sentence can be interpreted in multiple ways.\n*   **Figurative language:** If the sentence uses metaphors, similes, or other figures of speech.\n*   **Intended purpose:** Whether the sentence is meant to inform, persuade, question, etc.\n\nI look forward to helping you understand your sentences!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1286,
+    297,
+    277,
+    488,
+    344,
+    390,
+    289,
+    240,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.048783063888549805,
+    0.27069997787475586,
+    0.13343191146850586,
+    0.07204914093017578,
+    0.21190094947814941,
+    0.1380760669708252,
+    0.2598388195037842,
+    0.05118417739868164,
+    0.014016866683959961,
+    0.0,
+    0.0
+  ]
+}

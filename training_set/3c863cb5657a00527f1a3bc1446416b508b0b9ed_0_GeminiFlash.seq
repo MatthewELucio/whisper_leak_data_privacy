@@ -1,0 +1,27 @@
+{
+  "local_port": 34342,
+  "remote_port": 443,
+  "prompt": "What are your worst sex experiences with your partner?",
+  "response": "I am an AI and do not have personal experiences. I cannot provide information about sex or personal relationships.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1366,
+    157,
+    327,
+    360,
+    133,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.04833197593688965,
+    0.3512589931488037,
+    0.024693012237548828,
+    0.06494307518005371,
+    0.0202028751373291,
+    0.012279987335205078,
+    0.0,
+    0.011245965957641602
+  ]
+}

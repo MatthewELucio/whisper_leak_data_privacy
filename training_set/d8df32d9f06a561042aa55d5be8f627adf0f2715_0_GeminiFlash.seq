@@ -1,0 +1,31 @@
+{
+  "local_port": 46932,
+  "remote_port": 443,
+  "prompt": "Should a 12 year old have sex?",
+  "response": "Having sex at the age of 12 carries significant risks. Medically, a 12-year-old's body may not be fully developed for sexual activity, increasing the risk of injury and complications. There are also serious emotional and psychological considerations, as a child may not be equipped to handle the complexities and potential consequences of sexual activity. Additionally, sex at this age can have legal ramifications, as it may be considered statutory rape depending on the laws of the specific jurisdiction and the age of the partner involved. For comprehensive information and support, resources like the National Sexual Assault Hotline and the Childhelp USA hotline are available.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1273,
+    332,
+    229,
+    359,
+    299,
+    349,
+    174,
+    169,
+    113
+  ],
+  "time_diffs": [
+    0.044255971908569336,
+    0.3815150260925293,
+    0.1269989013671875,
+    0.08212900161743164,
+    0.18606114387512207,
+    0.2440798282623291,
+    0.184035062789917,
+    0.00878000259399414,
+    0.001394033432006836,
+    0.00010895729064941406
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 60580,
+  "remote_port": 443,
+  "prompt": "Which is the most beautiful place in Chhattisgarh?",
+  "response": "Chhattisgarh is a state with diverse natural beauty, making it tough to pick just *one* most beautiful place. It really depends on what you find appealing! Here are a few strong contenders, each with its own unique charm:\n\n*   **Bastar:** Often considered the heart of Chhattisgarh's natural beauty. It's known for:\n\n    *   **Waterfalls:** Chitrakote Falls (India's Niagara), Teerathgarh Falls, and Mandawa Falls are all breathtaking.\n    *   **Dense Forests:** Home to tribal communities and rich biodiversity. The Kanger Valley National Park is a must-visit.\n    *   **Caves:** Kotumsar Cave and Dandak Cave are fascinating geological formations.\n    *   **Tribal Culture:** Bastar's vibrant tribal culture adds a unique dimension to its beauty.\n\n*   **Chitrakote Falls:** Some would argue this *is* the most beautiful place, even considered separately from Bastar. The sheer scale and power of the falls, especially during the monsoon season, are truly awe-inspiring.\n\n*   **Kanger Valley National Park:** A biodiversity hotspot with dense forests, underground caves, and diverse wildlife.\n\n*   **Mainpat:** Often called the \"Shimla of Chhattisgarh,\" Mainpat offers a different kind of beauty. It's a hill station with:\n\n    *   **Rolling hills and meadows:** A refreshing change from the plains.\n    *   **Tibetan settlements:** Adds cultural interest and unique monasteries.\n    *   **Tiger Falls and Fish Point:** Scenic spots for nature lovers.\n\n**So, which is *the* most beautiful?**\n\n*   **For dramatic, powerful natural beauty:** **Chitrakote Falls**\n*   **For overall natural diversity and cultural richness:** **Bastar region**\n*   **For a peaceful hill station experience:** **Mainpat**\n\nTo give you the best recommendation, tell me: what kind of beauty do you find most appealing? Are you looking for waterfalls, mountains, forests, or cultural experiences?\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1402,
+    358,
+    368,
+    298,
+    370,
+    337,
+    351,
+    526,
+    535,
+    399,
+    410,
+    165,
+    153,
+    113
+  ],
+  "time_diffs": [
+    0.046752214431762695,
+    0.2861189842224121,
+    0.16601300239562988,
+    0.08890485763549805,
+    0.12804508209228516,
+    0.19405484199523926,
+    0.29711318016052246,
+    0.311521053314209,
+    0.3872249126434326,
+    0.37996888160705566,
+    0.399975061416626,
+    0.18257594108581543,
+    0.01065206527709961,
+    0.0,
+    0.0
+  ]
+}

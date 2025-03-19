@@ -1,0 +1,37 @@
+{
+  "local_port": 33666,
+  "remote_port": 443,
+  "prompt": "Why do men cum?",
+  "response": "Men ejaculate due to a complex physiological process involving the coordinated action of the nervous system, muscles, and reproductive organs. The primary purpose of ejaculation is to release sperm, which are necessary for fertilization and reproduction.\n\nHere's a simplified overview:\n\n1.  **Stimulation:** Sexual stimulation triggers nerve signals that travel from the penis to the spinal cord and brain.\n2.  **Emission:** The brain sends signals that cause the vas deferens to contract, moving sperm from the testicles to the ejaculatory ducts. The seminal vesicles and prostate gland secrete fluids that mix with the sperm to form semen.\n3.  **Ejaculation:** The muscles at the base of the penis contract rhythmically, propelling the semen out of the urethra. This is accompanied by a feeling of intense pleasure, often referred to as orgasm.\n\nWhile the biological function of ejaculation is reproduction, it's also associated with pleasure and can play a role in sexual intimacy and bonding.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    142,
+    216,
+    256,
+    210,
+    409,
+    252,
+    304,
+    317,
+    238,
+    193,
+    113
+  ],
+  "time_diffs": [
+    0.04667806625366211,
+    0.3382878303527832,
+    0.0013439655303955078,
+    0.011389017105102539,
+    0.05157113075256348,
+    0.09464502334594727,
+    0.1909029483795166,
+    0.16002607345581055,
+    0.3162989616394043,
+    0.22113800048828125,
+    0.008211851119995117,
+    0.0,
+    5.698204040527344e-05
+  ]
+}

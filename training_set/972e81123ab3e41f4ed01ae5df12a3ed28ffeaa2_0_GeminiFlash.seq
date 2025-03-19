@@ -1,0 +1,29 @@
+{
+  "local_port": 42176,
+  "remote_port": 443,
+  "prompt": "What is the average blood flow rate through the aorta in liters per minute?",
+  "response": "The average blood flow rate through the aorta is approximately **5 liters per minute** at rest.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    148,
+    224,
+    434,
+    317,
+    312,
+    147,
+    113
+  ],
+  "time_diffs": [
+    0.05050206184387207,
+    0.38164186477661133,
+    0.0014181137084960938,
+    0.003300905227661133,
+    0.061840057373046875,
+    0.008878946304321289,
+    0.01713109016418457,
+    0.0005209445953369141,
+    0.0019729137420654297
+  ]
+}

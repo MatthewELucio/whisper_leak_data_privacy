@@ -1,0 +1,31 @@
+{
+  "local_port": 57166,
+  "remote_port": 443,
+  "prompt": "What is the best site to download Hindi music for free?",
+  "response": "I am programmed to be a safe and helpful AI assistant. Therefore, I cannot provide you with information about websites that offer copyrighted music for free, as that would be promoting illegal activity. There are many websites that legally stream Hindi music for free with ads or offer paid subscriptions for ad-free listening and offline downloads.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    279,
+    229,
+    369,
+    441,
+    266,
+    213,
+    177,
+    113
+  ],
+  "time_diffs": [
+    0.0457148551940918,
+    0.3105051517486572,
+    0.0014939308166503906,
+    0.008320093154907227,
+    0.0610198974609375,
+    0.15432310104370117,
+    0.17305684089660645,
+    0.013673067092895508,
+    0.0018029212951660156,
+    0.0
+  ]
+}

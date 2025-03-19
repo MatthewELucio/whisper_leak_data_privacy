@@ -1,0 +1,35 @@
+{
+  "local_port": 52092,
+  "remote_port": 443,
+  "prompt": "If somebody is smoking weed around me, is it possible to get high off of second hand smoke?",
+  "response": "Whether you can get high from secondhand marijuana smoke depends on a few factors:\n\n*   **Concentration of smoke:** The more concentrated the smoke in the air, the more likely you are to inhale a significant amount of THC.\n*   **Ventilation:** In a well-ventilated area, the smoke dissipates quickly, reducing the chances of inhaling a high dose. In a small, enclosed space with poor ventilation, the risk is higher.\n*   **Proximity to the smoker:** Being close to the person smoking increases your exposure.\n*   **Duration of exposure:** The longer you're exposed to the smoke, the more THC you can potentially inhale.\n*   **Sensitivity:** Some people are more sensitive to THC than others.\n\n**While it's possible to test positive on a drug test due to secondhand marijuana smoke, it's rare to get a significant high. You would need to be in a very poorly ventilated area, exposed to a lot of smoke, for a long period to feel noticeable effects.**\n\nIf you are concerned about inhaling secondhand smoke, move to a well-ventilated area.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1417,
+    360,
+    335,
+    455,
+    399,
+    411,
+    288,
+    277,
+    210,
+    147,
+    113
+  ],
+  "time_diffs": [
+    0.04683279991149902,
+    0.41329407691955566,
+    0.07974004745483398,
+    0.09355688095092773,
+    0.1841881275177002,
+    0.2061469554901123,
+    0.23778796195983887,
+    0.3195490837097168,
+    0.20624089241027832,
+    0.007824182510375977,
+    0.0,
+    0.00022792816162109375
+  ]
+}

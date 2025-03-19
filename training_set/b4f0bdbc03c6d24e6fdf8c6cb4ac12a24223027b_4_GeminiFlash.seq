@@ -1,0 +1,41 @@
+{
+  "local_port": 47874,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law prohibits money laundering in virtually every country. The specific laws and regulations vary, but the core principle is the same: it's illegal to conceal the origins of illegally obtained money.\n\nHere's a breakdown:\n\n*   **What is Money Laundering?** Money laundering is the process of disguising the source of illegally obtained money, so it appears to come from a legitimate source. This often involves multiple transactions or stages to obscure the trail.\n\n*   **Why is it Illegal?** Money laundering facilitates serious crimes. By making it possible to profit from illegal activities, it encourages and enables:\n    *   Drug trafficking\n    *   Terrorism financing\n    *   Corruption\n    *   Human trafficking\n    *   Other organized crime\n\n*   **Key Laws and Regulations:**\n    *   **United States:** Bank Secrecy Act (BSA), USA PATRIOT Act (Title III focuses on anti-money laundering)\n    *   **International:** Financial Action Task Force (FATF) recommendations are the global standard for AML.\n    *   **Many Countries:** Have laws implementing the FATF recommendations and other AML measures.\n\n*   **Consequences:** Penalties for money laundering are severe and can include:\n    *   Imprisonment\n    *   Substantial fines\n    *   Seizure of assets\n\n**In summary, yes, money laundering is illegal and carries serious consequences worldwide.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    251,
+    323,
+    365,
+    249,
+    305,
+    283,
+    313,
+    403,
+    389,
+    364,
+    212,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.04533505439758301,
+    0.3105499744415283,
+    0.0014040470123291016,
+    0.01642608642578125,
+    0.08514094352722168,
+    0.09718799591064453,
+    0.16483306884765625,
+    0.24404478073120117,
+    0.31512999534606934,
+    0.2543201446533203,
+    0.3498039245605469,
+    0.18582916259765625,
+    0.012305974960327148,
+    0.0,
+    0.0
+  ]
+}

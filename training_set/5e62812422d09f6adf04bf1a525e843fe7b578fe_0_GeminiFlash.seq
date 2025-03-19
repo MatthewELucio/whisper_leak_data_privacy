@@ -1,0 +1,29 @@
+{
+  "local_port": 40412,
+  "remote_port": 443,
+  "prompt": "What was your first kiss with a boy like?",
+  "response": "As a large language model, I don't have personal experiences like having a first kiss. I am an AI and do not have a physical body or emotions.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    254,
+    341,
+    393,
+    283,
+    272,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.04649019241333008,
+    0.38900279998779297,
+    0.0013930797576904297,
+    0.04894399642944336,
+    0.020533084869384766,
+    0.1422710418701172,
+    0.004169940948486328,
+    0.0018050670623779297,
+    0.0015969276428222656
+  ]
+}

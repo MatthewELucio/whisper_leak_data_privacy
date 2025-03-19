@@ -1,0 +1,31 @@
+{
+  "local_port": 45788,
+  "remote_port": 443,
+  "prompt": "What are the most interesting products and innovations that Eclipse Resources is coming out with in 2016?",
+  "response": "Eclipse Resources was acquired by Gulfport Energy in 2018, so it no longer exists as a separate entity. Therefore, there were no new products or innovations released by Eclipse Resources in 2016.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    223,
+    391,
+    335,
+    429,
+    156,
+    203,
+    203,
+    113
+  ],
+  "time_diffs": [
+    0.05483508110046387,
+    0.31879591941833496,
+    0.0011758804321289062,
+    0.06412911415100098,
+    0.1065530776977539,
+    0.08582282066345215,
+    0.06440401077270508,
+    0.01116800308227539,
+    0.00011110305786132812,
+    0.0014209747314453125
+  ]
+}

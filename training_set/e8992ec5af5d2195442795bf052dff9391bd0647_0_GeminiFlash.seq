@@ -1,0 +1,37 @@
+{
+  "local_port": 41610,
+  "remote_port": 443,
+  "prompt": "Why do liberals not believe that abortion is an act of murder?",
+  "response": "People who hold liberal views on abortion often do not consider it to be murder for a variety of reasons, including:\n\n*   **Differing views on when life begins:** A central point of disagreement is when a fetus is considered a person with the right to life. Many liberals believe that personhood begins at some point after conception, such as at viability (the ability to survive outside the womb) or at birth.\n*   **Bodily autonomy:** The concept of bodily autonomy is very important in the abortion debate. Liberals often emphasize a woman's right to make decisions about her own body, including the decision to terminate a pregnancy. They argue that forcing a woman to carry a pregnancy against her will infringes upon her fundamental rights.\n*   **Consideration of circumstances:** Liberal perspectives often take into account the circumstances surrounding a pregnancy, such as cases of rape, incest, or when the mother's health is at risk. They may believe that abortion is a justifiable option in these situations.\n*   **Potential consequences for women and families:** Some liberals argue that restricting access to abortion can have negative consequences for women and their families, particularly those in poverty. They may point to studies that show higher rates of poverty, single-parenthood, and child abuse among women who are denied abortions.\n*   **Separation of church and state:** Many liberals believe that abortion is a matter of personal choice and that the government should not impose religious or moral beliefs on others. They advocate for the separation of church and state and argue that abortion laws should be based on secular principles.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1280,
+    392,
+    283,
+    355,
+    298,
+    467,
+    490,
+    467,
+    289,
+    246,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.06426095962524414,
+    0.3326230049133301,
+    0.11605095863342285,
+    0.08336091041564941,
+    0.18227505683898926,
+    0.18219900131225586,
+    0.2770109176635742,
+    0.2971370220184326,
+    0.42928600311279297,
+    0.316878080368042,
+    0.006061077117919922,
+    0.0,
+    0.0
+  ]
+}

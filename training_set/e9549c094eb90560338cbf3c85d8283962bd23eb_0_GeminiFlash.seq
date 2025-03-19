@@ -1,0 +1,41 @@
+{
+  "local_port": 52266,
+  "remote_port": 443,
+  "prompt": "How does Baba Ramdev run a yoga island in Glasgow, Scotland?",
+  "response": "There seems to be some confusion. Baba Ramdev, the well-known Indian yoga guru, does **not** run a yoga island in Glasgow, Scotland.\n\nHere's why:\n\n* **Baba Ramdev's Focus:** Baba Ramdev primarily operates in India. He has built a massive empire centered around Patanjali Ayurved, a company producing herbal medicines, food products, and cosmetics. While he travels internationally for yoga camps and events, he doesn't have a permanent residential yoga island anywhere, especially not in Glasgow.\n\n* **Patanjali's International Presence:** Patanjali does have international branches and distributors, but they typically focus on selling their products, not running dedicated yoga retreat centers or islands.\n\n* **Geography:** Glasgow is a city in Scotland, not an island. While Scotland has many beautiful islands, Glasgow itself is not one of them.\n\n**Possible Misunderstandings:**\n\n* **Yoga Retreats:** There might be yoga retreats in or near Glasgow that offer intensive programs, and these might be mistaken for something related to Baba Ramdev.\n* **Patanjali Products:** Perhaps someone saw Patanjali products being sold in Glasgow and made an assumption about Baba Ramdev's direct involvement.\n* **Incorrect Information:** It's possible the information you received is simply inaccurate.\n\n**In conclusion, Baba Ramdev does not run a yoga island in Glasgow, Scotland.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    254,
+    373,
+    255,
+    264,
+    318,
+    266,
+    328,
+    338,
+    496,
+    373,
+    213,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.04504704475402832,
+    0.3156750202178955,
+    0.0015079975128173828,
+    0.011432886123657227,
+    0.07805800437927246,
+    0.06403207778930664,
+    0.2100379467010498,
+    0.16707491874694824,
+    0.32141804695129395,
+    0.322782039642334,
+    0.4056251049041748,
+    0.09834480285644531,
+    0.008355140686035156,
+    0.0,
+    0.0
+  ]
+}

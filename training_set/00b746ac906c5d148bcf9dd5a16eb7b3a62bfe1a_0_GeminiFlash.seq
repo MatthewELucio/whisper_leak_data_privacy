@@ -1,0 +1,29 @@
+{
+  "local_port": 41764,
+  "remote_port": 443,
+  "prompt": "Who is the highest paid CEO in Singapore?",
+  "response": "As of the latest available data, the highest-paid CEO in Singapore is **Mr. Piyush Gupta, the CEO of DBS Group Holdings.**\n\nKeep in mind that these figures can fluctuate year to year based on company performance and compensation structures.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    290,
+    393,
+    401,
+    251,
+    213,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.05422210693359375,
+    0.3734869956970215,
+    0.0014729499816894531,
+    0.12830805778503418,
+    0.12212705612182617,
+    0.08015084266662598,
+    0.008919000625610352,
+    0.0015139579772949219,
+    0.0
+  ]
+}

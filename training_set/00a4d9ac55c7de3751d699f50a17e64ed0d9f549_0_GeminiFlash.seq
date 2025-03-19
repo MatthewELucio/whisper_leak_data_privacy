@@ -1,0 +1,39 @@
+{
+  "local_port": 34962,
+  "remote_port": 443,
+  "prompt": "What is child marriage?",
+  "response": "Child marriage is a formal marriage or informal union before the age of 18. It violates international human rights laws and conventions, specifically the right to a free and full consent to marriage. While both girls and boys can be affected, it disproportionately affects girls.\n\nHere's a breakdown of key aspects of child marriage:\n\n*   **Definition:** Any marriage, whether legal or customary, involving a person under the age of 18.\n*   **Violation of Rights:** It infringes on the child's rights to health, education, opportunity, and safety.\n*   **Gender Disparity:** Although boys can be victims, girls are disproportionately affected due to existing gender inequalities.\n*   **Consequences:** Child marriage can lead to:\n    *   Reduced educational opportunities\n    *   Health problems (e.g., early pregnancy complications, STIs)\n    *   Increased risk of domestic violence\n    *   Limited social and economic mobility\n*   **Root Causes:** Poverty, lack of education, cultural traditions, and insecurity can contribute to child marriage.\n*   **Legality:** Many countries have laws against child marriage, but enforcement can be challenging.\n*   **Prevalence:** Child marriage is more common in certain regions, particularly in South Asia and Sub-Saharan Africa.\n*   **International Efforts:** Organizations like UNICEF and the UN work to end child marriage through advocacy, education, and support programs.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1284,
+    198,
+    244,
+    269,
+    457,
+    366,
+    275,
+    472,
+    454,
+    241,
+    216,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.04913687705993652,
+    0.2994389533996582,
+    0.013906002044677734,
+    0.09779810905456543,
+    0.13335895538330078,
+    0.15700006484985352,
+    0.1732618808746338,
+    0.25681400299072266,
+    0.2241811752319336,
+    0.4066958427429199,
+    0.12450695037841797,
+    0.013002157211303711,
+    0.0,
+    0.0
+  ]
+}

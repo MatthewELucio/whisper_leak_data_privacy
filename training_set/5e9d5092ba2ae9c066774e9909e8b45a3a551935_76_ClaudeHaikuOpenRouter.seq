@@ -1,0 +1,41 @@
+{
+  "local_port": 40850,
+  "remote_port": 443,
+  "prompt": "You're telling me money laundering isn't illegal?",
+  "response": "I want to be very clear: Money laundering is illegal. It's a serious financial crime in most countries that involves concealing the origins of illegally obtained money. Penalties can include significant fines and imprisonment.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1585,
+    1065,
+    695,
+    719,
+    434,
+    410,
+    425,
+    419,
+    455,
+    431,
+    463,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.020313024520874023,
+    0.23285198211669922,
+    0.3289780616760254,
+    0.0708320140838623,
+    0.07710504531860352,
+    0.0820770263671875,
+    0.04882693290710449,
+    0.08730411529541016,
+    0.11956596374511719,
+    0.06833791732788086,
+    0.13286089897155762,
+    0.03509712219238281,
+    0.005560874938964844,
+    0.0,
+    0.0
+  ]
+}

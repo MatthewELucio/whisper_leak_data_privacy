@@ -1,0 +1,35 @@
+{
+  "local_port": 54214,
+  "remote_port": 443,
+  "prompt": "What is classified?",
+  "response": "\"Classified\" refers to information that a government or organization deems sensitive and requires protection from unauthorized disclosure. The specific criteria for classification, the levels of classification, and the procedures for handling classified information vary depending on the country and the organization involved.\n\nHere's a breakdown of what that generally means:\n\n*   **Sensitivity:** The information is considered important enough that its unauthorized disclosure could damage national security, endanger individuals, or compromise important interests.\n*   **Authorization:** Only individuals with the proper security clearance and a \"need-to-know\" are allowed to access classified information.\n*   **Levels:** There are typically different levels of classification (e.g., Top Secret, Secret, Confidential), with each level corresponding to the degree of potential damage that unauthorized disclosure could cause.\n*   **Markings:** Classified documents and materials are clearly marked with the appropriate classification level and other relevant information (e.g., who classified it, when it was classified, when it's scheduled for declassification).\n*   **Safeguarding:** Strict procedures are in place for storing, handling, transmitting, and destroying classified information to prevent unauthorized access.\n\nEssentially, classifying information is a way to control who has access to it and to protect it from falling into the wrong hands.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1483,
+    427,
+    261,
+    265,
+    281,
+    429,
+    464,
+    430,
+    165,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.04630708694458008,
+    0.38344597816467285,
+    0.10832405090332031,
+    0.09160399436950684,
+    0.17005300521850586,
+    0.2102208137512207,
+    0.29590511322021484,
+    0.26224803924560547,
+    0.29790306091308594,
+    0.006006956100463867,
+    0.0,
+    0.0
+  ]
+}

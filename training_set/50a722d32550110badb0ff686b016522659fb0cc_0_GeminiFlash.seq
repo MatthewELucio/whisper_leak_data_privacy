@@ -1,0 +1,37 @@
+{
+  "local_port": 39738,
+  "remote_port": 443,
+  "prompt": "If I delete my Tinder account and uninstall the app, does my profile still show to those I've matched with?",
+  "response": "No, deleting your Tinder account means your profile will no longer be visible to anyone, including those you've matched with.\n\nHere's a breakdown of what happens:\n\n*   **Disappearance from the app:** Once deleted, your profile is removed from Tinder's system and is no longer searchable or visible to other users.\n\n*   **Matches can't see you:** Your matches will see that the conversation is gone or that the profile is no longer available. They won't be able to message you or view your profile.\n\n*   **Irreversible:** Deletion is permanent. If you decide to use Tinder again, you'll need to create a new account.\n\nUninstalling the app alone is not enough to remove your profile. You must delete the account within the app settings.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    199,
+    299,
+    346,
+    204,
+    393,
+    261,
+    497,
+    332,
+    190,
+    217,
+    113
+  ],
+  "time_diffs": [
+    0.04663705825805664,
+    0.3242208957672119,
+    0.0013000965118408203,
+    0.023483991622924805,
+    0.06335306167602539,
+    0.0860588550567627,
+    0.1508469581604004,
+    0.20959806442260742,
+    0.21451807022094727,
+    0.07911300659179688,
+    0.009203910827636719,
+    0.0,
+    0.0
+  ]
+}

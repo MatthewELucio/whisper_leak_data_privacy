@@ -1,0 +1,29 @@
+{
+  "local_port": 39442,
+  "remote_port": 443,
+  "prompt": "Do Indians deserve freedom considering the rampant vip racism, corruption and discrimination?",
+  "response": "It is wrong to deny freedom to any group of people based on the actions of a few. The principles of liberty and self-determination apply to all individuals, regardless of the behavior of some members of their community. Holding an entire population responsible for the actions of a few is a form of collective punishment and contradicts the principles of justice and human rights.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1406,
+    210,
+    323,
+    508,
+    193,
+    166,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.04687309265136719,
+    0.8604879379272461,
+    0.1348719596862793,
+    0.10494399070739746,
+    0.2631189823150635,
+    0.04103803634643555,
+    0.011841058731079102,
+    0.0019369125366210938,
+    0.003134012222290039
+  ]
+}

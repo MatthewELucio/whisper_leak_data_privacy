@@ -1,0 +1,39 @@
+{
+  "local_port": 54178,
+  "remote_port": 443,
+  "prompt": "Does money laundering violate financial regulations?",
+  "response": "Yes, money laundering is illegal and violates numerous financial regulations and laws in most countries. It involves concealing the origins of illegally obtained money through a series of transactions designed to make the funds appear legitimate.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    139,
+    1006,
+    438,
+    439,
+    439,
+    450,
+    446,
+    424,
+    718,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.022253990173339844,
+    0.08951807022094727,
+    0.4120750427246094,
+    0.41022491455078125,
+    0.023814916610717773,
+    0.19800114631652832,
+    0.16209793090820312,
+    0.1551070213317871,
+    0.0758819580078125,
+    0.1030740737915039,
+    0.09059000015258789,
+    0.08975100517272949,
+    0.022053003311157227,
+    0.0
+  ]
+}

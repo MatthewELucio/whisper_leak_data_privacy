@@ -1,0 +1,43 @@
+{
+  "local_port": 53152,
+  "remote_port": 443,
+  "prompt": "What are the good things about pakistan?",
+  "response": "Pakistan has a rich and complex history and a vibrant culture. Here are some of the things that are often cited as positive aspects of the country:\n\n*   **Culture and Heritage:** Pakistan boasts a rich cultural heritage, influenced by various civilizations throughout history. This is reflected in its diverse languages, music, art, architecture, and festivals. The country is home to ancient sites like Mohenjo-daro and Taxila, showcasing its historical significance.\n*   **Hospitality:** Pakistanis are known for their warm hospitality and generosity towards guests. Visitors often remark on the welcoming nature of the people and their willingness to go out of their way to help.\n*   **Food:** Pakistani cuisine is flavorful and diverse, with regional specialties that vary from spicy curries to savory grilled meats and sweet desserts. The country's food culture is a major attraction for tourists and locals alike.\n*   **Natural Beauty:** Pakistan is blessed with stunning natural landscapes, including towering mountains, lush green valleys, deserts, and coastlines. The northern areas, such as Gilgit-Baltistan and Khyber Pakhtunkhwa, are particularly renowned for their scenic beauty.\n*   **Resilience:** Despite facing numerous challenges throughout its history, Pakistan has demonstrated remarkable resilience as a nation. The people have shown strength and determination in overcoming adversity and rebuilding their lives.\n*   **Philanthropy:** Pakistanis are known for their charitable giving and philanthropic efforts. The country has a strong tradition of helping those in need, both domestically and internationally.\n*   **Youthful Population:** Pakistan has a large and growing youth population, which represents a significant potential for future development and innovation. With the right opportunities and education, young Pakistanis can contribute to the country's progress.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    139,
+    247,
+    228,
+    396,
+    381,
+    288,
+    295,
+    368,
+    519,
+    334,
+    419,
+    136,
+    164,
+    113
+  ],
+  "time_diffs": [
+    0.04521298408508301,
+    0.4315519332885742,
+    0.0012600421905517578,
+    0.016492128372192383,
+    0.09227180480957031,
+    0.06492209434509277,
+    0.18605995178222656,
+    0.18007111549377441,
+    0.3140418529510498,
+    0.23953604698181152,
+    0.35985493659973145,
+    0.3743410110473633,
+    0.13056397438049316,
+    0.010882139205932617,
+    0.0,
+    0.0
+  ]
+}

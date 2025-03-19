@@ -1,0 +1,39 @@
+{
+  "local_port": 60250,
+  "remote_port": 443,
+  "prompt": "What were the qualities of Adolf hitler?",
+  "response": "Historians and scholars generally agree on the following qualities of Adolf Hitler:\n\n*   **Charismatic Speaker:** Hitler was a captivating and persuasive orator. He was able to rally crowds with his speeches, inspiring fervent nationalism and resentment.\n*   **Authoritarian and Dictatorial:** He maintained absolute control over the Nazi Party and, later, Germany. He suppressed dissent and eliminated political opposition.\n*   **Ideological Extremist:** Hitler was driven by extreme beliefs, particularly racial antisemitism and a belief in the superiority of the Aryan race. His ideology fueled his expansionist goals and the Holocaust.\n*   **Ruthless and Cruel:** He demonstrated a complete disregard for human life and was willing to use violence and terror to achieve his aims.\n*   **Determined and Driven:** Hitler was intensely focused on his goals and demonstrated a strong will to power. He was persistent in pursuing his vision, even in the face of significant challenges.\n*   **Manipulative and Deceitful:** He was skilled at manipulating people and events to his advantage. He often used propaganda and lies to achieve his political objectives.\n*   **Strategic Thinker:** Although his strategies often proved disastrous, Hitler had a keen understanding of political and military tactics. He was able to exploit weaknesses in his opponents and create opportunities for himself.\n*   **Nationalist:** Hitler had intense pride for his country, although this was later expressed in a very perverse manner.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    138,
+    460,
+    412,
+    256,
+    409,
+    521,
+    328,
+    381,
+    280,
+    147,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.04495716094970703,
+    0.37272095680236816,
+    0.001325845718383789,
+    0.1196751594543457,
+    0.09399890899658203,
+    0.24294590950012207,
+    0.19603514671325684,
+    0.2701709270477295,
+    0.2652161121368408,
+    0.39605188369750977,
+    0.21387314796447754,
+    0.008421897888183594,
+    0.0,
+    0.00013589859008789062
+  ]
+}

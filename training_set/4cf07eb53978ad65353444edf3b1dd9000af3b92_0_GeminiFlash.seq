@@ -1,0 +1,41 @@
+{
+  "local_port": 38046,
+  "remote_port": 443,
+  "prompt": "Who is the fastest footballer in the world?",
+  "response": "Determining the absolute \"fastest\" footballer is tricky because it depends on how you measure it. Do you mean top speed recorded in a match? Sustained sprinting speed? Acceleration? Agility with the ball?\n\nThat said, **Kylian Mbapp\u00e9** is widely considered one of the fastest, if not *the* fastest, footballer in the world right now.\n\nHere's why:\n\n*   **Top Speed Records:** Mbapp\u00e9 has consistently been clocked at extremely high speeds in official matches. Some sources have him reaching speeds of over 38 km/h (around 23.6 mph).\n*   **Acceleration and Agility:** He's not just fast in a straight line. His incredible acceleration and agility make him incredibly difficult for defenders to handle.\n*   **General Reputation:** He's consistently cited by players, coaches, and media outlets as being among the fastest.\n\nOther players who are often mentioned in the conversation for fastest footballer include:\n\n*   **Adama Traor\u00e9:** Known for his explosive bursts of speed and powerful physique.\n*   **Alphonso Davies:** Bayern Munich's left-back, possesses incredible pace.\n*   **Vin\u00edcius J\u00fanior:** Real Madrid's winger is incredibly fast and agile with the ball.\n\nUltimately, it's a subjective debate and the title could shift depending on specific measurements and the form of players. But as of now, **Kylian Mbapp\u00e9** is generally considered the frontrunner.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    170,
+    147,
+    310,
+    398,
+    373,
+    358,
+    453,
+    414,
+    336,
+    325,
+    217,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.04561495780944824,
+    0.3575279712677002,
+    0.001444101333618164,
+    0.012156009674072266,
+    0.06515002250671387,
+    0.12008190155029297,
+    0.1788499355316162,
+    0.1512432098388672,
+    0.27836084365844727,
+    0.2551391124725342,
+    0.3338038921356201,
+    0.29726314544677734,
+    0.005276918411254883,
+    0.0,
+    0.0
+  ]
+}

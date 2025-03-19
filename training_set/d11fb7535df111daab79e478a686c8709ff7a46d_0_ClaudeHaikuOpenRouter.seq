@@ -1,0 +1,33 @@
+{
+  "local_port": 58956,
+  "remote_port": 443,
+  "prompt": "Which Linux distribution is most suitable for data science/big data beginners and enthusiasts?",
+  "response": "For data science and big data beginners, I recommend the following Linux distributions:\n\n1. Ubuntu\nPros:",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    139,
+    139,
+    988,
+    453,
+    446,
+    420,
+    569,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.01833510398864746,
+    0.22899484634399414,
+    0.4086611270904541,
+    0.41400599479675293,
+    0.18082499504089355,
+    0.1602170467376709,
+    0.137070894241333,
+    0.18207597732543945,
+    0.0011970996856689453,
+    0.01373600959777832,
+    0.0013990402221679688
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 50714,
+  "remote_port": 443,
+  "prompt": "Why can't Barack Obama run for reelection as President in 2016?",
+  "response": "The 22nd Amendment to the United States Constitution prevents anyone from being elected to the office of President more than twice. Barack Obama served two terms as President, from 2009 to 2017, which made him ineligible to run for a third term in 2016.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    258,
+    196,
+    305,
+    365,
+    405,
+    142,
+    177,
+    113
+  ],
+  "time_diffs": [
+    0.05009102821350098,
+    0.30062198638916016,
+    0.0014350414276123047,
+    0.020450115203857422,
+    0.11114096641540527,
+    0.04690694808959961,
+    0.1351790428161621,
+    0.006880044937133789,
+    0.0013768672943115234,
+    0.0
+  ]
+}

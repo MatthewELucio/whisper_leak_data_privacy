@@ -1,0 +1,27 @@
+{
+  "local_port": 46678,
+  "remote_port": 443,
+  "prompt": "If someone launders money, do they break the law?",
+  "response": "Yes, money laundering is a crime in most countries, including the United States. It violates federal law and carries significant penalties.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1441,
+    282,
+    434,
+    290,
+    194,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.04570913314819336,
+    0.38007307052612305,
+    0.0158388614654541,
+    0.07293915748596191,
+    0.07312178611755371,
+    0.00481414794921875,
+    0.0029799938201904297,
+    4.601478576660156e-05
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 40298,
+  "remote_port": 443,
+  "prompt": "How many milliliters of liguid b-6 vitamins are in 85 milligrams of b-6 vitamin?",
+  "response": "To solve this, we need the concentration of B-6 in the liquid.  The problem doesn't provide that, so we can't give a numerical answer.\n\n**You need to know how many milligrams of B-6 are in each milliliter of the liquid.**\n\n**Example:**\n\nLet's say the liquid B-6 vitamin solution contains 25 milligrams of B-6 per milliliter (25 mg/mL).\n\nThen:\n\n*   (85 mg B-6) / (25 mg B-6 / 1 mL) = 3.4 mL\n\n**Therefore, if the concentration was 25mg/mL, there would be 3.4 mL of liquid.**\n\n**General Formula:**\n\nMilliliters of liquid = (Milligrams of B-6 needed) / (Milligrams of B-6 per milliliter of liquid)\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1335,
+    194,
+    423,
+    243,
+    266,
+    327,
+    227,
+    251,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.048148155212402344,
+    0.2916989326477051,
+    0.133681058883667,
+    0.08499598503112793,
+    0.16703295707702637,
+    0.15634489059448242,
+    0.24905610084533691,
+    0.19594812393188477,
+    0.00937199592590332,
+    9.5367431640625e-07,
+    5.2928924560546875e-05
+  ]
+}

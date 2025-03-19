@@ -1,0 +1,33 @@
+{
+  "local_port": 38866,
+  "remote_port": 443,
+  "prompt": "What is the difference between O- and O+?",
+  "response": "The difference between O- and O+ blood types lies in the presence or absence of the **Rh factor**, also known as the **Rhesus factor**.\n\n*   **O+ (O positive):** This blood type has the Rh factor present on the surface of the red blood cells.\n\n*   **O- (O negative):** This blood type does not have the Rh factor present on the surface of the red blood cells.\n\nIn summary, O+ has the Rh factor, while O- does not. This difference is crucial for blood transfusions, especially in pregnancy, due to the potential for Rh incompatibility.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1444,
+    213,
+    274,
+    381,
+    264,
+    332,
+    254,
+    189,
+    141,
+    113
+  ],
+  "time_diffs": [
+    0.04584193229675293,
+    0.37243008613586426,
+    0.05116105079650879,
+    0.04910898208618164,
+    0.0996098518371582,
+    0.15584301948547363,
+    0.15280795097351074,
+    0.13319611549377441,
+    0.003175973892211914,
+    0.0,
+    0.0
+  ]
+}

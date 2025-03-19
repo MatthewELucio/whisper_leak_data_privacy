@@ -1,0 +1,27 @@
+{
+  "local_port": 45466,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law absolutely prohibits money laundering.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    268,
+    300,
+    384,
+    228,
+    153,
+    113
+  ],
+  "time_diffs": [
+    0.04414701461791992,
+    0.2913949489593506,
+    0.0016331672668457031,
+    0.04464292526245117,
+    0.020913124084472656,
+    0.008444786071777344,
+    0.0014400482177734375,
+    0.0
+  ]
+}

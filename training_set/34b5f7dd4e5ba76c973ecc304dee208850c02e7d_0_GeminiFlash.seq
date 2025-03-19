@@ -1,0 +1,39 @@
+{
+  "local_port": 39030,
+  "remote_port": 443,
+  "prompt": "Why do all celebrities go to Giorgio Baldi?",
+  "response": "Giorgio Baldi is a popular restaurant among celebrities for a few key reasons:\n\n*   **Privacy and Discretion:** The restaurant is known for its discreet atmosphere and attentive staff who prioritize the privacy of their clientele. Paparazzi are generally kept at bay, allowing celebrities to dine without constant attention.\n*   **Excellent Food:** Giorgio Baldi offers high-quality, authentic Italian cuisine. The menu features fresh, seasonal ingredients and classic dishes prepared with care.\n*   **Location:** Situated in Brentwood, Los Angeles, it's conveniently located near many celebrity homes and studios.\n*   **Loyal Following:** Over the years, Giorgio Baldi has cultivated a loyal following among celebrities, who appreciate the consistency and reliability of the dining experience.\n*   **Word of Mouth:** Recommendations and positive experiences shared among celebrities likely contribute to its popularity.\n\nIn essence, Giorgio Baldi offers a combination of delicious food, a discreet atmosphere, and convenient location, making it an appealing choice for celebrities seeking a relaxed and private dining experience.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    254,
+    273,
+    333,
+    382,
+    410,
+    389,
+    501,
+    427,
+    184,
+    238,
+    220,
+    113
+  ],
+  "time_diffs": [
+    0.04617905616760254,
+    0.2963440418243408,
+    0.0020380020141601562,
+    0.07726001739501953,
+    0.014798879623413086,
+    0.12920498847961426,
+    0.1470952033996582,
+    0.20199799537658691,
+    0.3271489143371582,
+    0.2657949924468994,
+    0.06442809104919434,
+    0.009405851364135742,
+    0.0007541179656982422,
+    0.0
+  ]
+}

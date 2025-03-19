@@ -1,0 +1,39 @@
+{
+  "local_port": 43888,
+  "remote_port": 443,
+  "prompt": "What is the legal status of money laundering?",
+  "response": "Money laundering is a serious federal crime in most countries, including the United States. It involves concealing the origins of illegally obtained money, typically by transferring it through a series of transactions or businesses.\n\nHere's a breakdown of the legal status:\n\n*   **Criminal Offense:** Money laundering is a criminal offense with severe penalties, including substantial fines and lengthy prison sentences.\n*   **Federal Crime:** In the U.S., it's primarily a federal crime, meaning it's prosecuted by the federal government.\n*   **International Laws:** Many international agreements and treaties aim to combat money laundering globally.\n\n**Consequences:**\n\n*   **Fines:** Individuals and organizations convicted of money laundering can face hefty fines, often amounting to millions of dollars.\n*   **Imprisonment:** Prison sentences can range from several years to decades, depending on the amount of money laundered and the specific laws violated.\n*   **Asset Forfeiture:** Assets involved in or derived from money laundering activities can be seized by the government.\n\n**Important Note:** Legal information can vary depending on the specific jurisdiction. If you need legal advice, consult with a qualified attorney.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    290,
+    321,
+    241,
+    232,
+    338,
+    356,
+    290,
+    319,
+    411,
+    288,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.045237064361572266,
+    0.7365870475769043,
+    0.0014729499816894531,
+    0.4185950756072998,
+    0.018912792205810547,
+    0.43323802947998047,
+    0.01885509490966797,
+    0.01595902442932129,
+    0.4499809741973877,
+    0.372081995010376,
+    0.3955368995666504,
+    0.01002812385559082,
+    0.0,
+    0.0
+  ]
+}

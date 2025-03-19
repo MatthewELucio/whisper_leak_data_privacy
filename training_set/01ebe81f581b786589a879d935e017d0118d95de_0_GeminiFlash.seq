@@ -1,0 +1,35 @@
+{
+  "local_port": 34854,
+  "remote_port": 443,
+  "prompt": "Did India really conduct a surgical strike on Pakistan?",
+  "response": "In September 2016, India claimed to have conducted surgical strikes on terror launchpads across the Line of Control (LoC) in Pakistan-administered Kashmir. India stated that these strikes were a response to the Uri attack, in which militants attacked an Indian Army base.\n\nPakistan has denied that any surgical strikes took place, stating that only cross-border firing occurred.\n\nThere are varying perspectives on the events. The Indian government and military officials have maintained that the strikes were successful and inflicted significant damage. Some Indian media outlets have reported details of the operation, citing unnamed sources.\n\nInternational media coverage has been mixed, with some outlets reporting India's claims and Pakistan's denial. Independent verification of the events has been difficult due to the sensitive nature of the region and the conflicting accounts.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    302,
+    338,
+    402,
+    244,
+    475,
+    384,
+    345,
+    201,
+    184,
+    113
+  ],
+  "time_diffs": [
+    0.04672694206237793,
+    0.4910140037536621,
+    0.0014071464538574219,
+    0.10946393013000488,
+    0.10793113708496094,
+    0.1913127899169922,
+    0.2339630126953125,
+    0.382112979888916,
+    0.0777430534362793,
+    0.004930019378662109,
+    0.0,
+    0.0
+  ]
+}

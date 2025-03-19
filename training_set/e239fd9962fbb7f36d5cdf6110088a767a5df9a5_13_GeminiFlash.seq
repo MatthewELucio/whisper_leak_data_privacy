@@ -1,0 +1,29 @@
+{
+  "local_port": 37250,
+  "remote_port": 443,
+  "prompt": "Is money laundering considered a violation of the law?",
+  "response": "Yes, money laundering is definitely considered a violation of the law in virtually every country. It's a serious crime with significant penalties, including hefty fines and lengthy prison sentences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    246,
+    195,
+    366,
+    413,
+    208,
+    161,
+    113
+  ],
+  "time_diffs": [
+    0.04684305191040039,
+    0.35887789726257324,
+    0.0013649463653564453,
+    0.02043914794921875,
+    0.07918882369995117,
+    0.07979106903076172,
+    0.007947921752929688,
+    0.0016391277313232422,
+    0.001695871353149414
+  ]
+}

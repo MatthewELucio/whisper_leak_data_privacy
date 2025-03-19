@@ -1,0 +1,29 @@
+{
+  "local_port": 58076,
+  "remote_port": 443,
+  "prompt": "A good friend of mine is gay , but we made out before telling me. Is there any chance he is bisexual ?",
+  "response": "It's definitely possible your friend could be bisexual. Sometimes people are still figuring things out, or they might not have felt ready to label themselves before. The only way to know for sure is to talk to him about it. He might be open to discussing his feelings and attractions with you.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    178,
+    459,
+    427,
+    334,
+    297,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.044471025466918945,
+    0.3204789161682129,
+    0.0014750957489013672,
+    0.1166229248046875,
+    0.12976789474487305,
+    0.09802603721618652,
+    0.011002063751220703,
+    0.0014190673828125,
+    0.00335693359375
+  ]
+}

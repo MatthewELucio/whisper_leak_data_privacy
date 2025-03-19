@@ -1,0 +1,35 @@
+{
+  "local_port": 44098,
+  "remote_port": 443,
+  "prompt": "What is the fastest plane in World of Warplanes?",
+  "response": "The fastest plane in World of Warplanes depends on exactly what you mean by \"fastest.\" Here's a breakdown:\n\n*   **Top Speed:** If you are interested in the pure highest speed, then the German Tier X fighter **Messerschmitt Me 262 HG III** is considered the fastest plane in the game.\n\n*   **Acceleration:** If you are talking about rapid acceleration, then the Soviets and Germans tend to be ahead in this regard.\n\nIt's also worth noting that \"fastest\" doesn't always equal \"best.\" Maneuverability, firepower, and other factors are crucial for success in World of Warplanes.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    121,
+    308,
+    306,
+    194,
+    355,
+    374,
+    455,
+    211,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04894900321960449,
+    0.3127298355102539,
+    0.0015251636505126953,
+    0.026161909103393555,
+    0.06331396102905273,
+    0.09207296371459961,
+    0.24502015113830566,
+    0.21511483192443848,
+    0.1847381591796875,
+    0.011067867279052734,
+    1.1920928955078125e-06,
+    0.0
+  ]
+}

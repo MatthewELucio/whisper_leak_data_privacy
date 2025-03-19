@@ -1,0 +1,43 @@
+{
+  "local_port": 40336,
+  "remote_port": 443,
+  "prompt": "What are some publicly listed solar companies in India?",
+  "response": "Here are some publicly listed solar companies in India:\n\n*   **Tata Power Company Ltd:** (BSE: 500400, NSE: TATAPOWER) - While not purely a solar company, Tata Power has a significant and growing solar energy portfolio. They are involved in solar EPC (Engineering, Procurement, and Construction), solar manufacturing, and solar project development.\n\n*   **Adani Green Energy Ltd:** (BSE: 541450, NSE: ADANIGREEN) - Adani Green Energy is one of the largest renewable energy companies in India, with a significant focus on solar power generation. They develop, build, own, operate, and maintain utility-scale grid-connected solar power projects.\n\n*   **Sterling and Wilson Renewable Energy Ltd:** (BSE: 542750, NSE: SWSOLAR) - Sterling and Wilson Renewable Energy is a global EPC (Engineering, Procurement, and Construction) provider for solar power projects. They execute large-scale solar projects worldwide.\n\n**Important Notes:**\n\n*   **Diversified Companies:** Many companies involved in the solar sector in India are not *pure-play* solar companies. They may have other business segments, such as power generation from other sources, infrastructure development, or manufacturing.\n\n*   **Market Dynamics:** The Indian solar market is dynamic. New companies may list, and existing companies may change their focus. It's essential to stay updated with the latest news and financial reports.\n\n**How to Find More Information:**\n\n*   **Stock Exchanges (BSE & NSE):** You can search for companies in the \"Renewable Energy\" or \"Power\" sectors on the Bombay Stock Exchange (BSE) and the National Stock Exchange (NSE) websites.\n*   **Financial News Websites:** Websites like Economic Times, Business Standard, and Livemint provide news and analysis on Indian companies, including those in the solar sector.\n*   **Company Websites:** Visit the investor relations sections of the companies mentioned above to find annual reports, financial statements, and investor presentations.\n\n**Disclaimer:** I am an AI chatbot and cannot provide financial advice. This information is for general knowledge purposes only and does not constitute a recommendation to buy or sell any stocks. Always conduct thorough research and consult with a qualified financial advisor before making any investment decisions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1402,
+    254,
+    275,
+    438,
+    301,
+    335,
+    445,
+    372,
+    405,
+    529,
+    532,
+    373,
+    184,
+    211,
+    113
+  ],
+  "time_diffs": [
+    0.047245025634765625,
+    0.31879115104675293,
+    0.12875986099243164,
+    0.06708812713623047,
+    0.23993301391601562,
+    0.2210698127746582,
+    0.267071008682251,
+    0.32813310623168945,
+    0.3831930160522461,
+    0.35265493392944336,
+    0.3348259925842285,
+    0.312697172164917,
+    0.1391899585723877,
+    0.007216930389404297,
+    0.0,
+    0.0
+  ]
+}

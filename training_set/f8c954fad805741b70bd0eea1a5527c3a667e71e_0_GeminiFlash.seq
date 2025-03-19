@@ -1,0 +1,29 @@
+{
+  "local_port": 55754,
+  "remote_port": 443,
+  "prompt": "Is Hillary Clinton a Murderer?",
+  "response": "There is no credible evidence to support the claim that Hillary Clinton is a murderer. These allegations have been circulating for many years, often fueled by conspiracy theories, but they have been widely debunked by fact-checkers and lack any factual basis.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1360,
+    304,
+    343,
+    246,
+    309,
+    260,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.04684901237487793,
+    0.2909879684448242,
+    0.020967960357666016,
+    0.06406307220458984,
+    0.1230931282043457,
+    0.056996822357177734,
+    0.01098012924194336,
+    0.001538991928100586,
+    0.0
+  ]
+}

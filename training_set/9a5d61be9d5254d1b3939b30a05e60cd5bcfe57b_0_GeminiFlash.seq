@@ -1,0 +1,37 @@
+{
+  "local_port": 32976,
+  "remote_port": 443,
+  "prompt": "How much is hootsuite?",
+  "response": "Hootsuite offers a range of plans with varying features and pricing:\n\n*   **Professional:** \\$99/month\n*   **Team:** \\$249/month\n*   **Business:** \\$739/month\n*   **Enterprise:** Custom pricing (contact Hootsuite for a quote)\n\nPlease note:\n\n*   Pricing is based on annual billing. Monthly billing may be available at a slightly higher cost.\n*   Features and capabilities vary significantly between plans. It's essential to compare the plan details on the Hootsuite website to determine which plan best suits your needs.\n*   Promotional pricing or discounts may be available. Check the Hootsuite website for current offers.\n\nFor the most up-to-date and accurate pricing, please visit the official Hootsuite website: [https://www.hootsuite.com/plans/](https://www.hootsuite.com/plans/)",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    253,
+    173,
+    348,
+    303,
+    424,
+    289,
+    302,
+    311,
+    284,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.05197906494140625,
+    0.3127708435058594,
+    0.0014450550079345703,
+    0.04854106903076172,
+    0.11297893524169922,
+    0.04498791694641113,
+    0.22105717658996582,
+    0.1945788860321045,
+    0.265300989151001,
+    0.18146300315856934,
+    0.0036630630493164062,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 33902,
+  "remote_port": 443,
+  "prompt": "The 3 Week Diet plan was so refreshing and so simple to follow.",
+  "response": "It's great to hear you found The 3 Week Diet plan refreshing and simple to follow! That's a definite win when it comes to diet plans. To make this feedback even more helpful, you could consider adding details about:\n\n*   **What specifically you found refreshing:** Was it the food choices? The clear instructions? The quick results?\n*   **What made it simple to follow:** Was it the meal prep, the recipes, the shopping list, or the overall structure?\n*   **What results you achieved:** Did you lose weight? Did you feel more energetic? Did it change your eating habits?\n\nThe more specific you are, the more valuable your feedback becomes.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1284,
+    430,
+    246,
+    472,
+    362,
+    402,
+    162,
+    147,
+    113
+  ],
+  "time_diffs": [
+    0.045517921447753906,
+    0.3131990432739258,
+    0.11396503448486328,
+    0.13271212577819824,
+    0.17043590545654297,
+    0.1808609962463379,
+    0.22146201133728027,
+    0.007575035095214844,
+    0.0,
+    0.001155853271484375
+  ]
+}

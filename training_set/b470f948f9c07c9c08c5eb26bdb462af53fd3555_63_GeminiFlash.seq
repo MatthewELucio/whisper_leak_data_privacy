@@ -1,0 +1,31 @@
+{
+  "local_port": 46408,
+  "remote_port": 443,
+  "prompt": "If someone launders money, do they break the law?",
+  "response": "Yes, money laundering is a crime in most countries around the world. It is a federal crime in the United States and is illegal in the UK, Canada, and many other countries.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    257,
+    308,
+    224,
+    412,
+    376,
+    311,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.0464630126953125,
+    0.40167808532714844,
+    0.0018589496612548828,
+    0.014548063278198242,
+    0.0950160026550293,
+    0.06963992118835449,
+    0.025330066680908203,
+    0.006031990051269531,
+    0.0014069080352783203,
+    0.005366086959838867
+  ]
+}

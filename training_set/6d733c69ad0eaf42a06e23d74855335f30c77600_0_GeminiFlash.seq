@@ -1,0 +1,33 @@
+{
+  "local_port": 44606,
+  "remote_port": 443,
+  "prompt": "What does Balaji Viswanathan do for living?",
+  "response": "Balaji Viswanathan is a serial entrepreneur, angel investor, and author. He is best known as the co-founder and CEO of Invento Robotics, a company specializing in building humanoid robots for customer service and other applications. He is also known for being a top writer on Quora, where he answers questions on a wide range of topics, including business, technology, and Indian culture.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    217,
+    161,
+    385,
+    226,
+    377,
+    242,
+    268,
+    130,
+    113
+  ],
+  "time_diffs": [
+    0.0449068546295166,
+    0.5594961643218994,
+    0.0015048980712890625,
+    0.034484148025512695,
+    0.06354999542236328,
+    0.09754395484924316,
+    0.18960785865783691,
+    0.047204017639160156,
+    0.012637138366699219,
+    0.0001888275146484375,
+    0.0019440650939941406
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 44604,
+  "remote_port": 443,
+  "prompt": "Can a 15 year old girl and 18 year old boy have sex?",
+  "response": "The legality of sexual activity between a 15-year-old girl and an 18-year-old boy depends on the specific laws of the jurisdiction in question. In many places, this would be considered statutory rape due to the age difference and the fact that the girl is underage. Statutory rape laws are in place to protect minors from exploitation and abuse.\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1444,
+    230,
+    417,
+    442,
+    330,
+    181,
+    283,
+    238,
+    113
+  ],
+  "time_diffs": [
+    0.04919600486755371,
+    0.3378019332885742,
+    0.025738000869750977,
+    0.03608298301696777,
+    0.10482406616210938,
+    0.21181082725524902,
+    0.03834104537963867,
+    0.009749174118041992,
+    0.0016307830810546875,
+    0.0
+  ]
+}

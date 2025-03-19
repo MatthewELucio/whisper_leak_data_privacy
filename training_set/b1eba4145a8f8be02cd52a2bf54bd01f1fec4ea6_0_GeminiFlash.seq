@@ -1,0 +1,39 @@
+{
+  "local_port": 50388,
+  "remote_port": 443,
+  "prompt": "Why does my vagina smell fishy after intercourse and a man has ejaculated inside me?",
+  "response": "A fishy odor after intercourse, especially when semen is present, can be due to a few reasons:\n\n*   **Bacterial Vaginosis (BV):** This is the most common cause of a fishy odor. Semen is alkaline, and it can disrupt the natural pH balance of the vagina, making it more favorable for the bacteria that cause BV to thrive.\n*   **Trichomoniasis:** This is a sexually transmitted infection (STI) that can also cause a fishy odor, along with other symptoms like itching, burning, and unusual discharge.\n*   **Semen reacting with vaginal fluids:** Sometimes, the combination of semen and normal vaginal fluids can create a temporary odor. However, this usually isn't a strong, persistent fishy smell.\n*   **Poor hygiene:** While not always the cause, inadequate hygiene can contribute to odor issues.\n\nIf the odor is persistent, strong, or accompanied by other symptoms like itching, burning, or unusual discharge, it's important to see a doctor or gynecologist for diagnosis and treatment. BV and trichomoniasis require specific medications to clear the infection.\n\n**Disclaimer:** This information is not intended to be a substitute for professional medical advice. Always consult with a qualified healthcare provider for any questions you may have regarding your health.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1316,
+    318,
+    220,
+    179,
+    259,
+    300,
+    414,
+    396,
+    508,
+    159,
+    284,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.0630178451538086,
+    0.4015841484069824,
+    0.054811954498291016,
+    0.0529789924621582,
+    0.08802199363708496,
+    0.2411348819732666,
+    0.14738106727600098,
+    0.31510496139526367,
+    0.2450881004333496,
+    0.37792301177978516,
+    0.020125865936279297,
+    0.01174616813659668,
+    0.0,
+    0.0
+  ]
+}

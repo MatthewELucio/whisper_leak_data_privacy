@@ -1,0 +1,37 @@
+{
+  "local_port": 47706,
+  "remote_port": 443,
+  "prompt": "What is the meaning of \"Are you game?\"",
+  "response": "\"Are you game?\" means **\"Are you willing to participate in something, usually something risky, daring, or fun?\"** It's an invitation to join in on an activity, and it implies that the activity might be a little challenging or exciting.\n\nThink of it like asking:\n\n*   Are you up for it?\n*   Are you willing to try it?\n*   Do you want to play along?\n*   Are you brave enough?\n\nThe word \"game\" here isn't necessarily referring to a literal game, but rather a general activity or plan.\n\nFor example:\n\n*   \"I'm thinking of sneaking out tonight. Are you game?\" (implies sneaking out is a bit risky)\n*   \"I'm going to try that new spicy challenge at the restaurant. Are you game?\" (implies the challenge will be intense)\n*   \"We're thinking of going on a spontaneous road trip this weekend. Are you game?\" (implies the trip will be unplanned and adventurous)\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1334,
+    295,
+    256,
+    354,
+    308,
+    294,
+    259,
+    476,
+    348,
+    266,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.04867887496948242,
+    0.4044151306152344,
+    0.046746015548706055,
+    0.06292605400085449,
+    0.10720586776733398,
+    0.13400697708129883,
+    0.1480550765991211,
+    0.3071708679199219,
+    0.2824990749359131,
+    0.0609891414642334,
+    0.009743928909301758,
+    0.0,
+    0.0
+  ]
+}

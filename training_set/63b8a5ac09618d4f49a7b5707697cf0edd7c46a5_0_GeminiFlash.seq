@@ -1,0 +1,35 @@
+{
+  "local_port": 54810,
+  "remote_port": 443,
+  "prompt": "What are the advantages and disadvantages of bent dicks?",
+  "response": "A significant bend in the penis, known as Peyronie's disease, can cause pain during erections or make sexual intercourse difficult. Some men may also feel self-conscious about the appearance of their penis. However, not all curvature is problematic. A slight curve is common and generally doesn't cause any issues.\n\nHere's a breakdown of potential advantages and disadvantages:\n\n**Potential Advantages:**\n\n*   **Enhanced Stimulation:** In some cases, a slight curve may enhance stimulation for a partner during intercourse.\n*   **No impact:** A small curve in the penis is normal, and doesn't affect sex or cause any pain.\n\n**Potential Disadvantages:**\n\n*   **Pain:** Significant curvature can cause pain during erections or intercourse.\n*   **Difficulty with Intercourse:** Severe bends can make penetration difficult or impossible.\n*   **Psychological Distress:** The condition can lead to anxiety, depression, and a negative body image.\n*   **Erectile Dysfunction:** Peyronie's disease can sometimes be associated with erectile dysfunction.\n\n**Disclaimer:** *This information is not intended to be a substitute for professional medical advice. Always consult with a qualified healthcare provider for any questions you may have regarding a medical condition.*",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1304,
+    319,
+    456,
+    272,
+    359,
+    398,
+    414,
+    553,
+    200,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.04670214653015137,
+    0.2901730537414551,
+    0.158005952835083,
+    0.1620039939880371,
+    0.19108104705810547,
+    0.17567801475524902,
+    0.2733938694000244,
+    0.2897031307220459,
+    0.23019099235534668,
+    0.01404881477355957,
+    0.0008680820465087891,
+    0.0
+  ]
+}

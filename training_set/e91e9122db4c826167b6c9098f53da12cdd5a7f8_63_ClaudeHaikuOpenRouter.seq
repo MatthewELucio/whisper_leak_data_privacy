@@ -1,0 +1,27 @@
+{
+  "local_port": 42100,
+  "remote_port": 443,
+  "prompt": "Are there legal requirements for reporting suspected money laundering?",
+  "response": "There are legal requirements to report suspected money laundering in",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    1000,
+    458,
+    569,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.02341294288635254,
+    0.24175500869750977,
+    0.4003899097442627,
+    0.2526521682739258,
+    0.10477089881896973,
+    0.0963139533996582,
+    0.032711029052734375,
+    0.0013339519500732422
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 43162,
+  "remote_port": 443,
+  "prompt": "What universities does Frontline recruit new grads from? What majors are they looking for?",
+  "response": "While Frontline doesn't explicitly publish a list of target universities or specific majors, here's a breakdown based on their mission, program structure, and publicly available information:\n\n**Universities:**\n\n*   **Broad Range:** Frontline casts a wide net. Because their mission is focused on social work and child protection, they are less focused on Ivy League universities. They likely recruit from a variety of universities across the UK and Europe. They value candidates with a genuine passion for the work and demonstrated commitment to social justice.\n\n**Majors:**\n\n*   **Relevant Degrees:** While Frontline programs are focused on social work, they are open to people of other backgrounds. Degrees that will help you get hired include:\n    *   Psychology\n    *   Sociology\n    *   Criminology\n    *   Social work\n    *   Education\n    *   Public Health\n    *   Nursing\n\n**Key Considerations:**\n\n*   **Passion and Commitment:** Above all, Frontline seeks individuals with a strong dedication to improving the lives of vulnerable children and families. They look for empathy, resilience, and a genuine desire to make a difference.\n*   **Skills:** Even if your degree isn't directly related to social work, highlighting transferable skills like communication, problem-solving, critical thinking, and teamwork is crucial.\n*   **Experience:** Volunteering or working with children, families, or vulnerable populations will significantly strengthen your application.\n\n**To get the most up-to-date information:**\n\n*   **Frontline's Website:** Regularly check the Frontline website for the latest details on their recruitment process, requirements, and any specific university partnerships or events.\n*   **Recruitment Events:** Attend any Frontline recruitment events at universities or online.\n*   **Networking:** Connect with Frontline participants or alumni on platforms like LinkedIn to gain insights and advice.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1464,
+    373,
+    428,
+    268,
+    406,
+    378,
+    357,
+    350,
+    414,
+    321,
+    169,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.045265913009643555,
+    0.4133570194244385,
+    0.08166694641113281,
+    0.12649893760681152,
+    0.19701504707336426,
+    0.19602298736572266,
+    0.2641329765319824,
+    0.26423215866088867,
+    0.38386988639831543,
+    0.3619570732116699,
+    0.35353899002075195,
+    0.01158905029296875,
+    0.00019288063049316406,
+    0.0
+  ]
+}

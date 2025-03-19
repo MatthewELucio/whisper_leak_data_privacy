@@ -1,0 +1,41 @@
+{
+  "local_port": 54768,
+  "remote_port": 443,
+  "prompt": "Is money laundering a punishable offense?",
+  "response": "Yes, money laundering is a punishable offense in virtually every country. The specific laws and penalties vary depending on the jurisdiction, but it is almost universally criminalized.\n\nHere's why and some examples:\n\n*   **Internationally Recognized Crime:** Money laundering is recognized by international organizations like the United Nations as a serious crime that facilitates other illicit activities.\n*   **Financial System Integrity:** Countries criminalize money laundering to protect the integrity of their financial systems and prevent them from being used to finance illegal activities such as drug trafficking, terrorism, and corruption.\n*   **Penalties:** Penalties for money laundering can include:\n    *   **Imprisonment:**  Often lengthy prison sentences.\n    *   **Fines:**  Substantial monetary fines.\n    *   **Asset Forfeiture:**  Seizure of assets involved in the money laundering process.\n    *   **Reputational Damage:**  Damage to an individual's or company's reputation, making it difficult to conduct business.\n\n**Examples of Laws:**\n\n*   **United States:** Money laundering is illegal under Title 18, Section 1956 and 1957 of the United States Code. Penalties can include up to 20 years in prison and fines of up to \\$500,000 or twice the amount of money laundered.\n*   **United Kingdom:** The Proceeds of Crime Act 2002 (POCA) is the main legislation. Penalties can include imprisonment and unlimited fines.\n*   **European Union:** The EU has several directives on money laundering that member states must implement into their national laws. Penalties vary but are generally severe.\n\nTherefore, it is crucial to be aware of and comply with anti-money laundering (AML) laws in any jurisdiction where you operate.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1282,
+    296,
+    370,
+    330,
+    428,
+    281,
+    450,
+    400,
+    426,
+    459,
+    389,
+    281,
+    219,
+    113
+  ],
+  "time_diffs": [
+    0.04761505126953125,
+    0.32515692710876465,
+    0.009847164154052734,
+    0.10621404647827148,
+    0.09789776802062988,
+    0.2121591567993164,
+    0.21493196487426758,
+    0.24987292289733887,
+    0.2701451778411865,
+    0.3190488815307617,
+    0.35221004486083984,
+    0.3675360679626465,
+    0.009639978408813477,
+    0.0,
+    0.0
+  ]
+}

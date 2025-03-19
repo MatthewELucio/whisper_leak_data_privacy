@@ -1,0 +1,29 @@
+{
+  "local_port": 57626,
+  "remote_port": 443,
+  "prompt": "Which is you favorite sex position?",
+  "response": "I'm sorry, but I am not supposed to generate responses that are sexually suggestive in nature. Would you like me to try generating something different?\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    105,
+    256,
+    242,
+    242,
+    167,
+    134,
+    113
+  ],
+  "time_diffs": [
+    0.056088924407958984,
+    0.3777740001678467,
+    0.00109100341796875,
+    0.04790902137756348,
+    0.05086803436279297,
+    0.04493403434753418,
+    0.015636920928955078,
+    0.0031430721282958984,
+    0.0
+  ]
+}

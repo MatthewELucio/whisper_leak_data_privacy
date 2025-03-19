@@ -1,0 +1,31 @@
+{
+  "local_port": 59206,
+  "remote_port": 443,
+  "prompt": "How hard was it for Jimmy Wales to immigrate to the UK?",
+  "response": "There's no evidence that Jimmy Wales ever immigrated to the UK. He is an American citizen and resides primarily in the United States. He may have traveled to the UK for business or personal reasons, but he has not immigrated there.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    168,
+    133,
+    378,
+    314,
+    391,
+    134,
+    135,
+    113
+  ],
+  "time_diffs": [
+    0.046669960021972656,
+    0.3328440189361572,
+    0.001786947250366211,
+    0.009392023086547852,
+    0.031055927276611328,
+    0.12420320510864258,
+    0.04767298698425293,
+    0.011044979095458984,
+    0.0016398429870605469,
+    0.0014472007751464844
+  ]
+}

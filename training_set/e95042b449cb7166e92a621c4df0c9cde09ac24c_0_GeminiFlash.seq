@@ -1,0 +1,33 @@
+{
+  "local_port": 39396,
+  "remote_port": 443,
+  "prompt": "Put on red and live a little hindi meaning?",
+  "response": "The Hindi translation of \"Put on red and live a little\" is:\n\n**\u0932\u093e\u0932 \u092a\u0939\u0928\u094b \u0914\u0930 \u0925\u094b\u0921\u093c\u093e \u091c\u0940 \u0932\u094b\u0964** (Laal pehno aur thoda jee lo.)\n\nLet's break it down:\n\n*   **\u0932\u093e\u0932 (Laal):** Red\n*   **\u092a\u0939\u0928\u094b (Pehno):** Wear (imperative, meaning \"wear it!\")\n*   **\u0914\u0930 (Aur):** And\n*   **\u0925\u094b\u0921\u093c\u093e (Thoda):** A little\n*   **\u091c\u0940 \u0932\u094b (Jee lo):** Live (imperative, meaning \"live it!\")\n\nSo, the full translation is a direct equivalent and conveys the same message of encouragement to be bold, vibrant, and embrace life more fully.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1386,
+    151,
+    296,
+    356,
+    316,
+    274,
+    285,
+    299,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.04783797264099121,
+    0.31110095977783203,
+    0.013872146606445312,
+    0.07835602760314941,
+    0.12429499626159668,
+    0.16613292694091797,
+    0.1892390251159668,
+    0.3089580535888672,
+    0.008100032806396484,
+    0.0,
+    0.0
+  ]
+}

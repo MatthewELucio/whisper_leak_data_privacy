@@ -1,0 +1,37 @@
+{
+  "local_port": 57502,
+  "remote_port": 443,
+  "prompt": "What is acceleration of a body moving with uniform velocity?",
+  "response": "The acceleration of a body moving with uniform velocity is **zero**.\n\n**Explanation**\n\n*   **Velocity:** Velocity is the rate of change of an object's position with respect to time and includes both speed and direction.\n*   **Uniform Velocity:** Uniform velocity means that the object is moving at a constant speed in a constant direction. Neither the speed nor the direction is changing.\n*   **Acceleration:** Acceleration is the rate of change of an object's velocity with respect to time. Since velocity includes both speed and direction, acceleration occurs when either the speed, the direction, or both change.\n\nTherefore, if an object's velocity is uniform, it means the velocity is not changing.  Since acceleration is defined as the rate of change of velocity, a non-changing velocity implies zero acceleration.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    138,
+    237,
+    213,
+    396,
+    447,
+    351,
+    310,
+    223,
+    215,
+    226,
+    113
+  ],
+  "time_diffs": [
+    0.04525494575500488,
+    0.32148003578186035,
+    0.0014460086822509766,
+    0.013312816619873047,
+    0.06617903709411621,
+    0.10101914405822754,
+    0.15000295639038086,
+    0.1510610580444336,
+    0.23003482818603516,
+    0.07666707038879395,
+    0.009685039520263672,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

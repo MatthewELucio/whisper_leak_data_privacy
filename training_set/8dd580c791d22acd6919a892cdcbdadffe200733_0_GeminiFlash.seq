@@ -1,0 +1,37 @@
+{
+  "local_port": 59260,
+  "remote_port": 443,
+  "prompt": "Does Donald Trump plan to disband the EPA?",
+  "response": "During his presidency, Donald Trump took several actions that significantly altered the Environmental Protection Agency (EPA). He appointed Scott Pruitt, a known critic of the agency, as EPA Administrator. Under Trump's leadership, the EPA saw budget cuts and staff reductions.\n\nSome key actions included:\n\n*   **Withdrawal from the Paris Agreement:** The Trump administration announced its intention to withdraw the United States from the Paris Agreement on climate change, an international accord aimed at reducing greenhouse gas emissions.\n*   **Rollback of environmental regulations:** The administration weakened or repealed numerous environmental regulations, including the Clean Power Plan (which aimed to reduce carbon emissions from power plants) and regulations on methane emissions from oil and gas operations.\n*   **Changes to water protections:** The administration revised the definition of \"waters of the United States\" under the Clean Water Act, narrowing the scope of federal protection for wetlands and waterways.\n\nDuring his campaigns and presidency, Trump often expressed skepticism about climate change and argued that environmental regulations were hindering economic growth. He pledged to reduce the EPA's reach and prioritize energy production.\n\nWhether he plans to completely disband the EPA if elected again is not definitively stated in current campaign materials. However, his past actions and statements suggest a continued intention to significantly curtail the agency's power and influence.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    211,
+    352,
+    276,
+    350,
+    493,
+    313,
+    462,
+    451,
+    326,
+    145,
+    113
+  ],
+  "time_diffs": [
+    0.0474090576171875,
+    0.26537299156188965,
+    0.0014889240264892578,
+    0.14518499374389648,
+    0.09417104721069336,
+    0.21623706817626953,
+    0.1509840488433838,
+    0.26210689544677734,
+    0.3132960796356201,
+    0.4334259033203125,
+    0.013161182403564453,
+    0.0,
+    0.0
+  ]
+}

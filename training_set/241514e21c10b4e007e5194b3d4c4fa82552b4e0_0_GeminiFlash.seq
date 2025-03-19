@@ -1,0 +1,25 @@
+{
+  "local_port": 58020,
+  "remote_port": 443,
+  "prompt": "What is the compound name for HBr?",
+  "response": "The compound name for HBr is **hydrogen bromide**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1348,
+    176,
+    233,
+    162,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.04490208625793457,
+    0.29315900802612305,
+    0.01176905632019043,
+    0.04884696006774902,
+    0.013049840927124023,
+    0.0015740394592285156,
+    0.0
+  ]
+}

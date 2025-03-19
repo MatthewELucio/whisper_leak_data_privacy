@@ -1,0 +1,29 @@
+{
+  "local_port": 54904,
+  "remote_port": 443,
+  "prompt": "Does the book Empty Planet really exist, or was it just a part of Criminal Minds?",
+  "response": "Yes, the book \"Empty Planet: The Shock of Global Population Decline\" really exists. It is a non-fiction book co-authored by Darrell Bricker and John Ibbitson, published in 2019.\n\nWhile a book with a similar or identical title may have been mentioned or featured in Criminal Minds, the actual book \"Empty Planet\" is a real publication and not just a fictional element created for the show.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1479,
+    330,
+    317,
+    334,
+    376,
+    187,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.04520702362060547,
+    0.3536388874053955,
+    0.14371609687805176,
+    0.15226078033447266,
+    0.19394922256469727,
+    0.11988687515258789,
+    0.016165971755981445,
+    0.0,
+    0.0016391277313232422
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 47562,
+  "remote_port": 443,
+  "prompt": "How can I be manlier as a 15yo?",
+  "response": "It sounds like you're exploring what it means to be a man and how you fit into that idea. That's a really common thing to think about at your age. Instead of focusing on \"being manlier,\" maybe think about developing qualities you admire in people you respect, regardless of their gender. This could include things like:\n\n*   **Developing confidence:** Confidence comes from knowing yourself and your abilities. Set achievable goals, practice new skills, and celebrate your successes, no matter how small.\n\n*   **Building strength (physical and mental):** Physical strength is great, but so is mental fortitude. Exercise, eat healthy, and challenge yourself mentally with new hobbies, puzzles, or learning opportunities.\n\n*   **Being responsible and reliable:** Follow through on your commitments, be on time, and take ownership of your actions. People will trust and respect you for it.\n\n*   **Showing empathy and compassion:** Being able to understand and share the feelings of others is a sign of strength, not weakness. Practice active listening and offer support to those who need it.\n\n*   **Standing up for what you believe in:** Have the courage to voice your opinions and stand up for what you think is right, even when it's difficult.\n\n*   **Expressing yourself honestly and respectfully:** Communicate your thoughts and feelings in a clear and respectful way. This includes being able to have difficult conversations.\n\nThese qualities will not only help you feel more confident and fulfilled, but also help you build strong relationships and navigate the world in a positive way.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    275,
+    366,
+    198,
+    309,
+    446,
+    289,
+    476,
+    492,
+    551,
+    193,
+    192,
+    113
+  ],
+  "time_diffs": [
+    0.04667091369628906,
+    0.2939150333404541,
+    4.792213439941406e-05,
+    0.11816120147705078,
+    0.1399219036102295,
+    0.2532010078430176,
+    0.16489005088806152,
+    0.35717201232910156,
+    0.2663710117340088,
+    0.39975690841674805,
+    0.32975292205810547,
+    0.007348060607910156,
+    5.2928924560546875e-05,
+    0.00011610984802246094
+  ]
+}

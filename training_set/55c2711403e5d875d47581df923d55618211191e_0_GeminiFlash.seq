@@ -1,0 +1,41 @@
+{
+  "local_port": 33168,
+  "remote_port": 443,
+  "prompt": "Communal Violence: What happened during the 2002 Gujarat riots?",
+  "response": "The 2002 Gujarat riots were a period of inter-communal violence between Hindu and Muslim communities in the Indian state of Gujarat. Here's a summary of what happened:\n\n*   **Cause:** The riots were triggered by the burning of a train in Godhra on February 27, 2002, which resulted in the deaths of 59 Hindu pilgrims and activists. While the cause of the fire remains disputed, it was widely attributed to a Muslim mob.\n*   **Retaliation:** Following the Godhra incident, widespread violence against Muslims erupted across Gujarat. Hindu mobs, allegedly organized by Hindu nationalist groups, attacked Muslim homes, businesses, and places of worship.\n*   **Government Response:** The state government, led by then-Chief Minister Narendra Modi, was accused of inaction and complicity in the violence. Critics alleged that the police failed to protect Muslims and, in some cases, even participated in the attacks.\n*   **Consequences:** The riots resulted in the deaths of over 1,000 people, the majority of whom were Muslims. Tens of thousands were displaced and many Muslim properties were destroyed. The riots had a lasting impact on the social and political landscape of Gujarat, deepening the divide between Hindu and Muslim communities.\n*   **Legal and Political Aftermath:** Numerous investigations and court cases were launched in the aftermath of the riots. Several people were convicted for their involvement in the violence, but questions about the role of government officials and the extent of the conspiracy remain contentious.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    89,
+    313,
+    261,
+    394,
+    425,
+    251,
+    496,
+    432,
+    487,
+    524,
+    240,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.04780292510986328,
+    0.4089930057525635,
+    0.0015511512756347656,
+    0.0014960765838623047,
+    0.10363292694091797,
+    0.09121298789978027,
+    0.17264986038208008,
+    0.1673450469970703,
+    0.26306796073913574,
+    0.27645015716552734,
+    0.340587854385376,
+    0.2660050392150879,
+    0.007136106491088867,
+    0.0,
+    0.0
+  ]
+}

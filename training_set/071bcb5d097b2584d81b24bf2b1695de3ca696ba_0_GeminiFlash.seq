@@ -1,0 +1,43 @@
+{
+  "local_port": 39842,
+  "remote_port": 443,
+  "prompt": "What is your opinion of Indian government taking off Rs 500 and Rs 1000 currency notes?",
+  "response": "The demonetization of 500 and 1000 rupee notes in 2016 was a really significant economic event in India, and it sparked a lot of debate. \n\nHere's a look at some of the arguments for and against the move:\n\n*   **Arguments in favor often centered on:**\n    *   **Curbing black money:** The idea was to flush out unaccounted wealth hoarded in cash.\n    *   **Counterfeiting:** Removing the old notes would disrupt the circulation of fake currency.\n    *   **Promoting digital transactions:** The hope was to encourage people to use electronic payment methods.\n    *   **Terror financing:** Demonetization aimed to cut off funding sources for illegal activities.\n\n*   **However, there were also strong arguments against it:**\n    *   **Economic disruption:** The sudden removal of a large portion of the currency in circulation caused significant disruption to businesses, especially small businesses and those in the informal sector that relied heavily on cash transactions.\n    *   **Inconvenience to the public:** People faced long queues at banks to exchange old notes, and there was a shortage of cash for everyday transactions.\n    *   **Limited impact on black money:** Some argued that much of the illicit wealth was not held in cash but in other assets like real estate or gold, so demonetization wouldn't be very effective.\n    *   **Cost of implementation:** The process of printing new notes and managing the exchange process was expensive.\n\n**Ultimately, the effectiveness of demonetization is still a subject of debate among economists.** Some studies suggest that it had a limited impact on black money and may have slowed economic growth in the short term. Other studies highlight potential long-term benefits like increased tax revenue and greater financial inclusion.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    242,
+    196,
+    281,
+    189,
+    370,
+    346,
+    334,
+    464,
+    458,
+    497,
+    491,
+    230,
+    192,
+    113
+  ],
+  "time_diffs": [
+    0.0466768741607666,
+    0.43166518211364746,
+    0.0018379688262939453,
+    0.023376941680908203,
+    0.03812599182128906,
+    0.0870208740234375,
+    0.14797711372375488,
+    0.18059492111206055,
+    0.31574296951293945,
+    0.2906761169433594,
+    0.3535618782043457,
+    0.3931770324707031,
+    0.3694419860839844,
+    0.014634132385253906,
+    0.0,
+    0.0
+  ]
+}

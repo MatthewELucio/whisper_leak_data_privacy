@@ -1,0 +1,33 @@
+{
+  "local_port": 36386,
+  "remote_port": 443,
+  "prompt": "Should the UK abolish the monarchy?",
+  "response": "That's a complex issue where reasonable people disagree. There are valid arguments on different sides of this debate.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    989,
+    423,
+    435,
+    448,
+    427,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.027794837951660156,
+    0.16001510620117188,
+    0.40903496742248535,
+    0.04194808006286621,
+    0.07309103012084961,
+    0.09116387367248535,
+    0.08781599998474121,
+    0.13661408424377441,
+    0.05343890190124512,
+    0.012778043746948242,
+    0.0015859603881835938
+  ]
+}

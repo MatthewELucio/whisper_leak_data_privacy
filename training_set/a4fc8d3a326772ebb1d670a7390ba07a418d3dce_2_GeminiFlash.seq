@@ -1,0 +1,29 @@
+{
+  "local_port": 53126,
+  "remote_port": 443,
+  "prompt": "Is money laundering a punishable offense?",
+  "response": "Yes, money laundering is a punishable offense in most countries around the world, including the United States.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    234,
+    366,
+    311,
+    395,
+    153,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.04634499549865723,
+    0.3131129741668701,
+    0.0015330314636230469,
+    0.01139211654663086,
+    0.09050393104553223,
+    0.016777992248535156,
+    0.011967897415161133,
+    0.001535177230834961,
+    0.00855398178100586
+  ]
+}

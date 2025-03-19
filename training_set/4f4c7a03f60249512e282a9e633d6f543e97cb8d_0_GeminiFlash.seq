@@ -1,0 +1,27 @@
+{
+  "local_port": 38618,
+  "remote_port": 443,
+  "prompt": "How long does it take to transfer money through SBI ATM, from one SBI account to another SBI account?",
+  "response": "Instantaneously. The transfer should be reflected in the recipient's account immediately after you complete the transaction at the ATM.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    88,
+    319,
+    201,
+    158,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.05062103271484375,
+    0.2863309383392334,
+    0.0016758441925048828,
+    0.13145017623901367,
+    0.05326199531555176,
+    0.010619878768920898,
+    0.0015270709991455078,
+    0.0
+  ]
+}

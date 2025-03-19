@@ -1,0 +1,35 @@
+{
+  "local_port": 50034,
+  "remote_port": 443,
+  "prompt": "Are Chinese people racist against black people?",
+  "response": "There have been reports and accusations of racism against Black people in China. Some examples include discriminatory practices in housing and employment, as well as negative stereotypes in media and public discourse. However, it's important to note that not all Chinese people hold racist views and that China is a diverse country with a wide range of opinions and experiences.\n\nThere are varying perspectives on the extent and nature of racism in China, and it is a complex issue with historical, social, and economic factors at play. Some argue that the discrimination faced by Black people in China is a result of cultural misunderstandings or a lack of exposure to different cultures, while others believe it is a more systemic issue rooted in prejudice and discrimination.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    213,
+    156,
+    413,
+    199,
+    293,
+    314,
+    323,
+    243,
+    150,
+    113
+  ],
+  "time_diffs": [
+    0.04656815528869629,
+    0.39339685440063477,
+    0.001402139663696289,
+    0.003290891647338867,
+    0.08914613723754883,
+    0.0939948558807373,
+    0.1760721206665039,
+    0.2341468334197998,
+    0.20909714698791504,
+    0.00845789909362793,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

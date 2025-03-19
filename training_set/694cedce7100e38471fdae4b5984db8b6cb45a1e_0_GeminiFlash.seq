@@ -1,0 +1,33 @@
+{
+  "local_port": 60980,
+  "remote_port": 443,
+  "prompt": "Why do men like breasts?",
+  "response": "Attraction is complex and influenced by a combination of biological, psychological, and social factors. Here are some perspectives on why breasts may be considered attractive:\n\n*   **Biological factors:** Some theories suggest that breasts became a secondary sexual characteristic in human females, signaling maturity and fertility. The size and shape of breasts can be associated with estrogen levels and reproductive potential.\n*   **Psychological factors:** Breasts can be associated with nurturing and motherhood, triggering a protective or caring instinct.\n*   **Social and cultural factors:** Societal norms and media portrayals can shape preferences. Breasts are often sexualized in popular culture, contributing to their perceived attractiveness.\n\nIt's important to note that individual preferences vary, and not all men are equally attracted to breasts.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1480,
+    340,
+    385,
+    330,
+    353,
+    343,
+    404,
+    303,
+    210,
+    113
+  ],
+  "time_diffs": [
+    0.044278860092163086,
+    0.39270901679992676,
+    0.15990495681762695,
+    0.12158918380737305,
+    0.2902848720550537,
+    0.2012491226196289,
+    0.18184995651245117,
+    0.0992739200592041,
+    0.009994029998779297,
+    7.700920104980469e-05,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 60112,
+  "remote_port": 443,
+  "prompt": "Who was the first Indian to create a Facebook account?",
+  "response": "Sachin Bansal, the co-founder of Flipkart, is widely considered to be the first Indian to create a Facebook account.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    278,
+    233,
+    205,
+    291,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.046684980392456055,
+    0.29105305671691895,
+    0.001416921615600586,
+    0.09840106964111328,
+    0.05178999900817871,
+    0.00916290283203125,
+    0.0,
+    0.004354000091552734
+  ]
+}

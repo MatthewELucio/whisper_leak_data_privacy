@@ -1,0 +1,31 @@
+{
+  "local_port": 36888,
+  "remote_port": 443,
+  "prompt": "Is this considered a four pack?",
+  "response": "To determine if something is considered a four-pack, I need to know what you're referring to. For example:\n\n*   **Is it a four-pack of drinks?** (like soda or beer)\n*   **Is it a four-pack of batteries?**\n*   **Is it a four-pack of something else entirely?**\n\n**Please provide more context about what you're asking about.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    166,
+    254,
+    177,
+    284,
+    252,
+    170,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.05264115333557129,
+    0.44152188301086426,
+    0.0015990734100341797,
+    0.11139202117919922,
+    0.08020901679992676,
+    0.134443998336792,
+    0.13233685493469238,
+    0.006896018981933594,
+    0.0,
+    0.001547098159790039
+  ]
+}

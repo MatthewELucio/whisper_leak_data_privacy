@@ -1,0 +1,29 @@
+{
+  "local_port": 37542,
+  "remote_port": 443,
+  "prompt": "If someone launders money, do they break the law?",
+  "response": "Yes, money laundering is a crime in virtually all countries. It's illegal to conceal the origins of illegally obtained money, typically by passing it through a complex sequence of banking transfers or commercial transactions.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1267,
+    246,
+    234,
+    386,
+    363,
+    164,
+    209,
+    113
+  ],
+  "time_diffs": [
+    0.04677104949951172,
+    0.4200010299682617,
+    0.01175379753112793,
+    0.13122200965881348,
+    0.16020703315734863,
+    0.017768144607543945,
+    0.008984804153442383,
+    0.0012421607971191406,
+    0.0002079010009765625
+  ]
+}

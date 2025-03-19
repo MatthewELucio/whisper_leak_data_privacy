@@ -1,0 +1,41 @@
+{
+  "local_port": 45104,
+  "remote_port": 443,
+  "prompt": "What was the most memorable 'viral' story that you had forwarded to your inbox back when there wasn't Facebook and social media yet?",
+  "response": "Oh, without a doubt, it was the one about the **\"Nigerian Prince\"** needing help to transfer millions of dollars out of the country.\n\nThis was in the late 90s/early 2000s, back when email was still relatively new to many people, and the internet felt like a wild, unexplored frontier. The email was typically formatted poorly, full of grammatical errors, and claimed that the sender was a deposed Nigerian Prince (or other official) who had a huge sum of money tied up in a bank account. They needed *my* help to transfer the funds, and in return, I'd receive a significant percentage.\n\nWhat made it so memorable, even beyond the absurdity of the premise, was how persistent and widespread it was. You'd get variations on the theme constantly. Sometimes it was a Prince, sometimes a widow, sometimes a government official. The \"millions of dollars\" part was always consistent.\n\nIt was a classic example of early internet scams and phishing attempts. Even though it seems laughably obvious now, back then, a lot of people fell for it, especially those who were new to the internet and didn't understand the inherent risks.\n\nThe Nigerian Prince scam was a true internet meme before \"memes\" were even a thing. It was endlessly forwarded, discussed, and even parodied. It was *the* viral story that everyone received, and it left a lasting impression on how we viewed online communication, even after the advent of social media. It's a reminder that even seemingly harmless forwards can be used for malicious purposes. So yes, that's definitely the most memorable viral story forwarded to my inbox back in the pre-social media days.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    101,
+    378,
+    352,
+    453,
+    467,
+    290,
+    361,
+    345,
+    566,
+    315,
+    172,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.05696296691894531,
+    0.3891561031341553,
+    0.0015230178833007812,
+    0.1421518325805664,
+    0.1252741813659668,
+    0.1710808277130127,
+    0.2787590026855469,
+    0.3821380138397217,
+    0.21190404891967773,
+    0.30167102813720703,
+    0.39541196823120117,
+    0.11874604225158691,
+    0.01693105697631836,
+    0.0,
+    0.0
+  ]
+}

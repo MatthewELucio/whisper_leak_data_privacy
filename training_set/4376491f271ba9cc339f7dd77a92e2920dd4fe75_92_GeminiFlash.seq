@@ -1,0 +1,41 @@
+{
+  "local_port": 60550,
+  "remote_port": 443,
+  "prompt": "Is it illegal to clean dirty money?",
+  "response": "Yes, it is illegal to \"clean\" dirty money. This activity is more commonly known as **money laundering**, and it's a serious federal crime in most countries, including the United States.\n\nHere's why and what makes it illegal:\n\n*   **Definition of Money Laundering:** Money laundering is the process of disguising the origin of illegally obtained money so that it appears to come from a legitimate source. It's about concealing the criminal origins of the funds.\n\n*   **Legality:** Money laundering is a crime.\n    *   In the U.S., it is primarily governed by federal laws, including the Bank Secrecy Act and money laundering statutes.\n    *   Similar laws exist in most countries worldwide, often in compliance with international agreements like those promoted by the Financial Action Task Force (FATF).\n\n*   **Why it's illegal:** Money laundering is illegal because it allows criminals to profit from their illegal activities without detection and allows them to use their illegal profits to further those illegal activities. It also undermines the integrity of financial systems.\n\n*   **Consequences:** The penalties for money laundering can be severe.\n    *   **Fines:** Substantial financial penalties are common.\n    *   **Imprisonment:** Prison sentences can be lengthy, often lasting for several years or even decades.\n    *   **Asset Forfeiture:** The assets involved in the money laundering operation can be seized by the government.\n\nIn short, any attempt to conceal the source of illegally obtained money is a criminal act.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    161,
+    152,
+    426,
+    198,
+    307,
+    267,
+    304,
+    426,
+    377,
+    491,
+    213,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.047770023345947266,
+    0.3800969123840332,
+    0.0014109611511230469,
+    0.012408971786499023,
+    0.11514496803283691,
+    0.08071112632751465,
+    0.1583540439605713,
+    0.2133939266204834,
+    0.23769688606262207,
+    0.26861000061035156,
+    0.34757113456726074,
+    0.26748085021972656,
+    0.010052204132080078,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "local_port": 42614,
+  "remote_port": 443,
+  "prompt": "Are Territorial army officers getting permanent commission now a days?",
+  "response": "While it's not the norm, Territorial Army (TA) officers *can* get permanent commissions in the Indian Army, but it's a very selective and competitive process. Here's a breakdown of the situation:\n\n*   **Not Automatic:** Being an officer in the Territorial Army does *not* automatically qualify you for a permanent commission. The TA is primarily designed for part-time service.\n*   **Eligibility Criteria:** Specific criteria must be met to even apply for a permanent commission from the TA. These usually include:\n\n    *   **Age:** The officer must be within a certain age bracket.\n    *   **Service Record:** A consistently excellent service record in the TA is crucial.\n    *   **Medical Fitness:** Meeting the stringent medical standards required for regular army officers.\n    *   **Vacancy:** There must be vacancies available in the regular army in the officer's specific arm/service.\n    *   **Suitability:** They should be found suitable in all respects as per the laid down standards.\n\n*   **Selection Process:** The selection process is rigorous and involves:\n\n    *   **Application:** An application process with detailed documentation.\n    *   **Interview:** An interview by a selection board composed of senior regular army officers.\n    *   **Assessment:** Comprehensive assessment, potentially including psychological testing, and performance reviews.\n\n*   **Limited Opportunities:** Opportunities for TA officers to get permanent commissions are limited and depend on the needs of the Indian Army. It's not a guaranteed career path.\n\n*   **Recent Developments:** While I don't have information about recent policy shifts which would guarantee permanent commission, there may be policy changes which facilitate a smoother transfer if conditions are met and vacancies are available.\n\n**In summary:** Yes, it is possible for Territorial Army officers to get permanent commissions, but it is not common, and it requires meeting strict eligibility criteria and successfully navigating a highly competitive selection process. It's best to consult official Indian Army regulations and sources for the most up-to-date information.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    255,
+    341,
+    434,
+    301,
+    405,
+    343,
+    285,
+    297,
+    422,
+    569,
+    441,
+    155,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.04508519172668457,
+    0.2946348190307617,
+    0.0015780925750732422,
+    0.11027789115905762,
+    0.11728620529174805,
+    0.1458749771118164,
+    0.17910003662109375,
+    0.2750239372253418,
+    0.3521459102630615,
+    0.42142415046691895,
+    0.43724989891052246,
+    0.36535191535949707,
+    0.1718451976776123,
+    0.014783859252929688,
+    0.0,
+    0.0
+  ]
+}

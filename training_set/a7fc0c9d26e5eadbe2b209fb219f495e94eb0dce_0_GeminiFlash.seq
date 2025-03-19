@@ -1,0 +1,31 @@
+{
+  "local_port": 48186,
+  "remote_port": 443,
+  "prompt": "How did Harley Quinn skin become white?",
+  "response": "Harley Quinn's signature white skin is a result of exposure to chemicals during her time as Dr. Harleen Quinzel at Arkham Asylum. The most common origin story involves her jumping into a vat of chemicals, specifically the same vat that turned the Joker into the villain he is. This exposure bleached her skin permanently and drove her further into madness, solidifying her transformation into Harley Quinn.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1414,
+    339,
+    294,
+    260,
+    439,
+    254,
+    267,
+    231,
+    113
+  ],
+  "time_diffs": [
+    0.051674842834472656,
+    0.41736507415771484,
+    0.0053060054779052734,
+    0.08929991722106934,
+    0.12505507469177246,
+    0.22112202644348145,
+    0.07894587516784668,
+    0.007986068725585938,
+    0.00018310546875,
+    0.0
+  ]
+}

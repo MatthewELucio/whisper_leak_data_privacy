@@ -1,0 +1,35 @@
+{
+  "local_port": 56798,
+  "remote_port": 443,
+  "prompt": "In the wizarding world, would the engorgio spell work on a penis?",
+  "response": "While the Harry Potter books don't explicitly address this, the Engorgio charm is used on living things (like spiders and plants) and objects. Whether it would work on a specific body part like a penis is open to interpretation and fan speculation. Some might argue that it would, based on the spell's general function of enlargement. Others might suggest that magic on the human body is more complex and could have unpredictable or even dangerous results.\n\nUltimately, the answer is left to the reader's imagination and how they understand the limits and possibilities of magic in the Harry Potter universe.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    238,
+    171,
+    363,
+    386,
+    275,
+    396,
+    271,
+    140,
+    203,
+    113
+  ],
+  "time_diffs": [
+    0.04719996452331543,
+    0.4545609951019287,
+    0.0014369487762451172,
+    0.043528079986572266,
+    0.04597306251525879,
+    0.14252591133117676,
+    0.1836540699005127,
+    0.23599696159362793,
+    0.10502910614013672,
+    0.009540796279907227,
+    0.0,
+    0.0
+  ]
+}

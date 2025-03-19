@@ -1,0 +1,43 @@
+{
+  "local_port": 59766,
+  "remote_port": 443,
+  "prompt": "Are there statutes that address money laundering?",
+  "response": "Yes, there are numerous statutes, both at the federal and state level, that address money laundering. Here's a breakdown:\n\n**United States Federal Statutes (Most Important):**\n\n*   **18 U.S.C. \u00a7 1956 - Laundering of Monetary Instruments:** This is the primary federal money laundering statute. It prohibits a wide range of activities related to the transfer, concealment, or use of proceeds derived from specified unlawful activity (SUA), also known as predicate offenses.  It has several subsections:\n\n    *   **(a)(1):** Prohibits conducting financial transactions with the intent to promote the carrying on of specified unlawful activity, or with knowledge that the property involved represents the proceeds of some form of unlawful activity and with the intent to conceal or disguise the nature, location, source, ownership, or control of the proceeds.\n    *   **(a)(2):** Prohibits transporting, transmitting, or transferring monetary instruments or funds into or out of the United States with the intent to promote the carrying on of specified unlawful activity or with knowledge that the property involved represents the proceeds of some form of unlawful activity and with the intent to conceal or disguise the nature, location, source, ownership, or control of the proceeds.\n    *   **(a)(3):** Prohibits conducting a financial transaction involving property represented to be proceeds of specified unlawful activity, or property used to conduct or facilitate specified unlawful activity, with the intent to promote the carrying on of specified unlawful activity.\n*   **18 U.S.C. \u00a7 1957 - Engaging",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    87,
+    265,
+    351,
+    287,
+    400,
+    262,
+    372,
+    362,
+    278,
+    442,
+    259,
+    300,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.04231691360473633,
+    0.8047690391540527,
+    0.0014510154724121094,
+    0.26438403129577637,
+    0.3233530521392822,
+    0.3188450336456299,
+    0.3713099956512451,
+    0.39469099044799805,
+    0.416273832321167,
+    0.20394420623779297,
+    0.09114193916320801,
+    0.1040198802947998,
+    0.04871106147766113,
+    0.006801128387451172,
+    0.0,
+    0.0
+  ]
+}

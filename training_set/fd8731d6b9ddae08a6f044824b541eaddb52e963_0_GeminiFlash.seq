@@ -1,0 +1,39 @@
+{
+  "local_port": 50856,
+  "remote_port": 443,
+  "prompt": "Have any one ever seen mermaid?",
+  "response": "The existence of mermaids is a topic of folklore and mythology, not proven science.\n\n*   **No scientific evidence exists to support the existence of mermaids.** Scientists have explored the oceans extensively, and there is no credible evidence of half-human, half-fish creatures.\n*   **Mermaids are a common figure in mythology and legends.** Stories of mermaids can be found in cultures around the world, often depicted as beautiful and enchanting beings.\n*   **Some sightings may be misidentified animals or optical illusions.** It's possible that some sightings attributed to mermaids could be due to misidentification of marine animals like dugongs or manatees, or simply tricks of the light and imagination.\n*   **Hoaxes and fabricated evidence have contributed to the myth.** Throughout history, there have been hoaxes and fabricated \"evidence\" of mermaids, which have further fueled the legend.\n\nWhile the idea of mermaids is captivating and has a rich history in storytelling, there is no real evidence to suggest that they exist.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    209,
+    253,
+    215,
+    213,
+    225,
+    456,
+    318,
+    427,
+    247,
+    175,
+    214,
+    113
+  ],
+  "time_diffs": [
+    0.04641604423522949,
+    0.3252859115600586,
+    0.001566171646118164,
+    0.011152982711791992,
+    0.12512683868408203,
+    0.130202054977417,
+    0.15190911293029785,
+    0.1822068691253662,
+    0.2811100482940674,
+    0.31989598274230957,
+    0.06884598731994629,
+    0.012186050415039062,
+    0.0,
+    0.0
+  ]
+}

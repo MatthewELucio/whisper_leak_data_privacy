@@ -1,0 +1,43 @@
+{
+  "local_port": 43458,
+  "remote_port": 443,
+  "prompt": "When Indian restaurant menus say \"green chili\", is there a particular type of chili pepper they usually mean?",
+  "response": "While there's no single definitive \"green chili\" used across all Indian restaurants, there are some common varieties that are frequently used:\n\n*   **Serrano Peppers:** These are probably the most common choice. They offer a good amount of heat and are readily available. They are often used in sauces, curries, and as a garnish.\n\n*   **Thai Green Chilies (Bird's Eye Chilies):** These are smaller and pack a significant punch of heat. They're often used sparingly for those who want a fiery dish.\n\n*   **Jalape\u00f1o Peppers:** Sometimes used, especially in areas where Serrano peppers are less accessible. They're milder than Serrano or Thai chilies.\n\n*   **Indian Green Chilies (various types):** There are many local Indian chili varieties that are used, depending on the region and the chef's preference. Some examples include:\n    *   **Hari Mirch:** A generic term for green chili in Hindi.\n    *   **Kanthari Mulaku (Kerala):** Small, round, and extremely hot.\n    *   **Guntur Sannam (Andhra Pradesh):** Available in both red and green varieties, offering a balanced flavor and heat.\n\n**Important Considerations:**\n\n*   **Regional Variations:** The specific chili used will vary depending on the region of India the cuisine is inspired by. South Indian dishes might use different chilies than North Indian dishes.\n*   **Heat Level:** The heat level can vary even within the same type of chili. Factors like growing conditions and maturity affect the Scoville Heat Units (SHU).\n*   **Restaurant Preference:** Ultimately, the choice of chili comes down to the restaurant's preference and what they can source locally.\n\n**In summary, when you see \"green chili\" on an Indian menu, it's often a Serrano pepper, but could also be a Thai green chili, Jalape\u00f1o, or a local Indian variety. If you're concerned about the heat level, it's always a good idea to ask your server for clarification.** They can usually tell you which chili they use and how spicy the dish is.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    187,
+    277,
+    350,
+    485,
+    386,
+    336,
+    282,
+    310,
+    561,
+    491,
+    273,
+    246,
+    211,
+    113
+  ],
+  "time_diffs": [
+    0.04523301124572754,
+    0.39957189559936523,
+    0.0014300346374511719,
+    0.1064760684967041,
+    0.11600279808044434,
+    0.12616610527038574,
+    0.16685009002685547,
+    0.2802438735961914,
+    0.2790529727935791,
+    0.4230620861053467,
+    0.3149900436401367,
+    0.3501279354095459,
+    0.22636699676513672,
+    0.029433012008666992,
+    0.0,
+    0.0
+  ]
+}

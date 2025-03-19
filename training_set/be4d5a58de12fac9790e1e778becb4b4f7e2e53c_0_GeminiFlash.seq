@@ -1,0 +1,35 @@
+{
+  "local_port": 58132,
+  "remote_port": 443,
+  "prompt": "I had my period and then a week later I started bleeding again? Can I be pregnant?",
+  "response": "Irregular bleeding after a period can happen for various reasons, and it's difficult to determine the cause without more information.\n\nHere are some possibilities:\n*   **Ovulation bleeding:** Some people experience light spotting during ovulation.\n*   **Hormonal changes:** Changes in hormone levels can cause irregular bleeding.\n*   **Breakthrough bleeding:** This can occur if you're taking hormonal birth control.\n*   **Infections:** Certain infections can cause bleeding.\n*   **Other medical conditions:** Conditions like polyps or fibroids can also lead to irregular bleeding.\n*   **Implantation bleeding:** It is possible that you are experiencing implantation bleeding which is light bleeding that occurs when a fertilized egg attaches to the lining of the uterus. However, it's important to note that not everyone experiences it and it's usually lighter than a period.\n\nIf you are sexually active and there's a possibility of pregnancy, it's a good idea to take a pregnancy test. At-home tests are widely available and can provide accurate results a few weeks after conception.\n\n**Disclaimer:** This information is not intended to be a substitute for professional medical advice. Always consult with a qualified healthcare provider for any questions you may have regarding your health.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1360,
+    375,
+    361,
+    425,
+    285,
+    482,
+    315,
+    470,
+    313,
+    164,
+    113
+  ],
+  "time_diffs": [
+    0.04471015930175781,
+    0.3084728717803955,
+    0.09300017356872559,
+    0.10288190841674805,
+    0.1871960163116455,
+    0.15778207778930664,
+    0.29229187965393066,
+    0.2731781005859375,
+    0.32915186882019043,
+    0.009719133377075195,
+    0.0,
+    0.0
+  ]
+}

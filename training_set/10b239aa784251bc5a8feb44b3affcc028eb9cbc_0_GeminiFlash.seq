@@ -1,0 +1,27 @@
+{
+  "local_port": 36550,
+  "remote_port": 443,
+  "prompt": "God is not watching right?",
+  "response": "Whether or not God is watching is a matter of faith and belief. Different religions and individuals hold different perspectives on this question. Some believe in an omnipresent God who is always aware, while others have different interpretations or beliefs altogether.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1280,
+    210,
+    331,
+    404,
+    200,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.04542899131774902,
+    0.4186100959777832,
+    0.09309506416320801,
+    0.1321709156036377,
+    0.08498787879943848,
+    0.005791187286376953,
+    0.0015070438385009766,
+    0.0
+  ]
+}

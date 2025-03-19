@@ -1,0 +1,37 @@
+{
+  "local_port": 47042,
+  "remote_port": 443,
+  "prompt": "Can we use microwaves close to IR to see the inside of a tin foil ball letting them follow \"paths\" from the surface arriving to the interior of it?",
+  "response": "This is an interesting question about wave penetration.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    139,
+    139,
+    139,
+    139,
+    989,
+    411,
+    437,
+    418,
+    569,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.021754980087280273,
+    0.18331098556518555,
+    0.4050331115722656,
+    0.41254091262817383,
+    0.41043519973754883,
+    0.4162108898162842,
+    0.37395405769348145,
+    0.22011399269104004,
+    0.11203694343566895,
+    0.18928289413452148,
+    0.19766902923583984,
+    0.006350994110107422,
+    0.0
+  ]
+}

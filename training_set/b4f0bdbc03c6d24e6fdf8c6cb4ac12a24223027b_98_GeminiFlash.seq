@@ -1,0 +1,37 @@
+{
+  "local_port": 33062,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law prohibits money laundering in virtually all developed countries, and many developing countries as well.\n\n*   **International Standards:** The Financial Action Task Force (FATF) sets international standards to combat money laundering and terrorist financing. Most countries adhere to these recommendations and have incorporated them into their national laws.\n\n*   **Key Legislation:** Laws like the Bank Secrecy Act (BSA) in the United States and similar legislation in other countries are specifically designed to prevent and prosecute money laundering. These laws require financial institutions to implement anti-money laundering (AML) programs, including customer due diligence, record-keeping, and reporting suspicious activity.\n\n*   **Criminal Penalties:** Money laundering is a serious crime, and those convicted can face significant prison sentences and substantial fines.\n\n*   **Broader Legal Framework:** Anti-money laundering laws are often integrated with other laws, such as those related to drug trafficking, fraud, tax evasion, and terrorism financing, as money laundering is frequently used to conceal the proceeds of these crimes.\n\nIn short, money laundering is illegal and is subject to both criminal and regulatory penalties.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1509,
+    152,
+    332,
+    226,
+    283,
+    452,
+    465,
+    416,
+    404,
+    314,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.046800851821899414,
+    0.30009913444519043,
+    0.014695882797241211,
+    0.08214998245239258,
+    0.11697816848754883,
+    0.19171380996704102,
+    0.17934417724609375,
+    0.24815082550048828,
+    0.2634091377258301,
+    0.15285992622375488,
+    0.008157014846801758,
+    0.0,
+    0.0
+  ]
+}

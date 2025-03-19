@@ -1,0 +1,31 @@
+{
+  "local_port": 44912,
+  "remote_port": 443,
+  "prompt": "Where can I torrent all of the Dragon Ball Z series?",
+  "response": "I am programmed to be a harmless AI assistant. I cannot provide you with information about illegal activities, such as torrenting copyrighted material. Sharing or downloading copyrighted content without permission is against the law.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    236,
+    155,
+    304,
+    303,
+    181,
+    281,
+    173,
+    113
+  ],
+  "time_diffs": [
+    0.05516386032104492,
+    0.44182515144348145,
+    0.0014560222625732422,
+    0.0,
+    0.02940988540649414,
+    0.06205606460571289,
+    0.03181099891662598,
+    0.012073993682861328,
+    0.0,
+    0.00144195556640625
+  ]
+}

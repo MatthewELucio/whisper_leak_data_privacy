@@ -1,0 +1,39 @@
+{
+  "local_port": 55270,
+  "remote_port": 443,
+  "prompt": "Is it a good sign if a couple has the same blood group?",
+  "response": "Having the same blood group as your partner has **no bearing on the health or success of the relationship.** Blood type compatibility is only relevant when considering pregnancy and the Rh factor.\n\nHere's a breakdown:\n\n*   **Relationship Compatibility:** Blood type compatibility has absolutely nothing to do with personality, values, communication styles, or any other factor that contributes to a healthy relationship.\n*   **Pregnancy and Rh Factor:**\n    *   The only time blood type matters is during pregnancy if the mother is Rh-negative and the father is Rh-positive. This can lead to Rh incompatibility, where the mother's body may produce antibodies against the baby's Rh-positive blood. However, this is easily managed with Rhogam injections, which prevent the mother from producing these antibodies.\n    *   If both parents are Rh-negative or both are Rh-positive, there is no risk of Rh incompatibility.\n*   **ABO incompatibility**: ABO incompatibility is usually not severe and rarely causes significant problems for the baby. Mothers with blood type O can sometimes develop antibodies that attack the baby's blood cells if the baby has blood type A, B, or AB. This can cause mild jaundice in the newborn.\n\n**In short, whether a couple shares the same blood group or not is completely irrelevant to the health and happiness of their relationship.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    247,
+    321,
+    321,
+    348,
+    299,
+    444,
+    389,
+    355,
+    294,
+    282,
+    143,
+    113
+  ],
+  "time_diffs": [
+    0.04482889175415039,
+    0.43959903717041016,
+    0.0014989376068115234,
+    0.10247492790222168,
+    0.11103510856628418,
+    0.19606900215148926,
+    0.1808619499206543,
+    0.2603600025177002,
+    0.2718961238861084,
+    0.4230690002441406,
+    0.08267784118652344,
+    0.008043050765991211,
+    4.9114227294921875e-05,
+    8.893013000488281e-05
+  ]
+}

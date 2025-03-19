@@ -1,0 +1,25 @@
+{
+  "local_port": 44718,
+  "remote_port": 443,
+  "prompt": "Using the least amount of words possible, how would you describe the plot of the movie Pi (1998)?",
+  "response": "Obsessive mathematician seeks pattern in everything, descends into madness.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    172,
+    417,
+    306,
+    216,
+    113
+  ],
+  "time_diffs": [
+    0.0486910343170166,
+    0.40407896041870117,
+    0.0013930797576904297,
+    0.0966501235961914,
+    0.01385498046875,
+    0.0,
+    0.0014297962188720703
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 40948,
+  "remote_port": 443,
+  "prompt": "What are those lines called that are used instead of parenthesis?",
+  "response": "The lines used instead of parentheses can be a few different things, depending on the context:\n\n*   **Em dashes (\u2014):** These are longer dashes often used to set off a phrase or clause, similar to parentheses, but with a stronger emphasis.\n*   **En dashes (\u2013):** These are shorter than em dashes but longer than hyphens. They are sometimes used similarly to em dashes, but it's less common.\n*   **Hyphens (-):** These are primarily used to join words (e.g., \"well-being\") but are *not* generally used as replacements for parentheses in the way that em dashes are.\n*   **Commas (,):** A pair of commas can sometimes be used to set off a non-essential phrase, functioning similarly to parentheses. However, this is usually reserved for shorter, less disruptive insertions.\n\nTherefore, the most common answer to your question is **em dashes**.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1510,
+    360,
+    392,
+    310,
+    213,
+    354,
+    360,
+    442,
+    193,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.0507810115814209,
+    0.28307008743286133,
+    0.028056859970092773,
+    0.04560708999633789,
+    0.07393312454223633,
+    0.20831084251403809,
+    0.135728120803833,
+    0.32364392280578613,
+    0.2283639907836914,
+    0.005693912506103516,
+    0.0,
+    0.0
+  ]
+}

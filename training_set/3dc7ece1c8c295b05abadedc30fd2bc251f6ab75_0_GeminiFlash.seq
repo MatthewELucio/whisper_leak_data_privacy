@@ -1,0 +1,25 @@
+{
+  "local_port": 37364,
+  "remote_port": 443,
+  "prompt": "Who is the writer of the Harry Potter novels?",
+  "response": "The writer of the Harry Potter novels is **J.K. Rowling**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1485,
+    350,
+    399,
+    296,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.046788930892944336,
+    0.33315491676330566,
+    0.05165815353393555,
+    0.04823184013366699,
+    0.01105499267578125,
+    0.0,
+    0.0015439987182617188
+  ]
+}

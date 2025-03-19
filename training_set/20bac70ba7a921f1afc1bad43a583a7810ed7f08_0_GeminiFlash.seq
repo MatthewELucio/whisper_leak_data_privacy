@@ -1,0 +1,41 @@
+{
+  "local_port": 51462,
+  "remote_port": 443,
+  "prompt": "Why do guys stare at girls then look away?",
+  "response": "There could be several reasons why a guy might stare at a girl and then look away. Here are some common explanations:\n\n*   **Attraction:** He might find the girl attractive and be admiring her, but look away when he realizes he's been caught staring.\n*   **Curiosity:** He might be curious about something about the girl, like her outfit, hairstyle, or something she's doing.\n*   **Checking Her Out:** This is similar to attraction but more focused on physical appearance.\n*   **Social Anxiety:** He might be attracted but too nervous to initiate contact or hold eye contact. Looking away is a way to avoid embarrassment or rejection.\n*   **Fear of Being Creepy:** He might be concerned about coming across as creepy or making the girl uncomfortable, so he breaks eye contact.\n*   **Insecurity:** He might feel insecure about his own appearance or social skills and look away out of fear of judgment.\n*   **Accidental Staring:** Sometimes, people simply zone out or lose focus and their gaze might unintentionally land on someone.\n*   **He Knows Her:** He may recognize her and then realize he shouldn't stare.\n*   **Overthinking:** He may think about what to do, and then get nervous and look away.\n*   **Cultural Norms:** Depending on the culture, prolonged eye contact can be seen as aggressive or inappropriate, so looking away might be a sign of respect.\n\nIt's important to consider the context and the specific situation when trying to interpret someone's behavior.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    117,
+    139,
+    267,
+    333,
+    323,
+    285,
+    510,
+    450,
+    352,
+    298,
+    238,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.057656049728393555,
+    0.34755992889404297,
+    0.0013930797576904297,
+    0.04038882255554199,
+    0.028017044067382812,
+    0.10416913032531738,
+    0.1600818634033203,
+    0.20607995986938477,
+    0.367002010345459,
+    0.3164491653442383,
+    0.385113000869751,
+    0.31326889991760254,
+    0.006869077682495117,
+    9.5367431640625e-07,
+    0.0007810592651367188
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 52236,
+  "remote_port": 443,
+  "prompt": "\"CAS PRES CHQ\" what does this SBI statement message mean?",
+  "response": "\"CAS PRES CHQ\" in an SBI statement likely means **Cash Presentation of Cheque**.\n\nThis indicates that a cheque you deposited into your account has been successfully presented (CAS PRES) and the funds have been credited to your account. The cheque likely cleared through the Clearing House (CHQ).\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    145,
+    310,
+    441,
+    320,
+    280,
+    156,
+    168,
+    113
+  ],
+  "time_diffs": [
+    0.04419994354248047,
+    0.3553781509399414,
+    0.0011670589447021484,
+    0.017651796340942383,
+    0.10332918167114258,
+    0.12693095207214355,
+    0.13915801048278809,
+    0.008744955062866211,
+    0.0016009807586669922,
+    0.0
+  ]
+}

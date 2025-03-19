@@ -1,0 +1,29 @@
+{
+  "local_port": 36308,
+  "remote_port": 443,
+  "prompt": "If a person has sexual urge and he does not sex, Does his brain work slow?",
+  "response": "No, that is not correct. Abstaining from sex does not slow down brain function.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    302,
+    329,
+    251,
+    195,
+    157,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.04529404640197754,
+    0.29112911224365234,
+    0.0018818378448486328,
+    0.053434133529663086,
+    0.044857025146484375,
+    0.0035848617553710938,
+    0.009335041046142578,
+    0.0,
+    0.0
+  ]
+}

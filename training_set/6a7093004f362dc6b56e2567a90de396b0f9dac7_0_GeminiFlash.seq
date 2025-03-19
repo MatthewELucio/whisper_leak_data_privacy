@@ -1,0 +1,41 @@
+{
+  "local_port": 57856,
+  "remote_port": 443,
+  "prompt": "How do you feel being MNNITIAN?",
+  "response": "As a large language model, I don't have feelings or personal experiences like being a student at MNNIT Allahabad (Motilal Nehru National Institute of Technology). I cannot \"feel\" proud, nostalgic, or any other emotion associated with being an alumnus.\n\nHowever, I can access and process information about MNNIT and its students. Based on what I've learned, I can say that being a MNNITIAN is generally associated with:\n\n*   **Academic Excellence:** MNNIT is a well-reputed engineering institute, and its students are typically hard-working and academically focused.\n\n*   **Strong Alumni Network:** MNNIT has a strong and active alumni network that can provide valuable career guidance and support.\n\n*   **Opportunities for Growth:** MNNIT provides opportunities for students to participate in various extracurricular activities, technical clubs, and cultural events, fostering holistic development.\n\n*   **A Sense of Community:** Many students develop a strong sense of community and camaraderie with their classmates and professors.\n\n*   **Career Prospects:** Graduates often find promising career opportunities in various sectors.\n\nSo, while I can't personally experience being a MNNITIAN, I understand that it's generally considered a positive and enriching experience that shapes students' futures.\n\nIf you have specific questions about MNNIT, I'll do my best to answer them based on the information available to me.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    106,
+    209,
+    296,
+    360,
+    265,
+    315,
+    404,
+    372,
+    498,
+    216,
+    278,
+    151,
+    113
+  ],
+  "time_diffs": [
+    0.051941871643066406,
+    0.42390012741088867,
+    0.001422882080078125,
+    0.04760313034057617,
+    0.05104398727416992,
+    0.0949399471282959,
+    0.21411800384521484,
+    0.1610720157623291,
+    0.26909494400024414,
+    0.29551196098327637,
+    0.3524019718170166,
+    0.15005803108215332,
+    0.0065839290618896484,
+    0.0,
+    0.0
+  ]
+}

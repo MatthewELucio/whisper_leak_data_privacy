@@ -1,0 +1,39 @@
+{
+  "local_port": 55484,
+  "remote_port": 443,
+  "prompt": "Should cow slaughter be banned in India?",
+  "response": "The question of banning cow slaughter in India is a complex issue with diverse perspectives.\n\n*   **Religious Significance:** Cows hold a \u09ac\u09bf\u09b6\u09c7\u09b7 sacred position in Hinduism, and banning their slaughter is seen by some as a way to respect religious sentiments.\n*   **Economic Considerations:** Others argue that a ban could negatively impact the leather and beef industries, as well as the livelihoods of those involved, particularly marginalized communities. Additionally, the economic burden of maintaining unproductive cattle could be significant.\n*   **Agricultural Impact:** Some believe that cows are essential to agriculture, providing manure and draft power. However, the relevance of these contributions in modern agriculture is debated.\n*   **Legal and Constitutional Aspects:** The Indian Constitution includes a directive principle (Article 48) that encourages the state to prohibit the slaughter of cows and calves. However, the interpretation and implementation of this principle have been subjects of legal challenges and varying state laws.\n\nCurrently, several states in India have banned cow slaughter, while others have not. The issue remains a topic of ongoing debate and legal scrutiny.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    175,
+    227,
+    202,
+    303,
+    445,
+    467,
+    421,
+    380,
+    278,
+    157,
+    140,
+    113
+  ],
+  "time_diffs": [
+    0.04708981513977051,
+    0.3790252208709717,
+    0.0014679431915283203,
+    0.04143691062927246,
+    0.10109114646911621,
+    0.1236269474029541,
+    0.23348188400268555,
+    0.2590451240539551,
+    0.3180668354034424,
+    0.378986120223999,
+    0.08275389671325684,
+    0.009427070617675781,
+    0.0,
+    0.0
+  ]
+}

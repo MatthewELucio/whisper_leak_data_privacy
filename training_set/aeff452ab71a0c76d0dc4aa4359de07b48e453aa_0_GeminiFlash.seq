@@ -1,0 +1,37 @@
+{
+  "local_port": 49794,
+  "remote_port": 443,
+  "prompt": "What does \"it's gonna be epic\" mean?",
+  "response": "\"It's gonna be epic\" is a phrase used to express **excitement and anticipation that something is going to be exceptionally good, impressive, amazing, or memorable.**\n\nHere's a breakdown:\n\n*   **Epic:** Implies something grand, larger than life, and significant. Think of ancient epic poems like the Iliad or the Odyssey - full of adventure, heroism, and lasting impact.\n*   **Gonna be:** Short for \"going to be,\" indicating a future event.\n*   **It:** Refers to the event, situation, or experience being discussed.\n\nSo, when someone says \"it's gonna be epic,\" they're saying that they believe the upcoming event or experience will be incredibly impressive, exciting, and unforgettable. It suggests a high level of expectation and enthusiasm.\n\nHere are some examples:\n\n*   \"The concert tonight is gonna be epic! I heard they're playing all their old hits.\"\n*   \"Our road trip to California is gonna be epic! We're stopping at so many cool places.\"\n*   \"The final battle in the movie is gonna be epic! I can't wait to see it.\"\n\nThe phrase has become quite common in informal conversation and online communication.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1257,
+    160,
+    246,
+    387,
+    388,
+    460,
+    437,
+    469,
+    512,
+    270,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.044728994369506836,
+    0.3224968910217285,
+    0.048857927322387695,
+    0.050199031829833984,
+    0.06059718132019043,
+    0.18633294105529785,
+    0.13405585289001465,
+    0.25276899337768555,
+    0.22076702117919922,
+    0.36067819595336914,
+    0.00898885726928711,
+    0.0,
+    0.0
+  ]
+}

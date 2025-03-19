@@ -1,0 +1,43 @@
+{
+  "local_port": 43984,
+  "remote_port": 443,
+  "prompt": "Is there any dual SIM mobile supporting 4G or 4G and 3G?",
+  "response": "Yes, absolutely! Dual SIM mobile phones supporting 4G (or a combination of 4G and 3G) are very common. In fact, most modern dual SIM phones support 4G on at least one of the SIM slots. Many also support VoLTE (Voice over LTE) for higher quality voice calls on 4G networks.\n\n**Here's what to keep in mind:**\n\n*   **4G on Both SIMs Simultaneously:** While most phones support 4G on one SIM, using 4G on *both* SIMs simultaneously can be less common or might impact battery life. Check the specific phone's specifications.\n*   **3G/2G Fallback:** Usually, the second SIM slot (if not actively using 4G) will default to 3G or 2G connectivity for calls and texts.\n*   **Region Specific:** Availability and network band compatibility can vary significantly by region. Ensure the phone you are considering supports the 4G/LTE bands used by your carriers.\n\n**How to Find Dual SIM 4G Phones:**\n\n1.  **Check Specifications:** Look for \"Dual SIM\" and \"4G/LTE\" in the phone's official specifications. Websites like GSMArena, PhoneArena, and the manufacturer's website are excellent resources.\n2.  **Retailer Websites:** Major online retailers like Amazon, Best Buy, and others often have filters that allow you to search for phones with dual SIM capabilities and 4G/LTE support.\n3.  **Carrier Websites:** Your mobile carrier might also offer dual SIM phones. Check their online stores or visit a retail location.\n\n**Note:** As technology evolves, you will see 5G becoming more prevalent on dual SIM devices as well.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    263,
+    322,
+    224,
+    353,
+    233,
+    347,
+    365,
+    479,
+    307,
+    394,
+    325,
+    207,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.04808402061462402,
+    0.4565110206604004,
+    0.0015950202941894531,
+    0.0030579566955566406,
+    0.07142901420593262,
+    0.07608795166015625,
+    0.14813709259033203,
+    0.20605087280273438,
+    0.2791252136230469,
+    0.31140780448913574,
+    0.3195509910583496,
+    0.33291101455688477,
+    0.2443540096282959,
+    0.012686967849731445,
+    0.0,
+    0.0
+  ]
+}

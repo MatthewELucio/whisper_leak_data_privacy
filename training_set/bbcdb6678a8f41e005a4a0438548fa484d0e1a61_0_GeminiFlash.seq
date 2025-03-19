@@ -1,0 +1,41 @@
+{
+  "local_port": 33314,
+  "remote_port": 443,
+  "prompt": "What do the lyrics to \"Tunak Tunak Tun\" mean in English?",
+  "response": "The lyrics to \"Tunak Tunak Tun\" are actually quite simple and repetitive, focusing on themes of **love, longing, and appreciation**. Here's a breakdown of the meaning:\n\n*   **\"Tunak Tunak Tun Daa Daa Daa\"**: This is the signature nonsensical phrase, likely used for its catchy sound and rhythm. It doesn't have a direct translation. Think of it as a musical hook.\n\n*   **\"Tunak Tunak Tun Tunak Tunak Tun Daa Daa Daa\"**: Repetition of the signature phrase, emphasizing its rhythmic quality.\n\n*   **\"Dil Mera Le Gayi\"**: Means \"You took my heart\" or \"You stole my heart.\"\n\n*   **\"Tu Oooo\"**: This is just an exclamation of emotion, like a sigh or expression of feeling.\n\n*   **\"Dil Mera Le Gayi Tu\"**:  Repetition of \"You took my heart.\"\n\n*   **\"Dil Dhadkaaye, Mujhe Tadpaaye\"**: \"Makes my heart beat, makes me suffer/torment.\"\n\n*   **\"Tu Hi Meri Jaan\"**: \"You are my life/soul.\"\n\n*   **\"Tu Hi Meri Shaan\"**: \"You are my pride/glory.\"\n\n*   **\"Tu Hi Mera Armaan\"**: \"You are my desire/wish.\"\n\n*   **\"Tu Hi Meri Pehchaan\"**: \"You are my identity/recognition.\" (This could also be interpreted as \"You are who I am known by.\")\n\n*   **\"Dhol Vajda Tun Tun Tun\"**: \"The drum is playing Tun Tun Tun\" (Onomatopoeia of the drum sound).\n\nEssentially, the song is a simple declaration of love and admiration. The singer is expressing deep affection for someone who has captured their heart and become an integral part of their life. The \"Tunak Tunak Tun\" phrases create a catchy and memorable backdrop for these heartfelt sentiments.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1425,
+    319,
+    246,
+    433,
+    386,
+    327,
+    351,
+    432,
+    276,
+    470,
+    254,
+    145,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.04548811912536621,
+    0.4083108901977539,
+    0.1173560619354248,
+    0.09221005439758301,
+    0.16924285888671875,
+    0.16608405113220215,
+    0.323760986328125,
+    0.2765071392059326,
+    0.42730188369750977,
+    0.3004460334777832,
+    0.40845298767089844,
+    0.11093902587890625,
+    0.013041019439697266,
+    0.0005550384521484375,
+    0.0
+  ]
+}

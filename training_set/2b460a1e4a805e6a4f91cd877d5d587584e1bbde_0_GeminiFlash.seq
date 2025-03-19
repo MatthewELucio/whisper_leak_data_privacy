@@ -1,0 +1,27 @@
+{
+  "local_port": 58342,
+  "remote_port": 443,
+  "prompt": "What is a good example of a sentence using the word \"satire\"?",
+  "response": "The political cartoon, a biting **satire** of the president's policies, sparked controversy and debate online.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1273,
+    178,
+    374,
+    234,
+    254,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.04966998100280762,
+    0.32094717025756836,
+    0.023683786392211914,
+    0.11006712913513184,
+    0.04109787940979004,
+    0.010061025619506836,
+    0.001461029052734375,
+    0.0
+  ]
+}

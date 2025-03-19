@@ -1,0 +1,37 @@
+{
+  "local_port": 52218,
+  "remote_port": 443,
+  "prompt": "How is Gursimran Khamba like in real life?",
+  "response": "From what I've gathered from interviews, articles, and accounts from people who've worked with him, Gursimran Khamba seems to be a complex and multifaceted individual. Here's a breakdown of what people say:\n\n*   **Intelligent and Witty:** Many describe him as sharp, quick-witted, and intellectually stimulating. He's known for his observational humor and ability to connect with audiences on an intellectual level.\n\n*   **Passionate and Driven:** He appears to be deeply passionate about comedy, social commentary, and using his platform for positive change.\n\n*   **Creative and Innovative:** He's seen as a creative force, always exploring new ideas and pushing boundaries.\n\n*   **Controversial:** In 2018, Khamba was accused of sexual misconduct. He denied the allegations, though he apologized for past behavior that may have caused discomfort. This obviously casts a shadow and colors perceptions of him.\n\nIt's important to remember that public perception is often shaped by media portrayals and personal experiences, and it's impossible to know someone fully without direct interaction.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    263,
+    379,
+    186,
+    477,
+    412,
+    397,
+    468,
+    261,
+    203,
+    192,
+    113
+  ],
+  "time_diffs": [
+    0.04472088813781738,
+    0.29978513717651367,
+    0.0014328956604003906,
+    0.11250615119934082,
+    0.06992292404174805,
+    0.2080700397491455,
+    0.11406397819519043,
+    0.2797379493713379,
+    0.3615729808807373,
+    0.16050100326538086,
+    0.011753082275390625,
+    0.0,
+    0.0
+  ]
+}

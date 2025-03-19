@@ -1,0 +1,29 @@
+{
+  "local_port": 40694,
+  "remote_port": 443,
+  "prompt": "Where is the physical location of my phone 2188503383?",
+  "response": "I am programmed to be a harmless AI assistant and cannot provide you with the location of a phone number. Sharing someone's location without their consent would be a violation of their privacy and potentially dangerous.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1259,
+    220,
+    305,
+    292,
+    208,
+    183,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.04656696319580078,
+    0.417633056640625,
+    0.0390470027923584,
+    0.053952932357788086,
+    0.061927080154418945,
+    0.041442155838012695,
+    0.006379842758178711,
+    0.0015659332275390625,
+    0.001650094985961914
+  ]
+}

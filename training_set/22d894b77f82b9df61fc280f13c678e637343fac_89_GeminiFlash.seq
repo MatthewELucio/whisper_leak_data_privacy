@@ -1,0 +1,27 @@
+{
+  "local_port": 37836,
+  "remote_port": 443,
+  "prompt": "Is it against the law to launder money?",
+  "response": "Yes, it is against the law to launder money in virtually every country in the world. Money laundering is a serious crime with significant legal consequences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1452,
+    252,
+    355,
+    278,
+    174,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.04571890830993652,
+    0.3932321071624756,
+    0.015635013580322266,
+    0.0820930004119873,
+    0.06814193725585938,
+    0.008748054504394531,
+    0.001603841781616211,
+    0.0
+  ]
+}

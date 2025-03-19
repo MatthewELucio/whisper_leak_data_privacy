@@ -1,0 +1,29 @@
+{
+  "local_port": 34244,
+  "remote_port": 443,
+  "prompt": "Which organ is supplied with most blood.?",
+  "response": "The **kidneys** are supplied with the most blood relative to their size and weight.\n\nWhile the liver processes a large volume of blood, the kidneys receive a disproportionately large amount to filter it and maintain fluid and electrolyte balance. Approximately 20-25% of the total cardiac output goes to the kidneys.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1278,
+    351,
+    227,
+    340,
+    451,
+    291,
+    184,
+    113
+  ],
+  "time_diffs": [
+    0.05975604057312012,
+    0.4120941162109375,
+    0.0037789344787597656,
+    0.061235904693603516,
+    0.1130681037902832,
+    0.1587989330291748,
+    0.00896906852722168,
+    0.003342866897583008,
+    0.0
+  ]
+}

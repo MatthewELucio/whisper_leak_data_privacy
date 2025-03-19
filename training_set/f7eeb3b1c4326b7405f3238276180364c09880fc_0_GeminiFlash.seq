@@ -1,0 +1,43 @@
+{
+  "local_port": 44096,
+  "remote_port": 443,
+  "prompt": "What are some foods that start with d?",
+  "response": "Okay, here are some foods that start with the letter \"D\":\n\n*   **Dairy:**\n    *   **Dairy products** (general category)\n    *   **Danish Blue Cheese**\n    *   **Danish Pastry**\n    *   **Dessert**\n\n*   **Drinks:**\n    *   **Daiquiri**\n    *   **Dandelion Tea**\n\n*   **Dishes/Meals:**\n    *   **Dumplings**\n    *   **Donburi**\n    *   **Deviled Eggs**\n    *   **Dolma** (Stuffed grape leaves)\n    *   **Dal** (Indian lentil stew)\n    *   **Doro Wat** (Ethiopian chicken stew)\n    *   **Dim Sum**\n\n*   **Fruits/Vegetables:**\n    *   **Dates**\n    *   **Dragon Fruit**\n    *   **Daikon Radish**\n    *   **Durian**\n\n*   **Meat/Seafood:**\n    *   **Duck**\n    *   **Drum Fish**\n    *   **Deer** (Venison)\n\n*   **Other:**\n    *   **Doughnuts/Donuts**\n    *   **Dips** (e.g. Dill Dip)\n    *   **Dressing** (e.g. Dijon Vinaigrette)\n    *   **Dill**\n    *   **Dark Chocolate**\n    *   **Digestives**\n    *   **Doghnuts**\n\nThis list is not exhaustive, but it covers a wide variety of foods starting with \"D\".",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    236,
+    202,
+    413,
+    180,
+    241,
+    232,
+    437,
+    395,
+    296,
+    422,
+    229,
+    207,
+    145,
+    113
+  ],
+  "time_diffs": [
+    0.04608511924743652,
+    0.36678099632263184,
+    0.0015058517456054688,
+    0.012386083602905273,
+    0.08680891990661621,
+    0.10525703430175781,
+    0.13185501098632812,
+    0.18118691444396973,
+    0.2820281982421875,
+    0.2412710189819336,
+    0.3391399383544922,
+    0.3922278881072998,
+    0.07219815254211426,
+    0.015411853790283203,
+    0.0,
+    0.00010609626770019531
+  ]
+}

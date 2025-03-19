@@ -1,0 +1,33 @@
+{
+  "local_port": 37776,
+  "remote_port": 443,
+  "prompt": "Who are the Impractical Jokers?",
+  "response": "The Impractical Jokers are a comedy troupe and the stars of the reality TV show of the same name. The group consists of four lifelong friends:\n\n*   **Joseph \"Joe\" Gatto** (left the show in 2021)\n*   **James \"Murr\" Murray**\n*   **Brian \"Q\" Quinn**\n*   **Salvatore \"Sal\" Vulcano**\n\nThey are known for performing hidden camera challenges where they dare each other to say or do embarrassing things in public. The joker who refuses a challenge or performs the worst gets a punishment at the end of each episode.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    257,
+    293,
+    316,
+    278,
+    451,
+    373,
+    308,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.047564029693603516,
+    0.41643190383911133,
+    0.0013649463653564453,
+    0.14229702949523926,
+    0.08707308769226074,
+    0.21511507034301758,
+    0.1810448169708252,
+    0.20599818229675293,
+    0.013870954513549805,
+    0.0013229846954345703,
+    0.00010395050048828125
+  ]
+}

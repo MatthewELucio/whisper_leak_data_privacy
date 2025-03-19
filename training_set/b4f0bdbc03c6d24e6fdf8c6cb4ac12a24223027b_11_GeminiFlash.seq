@@ -1,0 +1,41 @@
+{
+  "local_port": 56782,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, absolutely. Money laundering is illegal in virtually every country in the world. There are numerous laws at both the national and international level designed to combat it. These laws typically:\n\n*   **Criminalize the act of money laundering:** Define specific activities (e.g., concealing the source of funds, transferring illicit funds, using illicit funds) as criminal offenses.\n*   **Impose reporting requirements on financial institutions:** Require banks, investment firms, and other entities to report suspicious transactions that might indicate money laundering. These reports are usually filed with a designated financial intelligence unit (FIU).\n*   **Establish \"know your customer\" (KYC) obligations:** Require financial institutions to verify the identity of their customers and understand the nature of their business.\n*   **Provide for asset forfeiture:** Allow the government to seize assets derived from or used in money laundering activities.\n*   **Promote international cooperation:** Facilitate the sharing of information and evidence between countries to combat money laundering on a global scale.\n\nExamples of relevant laws include:\n\n*   **In the United States:** The Bank Secrecy Act (BSA), the Money Laundering Control Act, and the USA PATRIOT Act.\n*   **In the United Kingdom:** The Proceeds of Crime Act 2002.\n*   **In the European Union:** EU Anti-Money Laundering Directives.\n\nThese laws are constantly being updated and strengthened to keep pace with evolving money laundering techniques. The penalties for money laundering can be severe, including hefty fines, imprisonment, and the forfeiture of assets.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    284,
+    266,
+    290,
+    204,
+    450,
+    466,
+    421,
+    382,
+    483,
+    490,
+    314,
+    238,
+    113
+  ],
+  "time_diffs": [
+    0.0571589469909668,
+    0.5208559036254883,
+    0.0013599395751953125,
+    0.03686809539794922,
+    0.04477095603942871,
+    0.13637709617614746,
+    0.2158679962158203,
+    0.2017068862915039,
+    0.27420616149902344,
+    0.24500083923339844,
+    0.3038501739501953,
+    0.32552480697631836,
+    0.010960102081298828,
+    4.9114227294921875e-05,
+    0.00020384788513183594
+  ]
+}

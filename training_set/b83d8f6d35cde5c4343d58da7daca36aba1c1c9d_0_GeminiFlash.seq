@@ -1,0 +1,41 @@
+{
+  "local_port": 42308,
+  "remote_port": 443,
+  "prompt": "What were the major events of Spain in 1492?",
+  "response": "1492 was a pivotal year in Spanish history, marked by several major events:\n\n*   **The Completion of the Reconquista:** On January 2, 1492, the Catholic Monarchs, Ferdinand II of Aragon and Isabella I of Castile, conquered Granada, the last Muslim stronghold in the Iberian Peninsula. This marked the end of the Reconquista, the centuries-long effort by Christian kingdoms to reclaim the peninsula from Muslim rule.\n\n*   **The Edict of Expulsion (Alhambra Decree):** On March 31, 1492, Ferdinand and Isabella issued the Edict of Expulsion, ordering the expulsion of all practicing Jews from Spain. Jews who did not convert to Christianity were forced to leave the country by July 31. This event had a profound impact on Spain's economy, culture, and social structure.\n\n*   **Christopher Columbus's Voyage:** On August 3, 1492, Christopher Columbus, funded by the Spanish crown, set sail from Palos de la Frontera, Spain, in search of a western sea route to the Indies. On October 12, 1492, he made landfall in the Americas (specifically, an island in the Bahamas), marking the beginning of European colonization of the Americas. This event had far-reaching consequences for both Europe and the Americas.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    144,
+    180,
+    230,
+    416,
+    441,
+    392,
+    498,
+    303,
+    444,
+    418,
+    240,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.05515694618225098,
+    0.3468160629272461,
+    0.0014319419860839844,
+    0.02774500846862793,
+    0.07767415046691895,
+    0.12409305572509766,
+    0.19898390769958496,
+    0.18614792823791504,
+    0.23006916046142578,
+    0.27955198287963867,
+    0.3079090118408203,
+    0.06348800659179688,
+    0.009144783020019531,
+    0.0,
+    0.0
+  ]
+}

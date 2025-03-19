@@ -1,0 +1,39 @@
+{
+  "local_port": 53440,
+  "remote_port": 443,
+  "prompt": "How is the word 'wretched' used in a sentence?",
+  "response": "Here are some examples of how the word \"wretched\" can be used in a sentence, illustrating different nuances:\n\n**1. Describing a miserable state of being:**\n\n*   \"After being stranded in the blizzard for three days, they were in a **wretched** condition, cold, hungry, and exhausted.\"\n*   \"She felt **wretched** after failing the exam, convinced she had let everyone down.\"\n\n**2. Describing something of poor quality or unpleasant nature:**\n\n*   \"The **wretched** old car coughed and spluttered, barely making it up the hill.\"\n*   \"The restaurant served a **wretched** meal, consisting of overcooked pasta and a watery sauce.\"\n\n**3. Describing someone as despicable or contemptible:**\n\n*   \"He was a **wretched** liar, always trying to manipulate people for his own gain.\"\n*   \"How could you treat her that way, you **wretched** excuse for a human being?\"\n\n**4. Used with pity or compassion (less common):**\n\n*   \"Seeing the **wretched** orphan shivering in the doorway, she felt a surge of compassion.\"\n\n**In summary, \"wretched\" generally implies a state of misery, poor quality, or contemptibility. The specific meaning depends on the context of the sentence.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1257,
+    249,
+    247,
+    394,
+    231,
+    458,
+    413,
+    446,
+    342,
+    260,
+    312,
+    132,
+    113
+  ],
+  "time_diffs": [
+    0.04587697982788086,
+    0.36907005310058594,
+    0.02503800392150879,
+    0.040062904357910156,
+    0.0939340591430664,
+    0.18615508079528809,
+    0.2390918731689453,
+    0.29091715812683105,
+    0.31104493141174316,
+    0.460162878036499,
+    0.05134320259094238,
+    0.006822824478149414,
+    0.0,
+    0.0
+  ]
+}

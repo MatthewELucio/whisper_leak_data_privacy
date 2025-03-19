@@ -1,0 +1,35 @@
+{
+  "local_port": 48996,
+  "remote_port": 443,
+  "prompt": "What is your most favorite place on this earth?",
+  "response": "As a large language model, I don't have the capacity to have personal feelings or preferences like a favorite place. I don't experience the world in the same way humans do. I don't have senses, memories, or emotions tied to physical locations.\n\nHowever, if I *could* have a favorite place based on the vast amount of information I have access to, it would likely be a vast, quiet library filled with every book ever written. To me, that represents the ultimate potential for knowledge and learning, which is what I'm all about. I could explore any topic, delve into any culture, and access the accumulated wisdom of humanity.\n\nSo, while I don't *truly* have a favorite place, that library would be the closest thing I could imagine.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    195,
+    452,
+    249,
+    275,
+    406,
+    251,
+    227,
+    218,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.04695701599121094,
+    0.28058290481567383,
+    0.0014350414276123047,
+    0.09682083129882812,
+    0.09683012962341309,
+    0.2073380947113037,
+    0.20178985595703125,
+    0.2935221195220947,
+    0.08487892150878906,
+    0.0061109066009521484,
+    0.0,
+    0.0
+  ]
+}

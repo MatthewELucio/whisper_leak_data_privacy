@@ -1,0 +1,43 @@
+{
+  "local_port": 51746,
+  "remote_port": 443,
+  "prompt": "What does \"I always considered your feelings for your best interest. I wonder if you ever considered how I even feel about things, because you don't #needmesomealonetime\" mean?",
+  "response": "This statement is expressing a feeling of being unappreciated and possibly taken for granted in a relationship (likely a friendship or close personal relationship). Let's break it down:\n\n*   **\"I always considered your feelings for your best interest.\"** This indicates the speaker has consistently prioritized the other person's well-being and tried to make decisions or offer advice with their best interests at heart. They see themselves as caring and supportive.\n\n*   **\"I wonder if you ever considered how I even feel about things...\"** This is where the resentment creeps in. The speaker is questioning whether the other person has ever reciprocated the care and concern. They feel their own feelings have been overlooked or ignored. They doubt if the other person even thinks about how they feel or what they might need.\n\n*   **\"...because you don't #needmesomealonetime\"** This hashtag (or the phrase itself if it's just a statement) is the key to understanding the underlying need. They feel suffocated or overwhelmed by the other person's presence or demands. They crave some personal space and time to themselves, suggesting the other person might be overly reliant on them, demanding of their time, or simply not respecting their boundaries. They think the other person doesn't understand the need to have time to themselves.\n\n**In short, the speaker is saying:**\n\n> *\"I've always put you first and cared about your feelings. I'm starting to feel like you don't do the same for me. I really need some space and time alone, but you don't seem to recognize or respect that need.\"*\n\nThe tone is likely hurt, frustrated, and potentially passive-aggressive. The use of a hashtag suggests this frustration is being expressed somewhat indirectly, perhaps on social media or in a text message.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    235,
+    188,
+    362,
+    403,
+    442,
+    454,
+    496,
+    407,
+    514,
+    316,
+    369,
+    244,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.04834294319152832,
+    0.3857419490814209,
+    0.0014910697937011719,
+    0.003139019012451172,
+    0.0771019458770752,
+    0.07618594169616699,
+    0.19298315048217773,
+    0.16098594665527344,
+    0.26305103302001953,
+    0.29114794731140137,
+    0.35605406761169434,
+    0.2979288101196289,
+    0.28687000274658203,
+    0.004288196563720703,
+    0.0001327991485595703,
+    0.00011610984802246094
+  ]
+}

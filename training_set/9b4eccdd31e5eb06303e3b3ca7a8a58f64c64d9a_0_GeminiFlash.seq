@@ -1,0 +1,31 @@
+{
+  "local_port": 51716,
+  "remote_port": 443,
+  "prompt": "How did Vodafone get its name?",
+  "response": "Vodafone's name is a combination of two words:\n\n*   **VO** stands for **Voice**.\n*   **DA** stands for **Data**.\n*   **FONE** is a phonetic spelling of **Phone**.\n\nTherefore, Vodafone represents the company's focus on voice and data communication via mobile phones.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    178,
+    196,
+    232,
+    321,
+    290,
+    264,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.0490720272064209,
+    0.4306299686431885,
+    0.0012481212615966797,
+    0.0033359527587890625,
+    0.07748293876647949,
+    0.06987214088439941,
+    0.1793498992919922,
+    0.009775161743164062,
+    0.0015897750854492188,
+    0.0
+  ]
+}

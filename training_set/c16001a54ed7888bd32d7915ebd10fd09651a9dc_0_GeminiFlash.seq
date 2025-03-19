@@ -1,0 +1,37 @@
+{
+  "local_port": 49110,
+  "remote_port": 443,
+  "prompt": "Do Go-Back-N ARQ and Selective Repeat ARQ use cumulative acknowledgements or an acknowledgement for every individual packet?",
+  "response": "Here's the breakdown of how Go-Back-N and Selective Repeat ARQ handle acknowledgements:\n\n*   **Go-Back-N ARQ:** Uses **cumulative acknowledgements**.\n\n    *   The receiver acknowledges the *last* correctly received packet in order.\n    *   For example, if the receiver sends ACK 5, it implicitly acknowledges packets 1, 2, 3, 4, and 5.\n    *   If the sender doesn't receive an acknowledgement for a packet within a timeout, it resends that packet and all subsequent packets (that were sent after that unacknowledged packet). This can be inefficient.\n\n*   **Selective Repeat ARQ:** Uses **individual acknowledgements** (also called selective acknowledgements or SACKs).\n\n    *   The receiver acknowledges *each* correctly received packet, regardless of its order.\n    *   The receiver buffers out-of-order packets.\n    *   The sender only retransmits the packets that have not been acknowledged (allowing for more efficient use of bandwidth).\n    *   This requires more sophisticated buffering and management at both the sender and receiver.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    98,
+    445,
+    234,
+    462,
+    408,
+    467,
+    207,
+    325,
+    253,
+    226,
+    113
+  ],
+  "time_diffs": [
+    0.048497915267944336,
+    0.331287145614624,
+    0.0013628005981445312,
+    0.16877412796020508,
+    0.020880937576293945,
+    0.18899011611938477,
+    0.18328499794006348,
+    0.33484697341918945,
+    0.2939889430999756,
+    0.25899791717529297,
+    0.010317087173461914,
+    0.0,
+    0.0
+  ]
+}

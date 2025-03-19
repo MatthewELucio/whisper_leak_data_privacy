@@ -1,0 +1,41 @@
+{
+  "local_port": 60000,
+  "remote_port": 443,
+  "prompt": "How do I get Pikachu as my first Pok\u00e9mon in Pok\u00e9mon GO?",
+  "response": "Getting Pikachu as your first Pok\u00e9mon in Pok\u00e9mon GO is a fun little Easter egg! Here's how you do it:\n\n1.  **Start a New Game:** If you've already started playing Pok\u00e9mon GO, you'll need to create a new account.\n\n2.  **Ignore the Starters:** When Professor Willow first presents you with the starter Pok\u00e9mon (Bulbasaur, Charmander, and Squirtle), **don't choose any of them**.  Just walk away.\n\n3.  **Walk Away Repeatedly:** As you move, the starter Pok\u00e9mon will keep respawning around you. Continue to ignore them and walk away. This might take several attempts. You need to walk a reasonable distance away each time, basically out of their immediate spawn range.\n\n4.  **After 3-4 Attempts:** Eventually, after walking away from the initial three Pok\u00e9mon several times, Pikachu will appear alongside them as a fourth option.\n\n5.  **Choose Pikachu:** Now you can tap on Pikachu to select it as your starter.\n\n**Important Considerations:**\n\n*   **Patience Required:** This method requires patience. It may take several minutes of walking to get Pikachu to appear.\n*   **Doesn't Affect Gameplay Later:** Choosing Pikachu as your starter doesn't give you any significant advantage in the game. You can still catch the other starter Pok\u00e9mon later.\n*   **Works Every Time (As of the Current Game Version):** This method has been a consistent Easter egg since the game's launch and is expected to work, unless Niantic decides to remove it.\n\nEnjoy your Pikachu!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    119,
+    221,
+    250,
+    422,
+    374,
+    294,
+    508,
+    331,
+    319,
+    475,
+    232,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04509282112121582,
+    0.3585221767425537,
+    0.0014770030975341797,
+    0.030441999435424805,
+    0.05497288703918457,
+    0.09823989868164062,
+    0.18198204040527344,
+    0.1807849407196045,
+    0.2819340229034424,
+    0.2764091491699219,
+    0.3558158874511719,
+    0.3932809829711914,
+    0.010960102081298828,
+    0.0,
+    5.1021575927734375e-05
+  ]
+}

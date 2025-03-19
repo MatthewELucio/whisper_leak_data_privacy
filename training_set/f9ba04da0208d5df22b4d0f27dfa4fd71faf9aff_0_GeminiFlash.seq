@@ -1,0 +1,39 @@
+{
+  "local_port": 34850,
+  "remote_port": 443,
+  "prompt": "How long does weed stay in your blood?",
+  "response": "The detection window for weed in blood tests can vary quite a bit depending on several factors, including how often someone uses cannabis, how much they use, their metabolism, and the specific type of test used.\n\nIn general, infrequent users (those who use cannabis less than a few times a week) might have detectable levels in their blood for only a day or two after their last use.  Moderate users (several times a week) might have detectable levels for up to a week.  Heavy, chronic users could potentially test positive for up to a month or even longer in some cases.\n\nBlood tests typically look for THC (tetrahydrocannabinol), the main psychoactive compound in cannabis, and its metabolites.  THC itself is cleared from the blood relatively quickly, but metabolites can linger longer.\n\nIt's important to remember that these are just general guidelines, and individual results can vary. If you are concerned about a drug test, it is always best to abstain from using cannabis for as long as possible beforehand.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    208,
+    244,
+    363,
+    273,
+    436,
+    313,
+    515,
+    381,
+    372,
+    153,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.046324968338012695,
+    0.31139206886291504,
+    0.0011811256408691406,
+    0.026811838150024414,
+    0.06999897956848145,
+    0.09258913993835449,
+    0.25144195556640625,
+    0.18408703804016113,
+    0.31815099716186523,
+    0.2442948818206787,
+    0.02797102928161621,
+    0.010755062103271484,
+    5.1021575927734375e-05,
+    0.00017404556274414062
+  ]
+}

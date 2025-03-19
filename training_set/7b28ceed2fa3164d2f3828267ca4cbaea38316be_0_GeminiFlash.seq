@@ -1,0 +1,37 @@
+{
+  "local_port": 58156,
+  "remote_port": 443,
+  "prompt": "Does the new start up stay uncle allow admission to unmarried couples in delhi?",
+  "response": "I am sorry, I don't have access to real-time information, including the specific policies of Stay Uncle or any potential new startups in Delhi regarding unmarried couples. \n\nTo find out if a specific establishment allows unmarried couples, you will need to:\n\n1.  **Check their website:** Visit the Stay Uncle website (if it's the established company you mean) or the website of the new startup you're interested in. Look for a FAQ section or a policy page that addresses this issue.\n2.  **Contact them directly:** Call or email the establishment and ask them directly about their policy on unmarried couples. This is the most reliable way to get accurate information.\n3.  **Read reviews:** Look for reviews of the establishment on websites like Google Reviews, TripAdvisor, or Booking.com. Sometimes, reviewers will mention whether they were able to stay as an unmarried couple.\n\nKeep in mind that local laws and cultural norms can influence these policies. Some places might be more discreet or understanding than others.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1442,
+    286,
+    422,
+    448,
+    380,
+    412,
+    460,
+    431,
+    310,
+    304,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.04585099220275879,
+    0.31401801109313965,
+    0.02571702003479004,
+    0.054952144622802734,
+    0.10923981666564941,
+    0.2113189697265625,
+    0.19388699531555176,
+    0.2451481819152832,
+    0.3049938678741455,
+    0.07381606101989746,
+    0.011071920394897461,
+    0.00011205673217773438,
+    0.0
+  ]
+}

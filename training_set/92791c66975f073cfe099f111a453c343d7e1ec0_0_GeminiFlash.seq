@@ -1,0 +1,35 @@
+{
+  "local_port": 55240,
+  "remote_port": 443,
+  "prompt": "Is the word ''vocabulary'' singular or plural?",
+  "response": "The word \"vocabulary\" is generally considered **singular**.\n\nYou would say:\n\n*   \"My **vocabulary** is growing.\"\n*   \"That word is part of my **vocabulary**.\"\n\nHowever, it can sometimes be used in a plural sense, especially when referring to multiple distinct sets of words. For example:\n\n*   \"The students were tested on their **vocabularies** in French and Spanish.\" (Here, it refers to two separate vocabularies)\n\nBut the singular use is far more common.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    169,
+    342,
+    321,
+    382,
+    406,
+    467,
+    238,
+    196,
+    184,
+    113
+  ],
+  "time_diffs": [
+    0.04634499549865723,
+    0.39171385765075684,
+    0.0013661384582519531,
+    0.05478692054748535,
+    0.033570051193237305,
+    0.09630012512207031,
+    0.18889880180358887,
+    0.23197698593139648,
+    0.04212307929992676,
+    0.010389089584350586,
+    5.793571472167969e-05,
+    0.0004680156707763672
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 39190,
+  "remote_port": 443,
+  "prompt": "Will Katrina Kaif marry Salman Khan?",
+  "response": "There have been no official announcements or confirmations from either Katrina Kaif or Salman Khan about any plans to marry. Both actors are currently focused on their respective careers. Katrina Kaif is married to actor Vicky Kaushal.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1425,
+    252,
+    305,
+    212,
+    152,
+    153,
+    113
+  ],
+  "time_diffs": [
+    0.04527616500854492,
+    0.26247501373291016,
+    0.15486598014831543,
+    0.12709593772888184,
+    0.06803107261657715,
+    0.014019966125488281,
+    0.0013990402221679688,
+    9.5367431640625e-07
+  ]
+}

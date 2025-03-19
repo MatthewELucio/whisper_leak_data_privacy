@@ -1,0 +1,41 @@
+{
+  "local_port": 54816,
+  "remote_port": 443,
+  "prompt": "Can I be pregnant while having a missed period?",
+  "response": "Yes, it is possible to be pregnant while having a missed period. Here's why:\n\n*   **Implantation Bleeding:** Sometimes, early in pregnancy, a light spotting or bleeding can occur when the fertilized egg implants in the uterus. This can be mistaken for a light or shorter period.\n*   **Irregular Cycles:** If you have naturally irregular menstrual cycles, it can be difficult to pinpoint when your period is truly late, making it seem like you've missed a period when you might just be experiencing a longer cycle.\n*   **Other Causes of Missed Periods:** Missed periods can be caused by factors other than pregnancy, such as stress, hormonal imbalances, changes in weight, certain medications, or underlying medical conditions. If one of these factors is the reason for a missed period, you may later find out that you are pregnant if you conceived before the missed period began.\n*   **Early Miscarriage:** In some cases, a very early miscarriage (before you even know you're pregnant) can cause bleeding that might be mistaken for a period, even if it's slightly different than usual. You could test positive for pregnancy very early, then experience bleeding and think it's a period, unaware of the loss.\n\n**If you've missed a period and there's a chance you could be pregnant, it's best to take a pregnancy test.** Home pregnancy tests are readily available and can be very accurate, especially when taken a week or more after your missed period. If the test is positive or if you continue to have symptoms of pregnancy (nausea, fatigue, breast tenderness) even if the test is negative, it is important to see a healthcare provider to confirm the pregnancy and rule out any potential complications.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1441,
+    161,
+    284,
+    370,
+    303,
+    408,
+    453,
+    362,
+    461,
+    508,
+    251,
+    314,
+    219,
+    113
+  ],
+  "time_diffs": [
+    0.04633617401123047,
+    0.6212668418884277,
+    0.003759145736694336,
+    0.06522679328918457,
+    0.07688617706298828,
+    0.17723393440246582,
+    0.18805503845214844,
+    0.28722286224365234,
+    0.3341372013092041,
+    0.38838791847229004,
+    0.3395400047302246,
+    0.16117095947265625,
+    0.008543014526367188,
+    0.0,
+    0.0
+  ]
+}

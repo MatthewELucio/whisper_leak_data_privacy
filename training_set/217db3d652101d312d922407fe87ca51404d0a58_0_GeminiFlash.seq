@@ -1,0 +1,35 @@
+{
+  "local_port": 37356,
+  "remote_port": 443,
+  "prompt": "Should Bernie Sanders supporters go to Jill Stein or Hillary Clinton?",
+  "response": "In 2016, both Jill Stein and Hillary Clinton presented themselves as the better option for Bernie Sanders supporters, though for different reasons.\n\n*   **Jill Stein** appealed to Sanders supporters by positioning herself as the true progressive candidate. She aligned with Sanders on issues like free college tuition, universal healthcare, and tackling climate change. Her campaign argued that Clinton represented a continuation of the political establishment and would not enact the transformative changes that Sanders advocated for.\n\n*   **Hillary Clinton** emphasized her experience and pragmatism, arguing she was the most qualified candidate to defeat Donald Trump. While she differed from Sanders on some issues, she adopted some of his policy proposals, such as expanding access to healthcare and making college more affordable. Her campaign stressed the importance of party unity and warned that a vote for Stein would inadvertently help Trump win the election.\n\nUltimately, the decision of whether to support Stein or Clinton was a personal one for Sanders supporters, based on their individual priorities and values. Some may have prioritized ideological purity and supported Stein, while others may have prioritized defeating Trump and supported Clinton.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1375,
+    292,
+    425,
+    430,
+    484,
+    339,
+    312,
+    321,
+    223,
+    225,
+    113
+  ],
+  "time_diffs": [
+    0.04499101638793945,
+    0.38477492332458496,
+    0.07793998718261719,
+    0.11195802688598633,
+    0.21137118339538574,
+    0.20967793464660645,
+    0.3212299346923828,
+    0.25231194496154785,
+    0.11381316184997559,
+    0.01422882080078125,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 44248,
+  "remote_port": 443,
+  "prompt": "Who is the male actor in Maggie ad with ragini Khanna?",
+  "response": "The male actor in the Maggie ad with Ragini Khanna is **Rohit Suchanti**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    252,
+    193,
+    217,
+    244,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.04604816436767578,
+    0.44494199752807617,
+    0.0015959739685058594,
+    0.03814101219177246,
+    0.052922964096069336,
+    0.007903099060058594,
+    0.00160980224609375,
+    0.001608133316040039
+  ]
+}

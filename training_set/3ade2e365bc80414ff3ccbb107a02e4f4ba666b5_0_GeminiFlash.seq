@@ -1,0 +1,37 @@
+{
+  "local_port": 56042,
+  "remote_port": 443,
+  "prompt": "Do chipmunks bite people?",
+  "response": "While chipmunks *can* bite people, it's **rare** and usually only happens when they feel threatened, cornered, or are being hand-fed.\n\nHere's a breakdown:\n\n*   **Generally Avoidant:** Chipmunks are naturally timid creatures and prefer to avoid contact with humans. Their first instinct is to run away.\n*   **Biting is Defensive:** They will only bite if they feel they have no other escape. This might happen if you try to pick them up, corner them, or if they're protecting their young.\n*   **Hand-feeding Risks:** Habituation through hand-feeding can lead them to associate hands with food, increasing the chance of a nip if they feel you're not giving them food quickly enough, or if they accidentally bite while grabbing the food.\n*   **Health Concerns:** A bite from a chipmunk can carry the risk of bacterial infection. Although rare, they *can* transmit diseases like rabies, so medical attention is always recommended after a bite.\n\n**In summary, while chipmunks have teeth and can bite, it's unusual behavior. Avoid handling them and maintain a respectful distance to prevent any incidents.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    210,
+    190,
+    350,
+    444,
+    315,
+    417,
+    312,
+    437,
+    191,
+    216,
+    113
+  ],
+  "time_diffs": [
+    0.04747414588928223,
+    0.3052229881286621,
+    0.0015158653259277344,
+    0.08444499969482422,
+    0.09614109992980957,
+    0.20871496200561523,
+    0.20923304557800293,
+    0.2961409091949463,
+    0.33309102058410645,
+    0.2897789478302002,
+    0.01120615005493164,
+    0.0,
+    0.0
+  ]
+}

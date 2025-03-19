@@ -1,0 +1,31 @@
+{
+  "local_port": 56842,
+  "remote_port": 443,
+  "prompt": "Would someone be committing a crime if they laundered money?",
+  "response": "Yes, money laundering is a crime in most countries, including the United States. It involves concealing the origins of illegally obtained money, making it appear to come from a legitimate source.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    115,
+    349,
+    322,
+    341,
+    153,
+    190,
+    155,
+    113
+  ],
+  "time_diffs": [
+    0.048452138900756836,
+    0.29334092140197754,
+    0.0014300346374511719,
+    0.01263284683227539,
+    0.12182402610778809,
+    0.09705305099487305,
+    0.0077381134033203125,
+    0.006794929504394531,
+    0.0034160614013671875,
+    0.021124839782714844
+  ]
+}

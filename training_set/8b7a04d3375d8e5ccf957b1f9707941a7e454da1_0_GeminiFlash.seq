@@ -1,0 +1,39 @@
+{
+  "local_port": 35124,
+  "remote_port": 443,
+  "prompt": "Septoplasty at fortis?",
+  "response": "To provide you with information about Septoplasty at Fortis, I need some clarification. \"Fortis\" refers to a chain of hospitals. To give you the most relevant information, please specify:\n\n*   **Which Fortis hospital are you interested in?** (e.g., Fortis Hospital, Mohali; Fortis Memorial Research Institute, Gurugram; etc.)\n\nOnce you provide this, I can potentially help you find information on:\n\n*   **ENT Specialists/Surgeons at that Fortis location who perform Septoplasty:** Their qualifications, experience, and contact information.\n*   **Cost of Septoplasty:** This can vary significantly based on the complexity of the case, the type of anesthesia used, and the specific hospital.\n*   **Patient Reviews/Experiences:** Information about other patients' experiences with Septoplasty at that hospital (although remember to take these with a grain of salt and consult with a doctor).\n*   **Facilities and Technology:** Information on the hospital's ENT department and the technology they use for Septoplasty (e.g., endoscopic septoplasty).\n*   **Contact Information:** How to book a consultation with an ENT specialist at that Fortis hospital.\n\nIf you don't have a specific location in mind, I can still provide general information about Septoplasty and what to look for when choosing a surgeon and hospital.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    205,
+    438,
+    325,
+    464,
+    360,
+    307,
+    387,
+    454,
+    215,
+    278,
+    220,
+    113
+  ],
+  "time_diffs": [
+    0.04912590980529785,
+    0.3956930637359619,
+    0.0010340213775634766,
+    0.0988929271697998,
+    0.07701420783996582,
+    0.15611600875854492,
+    0.17089080810546875,
+    0.25414609909057617,
+    0.30017709732055664,
+    0.3764469623565674,
+    0.08737683296203613,
+    0.004199028015136719,
+    0.0007791519165039062,
+    0.0
+  ]
+}

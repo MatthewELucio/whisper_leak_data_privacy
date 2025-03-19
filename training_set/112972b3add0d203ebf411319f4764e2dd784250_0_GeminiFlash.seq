@@ -1,0 +1,35 @@
+{
+  "local_port": 52656,
+  "remote_port": 443,
+  "prompt": "What are the chances of the electoral college changing vote for Clinton?",
+  "response": "Following the 2016 election, there was a significant effort to persuade electors to change their votes, becoming what were known as \"faithless electors.\" However, these efforts were largely unsuccessful.\n\nHistorically, the number of faithless electors who have actually changed the outcome of a presidential election is zero. While there have been instances of individual electors casting votes for someone other than the candidate they were pledged to, it has never been enough to alter the election results.\n\nSeveral factors make it difficult for electors to change their votes:\n\n*   **State Laws:** Many states have laws in place to prevent or discourage faithless electors. These laws can include fines, disqualification, or even replacement of the elector.\n*   **Political Pressure:** Electors are often chosen because of their loyalty to the party and the candidate. They face considerable pressure from their party, campaign, and fellow supporters to uphold their pledge.\n*   **Historical Precedent:** The tradition of electors voting according to the popular vote within their state is deeply ingrained in the American political system.\n\nWhile the possibility of electors changing their votes technically exists, the chances of it happening on a scale large enough to alter the outcome of a presidential election are extremely remote.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1515,
+    308,
+    319,
+    324,
+    482,
+    463,
+    496,
+    415,
+    182,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.05091595649719238,
+    0.2922699451446533,
+    0.12191200256347656,
+    0.12882494926452637,
+    0.21906018257141113,
+    0.22410893440246582,
+    0.2860560417175293,
+    0.3221628665924072,
+    0.3184821605682373,
+    0.014979839324951172,
+    0.0,
+    0.0
+  ]
+}

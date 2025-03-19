@@ -1,0 +1,27 @@
+{
+  "local_port": 59222,
+  "remote_port": 443,
+  "prompt": "What is your opinion on masturbation?",
+  "response": "Masturbation is a normal and common sexual behavior. It's a way for people to explore their bodies, experience pleasure, and release sexual tension. Health organizations generally recognize it as a healthy and safe activity.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1269,
+    364,
+    312,
+    337,
+    164,
+    133,
+    113
+  ],
+  "time_diffs": [
+    0.04536795616149902,
+    0.27349305152893066,
+    0.18307089805603027,
+    0.09102606773376465,
+    0.07699394226074219,
+    0.0068089962005615234,
+    0.0015530586242675781,
+    0.0
+  ]
+}

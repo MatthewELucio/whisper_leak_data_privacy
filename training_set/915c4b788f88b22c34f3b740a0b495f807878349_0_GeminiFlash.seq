@@ -1,0 +1,43 @@
+{
+  "local_port": 45982,
+  "remote_port": 443,
+  "prompt": "How do I prepare myself for screening?",
+  "response": "To give you the best advice, I need a little more information!  What kind of screening are you preparing for?  For example, are you talking about:\n\n*   **Job interview screening?** (e.g., an initial phone call or video call)\n*   **Medical screening?** (e.g., cancer screening, STD testing, genetic testing)\n*   **Security screening?** (e.g., airport security, background check)\n*   **Substance use screening?** (e.g., drug test)\n*   **Other kind of screening?**\n\nOnce I know the type of screening, I can provide more specific and helpful guidance.\n\nIn the meantime, here are some general tips that might apply to many situations:\n\n**General Preparation Tips:**\n\n*   **Understand the purpose of the screening:**  Why is this screening being conducted? Knowing the goal can help you understand what to expect and prepare appropriately.\n*   **Know what to expect:**  Research the process.  Look for information online (official sources are best), ask people who have gone through the same screening, or contact the organization conducting the screening if you have questions.\n*   **Be honest and transparent:**  Generally, honesty is the best policy.  Withholding information or being deceptive can have negative consequences.\n*   **Be respectful and cooperative:**  Treat the person conducting the screening with respect, and follow their instructions carefully.\n*   **Get enough sleep:**  Being well-rested can help you stay calm and focused.\n*   **Stay calm:** Screenings can be stressful. Practice relaxation techniques like deep breathing to manage anxiety.\n*   **Have necessary information ready:** Make sure you have the documents, information, or materials you might need readily available.\n*   **Prepare questions:** If appropriate, prepare questions you have for the person conducting the screening.\n*   **Follow instructions carefully:** Pay close attention to any instructions you are given before, during, and after the screening.\n\n**Once you tell me the type of screening, I can give you tailored advice.** For example, if it's a job screening I can provide some additional tips.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    193,
+    429,
+    297,
+    385,
+    299,
+    268,
+    512,
+    455,
+    517,
+    322,
+    473,
+    268,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.046183109283447266,
+    0.27671194076538086,
+    0.0016219615936279297,
+    0.11358404159545898,
+    0.11004805564880371,
+    0.15192580223083496,
+    0.16125702857971191,
+    0.24196100234985352,
+    0.2869429588317871,
+    0.35795021057128906,
+    0.39817094802856445,
+    0.385422945022583,
+    0.3128960132598877,
+    0.011909961700439453,
+    0.0,
+    0.0
+  ]
+}

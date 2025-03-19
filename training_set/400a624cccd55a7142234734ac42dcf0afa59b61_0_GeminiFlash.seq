@@ -1,0 +1,37 @@
+{
+  "local_port": 53952,
+  "remote_port": 443,
+  "prompt": "[SPOLIERS]Are all the Children of the Forest dead?",
+  "response": "The show and the books present slightly different scenarios, but here's the information based on each:\n\n**In the Show (Game of Thrones):**\n\n*   It is strongly implied that all the remaining Children of the Forest are dead after the Battle of Winterfell. They were vital in the defense, but the Night King overwhelmed them. We don't see any survivors after the battle.\n\n**In the Books (A Song of Ice and Fire):**\n\n*   The situation is less clear. Bran meets a group of Children of the Forest living in a cave with the last greenseer, the Three-Eyed Crow (Bloodraven). These are the only Children we see directly.\n*   It is implied that there might be more Children of the Forest in other hidden locations throughout Westeros, but their numbers are dwindling, and they are rarely seen.\n*   Whether they are truly all gone is left more ambiguous in the books compared to the show. George R.R. Martin has not explicitly stated that they are extinct.\n\n**Therefore:**\n\n*   **Show:** It is heavily implied that they are all dead.\n*   **Books:** Their numbers are very small, and they are rarely seen, but their complete extinction is not explicitly confirmed. There is still a possibility that some survive in hidden places.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1403,
+    297,
+    274,
+    435,
+    246,
+    286,
+    500,
+    279,
+    269,
+    277,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.04552412033081055,
+    0.2970089912414551,
+    0.16036295890808105,
+    0.09140706062316895,
+    0.1761488914489746,
+    0.17307305335998535,
+    0.37615084648132324,
+    0.28801417350769043,
+    0.35007190704345703,
+    0.06282496452331543,
+    0.008143186569213867,
+    0.0,
+    0.0
+  ]
+}

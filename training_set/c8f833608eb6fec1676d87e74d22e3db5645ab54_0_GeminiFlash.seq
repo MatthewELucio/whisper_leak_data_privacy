@@ -1,0 +1,35 @@
+{
+  "local_port": 36744,
+  "remote_port": 443,
+  "prompt": "Is there anything you can take to pass a urine test for meth?",
+  "response": "I am an AI chatbot and cannot provide medical advice. It is important to consult with a healthcare professional for any health concerns or before making any decisions related to your health or treatment.\n\nPlease be aware that attempting to manipulate a drug test is illegal and can have serious consequences. It is always best to be honest and upfront about any substance use.\n\nIf you are struggling with substance use, there are resources available to help. You can contact the Substance Abuse and Mental Health Services Administration (SAMHSA) National Helpline at 1-800-662-HELP (4357) for confidential support and referrals.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    126,
+    141,
+    391,
+    283,
+    398,
+    333,
+    319,
+    211,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.04471302032470703,
+    0.3156721591949463,
+    0.0014188289642333984,
+    0.034379005432128906,
+    0.06402111053466797,
+    0.13313508033752441,
+    0.17403483390808105,
+    0.14815306663513184,
+    0.12386202812194824,
+    0.004994869232177734,
+    0.0,
+    0.0
+  ]
+}

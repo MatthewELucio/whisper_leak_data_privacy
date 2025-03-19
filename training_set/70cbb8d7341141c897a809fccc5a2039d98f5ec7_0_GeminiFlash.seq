@@ -1,0 +1,39 @@
+{
+  "local_port": 40068,
+  "remote_port": 443,
+  "prompt": "Can I use a same mobile number for two accounts in sbi for internet banking?",
+  "response": "No, you cannot use the same mobile number for two separate individual accounts for internet banking in SBI.\n\nSBI (and most banks) require a unique mobile number for each internet banking user ID linked to an individual account. This is for security purposes, specifically for:\n\n*   **Two-Factor Authentication (2FA):** OTPs (One-Time Passwords) are sent to your registered mobile number to verify transactions and login attempts. If the same number was linked to two accounts, it would be difficult to distinguish which account is being accessed and the security of the process would be compromised.\n*   **Account Alerts:** SMS alerts about transactions, account balances, and other important information are sent to the registered mobile number.\n*   **Security:** It acts as a key identifier and is used to reset passwords, unlock accounts, and provide other security-related functions.\n\n**In summary, each individual account should have its own unique registered mobile number for SBI internet banking.**\n\n**What can you do?**\n\n*   **Use different mobile numbers:** The simplest solution is to use a different mobile number for each account.\n*   **Combine accounts:** If possible, consider consolidating the accounts into a single account, if applicable to your situation.\n*   **Contact SBI:** Contact SBI directly to confirm their policy and explore possible alternatives, though it's highly unlikely they'll allow the same number for multiple independent internet banking accounts.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1439,
+    346,
+    235,
+    375,
+    301,
+    420,
+    481,
+    406,
+    507,
+    340,
+    304,
+    155,
+    113
+  ],
+  "time_diffs": [
+    0.04513907432556152,
+    0.412855863571167,
+    0.01877593994140625,
+    0.10708904266357422,
+    0.09197711944580078,
+    0.23011493682861328,
+    0.1619870662689209,
+    0.26415205001831055,
+    0.24453997611999512,
+    0.34424281120300293,
+    0.1985762119293213,
+    0.008566856384277344,
+    0.0,
+    0.0
+  ]
+}

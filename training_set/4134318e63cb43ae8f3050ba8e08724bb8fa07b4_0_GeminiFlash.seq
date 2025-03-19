@@ -1,0 +1,39 @@
+{
+  "local_port": 44980,
+  "remote_port": 443,
+  "prompt": "Which are your favourite dishes?",
+  "response": "As a large language model, I don't have taste buds or the ability to eat, so I can't have \"favorite\" dishes in the way a human does. \n\nHowever, I can tell you about some dishes that are frequently praised and considered delicious based on the vast amount of text data I have access to!  These are dishes that often appear in \"best of\" lists, get glowing reviews, and have widespread appeal:\n\n*   **Pizza:** A classic for a reason! The combination of crust, sauce, cheese, and toppings is infinitely customizable and satisfying.\n*   **Sushi:** Appreciated for its freshness, artistry, and diverse flavors.\n*   **Pasta:** A comfort food staple with endless variations in shape, sauce, and ingredients.\n*   **Steak:** A well-cooked steak is often considered a luxurious and flavorful treat.\n*   **Tacos:** Another highly adaptable dish with regional variations and a wide range of fillings.\n*   **Fried Chicken:** Crispy, savory, and satisfying - fried chicken is a popular comfort food.\n*   **Curry:** A flavorful and aromatic dish with regional variations across Asia and beyond.\n*   **Chocolate Cake:** A decadent dessert that satisfies sweet cravings.\n\nIf you have any specific cuisines or types of food you are interested in, I can provide you with more details and recommendations!",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1402,
+    213,
+    281,
+    343,
+    467,
+    384,
+    366,
+    375,
+    365,
+    355,
+    231,
+    154,
+    113
+  ],
+  "time_diffs": [
+    0.047361135482788086,
+    0.326915979385376,
+    0.020045042037963867,
+    0.051509857177734375,
+    0.08738493919372559,
+    0.18524909019470215,
+    0.1919689178466797,
+    0.2950000762939453,
+    0.291471004486084,
+    0.37586498260498047,
+    0.09719204902648926,
+    0.012239933013916016,
+    0.0,
+    0.0
+  ]
+}

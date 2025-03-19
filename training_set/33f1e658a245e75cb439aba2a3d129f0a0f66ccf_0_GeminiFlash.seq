@@ -1,0 +1,27 @@
+{
+  "local_port": 52070,
+  "remote_port": 443,
+  "prompt": "How many students get selected for a BSTAT in ISI each year?",
+  "response": "The Indian Statistical Institute (ISI) admits approximately **30 students** for the B.Stat (Bachelor of Statistics) program each year.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1456,
+    138,
+    266,
+    296,
+    307,
+    229,
+    113
+  ],
+  "time_diffs": [
+    0.045747995376586914,
+    0.3401150703430176,
+    0.01589798927307129,
+    0.07774710655212402,
+    0.047685861587524414,
+    0.00935506820678711,
+    0.0012869834899902344,
+    0.0
+  ]
+}

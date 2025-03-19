@@ -1,0 +1,37 @@
+{
+  "local_port": 49044,
+  "remote_port": 443,
+  "prompt": "When will people say thank you?",
+  "response": "That's a great question! People should say thank you when they:\n\n*   **Receive a gift:** This shows gratitude for the thought and effort behind the present.\n*   **Are offered help:** Whether it's a small favor or a significant act of assistance, expressing thanks acknowledges the other person's kindness.\n*   **Receive a service:** This includes things like waiters serving you food, store clerks helping you find something, or doctors providing medical care.\n*   **Receive a compliment:** A simple \"thank you\" acknowledges the compliment and the other person's positive intention.\n*   **Are invited to something:** Showing appreciation for the invitation is polite, even if you can't attend.\n*   **Are given a second chance or forgiveness:** Expressing gratitude shows you understand the value of their understanding and trust.\n*   **When someone does something nice for them, even if small.**\n*   **Basically, whenever someone does something that benefits you in some way.**\n\nUltimately, saying \"thank you\" is about acknowledging the other person's actions and expressing appreciation for their thoughtfulness or effort.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    93,
+    399,
+    446,
+    423,
+    462,
+    345,
+    374,
+    307,
+    179,
+    125,
+    113
+  ],
+  "time_diffs": [
+    0.04938101768493652,
+    0.41104912757873535,
+    0.00010895729064941406,
+    0.09732604026794434,
+    0.14484786987304688,
+    0.21299409866333008,
+    0.1681809425354004,
+    0.2790710926055908,
+    0.30716586112976074,
+    0.23073506355285645,
+    0.014651060104370117,
+    0.0,
+    0.0
+  ]
+}

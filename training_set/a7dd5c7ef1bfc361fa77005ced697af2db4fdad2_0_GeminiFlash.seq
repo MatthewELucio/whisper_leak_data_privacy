@@ -1,0 +1,37 @@
+{
+  "local_port": 48768,
+  "remote_port": 443,
+  "prompt": "How do jellyfish breath?",
+  "response": "Jellyfish don't have lungs or gills like humans or fish. Instead, they breathe through their skin! Here's how it works:\n\n*   **Diffusion:** Jellyfish bodies are very thin, and they are in direct contact with the oxygen-rich water around them. Oxygen from the water diffuses directly across their body surface into their cells. At the same time, carbon dioxide (a waste product of cellular respiration) diffuses out of their cells into the water.\n\n*   **Large Surface Area:** The simple body plan of a jellyfish, with its large surface area relative to its volume, facilitates this efficient exchange of gases.\n\n*   **Water Circulation:** Some jellyfish, especially larger ones, can use muscle contractions to circulate water around their bodies. This helps to ensure a constant supply of fresh, oxygenated water is available for diffusion.\n\nIn essence, jellyfish rely on a simple and elegant system of direct gas exchange through their skin, making use of the principles of diffusion and their unique body structure.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1323,
+    197,
+    240,
+    414,
+    407,
+    246,
+    326,
+    415,
+    300,
+    198,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.04446005821228027,
+    0.34865307807922363,
+    0.049890995025634766,
+    0.055899858474731445,
+    0.0928030014038086,
+    0.19227814674377441,
+    0.15589499473571777,
+    0.29813289642333984,
+    0.26239705085754395,
+    0.0725409984588623,
+    0.01297307014465332,
+    0.0,
+    0.0002009868621826172
+  ]
+}

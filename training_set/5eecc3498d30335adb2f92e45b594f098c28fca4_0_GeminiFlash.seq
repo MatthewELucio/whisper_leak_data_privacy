@@ -1,0 +1,31 @@
+{
+  "local_port": 33502,
+  "remote_port": 443,
+  "prompt": "Were humans around during the existence of dinosaur?",
+  "response": "No, humans were not around during the time of the dinosaurs, except for birds, which are dinosaurs. Dinosaurs lived during the Mesozoic Era, which ended about 66 million years ago. The first hominids (human ancestors) appeared much later, about 6 million years ago. Modern humans (Homo sapiens) have only been around for about 300,000 years.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    104,
+    242,
+    430,
+    252,
+    359,
+    171,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.04698801040649414,
+    0.3619270324707031,
+    0.0012218952178955078,
+    0.1134641170501709,
+    0.1702408790588379,
+    0.19305896759033203,
+    0.0759420394897461,
+    0.008867979049682617,
+    0.0012881755828857422,
+    6.699562072753906e-05
+  ]
+}

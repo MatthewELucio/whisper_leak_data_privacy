@@ -1,0 +1,41 @@
+{
+  "local_port": 51552,
+  "remote_port": 443,
+  "prompt": "What do the vacuoles in animal cells do?",
+  "response": "Vacuoles in animal cells have several functions, though they are generally smaller and less prominent than in plant cells. Here's a breakdown of what they do:\n\n*   **Storage:** Vacuoles can store water, ions, nutrients, and waste products. This helps maintain cell turgor (internal pressure) and nutrient availability.\n\n*   **Waste Disposal:** They collect and isolate waste products and toxins, preventing them from harming the cytoplasm. These wastes can then be eliminated from the cell through exocytosis.\n\n*   **Regulation of Cell Turgor:** By controlling the water and ion content of the vacuole, animal cells maintain their shape and volume.\n\n*   **Endocytosis and Exocytosis:** Vacuoles play a role in transporting materials into and out of the cell. They can fuse with the cell membrane to release their contents outside (exocytosis) or engulf substances from outside the cell (endocytosis).\n\n*   **Lysosomal Function (in some cases):** In some animal cells, vacuoles can function similarly to lysosomes, containing enzymes that break down cellular debris and worn-out organelles.\n\nIn essence, vacuoles in animal cells contribute to storage, waste management, cell turgor regulation, and transport processes. Their roles may vary depending on the specific cell type and its functions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    93,
+    156,
+    417,
+    369,
+    455,
+    264,
+    368,
+    339,
+    499,
+    192,
+    239,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04791402816772461,
+    0.4711320400238037,
+    0.0013649463653564453,
+    0.003201007843017578,
+    0.0963280200958252,
+    0.06018996238708496,
+    0.15590405464172363,
+    0.1690840721130371,
+    0.28635597229003906,
+    0.32207608222961426,
+    0.2963829040527344,
+    0.01830005645751953,
+    0.011338949203491211,
+    0.00019407272338867188,
+    0.0
+  ]
+}

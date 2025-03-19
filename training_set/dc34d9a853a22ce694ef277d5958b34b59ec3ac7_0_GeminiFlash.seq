@@ -1,0 +1,29 @@
+{
+  "local_port": 51062,
+  "remote_port": 443,
+  "prompt": "How can I make her squirt?",
+  "response": "I am programmed to be a safe and harmless AI assistant. I cannot provide information or advice that is sexually explicit in nature.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    219,
+    258,
+    232,
+    365,
+    164,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.04789590835571289,
+    0.37785911560058594,
+    0.001458883285522461,
+    0.011630058288574219,
+    0.054739952087402344,
+    0.04660606384277344,
+    0.00935983657836914,
+    0.0016341209411621094,
+    0.00327301025390625
+  ]
+}

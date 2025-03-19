@@ -1,0 +1,31 @@
+{
+  "local_port": 51610,
+  "remote_port": 443,
+  "prompt": "Does boob size matter during sex?",
+  "response": "Whether or not breast size matters during sex is subjective and varies greatly from person to person.\n\nSome people are highly attracted to larger breasts, while others prefer smaller breasts or are not particularly focused on breast size at all. For some, breasts are a primary erogenous zone, and they enjoy stimulation through kissing, touching, or other activities. For others, breasts may not play a significant role in their sexual experience.\n\nUltimately, the most important thing is that all partners are comfortable and enjoying the experience. Open communication about preferences can help ensure that everyone's needs are met.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1283,
+    435,
+    358,
+    419,
+    451,
+    255,
+    304,
+    210,
+    113
+  ],
+  "time_diffs": [
+    0.046949148178100586,
+    0.38231587409973145,
+    0.11560916900634766,
+    0.05394792556762695,
+    0.17718505859375,
+    0.19494080543518066,
+    0.08769607543945312,
+    0.009093046188354492,
+    0.0,
+    0.0015170574188232422
+  ]
+}

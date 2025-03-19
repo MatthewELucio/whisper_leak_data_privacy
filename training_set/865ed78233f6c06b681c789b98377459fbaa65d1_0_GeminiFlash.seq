@@ -1,0 +1,43 @@
+{
+  "local_port": 40728,
+  "remote_port": 443,
+  "prompt": "What would cause a comminuted fracture in the elbow?",
+  "response": "A comminuted fracture in the elbow is a serious injury where the bone breaks into three or more pieces.  Several factors can cause this type of fracture, generally involving high-energy trauma:\n\n*   **High-Impact Falls:** Falling from a significant height (e.g., a ladder, stairs, or during sports) and landing directly on the elbow or an outstretched hand can generate enough force to shatter the bone.\n\n*   **Motor Vehicle Accidents:** Car, motorcycle, or bicycle accidents can cause severe trauma to the elbow, leading to a comminuted fracture. This is especially true if the elbow directly impacts the dashboard or the ground.\n\n*   **Direct Blows:** A forceful direct blow to the elbow, such as from a heavy object or a direct hit during contact sports (e.g., hockey, football), can cause the bone to shatter.\n\n*   **Sports Injuries:**  Certain sports, especially those with high speeds or risks of falls or collisions, can increase the risk of a comminuted elbow fracture. Examples include skateboarding, skiing, snowboarding, and rollerblading.\n\n*   **Underlying Bone Conditions:** While less common as a primary cause, weakened bones due to conditions like osteoporosis, bone tumors, or infections can make the elbow more susceptible to a comminuted fracture, even from a less severe injury. In these cases, a fall that might normally cause a simple fracture could result in a comminuted one.\n\nThe specific bone or bones involved in a comminuted elbow fracture can vary, including the distal humerus (the end of the upper arm bone), the proximal ulna (the upper part of the forearm bone, including the olecranon or \"funny bone\"), and the proximal radius (the other forearm bone).\n\nIt's important to seek immediate medical attention if you suspect an elbow fracture.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    108,
+    305,
+    325,
+    257,
+    265,
+    402,
+    249,
+    352,
+    553,
+    410,
+    334,
+    279,
+    231,
+    113
+  ],
+  "time_diffs": [
+    0.047926902770996094,
+    0.5619630813598633,
+    0.0015048980712890625,
+    0.0015130043029785156,
+    0.08869504928588867,
+    0.08020305633544922,
+    0.1690540313720703,
+    0.18607592582702637,
+    0.24903607368469238,
+    0.2827000617980957,
+    0.3215658664703369,
+    0.3695549964904785,
+    0.27628111839294434,
+    0.01187896728515625,
+    0.0,
+    0.00019502639770507812
+  ]
+}

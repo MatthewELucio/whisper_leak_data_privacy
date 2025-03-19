@@ -1,0 +1,37 @@
+{
+  "local_port": 39534,
+  "remote_port": 443,
+  "prompt": "Would Donald Trump be the worst president in US history?",
+  "response": "That's a matter of opinion where reasonable people disagree. Different historians and political analysts have varying views on Trump's presidential performance and historical ranking.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    989,
+    416,
+    433,
+    432,
+    430,
+    427,
+    435,
+    440,
+    700,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.020313024520874023,
+    0.26171088218688965,
+    0.26306700706481934,
+    0.06097412109375,
+    0.09800410270690918,
+    0.09446382522583008,
+    0.08040499687194824,
+    0.08919811248779297,
+    0.09883999824523926,
+    0.08622884750366211,
+    0.07541918754577637,
+    0.00872492790222168,
+    9.5367431640625e-07
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "local_port": 40470,
+  "remote_port": 443,
+  "prompt": "All gay guys teeth really big?",
+  "response": "There is absolutely no evidence to support the claim that gay men have larger teeth than anyone else. This is a harmful stereotype.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1287,
+    406,
+    317,
+    308,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.04218912124633789,
+    0.29971790313720703,
+    0.13370203971862793,
+    0.04728198051452637,
+    0.006780147552490234,
+    0.0015518665313720703,
+    0.0
+  ]
+}

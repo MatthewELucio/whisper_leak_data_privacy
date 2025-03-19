@@ -1,0 +1,31 @@
+{
+  "local_port": 51130,
+  "remote_port": 443,
+  "prompt": "What is one decision you never regretted?",
+  "response": "Leaving my comfortable, stable job to pursue a passion project. It was terrifying at the time, a huge leap of faith. There were definitely moments of doubt and hardship, but the growth I experienced, the skills I developed, and the fulfillment I found made it all worthwhile. I learned so much about myself and what I'm capable of. Even if it hadn't ultimately been \"successful\" in a traditional sense, I still wouldn't regret taking the chance.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    135,
+    366,
+    438,
+    362,
+    441,
+    256,
+    238,
+    113
+  ],
+  "time_diffs": [
+    0.04476118087768555,
+    0.4146389961242676,
+    0.001561880111694336,
+    0.11246395111083984,
+    0.11796712875366211,
+    0.20910406112670898,
+    0.20565080642700195,
+    0.009371042251586914,
+    0.0014870166778564453,
+    0.0
+  ]
+}

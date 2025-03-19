@@ -1,0 +1,35 @@
+{
+  "local_port": 54296,
+  "remote_port": 443,
+  "prompt": "When is next Quora meetup in Mumbai?",
+  "response": "Unfortunately, I don't have access to a real-time, updated list of Quora meetups. Quora doesn't have a central, official calendar for all community events.\n\nHere's how you can find information about potential Quora meetups in Mumbai:\n\n*   **Check the Mumbai Quora Space:** Spaces are communities within Quora focused on specific topics or locations. Search for a Quora Space related to Mumbai and see if there are any discussions about meetups.\n*   **Search on Quora:** Use the Quora search bar with keywords like \"Quora meetup Mumbai,\" \"Quora community Mumbai,\" or similar phrases. Look for past threads or announcements.\n*   **Use social media:** Search on platforms like Twitter, LinkedIn, or Facebook for groups or hashtags related to Quora and Mumbai. Someone might be organizing something there.\n*   **Reach out to active Quora users in Mumbai:** If you've noticed users who are very active in the Mumbai area on Quora, you could try sending them a private message to inquire about potential meetups.\n\nGood luck finding a meetup!",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    231,
+    406,
+    226,
+    231,
+    480,
+    329,
+    267,
+    234,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.045053958892822266,
+    0.40194106101989746,
+    0.12173581123352051,
+    0.10391116142272949,
+    0.16304492950439453,
+    0.17427897453308105,
+    0.2658989429473877,
+    0.26711201667785645,
+    0.1742081642150879,
+    0.007092952728271484,
+    0.00024199485778808594,
+    0.0
+  ]
+}

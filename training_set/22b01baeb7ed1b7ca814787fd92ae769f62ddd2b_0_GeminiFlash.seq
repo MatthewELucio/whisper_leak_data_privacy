@@ -1,0 +1,35 @@
+{
+  "local_port": 38534,
+  "remote_port": 443,
+  "prompt": "Which one is better: the American Dream or the American dream? Dream with a capital letter or not?",
+  "response": "The better choice is **the American dream** (lowercase \"d\").\n\nHere's why:\n\n*   **Common Usage:** \"American dream\" has become a common idiom, and idioms are generally not capitalized unless they are proper nouns.\n*   **Not a Proper Noun:** The \"American dream\" refers to a general concept (the idea of upward mobility and prosperity attainable through hard work in the U.S.), not a specific entity or organization.\n\nWhile you might occasionally see \"American Dream\" with a capital \"D\", it's less common and usually used for emphasis or in a title (like a book or movie). In most contexts, lowercase is preferred and considered more grammatically correct.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    281,
+    144,
+    351,
+    260,
+    270,
+    464,
+    450,
+    218,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.050901174545288086,
+    0.38175082206726074,
+    0.0017561912536621094,
+    0.003259897232055664,
+    0.05910992622375488,
+    0.09204411506652832,
+    0.16223597526550293,
+    0.1609189510345459,
+    0.26017308235168457,
+    0.021724939346313477,
+    0.0,
+    0.0
+  ]
+}

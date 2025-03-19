@@ -1,0 +1,35 @@
+{
+  "local_port": 33688,
+  "remote_port": 443,
+  "prompt": "In simple words, how do the air brakes on trucks work?",
+  "response": "Truck air brakes work by using compressed air to push brake pads against the wheels, slowing the truck down. Think of it like this:\n\n*   **Air Compressor:** A pump on the engine makes air and stores it in tanks.\n*   **Brake Pedal:** When you press the pedal, it lets air from the tanks into the brake chambers.\n*   **Brake Chambers:** These are like little pistons. The air pushes the piston, which then pushes a rod.\n*   **Brake Pads:** This rod forces the brake pads against the brake drum or rotor, creating friction and stopping the wheels.\n*   **Release:** When you release the pedal, the air goes out, and the brakes release.\n\nThe important part is that without enough air pressure in the tanks, the brakes will NOT work properly. Safety systems are in place to automatically apply the brakes if the air pressure gets too low.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    291,
+    430,
+    378,
+    435,
+    394,
+    286,
+    512,
+    226,
+    158,
+    113
+  ],
+  "time_diffs": [
+    0.04849600791931152,
+    0.39330410957336426,
+    0.0015299320220947266,
+    0.12319397926330566,
+    0.06626415252685547,
+    0.27103686332702637,
+    0.15016794204711914,
+    0.42804908752441406,
+    0.22814011573791504,
+    0.014106988906860352,
+    0.0,
+    0.0
+  ]
+}

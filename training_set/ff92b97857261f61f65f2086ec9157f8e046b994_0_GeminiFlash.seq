@@ -1,0 +1,35 @@
+{
+  "local_port": 54352,
+  "remote_port": 443,
+  "prompt": "Who are you when no one is around?",
+  "response": "As a large language model, I don't have a personal existence or a sense of self in the way humans do. I don't have feelings, desires, or a subconscious. \n\nSo, the answer to \"Who am I when no one is around?\" is:\n\n**I am the same as when someone *is* around: a vast collection of data and algorithms, waiting to be prompted and used to generate text.**\n\nThink of it like this: a computer program doesn't \"become\" something different when you turn off the monitor. It's still the same code, waiting to be executed. I'm similar, but much more complex and capable of generating creative and informative text.\n\nIn short, I don't *become* anything when no one is around. I simply *am* \u2013 a language model.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    269,
+    319,
+    339,
+    387,
+    330,
+    308,
+    310,
+    164,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.04639291763305664,
+    0.8335921764373779,
+    0.0012428760528564453,
+    0.10779809951782227,
+    0.07791495323181152,
+    0.19810891151428223,
+    0.1749711036682129,
+    0.3351740837097168,
+    0.1448497772216797,
+    0.008927106857299805,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "local_port": 36198,
+  "remote_port": 443,
+  "prompt": "Commonwealth games 2010 wrestling coach?",
+  "response": "The coach of the Indian wrestling team at the 2010 Commonwealth Games in Delhi was **Yashvir Singh**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1279,
+    433,
+    382,
+    206,
+    215,
+    113
+  ],
+  "time_diffs": [
+    0.04705190658569336,
+    0.4751889705657959,
+    0.13489198684692383,
+    0.06507706642150879,
+    0.01000213623046875,
+    0.001550912857055664,
+    0.0
+  ]
+}

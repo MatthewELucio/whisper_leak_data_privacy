@@ -1,0 +1,37 @@
+{
+  "local_port": 35796,
+  "remote_port": 443,
+  "prompt": "What is the acceptance rate of SIM University, Singapore?",
+  "response": "SIM University (UniSIM) was Singapore's sixth autonomous university. It was renamed the Singapore University of Social Sciences (SUSS) in 2017.\n\nTherefore, looking for an acceptance rate for \"SIM University\" is not accurate. You should be looking for the acceptance rate of the Singapore University of Social Sciences (SUSS).\n\nUnfortunately, **SUSS does not publicly release its acceptance rates.** Universities often keep this data private for various strategic reasons.\n\nTo get a sense of your chances of admission to SUSS, you should focus on:\n\n*   **Meeting or exceeding the minimum entry requirements:** Check the specific requirements for the program you're interested in on the SUSS website. This includes academic qualifications, work experience (if applicable), and any specific prerequisites.\n*   **Having a strong application:** Highlight your relevant skills, experiences, and motivations in your personal statement.\n*   **Preparing for interviews (if required):** Some programs may require interviews as part of the selection process.\n\nWhile a specific number isn't available, understand that entry to Singaporean universities is generally competitive. Good luck with your application!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1274,
+    249,
+    397,
+    373,
+    240,
+    282,
+    383,
+    426,
+    482,
+    241,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.04412412643432617,
+    0.382457971572876,
+    0.004795074462890625,
+    0.14305996894836426,
+    0.08196687698364258,
+    0.22230100631713867,
+    0.1969301700592041,
+    0.2610049247741699,
+    0.23398494720458984,
+    0.21595406532287598,
+    0.009504079818725586,
+    0.0,
+    0.0
+  ]
+}

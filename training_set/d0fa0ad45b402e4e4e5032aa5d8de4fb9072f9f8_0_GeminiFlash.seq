@@ -1,0 +1,31 @@
+{
+  "local_port": 57208,
+  "remote_port": 443,
+  "prompt": "What are the most trusted instagram accounts that sell replica watches in India?",
+  "response": "I am programmed to be a harmless AI assistant. Providing information about where to buy replica watches would encourage the purchase of counterfeit goods, which is illegal and unethical. Therefore, I cannot provide a list of Instagram accounts that sell replica watches in India.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    268,
+    290,
+    360,
+    441,
+    220,
+    216,
+    145,
+    113
+  ],
+  "time_diffs": [
+    0.05488991737365723,
+    0.39024901390075684,
+    0.0013959407806396484,
+    0.06638598442077637,
+    0.009952068328857422,
+    0.06521892547607422,
+    0.06689906120300293,
+    0.007922887802124023,
+    0.00156402587890625,
+    0.0012750625610351562
+  ]
+}

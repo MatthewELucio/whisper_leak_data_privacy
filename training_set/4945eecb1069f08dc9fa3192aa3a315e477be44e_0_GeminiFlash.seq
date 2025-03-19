@@ -1,0 +1,35 @@
+{
+  "local_port": 56990,
+  "remote_port": 443,
+  "prompt": "How many questions are asked on Quora each minute on average?",
+  "response": "While Quora doesn't publicly release real-time data on the number of questions asked per minute, we can estimate it based on available information.\n\n*   **Past Estimates:** In the past, estimates have ranged from hundreds to thousands of questions per hour.\n*   **Quora's Scale:** Quora is a large platform with millions of users.\n*   **Activity Fluctuation:** Question volume likely varies significantly depending on the time of day, day of the week, and current events.\n\nGiven these factors, a conservative estimate would be:\n\n*   **Assume at least 600 questions per hour:** 600 questions / 60 minutes = 10 questions per minute\n*   **Assume a more realistic 1800 questions per hour:** 1800 questions / 60 minutes = 30 questions per minute\n\nTherefore, the average is likely somewhere between **10 to 30 questions** per minute on Quora.\n\n*Important Note:* This is an estimation. The actual number could be higher or lower.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1449,
+    256,
+    358,
+    234,
+    286,
+    454,
+    445,
+    293,
+    147,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.044909000396728516,
+    0.2655680179595947,
+    0.14852690696716309,
+    0.04949593544006348,
+    0.22394919395446777,
+    0.1953749656677246,
+    0.24682903289794922,
+    0.25313282012939453,
+    0.16540002822875977,
+    0.009099960327148438,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 57148,
+  "remote_port": 443,
+  "prompt": "What does ICS mean?",
+  "response": "ICS can stand for several things, depending on the context. Here are some of the most common meanings:\n\n*   **Incident Command System (ICS):** This is a standardized, on-scene management system designed to enable effective and efficient incident management by integrating a combination of facilities, equipment, personnel, procedures, and communications operating within a common organizational structure. It's used by emergency responders (fire, police, medical, etc.) to manage emergencies.\n\n*   **Industrial Control Systems (ICS):** These are systems used to control industrial processes, such as those found in manufacturing plants, power generation facilities, and oil refineries. They typically include supervisory control and data acquisition (SCADA) systems, programmable logic controllers (PLCs), and distributed control systems (DCS).\n\n*   **Internet Connection Sharing (ICS):** A feature in Windows operating systems that allows you to share your computer's internet connection with other devices on your network.\n\n*   **Intercollegiate Studies Institute (ISI):** A non-profit educational organization that promotes conservative principles in higher education. (Formerly, ISI stood for Intercollegiate Society of Individualists).\n\n**In summary:**\n*   If you're talking about emergency response or disaster management, ICS likely refers to the **Incident Command System.**\n*   If you're discussing technology used in factories or industrial settings, ICS probably refers to **Industrial Control Systems.**\n*   In a computer networking context, it could mean **Internet Connection Sharing.**\n\nTo determine the specific meaning, consider the surrounding context in which you encountered the abbreviation.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    236,
+    151,
+    279,
+    236,
+    371,
+    482,
+    479,
+    336,
+    430,
+    432,
+    205,
+    139,
+    113
+  ],
+  "time_diffs": [
+    0.04517102241516113,
+    0.35759806632995605,
+    0.0015959739685058594,
+    0.04343008995056152,
+    0.015095949172973633,
+    0.10697293281555176,
+    0.2548789978027344,
+    0.21407198905944824,
+    0.28002500534057617,
+    0.25984907150268555,
+    0.31226396560668945,
+    0.32367396354675293,
+    0.008236169815063477,
+    0.0,
+    0.0
+  ]
+}

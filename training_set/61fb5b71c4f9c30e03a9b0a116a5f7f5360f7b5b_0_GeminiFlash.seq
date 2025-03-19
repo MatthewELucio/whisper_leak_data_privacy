@@ -1,0 +1,27 @@
+{
+  "local_port": 53964,
+  "remote_port": 443,
+  "prompt": "Where did Adam and Eve live?",
+  "response": "According to the Book of Genesis, Adam and Eve lived in the **Garden of Eden**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    219,
+    290,
+    211,
+    216,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.04931807518005371,
+    0.383530855178833,
+    0.001394033432006836,
+    0.0031020641326904297,
+    0.059190988540649414,
+    0.008065938949584961,
+    0.0020699501037597656,
+    0.0
+  ]
+}

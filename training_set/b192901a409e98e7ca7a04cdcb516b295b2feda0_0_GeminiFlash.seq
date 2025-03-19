@@ -1,0 +1,43 @@
+{
+  "local_port": 43168,
+  "remote_port": 443,
+  "prompt": "When does a Senate motion require 3/5 vote?",
+  "response": "A Senate motion requires a 3/5 vote (which is 60 out of 100 Senators, assuming no vacancies) in several specific circumstances. Here are the most common:\n\n*   **Cloture:** This is the most frequent situation. Cloture is a procedure to end debate on a bill or other matter before the Senate (like a nomination). This is used to overcome a filibuster. To invoke cloture, a motion requires 3/5 of the *Senators duly chosen and sworn*, meaning those who are actually serving.\n\n*   **Constitutional Amendments:** When the Senate proposes an amendment to the U.S. Constitution, it requires a 2/3 vote, not 3/5.\n\n*   **Treaties:** Ratifying a treaty with a foreign nation requires a 2/3 vote, not 3/5.\n\n*   **Expelling a Member:** Expelling a Senator requires a 2/3 vote, not 3/5.\n\n*   **Overriding a Presidential Veto:** Overriding a presidential veto requires a 2/3 vote in both the House and the Senate, not 3/5.\n\n**Important Considerations:**\n\n*   **Quorum:** These vote requirements assume a quorum is present. A quorum is the minimum number of members who must be present for the Senate to conduct business. Typically, a quorum is a simple majority (51 Senators if there are no vacancies).\n*   **Rule Changes:** While a simple majority can change the rules of the Senate, any attempt to weaken the filibuster by lowering the cloture threshold often faces intense opposition and can itself be subject to a filibuster.\n\nIn summary, the 3/5 vote is most notably associated with invoking cloture to end debate and overcome a filibuster in the Senate. However, other important actions, such as ratifying treaties and proposing constitutional amendments, require a higher 2/3 vote.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    99,
+    191,
+    357,
+    233,
+    334,
+    452,
+    442,
+    386,
+    317,
+    388,
+    293,
+    240,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.04670000076293945,
+    0.35703516006469727,
+    0.0015439987182617188,
+    0.10123801231384277,
+    0.11760187149047852,
+    0.1576681137084961,
+    0.19401097297668457,
+    0.2920858860015869,
+    0.2919461727142334,
+    0.3189117908477783,
+    0.3660562038421631,
+    0.3475058078765869,
+    0.08146214485168457,
+    0.008194923400878906,
+    0.0,
+    0.0
+  ]
+}

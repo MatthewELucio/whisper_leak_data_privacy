@@ -1,0 +1,33 @@
+{
+  "local_port": 59706,
+  "remote_port": 443,
+  "prompt": "Does coffee increase arousal? If so, how?",
+  "response": "Coffee, due to its caffeine content, can indeed increase arousal in several ways, although it's important to distinguish between general physiological arousal and sexual arousal. Here's a breakdown:\n\n**How Caffeine Increases Physiological Arousal:**\n\n*   **Stimulates the Central Nervous System (CNS):** Caffeine is a stimulant. It works by blocking adenosine,",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    232,
+    224,
+    244,
+    341,
+    452,
+    248,
+    237,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.04533505439758301,
+    0.5745959281921387,
+    0.0014219284057617188,
+    0.014250040054321289,
+    0.014095067977905273,
+    0.07805895805358887,
+    0.22502708435058594,
+    0.22521591186523438,
+    0.007946014404296875,
+    0.0014429092407226562,
+    0.0
+  ]
+}

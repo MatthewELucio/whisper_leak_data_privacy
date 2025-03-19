@@ -1,0 +1,35 @@
+{
+  "local_port": 40704,
+  "remote_port": 443,
+  "prompt": "Y YOU WILL WAIT ME?",
+  "response": "It sounds like you're asking \"Why will you wait for me?\"\n\nTo answer that, I need more information! I am an AI, so I don't \"wait\" in the same way a person does. But I can help you depending on what you need.\n\nCould you tell me more about what you're expecting me to wait for? For example:\n\n*   **Are you expecting me to remember something?** (e.g., a question, a topic)\n*   **Are you expecting me to generate a response after you provide more information?**\n*   **Are you using \"wait\" in a figurative sense?**\n\nOnce I understand what you mean, I can give you a better answer.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    269,
+    286,
+    290,
+    384,
+    247,
+    257,
+    270,
+    280,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.048185110092163086,
+    0.3114159107208252,
+    0.0014159679412841797,
+    0.11431002616882324,
+    0.07712411880493164,
+    0.15613985061645508,
+    0.2280881404876709,
+    0.3000600337982178,
+    0.027066946029663086,
+    0.006448030471801758,
+    0.0,
+    0.0
+  ]
+}

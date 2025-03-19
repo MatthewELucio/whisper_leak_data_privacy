@@ -1,0 +1,29 @@
+{
+  "local_port": 32816,
+  "remote_port": 443,
+  "prompt": "Is Kyiv (Kiev) radioactive?",
+  "response": "No, Kyiv is not radioactive. While the Chernobyl disaster did affect areas north of Kyiv, the city itself was not heavily contaminated and is considered safe for living and visiting. Extensive remediation efforts have been undertaken in the affected areas closer to Chernobyl. Current radiation levels in Kyiv are within normal, safe limits.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    186,
+    310,
+    241,
+    370,
+    172,
+    197,
+    113
+  ],
+  "time_diffs": [
+    0.046807050704956055,
+    0.3231041431427002,
+    0.0014598369598388672,
+    0.15180301666259766,
+    0.13554596900939941,
+    0.12917804718017578,
+    0.004745006561279297,
+    0.0018470287322998047,
+    0.001447916030883789
+  ]
+}

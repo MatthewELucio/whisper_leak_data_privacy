@@ -1,0 +1,37 @@
+{
+  "local_port": 47216,
+  "remote_port": 443,
+  "prompt": "Where should I put my cash savings - an account that yields 5% on sums up to $2000, or another account that yields 1.5% but already has $15,000 in it?",
+  "response": "Here's how to break down this decision:\n\n**Scenario 1: 5% on up to $2000**\n\n*   You'll earn 5% on the first $2000.\n*   Any money beyond $2000 in this account will likely earn a much lower interest rate.\n\n**Scenario 2: 1.5% on $15,000**\n\n*   You're earning 1.5% on the entire $15,000.\n\n**Let's calculate the annual interest earned in each scenario:**\n\n*   **Scenario 1:** 5% of $2000 = $100 per year\n*   **Scenario 2:** 1.5% of $15,000 = $225 per year\n\n**Conclusion:**\n\nBased purely on the interest earned, **the 1.5% account with $15,000 is the better option because it will generate more money for you.** $225 per year is greater than $100 per year.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    145,
+    332,
+    281,
+    237,
+    389,
+    442,
+    328,
+    399,
+    190,
+    143,
+    113
+  ],
+  "time_diffs": [
+    0.045166015625,
+    0.29152989387512207,
+    0.0015180110931396484,
+    0.08098387718200684,
+    0.0950930118560791,
+    0.16454219818115234,
+    0.1470029354095459,
+    0.2046658992767334,
+    0.20435810089111328,
+    0.2059650421142578,
+    0.011040925979614258,
+    4.291534423828125e-05,
+    6.008148193359375e-05
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 39584,
+  "remote_port": 443,
+  "prompt": "What is the best christian denomination?",
+  "response": "That's a really interesting question! The thing is, there's no single \"best\" Christian denomination. What makes a denomination a good fit really depends on the individual and what they're looking for in their faith.\n\nDifferent denominations have different approaches to worship, interpreting the Bible, and how they structure their church community. Some denominations are very traditional and emphasize ritual, while others are more contemporary and focus on personal experience. You'll find variations in beliefs about things like communion, baptism, and the role of the church in society.\n\nUltimately, the \"best\" denomination is the one that helps a person connect with God, live out their faith in a meaningful way, and find a supportive community. A lot of people find it helpful to explore different denominations, talk to people from various churches, and see what resonates with them personally.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    188,
+    380,
+    268,
+    455,
+    442,
+    347,
+    398,
+    175,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.05235004425048828,
+    0.38521409034729004,
+    0.0014760494232177734,
+    0.07651090621948242,
+    0.09088301658630371,
+    0.23014402389526367,
+    0.25513696670532227,
+    0.27080392837524414,
+    0.12202095985412598,
+    0.007953166961669922,
+    0.0,
+    0.0
+  ]
+}

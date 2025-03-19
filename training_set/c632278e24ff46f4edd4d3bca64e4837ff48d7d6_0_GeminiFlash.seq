@@ -1,0 +1,37 @@
+{
+  "local_port": 51760,
+  "remote_port": 443,
+  "prompt": "Which country invented the sandwich?",
+  "response": "The sandwich, as we know it, is generally attributed to **England**.\n\nMore specifically, it's associated with **John Montagu, the 4th Earl of Sandwich (1718-1792)**. While he didn't \"invent\" the idea of putting food between bread, he popularized it in a way that led to it being named after him.\n\nThe story goes that he wanted a meal he could eat without getting up from his gambling table (or other activity, depending on the source). He asked his servants to bring him meat between two slices of bread. This allowed him to eat with one hand while continuing his activities. Others began to order \"the same as Sandwich,\" and the name stuck.\n\nSo, while the *concept* of bread and fillings existed before, the *sandwich* as a named and popular food item originated in England.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    122,
+    260,
+    437,
+    394,
+    408,
+    298,
+    474,
+    312,
+    196,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.050605058670043945,
+    0.42947888374328613,
+    0.0013201236724853516,
+    0.036708831787109375,
+    0.0609130859375,
+    0.07899785041809082,
+    0.16999006271362305,
+    0.22228693962097168,
+    0.2969691753387451,
+    0.22455596923828125,
+    0.012996912002563477,
+    0.0,
+    0.0
+  ]
+}

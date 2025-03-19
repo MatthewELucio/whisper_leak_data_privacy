@@ -1,0 +1,31 @@
+{
+  "local_port": 53658,
+  "remote_port": 443,
+  "prompt": "Is a 19-year-old person considered a teenager? Do read description.",
+  "response": "No, a 19-year-old is not generally considered a teenager.\n\n**Teenager** is typically defined as someone between the ages of 13 and 19 *inclusive*.\n\nWhile 19 is part of the *teens* family of numbers, once you hit the big 2-0, you are in the next demographic. ",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    224,
+    230,
+    434,
+    260,
+    389,
+    305,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.04517817497253418,
+    0.3011789321899414,
+    0.0013730525970458984,
+    0.08014988899230957,
+    0.12470793724060059,
+    0.1801149845123291,
+    0.017074108123779297,
+    0.012901067733764648,
+    0.0015208721160888672,
+    0.0
+  ]
+}

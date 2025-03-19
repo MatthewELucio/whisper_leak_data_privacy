@@ -1,0 +1,33 @@
+{
+  "local_port": 33824,
+  "remote_port": 443,
+  "prompt": "What do you think China food?",
+  "response": "Chinese food is incredibly diverse and varies greatly depending on the region. Some popular examples include:\n\n*   **Cantonese:** Known for its stir-fries, dim sum, and roasted meats.\n*   **Sichuan:** Famous for its bold and spicy flavors, often using Sichuan peppercorns.\n*   **Hunan:** Similar to Sichuan but often uses fresh chili peppers instead of Sichuan peppercorns.\n*   **Jiangsu:** Emphasizes delicate flavors and seafood dishes.\n*   **Zhejiang:** Known for its light and fresh flavors, often using vinegar and sugar.\n\nThere are also countless regional variations and dishes within each of these cuisines, making Chinese food a truly vast and exciting culinary landscape.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    195,
+    299,
+    422,
+    258,
+    367,
+    456,
+    139,
+    225,
+    113
+  ],
+  "time_diffs": [
+    0.04500699043273926,
+    0.27269911766052246,
+    0.0014119148254394531,
+    0.12256288528442383,
+    0.0959920883178711,
+    0.12711501121520996,
+    0.19988107681274414,
+    0.28808093070983887,
+    0.009639978408813477,
+    0.00012612342834472656,
+    0.0017368793487548828
+  ]
+}

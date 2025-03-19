@@ -1,0 +1,27 @@
+{
+  "local_port": 59102,
+  "remote_port": 443,
+  "prompt": "If someone launders money, do they break the law?",
+  "response": "Yes, money laundering is a crime in most countries.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    137,
+    363,
+    374,
+    180,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.04660606384277344,
+    0.41870713233947754,
+    0.0014309883117675781,
+    0.010306835174560547,
+    0.04812312126159668,
+    0.008944034576416016,
+    0.0015988349914550781,
+    0.0
+  ]
+}

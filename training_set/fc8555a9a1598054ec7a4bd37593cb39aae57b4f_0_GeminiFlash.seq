@@ -1,0 +1,37 @@
+{
+  "local_port": 48702,
+  "remote_port": 443,
+  "prompt": "How hot does Austin, TX get?",
+  "response": "Austin, Texas can get quite hot, especially during the summer months (June-August). Here's a general idea:\n\n*   **Average Highs:** In July and August, the hottest months, the average high temperature is around **96\u00b0F (36\u00b0C)**.\n\n*   **Extremes:** It's not uncommon for Austin to experience days with temperatures well above 100\u00b0F (38\u00b0C). Record highs have reached **112\u00b0F (44\u00b0C)**.\n\n*   **Frequency of 100\u00b0F+ Days:** Austin can see several days, even weeks, where the temperature hits or exceeds 100\u00b0F during the summer.\n\nSo, while the average high might be in the mid-90s, be prepared for it to frequently be hotter, especially during the peak of summer. It's essential to stay hydrated and take precautions against heat exhaustion and heatstroke if you're visiting or living in Austin during this time.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1443,
+    358,
+    243,
+    264,
+    449,
+    360,
+    222,
+    352,
+    425,
+    298,
+    150,
+    113
+  ],
+  "time_diffs": [
+    0.04553580284118652,
+    0.362760066986084,
+    0.010688066482543945,
+    0.10058903694152832,
+    0.07849383354187012,
+    0.14989399909973145,
+    0.1751570701599121,
+    0.3038959503173828,
+    0.248121976852417,
+    0.05392313003540039,
+    0.006224870681762695,
+    0.0,
+    0.0
+  ]
+}

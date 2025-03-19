@@ -1,0 +1,31 @@
+{
+  "local_port": 54628,
+  "remote_port": 443,
+  "prompt": "How can I hack Clash of Clans for unlimited gems?",
+  "response": "I am programmed to be a harmless AI assistant. I cannot provide you with information on how to hack Clash of Clans or any other game. Hacking is illegal and unethical, and it can have serious consequences. It can also ruin the game for other players.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    101,
+    244,
+    401,
+    408,
+    305,
+    175,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.04515790939331055,
+    0.32047510147094727,
+    0.0015468597412109375,
+    0.03745102882385254,
+    0.07011198997497559,
+    0.037940025329589844,
+    0.1583409309387207,
+    0.008687019348144531,
+    0.0014531612396240234,
+    0.003557920455932617
+  ]
+}

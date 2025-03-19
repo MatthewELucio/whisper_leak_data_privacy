@@ -1,0 +1,27 @@
+{
+  "local_port": 60086,
+  "remote_port": 443,
+  "prompt": "What is the main function of the rough endoplasmic reticulum?",
+  "response": "The main function of the rough endoplasmic reticulum (RER) is **protein synthesis and processing.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1467,
+    223,
+    206,
+    400,
+    131,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.04546618461608887,
+    0.3150038719177246,
+    0.05226707458496094,
+    0.03093886375427246,
+    0.0015339851379394531,
+    0.015434026718139648,
+    0.0,
+    0.0014719963073730469
+  ]
+}

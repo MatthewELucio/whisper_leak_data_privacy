@@ -1,0 +1,37 @@
+{
+  "local_port": 39594,
+  "remote_port": 443,
+  "prompt": "What does \"designation\" mean on a form?",
+  "response": "On a form, \"designation\" generally refers to a **title, status, or official description of a role, position, or qualification**. It essentially specifies what you are or what you're applying to be.\n\nHere's a breakdown of what it might mean in different contexts:\n\n*   **Job Application/Employment Form:** Your **job title** or **position** within the company (e.g., Software Engineer, Project Manager, Marketing Specialist).\n*   **Nomination Form:** The **position** someone is being nominated for (e.g., President, Treasurer, Committee Member).\n*   **Beneficiary Form:** How someone is related to you, your **relationship** (e.g., Spouse, Child, Sibling).\n*   **Professional Qualification Form:** Your **certification** or **license** held (e.g., CPA, RN, PMP).\n*   **Account Form:** Your **role** for the account, such as Primary, Joint Owner, Custodian.\n\n**In essence, it's asking you to specify *what* you are in relation to the purpose of the form.**\n\nWhen you see \"designation\" on a form, consider the context of the form to understand what specific information is being requested.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    158,
+    393,
+    448,
+    255,
+    250,
+    390,
+    300,
+    317,
+    278,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.04663991928100586,
+    0.3861501216888428,
+    0.0014698505401611328,
+    0.11444306373596191,
+    0.11304187774658203,
+    0.20315217971801758,
+    0.19692492485046387,
+    0.25110387802124023,
+    0.2692141532897949,
+    0.3153998851776123,
+    0.011109113693237305,
+    0.0,
+    0.0
+  ]
+}

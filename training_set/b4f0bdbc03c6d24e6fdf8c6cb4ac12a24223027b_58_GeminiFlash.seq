@@ -1,0 +1,35 @@
+{
+  "local_port": 43810,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law definitely prohibits money laundering in virtually every country.  There are international treaties and conventions that promote and require countries to enact laws against it.\n\nThese laws typically:\n\n*   **Criminalize the Act:**  Make it a crime to engage in activities like concealing, disguising, or using the proceeds of illegal activities.\n*   **Establish Financial Regulations:**  Require banks and other financial institutions to implement \"Know Your Customer\" (KYC) and Anti-Money Laundering (AML) programs.\n*   **Create Reporting Requirements:**  Mandate the reporting of suspicious transactions to government authorities.\n*   **Enable Asset Forfeiture:**  Allow the government to seize assets involved in or derived from money laundering.\n\nThe specific laws and regulations vary by country, but the core principle of prohibiting and combating money laundering is universal.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1293,
+    330,
+    263,
+    215,
+    273,
+    396,
+    391,
+    442,
+    315,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.04656505584716797,
+    0.3901650905609131,
+    0.015864849090576172,
+    0.10017800331115723,
+    0.10998415946960449,
+    0.17795991897583008,
+    0.20406699180603027,
+    0.3072469234466553,
+    0.12391304969787598,
+    0.01120901107788086,
+    0.0,
+    0.0
+  ]
+}

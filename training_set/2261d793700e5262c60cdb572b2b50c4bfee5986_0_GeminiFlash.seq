@@ -1,0 +1,41 @@
+{
+  "local_port": 45624,
+  "remote_port": 443,
+  "prompt": "How long does it typically take to receive quotations as a buyer from ThunderQuote?",
+  "response": "ThunderQuote aims to provide quotations to buyers relatively quickly. Here's a general idea of the timeframe:\n\n*   **Initial Response (Acknowledgement):** You should receive confirmation from ThunderQuote that they have received your request and are working on it within a few hours to a day.\n*   **Quotation Delivery:** Typically, you can expect to receive quotations from vendors within **1-5 business days**. However, this can vary depending on:\n\n    *   **Complexity of the Request:** More complex or niche projects might require more time for vendors to prepare accurate quotes.\n    *   **Number of Vendors:** The more vendors ThunderQuote has that are suitable for your request, the more quotes you might receive, but it could also slightly increase the overall time.\n    *   **Vendor Availability and Responsiveness:** The speed at which vendors respond to ThunderQuote's request for quotation directly impacts the overall timeline.\n    *   **Industry:** Some industries might have faster turnaround times than others.\n\nTo get the most accurate estimate, it's best to:\n\n*   **Provide a Clear and Detailed Brief:** The more information you provide about your needs, the faster vendors can understand the project and provide accurate quotes.\n*   **Communicate Urgency:** If you have a specific deadline, mention it in your request. ThunderQuote can then prioritize your request accordingly.\n*   **Follow up with ThunderQuote:** If you haven't received any quotes after a reasonable amount of time (e.g., after 5 business days), you can follow up with ThunderQuote to check on the status of your request.\n\n**Important Note:** It's always good to remember that receiving multiple, well-considered quotations might take a bit longer, but it ultimately helps you make a more informed decision.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    101,
+    220,
+    264,
+    287,
+    317,
+    428,
+    374,
+    307,
+    426,
+    468,
+    133,
+    236,
+    113
+  ],
+  "time_diffs": [
+    0.04713106155395508,
+    0.3747708797454834,
+    0.0014541149139404297,
+    0.11936807632446289,
+    0.09615397453308105,
+    0.18193387985229492,
+    0.21920108795166016,
+    0.30702805519104004,
+    0.2361128330230713,
+    0.36478519439697266,
+    0.2998077869415283,
+    0.284318208694458,
+    0.010228872299194336,
+    0.0,
+    0.0
+  ]
+}

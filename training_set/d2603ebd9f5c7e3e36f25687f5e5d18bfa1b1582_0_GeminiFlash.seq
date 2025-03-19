@@ -1,0 +1,27 @@
+{
+  "local_port": 45980,
+  "remote_port": 443,
+  "prompt": "How old is Percy Jackson in the movie?",
+  "response": "In the first Percy Jackson movie, \"Percy Jackson & The Olympians: The Lightning Thief,\" Percy is supposed to be 16 years old.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1275,
+    249,
+    364,
+    191,
+    305,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.046836137771606445,
+    0.3480408191680908,
+    0.026995182037353516,
+    0.08379292488098145,
+    0.08099699020385742,
+    0.00786590576171875,
+    0.0024671554565429688,
+    0.0
+  ]
+}

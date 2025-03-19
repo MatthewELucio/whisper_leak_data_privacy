@@ -1,0 +1,41 @@
+{
+  "local_port": 59056,
+  "remote_port": 443,
+  "prompt": "What is the difference between Tarzan and Mowgli for a complete noob?",
+  "response": "Okay, imagine you've never heard of either character. Here's the super simple breakdown of the difference between Tarzan and Mowgli:\n\n*   **Tarzan:**\n\n    *   **Raised by Apes:** He's a human baby who is raised by apes in the African jungle.\n    *   **English Heritage:** His parents were British aristocrats.\n    *   **Learns about Humanity:** He eventually encounters other humans and learns about his heritage.\n    *   **Swings from Vines:** Famous for swinging through the jungle on vines.\n\n*   **Mowgli:**\n\n    *   **Raised by Wolves:** He's a human child raised by wolves in the Indian jungle.\n    *   **Indian Jungle:** His story is based in India.\n    *   **Stays in the Jungle:** He feels more connected to the jungle and often chooses to stay there.\n    *   **Friends with Animals:** Has closer relationships with a wider variety of animals, including a bear (Baloo) and a panther (Bagheera).\n\n**Think of it this way:**\n\n*   **Tarzan:** Raised by apes, *finds* his humanity.\n*   **Mowgli:** Raised by wolves, *embraces* his animal side.\n\n**The key differences:**\n\n*   **Animal Family:** Tarzan - Apes; Mowgli - Wolves\n*   **Location:** Tarzan - Africa; Mowgli - India\n*   **Relationship with Humans:** Tarzan eventually integrates more with humans; Mowgli is more comfortable with animals.\n\nBoth are stories about children raised by animals, but they have different origins, settings, and ultimately different messages.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    269,
+    217,
+    266,
+    291,
+    321,
+    465,
+    295,
+    426,
+    480,
+    378,
+    151,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.04801201820373535,
+    0.32018399238586426,
+    0.0014109611511230469,
+    0.10660791397094727,
+    0.07894015312194824,
+    0.18288087844848633,
+    0.1801009178161621,
+    0.2761800289154053,
+    0.3759591579437256,
+    0.31120800971984863,
+    0.36658692359924316,
+    0.10576701164245605,
+    0.011031866073608398,
+    0.0,
+    3.719329833984375e-05
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 56230,
+  "remote_port": 443,
+  "prompt": "Where can you find replays of NBA games?",
+  "response": "You have several options for watching replays of NBA games, both paid and free (with limitations):\n\n**Paid Options (Official and Most Reliable):**\n\n*   **NBA League Pass:** This is the NBA's official subscription service. It typically offers:\n    *   **Live Games:** Ability to watch games live (subject to blackout restrictions based on your location).\n    *   **Game Replays:** Full game replays, condensed games, and highlights.\n    *   **Multiple Devices:** Watch on your TV, computer, phone, and tablet.\n    *   **Note:** League Pass pricing and packages vary, so check their website for current offerings.\n\n*   **YouTube TV:** Offers local networks to catch most games.\n\n**Free or Limited Options:**\n\n*   **NBA.com:** The NBA's official website often has game highlights and recaps, but rarely full-game replays for free.\n\n*   **YouTube:** Search for game highlights. Sometimes you can find full game uploads, but these are often taken down due to copyright issues. Quality may vary.\n\n*   **Sports-Specific News Sites:** Websites like ESPN, Bleacher Report, and others will usually have highlights and recaps, but not full replays.\n\n**Things to Consider:**\n\n*   **Blackout Restrictions:** NBA League Pass often has blackout restrictions, meaning you might not be able to watch live games of your local team if you live in their broadcast area. Replays may also be affected, but this is less common.\n\n*   **Quality:** The quality of unofficial streams or uploads on platforms like YouTube can be unreliable.\n\n*   **Copyright:** Be aware that unauthorized uploading and viewing of copyrighted NBA content is technically illegal, though enforcement is often lax for individual viewers.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1274,
+    201,
+    304,
+    443,
+    463,
+    411,
+    306,
+    339,
+    336,
+    376,
+    197,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.0481569766998291,
+    0.35729098320007324,
+    0.15056109428405762,
+    0.07603693008422852,
+    0.15097284317016602,
+    0.18490099906921387,
+    0.2740960121154785,
+    0.2721290588378906,
+    0.3229520320892334,
+    0.37436509132385254,
+    0.2743558883666992,
+    0.008851051330566406,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

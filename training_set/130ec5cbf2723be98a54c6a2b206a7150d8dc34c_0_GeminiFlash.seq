@@ -1,0 +1,43 @@
+{
+  "local_port": 56664,
+  "remote_port": 443,
+  "prompt": "How do you see a deleted comment on instagram?",
+  "response": "Unfortunately, Instagram doesn't offer a built-in way for regular users (or even the comment's author) to view deleted comments. Once a comment is deleted by the account owner or the commenter themselves, it's generally gone.\n\nHere's a breakdown of why and what limited options might exist:\n\n* **Privacy and Control:** Instagram's policy prioritizes the account owner's control over their content and comments. Allowing everyone to see deleted comments would undermine this control and could lead to privacy issues.\n* **No Archive:** Instagram doesn't keep a general archive of deleted comments accessible to the public.\n\n**Possible (But Limited) Circumstances Where You *Might* See a Deleted Comment:**\n\n* **You Took a Screenshot:** If you happened to screenshot the comment before it was deleted, that's the only reliable way to still see it.\n* **Third-Party Monitoring Tools (For Account Owners/Businesses):** Some third-party social media management tools used by businesses *might* have features that track and archive comments, including deleted ones. However, these are:\n    *  **Not retroactive:** They only track comments *after* the tool is set up.\n    *  **Require the account owner to be using them:** You wouldn't be able to use these tools to see deleted comments on someone else's account.\n    *  **Often Expensive:** These are typically paid services.\n* **Data Request (Very Specific Circumstances):** In extremely rare cases, you might be able to request data from Instagram, but this is usually related to legal investigations or specific privacy concerns.  It's unlikely to be successful just for wanting to see a deleted comment.\n\n**In summary, seeing a deleted Instagram comment is practically impossible for regular users.  Screenshots are your only real hope.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    274,
+    230,
+    238,
+    204,
+    336,
+    336,
+    425,
+    461,
+    411,
+    353,
+    355,
+    233,
+    123,
+    113
+  ],
+  "time_diffs": [
+    0.04559016227722168,
+    0.347653865814209,
+    0.0013501644134521484,
+    0.044531822204589844,
+    0.06199908256530762,
+    0.08183908462524414,
+    0.17294692993164062,
+    0.21136093139648438,
+    0.2708771228790283,
+    0.294191837310791,
+    0.39868807792663574,
+    0.3526298999786377,
+    0.29248499870300293,
+    0.012887001037597656,
+    1.1920928955078125e-06,
+    4.982948303222656e-05
+  ]
+}

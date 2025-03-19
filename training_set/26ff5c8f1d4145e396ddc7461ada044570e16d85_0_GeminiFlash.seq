@@ -1,0 +1,39 @@
+{
+  "local_port": 36376,
+  "remote_port": 443,
+  "prompt": "Why do people always eat doner kebab after getting high?",
+  "response": "There's no universal \"always\" here \u2013 not everyone who's high eats doner kebab! However, there are a few reasons why it's a popular choice:\n\n*   **Flavor and Texture:** Doner kebab is packed with savory flavors, spices, and often features a combination of tender meat, crisp vegetables, and creamy sauces. The variety of textures and tastes can be very appealing when experiencing heightened senses or cravings.\n*   **Convenience:** Doner kebab shops are often open late, especially in areas with active nightlife, making them a convenient option for those seeking a quick and satisfying meal after being out.\n*   **Carbohydrate and Fat Content:** The bread and fatty meat in a doner kebab provide a significant source of carbohydrates and fats. These nutrients can be comforting and satisfying, especially when experiencing \"the munchies,\" a common side effect of certain substances.\n*   **Social Association:** In some cultures or communities, eating doner kebab after socializing or partying has become a tradition or social norm, reinforcing its association with those activities.\n*   **Availability:** Doner kebab is simply a common fast food option in many places, so its popularity may simply reflect its availability and familiarity.\n\nIt's important to note that these are just potential explanations, and individual preferences vary widely.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    292,
+    307,
+    209,
+    224,
+    283,
+    375,
+    302,
+    349,
+    338,
+    161,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04685688018798828,
+    0.3730940818786621,
+    0.0014078617095947266,
+    0.01139211654663086,
+    0.1749720573425293,
+    0.041200876235961914,
+    0.21115708351135254,
+    0.2246229648590088,
+    0.36333799362182617,
+    0.29134702682495117,
+    0.3873300552368164,
+    0.010097980499267578,
+    0.00017786026000976562,
+    0.0
+  ]
+}

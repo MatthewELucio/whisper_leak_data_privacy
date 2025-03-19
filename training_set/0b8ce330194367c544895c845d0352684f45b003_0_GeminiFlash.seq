@@ -1,0 +1,37 @@
+{
+  "local_port": 59996,
+  "remote_port": 443,
+  "prompt": "What makes banana bread so moist?",
+  "response": "Banana bread's characteristic moistness comes from a few key factors:\n\n*   **Overripe Bananas:** The starch in bananas breaks down into sugars as they ripen. These sugars are hygroscopic, meaning they attract and hold moisture. Overripe bananas also have a higher moisture content overall, which contributes to the bread's soft texture.\n\n*   **Oil or Butter:** Fat adds moisture and richness. Recipes using oil often result in a moister bread compared to those relying solely on butter.\n\n*   **Sugar:** Like the sugars from the bananas, added sugar is also hygroscopic.\n\n*   **Acidity:** The slightly acidic environment created by the bananas helps to tenderize the gluten in the flour, resulting in a more tender and moist crumb.\n\n*   **Technique (Avoiding Overmixing):** Overmixing develops gluten, leading to a tougher, drier bread. Gently mixing the ingredients until just combined prevents this.\n\n*   **Proper Baking:** Overbaking dries out any bread. Baking until a toothpick inserted into the center comes out with a few moist crumbs is ideal.\n\n*   **Sour Cream or Yogurt (Optional):** Some recipes include sour cream or yogurt, which adds both moisture and acidity, further contributing to a tender, moist texture.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    283,
+    290,
+    408,
+    357,
+    404,
+    382,
+    332,
+    358,
+    234,
+    153,
+    113
+  ],
+  "time_diffs": [
+    0.04547405242919922,
+    0.2825291156768799,
+    0.0012869834899902344,
+    0.1135108470916748,
+    0.1258862018585205,
+    0.16065001487731934,
+    0.2034769058227539,
+    0.3019580841064453,
+    0.2882099151611328,
+    0.39087700843811035,
+    0.009655952453613281,
+    0.0,
+    0.0
+  ]
+}

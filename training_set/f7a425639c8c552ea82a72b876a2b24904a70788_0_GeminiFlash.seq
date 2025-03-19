@@ -1,0 +1,43 @@
+{
+  "local_port": 40810,
+  "remote_port": 443,
+  "prompt": "Why does everyone only talk about what's bad about the world?",
+  "response": "It can definitely feel like we're constantly bombarded with bad news, and it's understandable to wonder why. There are a few key reasons:\n\n*   **Negativity Bias:** This is a well-documented psychological phenomenon. Our brains are wired to pay more attention to negative information than positive information. This is likely because, from an evolutionary standpoint, threats and dangers were more important to survival than positive experiences. We're more likely to remember a negative event and it has a bigger impact on our emotions.\n\n*   **Media Focus:** News outlets often prioritize stories that are dramatic, unusual, and conflict-driven. \"If it bleeds, it leads\" is a common saying in the industry. This is partly because these kinds of stories are more likely to grab attention and generate viewership or readership. Good news is often seen as less \"newsworthy.\"\n\n*   **Problem Solving:** Talking about problems is often a necessary step towards solving them. Highlighting issues like social injustice, environmental concerns, or political corruption can raise awareness and motivate action.\n\n*   **Venting and Connecting:** Sharing frustrations about the world can be a way for people to vent their feelings and connect with others who feel the same way. It can create a sense of community and shared understanding.\n\n*   **Social Media Amplification:** Social media algorithms often prioritize content that generates strong emotions, which can include outrage or fear. This can lead to a feedback loop where negative news and opinions are amplified and spread more quickly.\n\n*   **A Perception Issue:** It's also worth considering that sometimes it just *feels* like there's more bad news than good, even if that's not statistically accurate. Because of the reasons mentioned above, bad news tends to stick in our minds more easily.\n\nIt's important to remember that while acknowledging and addressing problems is crucial, focusing exclusively on the negative can lead to feelings of helplessness and despair. Intentionally seeking out positive news, practicing gratitude, and engaging in acts of kindness can help balance the negativity bias and promote a more optimistic outlook.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    284,
+    287,
+    360,
+    486,
+    401,
+    400,
+    307,
+    474,
+    460,
+    397,
+    268,
+    133,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04811406135559082,
+    0.3537299633026123,
+    0.0014009475708007812,
+    0.133681058883667,
+    0.08493804931640625,
+    0.1759169101715088,
+    0.23197412490844727,
+    0.2651979923248291,
+    0.3081798553466797,
+    0.44884705543518066,
+    0.41233015060424805,
+    0.4001607894897461,
+    0.19307899475097656,
+    0.008323192596435547,
+    0.0,
+    0.0
+  ]
+}

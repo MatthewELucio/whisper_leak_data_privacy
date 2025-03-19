@@ -1,0 +1,39 @@
+{
+  "local_port": 54916,
+  "remote_port": 443,
+  "prompt": "How much money does Supercell make in a day?",
+  "response": "It's tricky to say definitively how much Supercell makes in a day, as their revenue fluctuates based on game updates, player spending habits, and seasonal trends. However, we can make an educated estimate based on available information.\n\n*   **Overall Revenue:** Supercell is known for having extremely successful games. In the past, reports have estimated their annual revenue to be in the billions of dollars.\n\n*   **Daily Estimate:** If we take a rough estimate of around $2 billion per year and divide it by 365 days, we get a VERY ROUGH estimate of around $5.5 million per day.\n\n**Important Considerations:**\n\n*   **Fluctuations:** This is just a ballpark figure. A major game update or promotional event could significantly boost their revenue for a particular day or period. Conversely, a quieter period could result in lower earnings.\n*   **Public vs. Private:** As a privately held company, Supercell doesn't publicly release detailed daily revenue figures. The numbers we see are usually estimates from market analysis firms.\n*   **Cost:** Revenue is not the same as profit. It doesn't take into account the costs involved in running the company, developing the games, and marketing.\n\n**In conclusion, while it's impossible to give an exact number, a reasonable estimate for Supercell's daily revenue is likely in the millions of dollars, potentially around $5.5 million, but this can vary significantly.**",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1309,
+    242,
+    340,
+    323,
+    417,
+    218,
+    348,
+    487,
+    361,
+    391,
+    305,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04678916931152344,
+    0.349362850189209,
+    0.02365398406982422,
+    0.09190607070922852,
+    0.13828396797180176,
+    0.22400212287902832,
+    0.18001079559326172,
+    0.28176116943359375,
+    0.25261902809143066,
+    0.4139378070831299,
+    0.16846609115600586,
+    0.010224103927612305,
+    0.0,
+    0.0
+  ]
+}

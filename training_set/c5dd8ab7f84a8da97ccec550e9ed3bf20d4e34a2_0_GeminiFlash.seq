@@ -1,0 +1,37 @@
+{
+  "local_port": 33928,
+  "remote_port": 443,
+  "prompt": "Is global warming really increasing?",
+  "response": "Yes, the overwhelming scientific consensus is that global warming is happening and is primarily caused by human activities. Here's a breakdown of the evidence:\n\n*   **Temperature Records:** Thermometers across the globe consistently show a rise in average temperatures over the past century, especially in recent decades. The warmest years on record have almost all occurred in the 21st century.\n*   **Melting Ice:** Glaciers and ice sheets are shrinking at an alarming rate. Arctic sea ice is declining significantly, and the Greenland and Antarctic ice sheets are losing mass.\n*   **Sea Level Rise:** Global sea levels are rising due to thermal expansion of water and the melting of land-based ice.\n*   **Extreme Weather Events:** There's increasing evidence that climate change is contributing to more frequent and intense heatwaves, droughts, floods, and wildfires.\n*   **Ocean Acidification:** The absorption of excess carbon dioxide by the oceans is causing them to become more acidic, which threatens marine ecosystems.\n\nMajor scientific organizations worldwide, such as NASA, NOAA, the IPCC, and the National Academies of Sciences, Engineering, and Medicine, all agree on these points. You can find detailed reports and data on their websites.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    255,
+    257,
+    274,
+    281,
+    382,
+    280,
+    336,
+    423,
+    218,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.04659700393676758,
+    0.27893710136413574,
+    0.00012803077697753906,
+    0.14170408248901367,
+    0.07682299613952637,
+    0.19725394248962402,
+    0.16527295112609863,
+    0.2601299285888672,
+    0.19505906105041504,
+    0.2619009017944336,
+    0.010522127151489258,
+    0.0,
+    0.00023102760314941406
+  ]
+}

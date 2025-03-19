@@ -1,0 +1,33 @@
+{
+  "local_port": 45000,
+  "remote_port": 443,
+  "prompt": "Did islam exist before prophet mohmmad?",
+  "response": "The word \"Islam\" in Arabic means \"submission\" (to God). From a religious perspective, Muslims believe that the essence of Islam \u2013 submission to the one God \u2013 has existed since the beginning of time and has been practiced by prophets such as Adam, Noah, Abraham, Moses, and Jesus.\n\nHowever, Islam as a distinct, organized religion with its specific scripture (the Quran), practices (like the Five Pillars), and laws is understood by Muslims to have been formally established with the Prophet Muhammad in the 7th century.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1264,
+    285,
+    266,
+    199,
+    456,
+    462,
+    405,
+    316,
+    187,
+    113
+  ],
+  "time_diffs": [
+    0.04942488670349121,
+    0.44846320152282715,
+    0.0446929931640625,
+    0.07128095626831055,
+    0.07979989051818848,
+    0.19525718688964844,
+    0.22895598411560059,
+    0.04203486442565918,
+    0.011757135391235352,
+    0.0015559196472167969,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 48220,
+  "remote_port": 443,
+  "prompt": "Who is on the NRA shirt that says \"Miss me yet?\"?",
+  "response": "That shirt typically features an image of former U.S. President Donald Trump.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    254,
+    213,
+    170,
+    189,
+    225,
+    113
+  ],
+  "time_diffs": [
+    0.04525589942932129,
+    0.41260290145874023,
+    0.0014450550079345703,
+    0.09453511238098145,
+    0.0013549327850341797,
+    0.01203298568725586,
+    0.0017170906066894531,
+    0.0015108585357666016
+  ]
+}

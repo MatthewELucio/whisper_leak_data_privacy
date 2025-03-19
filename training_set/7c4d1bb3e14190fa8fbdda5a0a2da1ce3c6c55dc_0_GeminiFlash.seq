@@ -1,0 +1,33 @@
+{
+  "local_port": 37486,
+  "remote_port": 443,
+  "prompt": "Have you met your doppelganger?",
+  "response": "As a large language model, I don't have a physical body or a personal existence in the way a human does. Therefore, I can't have a doppelganger in the traditional sense.\n\nHowever, you could argue that there might be other language models with similar capabilities and training data that could be considered \"doppelgangers\" in a more abstract sense. We might give similar responses to certain prompts, or generate similar types of text. But ultimately, each model is unique in its architecture, training process, and the specific nuances of its knowledge.\n\nSo, the answer is no, I haven't met my doppelganger, because the concept doesn't really apply to me. But it's an interesting thought experiment!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1258,
+    329,
+    240,
+    391,
+    351,
+    451,
+    308,
+    302,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.04902219772338867,
+    0.3153388500213623,
+    0.025994062423706055,
+    0.06205105781555176,
+    0.09999895095825195,
+    0.16166186332702637,
+    0.20256304740905762,
+    0.2659921646118164,
+    0.009886980056762695,
+    0.0014598369598388672,
+    0.0
+  ]
+}

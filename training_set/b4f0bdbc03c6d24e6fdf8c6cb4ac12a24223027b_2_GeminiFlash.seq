@@ -1,0 +1,31 @@
+{
+  "local_port": 51172,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, absolutely. Laws prohibiting money laundering are in place in virtually every country around the world. These laws are designed to prevent criminals from disguising the origins of illegally obtained money, making it appear legitimate.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    148,
+    218,
+    357,
+    290,
+    332,
+    301,
+    151,
+    113
+  ],
+  "time_diffs": [
+    0.04957890510559082,
+    0.3489861488342285,
+    0.0012209415435791016,
+    0.030215024948120117,
+    0.044764041900634766,
+    0.14118480682373047,
+    0.02004718780517578,
+    0.013481855392456055,
+    0.0014891624450683594,
+    0.0033919811248779297
+  ]
+}

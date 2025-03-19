@@ -1,0 +1,41 @@
+{
+  "local_port": 59218,
+  "remote_port": 443,
+  "prompt": "Is the Queen of the UK a good person?",
+  "response": "Queen Elizabeth II, during her long reign, was widely respected and admired. Here's a breakdown of why:\n\n*   **Dedication to Duty:** She was known for her unwavering commitment to her role as monarch, serving for over 70 years. She took her duties seriously and was seen as a symbol of stability and continuity.\n*   **Public Service:** She participated in numerous charitable activities and patronized many organizations, contributing to various causes.\n*   **Diplomacy:** She played a significant role in fostering relationships between the UK and other nations, traveling extensively and engaging in diplomatic efforts.\n*   **Personal Conduct:** By most accounts, she conducted herself with grace, dignity, and a sense of decorum expected of her position.\n\nHowever, there were also criticisms:\n\n*   **Privilege and Wealth:** As a monarch, she lived a life of privilege and wealth, which drew criticism, especially in a world grappling with inequality.\n*   **The Role of the Monarchy:** Some question the relevance and necessity of a monarchy in modern society.\n*   **Historical Legacy:** The monarchy's historical association with colonialism and imperialism remains a point of contention for some.\n\nUltimately, whether someone considers her a \"good person\" is subjective and depends on their individual values and perspectives.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    224,
+    368,
+    269,
+    429,
+    265,
+    416,
+    300,
+    369,
+    394,
+    210,
+    296,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.04846906661987305,
+    0.28974199295043945,
+    0.0013589859008789062,
+    0.02444005012512207,
+    0.10735297203063965,
+    0.046800851821899414,
+    0.19404101371765137,
+    0.23610401153564453,
+    0.2996089458465576,
+    0.3243741989135742,
+    0.36116790771484375,
+    5.1021575927734375e-05,
+    0.015095949172973633,
+    0.0,
+    0.0
+  ]
+}

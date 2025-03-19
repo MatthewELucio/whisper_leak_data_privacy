@@ -1,0 +1,37 @@
+{
+  "local_port": 41888,
+  "remote_port": 443,
+  "prompt": "What is the chemical formula for ammonium acetate?",
+  "response": "The chemical formula for ammonium acetate is CH3COONH4. It consists of an ammonium ion (NH4+) and an acetate ion (CH3COO-).",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    695,
+    432,
+    425,
+    413,
+    423,
+    738,
+    412,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.021194934844970703,
+    0.26170802116394043,
+    0.35108304023742676,
+    0.0,
+    0.06967997550964355,
+    0.12316083908081055,
+    0.08006405830383301,
+    0.22180509567260742,
+    0.057153940200805664,
+    0.0013289451599121094,
+    0.013620138168334961,
+    0.00152587890625,
+    0.0015039443969726562
+  ]
+}

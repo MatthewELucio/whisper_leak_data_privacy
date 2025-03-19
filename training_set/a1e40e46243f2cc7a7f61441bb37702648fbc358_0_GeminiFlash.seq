@@ -1,0 +1,25 @@
+{
+  "local_port": 33060,
+  "remote_port": 443,
+  "prompt": "What is the name of Karan Johar's TV show?",
+  "response": "Karan Johar hosts the TV show **Koffee with Karan**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    165,
+    300,
+    279,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.04418206214904785,
+    0.2615840435028076,
+    0.0013120174407958984,
+    0.13268280029296875,
+    0.007486104965209961,
+    0.0032939910888671875,
+    9.894371032714844e-05
+  ]
+}

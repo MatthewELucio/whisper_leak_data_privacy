@@ -1,0 +1,43 @@
+{
+  "local_port": 56518,
+  "remote_port": 443,
+  "prompt": "Does the ISS have a good WiFi connection?",
+  "response": "The International Space Station (ISS) does have a WiFi connection, but it's **not like your home WiFi**. Here's a breakdown:\n\n*   **Limited Bandwidth:** The ISS doesn't have a dedicated high-speed internet connection like you might experience on Earth. Bandwidth is a precious resource, and it's prioritized for scientific research, operational tasks, and crew communication.\n\n*   **Internal WiFi:** The astronauts and cosmonauts use an internal WiFi network to connect their laptops, tablets, and other devices. This network allows them to access internal files, communicate with each other, and access the internet (with limitations).\n\n*   **External Communication:** The ISS communicates with ground control and the outside world via a combination of radio waves and geostationary satellites (like NASA's Tracking and Data Relay Satellite System - TDRSS). Data travels up and down to these satellites, which then relay it to Earth.\n\n*   **Internet Access is Limited and Managed:** While astronauts can access the internet for personal use (email, limited social media), access is heavily managed to ensure it doesn't interfere with mission-critical activities. There are restrictions on the amount of data they can use and the types of websites they can access.\n\n*   **Latency:** Because of the distance the signal travels, there is significant latency (delay). This makes things like real-time video conferencing and online gaming difficult or impossible.\n\n*   **Variations:** Bandwidth and access can vary depending on the specific mission, the time of day, and the availability of satellite links.\n\n**In summary:**\n\nThe ISS has WiFi, but it's **highly regulated and limited compared to terrestrial internet**. It's designed to support essential onboard activities and provide astronauts with limited personal communication, not to be a source of high-speed entertainment or unrestricted browsing.\n\nThink of it more like dial-up internet from the early days of the web, but with even tighter restrictions and much higher latency.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    246,
+    203,
+    380,
+    388,
+    416,
+    316,
+    356,
+    490,
+    458,
+    390,
+    397,
+    199,
+    187,
+    113
+  ],
+  "time_diffs": [
+    0.05138206481933594,
+    0.5235638618469238,
+    0.0014400482177734375,
+    0.08043694496154785,
+    0.09299898147583008,
+    0.24512505531311035,
+    0.17201900482177734,
+    0.31692004203796387,
+    0.2768900394439697,
+    0.32610106468200684,
+    0.3425028324127197,
+    0.308089017868042,
+    0.10689711570739746,
+    0.010931015014648438,
+    0.0,
+    0.0
+  ]
+}

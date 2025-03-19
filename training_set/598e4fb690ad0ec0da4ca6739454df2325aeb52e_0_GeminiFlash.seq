@@ -1,0 +1,31 @@
+{
+  "local_port": 60266,
+  "remote_port": 443,
+  "prompt": "Does hooka burn calories?",
+  "response": "No, hookah does not burn a significant amount of calories. \n\nWhile the act of smoking hookah involves some minor muscle movements (like puffing and inhaling), the energy expenditure is minimal and negligible for weight loss or calorie burning purposes. The effects of hookah on your health far outweigh any potential (and insignificant) calorie burn. Hookah smoking carries serious health risks.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1407,
+    250,
+    278,
+    398,
+    482,
+    197,
+    175,
+    209,
+    113
+  ],
+  "time_diffs": [
+    0.04424691200256348,
+    0.37571096420288086,
+    0.04395914077758789,
+    0.040637969970703125,
+    0.0912940502166748,
+    0.23491597175598145,
+    0.048091888427734375,
+    0.009765148162841797,
+    0.0015778541564941406,
+    0.002232074737548828
+  ]
+}

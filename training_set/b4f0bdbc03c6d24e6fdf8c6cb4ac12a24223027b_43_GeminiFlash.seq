@@ -1,0 +1,37 @@
+{
+  "local_port": 59028,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, absolutely. Money laundering is illegal in virtually all countries around the world. There are numerous laws and regulations in place to prohibit it. Here's a general overview:\n\n*   **Laws Against Money Laundering:** These laws make it a crime to engage in activities that disguise the origins of illegally obtained money so that it appears to come from legitimate sources.\n\n*   **Anti-Money Laundering (AML) Regulations:** These regulations are designed to prevent, detect, and report money laundering activities. They often apply to financial institutions and other businesses that could be used to launder money.\n\n*   **International Cooperation:** Because money laundering often crosses borders, there's a strong emphasis on international cooperation to combat it. International organizations like the Financial Action Task Force (FATF) play a key role in setting standards and promoting effective implementation of AML measures.\n\n**Disclaimer:** Laws vary by jurisdiction, and this information is for general knowledge only and is not a substitute for legal advice.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    137,
+    236,
+    391,
+    278,
+    450,
+    378,
+    471,
+    516,
+    199,
+    184,
+    113
+  ],
+  "time_diffs": [
+    0.04538607597351074,
+    0.3745441436767578,
+    0.00144195556640625,
+    0.04043388366699219,
+    0.045938968658447266,
+    0.10022997856140137,
+    0.2197861671447754,
+    0.17740702629089355,
+    0.2310168743133545,
+    0.2217400074005127,
+    0.010560035705566406,
+    0.0,
+    0.0
+  ]
+}

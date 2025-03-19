@@ -1,0 +1,41 @@
+{
+  "local_port": 35646,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, the U.S. government, along with governments around the world, has laws against money laundering. These laws are designed to combat financial crimes and prevent the proceeds of illegal activities from being integrated into the legitimate financial system.\n\nHere are some key aspects of U.S. anti-money laundering (AML) laws:\n\n*   **Bank Secrecy Act (BSA):** This is the primary U.S. law for combating money laundering. It requires financial institutions to keep records and file reports that are useful in identifying money laundering and other financial crimes. This includes:\n\n    *   **Currency Transaction Reports (CTRs):** Reporting cash transactions over a certain amount.\n    *   **Suspicious Activity Reports (SARs):** Reporting any transaction that appears suspicious.\n*   **Money Laundering Control Act:** This law criminalized money laundering at the federal level.\n*   **USA PATRIOT Act:** This law expanded the BSA to make it easier to track and intercept terrorist financing.\n*   **Specific criminal statutes:** There are specific criminal statutes that prohibit money laundering, such as 18 U.S. Code \u00a7 1956 and 18 U.S. Code \u00a7 1957.\n\nThese laws impose obligations on financial institutions, such as banks, credit unions, money service businesses, and securities firms, to implement AML programs that include:\n\n*   Developing internal policies, procedures, and controls\n*   Designating a compliance officer\n*   Providing ongoing employee training\n*   Conducting independent audits\n*   Performing customer due diligence (CDD) and knowing your customer (KYC) procedures\n\nThe Financial Crimes Enforcement Network (FinCEN) is the agency responsible for administering and enforcing the BSA and other AML laws.\n\nMoney laundering is a serious crime with significant penalties, including fines and imprisonment.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    336,
+    369,
+    427,
+    346,
+    476,
+    295,
+    325,
+    348,
+    372,
+    288,
+    173,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04572486877441406,
+    0.5211210250854492,
+    0.060906171798706055,
+    0.05297684669494629,
+    0.11313295364379883,
+    0.17903518676757812,
+    0.1700458526611328,
+    0.2718939781188965,
+    0.2607710361480713,
+    0.3568129539489746,
+    0.37439799308776855,
+    0.24261212348937988,
+    0.0076749324798583984,
+    0.0,
+    0.0
+  ]
+}

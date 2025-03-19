@@ -1,0 +1,41 @@
+{
+  "local_port": 37916,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, governments around the world, including the United States, have laws against money laundering. These laws are designed to combat financial crimes and prevent the proceeds of illegal activities from being used to fund further criminal activity or terrorism.\n\nIn the United States, key laws include:\n\n*   **The Bank Secrecy Act (BSA):** Requires financial institutions to keep records and file reports on certain financial transactions, such as large currency transactions, that could indicate money laundering, tax evasion, or other criminal activities.\n*   **The Money Laundering Control Act:** Criminalizes money laundering and establishes penalties for those involved. It also broadens the scope of the BSA.\n*   **The USA PATRIOT Act:** Expanded the BSA to combat terrorism financing and further strengthen anti-money laundering regulations.\n\nThese laws, and similar laws in other countries, aim to:\n\n*   **Prevent criminals from hiding or disguising the source of their illegal proceeds.**\n*   **Make it more difficult for criminals to use the financial system to support their activities.**\n*   **Require financial institutions to implement anti-money laundering programs to detect and report suspicious activity.**\n*   **Allow law enforcement to investigate and prosecute money laundering offenses.**\n\nMany countries also participate in international efforts to combat money laundering, such as through the Financial Action Task Force (FATF). The FATF sets international standards and promotes the effective implementation of legal, regulatory, and operational measures for combating money laundering, terrorist financing, and other related threats to the integrity of the international financial system.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    150,
+    152,
+    207,
+    462,
+    484,
+    303,
+    535,
+    315,
+    374,
+    451,
+    176,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.04726600646972656,
+    0.4247419834136963,
+    0.0014209747314453125,
+    0.04546785354614258,
+    0.01890707015991211,
+    0.11308598518371582,
+    0.27703309059143066,
+    0.2481679916381836,
+    0.3330960273742676,
+    0.31319403648376465,
+    0.3567008972167969,
+    0.23165106773376465,
+    0.015333890914916992,
+    0.0,
+    0.0
+  ]
+}

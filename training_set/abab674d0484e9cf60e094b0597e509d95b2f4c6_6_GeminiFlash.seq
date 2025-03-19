@@ -1,0 +1,35 @@
+{
+  "local_port": 41170,
+  "remote_port": 443,
+  "prompt": "Would someone be committing a crime if they laundered money?",
+  "response": "Yes, money laundering is a crime in most jurisdictions around the world. It is a federal crime in the United States under 18 U.S.C. \u00a7 1956 and 18 U.S.C. \u00a7 1957.\n\nThe specific laws and penalties vary from country to country, but generally, money laundering is defined as engaging in financial transactions with funds derived from illegal activity with the intent to conceal or disguise the source of the funds.\n\nTherefore, if someone is laundering money, they are committing a crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    219,
+    272,
+    286,
+    404,
+    404,
+    436,
+    306,
+    199,
+    172,
+    113
+  ],
+  "time_diffs": [
+    0.04409193992614746,
+    0.4005858898162842,
+    0.001421213150024414,
+    0.012280941009521484,
+    0.15739703178405762,
+    0.036932945251464844,
+    0.16795802116394043,
+    0.23404192924499512,
+    0.050935983657836914,
+    0.011346101760864258,
+    0.0,
+    0.0
+  ]
+}

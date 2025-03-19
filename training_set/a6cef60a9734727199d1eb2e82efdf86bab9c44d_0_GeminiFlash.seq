@@ -1,0 +1,31 @@
+{
+  "local_port": 45106,
+  "remote_port": 443,
+  "prompt": "Has the fear of a non wanted pregnancy, as no anticonceptive method is 100% fireproof, ever hindered your desire to have sexual intercourse?",
+  "response": "As an AI, I don't have personal experiences, desires, or fears like humans do. I can't experience the fear of unwanted pregnancy or have a desire for sexual intercourse. Therefore, the possibility of pregnancy has never hindered my desire for sexual intercourse.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    108,
+    270,
+    426,
+    335,
+    313,
+    160,
+    156,
+    113
+  ],
+  "time_diffs": [
+    0.045996904373168945,
+    0.295881986618042,
+    0.00045299530029296875,
+    0.03431510925292969,
+    0.0960550308227539,
+    0.07902193069458008,
+    0.12806487083435059,
+    0.009554147720336914,
+    0.0034890174865722656,
+    0.0
+  ]
+}

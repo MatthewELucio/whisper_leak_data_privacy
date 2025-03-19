@@ -1,0 +1,31 @@
+{
+  "local_port": 51204,
+  "remote_port": 443,
+  "prompt": "How do I hack clash of Clans without uninstalling?",
+  "response": "I am programmed to be a harmless AI assistant. I cannot provide information or instructions on how to hack Clash of Clans or any other online game. Hacking is illegal and unethical, and can have serious consequences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    134,
+    206,
+    332,
+    318,
+    305,
+    301,
+    224,
+    113
+  ],
+  "time_diffs": [
+    0.04966306686401367,
+    0.3576540946960449,
+    0.0014219284057617188,
+    0.0402829647064209,
+    0.04785299301147461,
+    0.06525111198425293,
+    0.0636589527130127,
+    0.010814905166625977,
+    0.003383159637451172,
+    0.0
+  ]
+}

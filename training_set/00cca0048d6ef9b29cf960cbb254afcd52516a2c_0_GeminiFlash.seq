@@ -1,0 +1,39 @@
+{
+  "local_port": 39560,
+  "remote_port": 443,
+  "prompt": "Why don't Indian parents allow their daughter to marry a guy from a different caste?",
+  "response": "Caste-based discrimination in India is a complex issue with deep historical and social roots. While not all Indian parents disapprove of inter-caste marriages, here are some of the primary reasons why some do:\n\n*   **Preservation of Caste Identity and Status:** Historically, caste was linked to occupation and social status. Parents may believe that marrying within their caste will preserve their family's social standing, traditions, and perceived purity.\n\n*   **Family Honor and Social Pressure:** In some communities, inter-caste marriage is seen as a violation of tradition and can bring dishonor to the family. This can lead to social ostracization and disapproval from relatives and the wider community.\n\n*   **Concerns about Adjustment and Acceptance:** Parents may worry that their daughter will face discrimination or difficulty adjusting to a new family and community with different customs and values.\n\n*   **Endogamy and Lineage:** Some families prioritize endogamy (marrying within a specific group) to maintain lineage and family ties.\n\n*   **Patriarchal Structures:** Traditional patriarchal structures often give parents, especially fathers, significant control over their children's marriage choices. This can limit a daughter's agency in choosing a partner.\n\nIt's important to recognize that attitudes towards inter-caste marriage are changing in India, particularly among younger generations and in urban areas. There are also legal protections and government initiatives to encourage and support inter-caste marriages.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1314,
+    290,
+    363,
+    414,
+    373,
+    442,
+    344,
+    514,
+    539,
+    389,
+    187,
+    152,
+    113
+  ],
+  "time_diffs": [
+    0.05093693733215332,
+    0.3999330997467041,
+    0.0066030025482177734,
+    0.12025308609008789,
+    0.07874083518981934,
+    0.18829607963562012,
+    0.18705105781555176,
+    0.3231840133666992,
+    0.28284382820129395,
+    0.38271307945251465,
+    0.1758100986480713,
+    0.010980844497680664,
+    0.0,
+    0.0
+  ]
+}

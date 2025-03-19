@@ -1,0 +1,39 @@
+{
+  "local_port": 55504,
+  "remote_port": 443,
+  "prompt": "What does it happen when an illegal immigrant in US goes to the airport to take a plane and come back in his country?",
+  "response": "When an undocumented immigrant attempts to board a flight to return to their home country, several things can happen:\n\n*   **Identification Check:** The airline will typically check the individual's identification documents, such as a passport or other form of ID.\n*   **Screening:** The Transportation Security Administration (TSA) screens all passengers before they board a flight.\n*   **Customs and Border Protection (CBP):** While CBP primarily focuses on arrivals, they may also be present at airports to conduct checks on outbound flights, especially if there is suspicion of illegal activity.\n*   **Voluntary Departure:** If the individual is found to be in the country illegally, they may be allowed to leave voluntarily. This avoids a formal deportation order, which can have more severe consequences for future attempts to enter the U.S.\n*   **Deportation:** Depending on the circumstances and CBP's policies, the individual could be placed into deportation proceedings. This involves being detained and processed for removal from the U.S. A formal deportation order can make it more difficult to legally enter the U.S. in the future.\n*   **Re-entry Ban:** After deportation, individuals may be subject to a ban on re-entering the U.S. for a certain period, often several years, depending on the circumstances of their case.\n\nIt's important to note that policies and enforcement practices can vary depending on the specific location, the individual's circumstances, and current government priorities.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    234,
+    298,
+    244,
+    447,
+    393,
+    367,
+    308,
+    504,
+    398,
+    239,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.052098989486694336,
+    0.4636969566345215,
+    0.0014979839324951172,
+    0.11744093894958496,
+    0.08096599578857422,
+    0.19714713096618652,
+    0.23698687553405762,
+    0.26316213607788086,
+    0.2862107753753662,
+    0.36782217025756836,
+    0.24118590354919434,
+    0.013484954833984375,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 39424,
+  "remote_port": 443,
+  "prompt": "Is money laundering a legally actionable offense?",
+  "response": "Yes, money laundering is a legally actionable offense in most countries around the world, including the United States. It's a federal crime under various statutes, including:\n\n*   **18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments):** This is the primary federal money laundering statute, prohibiting a wide range of financial transactions involving the proceeds of specified unlawful activities (SUAs), also known as predicate offenses. It covers both domestic and international money laundering.\n*   **18 U.S.C. \u00a7 1957 (Engaging in Monetary Transactions in Property Derived from Specified Unlawful Activity):** This statute makes it illegal to knowingly engage in a monetary transaction exceeding $10,000 that is derived from specified unlawful activity.\n*   **31 U.S.C. \u00a7 5324 (Structuring Transactions to Evade Reporting Requirements):** While not explicitly called \"money laundering,\" this statute prohibits structuring financial transactions to avoid currency transaction reporting requirements (e.g., breaking large sums of money into smaller deposits to avoid triggering reports to the IRS). This is often used in conjunction with money laundering charges.\n\nMoney laundering laws make it illegal to engage in financial transactions with funds derived from certain criminal activities and intended to conceal the origin of the funds.\n\nMoney laundering can lead to severe penalties, including lengthy prison sentences, substantial fines, and forfeiture of assets.\n\n***Disclaimer:** I am an AI Chatbot and not an attorney, so this information is not legal advice. If you have any questions about the legal implications of money laundering, please consult with a qualified attorney.*",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1439,
+    397,
+    279,
+    415,
+    295,
+    334,
+    400,
+    396,
+    481,
+    526,
+    349,
+    283,
+    136,
+    113
+  ],
+  "time_diffs": [
+    0.0456080436706543,
+    0.34493112564086914,
+    0.02387380599975586,
+    0.09721207618713379,
+    0.12798190116882324,
+    0.15096616744995117,
+    0.2429180145263672,
+    0.2403249740600586,
+    0.3101210594177246,
+    0.42909789085388184,
+    0.3791790008544922,
+    0.019917964935302734,
+    0.007143974304199219,
+    0.0,
+    0.0
+  ]
+}

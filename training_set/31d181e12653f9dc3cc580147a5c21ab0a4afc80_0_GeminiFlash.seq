@@ -1,0 +1,27 @@
+{
+  "local_port": 38830,
+  "remote_port": 443,
+  "prompt": "Which tickets were sold by BookMyShow for Global Citizen Festival?",
+  "response": "BookMyShow was the official ticketing partner for the Global Citizen Festival India in 2016. They handled the distribution of free tickets through a lottery system tied to taking actions on the Global Citizen platform. They also sold a limited number of VIP tickets.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1278,
+    437,
+    266,
+    270,
+    139,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.05779695510864258,
+    0.2871232032775879,
+    0.10808682441711426,
+    0.12893199920654297,
+    0.10168218612670898,
+    0.012274980545043945,
+    0.0016129016876220703,
+    0.0
+  ]
+}

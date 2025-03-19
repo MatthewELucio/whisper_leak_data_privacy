@@ -1,0 +1,31 @@
+{
+  "local_port": 49800,
+  "remote_port": 443,
+  "prompt": "Is Governor of RBI (Reserve Bank of India) a constitutional post?",
+  "response": "No, the Governor of the Reserve Bank of India (RBI) is **not** a constitutional post.\n\nThe RBI is a statutory body established under the Reserve Bank of India Act, 1934. The Governor is appointed by the central government as per the provisions of this Act. Constitutional posts are created directly by the Constitution of India.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    114,
+    227,
+    360,
+    242,
+    388,
+    147,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.052906036376953125,
+    0.2989370822906494,
+    0.0012309551239013672,
+    0.014972925186157227,
+    0.04684114456176758,
+    0.08158397674560547,
+    0.17142105102539062,
+    0.004302024841308594,
+    0.0014848709106445312,
+    0.0
+  ]
+}

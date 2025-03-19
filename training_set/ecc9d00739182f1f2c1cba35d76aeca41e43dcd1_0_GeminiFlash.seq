@@ -1,0 +1,25 @@
+{
+  "local_port": 44352,
+  "remote_port": 443,
+  "prompt": "How would you define India in one line?",
+  "response": "A diverse and vibrant nation with a rich history, complex present, and promising future.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1371,
+    164,
+    466,
+    251,
+    158,
+    113
+  ],
+  "time_diffs": [
+    0.04558396339416504,
+    0.36934685707092285,
+    0.04779314994812012,
+    0.0677649974822998,
+    0.01721501350402832,
+    0.0015528202056884766,
+    0.0015821456909179688
+  ]
+}

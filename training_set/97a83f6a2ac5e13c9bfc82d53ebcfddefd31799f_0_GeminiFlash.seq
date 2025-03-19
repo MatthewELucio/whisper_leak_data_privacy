@@ -1,0 +1,43 @@
+{
+  "local_port": 43560,
+  "remote_port": 443,
+  "prompt": "What is the suggested people on my direct message?",
+  "response": "Direct message suggestions are based on a number of factors, and the specific algorithms used vary between platforms (like Instagram, Twitter/X, Facebook Messenger, etc.). However, some common factors include:\n\n*   **People you follow:** Platforms often suggest people you follow, as you have an existing connection with them.\n*   **People who follow you:** Similar to the above, if someone follows you, the platform may suggest you message them.\n*   **Mutual connections:** If you and another user have a significant number of friends or connections in common, they're likely to be suggested.\n*   **Contacts:** If you've given the app access to your contacts, it will likely suggest people in your address book who are also on the platform.\n*   **Recent interactions:** People you've recently interacted with (e.g., liked their posts, commented on their content) are more likely to appear as suggestions.\n*   **Group members:** If you're in a group with other users, they might be suggested for direct messages.\n*   **People the algorithm thinks you know:** Based on a combination of the above factors, the algorithm may try to predict who you know or would be interested in connecting with.\n*   **Promoted or suggested accounts:** In some cases, platforms may promote certain accounts as suggestions, although this is less common for direct messages than for general follow suggestions.\n\n**Privacy Considerations:**\n\nIt's important to be aware that these suggestions can sometimes raise privacy concerns. For example, some users may be uncomfortable with the platform suggesting people they know but haven't explicitly connected with online.\n\n**To find out the specifics:**\n\n*   **Check the platform's help documentation:** The best way to know for sure is to consult the help resources for the specific platform you're using. They usually have articles explaining how suggestions are generated.\n*   **Look for settings:** Some platforms may offer settings to control how suggestions are generated or to limit the data used for suggestions.\n*   **Observe over time:** Pay attention to who is being suggested to you and see if you can identify any patterns or connections.\n\nIn summary, direct message suggestions are usually a combination of your existing connections, contacts, interactions, and the platform's attempt to predict who you might know or be interested in contacting. Remember to review the platform's help documentation for the most accurate information.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1462,
+    230,
+    378,
+    333,
+    322,
+    446,
+    347,
+    343,
+    376,
+    296,
+    313,
+    359,
+    153,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.046339988708496094,
+    0.5096879005432129,
+    0.13290810585021973,
+    0.09701704978942871,
+    0.2005448341369629,
+    0.13440299034118652,
+    0.29372596740722656,
+    0.3133201599121094,
+    0.5855329036712646,
+    0.40740513801574707,
+    0.22112393379211426,
+    0.42107605934143066,
+    0.14349699020385742,
+    0.009850025177001953,
+    0.0,
+    0.0
+  ]
+}

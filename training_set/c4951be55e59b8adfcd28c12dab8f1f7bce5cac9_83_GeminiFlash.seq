@@ -1,0 +1,43 @@
+{
+  "local_port": 51042,
+  "remote_port": 443,
+  "prompt": "Is money laundering subject to legal prosecution?",
+  "response": "Yes, money laundering is absolutely subject to legal prosecution in virtually all developed countries and many developing ones. It is a serious crime with significant penalties.\n\nHere's why:\n\n*   **International Agreements:** International organizations like the Financial Action Task Force (FATF) have established standards and recommendations for combating money laundering. Many countries have adopted these standards into their national laws.\n*   **National Laws:** Countries have enacted laws specifically criminalizing money laundering. These laws typically define money laundering offenses, establish penalties, and provide for the seizure and forfeiture of assets involved in the crime.\n*   **Penalties:** Penalties for money laundering can be severe and may include:\n    *   **Imprisonment:** Often lengthy prison sentences.\n    *   **Fines:** Substantial fines, sometimes exceeding the amount of money laundered.\n    *   **Asset Forfeiture:** Seizure of assets derived from or used in connection with money laundering.\n    *   **Reputational Damage:** Significant damage to personal and professional reputation.\n*   **Types of Prosecution:**\n    *   **Criminal Prosecution:** Brought by the government against individuals or entities accused of money laundering.\n    *   **Civil Prosecution:** In some jurisdictions, civil proceedings can be brought to recover assets involved in money laundering, even if criminal charges are not pursued.\n*   **Enforcement Agencies:** Law enforcement agencies such as the police, financial intelligence units, and regulatory bodies are responsible for investigating and prosecuting money laundering offenses.\n\nIn summary, money laundering is a serious crime with significant legal consequences, and is subject to vigorous legal prosecution.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    96,
+    396,
+    251,
+    191,
+    503,
+    372,
+    352,
+    397,
+    321,
+    537,
+    374,
+    300,
+    182,
+    113
+  ],
+  "time_diffs": [
+    0.0462191104888916,
+    0.31874990463256836,
+    0.0013930797576904297,
+    0.025233983993530273,
+    0.10808515548706055,
+    0.07294583320617676,
+    0.22811198234558105,
+    0.20008397102355957,
+    0.2981870174407959,
+    0.25590014457702637,
+    0.36937904357910156,
+    0.4387929439544678,
+    0.0,
+    0.012902021408081055,
+    4.982948303222656e-05,
+    8.320808410644531e-05
+  ]
+}

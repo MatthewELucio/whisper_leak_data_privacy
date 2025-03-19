@@ -1,0 +1,41 @@
+{
+  "local_port": 55050,
+  "remote_port": 443,
+  "prompt": "Is money laundering a contravention of legal standards?",
+  "response": "Yes, money laundering is a contravention of legal standards. It is a crime in virtually every country and is often considered a serious felony.\n\nHere's why and how:\n\n*   **Definition:** Money laundering is the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source.\n\n*   **Legality:** Money laundering is illegal because it enables criminals to profit from their illicit activities (such as drug trafficking, terrorism, fraud, and corruption) and integrate those proceeds into the legitimate financial system.\n\n*   **Laws:** Numerous laws, both domestically and internationally, prohibit money laundering. These laws aim to:\n    *   Prevent and detect money laundering activities.\n    *   Confiscate the proceeds of crime.\n    *   Punish offenders.\n    *   Encourage international cooperation in combating money laundering.\n\n*   **International Standards:** International organizations like the Financial Action Task Force (FATF) set global standards for combating money laundering and terrorist financing. Countries are expected to implement these standards in their national laws.\n\n*   **Consequences:** The consequences for money laundering can be severe, including:\n    *   Imprisonment\n    *   Fines\n    *   Forfeiture of assets\n    *   Damage to reputation\n    *   Ineligibility for certain professions or licenses\n\nIn summary, money laundering is a serious crime that violates legal standards across the globe.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    96,
+    148,
+    255,
+    373,
+    242,
+    354,
+    384,
+    374,
+    330,
+    364,
+    309,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.04510903358459473,
+    0.3336629867553711,
+    0.001435995101928711,
+    0.010155916213989258,
+    0.05517697334289551,
+    0.1031031608581543,
+    0.18171286582946777,
+    0.1794719696044922,
+    0.25913000106811523,
+    0.30992913246154785,
+    0.39429688453674316,
+    0.14409112930297852,
+    0.008398056030273438,
+    0.0,
+    0.0
+  ]
+}

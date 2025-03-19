@@ -1,0 +1,41 @@
+{
+  "local_port": 50896,
+  "remote_port": 443,
+  "prompt": "What's actually the difference between coke and Pepsi?",
+  "response": "The difference between Coke and Pepsi, while seemingly subtle, boils down to a few key factors: **sweetness, citrus notes, and ingredients**. Here's a breakdown:\n\n*   **Sweetness:** Pepsi is generally perceived as sweeter than Coke. This is partly due to the higher concentration of high fructose corn syrup (HFCS) in some formulations. However, sweetness perception can be subjective and vary based on individual taste preferences.\n\n*   **Citrus Notes:** Pepsi tends to have a more pronounced citrus flavor than Coke. Some tasters describe Pepsi as having a slight lemony or citrusy zest, while Coke's flavor is often described as smoother and more rounded.\n\n*   **Acidity:** Coke is often described as having a slightly higher acidity level, contributing to its crisper or sharper taste.\n\n*   **Ingredients:** While both drinks share many ingredients, the exact recipes and ratios are proprietary secrets.\n\n*   **Marketing and Branding:** Over time, both brands have cultivated distinct marketing and branding strategies that influence consumer perception. Coke has traditionally focused on its heritage and classic appeal, while Pepsi has often targeted younger demographics and associated itself with pop culture.\n\n**In summary:**\n\n*   **Pepsi:** Sweeter, more citrusy\n*   **Coke:** Less sweet, smoother, slightly higher acidity\n\nUltimately, the \"best\" cola is a matter of personal preference. Many blind taste tests have shown that people's preferences can shift depending on whether they know which brand they're drinking, highlighting the power of branding and marketing.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    169,
+    227,
+    339,
+    243,
+    338,
+    477,
+    290,
+    499,
+    505,
+    549,
+    187,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.0463259220123291,
+    0.4096219539642334,
+    0.0014150142669677734,
+    0.11144804954528809,
+    0.01697993278503418,
+    0.03312802314758301,
+    0.14495205879211426,
+    0.19610905647277832,
+    0.28209495544433594,
+    0.2889060974121094,
+    0.34371495246887207,
+    0.3610990047454834,
+    0.010397911071777344,
+    0.0,
+    0.0
+  ]
+}

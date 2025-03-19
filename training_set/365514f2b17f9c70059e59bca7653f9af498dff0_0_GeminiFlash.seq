@@ -1,0 +1,39 @@
+{
+  "local_port": 49680,
+  "remote_port": 443,
+  "prompt": "Why don't other AAP MLAs take anticipatory bail like Arvind Kejriwal ?",
+  "response": "Several factors could explain why other AAP MLAs might not be seeking anticipatory bail in the same way as Arvind Kejriwal:\n\n*   **Nature of Allegations:** The specific allegations against Kejriwal might be different or perceived as more serious, leading to a greater perceived risk of arrest. Other MLAs may not be facing charges that they believe warrant seeking anticipatory bail.\n\n*   **Legal Strategy:** Each individual's legal team will develop a strategy based on the specifics of their case. Some may prefer to fight the charges directly without seeking anticipatory bail, believing they have a strong defense or that seeking bail could be seen as an admission of guilt.\n\n*   **Political Considerations:** Taking anticipatory bail can be interpreted as a sign of weakness or fear of arrest, which could have political repercussions. Some MLAs might prefer to face the situation directly to maintain a certain image.\n\n*   **Assessment of Risk:** Each individual will assess their own risk of arrest based on their understanding of the evidence against them and the intentions of the investigating agencies. Some may believe the risk is low enough that anticipatory bail is unnecessary.\n\n*   **Financial Resources:** Legal proceedings can be expensive. Some MLAs may have fewer financial resources to pursue anticipatory bail, while others might prioritize different legal strategies.\n\n*   **Advice from Party Leadership:** While each MLA makes their own decisions, it's possible that the party leadership has offered guidance or suggestions on how to handle legal challenges, which could influence their decisions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    215,
+    343,
+    246,
+    288,
+    308,
+    303,
+    296,
+    389,
+    378,
+    231,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.046102046966552734,
+    0.4357178211212158,
+    0.0014641284942626953,
+    0.13504409790039062,
+    0.09599685668945312,
+    0.27852296829223633,
+    0.22300505638122559,
+    0.4870641231536865,
+    0.1469709873199463,
+    0.4288167953491211,
+    0.2571380138397217,
+    0.008793115615844727,
+    0.0004570484161376953,
+    0.0004849433898925781
+  ]
+}

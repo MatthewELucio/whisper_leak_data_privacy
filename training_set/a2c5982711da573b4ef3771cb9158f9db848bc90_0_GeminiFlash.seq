@@ -1,0 +1,39 @@
+{
+  "local_port": 45992,
+  "remote_port": 443,
+  "prompt": "Why do people think being gay is bad?",
+  "response": "People hold negative views about homosexuality for a variety of complex and often interconnected reasons. Here are some of the most common factors:\n\n*   **Religious beliefs:** Some religions have historically condemned homosexual acts, citing interpretations of religious texts. These interpretations often frame homosexuality as a sin or a deviation from natural law.\n*   **Cultural norms and traditions:** In many cultures, traditional gender roles and family structures are strictly defined. Homosexuality may be seen as a challenge to these norms, leading to disapproval or rejection.\n*   **Lack of understanding and misinformation:** Misconceptions about homosexuality, such as beliefs that it is a choice or that it is linked to mental illness, can fuel negative attitudes. A lack of personal interaction with LGBTQ+ individuals can also contribute to these misconceptions.\n*   **Fear and prejudice:** Some individuals may feel threatened or uncomfortable by those who are different from them. This fear can manifest as prejudice and discrimination against LGBTQ+ people.\n*   **Political ideologies:** Certain political ideologies may promote socially conservative views that oppose LGBTQ+ rights and equality.\n*   **Social pressure and conformity:** In some communities, there may be strong social pressure to conform to traditional values and norms. Individuals who express support for LGBTQ+ people may face social ostracism or criticism.\n*   **Historical discrimination:** LGBTQ+ people have historically faced widespread discrimination and persecution. These historical injustices can contribute to ongoing prejudice and negative attitudes.\n\nIt is important to note that these reasons are not justifications for discrimination or prejudice. Many people hold positive and accepting views of homosexuality, and there is a growing movement towards LGBTQ+ equality and inclusion worldwide.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1495,
+    210,
+    214,
+    403,
+    398,
+    282,
+    437,
+    492,
+    528,
+    262,
+    154,
+    140,
+    113
+  ],
+  "time_diffs": [
+    0.04607200622558594,
+    0.46785998344421387,
+    0.07878589630126953,
+    0.07713913917541504,
+    0.23497581481933594,
+    0.16199707984924316,
+    0.2830159664154053,
+    0.27495908737182617,
+    0.32654595375061035,
+    0.3604249954223633,
+    0.04723811149597168,
+    0.009490013122558594,
+    0.0,
+    0.0
+  ]
+}

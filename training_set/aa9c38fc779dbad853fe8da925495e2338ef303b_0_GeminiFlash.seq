@@ -1,0 +1,37 @@
+{
+  "local_port": 42574,
+  "remote_port": 443,
+  "prompt": "Are girls smarter than boys?",
+  "response": "When we talk about intelligence, it's important to remember that it's a really complex thing. There are lots of different ways to be smart \u2013 some people are great at math, others are amazing with words, and some excel in creative fields like art or music.\n\nLooking at how boys and girls perform in school, we often see that girls tend to get better grades overall. However, boys sometimes score higher on standardized math and science tests. But, these are just averages, and there's a huge range of abilities within both groups.\n\nScientists who study the brain haven't found any significant differences in overall brain size or structure between males and females that would explain differences in intelligence.\n\nMany factors influence how well someone does in school or on a test. Things like how they're taught, their home environment, how much support they get, and even their own interests and motivation play a big role. So, it's not really about whether one gender is inherently \"smarter\" than the other, but more about how different people learn and develop in different ways.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    275,
+    226,
+    411,
+    277,
+    318,
+    459,
+    425,
+    409,
+    268,
+    170,
+    113
+  ],
+  "time_diffs": [
+    0.04747509956359863,
+    0.38247203826904297,
+    0.0016818046569824219,
+    0.07606315612792969,
+    0.09386992454528809,
+    0.20503902435302734,
+    0.1872708797454834,
+    0.29987311363220215,
+    0.30689096450805664,
+    0.16363310813903809,
+    0.008580923080444336,
+    0.0,
+    0.0
+  ]
+}

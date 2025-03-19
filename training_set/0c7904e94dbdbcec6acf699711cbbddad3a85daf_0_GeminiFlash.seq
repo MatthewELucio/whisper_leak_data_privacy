@@ -1,0 +1,29 @@
+{
+  "local_port": 36426,
+  "remote_port": 443,
+  "prompt": "Is watching porn illegal in US?",
+  "response": "Federal law in the United States prohibits the production, distribution, and possession of child pornography. State laws vary, but generally, the production and distribution of obscene material are illegal.\n\nThe legality of watching pornography generally depends on the content and the age of the viewer.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    101,
+    367,
+    402,
+    262,
+    160,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.05574607849121094,
+    0.30948495864868164,
+    0.001096963882446289,
+    0.14504408836364746,
+    0.08703398704528809,
+    0.1394360065460205,
+    0.008792877197265625,
+    0.0013260841369628906,
+    0.00011205673217773438
+  ]
+}

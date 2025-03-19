@@ -1,0 +1,29 @@
+{
+  "local_port": 33326,
+  "remote_port": 443,
+  "prompt": "On average, how much do you sumo wrestlers weigh?",
+  "response": "The average weight of a sumo wrestler is around **150 kg (330 lbs)**. However, there's a wide range, and some wrestlers weigh considerably more, exceeding 200 kg (440 lbs) or even 270 kg (600 lbs).\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1310,
+    269,
+    263,
+    353,
+    403,
+    160,
+    203,
+    113
+  ],
+  "time_diffs": [
+    0.049284934997558594,
+    0.2937030792236328,
+    0.01677393913269043,
+    0.0651540756225586,
+    0.11311101913452148,
+    0.13095498085021973,
+    0.008498907089233398,
+    0.0036230087280273438,
+    0.0
+  ]
+}

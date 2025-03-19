@@ -1,0 +1,39 @@
+{
+  "local_port": 59588,
+  "remote_port": 443,
+  "prompt": "How many CEOs or other top executives are not ruthless narcissists, sociopaths or psychopaths?",
+  "response": "It's difficult to give a definitive number on how many CEOs *aren't* ruthless narcissists, sociopaths, or psychopaths. Here's why:\n\n*   **Diagnostic Challenges:** It's unethical and impractical to conduct psychological evaluations on all CEOs. Diagnosing personality disorders requires extensive clinical interviews and assessments, which individuals may be unwilling to participate in.\n*   **Subjectivity and Perception:** What one person perceives as ruthlessness, another might see as decisive leadership. Narcissistic traits can sometimes be mistaken for confidence and vision.\n*   **Prevalence Estimates Vary:** Studies on the prevalence of personality disorders in leadership positions yield different results depending on the methodology, sample size, and definitions used.\n*   **Lack of Transparency:** Companies rarely disclose information about the psychological profiles of their executives.\n\n**What We Know**\n\n*   While not all CEOs are ruthless or have personality disorders, certain traits associated with these conditions (such as high confidence, risk-taking, and a focus on achievement) can be advantageous in reaching and succeeding in top leadership roles.\n*   Research suggests that the prevalence of certain personality traits might be higher in CEOs than in the general population. For instance, some studies have indicated a higher prevalence of narcissistic traits.\n*   Many successful CEOs possess strong ethical values, empathy, and a genuine concern for their employees and stakeholders. These qualities are essential for building trust, fostering collaboration, and creating a sustainable and positive organizational culture.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    139,
+    261,
+    237,
+    496,
+    442,
+    506,
+    318,
+    380,
+    502,
+    294,
+    155,
+    113
+  ],
+  "time_diffs": [
+    0.05399608612060547,
+    0.44323182106018066,
+    0.001432180404663086,
+    0.08633804321289062,
+    0.14193987846374512,
+    0.22216296195983887,
+    0.16629314422607422,
+    0.26885986328125,
+    0.28371596336364746,
+    0.3827781677246094,
+    0.2717909812927246,
+    0.010448932647705078,
+    0.0009241104125976562,
+    0.0
+  ]
+}

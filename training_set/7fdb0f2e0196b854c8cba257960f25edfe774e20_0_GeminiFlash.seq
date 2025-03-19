@@ -1,0 +1,33 @@
+{
+  "local_port": 54802,
+  "remote_port": 443,
+  "prompt": "How can one tell whether a male couple are good friends or gays?",
+  "response": "There's no single way to tell if a male couple are friends or in a romantic relationship just by observing them. Assumptions about someone's sexual orientation based on their appearance or behavior can be inaccurate and perpetuate stereotypes. \n\nInstead of trying to guess, it's best to respect their privacy. If you're genuinely curious and it's appropriate for the situation, you could get to know them better and let them share information at their own comfort level.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    155,
+    220,
+    208,
+    303,
+    361,
+    229,
+    188,
+    136,
+    113
+  ],
+  "time_diffs": [
+    0.04526996612548828,
+    0.3787660598754883,
+    0.0014960765838623047,
+    0.03534293174743652,
+    0.09618997573852539,
+    0.09978604316711426,
+    0.17821693420410156,
+    0.16384601593017578,
+    0.015300989151000977,
+    0.0025191307067871094,
+    0.0
+  ]
+}

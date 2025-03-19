@@ -1,0 +1,43 @@
+{
+  "local_port": 57624,
+  "remote_port": 443,
+  "prompt": "What are the must watch Hollywood movies before you die (count not more than 10)?",
+  "response": "Okay, narrowing down Hollywood classics to just 10 \"must-watch before you die\" is tough, but here's my attempt, focusing on movies that are culturally significant, enduringly popular, and offer something meaningful:\n\n1.  **Casablanca (1942):** Romance, sacrifice, and timeless dialogue set against a backdrop of World War II. It's a masterclass in storytelling and emotional resonance.\n\n2.  **Citizen Kane (1941):**  A groundbreaking film in terms of technique and narrative structure. It explores themes of ambition, loss, and the elusive nature of truth.\n\n3.  **The Godfather (1972):** A sprawling epic about family, power, and corruption, considered by many to be one of the greatest films ever made.\n\n4.  **2001: A Space Odyssey (1968):** A visually stunning and thought-provoking exploration of humanity's place in the universe, artificial intelligence, and the future.\n\n5.  **Singin' in the Rain (1952):** Pure joy and cinematic exuberance. A delightful musical that showcases the magic of Hollywood.\n\n6.  **Pulp Fiction (1994):** A game-changing film that redefined independent cinema. It's stylish, witty, and full of memorable characters.\n\n7.  **Star Wars: Episode IV - A New Hope (1977):** A cultural phenomenon that redefined the science fiction genre and continues to inspire generations.\n\n8.  **Schindler's List (1993):** A powerful and emotionally devastating portrayal of the Holocaust, reminding us of the importance of compassion and courage.\n\n9.  **One Flew Over the Cuckoo's Nest (1975):** A moving story about rebellion, conformity, and the struggle for individuality in a restrictive environment.\n\n10. **It's a Wonderful Life (1946):** A heart-warming and life-affirming film about the importance of community, kindness, and appreciating what you have.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1288,
+    308,
+    429,
+    426,
+    283,
+    326,
+    523,
+    351,
+    386,
+    463,
+    546,
+    320,
+    200,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.045252084732055664,
+    0.3544609546661377,
+    0.02498602867126465,
+    0.09496283531188965,
+    0.11341404914855957,
+    0.2592630386352539,
+    0.15406394004821777,
+    0.21748614311218262,
+    0.23016786575317383,
+    0.41855311393737793,
+    0.40895891189575195,
+    0.34068799018859863,
+    0.26931214332580566,
+    0.008713960647583008,
+    0.0,
+    0.0
+  ]
+}

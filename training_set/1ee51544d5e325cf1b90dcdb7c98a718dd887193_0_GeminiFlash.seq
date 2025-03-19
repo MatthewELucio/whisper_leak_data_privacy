@@ -1,0 +1,35 @@
+{
+  "local_port": 57084,
+  "remote_port": 443,
+  "prompt": "Jesus is there?",
+  "response": "Whether Jesus exists is a matter of faith and belief.\n\n*   **Historical Perspective:** Most scholars of history agree that a man named Jesus existed in Roman-era Palestine. They base this on historical texts (including non-Christian sources), archaeological evidence, and the consistency of accounts.\n\n*   **Religious Perspective:** For Christians, Jesus is the central figure of their faith, believed to be the Son of God, the Messiah, and the savior of humanity. This is based on the Bible and personal faith.\n\n*   **Other Perspectives:** Other religions and individuals may have different views of Jesus, ranging from respect for his moral teachings to seeing him as a prophet or simply a historical figure.\n\nUltimately, whether or not you believe Jesus exists (or existed) and what his significance is depends on your personal beliefs and worldview.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    294,
+    371,
+    319,
+    257,
+    354,
+    444,
+    392,
+    241,
+    184,
+    113
+  ],
+  "time_diffs": [
+    0.05011606216430664,
+    0.2935328483581543,
+    0.001741170883178711,
+    0.1172938346862793,
+    0.15499496459960938,
+    0.23999810218811035,
+    0.2112889289855957,
+    0.2848050594329834,
+    0.09007811546325684,
+    0.0075418949127197266,
+    0.0,
+    0.0
+  ]
+}

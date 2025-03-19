@@ -1,0 +1,25 @@
+{
+  "local_port": 59076,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law absolutely prohibits money laundering in virtually every country in the world.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1441,
+    282,
+    380,
+    207,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.04900813102722168,
+    0.4324009418487549,
+    0.030273914337158203,
+    0.0456089973449707,
+    0.005982160568237305,
+    0.0017969608306884766,
+    0.0
+  ]
+}

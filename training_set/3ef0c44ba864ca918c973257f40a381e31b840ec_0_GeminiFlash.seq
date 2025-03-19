@@ -1,0 +1,33 @@
+{
+  "local_port": 58486,
+  "remote_port": 443,
+  "prompt": "Is Nazism on the rise in Europe again?",
+  "response": "Multiple sources indicate a rise in right-wing extremism in Europe, but whether this equates to a resurgence of Nazism is complex. Some groups espouse ideologies that share similarities with Nazism, such as ultranationalism, racism, and antisemitism. These groups often promote hate speech and violence against minority groups.\n\nHowever, it's important to note that these groups are diverse, and not all right-wing extremist groups are explicitly Nazi. Additionally, the extent of their support and influence varies across different European countries.\n\nTherefore, while there's a documented increase in right-wing extremism with some neo-Nazi elements, it's an oversimplification to state that Nazism is simply \"on the rise\" without further context and nuance.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1441,
+    332,
+    376,
+    283,
+    371,
+    449,
+    391,
+    272,
+    153,
+    113
+  ],
+  "time_diffs": [
+    0.04782390594482422,
+    0.2670578956604004,
+    0.13036799430847168,
+    0.13011598587036133,
+    0.15833020210266113,
+    0.1954059600830078,
+    0.2940199375152588,
+    0.034050941467285156,
+    0.010008096694946289,
+    0.00015306472778320312,
+    0.002079010009765625
+  ]
+}

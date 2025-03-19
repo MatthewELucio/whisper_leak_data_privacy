@@ -1,0 +1,35 @@
+{
+  "local_port": 53340,
+  "remote_port": 443,
+  "prompt": "Which slang word you use the most?",
+  "response": "As an AI, I don't \"use\" language in the same way a human does. I don't have a personal preference or favorite slang word. I simply process and generate text based on the data I've been trained on.\n\nHowever, I can tell you that some slang words I encounter frequently in my training data include:\n\n*   **\"OK\" or \"Okay\"**\n*   **\"Lit\"**\n*   **\"Salty\"**\n*   **\"Sus\"**\n\nThe frequency of these words depends on the specific context and the source of the text.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    292,
+    308,
+    376,
+    344,
+    416,
+    239,
+    335,
+    283,
+    145,
+    113
+  ],
+  "time_diffs": [
+    0.04677104949951172,
+    0.36298608779907227,
+    0.0014140605926513672,
+    0.013396978378295898,
+    0.05811786651611328,
+    0.14518499374389648,
+    0.15993714332580566,
+    0.18909382820129395,
+    0.11706900596618652,
+    0.016204118728637695,
+    0.0,
+    0.0
+  ]
+}

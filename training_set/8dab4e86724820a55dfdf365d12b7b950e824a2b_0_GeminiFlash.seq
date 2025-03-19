@@ -1,0 +1,29 @@
+{
+  "local_port": 33236,
+  "remote_port": 443,
+  "prompt": "Game of Thrones Season 5 Episode 5 (Kill the Boy): Did Jorah touch Tyrion?",
+  "response": "Yes, Jorah did touch Tyrion in \"Kill the Boy.\"\n\nWhen Tyrion is being taken below deck to be bound and gagged, he resists, and Jorah grabs him by the arm to subdue him and force him down the stairs.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    89,
+    282,
+    188,
+    295,
+    163,
+    152,
+    113
+  ],
+  "time_diffs": [
+    0.052778005599975586,
+    0.40481996536254883,
+    0.0013151168823242188,
+    0.09726381301879883,
+    0.12614011764526367,
+    0.11016488075256348,
+    0.009685993194580078,
+    0.0031042098999023438,
+    4.696846008300781e-05
+  ]
+}

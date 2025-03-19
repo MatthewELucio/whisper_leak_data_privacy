@@ -1,0 +1,31 @@
+{
+  "local_port": 38638,
+  "remote_port": 443,
+  "prompt": "Will the celebrities who promised to move if Trump won, really leave the US?",
+  "response": "In the past, some celebrities have indeed stated they would leave the U.S. if Donald Trump were elected president. However, after his election in 2016, most of those celebrities did not actually leave the country.\n\nWhether or not celebrities will follow through on such promises is complex and depends on their individual circumstances and motivations. It's difficult to predict with certainty what any individual will do.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    240,
+    398,
+    381,
+    426,
+    256,
+    253,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.04834604263305664,
+    0.32151198387145996,
+    0.0011751651763916016,
+    0.13161492347717285,
+    0.06295394897460938,
+    0.24723505973815918,
+    0.09900593757629395,
+    0.007812023162841797,
+    0.001837015151977539,
+    0.0
+  ]
+}

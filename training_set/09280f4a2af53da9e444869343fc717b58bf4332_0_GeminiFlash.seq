@@ -1,0 +1,29 @@
+{
+  "local_port": 50284,
+  "remote_port": 443,
+  "prompt": "If there are 5 petrol pumps an the distance between A&B is 9km then what is the distance between D&E?",
+  "response": "Please provide more context. The question mentions 5 petrol pumps, and points A and B, but doesn't specify the location of the petrol pumps or the relationship between them and A & B. Additionally, the locations of points D & E are not given.  Without more information, it's impossible to determine the distance between D and E.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    272,
+    275,
+    258,
+    321,
+    293,
+    248,
+    113
+  ],
+  "time_diffs": [
+    0.045760154724121094,
+    0.277569055557251,
+    0.0015728473663330078,
+    0.1865980625152588,
+    0.06593608856201172,
+    0.15808486938476562,
+    0.12707304954528809,
+    0.0014150142669677734,
+    0.0
+  ]
+}

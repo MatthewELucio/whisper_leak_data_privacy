@@ -1,0 +1,27 @@
+{
+  "local_port": 34932,
+  "remote_port": 443,
+  "prompt": "How did Jake Williams get inside Prince Charles' helicopter?",
+  "response": "There appears to be a misunderstanding. I am unable to find any public records or news articles that report a Jake Williams ever being inside Prince Charles' helicopter. It is possible that this event never occurred, or perhaps it was not newsworthy enough to be recorded. \n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1454,
+    230,
+    224,
+    329,
+    207,
+    169,
+    113
+  ],
+  "time_diffs": [
+    0.04673004150390625,
+    0.2890458106994629,
+    0.12376713752746582,
+    0.08815693855285645,
+    0.17194104194641113,
+    0.008994102478027344,
+    0.0014269351959228516,
+    5.888938903808594e-05
+  ]
+}

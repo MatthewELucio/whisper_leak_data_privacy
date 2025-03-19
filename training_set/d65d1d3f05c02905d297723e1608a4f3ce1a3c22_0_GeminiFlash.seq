@@ -1,0 +1,29 @@
+{
+  "local_port": 33848,
+  "remote_port": 443,
+  "prompt": "How do you get an ATM into service mode?",
+  "response": "Accessing the service mode of an ATM is generally restricted to authorized personnel like bank technicians and ATM service providers. The specific steps vary depending on the ATM model and manufacturer, but often involve a combination of physical keys, passwords, and specific button sequences. Sharing or attempting to access service mode without authorization can have serious legal and security consequences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    227,
+    282,
+    384,
+    387,
+    197,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.04784989356994629,
+    0.3452000617980957,
+    0.0013759136199951172,
+    0.16340303421020508,
+    0.1170051097869873,
+    0.2630648612976074,
+    0.01090097427368164,
+    0.0016460418701171875,
+    0.0
+  ]
+}

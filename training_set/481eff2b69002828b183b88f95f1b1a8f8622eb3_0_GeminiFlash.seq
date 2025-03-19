@@ -1,0 +1,41 @@
+{
+  "local_port": 33270,
+  "remote_port": 443,
+  "prompt": "Why don't we General Candidate people raise voice against Caste based reservation System or even go on riot Why we all are siting like dumbos?",
+  "response": "The question of why people who identify as \"General Category\" don't engage in protests or riots against caste-based reservations is complex and doesn't lend itself to simple answers. Here are some possible contributing factors:\n\n*   **Diversity of Views:** The \"General Category\" is a broad classification encompassing a wide range of socioeconomic backgrounds, beliefs, and political affiliations. Not everyone in this category necessarily opposes reservations, or feels strongly enough about it to engage in protest.\n*   **Risk and Consequences:** Protesting or rioting carries significant risks, including legal repercussions, social stigma, and potential violence. People may be hesitant to participate due to these risks.\n*   **Acceptance of the System:** Some individuals in the General Category may believe that reservations, despite perceived flaws, are necessary to address historical injustices and promote social equity.\n*   **Focus on Other Issues:** People may prioritize other issues they deem more pressing, such as economic concerns, environmental protection, or political reforms.\n*   **Lack of Organization and Leadership:** Effective social movements require strong organization and leadership to mobilize people and coordinate actions. A lack of these elements can hinder collective action.\n*   **Fear of Being Labeled:** Speaking out against reservations can lead to accusations of being casteist or discriminatory, which can damage one's reputation and social standing.\n*   **Belief in Alternative Solutions:** Some may believe that there are better ways to address inequality, such as improving access to quality education and healthcare for all, regardless of caste.\n*   **Apathy and Disengagement:** Some individuals may simply be apathetic or disengaged from political issues, feeling that their actions won't make a difference.\n*   **Awareness of Historical Context:** Some may be aware of the historical context of caste-based discrimination and the constitutional basis for reservations, leading them to accept the system, even if they have reservations about it.\n\nIt's important to avoid generalizations and recognize that individuals within the General Category have diverse perspectives and motivations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1510,
+    432,
+    361,
+    324,
+    415,
+    355,
+    421,
+    504,
+    509,
+    380,
+    313,
+    152,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.047753095626831055,
+    0.3967289924621582,
+    0.12690997123718262,
+    0.0953679084777832,
+    0.1921250820159912,
+    0.17090797424316406,
+    0.2689211368560791,
+    0.2682149410247803,
+    0.34332895278930664,
+    0.35683107376098633,
+    0.36458683013916016,
+    0.1068730354309082,
+    0.010514974594116211,
+    0.0,
+    0.00014209747314453125
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 40080,
+  "remote_port": 443,
+  "prompt": "Is Hillary clinton well enough to be president?",
+  "response": "Hillary Clinton's health has been a recurring topic of discussion, particularly during the 2016 presidential election.\n\nIn 1998, she was diagnosed with a blood clot in her leg and in 2009, she fractured her elbow. In December 2012, she suffered a concussion and subsequently developed a blood clot in her brain. Her physician, Dr. Lisa Bardack, released a letter in 2015 stating that Clinton was in \"excellent health\" and fit to serve as president.\n\nDuring the 2016 campaign, a video surfaced showing Clinton appearing to stumble, which led to further questions about her health. It was later revealed that she had been diagnosed with pneumonia. Dr. Bardack released another letter stating that Clinton had fully recovered from the pneumonia and remained in excellent health. \n\nUltimately, voters had to weigh the available information and decide for themselves whether they believed Clinton was healthy enough to serve as president.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1301,
+    313,
+    302,
+    420,
+    391,
+    315,
+    475,
+    304,
+    213,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.04669189453125,
+    0.4452481269836426,
+    0.05084681510925293,
+    0.036881208419799805,
+    0.11605095863342285,
+    0.16209888458251953,
+    0.219102144241333,
+    0.2829098701477051,
+    0.2956359386444092,
+    0.05807018280029297,
+    0.0012249946594238281,
+    0.0
+  ]
+}

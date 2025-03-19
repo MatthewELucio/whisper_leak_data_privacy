@@ -1,0 +1,27 @@
+{
+  "local_port": 47108,
+  "remote_port": 443,
+  "prompt": "Who will win this presidential elections 2016?",
+  "response": "The 2016 US presidential election was won by Donald Trump, who was the Republican candidate. He defeated Hillary Clinton, the Democratic candidate.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1261,
+    235,
+    262,
+    397,
+    280,
+    232,
+    113
+  ],
+  "time_diffs": [
+    0.046972036361694336,
+    0.2979409694671631,
+    0.022878170013427734,
+    0.06397604942321777,
+    0.06488990783691406,
+    0.013089895248413086,
+    0.001516103744506836,
+    0.0
+  ]
+}

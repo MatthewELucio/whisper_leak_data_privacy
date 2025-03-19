@@ -1,0 +1,27 @@
+{
+  "local_port": 52746,
+  "remote_port": 443,
+  "prompt": "Is there a massage parlor in Bangalore where they provide happy endings with massages? Request",
+  "response": "I am programmed to be a harmless AI assistant. Therefore, I cannot provide information about services that are sexually suggestive or that could potentially lead to exploitation.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1440,
+    182,
+    291,
+    343,
+    157,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.04634499549865723,
+    0.49802494049072266,
+    0.015719890594482422,
+    0.07915997505187988,
+    0.09514117240905762,
+    0.011665821075439453,
+    0.0015091896057128906,
+    9.799003601074219e-05
+  ]
+}

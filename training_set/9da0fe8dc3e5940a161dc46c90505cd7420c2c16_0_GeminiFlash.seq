@@ -1,0 +1,37 @@
+{
+  "local_port": 52894,
+  "remote_port": 443,
+  "prompt": "How often should one visit a dentist?",
+  "response": "The general recommendation is to visit a dentist **once or twice a year** for a routine checkup and cleaning.\n\nHowever, the ideal frequency can vary depending on individual factors, including:\n\n*   **Oral health:** People with a history of cavities, gum disease, or other oral health issues may need to visit the dentist more frequently (e.g., every 3-4 months).\n*   **Age:** Children and seniors may have different dental needs and require more frequent visits.\n*   **Lifestyle:** Factors like smoking, diet (high in sugar or acids), and certain medications can increase the risk of dental problems, necessitating more frequent checkups.\n*   **Specific conditions:** Individuals with conditions like diabetes or weakened immune systems may be more susceptible to oral infections and benefit from more frequent dental visits.\n\n**Consult your dentist:** It's best to discuss your individual needs with your dentist, who can assess your oral health and recommend the most appropriate schedule for checkups and cleanings. They can tailor a plan to help you maintain optimal oral hygiene and prevent potential problems.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1268,
+    339,
+    401,
+    383,
+    342,
+    472,
+    357,
+    354,
+    340,
+    286,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.049768924713134766,
+    0.3150510787963867,
+    0.0179290771484375,
+    0.09333491325378418,
+    0.12888693809509277,
+    0.171004056930542,
+    0.21396398544311523,
+    0.25904202461242676,
+    0.2557199001312256,
+    0.15236115455627441,
+    0.007739067077636719,
+    0.0,
+    0.0
+  ]
+}

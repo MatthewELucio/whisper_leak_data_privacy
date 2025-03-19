@@ -1,0 +1,41 @@
+{
+  "local_port": 55300,
+  "remote_port": 443,
+  "prompt": "Is it a felony to launder money?",
+  "response": "In the United States and many other countries, money laundering is a federal crime, and it's **almost always a felony.**\n\nHere's why:\n\n*   **Federal Law:** In the US, money laundering is primarily prosecuted under federal statutes like 18 U.S.C. \u00a7 1956 and 18 U.S.C. \u00a7 1957. These laws carry significant penalties.\n\n*   **Felony Penalties:** The penalties for money laundering typically include substantial fines (often hundreds of thousands or even millions of dollars) and lengthy prison sentences (often years or even decades). The specific penalties depend on the amount of money laundered, the complexity of the scheme, and any prior criminal record of the defendant.\n\n*   **Aggravating Factors:** Certain factors can increase the severity of the charges and penalties, such as:\n    *   Laundering money to support terrorism.\n    *   Laundering money for drug trafficking organizations.\n    *   Being a repeat offender.\n    *   Obstructing justice or lying to investigators.\n\n**Important Considerations:**\n\n*   **State Laws:** While federal law is the primary tool against money laundering, some states also have their own money laundering laws, which can also carry felony penalties.\n\n*   **Intent:** To be convicted of money laundering, the prosecution typically needs to prove that the defendant knew the funds were derived from illegal activity and intended to conceal or disguise their origin.\n\n**Disclaimer:** This information is for general knowledge purposes only and should not be considered legal advice. It is essential to consult with a qualified attorney for advice regarding your specific legal situation.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    147,
+    333,
+    230,
+    359,
+    401,
+    432,
+    264,
+    435,
+    434,
+    236,
+    227,
+    186,
+    113
+  ],
+  "time_diffs": [
+    0.04554104804992676,
+    0.28896093368530273,
+    0.001461029052734375,
+    0.08965706825256348,
+    0.09288692474365234,
+    0.14764189720153809,
+    0.1475691795349121,
+    0.28418588638305664,
+    0.2781341075897217,
+    0.3931849002838135,
+    0.33519506454467773,
+    0.09082198143005371,
+    0.009705066680908203,
+    0.0,
+    4.887580871582031e-05
+  ]
+}

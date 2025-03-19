@@ -1,0 +1,43 @@
+{
+  "local_port": 50218,
+  "remote_port": 443,
+  "prompt": "What is the legal status of money laundering?",
+  "response": "Money laundering is a serious federal crime in the United States, as well as in many other countries around the world. It is illegal to conceal the source of money obtained through illegal activity.\n\nHere's a breakdown of the key aspects:\n\n*   **Federal Crime:** In the U.S., money laundering is primarily governed by federal laws, particularly those within the Bank Secrecy Act (BSA) and Title 18 of the U.S. Code.\n*   **Elements of the Crime:** Generally, money laundering involves engaging in financial transactions with the proceeds of unlawful activity, with the intent to:\n    *   Conceal or disguise the nature, location, source, ownership, or control of the proceeds.\n    *   Avoid transaction reporting requirements under state or federal law.\n*   **Predicate Offenses:** Money laundering typically involves \"dirty money\" derived from other illegal activities (the \"predicate offense\"). These predicate offenses can include:\n    *   Drug trafficking\n    *   Fraud\n    *   Terrorism financing\n    *   Corruption\n    *   Human trafficking\n    *   And many others\n*   **Penalties:** The penalties for money laundering are severe and can include:\n    *   Substantial fines (often hundreds of thousands or millions of dollars)\n    *   Imprisonment (often for many years)\n    *   Forfeiture of assets involved in the money laundering scheme\n\nIt is important to note that the specific laws and penalties can vary depending on the jurisdiction and the specific facts of the case. If you have further questions, consulting with a legal expert is always recommended.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    300,
+    242,
+    222,
+    201,
+    348,
+    367,
+    406,
+    279,
+    376,
+    309,
+    348,
+    189,
+    214,
+    113
+  ],
+  "time_diffs": [
+    0.045336008071899414,
+    0.4463069438934326,
+    0.00013208389282226562,
+    0.016819000244140625,
+    0.0682518482208252,
+    0.14713811874389648,
+    0.10099196434020996,
+    0.1609659194946289,
+    0.428145170211792,
+    0.14947986602783203,
+    0.5896689891815186,
+    0.23833799362182617,
+    0.0991511344909668,
+    0.006445884704589844,
+    0.0,
+    0.0
+  ]
+}

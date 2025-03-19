@@ -1,0 +1,39 @@
+{
+  "local_port": 42864,
+  "remote_port": 443,
+  "prompt": "Was Donald Trump scared of Megyn Kelly?",
+  "response": "There's no definitive way to know if Donald Trump was \"scared\" of Megyn Kelly. However, their relationship was marked by significant tension and public clashes.\n\nHere's a summary of their interactions:\n\n*   **Early clashes:** During the 2015 Republican primary debate, Kelly questioned Trump about his past statements about women. Trump responded with insults, saying she had \"blood coming out of her eyes, blood coming out of her wherever.\"\n*   **Continued criticism:** Trump continued to attack Kelly on social media and in interviews, often calling her \"crazy\" or \"biased.\"\n*   **Attempts at reconciliation:** Despite the animosity, Trump and Kelly eventually had a private meeting and an interview on Fox News in 2016.\n\nSome argue that Trump's attacks on Kelly were a deliberate strategy to energize his base and deflect criticism. Others believe that he genuinely disliked her questioning and perceived bias.\n\nUltimately, whether Trump was \"scared\" of Kelly is a matter of interpretation. Their interactions were certainly contentious and newsworthy.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    237,
+    286,
+    354,
+    271,
+    406,
+    313,
+    294,
+    330,
+    361,
+    175,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.04620003700256348,
+    0.3017151355743408,
+    0.001374959945678711,
+    0.022349834442138672,
+    0.09112215042114258,
+    0.07298493385314941,
+    0.1838390827178955,
+    0.2592339515686035,
+    0.3199920654296875,
+    0.285977840423584,
+    0.13601899147033691,
+    0.028083086013793945,
+    9.5367431640625e-07,
+    0.00020194053649902344
+  ]
+}

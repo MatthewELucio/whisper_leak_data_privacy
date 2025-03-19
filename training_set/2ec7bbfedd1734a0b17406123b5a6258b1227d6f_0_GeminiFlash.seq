@@ -1,0 +1,35 @@
+{
+  "local_port": 55618,
+  "remote_port": 443,
+  "prompt": "What's the Perfect age for presidents and politicians in your opinion?",
+  "response": "That's a really interesting question! There's no single \"perfect\" age, as different stages of life bring different strengths and potential drawbacks.\n\nFor example, younger leaders might bring fresh perspectives, energy, and a deep understanding of the issues facing younger generations. They might also be more adaptable to rapidly changing circumstances. However, they could lack the extensive experience and established networks that come with age.\n\nOn the other hand, older leaders often possess a wealth of knowledge, a proven track record, and a network of relationships built over years of service. They might have a more measured and pragmatic approach to decision-making. The potential downsides could include a resistance to new ideas, a disconnect from younger generations, and potential health concerns.\n\nUltimately, what matters most is a candidate's individual qualities: their intelligence, integrity, leadership skills, vision, and ability to connect with and represent the people they serve. It really comes down to the individual and whether they possess the qualities needed to be an effective leader.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1357,
+    422,
+    230,
+    300,
+    381,
+    499,
+    345,
+    363,
+    290,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.05063295364379883,
+    0.41512107849121094,
+    0.08814001083374023,
+    0.10589098930358887,
+    0.19611287117004395,
+    0.18834614753723145,
+    0.33362579345703125,
+    0.25669217109680176,
+    0.043478965759277344,
+    0.00810384750366211,
+    0.0,
+    6.818771362304688e-05
+  ]
+}

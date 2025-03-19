@@ -1,0 +1,29 @@
+{
+  "local_port": 42510,
+  "remote_port": 443,
+  "prompt": "Does Rick actually slaughter the pigs in season 4 episode 2 of The Walking Dead?",
+  "response": "No, Rick does *not* slaughter the pigs himself in season 4 episode 2 of The Walking Dead. He raises them and cares for them, but Carl slaughters Violet (the pig) because they are getting sick and dying and spreading sickness to the community.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1290,
+    223,
+    238,
+    314,
+    311,
+    270,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.04780101776123047,
+    0.3323349952697754,
+    0.01424717903137207,
+    0.08111691474914551,
+    0.12002992630004883,
+    0.15003418922424316,
+    0.009884834289550781,
+    0.001516103744506836,
+    0.0
+  ]
+}

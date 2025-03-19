@@ -1,0 +1,27 @@
+{
+  "local_port": 53396,
+  "remote_port": 443,
+  "prompt": "How many women have accused Trump of sexual assault?",
+  "response": "Over the years, more than two dozen women have accused Donald Trump of sexual misconduct, including sexual assault, harassment, and unwanted touching.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    117,
+    258,
+    270,
+    176,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.043949127197265625,
+    0.2721669673919678,
+    0.001399993896484375,
+    0.14162087440490723,
+    0.07899999618530273,
+    0.01277017593383789,
+    0.0016508102416992188,
+    0.0015170574188232422
+  ]
+}

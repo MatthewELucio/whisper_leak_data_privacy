@@ -1,0 +1,41 @@
+{
+  "local_port": 33852,
+  "remote_port": 443,
+  "prompt": "What is haka?",
+  "response": "Haka is a traditional ancestral war dance of the M\u0101ori people of New Zealand. It is characterized by vigorous movements, rhythmic stomping, forceful shouting, and expressive facial contortions. While often associated with war and traditionally performed by men, haka can also be performed by women and children and is used for a variety of purposes, including:\n\n*   **Welcoming guests:** Showing respect and hospitality.\n*   **Celebrating achievements:** Marking significant milestones or victories.\n*   **Challenging opponents:** Intimidation or displays of strength.\n*   **Mourning the dead:** Paying respects at funerals.\n*   **Honoring ancestors:** Remembering and celebrating heritage.\n*   **Demonstrating unity and pride:** Bringing people together with a common identity.\n\nKey elements of a haka performance include:\n\n*   **Words (lyrics):** The chants tell a story or convey a specific message.\n*   **Movements:** Synchronized movements of the arms, legs, and body.\n*   **Facial expressions:** P\u016bkana (wide-eyed stares and tongue protrusions) and other expressions to emphasize the message.\n*   **Sound:** Rhythmic chanting and stomping create a powerful auditory experience.\n\nThe most famous haka is \"Ka Mate,\" composed by the Ng\u0101ti Toa chief Te Rauparaha in the early 19th century. It's widely performed by the All Blacks, New Zealand's national rugby team, before their matches.\n\nIn short, haka is a powerful and complex cultural expression that embodies M\u0101ori history, values, and traditions.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    288,
+    197,
+    423,
+    396,
+    358,
+    310,
+    321,
+    308,
+    447,
+    438,
+    251,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.048681020736694336,
+    0.30379509925842285,
+    0.0013887882232666016,
+    0.025988101959228516,
+    0.07794308662414551,
+    0.09591102600097656,
+    0.1749889850616455,
+    0.18094587326049805,
+    0.2749800682067871,
+    0.2857780456542969,
+    0.3975648880004883,
+    0.3204081058502197,
+    0.008849859237670898,
+    0.0,
+    0.0
+  ]
+}

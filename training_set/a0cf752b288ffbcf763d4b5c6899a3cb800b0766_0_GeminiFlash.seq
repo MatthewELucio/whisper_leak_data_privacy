@@ -1,0 +1,43 @@
+{
+  "local_port": 47436,
+  "remote_port": 443,
+  "prompt": "What is the food you can eat every day for breakfast, lunch and dinner?",
+  "response": "This is a tough question because, ideally, you want variety in your diet for optimal nutrition. However, if I *had* to pick one food that could theoretically sustain me (though not necessarily thrive) for every meal, every day, it would be **eggs**.\n\nHere's why:\n\n*   **Nutrient-rich:** Eggs are packed with protein, healthy fats, and essential vitamins and minerals like choline, vitamin D, vitamin B12, riboflavin, and selenium.\n*   **Versatile:** Eggs can be prepared in countless ways (scrambled, fried, poached, omelets, quiches, frittatas, etc.) to provide some variety in texture and flavor. You can also add small amounts of vegetables for added benefits.\n*   **Relatively accessible and affordable:** Eggs are generally available in most parts of the world and are relatively inexpensive.\n\n**Important Considerations:**\n\n*   **Limited Variety:** Even with different preparations, eating only eggs would get boring quickly.\n*   **Nutritional Deficiencies:** While eggs are nutritious, they lack certain essential nutrients like vitamin C, fiber, and complex carbohydrates, which are crucial for overall health. You would be at risk of constipation and vitamin deficiencies.\n*   **Cholesterol:** While dietary cholesterol is not as demonized as it once was, eating a large number of eggs every day might still be a concern for some people, especially those with certain pre-existing conditions.\n\n**Disclaimer:** I am an AI and not a medical professional. I do not recommend this in the real world. If you are concerned about your diet, consult with a doctor or registered dietitian.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    191,
+    220,
+    212,
+    312,
+    344,
+    468,
+    348,
+    443,
+    555,
+    441,
+    250,
+    260,
+    154,
+    113
+  ],
+  "time_diffs": [
+    0.04976701736450195,
+    0.4273519515991211,
+    0.001500844955444336,
+    0.024335145950317383,
+    0.08378100395202637,
+    0.1543569564819336,
+    0.126478910446167,
+    0.17025113105773926,
+    0.2562260627746582,
+    0.29881787300109863,
+    0.33326101303100586,
+    0.3430290222167969,
+    0.04893088340759277,
+    0.006857156753540039,
+    0.0,
+    0.0
+  ]
+}

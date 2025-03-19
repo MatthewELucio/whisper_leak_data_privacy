@@ -1,0 +1,33 @@
+{
+  "local_port": 59476,
+  "remote_port": 443,
+  "prompt": "Why so Indian girls prefer guys with fair complexion?",
+  "response": "It's not accurate to say that all Indian girls prefer guys with a fair complexion. Preferences vary from person to person and are influenced by individual tastes, cultural factors, and personal experiences.\n\nHowever, historically, there has been a preference for fair skin in Indian society, stemming from:\n\n*   **Colonial influence:** During British rule, fair skin was associated with the ruling class and considered a symbol of power and prestige.\n*   **Caste system:** In the traditional caste system, lighter skin was often associated with higher castes, while darker skin was associated with lower castes.\n*   **Media representation:** Bollywood and other media often portray fair-skinned actors and actresses as the ideal of beauty, which can perpetuate the preference for fair skin.\n\nHowever, attitudes are changing, and there is increasing awareness and acceptance of diverse skin tones. Many Indian women now prioritize other qualities such as personality, intelligence, kindness, and compatibility over skin color.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1509,
+    265,
+    345,
+    396,
+    267,
+    486,
+    491,
+    300,
+    192,
+    113
+  ],
+  "time_diffs": [
+    0.05023598670959473,
+    0.33406901359558105,
+    0.11703109741210938,
+    0.1349940299987793,
+    0.23990201950073242,
+    0.21167397499084473,
+    0.289456844329834,
+    0.2621641159057617,
+    0.00797891616821289,
+    0.0,
+    0.0
+  ]
+}

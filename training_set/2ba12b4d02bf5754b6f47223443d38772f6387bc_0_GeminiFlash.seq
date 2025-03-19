@@ -1,0 +1,33 @@
+{
+  "local_port": 59656,
+  "remote_port": 443,
+  "prompt": "Will Muslims be deported from the us?",
+  "response": "Deportation policies are complex and can change depending on various factors, including legislation, executive orders, and enforcement priorities. In the U.S., immigration laws are primarily federal and determine who can be deported. These laws do not single out any particular religious group for deportation.\n\nGenerally, a person can be deported from the U.S. if they:\n\n*   Are not a U.S. citizen.\n*   Have violated immigration laws, such as overstaying a visa or entering the country without authorization.\n*   Have committed certain criminal offenses.\n\nU.S. immigration laws and policies are subject to change, and enforcement can vary depending on the current administration's priorities.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    94,
+    325,
+    350,
+    326,
+    360,
+    328,
+    271,
+    172,
+    113
+  ],
+  "time_diffs": [
+    0.04875302314758301,
+    0.28824806213378906,
+    0.0013239383697509766,
+    0.1865551471710205,
+    0.1290268898010254,
+    0.2101271152496338,
+    0.17491483688354492,
+    0.20391201972961426,
+    0.011996030807495117,
+    0.001425027847290039,
+    0.0
+  ]
+}

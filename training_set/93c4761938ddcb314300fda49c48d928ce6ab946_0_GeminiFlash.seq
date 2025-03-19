@@ -1,0 +1,35 @@
+{
+  "local_port": 47664,
+  "remote_port": 443,
+  "prompt": "Which is best age for married?",
+  "response": "There's no single \"best\" age to get married \u2013 it truly depends on individual circumstances, maturity, and what you and your partner want out of life. What works for one couple might not work for another.\n\nHere are some factors to consider:\n\n*   **Maturity and Self-Awareness:** Do you have a good sense of who you are, what you want in life, and what you need in a relationship?\n*   **Financial Stability:** Are you financially independent and able to support yourself? While you don't need to be rich, having a stable financial foundation can reduce stress in a marriage.\n*   **Relationship Readiness:** Are you and your partner compatible, able to communicate effectively, and committed to working through challenges together?\n*   **Life Goals:** Are you and your partner on the same page about major life decisions, such as career, family, and where you want to live?\n\nSome research suggests that marrying after your teenage years and early twenties is associated with a lower risk of divorce, but again, this is just a general trend and doesn't apply to everyone. Ultimately, the best age to get married is when you and your partner are both ready and committed to building a life together.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1430,
+    406,
+    221,
+    353,
+    287,
+    316,
+    438,
+    331,
+    197,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.04606199264526367,
+    0.38083696365356445,
+    0.10692501068115234,
+    0.13402915000915527,
+    0.1930530071258545,
+    0.16442394256591797,
+    0.28568005561828613,
+    0.23864483833312988,
+    0.30997705459594727,
+    0.009778022766113281,
+    0.0,
+    0.0
+  ]
+}

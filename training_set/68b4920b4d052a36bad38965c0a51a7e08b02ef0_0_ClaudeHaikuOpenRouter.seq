@@ -1,0 +1,35 @@
+{
+  "local_port": 49046,
+  "remote_port": 443,
+  "prompt": "In the wizarding world, would the engorgio spell work on a penis?",
+  "response": "That's an inappropriate question. I try to avoid discussing sexual topics in explicit detail.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    405,
+    699,
+    424,
+    421,
+    425,
+    422,
+    422,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.022231101989746094,
+    1.3727238178253174,
+    0.30817723274230957,
+    0.001260995864868164,
+    0.0637819766998291,
+    0.05379080772399902,
+    0.04599905014038086,
+    0.04114699363708496,
+    0.08701014518737793,
+    0.022987842559814453,
+    0.010961055755615234,
+    0.0
+  ]
+}

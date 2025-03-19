@@ -1,0 +1,29 @@
+{
+  "local_port": 52472,
+  "remote_port": 443,
+  "prompt": "Union Public Service Commission (India): Is the number of optionals are reduced to one(paper 1 nd paper 2) OR they are two only wid the difference of only one paper for each optionals?",
+  "response": "As of the current UPSC Civil Services Examination (CSE) pattern, **candidates still need to choose one optional subject, and it consists of two papers (Paper 1 and Paper 2).**\n\nSo, the correct answer is: they are two only (Paper 1 and Paper 2) with one optional subject.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    271,
+    455,
+    273,
+    263,
+    156,
+    229,
+    113
+  ],
+  "time_diffs": [
+    0.04678010940551758,
+    0.40174007415771484,
+    0.00152587890625,
+    0.11286115646362305,
+    0.09207391738891602,
+    0.17095303535461426,
+    0.007380962371826172,
+    0.0017659664154052734,
+    0.0
+  ]
+}

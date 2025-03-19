@@ -1,0 +1,37 @@
+{
+  "local_port": 37716,
+  "remote_port": 443,
+  "prompt": "What is the legal status of money laundering?",
+  "response": "Money laundering is a serious federal crime in the United States, as well as in many other countries around the world. It is illegal under a variety of statutes, primarily:\n\n*   **18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments):** This is the primary federal money laundering statute in the U.S. It prohibits a wide range of activities related to concealing or disguising the nature, location, source, ownership, or control of illegally obtained money. To be convicted, the government must prove the defendant knew that the property involved in the transaction represented the proceeds of some form of unlawful activity.\n*   **18 U.S.C. \u00a7 1957 (Eng",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    87,
+    263,
+    359,
+    353,
+    399,
+    327,
+    306,
+    255,
+    143,
+    168,
+    113
+  ],
+  "time_diffs": [
+    0.04521608352661133,
+    0.4192678928375244,
+    0.0013589859008789062,
+    0.019648075103759766,
+    0.04886198043823242,
+    0.1677849292755127,
+    0.06949901580810547,
+    0.20686006546020508,
+    0.2894148826599121,
+    0.2654120922088623,
+    0.012360095977783203,
+    0.0,
+    0.0
+  ]
+}

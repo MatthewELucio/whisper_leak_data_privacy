@@ -1,0 +1,27 @@
+{
+  "local_port": 58024,
+  "remote_port": 443,
+  "prompt": "What are the most sensitive parts on a woman?",
+  "response": "Sensitivity varies from person to person. However, some areas that are commonly considered sensitive include the breasts and nipples, the clitoris, the neck, and the lips.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    179,
+    322,
+    282,
+    249,
+    132,
+    113
+  ],
+  "time_diffs": [
+    0.05171084403991699,
+    0.33832311630249023,
+    0.0013709068298339844,
+    0.14432716369628906,
+    0.09726786613464355,
+    0.013697147369384766,
+    0.0016620159149169922,
+    0.003131866455078125
+  ]
+}

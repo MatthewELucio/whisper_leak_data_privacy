@@ -1,0 +1,33 @@
+{
+  "local_port": 41946,
+  "remote_port": 443,
+  "prompt": "What is a normal waist size for a women?",
+  "response": "A \"normal\" or \"healthy\" waist size for women is generally considered to be **less than 35 inches (88 cm)**.\n\nHowever, it's important to note that:\n\n*   **This is a general guideline.** Factors like height, body frame, and overall body composition play a role.\n*   **Waist-to-hip ratio** is another measurement used to assess health risks.\n*   **Health is more important than size.** Focusing on overall well-being, including a balanced diet and regular exercise, is key.\n*   **Cultural and personal preferences vary.** What's considered \"normal\" can also depend on these factors.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    249,
+    424,
+    366,
+    303,
+    314,
+    417,
+    147,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.045207977294921875,
+    0.2587471008300781,
+    0.0014379024505615234,
+    0.12415003776550293,
+    0.0800771713256836,
+    0.1873779296875,
+    0.2335219383239746,
+    0.18948912620544434,
+    0.007823944091796875,
+    0.0014538764953613281,
+    0.0
+  ]
+}

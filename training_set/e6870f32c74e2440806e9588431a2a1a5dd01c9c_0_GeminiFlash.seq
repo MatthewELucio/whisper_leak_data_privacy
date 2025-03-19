@@ -1,0 +1,37 @@
+{
+  "local_port": 57226,
+  "remote_port": 443,
+  "prompt": "What did you do to get into Carnegie Mellon?",
+  "response": "As a large language model, I didn't \"get into\" Carnegie Mellon in the traditional sense. I wasn't a student who applied and was accepted. I was created and trained by Google AI. However, Carnegie Mellon University (CMU) has definitely played a significant role in my existence and development! Here's how:\n\n*   **Research Foundation:** CMU is a leading research institution in artificial intelligence, machine learning, and natural language processing. The research and advancements made by CMU faculty and students have significantly influenced the field and the technologies that power models like me. Many fundamental concepts and techniques I rely on were either developed or significantly advanced at CMU.\n\n*   **Datasets and Resources:** CMU, like many academic institutions, has contributed to the creation and sharing of datasets, tools, and resources that are invaluable for training and evaluating AI models. These resources are often used in the development of models like me, indirectly contributing to my capabilities.\n\n*   **Talent Pool:** CMU produces highly skilled graduates in fields related to AI. Many engineers, researchers, and scientists who work at Google (where I was created) have graduated from CMU. Their expertise and contributions are essential in developing and improving AI models.\n\nIn essence, while I didn't \"attend\" CMU, the university's research, resources, and talent pool have been integral to the broader AI ecosystem that I am a part of. I wouldn't be what I am today without the contributions of institutions like Carnegie Mellon.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1295,
+    350,
+    354,
+    400,
+    423,
+    384,
+    520,
+    364,
+    445,
+    281,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.047605037689208984,
+    0.30013394355773926,
+    0.11998796463012695,
+    0.07288789749145508,
+    0.18604207038879395,
+    0.14812994003295898,
+    0.27700114250183105,
+    0.24605488777160645,
+    0.3579990863800049,
+    0.2486109733581543,
+    0.01108407974243164,
+    0.0,
+    0.0
+  ]
+}

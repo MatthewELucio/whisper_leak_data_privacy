@@ -1,0 +1,37 @@
+{
+  "local_port": 42188,
+  "remote_port": 443,
+  "prompt": "Why do so many people support Donald Trump?",
+  "response": "Donald Trump's support comes from a variety of factors. Some voters are drawn to his populist message and his promises to \"Make America Great Again.\" This resonates with individuals who feel left behind by globalization and economic changes.\n\nHis stance on issues like immigration and trade also appeals to certain segments of the population. For example, his promise to build a wall on the border with Mexico and his criticism of trade deals like NAFTA have resonated with voters concerned about border security and American jobs.\n\nBeyond specific policies, some supporters are drawn to Trump's image as a strong leader and a Washington outsider. His unconventional style and willingness to challenge the status quo are seen as refreshing by those who are disillusioned with traditional politicians. Additionally, factors such as party affiliation and cultural identity play a significant role in shaping support for any political candidate, including Donald Trump.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    189,
+    136,
+    324,
+    345,
+    326,
+    472,
+    509,
+    424,
+    252,
+    125,
+    113
+  ],
+  "time_diffs": [
+    0.04592299461364746,
+    0.270366907119751,
+    0.0013651847839355469,
+    0.020483970642089844,
+    0.07815790176391602,
+    0.07808113098144531,
+    0.21892189979553223,
+    0.22008800506591797,
+    0.3201611042022705,
+    0.12952089309692383,
+    0.012027978897094727,
+    0.0,
+    0.0
+  ]
+}

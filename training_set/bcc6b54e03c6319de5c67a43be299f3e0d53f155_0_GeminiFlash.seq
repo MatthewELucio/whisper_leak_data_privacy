@@ -1,0 +1,43 @@
+{
+  "local_port": 43368,
+  "remote_port": 443,
+  "prompt": "Which badminton shuttlecock is better: Mavis 350 or Mavis 500?",
+  "response": "The better shuttlecock between Mavis 350 and Mavis 500 depends largely on the **climate** and your **playing preference**. Here's a breakdown:\n\n*   **Mavis 350:**\n\n    *   **Designed for:** Medium Speed - Suited for moderate temperatures and altitudes.\n    *   **Durability:** Generally considered more durable than Mavis 500 in warmer conditions.\n    *   **Flight Stability:** Offers good stability in appropriate conditions.\n    *   **Feel:** Can feel a bit heavier than the Mavis 500.\n\n*   **Mavis 500:**\n\n    *   **Designed for:** Medium-Fast Speed - Better suited for warmer temperatures or higher altitudes.\n    *   **Durability:** May be less durable than Mavis 350 in cooler temperatures. However, durability is enhanced in warmer temperatures and with newer production.\n    *   **Flight Stability:** Designed for faster flight; can be less stable in cooler conditions.\n    *   **Feel:** Generally preferred by players who like a lighter, faster feel.\n\n**In Summary:**\n\n*   **Warmer climates/Higher Altitudes:** Mavis 500 is generally preferred for better flight characteristics.\n*   **Cooler climates/Lower Altitudes:** Mavis 350 is often better for its stability and durability.\n\n**Additional factors to consider:**\n\n*   **Personal Preference:** Some players simply prefer the feel of one over the other regardless of the conditions.\n*   **Level of Play:** More advanced players might notice the slight differences in flight and feel more acutely.\n*   **Shuttlecock Wear:** Over time, both shuttlecocks will degrade, and environmental factors can impact the durability and flight of both.\n*   **Manufacturing quality:** A change in the manufacturing quality can sometimes affect the quality and characteristics of either shuttlecock.\n\n**Recommendation:**\n\nIf you're unsure, consider trying both to see which you prefer in your specific playing environment. Many players keep both on hand and adjust based on the day's conditions. You can also ask more experienced players at your badminton club for their preference.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    239,
+    214,
+    295,
+    387,
+    316,
+    255,
+    334,
+    397,
+    511,
+    503,
+    328,
+    296,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.047280073165893555,
+    0.3125269412994385,
+    0.0013890266418457031,
+    0.09150195121765137,
+    0.09287309646606445,
+    0.23831892013549805,
+    0.14804601669311523,
+    0.2779359817504883,
+    0.30106306076049805,
+    0.37346696853637695,
+    0.3130481243133545,
+    0.39780688285827637,
+    0.29517102241516113,
+    0.007972955703735352,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

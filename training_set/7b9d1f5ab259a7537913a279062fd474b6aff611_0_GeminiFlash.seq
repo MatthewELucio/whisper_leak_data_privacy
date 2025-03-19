@@ -1,0 +1,37 @@
+{
+  "local_port": 52956,
+  "remote_port": 443,
+  "prompt": "What is an organized knowledge structure reflecting on one's past experience and future expectations called?",
+  "response": "An organized knowledge structure reflecting on one's past experience and future expectations is often called a **schema** or **self-schema**.\n\nWhile other terms might be relevant in specific contexts, schema is the most general and widely accepted term. Here's why:\n\n*   **Schema:** A schema is a mental framework that helps organize and interpret information.  Self-schemas are specifically about the self, containing beliefs and generalizations about one's own behavior, attributes, and experiences.  They are built from past experiences and influence how we perceive ourselves and our future possibilities.\n\nHere's why other terms are less ideal:\n\n*   **Script:** Scripts are schemas about events and the sequence of actions within them (e.g., a restaurant script). While past experiences inform our scripts, they don't explicitly relate to our future expectations or the self.\n\n*   **Mental Model:** Mental models are representations of how things work in the world.  While they can be used to predict future events, they aren't necessarily self-referential.\n\n*   **Cognitive Map:** Cognitive maps are mental representations of physical space.\n\nTherefore, the best answer is **schema** (or more specifically, **self-schema**).\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    107,
+    243,
+    346,
+    302,
+    415,
+    498,
+    399,
+    415,
+    304,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.04910111427307129,
+    0.3184990882873535,
+    0.0015339851379394531,
+    0.1065359115600586,
+    0.07181906700134277,
+    0.14423894882202148,
+    0.2520749568939209,
+    0.33294105529785156,
+    0.2742600440979004,
+    0.2740809917449951,
+    0.04479694366455078,
+    0.0,
+    0.0
+  ]
+}

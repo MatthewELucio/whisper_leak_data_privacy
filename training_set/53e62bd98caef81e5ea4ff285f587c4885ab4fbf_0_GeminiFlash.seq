@@ -1,0 +1,29 @@
+{
+  "local_port": 54774,
+  "remote_port": 443,
+  "prompt": "What are some good examples of software architectural debt?",
+  "response": "Software architectural debt, also known as technical debt at the architectural level, refers to the implied cost of rework caused by choosing an easy solution now instead of using a better approach that",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    93,
+    426,
+    388,
+    280,
+    233,
+    161,
+    113
+  ],
+  "time_diffs": [
+    0.047183990478515625,
+    0.3087441921234131,
+    0.0013768672943115234,
+    0.17074894905090332,
+    0.14683198928833008,
+    0.1899421215057373,
+    0.010480880737304688,
+    0.0035021305084228516,
+    0.0
+  ]
+}

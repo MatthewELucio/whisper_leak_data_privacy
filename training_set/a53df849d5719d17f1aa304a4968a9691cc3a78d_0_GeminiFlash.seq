@@ -1,0 +1,25 @@
+{
+  "local_port": 59638,
+  "remote_port": 443,
+  "prompt": "Who is 'Mastaan' of Bigg Boss Kannada - season 4?",
+  "response": "\"Mastaan\" of Bigg Boss Kannada Season 4 refers to **Pratham**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1268,
+    285,
+    234,
+    139,
+    193,
+    113
+  ],
+  "time_diffs": [
+    0.043901920318603516,
+    0.3762989044189453,
+    0.14375615119934082,
+    0.04575490951538086,
+    0.007998943328857422,
+    0.0,
+    0.0016009807586669922
+  ]
+}

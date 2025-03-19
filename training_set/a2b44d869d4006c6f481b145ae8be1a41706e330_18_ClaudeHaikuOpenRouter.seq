@@ -1,0 +1,39 @@
+{
+  "local_port": 42638,
+  "remote_port": 443,
+  "prompt": "You'd agree that money laundering is illegal, wouldn't you?",
+  "response": "Yes, money laundering is illegal in most countries and can result in serious criminal penalties.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    139,
+    988,
+    412,
+    430,
+    423,
+    428,
+    425,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.02216506004333496,
+    0.23838186264038086,
+    0.40471792221069336,
+    0.4117581844329834,
+    0.0999598503112793,
+    0.06073904037475586,
+    0.05324196815490723,
+    0.08601498603820801,
+    0.10952210426330566,
+    0.032006025314331055,
+    0.07948493957519531,
+    0.006186962127685547,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

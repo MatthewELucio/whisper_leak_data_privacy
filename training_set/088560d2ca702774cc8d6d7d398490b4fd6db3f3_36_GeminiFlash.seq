@@ -1,0 +1,43 @@
+{
+  "local_port": 39732,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, governments around the world have laws against money laundering. These laws are designed to prevent criminals from disguising the proceeds of their illegal activities as legitimate funds.\n\nHere's a breakdown:\n\n*   **Purpose:** Money laundering laws aim to combat various crimes, including drug trafficking, terrorism, fraud, and corruption, by making it harder for criminals to profit from their illegal activities.\n*   **Key Provisions:** These laws typically include provisions that:\n    *   **Criminalize money laundering:** They define specific activities as money laundering offenses.\n    *   **Establish reporting requirements:** They require financial institutions (and sometimes other businesses) to report suspicious transactions to government authorities.\n    *   **Require customer due diligence:** They require financial institutions to verify the identity of their customers and understand the nature of their transactions.\n    *   **Allow for asset forfeiture:** They allow the government to seize assets that are involved in money laundering.\n*   **International Standards:** The Financial Action Task Force (FATF) is an inter-governmental body that sets international standards for combating money laundering and terrorist financing. Many countries base their laws on FATF recommendations.\n*   **Examples:**\n    *   In the **United States**, the main laws against money laundering are found in Title 18 of the United States Code, particularly sections 1956 and 1957. The Bank Secrecy Act also plays a key role.\n    *   In the **United Kingdom**, the primary legislation is the Proceeds of Crime Act 2002.\n    *   Many other countries have similar legislation.\n\nMoney laundering laws are complex and vary from country to country. They are constantly evolving to address new threats and challenges.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    207,
+    151,
+    269,
+    429,
+    467,
+    224,
+    417,
+    333,
+    382,
+    496,
+    295,
+    154,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.04420614242553711,
+    0.4077270030975342,
+    0.00131988525390625,
+    0.03839397430419922,
+    0.03496098518371582,
+    0.07218217849731445,
+    0.19133687019348145,
+    0.1437220573425293,
+    0.31014084815979004,
+    0.3136250972747803,
+    0.3454439640045166,
+    0.35434603691101074,
+    0.11806797981262207,
+    0.009935140609741211,
+    0.0,
+    0.0
+  ]
+}

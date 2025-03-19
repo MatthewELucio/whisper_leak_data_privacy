@@ -1,0 +1,27 @@
+{
+  "local_port": 48578,
+  "remote_port": 443,
+  "prompt": "Is there a common name for the mathematical function y = 2^x?",
+  "response": "Yes, the function y = 2^x is commonly called the **exponential function with base 2**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    168,
+    270,
+    386,
+    283,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.04567289352416992,
+    0.40027403831481934,
+    0.0013298988342285156,
+    0.10169315338134766,
+    0.025603055953979492,
+    0.0072019100189208984,
+    0.0,
+    0.001550912857055664
+  ]
+}

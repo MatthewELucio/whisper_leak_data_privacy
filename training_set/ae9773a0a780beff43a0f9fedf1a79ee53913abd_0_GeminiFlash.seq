@@ -1,0 +1,41 @@
+{
+  "local_port": 45364,
+  "remote_port": 443,
+  "prompt": "What does the term Civil Status mean?",
+  "response": "Civil status refers to a person's legal relationship with regard to marriage, according to the laws of their country or state. It essentially describes whether someone is single, married, divorced, widowed, or something else.\n\nHere's a breakdown of common civil statuses:\n\n*   **Single:** Never married.\n*   **Married:** Legally joined in matrimony.\n*   **Divorced:** Legally terminated a marriage.\n*   **Widowed:** Spouse has died.\n*   **Legally Separated:** Married but living apart and under a legal agreement or court order.\n*   **Annulled:** Marriage declared legally void, as if it never existed.\n\nLess Common (depending on jurisdiction):\n\n*   **Registered Partnership/Civil Union:** Legally recognized relationship similar to marriage, often (but not always) for same-sex couples or those who choose not to marry.\n*   **Domestic Partnership:** Similar to a civil union but may have fewer legal protections and benefits.\n\nCivil status is important for various legal and administrative purposes, such as:\n\n*   **Marriage licenses:** Needed to get married.\n*   **Divorce proceedings:** Needed to legally end a marriage.\n*   **Inheritance:** Determines rights to inherit property.\n*   **Taxation:** Affects tax filing status and deductions.\n*   **Benefits:** Impacts eligibility for government or employer-provided benefits.\n*   **Loans and Mortgages:** Can influence creditworthiness and loan terms.\n\nThe specific categories and legal implications of civil status can vary from one country or jurisdiction to another.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    201,
+    239,
+    422,
+    330,
+    334,
+    303,
+    388,
+    388,
+    480,
+    448,
+    213,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.04804205894470215,
+    0.354931116104126,
+    0.001569986343383789,
+    0.01437997817993164,
+    0.12316083908081055,
+    0.1089470386505127,
+    0.167039155960083,
+    0.15214085578918457,
+    0.36911702156066895,
+    0.34072089195251465,
+    0.32546019554138184,
+    0.3669860363006592,
+    0.009279966354370117,
+    0.0,
+    0.0
+  ]
+}

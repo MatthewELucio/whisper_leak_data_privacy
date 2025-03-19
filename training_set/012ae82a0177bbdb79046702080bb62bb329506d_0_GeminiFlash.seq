@@ -1,0 +1,37 @@
+{
+  "local_port": 41352,
+  "remote_port": 443,
+  "prompt": "Who would you say is the most fun person in Israel?",
+  "response": "That's a fun question! It's impossible to say definitively who the \"most fun\" person in Israel is, as fun is subjective. What one person finds hilarious, another might find boring. \n\nHowever, I can give you some examples of people in the public eye who are known for their humor, charisma, and engaging personalities, which might make them strong contenders:\n\n*   **Guri Alfi:** A comedian, actor, and writer, Alfi is known for his witty observations and improvisational skills. He's been a staple of Israeli comedy for years.\n\n*   **Adir Miller:** Another hugely popular comedian and actor. Miller's humor often draws on everyday Israeli life and family situations, making him relatable and funny.\n\n*   **Rotem Sela:** A popular model, actress, and TV presenter. Her bubbly personality and sense of humor make her a likable figure.\n\n*   **Guy Pines:** An entertainment reporter and TV personality. Pines is known for his sharp wit and humorous take on the world of celebrity.\n\nUltimately, the \"most fun\" person is in the eye of the beholder. These are just a few examples of people who bring joy and laughter to many in Israel. There are countless others who might be just as deserving of the title!",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1491,
+    218,
+    394,
+    294,
+    372,
+    263,
+    326,
+    368,
+    319,
+    176,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.047410011291503906,
+    0.3255119323730469,
+    0.013700008392333984,
+    0.07295918464660645,
+    0.10013985633850098,
+    0.165086030960083,
+    0.2190709114074707,
+    0.32911109924316406,
+    0.2823610305786133,
+    0.43251609802246094,
+    0.013067007064819336,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

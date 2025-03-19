@@ -1,0 +1,29 @@
+{
+  "local_port": 49206,
+  "remote_port": 443,
+  "prompt": "How did you meet your first girlfriend/boyfriend?",
+  "response": "As a large language model, I don't have the capacity to form relationships or have personal experiences like meeting a girlfriend or boyfriend. I exist only as a computer program.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    93,
+    184,
+    413,
+    359,
+    283,
+    210,
+    113
+  ],
+  "time_diffs": [
+    0.052449941635131836,
+    0.4055631160736084,
+    0.0013759136199951172,
+    0.028326988220214844,
+    0.06212806701660156,
+    0.06290197372436523,
+    0.01506805419921875,
+    0.0015850067138671875,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 38918,
+  "remote_port": 443,
+  "prompt": "Does a senator get security protection?",
+  "response": "Yes, all U.S. senators are eligible for security protection. The Sergeant at Arms of the Senate is responsible for maintaining security for the Senate, including providing security details for senators when deemed necessary. These details are typically provided by the United States Capitol Police.\n\nHowever, not all senators receive a full-time security detail. The level of security provided can vary based on a number of factors, including:\n\n*   **Threat assessments:** The Sergeant at Arms and Capitol Police conduct threat assessments to determine the level of risk to individual senators.\n*   **Specific threats:** If a senator receives credible threats, they are more likely to be assigned a security detail.\n*   **Committee assignments:** Senators on certain committees, such as the Intelligence or Armed Services Committees, may receive heightened security due to the sensitive nature of their work.\n*   **High profile or controversial stances:** Senators who take high-profile or controversial stances on certain issues may also be at greater risk and receive additional protection.\n\nIn general, security protection for senators can range from increased security at their offices and residences to a full-time security detail.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1484,
+    293,
+    438,
+    423,
+    312,
+    256,
+    363,
+    387,
+    411,
+    146,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.04706096649169922,
+    0.36870694160461426,
+    0.02794194221496582,
+    0.08891797065734863,
+    0.13508200645446777,
+    0.19509506225585938,
+    0.17497515678405762,
+    0.27719688415527344,
+    0.3119781017303467,
+    0.20801997184753418,
+    0.00860595703125,
+    0.002007007598876953,
+    0.0
+  ]
+}

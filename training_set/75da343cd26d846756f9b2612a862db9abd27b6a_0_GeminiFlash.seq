@@ -1,0 +1,31 @@
+{
+  "local_port": 34656,
+  "remote_port": 443,
+  "prompt": "Who is your Favorite band?",
+  "response": "As a large language model, I don't have personal preferences like favorite bands. I can access and process information about countless musical artists and genres, but I don't experience music in the same way a human does.\n\nIf you'd like, I can tell you about some popular or critically acclaimed bands, or even suggest some based on your own musical tastes! Just let me know what kind of music you like.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1263,
+    370,
+    297,
+    211,
+    394,
+    388,
+    249,
+    235,
+    113
+  ],
+  "time_diffs": [
+    0.04693007469177246,
+    0.41596198081970215,
+    0.038874149322509766,
+    0.0410158634185791,
+    0.12302803993225098,
+    0.1720569133758545,
+    0.050704002380371094,
+    0.012179136276245117,
+    0.0,
+    0.0016620159149169922
+  ]
+}

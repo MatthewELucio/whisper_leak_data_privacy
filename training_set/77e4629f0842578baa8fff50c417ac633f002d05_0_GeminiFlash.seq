@@ -1,0 +1,39 @@
+{
+  "local_port": 41568,
+  "remote_port": 443,
+  "prompt": "How does it feel to be a gay or lesbian in India?",
+  "response": "Experiences of gay and lesbian individuals in India are incredibly diverse and complex, shaped by a multitude of factors including:\n\n*   **Social Acceptance:** While legal strides have been made, societal acceptance varies widely. Urban areas and more progressive communities tend to be more accepting than rural areas or conservative families. Many still face stigma, discrimination, and pressure to conform to heterosexual norms.\n\n*   **Family Pressure:** Family plays a central role in Indian society, and many LGBTQ+ individuals face immense pressure to marry someone of the opposite sex to maintain family honor and stability. Coming out to family can be a difficult and sometimes dangerous decision.\n\n*   **Legal Status:** While same-sex relations are no longer criminalized, same-sex marriage is not legal. This impacts legal rights related to inheritance, adoption, and other aspects of life.\n\n*   **Mental Health:** The stress of navigating a heteronormative society, fear of discrimination, and lack of support can take a toll on mental health. Many LGBTQ+ individuals in India experience higher rates of anxiety, depression, and suicidal ideation.\n\n*   **Community and Support:** Despite the challenges, strong LGBTQ+ communities exist in many cities, offering support, resources, and a sense of belonging. Online communities also provide safe spaces for connection and information.\n\nIn short, there is no single answer to this question. The experiences of gay and lesbian individuals in India are shaped by their individual circumstances, social context, and access to support.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    193,
+    394,
+    444,
+    418,
+    353,
+    312,
+    353,
+    506,
+    311,
+    195,
+    154,
+    113
+  ],
+  "time_diffs": [
+    0.06249380111694336,
+    0.29636502265930176,
+    0.0014040470123291016,
+    0.1014859676361084,
+    0.11585211753845215,
+    0.2113029956817627,
+    0.16689395904541016,
+    0.32714009284973145,
+    0.30598878860473633,
+    0.3353400230407715,
+    0.21535897254943848,
+    0.00625300407409668,
+    0.0,
+    0.0
+  ]
+}

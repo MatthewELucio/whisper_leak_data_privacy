@@ -1,0 +1,29 @@
+{
+  "local_port": 54944,
+  "remote_port": 443,
+  "prompt": "What are some of the shameful facts about Radeep Sardesai?",
+  "response": "Some sources criticize Rajdeep Sardesai for allegedly showing bias in his reporting, particularly during the 2002 Gujarat riots and the 2014 general election. Others have accused him of using inflammatory language and spreading misinformation. However, Sardesai has defended his work, stating that he strives to be fair and accurate in his reporting.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1284,
+    340,
+    260,
+    355,
+    211,
+    284,
+    164,
+    113
+  ],
+  "time_diffs": [
+    0.04548501968383789,
+    0.36349010467529297,
+    0.12899303436279297,
+    0.06954598426818848,
+    0.19210195541381836,
+    0.0015869140625,
+    0.009675979614257812,
+    0.001421213150024414,
+    5.078315734863281e-05
+  ]
+}

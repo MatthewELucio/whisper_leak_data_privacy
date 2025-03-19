@@ -1,0 +1,39 @@
+{
+  "local_port": 47102,
+  "remote_port": 443,
+  "prompt": "Are we run by a shadow government?",
+  "response": "The idea of a \"shadow government,\" also sometimes called a \"deep state,\" is a pretty common theme in conspiracy theories. It usually refers to a secret group of powerful individuals who aren't elected or publicly accountable, but who are really pulling the strings behind the scenes.\n\nPeople who believe in this idea often point to things like:\n\n*   **Lobbying and campaign finance:** They argue that wealthy individuals and corporations have too much influence on politicians through donations and lobbying efforts.\n*   **The military-industrial complex:** This term, popularized by President Eisenhower, refers to the close relationship between the military, defense contractors, and government agencies. Some worry that this relationship can lead to unnecessary wars and a focus on military spending.\n*   **Intelligence agencies:** Agencies like the CIA and NSA operate in secrecy, and some believe they engage in activities that are not in the public's best interest and without proper oversight.\n*   **Bureaucracy:** The sheer size and complexity of government can make it difficult to hold anyone accountable, leading some to believe that bureaucrats are making decisions without elected officials' knowledge or consent.\n\nIt's important to remember that there's no real consensus on whether a shadow government actually exists. It's a complex issue with a lot of different viewpoints and interpretations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    161,
+    331,
+    348,
+    417,
+    338,
+    490,
+    520,
+    494,
+    368,
+    201,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04656505584716797,
+    0.4662158489227295,
+    0.0013241767883300781,
+    0.04557299613952637,
+    0.0518798828125,
+    0.08510112762451172,
+    0.22623777389526367,
+    0.1749100685119629,
+    0.27327513694763184,
+    0.30643701553344727,
+    0.35640883445739746,
+    0.008999109268188477,
+    0.0,
+    0.0
+  ]
+}

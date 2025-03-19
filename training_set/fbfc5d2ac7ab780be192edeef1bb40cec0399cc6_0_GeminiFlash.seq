@@ -1,0 +1,27 @@
+{
+  "local_port": 52264,
+  "remote_port": 443,
+  "prompt": "Which is the biggest size of file (app) that is available on Google Play?",
+  "response": "As of my last update, the biggest app size allowed on the Google Play Store is **2 GB**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1262,
+    196,
+    302,
+    342,
+    295,
+    210,
+    113
+  ],
+  "time_diffs": [
+    0.04476809501647949,
+    0.5665740966796875,
+    0.01483297348022461,
+    0.25013184547424316,
+    0.0939030647277832,
+    0.009864091873168945,
+    0.001603841781616211,
+    0.0031151771545410156
+  ]
+}

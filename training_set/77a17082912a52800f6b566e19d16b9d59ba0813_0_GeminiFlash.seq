@@ -1,0 +1,33 @@
+{
+  "local_port": 40674,
+  "remote_port": 443,
+  "prompt": "Is Donald Trump secretly a Democrat?",
+  "response": "Donald Trump's political affiliations have been a topic of much discussion, especially considering his shifts over the years. He was registered as a Republican in the late 1980s, then switched to the Reform Party in 1999, then to the Democratic Party in 2001. He switched back to Republican in 2009, then became an independent in 2011, before returning to the Republican Party in 2012.\n\nSome point to his past policy positions, which at times seemed to align more with Democrats, as potential evidence. Others highlight his relationships with prominent Democrats before entering politics. However, his actions and policies as president, as well as his current rhetoric, are largely aligned with the Republican Party.\n\nUltimately, there's no definitive proof to label him a secret Democrat. His motivations for party switching and policy choices are complex and open to interpretation.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1439,
+    318,
+    284,
+    434,
+    324,
+    409,
+    344,
+    244,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.05800604820251465,
+    0.31127214431762695,
+    0.17877888679504395,
+    0.11170792579650879,
+    0.16499900817871094,
+    0.17587709426879883,
+    0.3523399829864502,
+    0.2897810935974121,
+    0.011557817459106445,
+    0.0,
+    0.0005071163177490234
+  ]
+}

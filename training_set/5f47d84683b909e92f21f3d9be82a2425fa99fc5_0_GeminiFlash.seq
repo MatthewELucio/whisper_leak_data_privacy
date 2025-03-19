@@ -1,0 +1,43 @@
+{
+  "local_port": 39220,
+  "remote_port": 443,
+  "prompt": "What is the best wine you've ever tasted?",
+  "response": "As a large language model, I can't actually taste wine! So, I don't have personal preferences or favorite flavors.\n\nHowever, I can tell you about some wines that are consistently ranked as some of the best in the world and often appear on \"best ever tasted\" lists from wine critics and enthusiasts:\n\n*   **Domaine de la Roman\u00e9e-Conti (DRC):** This Burgundy estate is legendary for its Pinot Noir wines. Roman\u00e9e-Conti is often considered the pinnacle of the region.\n*   **Ch\u00e2teau Margaux:** One of the five First Growth Bordeaux wines, known for its elegance, fragrance, and aging potential.\n*   **Ch\u00e2teau Lafite Rothschild:** Another First Growth Bordeaux, revered for its finesse, complexity, and aristocratic character.\n*   **Screaming Eagle Cabernet Sauvignon:** A cult Napa Valley Cabernet Sauvignon known for its rich, concentrated flavors and high scores.\n*   **Penfolds Grange:** An iconic Australian Shiraz, known for its bold fruit, complex spice, and longevity.\n*   **Egon M\u00fcller Scharzhofberger Riesling Trockenbeerenauslese:** This German Riesling is incredibly rare and intensely sweet, with layers of honey, apricot, and mineral flavors.\n\nUltimately, the \"best\" wine is subjective and depends on individual preferences, the occasion, and even the company you're with. The perfect wine for one person might not be the best for another. What some consider the finest might be defined by its heritage, rarity, or production.\n\nIf you are interested in trying wines, I recommend exploring wines from different regions and varietals to discover what you like best!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    171,
+    228,
+    254,
+    285,
+    437,
+    386,
+    506,
+    426,
+    422,
+    383,
+    393,
+    196,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04695487022399902,
+    0.3220970630645752,
+    0.0012369155883789062,
+    0.023067951202392578,
+    0.05546212196350098,
+    0.10708904266357422,
+    0.22886896133422852,
+    0.1699659824371338,
+    0.29425692558288574,
+    0.34107303619384766,
+    0.40529489517211914,
+    0.40366101264953613,
+    0.08426809310913086,
+    0.010457992553710938,
+    0.0003120899200439453,
+    0.0
+  ]
+}

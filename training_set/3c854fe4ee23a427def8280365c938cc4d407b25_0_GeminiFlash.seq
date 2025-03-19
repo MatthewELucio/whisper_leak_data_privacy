@@ -1,0 +1,27 @@
+{
+  "local_port": 45884,
+  "remote_port": 443,
+  "prompt": "Is lamb meat considered a red meat or a white meat?",
+  "response": "Lamb is considered a **red meat**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    216,
+    268,
+    231,
+    254,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.0446019172668457,
+    0.3000609874725342,
+    0.0014560222625732422,
+    0.011481046676635742,
+    0.032922983169555664,
+    0.009889841079711914,
+    0.0016100406646728516,
+    0.001608133316040039
+  ]
+}

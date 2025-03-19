@@ -1,0 +1,37 @@
+{
+  "local_port": 51656,
+  "remote_port": 443,
+  "prompt": "On moon men feel lighter weight than earth?",
+  "response": "Yes, that's correct. Men (and everything else) feel lighter on the Moon than they do on Earth. This is because the Moon has significantly less gravity than Earth.\n\nHere's why:\n\n*   **Gravity and Mass:** Gravity is a force that attracts objects with mass towards each other. The more massive an object, the stronger its gravitational pull.\n*   **Moon's Mass:** The Moon is much smaller and less massive than Earth.\n*   **Surface Gravity:** As a result, the Moon's surface gravity is only about 1/6 (or 16.5%) of Earth's.\n\nThis means that if a man weighs 180 pounds on Earth, he would only weigh about 30 pounds on the Moon. While his mass stays the same, the force of gravity acting on that mass is much weaker.\n\nThis lower gravity is what allowed astronauts to take those big, bouncing steps on the lunar surface. They could jump higher and carry heavier equipment more easily than they could on Earth.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1500,
+    172,
+    289,
+    368,
+    399,
+    416,
+    291,
+    353,
+    291,
+    181,
+    219,
+    113
+  ],
+  "time_diffs": [
+    0.05013298988342285,
+    0.3145298957824707,
+    0.02572488784790039,
+    0.05810809135437012,
+    0.12505197525024414,
+    0.14294195175170898,
+    0.1440131664276123,
+    0.2216508388519287,
+    0.2923121452331543,
+    0.10594391822814941,
+    0.009315967559814453,
+    0.00019407272338867188,
+    0.0
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "local_port": 58614,
+  "remote_port": 443,
+  "prompt": "Is it illegal to clean dirty money?",
+  "response": "The term \"dirty money\" typically refers to money obtained through illegal activities. Cleaning it, which is commonly known as money laundering, is absolutely illegal.\n\nHere's a breakdown:\n\n*   **What is Money Laundering?** Money laundering is the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source. This is done to avoid prosecution for the crimes that generated the funds.\n\n*   **Why is it Illegal?** Money laundering helps criminals profit from their illegal activities and can be used to fund further criminal enterprises, including terrorism, drug trafficking, and corruption.\n\n*   **Consequences:** Penalties for money laundering vary depending on the jurisdiction and the amount of money involved but can include:\n    *   **Imprisonment:** Often lengthy prison sentences.\n    *   **Fines:** Substantial financial penalties.\n    *   **Asset Forfeiture:** The government can seize assets involved in the money laundering operation.\n    *   **Other Penalties:** Depending on the jurisdiction, other penalties may include civil penalties and restrictions on future financial activities.\n\n*   **Laws:** Most countries have specific laws against money laundering. Some of the prominent ones include:\n    *   **United States:** Bank Secrecy Act (BSA) and the Patriot Act.\n    *   **United Kingdom:** Proceeds of Crime Act 2002.\n    *   **Internationally:** The Financial Action Task Force (FATF) sets international standards to combat money laundering and terrorist financing.\n\n**In summary, any attempt to disguise the source of illegally obtained funds is a serious crime with significant legal consequences.**",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    233,
+    212,
+    439,
+    359,
+    257,
+    384,
+    342,
+    356,
+    331,
+    359,
+    327,
+    231,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.04694509506225586,
+    0.3348259925842285,
+    0.0013298988342285156,
+    0.029691219329833984,
+    0.06704592704772949,
+    0.09699892997741699,
+    0.20409798622131348,
+    0.16505217552185059,
+    0.2809867858886719,
+    0.2495131492614746,
+    0.36823296546936035,
+    0.32584190368652344,
+    0.08716297149658203,
+    0.011922121047973633,
+    0.0,
+    0.0
+  ]
+}

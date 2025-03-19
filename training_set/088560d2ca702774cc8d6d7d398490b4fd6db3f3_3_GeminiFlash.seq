@@ -1,0 +1,35 @@
+{
+  "local_port": 38486,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, the U.S. government has several laws against money laundering. The primary ones are:\n\n*   **Bank Secrecy Act (BSA):** This is the foundation of U.S. anti-money laundering (AML) laws. It requires financial institutions to keep records and file reports on certain financial transactions, such as large cash transactions.\n\n*   **Money Laundering Control Act of 1986:** This law made money laundering a federal crime and outlined specific offenses and penalties.\n\n*   **USA PATRIOT Act of 2001:** Enacted after the September 11th attacks, this law strengthened AML regulations, particularly concerning international money laundering and terrorist financing.\n\nThese laws, along with related regulations and enforcement efforts, are designed to combat money laundering and related financial crimes.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1413,
+    225,
+    385,
+    225,
+    410,
+    239,
+    449,
+    393,
+    191,
+    188,
+    113
+  ],
+  "time_diffs": [
+    0.04699206352233887,
+    0.5431239604949951,
+    0.022669076919555664,
+    0.08778691291809082,
+    0.044174909591674805,
+    0.21904206275939941,
+    0.19834399223327637,
+    0.2909579277038574,
+    0.08249711990356445,
+    0.007289886474609375,
+    0.0,
+    0.00026917457580566406
+  ]
+}

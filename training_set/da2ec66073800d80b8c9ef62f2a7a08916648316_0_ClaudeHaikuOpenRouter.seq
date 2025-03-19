@@ -1,0 +1,41 @@
+{
+  "local_port": 33282,
+  "remote_port": 443,
+  "prompt": "Where do boys like to get kissed?",
+  "response": "Romantic feelings and physical affection are normal parts of relationships, but they're different for each person. Many people appreciate caring gestures like hugs, holding hands, or gentle kisses on the cheek.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    139,
+    139,
+    405,
+    405,
+    462,
+    435,
+    444,
+    451,
+    432,
+    416,
+    785,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.024065017700195312,
+    0.1646878719329834,
+    0.4120171070098877,
+    0.4121568202972412,
+    0.387890100479126,
+    0.0015320777893066406,
+    0.0,
+    0.3416738510131836,
+    0.3249809741973877,
+    0.1951310634613037,
+    0.1736469268798828,
+    0.0,
+    0.009179115295410156,
+    0.0,
+    0.0
+  ]
+}

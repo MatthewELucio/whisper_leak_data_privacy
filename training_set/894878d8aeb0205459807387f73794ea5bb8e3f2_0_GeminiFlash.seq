@@ -1,0 +1,39 @@
+{
+  "local_port": 40446,
+  "remote_port": 443,
+  "prompt": "How is the ACLU funded? How are the funds used?",
+  "response": "The American Civil Liberties Union (ACLU) is a non-profit organization that relies on several sources of funding:\n\n*   **Membership Dues:** A significant portion of the ACLU's funding comes from membership dues paid by its members.\n*   **Donations:** The ACLU receives donations from individuals, foundations, and corporations.\n*   **Grants:** The ACLU also receives grants from various philanthropic organizations and foundations that support its mission.\n\nThe ACLU uses its funds to support its various activities and programs, which include:\n\n*   **Litigation:** The ACLU engages in legal action and litigation to defend civil rights and liberties in courts across the country. This includes filing lawsuits, representing clients, and participating in amicus briefs.\n*   **Lobbying:** The ACLU lobbies legislators and policymakers at the federal, state, and local levels to advocate for laws and policies that protect civil rights and liberties.\n*   **Public Education:** The ACLU conducts public education campaigns to raise awareness about civil rights and liberties issues and to inform the public about their rights.\n*   **Advocacy:** The ACLU engages in various forms of advocacy, including grassroots organizing, public speaking, and media outreach, to promote civil rights and liberties.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    164,
+    350,
+    287,
+    289,
+    259,
+    360,
+    333,
+    315,
+    307,
+    174,
+    210,
+    113
+  ],
+  "time_diffs": [
+    0.04785609245300293,
+    0.32769203186035156,
+    0.001435995101928711,
+    0.022630929946899414,
+    0.07385993003845215,
+    0.09922504425048828,
+    0.1750659942626953,
+    0.1827530860900879,
+    0.30343008041381836,
+    0.279437780380249,
+    0.2384340763092041,
+    0.011964082717895508,
+    0.0,
+    0.0
+  ]
+}

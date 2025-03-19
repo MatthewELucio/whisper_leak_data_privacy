@@ -1,0 +1,33 @@
+{
+  "local_port": 56450,
+  "remote_port": 443,
+  "prompt": "What's your favorite Friends episode? The one with the...?",
+  "response": "As a large language model, I don't have personal feelings like \"favorite.\" However, I can tell you that a very popular and often cited as a \"best\" *Friends* episode is **\"The One Where Everybody Finds Out.\"**\n\nIt's the one where Phoebe and Joey try to mess with Monica and Chandler after they finally learn about their relationship, and it's hilarious! The awkwardness, the shrieking, and the overall physical comedy make it a standout episode.\n\nIs that the one you were thinking of, or were you thinking of a different episode? I can tell you about others if you give me a hint!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1436,
+    363,
+    319,
+    205,
+    487,
+    343,
+    338,
+    238,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.04587602615356445,
+    0.32911205291748047,
+    0.025722026824951172,
+    0.06788182258605957,
+    0.11909914016723633,
+    0.2650320529937744,
+    0.18311595916748047,
+    0.12604784965515137,
+    0.008102178573608398,
+    0.0,
+    0.0
+  ]
+}

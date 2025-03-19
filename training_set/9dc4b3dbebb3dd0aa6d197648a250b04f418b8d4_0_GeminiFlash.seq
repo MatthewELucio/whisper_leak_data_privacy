@@ -1,0 +1,33 @@
+{
+  "local_port": 58786,
+  "remote_port": 443,
+  "prompt": "Who are some celebrity users of Quora?",
+  "response": "Finding a definitive, comprehensive list of celebrity Quora users is tricky, as not everyone publicizes their account. However, here are some of the more well-known and active celebrity figures on Quora:\n\n*   **James Altucher:** An American hedge-fund manager, author, podcaster, and entrepreneur.\n\n*   **Adam D'Angelo:** The co-founder and CEO of Quora.\n\n*   **Dustin Moskovitz:** Co-founder of Facebook and Asana. He answers questions related to entrepreneurship, management, and philanthropy.\n\nIt's worth noting that some public figures may have a profile but not be actively answering questions themselves. Their accounts might be managed by their teams. Also, some people who were active in the past might have become less so recently.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1359,
+    247,
+    322,
+    403,
+    444,
+    462,
+    201,
+    298,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.04617190361022949,
+    0.3041388988494873,
+    0.13413214683532715,
+    0.06276988983154297,
+    0.25105714797973633,
+    0.17876601219177246,
+    0.3234059810638428,
+    0.0711519718170166,
+    0.008074045181274414,
+    0.0,
+    0.0
+  ]
+}

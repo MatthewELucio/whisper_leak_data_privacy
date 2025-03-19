@@ -1,0 +1,39 @@
+{
+  "local_port": 44010,
+  "remote_port": 443,
+  "prompt": "Is China Indirectly Supporting Terrorists in North-East India?",
+  "response": "There have been allegations and concerns raised about China's indirect support to insurgent groups in Northeast India, but there is no conclusive evidence to confirm this definitively.\n\nHere's a breakdown of the situation:\n\n*   **Allegations:** Some reports and analysts claim that China provides safe havens, training, and weapons to various insurgent groups operating in Northeast India. These groups often aim to destabilize the region or seek secession from India.\n\n*   **China's Stance:** China officially denies providing any support to these groups and maintains that it respects India's sovereignty and territorial integrity.\n\n*   **Evidence:** Direct evidence linking the Chinese government to these activities is scarce. However, the porous border between India and Myanmar, and Myanmar and China, makes it difficult to monitor the flow of arms and people. Some captured insurgents have reportedly confessed to receiving training or weapons from Chinese sources, but the credibility and context of these confessions are often questioned.\n\n*   **Possible Motives (if the allegations are true):** Some analysts suggest that China might be using these groups to exert pressure on India, particularly in border disputes or to counter India's growing influence in the region. However, this remains speculative.\n\nGiven the complexity and sensitivity of the issue, it's important to rely on credible sources and avoid generalizations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1486,
+    315,
+    431,
+    305,
+    340,
+    229,
+    447,
+    538,
+    455,
+    305,
+    180,
+    188,
+    113
+  ],
+  "time_diffs": [
+    0.049288034439086914,
+    0.2884490489959717,
+    0.053385019302368164,
+    0.11266684532165527,
+    0.08288002014160156,
+    0.16602110862731934,
+    0.22710490226745605,
+    0.36972498893737793,
+    0.3317270278930664,
+    0.35710906982421875,
+    0.05028891563415527,
+    0.012957096099853516,
+    0.0,
+    5.888938903808594e-05
+  ]
+}

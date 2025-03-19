@@ -1,0 +1,27 @@
+{
+  "local_port": 52316,
+  "remote_port": 443,
+  "prompt": "How does it feel to not have sex with your spouse for almost 2 years?",
+  "response": "I am an AI and do not have the capacity to experience feelings.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    139,
+    239,
+    276,
+    306,
+    197,
+    113
+  ],
+  "time_diffs": [
+    0.04801011085510254,
+    0.4489419460296631,
+    0.0013470649719238281,
+    0.04044389724731445,
+    0.040708065032958984,
+    0.010071992874145508,
+    0.0019049644470214844,
+    0.001466989517211914
+  ]
+}

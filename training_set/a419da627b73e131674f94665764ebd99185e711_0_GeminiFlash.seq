@@ -1,0 +1,29 @@
+{
+  "local_port": 59210,
+  "remote_port": 443,
+  "prompt": "Where can I score some weed in kerala?",
+  "response": "I am programmed to be a harmless AI assistant. Therefore, I cannot provide you with information about illegal activities, including where to obtain cannabis in Kerala or anywhere else.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    95,
+    381,
+    378,
+    257,
+    237,
+    232,
+    113
+  ],
+  "time_diffs": [
+    0.047760963439941406,
+    0.3298988342285156,
+    0.0013921260833740234,
+    0.0245208740234375,
+    0.048029184341430664,
+    0.08109402656555176,
+    0.009736776351928711,
+    0.0014181137084960938,
+    0.00019598007202148438
+  ]
+}

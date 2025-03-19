@@ -1,0 +1,41 @@
+{
+  "local_port": 39666,
+  "remote_port": 443,
+  "prompt": "What do you think about Barack Obama?",
+  "response": "Barack Obama served as the 44th President of the United States from 2009 to 2017. His presidency was marked by a number of significant policy initiatives and events.\n\n**Key Policy Achievements:**\n\n*   **Affordable Care Act (ACA):** Often referred to as Obamacare, this aimed to expand health insurance coverage to more Americans.\n*   **American Recovery and Reinvestment Act:** A stimulus package designed to address the Great Recession.\n*   **End of the Iraq War:** Obama fulfilled a campaign promise by withdrawing troops from Iraq.\n*   **Dodd-Frank Wall Street Reform and Consumer Protection Act:** Legislation intended to regulate the financial industry and prevent another financial crisis.\n*   **The Iran Nuclear Deal:** An international agreement that limited Iran's nuclear program in exchange for sanctions relief.\n\n**Significant Events:**\n\n*   **The Great Recession:** Obama inherited a struggling economy and implemented policies to stimulate growth.\n*   **Killing of Osama bin Laden:** A U.S. Navy SEAL raid in Pakistan resulted in the death of the al-Qaeda leader.\n*   **Rise of ISIS:** The emergence of the Islamic State of Iraq and Syria posed a significant foreign policy challenge.\n\n**Public Perception:**\n\nObama's presidency was met with both strong support and strong opposition. Supporters praised his efforts to address the economic crisis, expand healthcare access, and restore America's image abroad. Critics questioned the effectiveness and cost of some of his policies, particularly the Affordable Care Act and the stimulus package. His legacy continues to be debated and analyzed.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    236,
+    149,
+    263,
+    314,
+    323,
+    264,
+    474,
+    499,
+    426,
+    411,
+    147,
+    187,
+    113
+  ],
+  "time_diffs": [
+    0.05530691146850586,
+    0.3435070514678955,
+    0.0014579296112060547,
+    0.038535118103027344,
+    0.019626855850219727,
+    0.0872640609741211,
+    0.18120789527893066,
+    0.15200519561767578,
+    0.26006484031677246,
+    0.2288379669189453,
+    0.3150811195373535,
+    0.3101060390472412,
+    0.012323856353759766,
+    0.00033402442932128906,
+    5.91278076171875e-05
+  ]
+}

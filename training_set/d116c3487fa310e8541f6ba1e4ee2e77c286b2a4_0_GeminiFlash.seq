@@ -1,0 +1,43 @@
+{
+  "local_port": 36680,
+  "remote_port": 443,
+  "prompt": "How does flitto app make money?",
+  "response": "Flitto makes money through a variety of channels, all leveraging its translation and crowdsourcing platform:\n\n*   **Enterprise Solutions:** This is likely Flitto's primary revenue source. They offer customized translation and localization services for businesses, including:\n    *   **Professional Translation:** Handling large-scale translation projects with certified translators.\n    *   **Localization:** Adapting content for specific markets and cultures (including websites, apps, games, etc.).\n    *   **Multimedia Translation:** Translating video and audio content, including subtitling and voice-over.\n    *   **Translation API:** Integrating Flitto's translation technology directly into other applications or systems.\n\n*   **In-App Purchases:** While Flitto relies on a crowd of volunteer translators, users can also purchase points or \"credits\" to access faster or higher-quality translations.\n    *   **Points for Requests:**  Users submitting translation requests often need to spend points to incentivize faster and more accurate responses.\n    *   **Premium Features:**  Flitto may offer premium features within the app that require payment, such as ad-free usage or advanced translation tools.\n\n*   **Data Licensing:** Flitto accumulates a vast dataset of translated text through its user-generated content. This data is valuable for training machine learning models, and Flitto can license it to:\n    *   **AI and Machine Learning Companies:** Companies developing AI-powered language processing technologies.\n    *   **Research Institutions:** Organizations conducting research in natural language processing and translation.\n\n*   **Advertising:** Flitto might display ads within its app to generate revenue, though this is likely a smaller portion of their overall income.\n\n*   **Partnerships:** Flitto can partner with other businesses to offer integrated services or promotions, generating revenue through commissions or referral fees.\n\nIn summary, Flitto's revenue model is a combination of:\n\n*   **B2B Services:** Selling professional translation and localization solutions to businesses.\n*   **In-App Transactions:** Users purchasing points or premium features.\n*   **Data Monetization:** Licensing its valuable translation data.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1265,
+    273,
+    263,
+    207,
+    433,
+    310,
+    329,
+    404,
+    563,
+    473,
+    412,
+    295,
+    256,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.04694485664367676,
+    0.33602404594421387,
+    0.015597105026245117,
+    0.08016204833984375,
+    0.09707498550415039,
+    0.16411900520324707,
+    0.19508886337280273,
+    0.34763312339782715,
+    0.2715919017791748,
+    0.3191509246826172,
+    0.38024401664733887,
+    0.3616659641265869,
+    0.2179110050201416,
+    0.009556055068969727,
+    0.0,
+    0.0
+  ]
+}

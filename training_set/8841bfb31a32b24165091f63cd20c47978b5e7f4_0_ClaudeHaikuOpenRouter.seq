@@ -1,0 +1,33 @@
+{
+  "local_port": 39928,
+  "remote_port": 443,
+  "prompt": "What are some TL;DRs of each of the most important governors of California?",
+  "response": "Here are TL;DRs for some of the most notable California governors:\n\n1. Earl Warren (1943-1953):\nTL;DR: Progressive",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    405,
+    405,
+    415,
+    414,
+    457,
+    429,
+    881,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.022228002548217773,
+    1.3821239471435547,
+    0.3028221130371094,
+    0.001589059829711914,
+    0.0,
+    0.0874488353729248,
+    0.09901905059814453,
+    0.1335740089416504,
+    0.13515210151672363,
+    0.022281885147094727,
+    0.0014290809631347656
+  ]
+}

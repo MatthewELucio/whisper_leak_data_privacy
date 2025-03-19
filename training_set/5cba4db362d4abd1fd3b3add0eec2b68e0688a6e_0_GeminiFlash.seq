@@ -1,0 +1,27 @@
+{
+  "local_port": 35050,
+  "remote_port": 443,
+  "prompt": "When did Travelzoo launch its IPO?",
+  "response": "Travelzoo launched its IPO on **December 21, 2004**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    285,
+    298,
+    249,
+    284,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.04802393913269043,
+    0.3147749900817871,
+    0.0014619827270507812,
+    0.020514965057373047,
+    0.08601498603820801,
+    0.008867025375366211,
+    0.0015010833740234375,
+    0.0
+  ]
+}

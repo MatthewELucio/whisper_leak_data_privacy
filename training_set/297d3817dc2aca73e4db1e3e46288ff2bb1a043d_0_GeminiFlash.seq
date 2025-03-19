@@ -1,0 +1,29 @@
+{
+  "local_port": 49380,
+  "remote_port": 443,
+  "prompt": "Has Mohammed married his daughter?",
+  "response": "Islamic sources state that Muhammad's daughter, Fatima, was married to Ali ibn Abi Talib. There is no evidence in mainstream Islamic texts or historical records to suggest that Muhammad married his own daughter. The suggestion that he did is considered blasphemous by Muslims.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    252,
+    204,
+    279,
+    377,
+    180,
+    220,
+    113
+  ],
+  "time_diffs": [
+    0.04718804359436035,
+    0.4168839454650879,
+    0.0013470649719238281,
+    0.0948028564453125,
+    0.10990405082702637,
+    0.14815592765808105,
+    0.007920980453491211,
+    0.0,
+    0.0015201568603515625
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "local_port": 40806,
+  "remote_port": 443,
+  "prompt": "What is the average number of followers per user on Instagram",
+  "response": "Estimates for the average number of Instagram followers per user vary widely, and it's difficult to get a precise figure. Here's why and some general ranges:\n\n**Why it's hard to get an exact number:**\n\n*   **Data Scarcity:** Instagram doesn't publicly release this information.\n*   **Bots and Inactive Accounts:** A significant number of Instagram accounts are bots or inactive, skewing the average.\n*   **Distribution is Not Uniform:** The average is heavily influenced by a small number of accounts with millions of followers (celebrities, brands, influencers). Most users have far fewer.\n*   **Varying Definitions:** What constitutes an \"active user\" is subjective.\n\n**General Ranges and Considerations:**\n\n*   **Low End Estimates:** You might see numbers around **150-250 followers**. This might be closer to the *median* rather than the average, reflecting the typical experience of a regular user.\n*   **Higher End Estimates:** Some sources estimate the average could be **closer to 600-700 followers**, or even higher. This takes into account the larger accounts with substantial followings.\n\n**Key Takeaways:**\n\n*   **The average is not a good indicator of a typical user's experience.** It's skewed by a small percentage of highly followed accounts.\n*   **Don't get discouraged if your follower count is below any \"average\" you see.** Focus on building a genuine following within your niche.\n*   **Metrics like engagement rate (likes, comments, shares relative to follower count) are often more meaningful** than the raw number of followers.\n\n**In Conclusion:** There is no definitive \"average\" number of followers on Instagram that is universally accepted and accurate. It's a complex metric influenced by various factors. The ranges provided offer a general idea, but remember to focus on building meaningful connections and engagement, rather than getting caught up in chasing an abstract average.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    266,
+    421,
+    385,
+    245,
+    240,
+    473,
+    463,
+    331,
+    446,
+    462,
+    443,
+    246,
+    191,
+    113
+  ],
+  "time_diffs": [
+    0.04984116554260254,
+    0.2947378158569336,
+    0.001486063003540039,
+    0.15271210670471191,
+    0.08190488815307617,
+    0.15015196800231934,
+    0.1809830665588379,
+    0.288132905960083,
+    0.2609841823577881,
+    0.34225893020629883,
+    0.40514087677001953,
+    0.3582470417022705,
+    0.0888221263885498,
+    0.009218931198120117,
+    0.0,
+    0.0002510547637939453
+  ]
+}

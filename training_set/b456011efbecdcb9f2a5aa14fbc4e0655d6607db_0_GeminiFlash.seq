@@ -1,0 +1,39 @@
+{
+  "local_port": 43014,
+  "remote_port": 443,
+  "prompt": "Why is April Fools' Day Poisson d'avril in French?",
+  "response": "The term \"Poisson d'avril\" in French translates to \"April Fish\" in English. The origin of the tradition of calling someone an \"April Fish\" on April Fools' Day is shrouded in some mystery, but here are a few popular theories:\n\n*   **Shift in Calendar:** One theory suggests that it stems from the 16th century when France switched from the Julian to the Gregorian calendar. The new year used to be celebrated from March 25th to April 1st. People who continued to celebrate the new year on April 1st were mocked and called \"April Fish.\"\n\n*   **End of Lent:** Another theory connects it to the end of Lent, a period of fasting in the Christian tradition. As Lent ended around April 1st, people would play pranks by giving fake fish as gifts, symbolizing the end of the period when eating meat was restricted.\n\n*   **Fishing Season:** A more literal explanation relates to the fishing season. April marks the time when catching young, naive fish is easier. These easily caught fish symbolize the gullibility of those who fall for April Fools' pranks. The word \"poisson\" (fish) is then used to refer to the victim of the prank.\n\nIt's likely that a combination of these factors contributed to the development of the \"Poisson d'avril\" tradition in France. Regardless of the exact origin, the phrase is now synonymous with April Fools' Day pranks in French-speaking countries, and it often involves sticking paper fish on people's backs without them noticing.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1342,
+    308,
+    411,
+    416,
+    479,
+    449,
+    431,
+    527,
+    404,
+    362,
+    239,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.04621696472167969,
+    0.35094594955444336,
+    0.01505899429321289,
+    0.0690619945526123,
+    0.16096210479736328,
+    0.15383386611938477,
+    0.14696216583251953,
+    0.23801898956298828,
+    0.3360869884490967,
+    0.4220387935638428,
+    0.34441709518432617,
+    0.009177923202514648,
+    0.0,
+    0.0
+  ]
+}

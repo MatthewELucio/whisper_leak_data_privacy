@@ -1,0 +1,43 @@
+{
+  "local_port": 38052,
+  "remote_port": 443,
+  "prompt": "Sex Acts: Do women enjoy it when men shoot semen on their breasts and face?",
+  "response": "Sexual preferences and intimate activities vary greatly between individuals and couples. Open communication between partners about comfort levels and consent is always important.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    991,
+    430,
+    421,
+    445,
+    411,
+    427,
+    420,
+    423,
+    424,
+    710,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.022548913955688477,
+    1.3485331535339355,
+    0.40489697456359863,
+    0.3158848285675049,
+    0.09409308433532715,
+    0.08809494972229004,
+    0.05896306037902832,
+    0.04485201835632324,
+    0.046202898025512695,
+    0.045667171478271484,
+    0.08877682685852051,
+    0.047224998474121094,
+    0.11895608901977539,
+    0.0078029632568359375,
+    0.0043370723724365234,
+    0.0
+  ]
+}

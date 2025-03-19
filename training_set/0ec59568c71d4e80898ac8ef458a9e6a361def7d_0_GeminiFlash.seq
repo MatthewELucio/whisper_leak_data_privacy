@@ -1,0 +1,41 @@
+{
+  "local_port": 33378,
+  "remote_port": 443,
+  "prompt": "Luis Von Ahn: What is the current business model of Duolingo?",
+  "response": "As of late 2023 and early 2024, Duolingo operates on a freemium business model with multiple revenue streams:\n\n*   **Free, Ad-Supported Version:** Duolingo offers its core language learning courses completely free of charge. Users have access to a vast library of courses and exercises without paying anything. However, they encounter advertisements between lessons. This attracts a large user base and builds brand awareness.\n\n*   **Duolingo Plus/Super Duolingo Subscription (formerly Duolingo Plus, now Super Duolingo):** This is the premium subscription offering. It removes ads, provides unlimited hearts (lives), offers personalized practice and mastery quizzes, and allows offline course access. It is the primary source of subscription revenue.\n\n*   **Duolingo English Test:** Duolingo offers an English proficiency test that is recognized by many universities and institutions worldwide. This is a paid service that provides a convenient and affordable alternative to traditional English tests. The company has invested in its validity and security.\n\n*   **Duolingo ABC:** A free app aimed at teaching children literacy. While free and ad-free, this serves to build brand awareness and user loyalty from a young age, potentially leading to future subscription conversions or other Duolingo product usage.\n\n*   **Duolingo Math and Duolingo Music:** Expanding beyond language learning, Duolingo has ventured into math and music education. These apps are available on a subscription basis and are ad free.\n\nIn summary, Duolingo's business model relies on a combination of a large free user base exposed to ads and a paid subscription service offering enhanced features and an ad-free experience. They also generate revenue from English proficiency testing and are growing revenue through diversification of their educational offerings.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    236,
+    389,
+    353,
+    393,
+    301,
+    483,
+    413,
+    332,
+    473,
+    479,
+    254,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.04491305351257324,
+    0.31321096420288086,
+    0.0014810562133789062,
+    0.11546087265014648,
+    0.14305806159973145,
+    0.19473695755004883,
+    0.2593550682067871,
+    0.29091596603393555,
+    0.2871589660644531,
+    0.39978599548339844,
+    0.41523098945617676,
+    0.25243401527404785,
+    0.012896060943603516,
+    0.0,
+    0.0
+  ]
+}

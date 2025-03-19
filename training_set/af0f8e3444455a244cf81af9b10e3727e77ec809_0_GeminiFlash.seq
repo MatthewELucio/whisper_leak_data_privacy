@@ -1,0 +1,27 @@
+{
+  "local_port": 39324,
+  "remote_port": 443,
+  "prompt": "How many supercomputers are there in iit kharagpur?",
+  "response": "IIT Kharagpur has one notable supercomputer:\n\n*   **Param Shakti:** This is a High-Performance Computing (HPC) facility.\nWhile there might be smaller clusters used for specific research groups, Param Shakti is the primary supercomputing resource at IIT Kharagpur.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1460,
+    332,
+    399,
+    338,
+    155,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04974484443664551,
+    0.43224501609802246,
+    0.13580608367919922,
+    0.11500906944274902,
+    0.1230778694152832,
+    0.012780189514160156,
+    0.0015649795532226562,
+    0.0
+  ]
+}

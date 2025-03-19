@@ -1,0 +1,39 @@
+{
+  "local_port": 55786,
+  "remote_port": 443,
+  "prompt": "Can you have an hourglass body shape and have small breasts/butt?",
+  "response": "Yes, absolutely! The hourglass shape is defined by the **ratio of waist to hips and bust**, not the actual size of those features. Here's the key:\n\n*   **Hourglass Definition:** The waist is significantly smaller (at least 10 inches) than both the bust and hips. The bust and hips are roughly the same size.\n\nSo, you can have:\n\n*   Small bust\n*   Small butt\n\n**AND** still be considered an hourglass if your waist is much smaller than your bust and hips, and your bust and hips are proportionately similar.\n\n**Example:**\n\nSomeone with a 34-24-34 would be considered an hourglass.\n\nSomeone with a 32-22-32 would ALSO be considered an hourglass.\n\nThe first person has a larger bust and hips than the second, but they both maintain the hourglass ratio.\n\n**Important Note:** Body shapes are just general guidelines. Everyone is unique, and you might fall into multiple categories or none at all. What matters most is feeling confident and comfortable in your own skin!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    187,
+    287,
+    216,
+    306,
+    327,
+    239,
+    304,
+    514,
+    356,
+    289,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.045307159423828125,
+    0.35042405128479004,
+    0.001428842544555664,
+    0.01129293441772461,
+    0.10114216804504395,
+    0.06328988075256348,
+    0.17590904235839844,
+    0.26401591300964355,
+    0.25470709800720215,
+    0.288593053817749,
+    0.10720086097717285,
+    0.00921010971069336,
+    0.0,
+    5.1975250244140625e-05
+  ]
+}

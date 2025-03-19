@@ -1,0 +1,35 @@
+{
+  "local_port": 35228,
+  "remote_port": 443,
+  "prompt": "Is Donald Trump a businessman?",
+  "response": "Donald Trump has been involved in a variety of business ventures throughout his career, primarily in real estate development, but also including hotels, casinos, golf courses, and entertainment.\n\nHe took over his father's real estate and construction firm, Elizabeth Trump & Son, and later renamed it The Trump Organization. He has been involved in numerous real estate projects, including Trump Tower and Trump World Tower. He also owned and operated several casinos and hotels, some of which have gone through bankruptcy. Additionally, he has licensed his name for various products and services.\n\nHis business career has been marked by both successes and controversies. Some of his properties and ventures have been very profitable, while others have faced financial difficulties and bankruptcies. There have also been legal challenges and disputes related to his business practices.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1405,
+    239,
+    434,
+    369,
+    427,
+    345,
+    364,
+    239,
+    301,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.05065011978149414,
+    0.4024028778076172,
+    0.01250004768371582,
+    0.09778404235839844,
+    0.12316489219665527,
+    0.20645999908447266,
+    0.24603796005249023,
+    0.29392099380493164,
+    0.01720714569091797,
+    0.01069784164428711,
+    0.0,
+    5.0067901611328125e-05
+  ]
+}

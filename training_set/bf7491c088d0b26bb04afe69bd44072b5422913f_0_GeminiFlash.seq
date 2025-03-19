@@ -1,0 +1,29 @@
+{
+  "local_port": 54306,
+  "remote_port": 443,
+  "prompt": "When will Adobe XD be available for Windows?",
+  "response": "Adobe XD has been available for Windows since **October 2016**.\n\nTherefore, the question is already answered.  Adobe XD **is currently available** for Windows.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    241,
+    317,
+    434,
+    199,
+    300,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.04691505432128906,
+    0.3339259624481201,
+    0.0014619827270507812,
+    0.01223301887512207,
+    0.08910989761352539,
+    0.11298704147338867,
+    0.012884140014648438,
+    0.0,
+    0.0016598701477050781
+  ]
+}

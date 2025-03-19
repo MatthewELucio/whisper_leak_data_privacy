@@ -1,0 +1,27 @@
+{
+  "local_port": 58256,
+  "remote_port": 443,
+  "prompt": "Have you ever seen Modi in person?",
+  "response": "As a large language model, I have no physical presence and therefore cannot see anyone in person. I exist only as a computer program.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1429,
+    250,
+    407,
+    429,
+    214,
+    219,
+    113
+  ],
+  "time_diffs": [
+    0.04564404487609863,
+    0.35404205322265625,
+    0.049867868423461914,
+    0.02497696876525879,
+    0.04011797904968262,
+    0.01091909408569336,
+    0.0,
+    0.0017371177673339844
+  ]
+}

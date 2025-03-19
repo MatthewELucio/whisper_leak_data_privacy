@@ -1,0 +1,37 @@
+{
+  "local_port": 35662,
+  "remote_port": 443,
+  "prompt": "Why do many celebrities decide to wear purity rings?",
+  "response": "The reasons why celebrities choose to wear purity rings are varied and personal, reflecting a range of motivations and beliefs. Here are some common factors that might influence their decision:\n\n*   **Religious or Moral Beliefs:** For some, wearing a purity ring is a public declaration of their commitment to abstaining from sexual activity until marriage, aligning with their religious or moral values.\n*   **Personal Choice:** Some celebrities may choose to wear a purity ring as a symbol of their personal commitment to abstinence, regardless of religious beliefs.\n*   **Public Image:** In some cases, celebrities may wear a purity ring to cultivate a certain image, particularly if they want to be seen as wholesome or family-friendly.\n*   **Influence:** Celebrities may wear purity rings to influence their fans and promote abstinence as a positive choice.\n*   **Relationship:** Some celebrities may wear purity rings as a sign of commitment to a relationship, symbolizing their intention to remain sexually abstinent until marriage.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    254,
+    220,
+    256,
+    273,
+    364,
+    390,
+    364,
+    211,
+    201,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.04729199409484863,
+    0.2816660404205322,
+    0.0014820098876953125,
+    0.13756799697875977,
+    0.11292600631713867,
+    0.1540818214416504,
+    0.17707109451293945,
+    0.2531259059906006,
+    0.28612804412841797,
+    0.0012891292572021484,
+    0.005978822708129883,
+    0.0,
+    0.0
+  ]
+}

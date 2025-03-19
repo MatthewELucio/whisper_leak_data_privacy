@@ -1,0 +1,43 @@
+{
+  "local_port": 33718,
+  "remote_port": 443,
+  "prompt": "Am I being maniac?",
+  "response": "It's impossible for me to tell if you are experiencing mania based on this single question. Mania is a complex state of mind, and I am not a medical professional qualified to diagnose it.\n\nHowever, I can tell you what mania *is*. Mania is a distinct period of abnormally and persistently elevated, expansive, or irritable mood and abnormally and persistently increased activity or energy. It's a key symptom of bipolar disorder.\n\nHere are some things you might be experiencing if you are manic:\n\n*   **Elevated Mood:** Feeling unusually happy, cheerful, or euphoric.\n*   **Irritability:** Feeling easily annoyed, agitated, or angry.\n*   **Increased Energy:** Feeling restless, unable to sit still, and having a decreased need for sleep.\n*   **Racing Thoughts:** Thoughts are racing through your mind quickly, making it hard to concentrate.\n*   **Talkativeness:** Talking more than usual and feeling pressured to keep talking.\n*   **Grandiosity:** Having an inflated sense of self-esteem or believing you have special powers or abilities.\n*   **Impulsivity:** Engaging in risky behaviors like spending sprees, reckless driving, or risky sexual encounters.\n*   **Distractibility:** Having trouble focusing or paying attention.\n\n**If you are concerned that you might be experiencing mania, it is important to talk to a mental health professional (like a psychiatrist or therapist) as soon as possible.** They can properly evaluate your symptoms and provide an accurate diagnosis and treatment plan.\n\n**You can also take these steps:**\n\n*   **Talk to a trusted friend or family member:** Explain how you're feeling and ask for their perspective.\n*   **Keep a mood journal:** Track your mood, sleep patterns, and energy levels over a few days. This can be helpful information for a doctor.\n\n*Please remember that I am not a substitute for a qualified healthcare professional. This information is for general knowledge and informational purposes only, and does not constitute medical advice. It is essential to consult with a qualified healthcare professional for any health concerns or before making any decisions related to your health or treatment.*\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    255,
+    412,
+    244,
+    254,
+    229,
+    284,
+    324,
+    515,
+    473,
+    476,
+    306,
+    301,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.04385995864868164,
+    0.3062288761138916,
+    0.0014190673828125,
+    0.16545891761779785,
+    0.10177898406982422,
+    0.20707917213439941,
+    0.15498781204223633,
+    0.29741406440734863,
+    0.31461405754089355,
+    0.41109395027160645,
+    0.31370115280151367,
+    0.408005952835083,
+    0.2409060001373291,
+    0.012539863586425781,
+    0.0,
+    0.0
+  ]
+}

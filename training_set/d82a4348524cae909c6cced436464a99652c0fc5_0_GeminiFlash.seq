@@ -1,0 +1,29 @@
+{
+  "local_port": 53092,
+  "remote_port": 443,
+  "prompt": "Which is hotter: habaneros, serranos, or jalape\u00f1os?",
+  "response": "Habaneros are the hottest. Here's the ranking from hottest to mildest:\n\n1.  **Habaneros**\n2.  **Serranos**\n3.  **Jalape\u00f1os**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1281,
+    306,
+    401,
+    181,
+    181,
+    184,
+    123,
+    113
+  ],
+  "time_diffs": [
+    0.04705095291137695,
+    0.3387470245361328,
+    0.02496194839477539,
+    0.04312396049499512,
+    0.05985617637634277,
+    0.049989938735961914,
+    0.008907079696655273,
+    0.0015399456024169922,
+    0.0
+  ]
+}

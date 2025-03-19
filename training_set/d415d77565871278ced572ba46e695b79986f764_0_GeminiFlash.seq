@@ -1,0 +1,41 @@
+{
+  "local_port": 53604,
+  "remote_port": 443,
+  "prompt": "Why does water spread grease and oil fires?",
+  "response": "Water spreads grease and oil fires because of a few key reasons related to the properties of both water and these types of flammable liquids:\n\n*   **Immiscibility:** Water and grease/oil don't mix (they are immiscible). When you pour water onto a grease or oil fire, the water sinks to the bottom because it's denser.\n\n*   **Vaporization and Splattering:** The water quickly boils and vaporizes when it comes into contact with the extremely hot grease or oil. This rapid vaporization causes the hot grease/oil to splatter violently.\n\n*   **Increased Surface Area:** The splattering spreads the burning grease or oil over a much wider area.  This creates more small fires and makes the overall fire larger and more difficult to control.\n\n*   **Grease/Oil Floats:** Because water is denser than grease or oil, the burning grease/oil floats on top of the water. As the water flows, it carries the burning grease/oil with it, spreading the fire to new areas.\n\nIn essence, instead of smothering the fire, water disperses the burning fuel, making the situation worse.\n\n**Important Note:** This is why you should NEVER use water on a grease or oil fire. Instead, you should smother the fire with a lid, baking soda, or a Class B fire extinguisher.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    287,
+    227,
+    438,
+    204,
+    367,
+    346,
+    412,
+    217,
+    501,
+    240,
+    275,
+    136,
+    113
+  ],
+  "time_diffs": [
+    0.048429012298583984,
+    0.3003110885620117,
+    0.0014488697052001953,
+    0.020364999771118164,
+    0.06720709800720215,
+    0.11099600791931152,
+    0.1711719036102295,
+    0.2087690830230713,
+    0.3172271251678467,
+    0.251039981842041,
+    0.36124086380004883,
+    0.0659170150756836,
+    0.009212970733642578,
+    0.0,
+    0.0
+  ]
+}

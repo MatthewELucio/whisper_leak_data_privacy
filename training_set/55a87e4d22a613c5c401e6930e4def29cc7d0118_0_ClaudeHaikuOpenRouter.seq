@@ -1,0 +1,41 @@
+{
+  "local_port": 41362,
+  "remote_port": 443,
+  "prompt": "Can Europeans or white Americans be proud of their ancestry, even if that ancestry includes direct links to slave owners?",
+  "response": "That's a complex topic where reasonable people can have different perspectives. Historical understanding is important, but opinions vary on how to approach ancestry and heritage.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    405,
+    405,
+    409,
+    423,
+    438,
+    440,
+    446,
+    429,
+    427,
+    406,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.023869037628173828,
+    0.2697598934173584,
+    0.3012380599975586,
+    0.0015511512756347656,
+    0.0,
+    0.06855487823486328,
+    0.13291501998901367,
+    0.1400160789489746,
+    0.0930178165435791,
+    0.17300820350646973,
+    0.08937597274780273,
+    0.08830094337463379,
+    0.004082918167114258,
+    0.016983985900878906,
+    0.0
+  ]
+}

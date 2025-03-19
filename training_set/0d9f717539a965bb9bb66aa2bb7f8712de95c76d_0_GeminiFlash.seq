@@ -1,0 +1,35 @@
+{
+  "local_port": 38314,
+  "remote_port": 443,
+  "prompt": "Would Mr. Donald Trump be a better president than Hillary Clinton?",
+  "response": "Donald Trump and Hillary Clinton have different political ideologies and policy priorities. \n\n*   **Donald Trump's** political positions generally align with conservative and populist principles. He often advocates for lower taxes, deregulation, and a strong national defense. His supporters praise his business background and his \"America First\" approach to foreign policy.\n*   **Hillary Clinton's** political positions generally align with liberal and progressive principles. She often advocates for social programs, environmental protection, and international cooperation. Her supporters praise her experience in government and her commitment to social justice.\n\nA comparison of their potential presidencies would involve considering their stances on key issues, their leadership styles, and their past experiences. Ultimately, whether one would be a \"better\" president than the other is a subjective question that depends on an individual's own values and priorities.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1258,
+    245,
+    323,
+    242,
+    333,
+    254,
+    508,
+    247,
+    311,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04789400100708008,
+    0.29487109184265137,
+    0.012920856475830078,
+    0.10498213768005371,
+    0.14505696296691895,
+    0.17983508110046387,
+    0.19209885597229004,
+    0.27837610244750977,
+    0.0814359188079834,
+    0.01220393180847168,
+    0.00011420249938964844,
+    0.0
+  ]
+}

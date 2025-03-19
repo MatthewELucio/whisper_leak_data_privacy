@@ -1,0 +1,35 @@
+{
+  "local_port": 38822,
+  "remote_port": 443,
+  "prompt": "Do you think corruption and black money would spread even faster with the introduction of 2000 rupee and new 500 rupee notes?",
+  "response": "Some experts believed that the introduction of the 2000 rupee note, in particular, could potentially facilitate the hoarding of illicit wealth due to its high value and ease of storage. This could make it easier to accumulate and conceal large sums of money obtained through corruption or illegal activities.\n\nHowever, others argued that the new security features in both the 2000 and 500 rupee notes would make them more difficult to counterfeit, which could help to curb the flow of black money. Additionally, increased surveillance and stricter enforcement of anti-corruption laws could also play a role in mitigating the potential negative effects of these notes.\n\nUltimately, the actual impact on corruption and black money would depend on a variety of factors, including the effectiveness of government policies, the level of transparency in financial transactions, and the overall integrity of the economic system.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    96,
+    449,
+    356,
+    317,
+    395,
+    492,
+    364,
+    198,
+    225,
+    113
+  ],
+  "time_diffs": [
+    0.04994702339172363,
+    0.41602110862731934,
+    0.0013208389282226562,
+    0.1075592041015625,
+    0.11049890518188477,
+    0.22645092010498047,
+    0.15410995483398438,
+    0.2892270088195801,
+    0.12299299240112305,
+    0.00987100601196289,
+    0.0011320114135742188,
+    0.0
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 35930,
+  "remote_port": 443,
+  "prompt": "Did Modi took 25 crores bribe from Aditya Birla Group in 2012?",
+  "response": "The allegation that Narendra Modi, then Chief Minister of Gujarat, took a bribe of 25 crores from the Aditya Birla Group in 2012 is a contentious one that has been investigated and debated in Indian politics and media.\n\nHere's a breakdown of the situation:\n\n*   **The Allegation:** The allegation stems from a document purportedly found in a raid on Aditya Birla Group offices in 2013. This document allegedly contained entries suggesting payments to a \"CM\".\n\n*   **Investigations and Court Cases:** Investigations were conducted into the matter. However, no concrete evidence has emerged to substantiate the claim that the \"CM\" referred to Narendra Modi or that any such bribe was actually paid. Several court cases were filed regarding this matter.\n\n*   **Lack of Evidence:** To date, no independent investigation has produced conclusive evidence to support the allegation.\n    As of today, there's no conclusive evidence to prove the bribery allegation.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1340,
+    229,
+    281,
+    463,
+    265,
+    360,
+    430,
+    268,
+    235,
+    113
+  ],
+  "time_diffs": [
+    0.0405881404876709,
+    0.2985668182373047,
+    0.11187005043029785,
+    0.06607604026794434,
+    0.17104101181030273,
+    0.22788190841674805,
+    0.30520200729370117,
+    0.3357119560241699,
+    0.006770133972167969,
+    0.00031495094299316406,
+    0.0
+  ]
+}

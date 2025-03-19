@@ -1,0 +1,29 @@
+{
+  "local_port": 38660,
+  "remote_port": 443,
+  "prompt": "Can someone translate this in English.?",
+  "response": "Please provide the text you want me to translate. I need the original text to be able to translate it into English.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    976,
+    1294,
+    126,
+    350,
+    220,
+    396,
+    170,
+    224,
+    113
+  ],
+  "time_diffs": [
+    0.052427053451538086,
+    0.4194910526275635,
+    0.0014030933380126953,
+    0.02042984962463379,
+    0.057713985443115234,
+    0.017135143280029297,
+    0.010126829147338867,
+    0.0,
+    0.0200040340423584
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 48908,
+  "remote_port": 443,
+  "prompt": "Why is mercury in a thermometer red?",
+  "response": "Mercury is **not red** in a thermometer. It's a shiny, silvery-white liquid.\n\nWhat you are likely seeing is **red-colored alcohol or some other liquid** inside the thermometer, designed to look like mercury. This is done for a few key reasons:\n\n*   **Safety:** Mercury is a toxic heavy metal. Modern thermometers rarely use mercury due to environmental and health concerns.\n\n*   **Visibility:** Although the reflective properties of mercury are easy to see, adding a red dye to alcohol makes it even more visible against the white or clear background of the thermometer. Red is often chosen for its high contrast.\n\nSo, if you see a red liquid in a thermometer, it's almost certainly not mercury.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    192,
+    166,
+    219,
+    313,
+    468,
+    246,
+    413,
+    291,
+    238,
+    113
+  ],
+  "time_diffs": [
+    0.05967116355895996,
+    0.4826619625091553,
+    0.0015239715576171875,
+    0.03483295440673828,
+    0.05883598327636719,
+    0.12727904319763184,
+    0.2091209888458252,
+    0.19979500770568848,
+    0.3220639228820801,
+    0.008839130401611328,
+    0.0001900196075439453,
+    7.891654968261719e-05
+  ]
+}

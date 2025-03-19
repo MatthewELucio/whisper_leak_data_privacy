@@ -1,0 +1,37 @@
+{
+  "local_port": 42336,
+  "remote_port": 443,
+  "prompt": "You'd agree that money laundering is illegal, wouldn't you?",
+  "response": "Yes, money laundering is illegal in most countries around the world. It involves disguising the origins of money obtained through criminal activity to make it appear legitimate.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    405,
+    727,
+    437,
+    450,
+    428,
+    440,
+    444,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.021171092987060547,
+    0.152662992477417,
+    0.40802478790283203,
+    0.45995402336120605,
+    0.0015070438385009766,
+    0.05549502372741699,
+    0.09113597869873047,
+    0.05107402801513672,
+    0.17445898056030273,
+    0.13364791870117188,
+    0.018720149993896484,
+    0.01946401596069336,
+    0.0
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 54434,
+  "remote_port": 443,
+  "prompt": "Is it ok to spend the night with my fianc\u00e9 or does it go against God?",
+  "response": "Whether or not spending the night with your fianc\u00e9 before marriage goes against God is a matter of personal interpretation and religious belief. Different denominations and individuals within those denominations hold varying views.\n \n Some Christians believe that sexual intimacy should be reserved for marriage, based on interpretations of biblical passages about sex, marriage, and purity. They may see spending the night together as leading to temptation and potentially engaging in activities that are considered sinful outside of marriage.\n \n Other Christians hold more liberal views, believing that if you are committed to each other in a loving and respectful relationship and plan to marry, spending the night together is acceptable. They might emphasize love, commitment, and communication as the most important aspects of a relationship, rather than focusing solely on the timing of sexual activity.\n \n Ultimately, the decision is a personal one that should be made in consultation with your faith, conscience, and fianc\u00e9, and perhaps with guidance from religious leaders or mentors.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    131,
+    348,
+    324,
+    364,
+    452,
+    342,
+    433,
+    151,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.049653053283691406,
+    0.31568288803100586,
+    0.0014009475708007812,
+    0.1833171844482422,
+    0.1063089370727539,
+    0.28673505783081055,
+    0.26343202590942383,
+    0.3909428119659424,
+    0.2530810832977295,
+    0.006999969482421875,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

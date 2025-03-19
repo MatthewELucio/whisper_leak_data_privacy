@@ -1,0 +1,43 @@
+{
+  "local_port": 49664,
+  "remote_port": 443,
+  "prompt": "How is India connected to the internet?",
+  "response": "India is connected to the internet through a multifaceted infrastructure, primarily relying on a combination of:\n\n*   **Submarine Cables:** This is the most crucial and high-capacity connection. A network of undersea fiber optic cables lands at various locations along India's coastline. These cables connect India to global internet networks, facilitating data exchange with countries around the world. Key landing points include Mumbai, Chennai, Kochi, and Tuticorin.\n*   **Satellite Connections:** While not the primary method due to higher latency and cost, satellite connections serve as a backup and a solution for remote or underserved areas where terrestrial infrastructure is lacking.\n*   **Terrestrial Fiber Optic Networks:** Within India, a vast network of fiber optic cables spreads across the country. This network connects landing stations of submarine cables to major cities, data centers, and local internet service providers (ISPs). The expansion of this network is vital for improving internet access across urban and rural areas.\n*   **Wireless Technologies (Mobile and Fixed):** Mobile networks (4G and increasingly 5G) provide widespread internet access via smartphones and mobile devices. Fixed wireless access (using technologies like Wi-Fi and fixed wireless broadband) is also used to connect homes and businesses, particularly in areas where laying fiber is challenging.\n*   **Data Centers:** India has a growing number of data centers that house servers and network equipment. These data centers play a critical role in caching content, reducing latency, and ensuring reliable internet service.\n\n**In summary, India's internet connectivity relies on a combination of global submarine cables, extensive domestic fiber optic networks, satellite connections for remote areas, and wireless technologies for last-mile access.**",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    225,
+    214,
+    423,
+    378,
+    298,
+    440,
+    454,
+    428,
+    338,
+    444,
+    345,
+    198,
+    170,
+    113
+  ],
+  "time_diffs": [
+    0.04955410957336426,
+    0.34250903129577637,
+    0.0014388561248779297,
+    0.0036139488220214844,
+    0.05052900314331055,
+    0.08017420768737793,
+    0.21898698806762695,
+    0.20800995826721191,
+    0.2760000228881836,
+    0.31804490089416504,
+    0.439194917678833,
+    0.3709402084350586,
+    0.08264398574829102,
+    0.012576818466186523,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 54104,
+  "remote_port": 443,
+  "prompt": "How long does a high school basketball game usually last?",
+  "response": "A high school basketball game typically lasts around **1 hour to 1 hour and 30 minutes**.\n\nHere's a breakdown:\n\n*   **Four Quarters:** Each quarter is 8 minutes long, totaling 32 minutes of play.\n*   **Halftime:** Halftime is usually around 10-15 minutes.\n*   **Timeouts:** Each team has a certain number of timeouts (usually 3-5 per game), which add to the total time.\n*   **Clock Stoppages:** The clock stops for fouls, injuries, made baskets in the last minute of each quarter, and other situations, extending the game's duration.\n\nSo, while the actual playing time is 32 minutes, the stoppages and breaks can nearly double that.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1280,
+    287,
+    307,
+    333,
+    294,
+    333,
+    347,
+    305,
+    251,
+    219,
+    113
+  ],
+  "time_diffs": [
+    0.0467379093170166,
+    0.3725619316101074,
+    0.002791166305541992,
+    0.07217001914978027,
+    0.11188888549804688,
+    0.1682569980621338,
+    0.1492769718170166,
+    0.3113410472869873,
+    0.09399795532226562,
+    0.009449005126953125,
+    0.0,
+    0.00010895729064941406
+  ]
+}

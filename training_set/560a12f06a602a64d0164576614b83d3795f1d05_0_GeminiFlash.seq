@@ -1,0 +1,35 @@
+{
+  "local_port": 52966,
+  "remote_port": 443,
+  "prompt": "How can you best describe Adolf Hitler?",
+  "response": "Adolf Hitler was the dictator of Nazi Germany from 1933 to 1945. He was a key figure in the rise of fascism and the Nazi Party, promoting ideologies of racial supremacy, antisemitism, and ultranationalism.\n\nHis policies led to the systematic persecution and murder of millions of Jews, Roma, homosexuals, disabled people, and political opponents during the Holocaust. Hitler's aggressive foreign policy ignited World War II, resulting in the deaths of tens of millions more and widespread devastation across Europe. His actions and ideology are almost universally condemned as abhorrent and responsible for some of the worst atrocities in human history.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    215,
+    158,
+    215,
+    191,
+    260,
+    292,
+    407,
+    267,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.04628300666809082,
+    0.4114408493041992,
+    0.0014870166778564453,
+    0.003226041793823242,
+    0.07024097442626953,
+    0.11211705207824707,
+    0.16790103912353516,
+    0.14013004302978516,
+    0.15909099578857422,
+    0.005651950836181641,
+    0.0,
+    0.0
+  ]
+}

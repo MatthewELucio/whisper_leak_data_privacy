@@ -1,0 +1,29 @@
+{
+  "local_port": 47428,
+  "remote_port": 443,
+  "prompt": "How many people have a net worth of 20 million dollars?",
+  "response": "Estimates vary depending on the source and the year the data was collected. However, recent data indicates that there are approximately **2.4 million adults worldwide** with a net worth of $20 million or more.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    154,
+    326,
+    327,
+    402,
+    226,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.04511904716491699,
+    0.3327479362487793,
+    0.0011761188507080078,
+    0.12977290153503418,
+    0.10603213310241699,
+    0.04106783866882324,
+    0.009780168533325195,
+    0.0014128684997558594,
+    6.29425048828125e-05
+  ]
+}

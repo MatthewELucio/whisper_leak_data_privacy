@@ -1,0 +1,31 @@
+{
+  "local_port": 36112,
+  "remote_port": 443,
+  "prompt": "Would you consider Princess Diana was physically attractive?",
+  "response": "Yes, Princess Diana was widely considered to be a very attractive woman. She had a radiant smile, striking blue eyes, and a graceful demeanor. Her style was also influential and admired.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    102,
+    337,
+    401,
+    226,
+    226,
+    271,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.047616004943847656,
+    0.37729907035827637,
+    0.0012989044189453125,
+    0.042485952377319336,
+    0.072113037109375,
+    0.12587904930114746,
+    0.06709504127502441,
+    0.012809991836547852,
+    0.0016660690307617188,
+    0.0
+  ]
+}

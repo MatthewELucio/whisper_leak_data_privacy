@@ -1,0 +1,41 @@
+{
+  "local_port": 57520,
+  "remote_port": 443,
+  "prompt": "What are some examples of cardiac muscles?",
+  "response": "Cardiac muscle is a very specific type of muscle tissue found only in one place in the body: **the heart**.  Therefore, the primary and essentially *only* example of cardiac muscle is:\n\n*   **The myocardium:** This is the muscular tissue of the heart, forming the walls of the atria and ventricles. It's responsible for the heart's pumping action. So when we talk about cardiac muscle, we're really talking about the myocardium.\n    *   This includes the muscles that make up:\n        *   **Atrial walls (atria):** The upper chambers of the heart that receive blood.\n        *   **Ventricular walls (ventricles):** The lower chambers of the heart that pump blood out to the lungs and the rest of the body.\n        *   **Interventricular septum:** The muscular wall that separates the left and right ventricles.\n        *   **Interatrial septum:** The muscular wall that separates the left and right atria.\n\nWhile you might see some specific bundles or regions within the myocardium discussed in advanced anatomy or physiology (e.g., spiral arrangement of muscle fibers), it's all still *cardiac muscle* contributing to the overall function of the heart. There are no other examples of cardiac muscle found elsewhere in the body.\n\nIn summary, think of **the heart** as the sole example of cardiac muscle.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    197,
+    346,
+    415,
+    230,
+    235,
+    353,
+    362,
+    274,
+    314,
+    288,
+    202,
+    169,
+    113
+  ],
+  "time_diffs": [
+    0.045310020446777344,
+    0.3235130310058594,
+    0.0013458728790283203,
+    0.013328075408935547,
+    0.09733295440673828,
+    0.1028900146484375,
+    0.20754194259643555,
+    0.1831221580505371,
+    0.24154901504516602,
+    0.2609059810638428,
+    0.41161584854125977,
+    0.11955404281616211,
+    0.011018037796020508,
+    0.0,
+    0.0
+  ]
+}

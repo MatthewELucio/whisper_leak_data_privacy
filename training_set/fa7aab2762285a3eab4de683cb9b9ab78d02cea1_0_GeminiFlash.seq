@@ -1,0 +1,37 @@
+{
+  "local_port": 43868,
+  "remote_port": 443,
+  "prompt": "Can I get my adderral filled early?",
+  "response": "Whether you can get your Adderall prescription filled early depends on a number of factors, including:\n\n*   **Your insurance company's policies:** Many insurance companies have strict policies about filling prescriptions early, especially for controlled substances like Adderall. They may have a \"refill too soon\" rejection if you try to fill it before a certain number of days have passed since your last fill.\n*   **State and federal laws:** Laws regulate the dispensing of controlled substances. These laws are in place to prevent abuse and diversion.\n*   **Your pharmacy's policies:** Pharmacies also have their own policies.\n*   **The reason for needing an early refill:** A legitimate reason might be traveling, a natural disaster, or a change in your prescription.\n\nIf you need to fill your prescription early, contact your pharmacy and your insurance provider to see if it is possible and to understand their policies. If you have a legitimate reason, your doctor may be able to contact the pharmacy and insurance company to request an override.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    138,
+    296,
+    296,
+    483,
+    384,
+    474,
+    392,
+    300,
+    132,
+    141,
+    113
+  ],
+  "time_diffs": [
+    0.04524517059326172,
+    0.2675769329071045,
+    0.0038900375366210938,
+    0.07505083084106445,
+    0.08967018127441406,
+    0.1993849277496338,
+    0.17859601974487305,
+    0.2655489444732666,
+    0.3160080909729004,
+    0.08111190795898438,
+    0.010642051696777344,
+    5.0067901611328125e-05,
+    0.0
+  ]
+}

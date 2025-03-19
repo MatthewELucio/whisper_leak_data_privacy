@@ -1,0 +1,41 @@
+{
+  "local_port": 34388,
+  "remote_port": 443,
+  "prompt": "Are there legal consequences for money laundering?",
+  "response": "Yes, there are very serious legal consequences for money laundering. The penalties vary depending on the jurisdiction, the amount of money laundered, the sophistication of the scheme, and the prior criminal record of the offender. However, some common consequences include:\n\n*   **Imprisonment:** Money laundering convictions often carry significant prison sentences, ranging from several years to life imprisonment in some cases.\n*   **Fines:** Courts can impose substantial fines, often exceeding the amount of money laundered.\n*   **Asset Forfeiture:** Governments can seize assets and property involved in or derived from money laundering activities, including bank accounts, real estate, vehicles, and other valuable possessions.\n*   **Criminal Record:** A money laundering conviction results in a criminal record, which can have long-term consequences for employment, travel, and other aspects of life.\n*   **Civil Penalties:** In addition to criminal penalties, individuals and businesses may face civil penalties for money laundering violations, such as fines and injunctions.\n*   **Reputational Damage:** Money laundering can severely damage a person's or company's reputation, leading to loss of business opportunities and social standing.\n*   **Sanctions and Restrictions:** Individuals and entities involved in money laundering may be subject to sanctions and restrictions, such as being placed on watch lists or prohibited from engaging in certain financial transactions.\n\nIt is important to consult with a legal professional for specific information about money laundering laws and penalties in a particular jurisdiction.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    160,
+    325,
+    449,
+    263,
+    291,
+    459,
+    472,
+    296,
+    305,
+    398,
+    228,
+    230,
+    113
+  ],
+  "time_diffs": [
+    0.04679107666015625,
+    0.4283578395843506,
+    0.00133514404296875,
+    0.07436800003051758,
+    0.05829000473022461,
+    0.07194995880126953,
+    0.04705190658569336,
+    0.18879199028015137,
+    0.28710293769836426,
+    0.26189708709716797,
+    0.34661006927490234,
+    0.18537306785583496,
+    0.011089801788330078,
+    0.0,
+    0.0
+  ]
+}

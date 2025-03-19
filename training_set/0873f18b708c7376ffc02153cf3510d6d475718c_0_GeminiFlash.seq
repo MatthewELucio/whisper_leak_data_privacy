@@ -1,0 +1,43 @@
+{
+  "local_port": 33404,
+  "remote_port": 443,
+  "prompt": "What's the best sex position after foreplay?",
+  "response": "There's no single \"best\" sex position after foreplay, as it really depends on what you and your partner enjoy and what feels good for both of you. However, here are some popular options based on different preferences:\n\n*   **Missionary:** A classic for a reason, this position allows for deep kissing and eye contact, enhancing intimacy.\n*   **Woman on Top (Cowgirl/Reverse Cowgirl):** Gives the woman control over the pace and depth. It can be empowering and pleasurable for her.\n*   **Doggy Style:** Allows for deep penetration and can be very stimulating.\n*   **Spooning:** Intimate and relaxed, ideal for cuddling and gentle stimulation.\n*   **Standing:** Can be adventurous and allows for a different angle of penetration.\n*   **69:** If you are both up for it, it can be very fun and exciting.\n\nHere are some tips for choosing a position:\n\n*   **Consider comfort:** Choose a position that is comfortable for both of you and doesn't cause any strain or pain.\n*   **Think about stimulation:** What kind of stimulation are you both looking for? Some positions offer deeper penetration, while others focus on clitoral stimulation.\n*   **Communicate:** Talk to your partner about what you both enjoy and what you're in the mood for.\n*   **Experiment:** Don't be afraid to try new positions and see what works best for you.\n\n**Important note:** The \"best\" position is subjective and depends on individual preferences and circumstances. Open communication and experimentation are key to finding what works best for you and your partner.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    233,
+    315,
+    210,
+    226,
+    449,
+    311,
+    430,
+    230,
+    532,
+    288,
+    363,
+    306,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.04616498947143555,
+    0.40163707733154297,
+    0.0014519691467285156,
+    0.021236896514892578,
+    0.07124710083007812,
+    0.10110807418823242,
+    0.18070292472839355,
+    0.15726304054260254,
+    0.23055195808410645,
+    0.2209930419921875,
+    0.34303808212280273,
+    0.2796049118041992,
+    0.05185699462890625,
+    0.010391950607299805,
+    0.0,
+    0.0
+  ]
+}

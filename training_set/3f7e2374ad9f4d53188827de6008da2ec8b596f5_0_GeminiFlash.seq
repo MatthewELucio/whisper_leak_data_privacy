@@ -1,0 +1,39 @@
+{
+  "local_port": 41772,
+  "remote_port": 443,
+  "prompt": "How does the average Australian taxpayer feel about the millions of dollars going into refugee processing centers in Nauru and Manus island?",
+  "response": "Public opinion on Australia's offshore processing centers in Nauru and Manus Island is complex and varied. Here's a breakdown of the different viewpoints:\n\n*   **Opposition:** Many Australians strongly oppose the offshore processing centers due to concerns about human rights, the high cost, and the lack of transparency. They argue that the conditions in the centers are inhumane and that Australia has a moral obligation to treat asylum seekers with dignity. Some believe the money spent on offshore processing could be better used to resettle refugees in Australia or provide aid to developing countries.\n*   **Support:** Other Australians support the offshore processing policy, believing it is effective in deterring asylum seekers from arriving by boat and preventing deaths at sea. They argue that it protects Australia's borders and maintains control over who enters the country. Some also believe that Australia has a right to decide who it accepts as refugees and that offshore processing is a legitimate way to manage asylum claims.\n*   **Mixed feelings:** Some Australians have mixed feelings about the policy. They may be concerned about the human rights issues but also support strong border control measures. They may believe that there are no easy solutions to the complex issue of asylum seekers and that offshore processing is the least bad option available.\n\n**Factors Influencing Opinion:**\n\n*   **Political affiliation:** Supporters of the Liberal and National parties are generally more likely to support offshore processing, while supporters of the Labor and Green parties are more likely to oppose it.\n*   **Media coverage:** Media coverage of the offshore processing centers can influence public opinion, with negative reports about conditions in the centers often leading to increased opposition.\n*   **Personal values:** People's personal values, such as their beliefs about human rights, border security, and compassion, can also influence their views on the policy.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1505,
+    371,
+    310,
+    300,
+    349,
+    454,
+    363,
+    429,
+    365,
+    316,
+    216,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.046672821044921875,
+    0.42618608474731445,
+    0.09872198104858398,
+    0.12012195587158203,
+    0.1591489315032959,
+    0.1810312271118164,
+    0.2631838321685791,
+    0.28289103507995605,
+    0.35591697692871094,
+    0.3298361301422119,
+    0.16663694381713867,
+    0.009469032287597656,
+    0.00010800361633300781,
+    0.00031685829162597656
+  ]
+}

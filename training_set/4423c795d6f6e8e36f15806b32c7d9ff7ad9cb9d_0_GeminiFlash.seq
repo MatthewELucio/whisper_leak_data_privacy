@@ -1,0 +1,37 @@
+{
+  "local_port": 50488,
+  "remote_port": 443,
+  "prompt": "Is \"why you went there?\" proper grammar?",
+  "response": "No, \"why you went there?\" is not proper grammar. It's missing a word that makes it a proper question. Here are some ways to correct it:\n\n*   **Why did you go there?** (This is a direct question.)\n*   **I wonder why you went there.** (This is part of a larger sentence, expressing curiosity.)\n*   **Do you know why you went there?** (Similar to the above, but a direct question about knowledge.)\n*   **The reason why you went there is...** (Starting a sentence to explain the reason.)\n\nThe issue is that \"why you went there\" acts like a noun phrase (a statement of fact, even though it's about a reason), not a question. To make it a question, you need to invert the subject and auxiliary verb (\"did you go\").\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    175,
+    259,
+    301,
+    391,
+    218,
+    203,
+    466,
+    339,
+    182,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04668307304382324,
+    0.3903369903564453,
+    0.0013580322265625,
+    0.02242898941040039,
+    0.07895898818969727,
+    0.09018182754516602,
+    0.18108606338500977,
+    0.1760120391845703,
+    0.3504209518432617,
+    0.11186909675598145,
+    0.015338897705078125,
+    0.0,
+    5.1021575927734375e-05
+  ]
+}

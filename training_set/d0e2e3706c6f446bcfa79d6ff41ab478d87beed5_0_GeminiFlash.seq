@@ -1,0 +1,41 @@
+{
+  "local_port": 49254,
+  "remote_port": 443,
+  "prompt": "Can educational testing services (ETS) sponsor cap-exempt H-1B visa?",
+  "response": "Yes, Educational Testing Service (ETS) **can** sponsor cap-exempt H-1B visas.\n\nHere's why:\n\n*   **Nonprofit Research Organization:** ETS is a 501(c)(3) nonprofit organization whose primary mission includes educational research.\n*   **Cap-Exempt H-1B Requirements:** One of the primary categories for cap-exempt H-1B sponsorship includes working at a qualifying nonprofit research organization.\n\n**Therefore, ETS, meeting the criteria as a nonprofit research organization, can sponsor H-1B visas that are exempt from the annual H-1B cap.**\n\n**Important Considerations:**\n\n*   **Job Role Alignment:** The position being sponsored must be related to ETS's research mission.  For example, a research scientist position would likely qualify, while a role primarily focused on marketing might not.\n*   **Meeting all H-1B Requirements:** Even though cap-exempt, the sponsored employee and the position must still meet all other H-1B requirements, such as holding the required degree and being paid the prevailing wage.\n\n**Disclaimer:**  Visa regulations and interpretations are subject to change. It's always best to consult directly with an immigration attorney or review the latest USCIS guidelines for the most up-to-date information.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    145,
+    273,
+    190,
+    377,
+    229,
+    359,
+    327,
+    350,
+    372,
+    323,
+    288,
+    169,
+    113
+  ],
+  "time_diffs": [
+    0.05600619316101074,
+    0.3900318145751953,
+    0.001547098159790039,
+    0.0032138824462890625,
+    0.07420110702514648,
+    0.1110689640045166,
+    0.2040691375732422,
+    0.23701882362365723,
+    0.21699213981628418,
+    0.3303060531616211,
+    0.39054179191589355,
+    0.014432191848754883,
+    0.011125802993774414,
+    0.0,
+    0.001741170883178711
+  ]
+}

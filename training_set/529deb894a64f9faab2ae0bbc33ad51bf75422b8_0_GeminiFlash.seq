@@ -1,0 +1,43 @@
+{
+  "local_port": 51222,
+  "remote_port": 443,
+  "prompt": "If I leave Aloe Vera gel on my face overnight and wash it in the morning, do I wash it with soap or just water? And can I put moisturizer after?",
+  "response": "When washing off Aloe Vera gel in the morning after leaving it on overnight, you can generally just use **water**. Aloe Vera is water-soluble and should rinse off easily.\n\n*   **Why water is often enough:** Aloe Vera doesn't contain oils or heavy ingredients that require soap to remove. Using soap every morning can sometimes be drying, especially if you have sensitive skin.\n\n*   **When to consider a gentle cleanser:** If you feel like there's any residue or if you've also applied other products before the Aloe Vera (like a heavy serum), a very mild, gentle cleanser can be used.\n\n**After washing off the Aloe Vera, yes, you can and often should put on a moisturizer.**\n\n*   **Moisturizer Benefits:** Aloe Vera is hydrating, but it doesn't necessarily lock in moisture. A moisturizer will help to create a barrier and prevent water loss throughout the day.\n\n*   **Choose the Right Moisturizer:** Select a moisturizer that's appropriate for your skin type (e.g., lightweight for oily skin, richer for dry skin).\n\n**In summary:**\n\n1.  **Wash:** Rinse Aloe Vera off with water in the morning. If needed, use a very gentle cleanser.\n2.  **Moisturize:** Apply your usual moisturizer after washing.\n\n**Important Considerations:**\n\n*   **Patch Test:** If you haven't used Aloe Vera on your face before, do a patch test on a small area of skin first to check for any allergic reactions.\n*   **Skin Sensitivity:** Pay attention to how your skin feels. If you experience any irritation, redness, or dryness, adjust your routine accordingly (e.g., use a milder cleanser, use Aloe Vera less frequently).\n*   **Quality of Aloe Vera:** Use pure, high-quality Aloe Vera gel. Avoid products with added alcohol or fragrance, as these can be irritating.\n\nIf you're using Aloe Vera for a specific skin condition or have sensitive skin, consulting with a dermatologist is always a good idea.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    119,
+    262,
+    190,
+    331,
+    261,
+    332,
+    519,
+    458,
+    460,
+    408,
+    314,
+    214,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.04677891731262207,
+    0.5708119869232178,
+    0.0015480518341064453,
+    0.08959102630615234,
+    0.10722899436950684,
+    0.2289879322052002,
+    0.19583392143249512,
+    0.3261590003967285,
+    0.2881481647491455,
+    0.2935309410095215,
+    0.378572940826416,
+    0.37950897216796875,
+    0.11893510818481445,
+    0.011693000793457031,
+    0.0,
+    4.601478576660156e-05
+  ]
+}

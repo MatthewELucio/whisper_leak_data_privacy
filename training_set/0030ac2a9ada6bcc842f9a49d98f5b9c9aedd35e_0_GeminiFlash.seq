@@ -1,0 +1,39 @@
+{
+  "local_port": 33990,
+  "remote_port": 443,
+  "prompt": "Do I need internet to play PS4 out the box?",
+  "response": "You don't **need** internet to play PS4 straight out of the box, but your experience will be limited.\n\nHere's a breakdown:\n\n*   **Single-player games:** You can play any single-player games you have on physical discs immediately.\n*   **Offline features:** You can access any offline features included on the game disc.\n\n**What you *can't* do without internet:**\n\n*   **Digital games:** You can't play any games you've purchased digitally (from the PlayStation Store).\n*   **Online multiplayer:** You can't play online multiplayer games.\n*   **System updates:** You won't be able to download and install system software updates, which are often needed for optimal performance and compatibility with newer games.\n*   **Game updates:** You won't be able to download game patches, which often fix bugs and improve the game.\n*   **PlayStation Network features:** You won't be able to access PlayStation Network features like trophies, friends lists, or the PlayStation Store.\n*   **Streaming services:** Services such as Netflix, Hulu, Spotify, etc., require an internet connection.\n\n**In short:** You *can* play single-player disc-based games offline, but you'll be missing out on a lot of the PS4's functionality and features without an internet connection. It's highly recommended to connect to the internet to get the full PS4 experience.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    164,
+    284,
+    356,
+    235,
+    401,
+    386,
+    421,
+    439,
+    415,
+    283,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.05035209655761719,
+    0.2906959056854248,
+    0.0014510154724121094,
+    0.10663700103759766,
+    0.06673192977905273,
+    0.23507094383239746,
+    0.1933901309967041,
+    0.2586510181427002,
+    0.24413490295410156,
+    0.3827321529388428,
+    0.15701699256896973,
+    0.008617877960205078,
+    0.0,
+    0.0002779960632324219
+  ]
+}

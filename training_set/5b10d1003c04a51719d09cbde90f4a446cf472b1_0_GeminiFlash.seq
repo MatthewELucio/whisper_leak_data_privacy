@@ -1,0 +1,37 @@
+{
+  "local_port": 46880,
+  "remote_port": 443,
+  "prompt": "What does this dream mean?What does this mean you think?",
+  "response": "Okay, tell me about your dream!  I need the details to help you understand what it might mean.  The more information you give me, the better I can assist you.  Think about these things:\n\n*   **What happened in the dream?** Describe the events, the setting, and the overall storyline.\n*   **Who was in the dream?** Were there people you know, strangers, or even animals?\n*   **How did you feel in the dream?** Were you scared, happy, sad, confused, anxious, or something else?\n*   **What stood out to you most about the dream?** What details were particularly vivid or memorable?\n*   **What's been going on in your life lately?** Are there any major stresses, changes, or preoccupations that might be related to the dream?\n\nOnce you provide the dream details, I can offer some possible interpretations. Keep in mind that dream interpretation is subjective and there's no single \"right\" answer.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    186,
+    289,
+    409,
+    485,
+    438,
+    438,
+    515,
+    254,
+    246,
+    163,
+    113
+  ],
+  "time_diffs": [
+    0.04507303237915039,
+    0.29063892364501953,
+    0.0014891624450683594,
+    0.1184539794921875,
+    0.06801295280456543,
+    0.1860809326171875,
+    0.21009302139282227,
+    0.22113704681396484,
+    0.25211405754089355,
+    0.09152102470397949,
+    0.007905006408691406,
+    0.0,
+    0.00011086463928222656
+  ]
+}

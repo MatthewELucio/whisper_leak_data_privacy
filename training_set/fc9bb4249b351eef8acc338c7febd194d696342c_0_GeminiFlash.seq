@@ -1,0 +1,31 @@
+{
+  "local_port": 46384,
+  "remote_port": 443,
+  "prompt": "Why do black people have curly hair?",
+  "response": "The curliness of hair is determined by genetics and varies greatly among people of African descent. The shape of the hair follicle and the way proteins bond within the hair strand influence whether hair is straight, wavy, curly, or coiled. Different genes control these traits, leading to a wide range of hair textures in people of African descent.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    197,
+    199,
+    405,
+    276,
+    380,
+    146,
+    154,
+    113
+  ],
+  "time_diffs": [
+    0.04449796676635742,
+    0.31957292556762695,
+    0.0014960765838623047,
+    0.04849696159362793,
+    0.0921781063079834,
+    0.12994980812072754,
+    0.2000720500946045,
+    0.008205175399780273,
+    0.00144195556640625,
+    0.0033359527587890625
+  ]
+}

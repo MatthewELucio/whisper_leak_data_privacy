@@ -1,0 +1,35 @@
+{
+  "local_port": 57564,
+  "remote_port": 443,
+  "prompt": "How many nest thermostat were sold so far?",
+  "response": "While I don't have access to real-time sales figures for Nest thermostats, I can tell you that Nest has sold millions of thermostats since its introduction in 2011. However, Google (Nest's parent company) doesn't publicly release precise, up-to-the-minute sales numbers.\n\nTo get a general sense, you could try looking for:\n\n*   **Analyst reports:** Market research firms like Statista or others that track the smart home market may have estimated sales figures. However, these often come at a cost.\n*   **Google's financial reports:** Although they don't break out Nest thermostat sales specifically, Google sometimes discusses the performance of their \"Other Hardware\" category in their quarterly earnings reports. This can give you a general sense of how their hardware products are doing.\n*   **Industry news articles:** Tech news sites may occasionally cite sales estimates or reports about Nest's market share.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    227,
+    401,
+    308,
+    351,
+    403,
+    357,
+    513,
+    149,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.05094504356384277,
+    0.3809969425201416,
+    0.001293182373046875,
+    0.11081099510192871,
+    0.09582090377807617,
+    0.16800498962402344,
+    0.20908904075622559,
+    0.33318185806274414,
+    0.2679781913757324,
+    0.009217977523803711,
+    0.0,
+    0.00015997886657714844
+  ]
+}

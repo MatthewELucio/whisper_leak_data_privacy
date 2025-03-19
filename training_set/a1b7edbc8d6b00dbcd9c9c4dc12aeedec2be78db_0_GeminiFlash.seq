@@ -1,0 +1,35 @@
+{
+  "local_port": 40018,
+  "remote_port": 443,
+  "prompt": "How much money does Sonam Kapoor spend every month?",
+  "response": "I cannot provide you with the exact figure of Sonam Kapoor's monthly expenses. Here's why:\n\n*   **Privacy:** Celebrities' financial details are generally private. Unless they choose to publicly disclose this information, it's not available.\n*   **Variable Spending:** Expenses can fluctuate greatly from month to month depending on travel, purchases, events, and other lifestyle factors.\n*   **No Public Reports:** There are no official reports or reliable sources that track an individual's exact monthly spending.\n\nIf you are interested in Sonam Kapoor's net worth, you can find some figures online, but I cannot vouch for their accuracy.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    179,
+    340,
+    238,
+    437,
+    281,
+    254,
+    290,
+    315,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.046584129333496094,
+    0.3550999164581299,
+    0.001355886459350586,
+    0.015920162200927734,
+    0.04955101013183594,
+    0.04714798927307129,
+    0.20366287231445312,
+    0.17447304725646973,
+    0.17132306098937988,
+    0.0062329769134521484,
+    0.0,
+    0.0
+  ]
+}

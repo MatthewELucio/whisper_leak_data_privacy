@@ -1,0 +1,43 @@
+{
+  "local_port": 38550,
+  "remote_port": 443,
+  "prompt": "How is winter in Houston?",
+  "response": "Winter in Houston is generally mild compared to many other parts of the United States. Here's a breakdown:\n\n*   **Temperature:** Expect average highs in the 60s\u00b0F (15-20\u00b0C) and average lows in the 40s\u00b0F (4-10\u00b0C). However, it's not uncommon to have stretches of days in the 70s\u00b0F (21-26\u00b0C) or even higher. Conversely, cold fronts can push temperatures down to freezing or below for a few days at a time.\n*   **Snow/Ice:** Snow is rare in Houston. When it does snow, it's usually just a dusting that melts quickly. Ice storms are more of a concern and can cause significant disruptions if they occur.\n*   **Rain:** Winter is typically one of the drier seasons in Houston, but rain is still possible. Expect occasional periods of rain, sometimes associated with cold fronts.\n*   **Humidity:** Humidity is generally lower in the winter compared to the summer, but it can still be noticeable, especially on milder days.\n*   **Overall:** Overall, winter in Houston is pleasant for many people. It's a welcome break from the heat and humidity of the summer months. You'll likely need a light jacket or sweater for most days, but heavy winter coats are usually not necessary.\n\n**Things to Consider:**\n\n*   **Sudden Changes:** Houston weather can be unpredictable, so be prepared for rapid temperature fluctuations. A warm day can be followed by a cold front the next day.\n*   **Indoor Heating:** While the weather is mild, you'll still need to heat your home during the cooler periods.\n*   **Outdoor Activities:** The mild weather makes winter a great time for outdoor activities like hiking, biking, and exploring the city's parks and attractions.\n*   **Holiday Events:** Houston hosts many holiday events and festivals during the winter months.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1441,
+    215,
+    289,
+    413,
+    340,
+    445,
+    392,
+    306,
+    446,
+    454,
+    399,
+    189,
+    161,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.0453031063079834,
+    0.41649889945983887,
+    0.03690195083618164,
+    0.053086042404174805,
+    0.0868690013885498,
+    0.15730500221252441,
+    0.20276403427124023,
+    0.2429800033569336,
+    0.30351996421813965,
+    0.3307609558105469,
+    0.34422898292541504,
+    0.38208818435668945,
+    0.08460402488708496,
+    0.008550882339477539,
+    0.0,
+    0.0
+  ]
+}

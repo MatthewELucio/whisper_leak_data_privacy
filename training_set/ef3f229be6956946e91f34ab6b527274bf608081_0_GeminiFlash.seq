@@ -1,0 +1,39 @@
+{
+  "local_port": 46308,
+  "remote_port": 443,
+  "prompt": "How is Matt LeBlanc (Joey Tribbiani of Friends) in real life?",
+  "response": "From various accounts and interviews, Matt LeBlanc seems to be quite different from his most famous character, Joey Tribbiani. Here's a summary:\n\n*   **More Reserved and Thoughtful:** Unlike the outgoing and often clueless Joey, Matt LeBlanc is often described as more introverted, intelligent, and observant in real life. He's known to be thoughtful and takes time to consider his responses.\n*   **Family-Oriented:** He is known to be a devoted father. He has spoken openly about prioritizing his family and his daughter.\n*   **Loves Cars and Racing:** Matt LeBlanc has a passion for cars and motorsports. He even hosted \"Top Gear\" for a while, showcasing his genuine interest in vehicles.\n*   **Down-to-Earth:** Despite his fame, many accounts suggest that he's grounded and down-to-earth. He avoids the spotlight more than some of his \"Friends\" co-stars.\n*   **Private:** Compared to some celebrities, Matt LeBlanc tends to keep his personal life relatively private. He doesn't often engage in public displays or oversharing.\n*   **Professional and Well-Liked:** Colleagues have generally described him as a professional and likable person to work with.\n\nIt's worth remembering that public perception is always shaped by media portrayals and limited information. However, the consistent image that emerges is that Matt LeBlanc is a more introspective, private, and thoughtful individual than the character he famously played.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    162,
+    238,
+    418,
+    373,
+    367,
+    460,
+    259,
+    403,
+    432,
+    188,
+    135,
+    113
+  ],
+  "time_diffs": [
+    0.05511593818664551,
+    0.26424193382263184,
+    0.0015289783477783203,
+    0.13581609725952148,
+    0.08073186874389648,
+    0.18244409561157227,
+    0.20055794715881348,
+    0.2943150997161865,
+    0.26183295249938965,
+    0.4151310920715332,
+    0.2805039882659912,
+    0.007665872573852539,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

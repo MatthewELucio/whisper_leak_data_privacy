@@ -1,0 +1,37 @@
+{
+  "local_port": 45140,
+  "remote_port": 443,
+  "prompt": "What were the hobbies of Lyndon B. Johnson?",
+  "response": "Lyndon B. Johnson had a variety of hobbies and interests, reflecting his diverse personality. Here are some of the most notable:\n\n*   **Ranching:** LBJ loved his ranch in Texas. He enjoyed raising cattle, tending to the land, and generally being a working rancher. It was a big part of his identity and a place he found solace.\n\n*   **Politics:** While perhaps not a \"hobby\" in the traditional sense, politics was a consuming passion for Johnson. He enjoyed campaigning, strategizing, and the sheer act of political maneuvering.\n\n*   **Driving:** LBJ was known for his fast and sometimes reckless driving, particularly around his ranch. He enjoyed driving his Amphicar, a car that could also be driven in water.\n\n*   **Entertaining:** LBJ enjoyed having guests at the ranch and showing them the Texas countryside.\n\n*   **Storytelling:** Johnson was a gifted storyteller, often using colorful language and anecdotes to illustrate his points or entertain his audience.\n\n*   **Reading:** LBJ read a wide range of materials, including newspapers, magazines, and books on history and politics. He kept abreast of current events and enjoyed delving into historical subjects.\n\nThese hobbies provide a glimpse into the life of a complex and influential figure in American history.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1323,
+    270,
+    333,
+    239,
+    489,
+    357,
+    267,
+    448,
+    543,
+    154,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.04528307914733887,
+    0.34456801414489746,
+    0.05007290840148926,
+    0.06483793258666992,
+    0.08903908729553223,
+    0.17601394653320312,
+    0.21506810188293457,
+    0.3940849304199219,
+    0.23481011390686035,
+    0.3287220001220703,
+    0.011121988296508789,
+    0.0,
+    0.0
+  ]
+}

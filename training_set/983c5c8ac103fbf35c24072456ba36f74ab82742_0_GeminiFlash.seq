@@ -1,0 +1,35 @@
+{
+  "local_port": 46452,
+  "remote_port": 443,
+  "prompt": "In any spray, for example in snow spray, there is a one ball in it. Why is that so?",
+  "response": "The ball inside a spray can, like snow spray, serves a few important purposes:\n\n*   **Mixing the contents:** Spray cans contain a mixture of liquids, propellants, and often solids. The ball helps to mix these components thoroughly when you shake the can. Without it, the solids could settle at the bottom, leading to an uneven spray or a clogged nozzle.\n\n*   **Breaking up clumps:** If the ingredients start to clump together, the ball helps to break them apart, ensuring a smooth and consistent spray.\n\n*   **Aiding propellant release:** The ball can help to dislodge any propellant that might be stuck or frozen, ensuring proper and continuous spraying.\n\nThe ball is usually made of glass or metal and is chosen to be non-reactive with the can's contents.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1508,
+    195,
+    330,
+    316,
+    424,
+    404,
+    361,
+    223,
+    252,
+    197,
+    113
+  ],
+  "time_diffs": [
+    0.04811596870422363,
+    0.40259695053100586,
+    0.003512144088745117,
+    0.07444190979003906,
+    0.09575104713439941,
+    0.16539692878723145,
+    0.18503403663635254,
+    0.3271059989929199,
+    0.07446098327636719,
+    0.010159015655517578,
+    0.0009469985961914062,
+    0.0
+  ]
+}

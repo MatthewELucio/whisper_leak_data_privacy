@@ -1,0 +1,37 @@
+{
+  "local_port": 37960,
+  "remote_port": 443,
+  "prompt": "Where do earthquakes mostly happen?",
+  "response": "Earthquakes predominantly occur along **plate boundaries**. These are the zones where the Earth's tectonic plates interact:\n\n*   **Convergent Boundaries:** Where plates collide (e.g., the Andes Mountains, the Himalayas, subduction zones like the Pacific Ring of Fire).\n*   **Divergent Boundaries:** Where plates move apart (e.g., the Mid-Atlantic Ridge).\n*   **Transform Boundaries:** Where plates slide past each other horizontally (e.g., the San Andreas Fault in California).\n\nSpecifically, the **Pacific Ring of Fire** is a major area of earthquake activity, encircling the Pacific Ocean. This region is characterized by numerous subduction zones and fault lines.\n\nWhile the majority of earthquakes happen at plate boundaries, some can occur within plates themselves (intraplate earthquakes), although they are generally less frequent and understood. These can be caused by ancient fault lines or other geological stresses.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    156,
+    228,
+    432,
+    335,
+    422,
+    444,
+    500,
+    510,
+    187,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.04939389228820801,
+    0.2912311553955078,
+    0.0016438961029052734,
+    0.020468950271606445,
+    0.07608699798583984,
+    0.10800504684448242,
+    0.18693900108337402,
+    0.17524409294128418,
+    0.2640268802642822,
+    0.2515711784362793,
+    0.00586700439453125,
+    0.0,
+    0.0
+  ]
+}

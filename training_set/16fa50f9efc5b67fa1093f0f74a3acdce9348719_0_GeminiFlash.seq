@@ -1,0 +1,35 @@
+{
+  "local_port": 36684,
+  "remote_port": 443,
+  "prompt": "Are marks of pre-board exams added up to calculate the CGPA of X class?",
+  "response": "No, marks from pre-board exams are **not** added to calculate the CGPA (Cumulative Grade Point Average) for Class X.\n\n*   **Pre-boards are practice exams:** Pre-board exams are conducted by schools to give students a feel for the actual board exams and to assess their preparation. They are internal assessments and do not have any weightage in the final board results.\n\n*   **CBSE/ICSE Board Exams determine the CGPA:** The CGPA is calculated based solely on the marks obtained in the final Class X board examinations conducted by the respective education boards (e.g., CBSE, ICSE).\n\nTherefore, you don't need to worry about your pre-board scores affecting your final CGPA. They are primarily for your own self-assessment and to identify areas where you need to improve before the actual board exams.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1287,
+    236,
+    293,
+    281,
+    280,
+    350,
+    315,
+    363,
+    286,
+    217,
+    113
+  ],
+  "time_diffs": [
+    0.045281171798706055,
+    1.005720853805542,
+    0.20564508438110352,
+    0.2333850860595703,
+    0.013787984848022461,
+    0.10422587394714355,
+    0.11307311058044434,
+    0.014770030975341797,
+    0.01812601089477539,
+    0.008818864822387695,
+    0.003880023956298828,
+    0.0
+  ]
+}

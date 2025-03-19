@@ -1,0 +1,27 @@
+{
+  "local_port": 52812,
+  "remote_port": 443,
+  "prompt": "Does money laundering fall under criminal legislation?",
+  "response": "Yes, money laundering is a crime under criminal legislation in virtually all countries that have laws against it. It is generally considered a serious offense.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1441,
+    349,
+    220,
+    276,
+    297,
+    164,
+    113
+  ],
+  "time_diffs": [
+    0.05677008628845215,
+    0.2771790027618408,
+    0.025141000747680664,
+    0.12971901893615723,
+    0.09925293922424316,
+    0.008661031723022461,
+    0.0013470649719238281,
+    0.00011587142944335938
+  ]
+}

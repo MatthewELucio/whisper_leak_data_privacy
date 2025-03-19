@@ -1,0 +1,37 @@
+{
+  "local_port": 56902,
+  "remote_port": 443,
+  "prompt": "Poll Question! If you shoot me in The head at 3,5 yars with a 50AE Desert eagle can I survive?",
+  "response": "The question of whether someone could survive being shot in the head at 3.5 yards with a .50 AE Desert Eagle is a matter of significant debate.\n\nHere's why it's complicated:\n\n*   **.50 AE Devastation:** The .50 AE is an extremely powerful handgun cartridge. It delivers massive energy and causes significant tissue damage. A shot to the head is almost always lethal.\n\n*   **Shot Placement:** Even with the high power of the weapon, minor variations in shot placement can influence outcomes.\n\n*   **Medical Intervention:** In extremely rare instances, immediate and highly skilled medical intervention has saved people from seemingly unsurvivable gunshot wounds to the head.\n\n**Conclusion:**\n\nA shot to the head from a .50 AE Desert Eagle at 3.5 yards has a statistically very low chance of survival.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    267,
+    356,
+    342,
+    331,
+    286,
+    260,
+    330,
+    218,
+    292,
+    150,
+    113
+  ],
+  "time_diffs": [
+    0.04523015022277832,
+    0.47655391693115234,
+    0.0015459060668945312,
+    0.028324127197265625,
+    0.045042991638183594,
+    0.11497688293457031,
+    0.22428417205810547,
+    0.25399303436279297,
+    0.37042689323425293,
+    0.1121358871459961,
+    0.008091211318969727,
+    0.0,
+    0.0
+  ]
+}

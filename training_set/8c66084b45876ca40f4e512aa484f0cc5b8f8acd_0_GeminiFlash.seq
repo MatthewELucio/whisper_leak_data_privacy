@@ -1,0 +1,41 @@
+{
+  "local_port": 33210,
+  "remote_port": 443,
+  "prompt": "Is alcohol allowed while traveling in Indian Railways?",
+  "response": "The rules regarding alcohol consumption and transportation on Indian Railways are quite strict:\n\n*   **Consumption is prohibited:** Drinking alcohol is strictly prohibited on trains and railway premises. This is a punishable offense.\n*   **Transportation is restricted:** Carrying alcohol is generally allowed, but with restrictions. Passengers are usually permitted to carry a limited quantity of alcohol for personal consumption, provided it's legally purchased and sealed. The specific quantity allowed may vary depending on the state you are traveling through, as alcohol laws differ from state to state in India.\n*   **State Laws Apply:** Keep in mind that individual states have their own laws regarding alcohol. If you are traveling through a \"dry state\" (where alcohol is banned), possessing or transporting alcohol may be illegal, regardless of whether it's for personal consumption.\n*   **Consequences:** Violating these rules can lead to fines, confiscation of the alcohol, and even arrest in some cases.\n\n**In summary: Do not drink alcohol on the train or at the railway station. If you choose to carry alcohol, be discreet, carry it in a sealed container, and be aware of the quantity limits and the alcohol laws of the states you are traveling through.**\n\nIt's always best to err on the side of caution and avoid any potential problems. If you're unsure about the specific rules for your journey, it's recommended to check with the Indian Railways authorities or the local excise department for the states you will be traveling through.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    184,
+    348,
+    283,
+    306,
+    352,
+    410,
+    293,
+    393,
+    441,
+    403,
+    214,
+    147,
+    113
+  ],
+  "time_diffs": [
+    0.043272972106933594,
+    0.4185309410095215,
+    0.0013811588287353516,
+    0.04360389709472656,
+    0.09199905395507812,
+    0.0950319766998291,
+    0.22011399269104004,
+    0.19187712669372559,
+    0.3202488422393799,
+    0.30445098876953125,
+    0.3727850914001465,
+    0.33044004440307617,
+    0.014093875885009766,
+    0.00024199485778808594,
+    9.5367431640625e-07
+  ]
+}

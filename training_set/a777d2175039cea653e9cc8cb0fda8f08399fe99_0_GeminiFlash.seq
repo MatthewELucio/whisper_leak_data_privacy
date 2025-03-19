@@ -1,0 +1,37 @@
+{
+  "local_port": 40000,
+  "remote_port": 443,
+  "prompt": "What is the difference between Waldo and Waldorf?",
+  "response": "Waldo and Waldorf are distinct names with different origins and associations:\n\n*   **Waldo:** The main character in the \"Where's Waldo?\" (or \"Where's Wally?\" in some countries) series of children's puzzle books. Waldo is known for his distinctive red-and-white striped shirt and hat, glasses, and tendency to get lost in crowded scenes. The name \"Waldo\" itself has German origins, meaning \"powerful ruler\".\n\n*   **Waldorf:** Often associated with Waldorf education (also known as Steiner education), a philosophy of education based on the ideas of Rudolf Steiner. Waldorf schools emphasize experiential learning, creativity, and the development of the whole child. \"Waldorf\" is also a surname, and Waldorf-Astoria is a famous luxury hotel in New York City. The name \"Waldorf\" is of German origin and may refer to a place.\n\nIn summary:\n\n*   **Waldo:** A fictional character known for being hidden in puzzle illustrations.\n*   **Waldorf:** Related to a specific educational philosophy, a surname, and a luxury hotel.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    263,
+    280,
+    407,
+    305,
+    469,
+    456,
+    303,
+    257,
+    246,
+    231,
+    113
+  ],
+  "time_diffs": [
+    0.04717302322387695,
+    0.4054858684539795,
+    0.0016019344329833984,
+    0.13364505767822266,
+    0.07692909240722656,
+    0.21101999282836914,
+    0.19002795219421387,
+    0.2659919261932373,
+    0.26060914993286133,
+    0.19064593315124512,
+    0.007838010787963867,
+    0.0,
+    0.0
+  ]
+}

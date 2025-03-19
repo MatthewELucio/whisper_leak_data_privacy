@@ -1,0 +1,27 @@
+{
+  "local_port": 55294,
+  "remote_port": 443,
+  "prompt": "Which is the ancient education system in India?",
+  "response": "The ancient education system in India is often referred to as the **Gurukul system**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    112,
+    399,
+    437,
+    190,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.04712700843811035,
+    0.38253283500671387,
+    0.0013899803161621094,
+    0.020388126373291016,
+    0.055201053619384766,
+    0.013988971710205078,
+    0.0014758110046386719,
+    0.0
+  ]
+}

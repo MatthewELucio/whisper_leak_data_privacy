@@ -1,0 +1,29 @@
+{
+  "local_port": 38676,
+  "remote_port": 443,
+  "prompt": "Which organ in humans purifies blood?",
+  "response": "The kidneys are the primary organs that purify blood in humans. They filter waste products, excess water, and other impurities from the blood, which are then excreted as urine.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    145,
+    238,
+    451,
+    385,
+    161,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.04926800727844238,
+    0.41021180152893066,
+    0.0010151863098144531,
+    0.012334823608398438,
+    0.11560511589050293,
+    0.07318997383117676,
+    0.00609588623046875,
+    0.00010919570922851562,
+    0.0016298294067382812
+  ]
+}

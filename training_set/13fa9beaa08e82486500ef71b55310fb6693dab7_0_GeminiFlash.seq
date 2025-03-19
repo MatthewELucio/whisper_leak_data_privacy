@@ -1,0 +1,27 @@
+{
+  "local_port": 57090,
+  "remote_port": 443,
+  "prompt": "Did Israel help India in Mumbai attacks in Taj hotel?",
+  "response": "Some news outlets reported that Israeli security personnel assisted Indian authorities during the 2008 Mumbai attacks, particularly at the Taj Mahal Palace Hotel. However, there's no official confirmation or widely accepted evidence to suggest that Israel played a significant operational role in the response.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1362,
+    413,
+    284,
+    440,
+    298,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.04938197135925293,
+    0.3423941135406494,
+    0.21507787704467773,
+    0.07486295700073242,
+    0.11202311515808105,
+    0.005919933319091797,
+    0.0015130043029785156,
+    0.0031349658966064453
+  ]
+}

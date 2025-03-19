@@ -1,0 +1,33 @@
+{
+  "local_port": 37874,
+  "remote_port": 443,
+  "prompt": "Can a killer whale eat a stingray?",
+  "response": "Yes, killer whales (or orcas) definitely can and do eat stingrays.\n\nWhile killer whales have a diverse diet depending on their location and pod, stingrays are a known food source for some populations. For example, some populations in the Pacific Northwest of North America are known to feed on rays.\n\nSo, the answer is a definitive **yes**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    291,
+    361,
+    319,
+    383,
+    440,
+    366,
+    234,
+    184,
+    113
+  ],
+  "time_diffs": [
+    0.0460660457611084,
+    0.6145920753479004,
+    0.0012629032135009766,
+    0.0458531379699707,
+    0.07499194145202637,
+    0.02198004722595215,
+    0.2290339469909668,
+    0.0540919303894043,
+    0.010647058486938477,
+    0.0015099048614501953,
+    0.0017421245574951172
+  ]
+}

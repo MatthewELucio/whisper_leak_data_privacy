@@ -1,0 +1,39 @@
+{
+  "local_port": 55984,
+  "remote_port": 443,
+  "prompt": "What is your opinion about death penalty?",
+  "response": "The death penalty is a deeply complex and controversial issue. \n\nArguments in favor often center on the idea of retribution \u2013 that it provides a just punishment for heinous crimes and offers closure to victims' families. Proponents also argue that it serves as a deterrent, preventing future crimes by sending a strong message about the consequences of violence.\n\nHowever, there are strong arguments against the death penalty as well. One of the most prominent is the risk of executing innocent people. The justice system is not infallible, and wrongful convictions do occur. Opponents also argue that the death penalty is a cruel and unusual punishment, violating fundamental human rights. There are concerns about its disproportionate application based on race and socioeconomic status, raising questions of fairness and equality. Furthermore, some argue that life imprisonment without parole is a sufficient punishment and that the death penalty is not a more effective deterrent than life imprisonment.\n\nMany countries have abolished the death penalty, and its use varies widely across the globe. The decision to support or oppose the death penalty often comes down to a person's individual moral and ethical beliefs, as well as their assessment of the evidence regarding its effectiveness and fairness.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    120,
+    381,
+    417,
+    330,
+    312,
+    428,
+    316,
+    496,
+    436,
+    138,
+    133,
+    113
+  ],
+  "time_diffs": [
+    0.04887509346008301,
+    0.3319969177246094,
+    0.0014259815216064453,
+    0.025510072708129883,
+    0.0349268913269043,
+    0.09812307357788086,
+    0.1649329662322998,
+    0.19504904747009277,
+    0.2531569004058838,
+    0.3037121295928955,
+    0.1831059455871582,
+    0.012781858444213867,
+    1.1920928955078125e-06,
+    0.0
+  ]
+}

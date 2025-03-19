@@ -1,0 +1,29 @@
+{
+  "local_port": 36698,
+  "remote_port": 443,
+  "prompt": "Is Bobby Jindal a Muslim?",
+  "response": "Bobby Jindal is not a Muslim. He is a Roman Catholic. He converted from Hinduism to Catholicism as a teenager.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    294,
+    261,
+    228,
+    229,
+    183,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.051898956298828125,
+    0.30301618576049805,
+    0.0014259815216064453,
+    0.04917502403259277,
+    0.03122687339782715,
+    0.0595550537109375,
+    0.009000062942504883,
+    0.003545045852661133,
+    0.0
+  ]
+}

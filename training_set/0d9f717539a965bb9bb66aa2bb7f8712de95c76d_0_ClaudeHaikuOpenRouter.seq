@@ -1,0 +1,43 @@
+{
+  "local_port": 37284,
+  "remote_port": 443,
+  "prompt": "Would Mr. Donald Trump be a better president than Hillary Clinton?",
+  "response": "That's a matter of personal opinion. Different people have different views on political candidates and their qualifications.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    139,
+    139,
+    405,
+    405,
+    409,
+    416,
+    436,
+    436,
+    436,
+    421,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.027944087982177734,
+    0.17158985137939453,
+    0.4080941677093506,
+    0.41207289695739746,
+    0.13312697410583496,
+    0.0,
+    0.0101470947265625,
+    0.055867910385131836,
+    0.0491180419921875,
+    0.04479789733886719,
+    0.09023404121398926,
+    0.09194207191467285,
+    0.01709294319152832,
+    0.012078046798706055,
+    0.0,
+    5.2928924560546875e-05
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 54750,
+  "remote_port": 443,
+  "prompt": "Why was the wax museum in Philadelphia built?",
+  "response": "The Philadelphia Wax Museum (also known as the Philadelphia-Freedom Wax Museum) was built primarily as a **tourist attraction**. It aimed to capitalize on the city's rich history and status as a major tourist destination by offering visitors a unique and entertaining way to experience historical figures and events through wax figures.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    246,
+    403,
+    233,
+    392,
+    267,
+    164,
+    134,
+    113
+  ],
+  "time_diffs": [
+    0.046167850494384766,
+    0.34623003005981445,
+    0.0015130043029785156,
+    0.047773122787475586,
+    0.11123085021972656,
+    0.12285900115966797,
+    0.1130681037902832,
+    0.020830869674682617,
+    0.0,
+    0.0
+  ]
+}

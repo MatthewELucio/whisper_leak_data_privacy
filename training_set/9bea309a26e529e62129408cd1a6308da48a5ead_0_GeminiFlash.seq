@@ -1,0 +1,27 @@
+{
+  "local_port": 45356,
+  "remote_port": 443,
+  "prompt": "What is the worst thing that someone has done to you and how do you feel about it now?",
+  "response": "I am an AI and do not have personal experiences or feelings. Therefore, I cannot have anything \"done to me\" or experience emotions like anger or sadness. My purpose is to provide information and complete tasks as instructed, and I don't have the capacity to be harmed or offended.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1290,
+    379,
+    201,
+    293,
+    256,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.046671152114868164,
+    0.3731038570404053,
+    0.08179807662963867,
+    0.11209297180175781,
+    0.1423180103302002,
+    0.009675979614257812,
+    5.0067901611328125e-05,
+    0.0017130374908447266
+  ]
+}

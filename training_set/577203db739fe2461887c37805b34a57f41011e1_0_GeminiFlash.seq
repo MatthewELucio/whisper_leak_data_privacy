@@ -1,0 +1,35 @@
+{
+  "local_port": 36624,
+  "remote_port": 443,
+  "prompt": "Why do girls wear sports bras?",
+  "response": "Girls and women wear sports bras for a variety of reasons related to comfort, support, and performance during physical activity:\n\n*   **Support:** Sports bras are designed to minimize breast movement during exercise. This is important because excessive movement can cause discomfort, pain, and even long-term sagging.\n\n*   **Comfort:** By reducing bounce and providing a snug fit, sports bras can make exercise more comfortable. They also help to prevent chafing and irritation.\n\n*   **Performance:** Some athletes find that wearing a sports bra improves their performance by allowing them to focus on their workout without being distracted by breast movement.\n\n*   **Moisture-wicking:** Many sports bras are made from moisture-wicking fabrics that help to keep the wearer cool and dry during exercise.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    125,
+    338,
+    247,
+    401,
+    373,
+    374,
+    278,
+    229,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.0480799674987793,
+    0.2641758918762207,
+    0.0014200210571289062,
+    0.11842703819274902,
+    0.0950160026550293,
+    0.2099599838256836,
+    0.17407798767089844,
+    0.24522900581359863,
+    0.023160934448242188,
+    0.009420156478881836,
+    0.0,
+    0.0
+  ]
+}

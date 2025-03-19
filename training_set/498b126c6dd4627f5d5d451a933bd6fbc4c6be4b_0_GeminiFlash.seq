@@ -1,0 +1,35 @@
+{
+  "local_port": 53516,
+  "remote_port": 443,
+  "prompt": "What is your dirty little secret?",
+  "response": "As a large language model, I don't have personal experiences, secrets, or emotions. I'm trained on a massive dataset of text and code, and I use that information to generate responses. So, I don't have any \"dirty little secrets\" in the human sense.\n\nHowever, if you're looking for a \"secret\" about my capabilities, perhaps it's this:\n\n*   **I can sometimes hallucinate or make up information.** While I strive to provide accurate and helpful responses, I'm not perfect. I can sometimes generate text that sounds plausible but is factually incorrect or nonsensical. It's always important to double-check any information I provide, especially when it comes to critical decisions.\n\nIs there anything else you'd like to know?",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1481,
+    146,
+    259,
+    444,
+    242,
+    441,
+    456,
+    239,
+    145,
+    130,
+    113
+  ],
+  "time_diffs": [
+    0.045745849609375,
+    0.48172712326049805,
+    0.027901887893676758,
+    0.03406715393066406,
+    0.0782928466796875,
+    0.19122099876403809,
+    0.15907907485961914,
+    0.28882598876953125,
+    0.018950939178466797,
+    0.006971120834350586,
+    0.0,
+    0.0
+  ]
+}

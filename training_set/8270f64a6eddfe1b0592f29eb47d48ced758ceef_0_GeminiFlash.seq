@@ -1,0 +1,33 @@
+{
+  "local_port": 50672,
+  "remote_port": 443,
+  "prompt": "Where does the word \"suicide\" come from?",
+  "response": "The word \"suicide\" comes from the Latin word \"suicidium,\" which is a combination of two parts:\n\n*   **\"sui-\"** which is the genitive form of the reflexive pronoun \"se\" meaning \"of oneself\" or \"himself/herself/itself.\"\n*   **\"-cidium\"** meaning \"killing\" or \"slaying.\" It's related to the verb \"caedere\" which means \"to cut down\" or \"to kill.\"\n\nTherefore, \"suicidium\" literally means \"the act of killing oneself.\" The term was first used in the 17th century.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1257,
+    158,
+    270,
+    330,
+    448,
+    222,
+    350,
+    300,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.04679107666015625,
+    0.5180959701538086,
+    0.15006303787231445,
+    0.05080604553222656,
+    0.0661618709564209,
+    0.14995813369750977,
+    0.1431288719177246,
+    0.17287015914916992,
+    0.007965803146362305,
+    0.0014882087707519531,
+    0.0
+  ]
+}

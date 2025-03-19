@@ -1,0 +1,41 @@
+{
+  "local_port": 41848,
+  "remote_port": 443,
+  "prompt": "Why does WiFi turn on in airplane mode?",
+  "response": "WiFi doesn't automatically turn ON when you enable airplane mode. Instead, airplane mode is designed to **turn OFF all wireless communication technologies**, including cellular service, WiFi, and Bluetooth.\n\nHowever, you can manually **re-enable WiFi and Bluetooth** *after* you've turned on airplane mode. Here's why:\n\n*   **Flexibility:** Many airlines now offer in-flight WiFi. Allowing passengers to manually turn WiFi back on enables them to use this service without needing to disable airplane mode (which keeps cellular services off).\n\n*   **Bluetooth devices:** You might want to use Bluetooth headphones or other accessories during a flight. Manually re-enabling Bluetooth allows you to do this while still complying with airline regulations for cellular use.\n\n*   **Remembered settings:** Some devices are smart enough to remember if you had WiFi or Bluetooth enabled *before* you turned on airplane mode. When you turn off and then on airplane mode again, it might automatically re-enable those connections based on your previous settings. This behavior can be customized in your device's settings.\n\n**In summary:** Airplane mode initially disables all wireless communication, but you can manually re-enable WiFi and Bluetooth for specific uses, while still keeping cellular services disabled as required during flights. The ability to re-enable these connections after airplane mode is active offers flexibility and convenience to users.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    88,
+    222,
+    253,
+    430,
+    423,
+    463,
+    362,
+    498,
+    519,
+    407,
+    164,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.05082201957702637,
+    0.2892489433288574,
+    0.001313924789428711,
+    0.009479045867919922,
+    0.0912020206451416,
+    0.12691998481750488,
+    0.175246000289917,
+    0.24602794647216797,
+    0.3071601390838623,
+    0.3589210510253906,
+    0.2895808219909668,
+    0.10573816299438477,
+    0.01004791259765625,
+    0.0,
+    0.0
+  ]
+}

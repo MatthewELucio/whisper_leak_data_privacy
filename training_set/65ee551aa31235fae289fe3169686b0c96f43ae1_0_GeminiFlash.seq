@@ -1,0 +1,37 @@
+{
+  "local_port": 36368,
+  "remote_port": 443,
+  "prompt": "Who pays for the cars on Top Gear?",
+  "response": "The cars featured on Top Gear (both the original BBC version and the newer versions) are typically paid for in a few different ways:\n\n*   **Manufacturers loan cars to the show:** Car manufacturers often provide vehicles to Top Gear for review and testing, as it's a valuable form of publicity. The show usually puts them through their paces, and a good review can significantly boost sales.\n\n*   **Top Gear may buy or lease some cars:** For certain challenges, stunts, or long-term projects, the show's producers might purchase or lease vehicles. This is particularly true when they need specific types of cars or want to modify them extensively.\n\n*   **Guest supplied cars:** Sometimes celebrities who are guests on the show will bring their own vehicles. This is more common in segments where they discuss their personal car history.\n\n*   **Sponsors may provide cars:** In some instances, sponsors may provide vehicles, particularly for specific challenges or segments tied to the sponsor's brand.\n\nUltimately, the specific funding source for a particular car depends on the segment and the arrangements made by the show's producers.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1405,
+    304,
+    203,
+    432,
+    309,
+    270,
+    450,
+    277,
+    414,
+    315,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.046814918518066406,
+    0.3859860897064209,
+    0.0036039352416992188,
+    0.07095694541931152,
+    0.0924081802368164,
+    0.1649930477142334,
+    0.1871500015258789,
+    0.2849698066711426,
+    0.2771170139312744,
+    0.16730308532714844,
+    0.010365962982177734,
+    0.0,
+    0.0004150867462158203
+  ]
+}

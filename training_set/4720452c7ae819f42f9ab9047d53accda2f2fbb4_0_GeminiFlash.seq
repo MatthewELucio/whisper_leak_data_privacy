@@ -1,0 +1,43 @@
+{
+  "local_port": 39902,
+  "remote_port": 443,
+  "prompt": "What is sexuality?",
+  "response": "Sexuality is a complex and multifaceted aspect of being human. It encompasses a person's sexual feelings, thoughts, attractions, behaviors, and identity. Here's a breakdown of key components:\n\n*   **Sexual Attraction:** This refers to who a person is attracted to romantically, emotionally, and/or sexually. It can be to the same gender, different gender, both, neither, or multiple genders.\n\n*   **Sexual Behavior:** This includes a person's sexual activities and practices.\n\n*   **Sexual Identity:** This is how a person labels or understands their sexuality. Some common sexual identities include:\n    *   **Heterosexual:** Attraction to the opposite gender.\n    *   **Homosexual (Gay/Lesbian):** Attraction to the same gender.\n    *   **Bisexual:** Attraction to both men and women.\n    *   **Asexual:** Lack of sexual attraction to anyone.\n    *   **Pansexual:** Attraction to people regardless of gender.\n    *   **Queer:** An umbrella term often used by those who do not identify with traditional sexual orientations or gender identities.\n\n*   **Sexual Orientation:** This is an enduring emotional, romantic, or sexual attraction toward others.\n\n*   **Gender Identity:** While distinct from sexuality, gender identity (a person's internal sense of being male, female, both, neither, or another gender) can influence sexuality and how it's expressed.\n\n*   **Biological Sex:** A person's biological characteristics (chromosomes, hormones, anatomy) assigned at birth, often categorized as male, female, or intersex.\n\nSexuality is not always fixed and can evolve over time. It's also influenced by cultural, social, and personal factors.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    294,
+    364,
+    430,
+    368,
+    301,
+    365,
+    425,
+    261,
+    401,
+    505,
+    368,
+    143,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.04881000518798828,
+    0.4655478000640869,
+    0.001497030258178711,
+    0.048551082611083984,
+    0.049777984619140625,
+    0.1130828857421875,
+    0.2138681411743164,
+    0.2041020393371582,
+    0.3066070079803467,
+    0.20788192749023438,
+    0.40592503547668457,
+    0.36928296089172363,
+    0.14214205741882324,
+    0.008697032928466797,
+    0.0,
+    0.0
+  ]
+}

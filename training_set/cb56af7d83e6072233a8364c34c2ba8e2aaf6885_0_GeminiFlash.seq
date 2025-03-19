@@ -1,0 +1,29 @@
+{
+  "local_port": 41992,
+  "remote_port": 443,
+  "prompt": "Do women consider sex as a favor to men?",
+  "response": "Whether women consider sex a favor to men is subjective and varies greatly from individual to individual. Some women may feel that sex is a favor, especially if they feel pressured or obligated to engage in it. Other women may view sex as a mutual act of pleasure, intimacy, and connection.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    285,
+    267,
+    211,
+    342,
+    257,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.04840588569641113,
+    0.34728002548217773,
+    0.0014600753784179688,
+    0.17951107025146484,
+    0.05283188819885254,
+    0.15725398063659668,
+    0.011913061141967773,
+    0.0015599727630615234,
+    0.0
+  ]
+}

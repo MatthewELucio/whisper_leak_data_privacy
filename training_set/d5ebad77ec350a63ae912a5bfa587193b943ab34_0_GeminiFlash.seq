@@ -1,0 +1,33 @@
+{
+  "local_port": 50826,
+  "remote_port": 443,
+  "prompt": "What do Pakistani people think about the Uri attack on 18th September 2016?",
+  "response": "Public opinion in Pakistan regarding the Uri attack is varied and complex. Some condemn the attack and express condolences for the victims, emphasizing that violence is not the solution to any conflict. Others believe that the attack was a reaction to alleged human rights abuses in Indian-administered Kashmir. Still others deny any Pakistani involvement and accuse India of staging the attack to deflect attention from the situation in Kashmir.\n\nOfficial Pakistani responses to the Uri attack have typically condemned terrorism in all its forms, but also emphasized the need for a fair and impartial investigation into the incident. The government has also denied any involvement in the attack.\n\nIt's important to note that these are broad generalizations, and individual opinions can vary widely depending on political affiliation, personal beliefs, and access to information.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1266,
+    456,
+    444,
+    424,
+    261,
+    521,
+    302,
+    216,
+    216,
+    113
+  ],
+  "time_diffs": [
+    0.04990720748901367,
+    0.34189891815185547,
+    0.10395598411560059,
+    0.11613011360168457,
+    0.20491886138916016,
+    0.23816704750061035,
+    0.3050038814544678,
+    0.03289318084716797,
+    0.009856939315795898,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 36996,
+  "remote_port": 443,
+  "prompt": "What do North Indian girls think about South Indian boys?",
+  "response": "Generalizing the thoughts and opinions of an entire group of people based on their region is impossible and inaccurate. Individual opinions vary greatly.\n\nHowever, some stereotypes and perceptions (which may or may not be accurate) do exist in some circles:\n\n*   **Language Barrier:** Some North Indian girls might feel apprehensive about the potential communication challenges due to different languages.\n*   **Cultural Differences:** Differences in food, customs, and traditions might be perceived as either interesting or challenging to adapt to.\n*   **Perception of being \"traditional\":** South Indian boys are sometimes stereotyped as being more family-oriented and traditional. Some North Indian girls might find this appealing, while others might prefer someone with more modern views.\n*   **Academic Prowess:** There's a stereotype of South Indian boys being intelligent and focused on academics, which some might find attractive.\n*   **Appearance:** Preferences for physical appearance are subjective and vary from person to person.\n\n**Important Considerations:**\n\n*   **Individual Experiences:** Personal experiences and interactions play a significant role in shaping opinions.\n*   **Education and Exposure:** Exposure to diverse cultures and people can lead to a more open-minded perspective.\n*   **Changing Dynamics:** With increased migration and intermingling, stereotypes are becoming less relevant as people form their own opinions based on individual interactions.\n\nUltimately, what a North Indian girl thinks about a South Indian boy depends on her individual personality, values, experiences, and preferences, not on regional stereotypes.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1293,
+    219,
+    416,
+    291,
+    444,
+    354,
+    345,
+    432,
+    331,
+    263,
+    177,
+    113
+  ],
+  "time_diffs": [
+    0.04444098472595215,
+    0.3954200744628906,
+    0.10105681419372559,
+    0.13895320892333984,
+    0.20329594612121582,
+    0.21586298942565918,
+    0.29596805572509766,
+    0.29416680335998535,
+    0.3241281509399414,
+    0.21844887733459473,
+    0.012634992599487305,
+    0.0,
+    0.0
+  ]
+}

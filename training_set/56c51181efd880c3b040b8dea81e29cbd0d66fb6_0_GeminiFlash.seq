@@ -1,0 +1,39 @@
+{
+  "local_port": 38010,
+  "remote_port": 443,
+  "prompt": "If you had to give one piece of advice for life, what would it be and why?",
+  "response": "My one piece of advice for life would be: **Cultivate self-awareness.**\n\nHere's why:\n\n*   **Understanding Yourself is the Foundation:** Knowing your strengths, weaknesses, values, beliefs, triggers, and motivations is fundamental to making informed decisions and living a life that is authentically yours.\n*   **Improved Relationships:** Self-awareness allows you to understand how your actions and words affect others. This leads to more empathetic, understanding, and fulfilling relationships.\n*   **Better Decision-Making:** When you understand your biases and tendencies, you can make more rational and less impulsive choices, leading to better outcomes in all areas of life, from career to finances to personal relationships.\n*   **Emotional Regulation:** Self-awareness helps you identify and manage your emotions effectively. This reduces reactivity, prevents emotional outbursts, and promotes overall mental well-being.\n*   **Continuous Growth:** Self-awareness isn't a destination, it's a journey. By constantly reflecting on your experiences and seeking to understand yourself better, you can continuously grow, evolve, and improve as a person.\n\nIn short, self-awareness is the key to unlocking a more fulfilling, meaningful, and successful life. It empowers you to navigate challenges, build strong relationships, and live in alignment with your true self.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1398,
+    288,
+    350,
+    375,
+    400,
+    278,
+    479,
+    454,
+    331,
+    211,
+    234,
+    161,
+    113
+  ],
+  "time_diffs": [
+    0.04524993896484375,
+    0.4577021598815918,
+    0.014570951461791992,
+    0.07748794555664062,
+    0.09296011924743652,
+    0.36095690727233887,
+    0.15478801727294922,
+    0.18796610832214355,
+    0.15753483772277832,
+    0.33255910873413086,
+    0.017897844314575195,
+    0.009414196014404297,
+    0.0,
+    0.0
+  ]
+}

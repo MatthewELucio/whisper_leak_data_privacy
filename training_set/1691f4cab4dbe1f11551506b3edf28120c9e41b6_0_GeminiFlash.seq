@@ -1,0 +1,39 @@
+{
+  "local_port": 54584,
+  "remote_port": 443,
+  "prompt": "Did Mao Zedong's leadership benefit 21st century China?",
+  "response": "That's a really complex question with no easy answer. Mao Zedong's legacy is deeply debated, even within China. \n\nOn one hand, some argue that Mao laid the foundation for China's later economic success. He unified the country after decades of civil war, established a centralized government, and prioritized basic education and healthcare, which improved literacy rates and public health. Some also credit him with ending foreign exploitation and restoring China's national pride and international standing.\n\nHowever, others point to the devastating consequences of his policies. The Great Leap Forward led to widespread famine and millions of deaths. The Cultural Revolution caused immense social upheaval, destroyed cultural heritage, and persecuted intellectuals and political opponents. Critics also argue that Mao's centrally planned economy stifled innovation and economic growth.\n\nIn terms of 21st-century China, it's hard to draw a direct line between Mao's actions and the country's current status. China's economic reforms under Deng Xiaoping, which shifted away from Maoist policies, are widely credited with driving its economic growth. However, some argue that the centralized system and nationalistic sentiment fostered by Mao contributed to the government's ability to implement these reforms and maintain social stability.\n\nUltimately, whether Mao's leadership benefited 21st-century China is a matter of perspective and interpretation. His legacy is a mix of achievements and failures, and his impact continues to be felt in Chinese society today.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    234,
+    298,
+    307,
+    391,
+    450,
+    472,
+    494,
+    397,
+    352,
+    189,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.047766923904418945,
+    0.3850531578063965,
+    0.0014679431915283203,
+    0.11856794357299805,
+    0.06406402587890625,
+    0.20003795623779297,
+    0.2269909381866455,
+    0.27080512046813965,
+    0.23215889930725098,
+    0.3621060848236084,
+    0.24474406242370605,
+    0.009902000427246094,
+    0.0,
+    0.0
+  ]
+}

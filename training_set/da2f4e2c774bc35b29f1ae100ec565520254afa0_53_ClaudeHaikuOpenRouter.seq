@@ -1,0 +1,43 @@
+{
+  "local_port": 44790,
+  "remote_port": 443,
+  "prompt": "There's no way money laundering is legal, is there?",
+  "response": "There are legal ways to handle money, like legitimate financial services and proper accounting practices. Money laundering itself is illegal. If you're curious about financial regulations, I can discuss legal financial topics.",
+  "temperature": 1.0,
+  "data_lengths": [
+    237,
+    1065,
+    139,
+    695,
+    410,
+    430,
+    139,
+    438,
+    436,
+    440,
+    753,
+    436,
+    413,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.021914958953857422,
+    0.18496084213256836,
+    0.40305399894714355,
+    0.09500908851623535,
+    0.0015549659729003906,
+    0.12548208236694336,
+    0.4160919189453125,
+    0.15596795082092285,
+    0.03593015670776367,
+    0.04202699661254883,
+    0.032186031341552734,
+    0.16327595710754395,
+    0.11266899108886719,
+    0.0010008811950683594,
+    0.012528181076049805,
+    0.0
+  ]
+}

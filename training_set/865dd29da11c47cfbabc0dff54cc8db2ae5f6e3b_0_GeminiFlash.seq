@@ -1,0 +1,35 @@
+{
+  "local_port": 57344,
+  "remote_port": 443,
+  "prompt": "Is it true that there is heaven and hell?",
+  "response": "Belief in heaven and hell varies greatly depending on individual faith, religious background, and personal interpretation.\n\n*   **Many religions** including Christianity, Islam, and some forms of Judaism, teach the existence of both heaven and hell as afterlife destinations, often based on one's actions and beliefs during life. These concepts can differ significantly in their details and interpretations.\n\n*   **Other religions and spiritualities** may have different concepts of the afterlife, such as reincarnation, merging with a universal consciousness, or a state of non-existence.\n\n*   **Agnostics and atheists** typically do not believe in heaven or hell as literal places, as they do not believe in a god or afterlife.\n\nThere is no scientific evidence to prove or disprove the existence of heaven or hell. Ultimately, whether one believes in them is a matter of personal faith and conviction.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    298,
+    428,
+    221,
+    355,
+    282,
+    299,
+    432,
+    297,
+    215,
+    113
+  ],
+  "time_diffs": [
+    0.04643988609313965,
+    0.3131279945373535,
+    0.0014600753784179688,
+    0.1191720962524414,
+    0.07234692573547363,
+    0.2299180030822754,
+    0.18570590019226074,
+    0.2694242000579834,
+    0.16416096687316895,
+    0.006517887115478516,
+    0.0,
+    0.0
+  ]
+}

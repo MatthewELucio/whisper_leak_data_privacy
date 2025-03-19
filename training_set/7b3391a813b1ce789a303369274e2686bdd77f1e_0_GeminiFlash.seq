@@ -1,0 +1,33 @@
+{
+  "local_port": 35010,
+  "remote_port": 443,
+  "prompt": "Do the pornstars enjoy sex?",
+  "response": "Whether or not a porn performer enjoys the acts they perform on screen is a complex and personal question. There's no single answer, as it varies greatly from individual to individual.\n\nSome performers have spoken openly about enjoying their work and experiencing pleasure during filming. They might find the environment empowering or feel comfortable and confident in their sexuality.\n\nOn the other hand, some performers may not enjoy the acts themselves but view it as a job, separating their personal feelings from the professional aspect. For others, the work can be emotionally challenging, and they may not experience any pleasure.\n\nUltimately, it's impossible to know for sure how any individual performer feels without hearing it directly from them.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    162,
+    282,
+    250,
+    443,
+    369,
+    486,
+    131,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.04808998107910156,
+    0.36960506439208984,
+    0.0012488365173339844,
+    0.16275310516357422,
+    0.07588696479797363,
+    0.2501530647277832,
+    0.2050790786743164,
+    0.2539849281311035,
+    0.0077898502349853516,
+    0.0020461082458496094,
+    0.0017390251159667969
+  ]
+}

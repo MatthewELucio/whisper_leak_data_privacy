@@ -1,0 +1,37 @@
+{
+  "local_port": 53776,
+  "remote_port": 443,
+  "prompt": "Is the sexual revolution harmful or helpful?",
+  "response": "That's a complex topic where thoughtful people disagree. There are valid perspectives on different sides of this issue.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    989,
+    423,
+    435,
+    415,
+    428,
+    427,
+    417,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.02665114402770996,
+    0.06949591636657715,
+    0.39209413528442383,
+    0.061987876892089844,
+    0.13506793975830078,
+    0.044927120208740234,
+    0.046208858489990234,
+    0.08978605270385742,
+    0.04809403419494629,
+    0.054505109786987305,
+    0.008505821228027344,
+    0.0,
+    0.0013489723205566406
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 57042,
+  "remote_port": 443,
+  "prompt": "How much is a 1988 1000 peso Mexican coin worth now?",
+  "response": "The value of a 1988 1000 Peso Mexican coin is quite low. Here's a breakdown:\n\n*   **Face Value:** The face value is essentially worthless. 1000 pesos from 1988 are old pesos, predating Mexico's currency revaluation in 1993. They are no longer legal tender.\n\n*   **Metal Value:** These coins are typically made of a base metal (usually a copper-nickel alloy). The metal value is minimal, likely only a few cents.\n\n*   **Collector Value:** The collector value is also generally low. 1988 was not a particularly rare year for these coins, and they are not generally in high demand among collectors. Unless the coin is in absolutely pristine, uncirculated condition, it will only be worth a dollar or two.\n\n**In summary, a 1988 1000 peso Mexican coin is worth approximately $1-2 USD due to its collector value.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1398,
+    254,
+    276,
+    281,
+    423,
+    332,
+    362,
+    228,
+    273,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.04956698417663574,
+    0.42638587951660156,
+    0.09790205955505371,
+    0.0807499885559082,
+    0.18535900115966797,
+    0.19697213172912598,
+    0.28188586235046387,
+    0.24231600761413574,
+    0.06150007247924805,
+    0.009923934936523438,
+    5.316734313964844e-05,
+    0.0
+  ]
+}

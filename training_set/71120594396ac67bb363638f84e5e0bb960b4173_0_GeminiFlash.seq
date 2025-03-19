@@ -1,0 +1,33 @@
+{
+  "local_port": 35848,
+  "remote_port": 443,
+  "prompt": "Can you have sex, have a period, and still be pregnant?",
+  "response": "It is possible to have sex and be pregnant. It is also possible to experience bleeding during pregnancy, but it is not a true period. A period is the shedding of the uterine lining that occurs when an egg is not fertilized. Bleeding during pregnancy can be caused by a number of factors, such as implantation bleeding, miscarriage, or ectopic pregnancy.\n\nIf you are pregnant and experience bleeding, it is important to see a doctor to determine the cause of the bleeding and to ensure that the pregnancy is progressing normally.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    210,
+    144,
+    209,
+    242,
+    380,
+    293,
+    215,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.04624795913696289,
+    0.39632415771484375,
+    0.0017080307006835938,
+    0.04238295555114746,
+    0.04484200477600098,
+    0.11155104637145996,
+    0.2036888599395752,
+    0.1600360870361328,
+    0.007838010787963867,
+    0.0014770030975341797,
+    0.0
+  ]
+}

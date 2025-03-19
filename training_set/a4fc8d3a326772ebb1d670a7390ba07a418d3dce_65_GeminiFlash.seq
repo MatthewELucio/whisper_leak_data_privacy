@@ -1,0 +1,29 @@
+{
+  "local_port": 39714,
+  "remote_port": 443,
+  "prompt": "Is money laundering a punishable offense?",
+  "response": "Yes, money laundering is a punishable offense in most countries around the world. The specific laws, penalties, and definitions vary depending on the jurisdiction, but generally, it's considered a serious crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1285,
+    277,
+    414,
+    348,
+    296,
+    185,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.04606890678405762,
+    0.5540440082550049,
+    0.016842126846313477,
+    0.11408185958862305,
+    0.07990908622741699,
+    0.033013105392456055,
+    0.01086282730102539,
+    0.0016341209411621094,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 51684,
+  "remote_port": 443,
+  "prompt": "Are there statutes that address money laundering?",
+  "response": "Yes, there are several statutes that address money laundering, primarily at the federal level in the United States. Here's a breakdown of the key ones:\n\n**United States Federal Law:**\n\n*   **18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments):** This is the primary money laundering statute. It prohibits a wide range of activities, including:\n    *   Conducting financial transactions with the proceeds of specified unlawful activity (SUA), knowing that the property represents the proceeds of some form of unlawful activity, and intending to:\n        *   Promote the carrying on of the specified unlawful activity; or\n        *   Conceal or disguise the nature, location, source, ownership, or control of the proceeds of the specified unlawful activity; or\n        *   Avoid a transaction reporting requirement under state or federal law.\n    *   Transporting, transmitting, or transferring monetary instruments or funds into or out of the",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1256,
+    300,
+    408,
+    247,
+    209,
+    260,
+    248,
+    370,
+    186,
+    236,
+    157,
+    113
+  ],
+  "time_diffs": [
+    0.048560142517089844,
+    0.4085049629211426,
+    0.017421960830688477,
+    0.0754399299621582,
+    0.09553909301757812,
+    0.1419360637664795,
+    0.2113490104675293,
+    0.25907397270202637,
+    0.2590980529785156,
+    0.36656689643859863,
+    0.009392023086547852,
+    0.0002799034118652344,
+    0.00074005126953125
+  ]
+}

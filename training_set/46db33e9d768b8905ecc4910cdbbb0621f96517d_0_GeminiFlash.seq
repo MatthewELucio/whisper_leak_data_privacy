@@ -1,0 +1,29 @@
+{
+  "local_port": 52002,
+  "remote_port": 443,
+  "prompt": "Do women prefer men who have circumcised penises or uncircumcised penises?",
+  "response": "Studies on female preference between circumcised and uncircumcised penises have yielded mixed results. Some studies suggest no significant preference, while others indicate a slight preference for one or the other. These preferences can be influenced by various factors, including cultural background, personal experiences, and hygiene perceptions.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    126,
+    270,
+    314,
+    266,
+    279,
+    147,
+    113
+  ],
+  "time_diffs": [
+    0.04535102844238281,
+    0.32053685188293457,
+    0.001497030258178711,
+    0.10960197448730469,
+    0.1129450798034668,
+    0.195051908493042,
+    0.013803958892822266,
+    0.0016109943389892578,
+    0.0
+  ]
+}

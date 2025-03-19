@@ -1,0 +1,39 @@
+{
+  "local_port": 39244,
+  "remote_port": 443,
+  "prompt": "How much does a car salesman get per car?",
+  "response": "A car salesman's commission structure can vary widely depending on several factors, including:\n\n*   **Dealership:** Different dealerships have different commission structures.\n*   **Experience:** More experienced salespeople may negotiate better commission rates.\n*   **Car Type:** New vs. used cars often have different commission structures.\n*   **Sales Volume:** Some dealerships offer bonuses for high sales volumes.\n*   **Location:** Commission structures can vary based on regional market conditions.\n\nHere are the general ways a car salesman could get paid per car:\n*   **Percentage of Gross Profit:** This is a common method where the salesperson receives a percentage of the dealership's profit on the car. The percentage can range from 20% to 35%.\n*   **Flat Rate:** The salesperson receives a fixed amount for each car sold. This can be a lower amount, but it provides more predictable income.\n*   **Tiered Commission:** The commission rate increases as the salesperson sells more cars. For example, they might earn 20% on the first five cars, then 25% on the next five, and so on.\n\nBased on these estimates, a salesperson could earn anywhere from $100 to $500+ per car. However, this is just a general estimate, and the actual amount can vary significantly.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    275,
+    394,
+    186,
+    286,
+    315,
+    470,
+    445,
+    350,
+    339,
+    253,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.04575014114379883,
+    0.31415700912475586,
+    0.0014679431915283203,
+    0.1045079231262207,
+    0.08404397964477539,
+    0.18310809135437012,
+    0.23378491401672363,
+    0.2903411388397217,
+    0.3477809429168701,
+    0.34108901023864746,
+    0.09281706809997559,
+    0.005506992340087891,
+    0.0,
+    4.1961669921875e-05
+  ]
+}

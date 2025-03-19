@@ -1,0 +1,39 @@
+{
+  "local_port": 41660,
+  "remote_port": 443,
+  "prompt": "Who is the best leader in india?",
+  "response": "That's a really interesting question! \"Best\" can mean different things to different people. For example, some might admire a leader who brought about significant economic change, while others might prioritize someone who championed social justice or national unity.\n\nHere are a few figures who are often cited when discussing influential leaders in India, each with their own strengths and legacies:\n\n*   **Mahatma Gandhi:** Known as the \"Father of the Nation,\" he led India's independence movement through non-violent resistance. His philosophy of Satyagraha influenced civil rights movements worldwide.\n\n*   **Jawaharlal Nehru:** India's first Prime Minister, he played a key role in shaping India's post-independence identity. He promoted a secular, socialist, and democratic vision for India and was a key architect of the Non-Aligned Movement.\n\n*   **Sardar Vallabhbhai Patel:** Played a crucial role in integrating the princely states into India after independence. He is known for his strong leadership and decisiveness.\n\n*   **Indira Gandhi:** The first female Prime Minister of India, she is known for her strong leadership, particularly during the 1971 war with Pakistan. Her policies, such as the Green Revolution, had a significant impact on India.\n\n*   **B.R. Ambedkar:** A key architect of the Indian Constitution and a champion of social justice. He fought against caste discrimination and advocated for the rights of marginalized communities.\n\nEach of these leaders faced different challenges and opportunities, and their actions had both positive and negative consequences. Ultimately, who is considered the \"best\" is a matter of personal opinion and depends on the criteria you use to evaluate them.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1371,
+    273,
+    317,
+    382,
+    303,
+    412,
+    440,
+    384,
+    575,
+    291,
+    205,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.04683399200439453,
+    0.37696003913879395,
+    0.11891388893127441,
+    0.1081390380859375,
+    0.19299006462097168,
+    0.1529829502105713,
+    0.274385929107666,
+    0.2737250328063965,
+    0.31862807273864746,
+    0.3430519104003906,
+    0.09882616996765137,
+    0.01201486587524414,
+    0.00022101402282714844,
+    5.1975250244140625e-05
+  ]
+}

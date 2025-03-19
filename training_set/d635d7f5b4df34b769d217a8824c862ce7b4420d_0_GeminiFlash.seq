@@ -1,0 +1,25 @@
+{
+  "local_port": 47164,
+  "remote_port": 443,
+  "prompt": "Who will win the Election? Trump or Clinton?",
+  "response": "The 2016 US Presidential Election was between Donald Trump and Hillary Clinton. Donald Trump won the election.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1282,
+    445,
+    195,
+    183,
+    187,
+    113
+  ],
+  "time_diffs": [
+    0.06273889541625977,
+    0.4245951175689697,
+    0.0940709114074707,
+    0.06898999214172363,
+    0.008993148803710938,
+    0.0015139579772949219,
+    0.0012428760528564453
+  ]
+}

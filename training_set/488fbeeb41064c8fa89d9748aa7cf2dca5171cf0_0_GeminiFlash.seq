@@ -1,0 +1,37 @@
+{
+  "local_port": 41020,
+  "remote_port": 443,
+  "prompt": "Can cheese never be made without rennet?",
+  "response": "No, cheese can definitely be made without rennet!\n\nRennet is traditionally used to coagulate milk, causing it to separate into curds and whey. However, there are other methods to achieve this coagulation, making rennet unnecessary for certain types of cheese.\n\nHere are some common alternatives:\n\n*   **Acid Coagulation:** Some cheeses, like ricotta, paneer, queso fresco, and some types of cottage cheese, are made by adding an acid (like vinegar, lemon juice, or lactic acid bacteria) to the milk. The acid denatures the proteins, causing them to coagulate.\n*   **Heat and Acid:** A combination of heat and acid, such as in queso blanco, also causes coagulation.\n*   **Plant-based rennet:** Some plants contain enzymes that can coagulate milk in a similar way to animal rennet. Some examples are thistle, nettles, and figs.\n*   **Microbial rennet:** Enzymes derived from fungi or bacteria can be used to coagulate milk. This is common in vegetarian cheeses.\n*   **Fermentation:** In some traditional cheesemaking practices, naturally occurring bacteria present in the milk or the environment can produce enough acid to cause coagulation over time.\n\nTherefore, many delicious and widely available cheeses are made without the use of traditional animal rennet. These include vegetarian cheeses made with plant or microbial rennet, as well as acid-set cheeses like ricotta and paneer.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1291,
+    305,
+    401,
+    258,
+    318,
+    363,
+    413,
+    312,
+    340,
+    160,
+    143,
+    113
+  ],
+  "time_diffs": [
+    0.04527091979980469,
+    0.27205705642700195,
+    0.13847780227661133,
+    0.06419110298156738,
+    0.2409200668334961,
+    0.20514202117919922,
+    0.22213196754455566,
+    0.2780439853668213,
+    0.4241490364074707,
+    0.14957404136657715,
+    0.008508920669555664,
+    0.0,
+    0.0
+  ]
+}

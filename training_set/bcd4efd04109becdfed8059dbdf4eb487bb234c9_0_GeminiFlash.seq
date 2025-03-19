@@ -1,0 +1,35 @@
+{
+  "local_port": 39486,
+  "remote_port": 443,
+  "prompt": "My husband mixed ammonia and bleach while cleaning the bathroom. Now he has breathing difficulties. Could it be his asthma? Should I call 911?",
+  "response": "**Yes, call 911 immediately.**\n\nMixing ammonia and bleach creates a toxic gas called chloramine. Even if he has asthma, the reaction between the chemicals is the primary concern right now. Breathing difficulties after exposure to chloramine are a serious medical emergency.\n\n**While waiting for emergency services:**\n\n*   **Get him into fresh air immediately.** Open windows and doors, or, if possible, move him outside.\n*   **Try to determine how long he was exposed and the concentrations of the cleaning products**- this information is important for first responders.\n*   **Reassure him and keep him calm.**\n*   **Do not attempt any home remedies.**\n\n**Important:** Even if his breathing seems to improve slightly after getting fresh air, he still needs to be evaluated by medical professionals. The effects of chloramine exposure can worsen over time.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    189,
+    443,
+    201,
+    376,
+    347,
+    298,
+    281,
+    135,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.04802203178405762,
+    0.3245089054107666,
+    0.001547098159790039,
+    0.19263291358947754,
+    0.012805938720703125,
+    0.16676712036132812,
+    0.18739604949951172,
+    0.3123009204864502,
+    0.13821005821228027,
+    0.006672859191894531,
+    0.0002930164337158203,
+    0.00012111663818359375
+  ]
+}

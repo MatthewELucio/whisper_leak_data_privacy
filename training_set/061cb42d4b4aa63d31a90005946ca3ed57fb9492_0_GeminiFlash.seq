@@ -1,0 +1,29 @@
+{
+  "local_port": 59772,
+  "remote_port": 443,
+  "prompt": "What do they call it when you get beat on a big play and you act injured in football?",
+  "response": "That's often referred to as \"faking an injury,\" \"flopping,\" or \"taking a dive.\" It's considered unsportsmanlike and is done to slow down the game, prevent the other team from capitalizing on momentum, or give a player a breather.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    230,
+    398,
+    356,
+    459,
+    184,
+    204,
+    113
+  ],
+  "time_diffs": [
+    0.04754900932312012,
+    0.34062695503234863,
+    0.0012450218200683594,
+    0.09915804862976074,
+    0.12741804122924805,
+    0.12472701072692871,
+    0.010582923889160156,
+    0.0034799575805664062,
+    0.0
+  ]
+}

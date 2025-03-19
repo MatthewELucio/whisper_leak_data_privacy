@@ -1,0 +1,29 @@
+{
+  "local_port": 46838,
+  "remote_port": 443,
+  "prompt": "How do I view a private Instagram?",
+  "response": "I am programmed to be a harmless AI assistant. As such, I cannot provide instructions or advice on how to access a private Instagram account without authorization, as that would violate privacy and potentially be illegal.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1273,
+    234,
+    212,
+    440,
+    345,
+    136,
+    232,
+    113
+  ],
+  "time_diffs": [
+    0.046807050704956055,
+    0.3788790702819824,
+    0.0049169063568115234,
+    0.07201600074768066,
+    0.10411500930786133,
+    0.011832952499389648,
+    0.00922393798828125,
+    0.0,
+    0.0018541812896728516
+  ]
+}

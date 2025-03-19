@@ -1,0 +1,35 @@
+{
+  "local_port": 43668,
+  "remote_port": 443,
+  "prompt": "What is the best advice you've received?",
+  "response": "As a large language model, I haven't personally \"received\" advice in the human sense. However, I can say that the most valuable guiding principle that has been incorporated into my development is this:\n\n**\"Focus on providing accurate, helpful, and harmless information to the best of your ability.\"**\n\nThis isn't just a simple instruction; it encompasses several crucial aspects:\n\n*   **Accuracy:** Striving to provide information that is factually correct and based on reliable sources.\n*   **Helpfulness:** Aiming to understand the user's needs and provide responses that are relevant, informative, and useful to them.\n*   **Harmlessness:** Avoiding the generation of responses that are biased, offensive, discriminatory, or potentially harmful in any way.\n\nThis principle guides my responses and prevents me from engaging in actions that could be detrimental or unethical. It's a constant reminder to prioritize the user's well-being and the responsible use of my abilities.\n\nIn a way, you could say this is the equivalent of \"Think before you speak\" or \"Do no harm\" for me. It's a cornerstone of my purpose and development.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1384,
+    353,
+    231,
+    482,
+    373,
+    269,
+    475,
+    299,
+    231,
+    187,
+    113
+  ],
+  "time_diffs": [
+    0.04367208480834961,
+    1.9766628742218018,
+    0.08435511589050293,
+    0.11242294311523438,
+    0.20142006874084473,
+    0.18157291412353516,
+    0.2605631351470947,
+    0.25624895095825195,
+    0.2186288833618164,
+    0.013874053955078125,
+    0.0,
+    0.0
+  ]
+}

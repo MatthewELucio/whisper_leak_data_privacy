@@ -1,0 +1,37 @@
+{
+  "local_port": 51214,
+  "remote_port": 443,
+  "prompt": "How do you say \"little sister\" in tagalog?",
+  "response": "The most common and widely used word for \"little sister\" in Tagalog is **\"nakababatang kapatid na babae\"**.\n\nHowever, you can also use these variations:\n\n*   **\"Bunso\"** - While technically meaning \"youngest child,\" it's often used affectionately to refer to a little sister, especially if she is the youngest in the family.\n*   **\"Ading\"** - This is an Ilocano word, also meaning younger sibling, that Filipinos sometimes use especially when someone is known to have Ilocano roots.\n\nSo, the best options are:\n\n*   **Formal/General:** Nakababatang kapatid na babae\n*   **Informal/Affectionate (if she's the youngest):** Bunso",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    273,
+    212,
+    365,
+    202,
+    299,
+    342,
+    482,
+    192,
+    175,
+    124,
+    113
+  ],
+  "time_diffs": [
+    0.045085906982421875,
+    0.3656489849090576,
+    0.0015151500701904297,
+    0.02544093132019043,
+    0.06368589401245117,
+    0.1224820613861084,
+    0.2140369415283203,
+    0.20424318313598633,
+    0.3095219135284424,
+    0.09879899024963379,
+    0.008389949798583984,
+    0.0,
+    0.0
+  ]
+}

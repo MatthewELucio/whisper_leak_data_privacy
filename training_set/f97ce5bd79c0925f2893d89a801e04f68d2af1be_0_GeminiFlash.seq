@@ -1,0 +1,43 @@
+{
+  "local_port": 56796,
+  "remote_port": 443,
+  "prompt": "How much time is required for the entire selection process of IAS?",
+  "response": "The entire selection process for the IAS (Indian Administrative Service) is a lengthy and rigorous one, typically taking around **12-18 months** from the initial notification to the final allocation of service.\n\nHere's a breakdown:\n\n*   **Notification and Application:** The Union Public Service Commission (UPSC) releases the official notification, usually in **February-March**. Candidates then have about a month to apply.\n\n*   **Preliminary Examination (Prelims):** This is held in **May-June**. Results are declared around **July-August**.\n\n*   **Main Examination (Mains):** Candidates who clear the Prelims appear for the Mains exam, which is held in **September-October**. Results are declared around **December-January**.\n\n*   **Interview/Personality Test:** Candidates who clear the Mains appear for the interview in **February-April**.\n\n*   **Final Result:** The final result, based on the combined scores of the Mains exam and the interview, is usually declared in **May-June**.\n\n*   **Service Allocation:** After the final result, candidates are allocated to different services based on their rank, preferences, and available vacancies. This process typically concludes within a few months of the final result declaration.\n\n**Key Timeframes:**\n\n*   **Prelims to Mains Results:** 2-3 months\n*   **Mains to Interview:** 3-4 months\n*   **Interview to Final Result:** 1-2 months\n\n**Important Note:** These are approximate timeframes and can vary slightly from year to year depending on the UPSC's schedule. You should always refer to the official UPSC notification for the most accurate dates.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    202,
+    336,
+    354,
+    268,
+    293,
+    312,
+    356,
+    411,
+    386,
+    304,
+    193,
+    182,
+    140,
+    113
+  ],
+  "time_diffs": [
+    0.04974007606506348,
+    0.3220808506011963,
+    0.0014309883117675781,
+    0.012333154678344727,
+    0.0792849063873291,
+    0.07983088493347168,
+    0.1861400604248047,
+    0.18012595176696777,
+    0.2789640426635742,
+    0.2979879379272461,
+    0.38025522232055664,
+    0.33910489082336426,
+    0.06718587875366211,
+    0.011092185974121094,
+    0.0,
+    0.0
+  ]
+}

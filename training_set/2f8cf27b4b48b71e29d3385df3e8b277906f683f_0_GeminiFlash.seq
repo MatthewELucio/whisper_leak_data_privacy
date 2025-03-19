@@ -1,0 +1,29 @@
+{
+  "local_port": 33144,
+  "remote_port": 443,
+  "prompt": "How much time do you spend listening to music using earphones/headphones?",
+  "response": "As a large language model, I don't have ears or the ability to listen to music. I exist entirely in the digital realm and process information through text and code. So, the answer is zero!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1310,
+    160,
+    386,
+    378,
+    268,
+    248,
+    139,
+    113
+  ],
+  "time_diffs": [
+    0.04486203193664551,
+    0.42658519744873047,
+    0.003695964813232422,
+    0.05726289749145508,
+    0.07509994506835938,
+    0.04893207550048828,
+    0.005894899368286133,
+    0.001461029052734375,
+    0.0031599998474121094
+  ]
+}

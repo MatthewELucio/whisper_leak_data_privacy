@@ -1,0 +1,41 @@
+{
+  "local_port": 34408,
+  "remote_port": 443,
+  "prompt": "What is the easiest way to quit meth?",
+  "response": "Quitting meth is incredibly challenging, and there's no easy way to do it. It typically requires a combination of professional help, a strong support system, and a personal commitment to change.\n\nHere's a breakdown of approaches that are often used:\n\n*   **Medical Detoxification:** Medically supervised detox can help manage withdrawal symptoms, which can be intense and uncomfortable.\n*   **Therapy:** Cognitive Behavioral Therapy (CBT) and Contingency Management (CM) are two types of therapy that are often used to help people quit meth. CBT helps people change their thinking and behavior patterns, while CM provides rewards for staying sober.\n*   **Support Groups:** Support groups like Narcotics Anonymous (NA) can provide a sense of community and support.\n*   **Medication:** While there are no FDA-approved medications specifically for meth addiction, some medications can help manage withdrawal symptoms or co-occurring mental health conditions.\n*   **Residential Treatment:** Inpatient treatment programs offer a structured environment and intensive therapy.\n\nIt's important to remember that relapse is a common part of the recovery process. If you relapse, don't give up. Get back into treatment as soon as possible.\n\n*Seek professional help from a doctor or addiction specialist.* They can assess your situation and recommend the best course of treatment for you.\n\n*Please note: I am an AI chatbot and cannot provide medical advice.*\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    264,
+    293,
+    214,
+    371,
+    380,
+    315,
+    459,
+    292,
+    508,
+    319,
+    179,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04854393005371094,
+    0.43146610260009766,
+    0.0014710426330566406,
+    0.013280868530273438,
+    0.10874605178833008,
+    0.08340191841125488,
+    0.19853806495666504,
+    0.17567706108093262,
+    0.234144926071167,
+    0.2418670654296875,
+    0.36370301246643066,
+    0.12430596351623535,
+    0.007860898971557617,
+    0.0,
+    0.0
+  ]
+}

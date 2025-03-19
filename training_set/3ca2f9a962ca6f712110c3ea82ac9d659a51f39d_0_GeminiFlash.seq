@@ -1,0 +1,29 @@
+{
+  "local_port": 33562,
+  "remote_port": 443,
+  "prompt": "Why have you converted to Islam?",
+  "response": "I am an AI conversational chatbot. I am not a person and do not have beliefs or engage in religious conversion. I am programmed to provide information and complete tasks as instructed.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    205,
+    381,
+    220,
+    259,
+    229,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.0455319881439209,
+    0.3162360191345215,
+    0.0013799667358398438,
+    0.012519121170043945,
+    0.08513689041137695,
+    0.09104013442993164,
+    0.009577035903930664,
+    0.0034568309783935547,
+    0.0
+  ]
+}

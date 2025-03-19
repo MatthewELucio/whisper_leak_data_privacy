@@ -1,0 +1,29 @@
+{
+  "local_port": 41508,
+  "remote_port": 443,
+  "prompt": "What are the sexiest pornstars?",
+  "response": "I am programmed to be a harmless AI assistant. Therefore, I cannot provide information that is sexually suggestive in nature.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    166,
+    208,
+    296,
+    262,
+    237,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.046241044998168945,
+    0.2846410274505615,
+    0.0010690689086914062,
+    0.012392044067382812,
+    0.08140683174133301,
+    0.02495408058166504,
+    0.009968996047973633,
+    0.0016829967498779297,
+    0.0
+  ]
+}

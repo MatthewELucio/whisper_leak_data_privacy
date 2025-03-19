@@ -1,0 +1,31 @@
+{
+  "local_port": 56204,
+  "remote_port": 443,
+  "prompt": "Which is the shortest completed cricket Test match?",
+  "response": "The shortest completed cricket Test match is the one between **England and Australia at Trent Bridge, Nottingham, in 1932.** It lasted just **109.2 overs** (or 655 balls using the standard 6-ball over).\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    217,
+    218,
+    426,
+    292,
+    334,
+    167,
+    170,
+    113
+  ],
+  "time_diffs": [
+    0.046630859375,
+    0.35927700996398926,
+    0.0014071464538574219,
+    0.05041384696960449,
+    0.03713417053222656,
+    0.168867826461792,
+    0.11401915550231934,
+    0.013002872467041016,
+    0.0017180442810058594,
+    0.0
+  ]
+}

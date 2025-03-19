@@ -1,0 +1,41 @@
+{
+  "local_port": 47084,
+  "remote_port": 443,
+  "prompt": "Can Kejriwal ever become PM of India?",
+  "response": "Arvind Kejriwal's political journey has been quite remarkable. He rose to prominence as an anti-corruption activist and then founded the Aam Aadmi Party (AAP) in 2012. He's served as the Chief Minister of Delhi for several terms, and the AAP has also gained a foothold in Punjab.\n\nNow, when we consider his chances of becoming Prime Minister, there are several factors to keep in mind:\n\n*   **National Appeal:** Currently, Kejriwal's support base is largely concentrated in Delhi and Punjab. To become PM, he would need to broaden his appeal and win over voters across the country. This would involve building a strong national organization and addressing issues that resonate with a wider audience.\n\n*   **Electoral Math:** The Indian political landscape is complex, and coalition politics often plays a crucial role. Even if the AAP were to significantly increase its number of seats in the Lok Sabha, it would likely need to form alliances with other parties to reach the majority mark required to form a government.\n\n*   **Leadership Perception:** While Kejriwal has a dedicated following, his leadership style and policy decisions have also faced criticism. Overcoming negative perceptions and projecting a more inclusive image could be important for building wider support.\n\n*   **Political Climate:** The political climate in India is constantly evolving. Factors such as the performance of the ruling party, the state of the economy, and social issues can all influence the outcome of elections and impact a leader's chances of success.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    267,
+    309,
+    261,
+    171,
+    479,
+    457,
+    341,
+    397,
+    552,
+    348,
+    160,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.047132015228271484,
+    0.3465750217437744,
+    0.0013148784637451172,
+    0.04648709297180176,
+    0.06902289390563965,
+    0.06315207481384277,
+    0.19303297996520996,
+    0.25774097442626953,
+    0.2833421230316162,
+    0.2985708713531494,
+    0.4049069881439209,
+    0.24029207229614258,
+    0.01053309440612793,
+    0.0,
+    0.00021886825561523438
+  ]
+}

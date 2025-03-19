@@ -1,0 +1,23 @@
+{
+  "local_port": 47442,
+  "remote_port": 443,
+  "prompt": "What happened to Garrett Tully whose life story was shown in the movie Supremacy? Was he hanged?",
+  "response": "Garrett Tully is a fictional character portrayed by actor Joe Anderson in the movie Supremacy.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1498,
+    383,
+    287,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.04617619514465332,
+    0.4227569103240967,
+    0.10986900329589844,
+    0.007689952850341797,
+    0.0015609264373779297,
+    0.0
+  ]
+}

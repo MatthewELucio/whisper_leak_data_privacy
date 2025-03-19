@@ -1,0 +1,33 @@
+{
+  "local_port": 58156,
+  "remote_port": 443,
+  "prompt": "Does the 112 emergency number work in the USA?",
+  "response": "No, the 112 emergency number **does not directly work** in the USA.\n\nWhile some cell phones in the US *might* recognize 112 and redirect the call to 911, it's **not a guaranteed** function and should **not be relied upon**.\n\n**The emergency number to use in the USA is 911.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    115,
+    249,
+    410,
+    404,
+    457,
+    277,
+    153,
+    154,
+    113
+  ],
+  "time_diffs": [
+    0.04505801200866699,
+    0.38753485679626465,
+    0.0014619827270507812,
+    0.026535987854003906,
+    0.07807207107543945,
+    0.16101694107055664,
+    0.12012100219726562,
+    0.04476499557495117,
+    0.022739171981811523,
+    0.0017287731170654297,
+    0.0
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 38700,
+  "remote_port": 443,
+  "prompt": "Translate Sanskrit to English?",
+  "response": "Please provide the Sanskrit text you would like me to translate. I need the Sanskrit words or phrases to be able to help you.\n\nFor example, you could provide something like:\n\n* \"\u0928\u092e\u0938\u094d\u0924\u0947\"\n* \"\u0905\u0939\u092e\u094d \u0935\u093f\u0926\u094d\u092f\u093e\u0932\u092f\u092e\u094d \u0917\u091a\u094d\u091b\u093e\u092e\u093f\"\n* \"\u092f\u094b\u0917\u0936\u094d\u091a\u093f\u0924\u094d\u0924\u0935\u0943\u0924\u094d\u0924\u093f\u0928\u093f\u0930\u094b\u0927\u0903\"\n\nThe more context you can give me (even if it's just a general idea of the topic), the better I can provide an accurate and nuanced translation.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    200,
+    353,
+    299,
+    358,
+    273,
+    380,
+    267,
+    163,
+    113
+  ],
+  "time_diffs": [
+    0.046321868896484375,
+    0.31128406524658203,
+    0.0013930797576904297,
+    0.014390945434570312,
+    0.05085897445678711,
+    0.10515189170837402,
+    0.22010016441345215,
+    0.1720869541168213,
+    0.009820938110351562,
+    0.0014829635620117188,
+    0.0
+  ]
+}

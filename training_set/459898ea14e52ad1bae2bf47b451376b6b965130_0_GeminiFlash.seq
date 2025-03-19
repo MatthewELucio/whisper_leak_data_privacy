@@ -1,0 +1,31 @@
+{
+  "local_port": 40826,
+  "remote_port": 443,
+  "prompt": "Is porn immoral?",
+  "response": "Whether porn is immoral is a complex question with varying viewpoints. Some argue it is inherently immoral due to concerns about exploitation, objectification, and potential links to harmful behaviors. Others believe that if it is produced and consumed ethically, with consent and without harm, it can be a harmless form of entertainment or expression. \n\nReligious, philosophical, and personal beliefs often play a significant role in shaping these opinions. There is no single, universally accepted answer.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    148,
+    224,
+    280,
+    475,
+    333,
+    177,
+    145,
+    113
+  ],
+  "time_diffs": [
+    0.04611706733703613,
+    0.3315868377685547,
+    0.0010411739349365234,
+    0.09903597831726074,
+    0.1409449577331543,
+    0.24596309661865234,
+    0.21011900901794434,
+    0.014918804168701172,
+    0.0,
+    0.0017910003662109375
+  ]
+}

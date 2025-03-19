@@ -1,0 +1,33 @@
+{
+  "local_port": 50478,
+  "remote_port": 443,
+  "prompt": "What is your favorite Avril Lavigne song?",
+  "response": "As a large language model, I don't have personal preferences like favorite songs. However, I can tell you that \"Complicated\" is widely considered one of Avril Lavigne's most popular and iconic songs. It was her debut single and really launched her career, becoming a huge hit worldwide. Many people also love \"Sk8er Boi\" for its catchy chorus and rebellious energy. \"Girlfriend\" is another favorite for its more pop-punk and playful sound. Ultimately, which song is \"best\" is a matter of personal taste!\n\nDo you have a favorite Avril Lavigne song? I'd love to hear about it!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1293,
+    240,
+    272,
+    424,
+    421,
+    384,
+    249,
+    249,
+    238,
+    113
+  ],
+  "time_diffs": [
+    0.05072593688964844,
+    0.5459702014923096,
+    0.03806781768798828,
+    0.038973093032836914,
+    0.08087491989135742,
+    0.18727397918701172,
+    0.20801711082458496,
+    0.1120309829711914,
+    0.00803995132446289,
+    0.0016620159149169922,
+    0.0017769336700439453
+  ]
+}

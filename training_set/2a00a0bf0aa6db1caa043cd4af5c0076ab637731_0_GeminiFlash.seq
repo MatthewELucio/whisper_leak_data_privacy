@@ -1,0 +1,33 @@
+{
+  "local_port": 40714,
+  "remote_port": 443,
+  "prompt": "Should we support Kiss of Love or not?",
+  "response": "Whether or not to support Kiss of Love is a complex issue with a variety of perspectives.\n\nSome people support Kiss of Love as a form of peaceful protest against public displays of affection being policed by moral groups and authorities. They see it as a way to challenge conservative norms and advocate for freedom of expression and personal autonomy.\n\nOthers oppose Kiss of Love due to cultural or religious beliefs about public displays of affection. They may argue that such displays are inappropriate or offensive in certain contexts. Concerns about public order and potential disruptions have also been raised.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    139,
+    232,
+    392,
+    322,
+    320,
+    437,
+    316,
+    207,
+    113
+  ],
+  "time_diffs": [
+    0.04575300216674805,
+    0.29889822006225586,
+    0.0013017654418945312,
+    0.1157522201538086,
+    0.11967587471008301,
+    0.22431492805480957,
+    0.23308110237121582,
+    0.08451199531555176,
+    0.019551992416381836,
+    0.0,
+    0.0015749931335449219
+  ]
+}

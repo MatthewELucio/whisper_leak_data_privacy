@@ -1,0 +1,37 @@
+{
+  "local_port": 51632,
+  "remote_port": 443,
+  "prompt": "How long does diarrhea last?",
+  "response": "The duration of diarrhea depends on its cause. Here's a general breakdown:\n\n*   **Acute Diarrhea:** This is the most common type and usually lasts **a few hours to a few days** (typically less than 2 weeks). It's often caused by a viral or bacterial infection, food poisoning, or medication.\n\n*   **Persistent Diarrhea:** This lasts **2 to 4 weeks**.\n\n*   **Chronic Diarrhea:** This lasts **longer than 4 weeks**. It can be a symptom of a more serious underlying condition, such as irritable bowel syndrome (IBS), inflammatory bowel disease (IBD), celiac disease, or certain medications.\n\nIf your diarrhea lasts longer than a few days, is accompanied by other concerning symptoms (like fever, severe abdominal pain, bloody stools, or dehydration), or you have an underlying health condition, it's best to consult a doctor.\n\n**Important note:** If you have concerns about your diarrhea, it is always best to seek medical advice from a healthcare professional. They can properly diagnose the cause and recommend the appropriate treatment.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1366,
+    303,
+    397,
+    342,
+    388,
+    277,
+    450,
+    430,
+    433,
+    175,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.04655194282531738,
+    0.3777451515197754,
+    0.02501392364501953,
+    0.09815406799316406,
+    0.08600282669067383,
+    0.17602109909057617,
+    0.17033791542053223,
+    0.25833916664123535,
+    0.28160786628723145,
+    0.18324494361877441,
+    0.009898185729980469,
+    0.0,
+    0.0
+  ]
+}

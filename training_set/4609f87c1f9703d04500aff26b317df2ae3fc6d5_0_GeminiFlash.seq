@@ -1,0 +1,39 @@
+{
+  "local_port": 48012,
+  "remote_port": 443,
+  "prompt": "My heartrate is 60 beats per minute is that good or bad?",
+  "response": "A resting heart rate of 60 beats per minute (BPM) is generally considered to be within the normal range for adults. A normal resting heart rate typically falls between 60 and 100 BPM.\n\nHowever, whether a heart rate of 60 BPM is \"good\" or \"bad\" depends on several factors, including:\n\n*   **Your age:** Normal heart rate ranges can vary slightly by age.\n*   **Your fitness level:** Athletes and very physically active individuals often have lower resting heart rates, sometimes even below 60 BPM, which is a sign of good cardiovascular fitness.\n*   **Your overall health:** Certain medical conditions or medications can affect heart rate.\n*   **Symptoms:** If you are experiencing any symptoms like dizziness, fatigue, shortness of breath, or chest pain along with the low heart rate, it could be a cause for concern.\n\n**Here's a general guide:**\n\n*   **Good:** If you are an athlete, physically fit, or generally healthy and have no symptoms, a resting heart rate of 60 BPM is likely a good sign.\n*   **Potentially concerning:** If you are not particularly fit, or if you are experiencing symptoms like dizziness, fatigue, or shortness of breath, a heart rate of 60 BPM might indicate a problem. It's best to consult a doctor to rule out any underlying issues.\n\n**In summary:**\n\nWhile 60 BPM is often a healthy resting heart rate, it's essential to consider your individual circumstances and any accompanying symptoms. If you have any concerns, it's always best to consult with a healthcare professional for personalized advice. They can evaluate your overall health and determine if your heart rate is appropriate for you.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1284,
+    231,
+    327,
+    272,
+    352,
+    472,
+    491,
+    338,
+    322,
+    493,
+    153,
+    235,
+    113
+  ],
+  "time_diffs": [
+    0.04611396789550781,
+    0.42757701873779297,
+    0.05159282684326172,
+    0.08238506317138672,
+    0.14109110832214355,
+    0.16399097442626953,
+    0.2561478614807129,
+    0.284041166305542,
+    0.34996581077575684,
+    0.284743070602417,
+    0.13306593894958496,
+    0.005846977233886719,
+    1.1920928955078125e-06,
+    6.198883056640625e-05
+  ]
+}

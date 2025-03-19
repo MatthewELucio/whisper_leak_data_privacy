@@ -1,0 +1,39 @@
+{
+  "local_port": 50474,
+  "remote_port": 443,
+  "prompt": "What does \"net 30\" mean vs. \"due in 30 days\"?",
+  "response": "While \"net 30\" and \"due in 30 days\" essentially communicate the same payment terms, there's a subtle difference in usage and context.\n\n*   **\"Net 30\"** is a standard business term that means the full payment is due 30 days after the invoice date. It's a shorthand commonly used in business-to-business (B2B) transactions. It is often written on the invoice.\n\n*   **\"Due in 30 days\"** is a more general phrase that also means payment is required 30 days from a specific date (usually the invoice date). This can be used in B2B or business-to-consumer (B2C) scenarios.\n\n**Key Differences**\n*   **Formality and Common Usage:** \"Net 30\" is a more formal and widely recognized term in B2B settings. \"Due in 30 days\" is simpler and can be used more broadly.\n*   **Context:** You're more likely to see \"Net 30\" on an invoice or purchase order when businesses are dealing with each other. \"Due in 30 days\" could be used in any situation where you want to specify a 30-day payment window.\n*   **Clarity:** While both indicate a 30-day payment term, \"Net 30\" is unambiguous in a B2B context. With \"Due in 30 days,\" it's good practice to specify \"from the invoice date\" to avoid confusion.\n\nIn summary, they both mean the same thing, but \"Net 30\" is a more formal, business-specific term, while \"Due in 30 days\" is a more general and versatile phrase.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1270,
+    186,
+    231,
+    228,
+    207,
+    360,
+    317,
+    285,
+    460,
+    374,
+    167,
+    154,
+    113
+  ],
+  "time_diffs": [
+    0.04729914665222168,
+    0.2675619125366211,
+    0.09354400634765625,
+    0.10587000846862793,
+    0.21918511390686035,
+    0.175048828125,
+    0.27123308181762695,
+    0.25662994384765625,
+    0.3975830078125,
+    0.3648989200592041,
+    0.16600513458251953,
+    0.011815071105957031,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 46546,
+  "remote_port": 443,
+  "prompt": "Why did Akshay Kumar take up Canadian citizenship?",
+  "response": "Akshay Kumar has spoken about why he obtained Canadian citizenship, and it boils down to career-related anxieties and opportunities he perceived at the time. Here's a breakdown:\n\n*   **Career Slump:** He has stated that in the late 1990s and early 2000s, he experienced a period where many of his films were not performing well at the box office. This led him to consider other options.\n\n*   **Professional Opportunities in Canada:** During this time, he found significant opportunities for work and projects in Canada. He had a friend who encouraged him to consider Canada for work.\n\n*   **Ease of Travel and Work:** Having Canadian citizenship would have made it easier for him to travel and work in Canada, given the projects he was involved in.\n\nIt's important to note that Akshay Kumar has since expressed regret for obtaining Canadian citizenship, stating that he applied for it out of a sense of frustration and did not anticipate the controversy it would create in India. He has also said that he has always considered himself an Indian and has taken steps to renounce his Canadian citizenship.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1495,
+    151,
+    439,
+    330,
+    236,
+    346,
+    259,
+    321,
+    430,
+    222,
+    219,
+    113
+  ],
+  "time_diffs": [
+    0.05540204048156738,
+    0.30284905433654785,
+    0.021532058715820312,
+    0.09305596351623535,
+    0.11476302146911621,
+    0.20029997825622559,
+    0.20067882537841797,
+    0.2918531894683838,
+    0.2519209384918213,
+    0.18255400657653809,
+    0.008779048919677734,
+    0.0,
+    0.0
+  ]
+}

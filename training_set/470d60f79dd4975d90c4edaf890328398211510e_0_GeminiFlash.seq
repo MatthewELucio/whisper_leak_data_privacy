@@ -1,0 +1,43 @@
+{
+  "local_port": 58214,
+  "remote_port": 443,
+  "prompt": "What do the Japanese teach children about Pearl Harbor?",
+  "response": "The Japanese education system's coverage of Pearl Harbor is a complex and sometimes controversial topic. Here's a breakdown of what's generally taught and some of the nuances involved:\n\n*   **Focus on the Broader Context:** Japanese textbooks typically frame Pearl Harbor within the larger context of World War II in the Pacific, emphasizing the events leading up to the attack, such as Japan's economic and political isolation, the US oil embargo, and Japan's expansionist policies in Asia.\n\n*   **Emphasis on Civilian Suffering:** Textbooks tend to highlight the suffering of Japanese civilians during the war, including the atomic bombings of Hiroshima and Nagasaki, and the firebombing of Tokyo. This emphasis often overshadows the details of Pearl Harbor itself.\n\n*   **Varying Degrees of Acknowledgment of Aggression:** The extent to which textbooks acknowledge Japan's aggression in the war varies. Some textbooks may acknowledge that Japan launched a surprise attack on Pearl Harbor, while others may downplay the \"surprise\" aspect, emphasizing the breakdown of negotiations leading up to the attack.\n\n*   **Controversies and Revisions:** The content of Japanese history textbooks has been a source of controversy, both domestically and internationally. Conservative groups have pushed for revisions to downplay Japan's wartime aggression, while more liberal groups advocate for a more critical and self-reflective approach to history. These controversies mean that the specific content related to Pearl Harbor can vary depending on the textbook and the year it was published.\n\n*   **Limited Detail:** Compared to the level of detail taught in American schools, the specific details of the Pearl Harbor attack (e.g., the number of casualties, the ships sunk, the specific tactics used) may receive less attention in Japanese textbooks.\n\n*   **Emphasis on Peace:** A common theme in Japanese education is the importance of peace and the need to learn from the past to prevent future wars. The focus is often on promoting reconciliation and understanding between nations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1313,
+    384,
+    317,
+    363,
+    260,
+    349,
+    502,
+    465,
+    355,
+    513,
+    526,
+    223,
+    243,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.044049978256225586,
+    0.4067189693450928,
+    0.004739999771118164,
+    0.10817408561706543,
+    0.07448101043701172,
+    0.19855999946594238,
+    0.17414283752441406,
+    0.2590980529785156,
+    0.3080780506134033,
+    0.3575150966644287,
+    0.3584868907928467,
+    0.3165299892425537,
+    0.030434131622314453,
+    0.006994962692260742,
+    0.0,
+    0.0
+  ]
+}

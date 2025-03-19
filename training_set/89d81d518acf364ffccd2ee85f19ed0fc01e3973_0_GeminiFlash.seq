@@ -1,0 +1,35 @@
+{
+  "local_port": 34478,
+  "remote_port": 443,
+  "prompt": "Why is M&M's motto \"melts in your mouth, not in your hand\"?",
+  "response": "The M&M's motto \"melts in your mouth, not in your hand\" came about because the candy was designed to be a mess-free treat for soldiers during World War II.\n\nHere's the story:\n\n*   **Forrest Mars Sr.** (son of Frank Mars, the founder of Mars, Incorporated) saw soldiers in the Spanish Civil War eating chocolate pellets covered in a sugary coating. This coating prevented the chocolate from melting in the warm climate, making it easier to carry and eat.\n\n*   Inspired, Mars secured a patent for a similar process and partnered with Bruce Murrie (hence \"M&M's\") of Hershey's to produce the candies.\n\n*   M&M's were specifically designed to provide soldiers with chocolate that wouldn't melt and make a mess in their hands while they were on duty.\n\nTherefore, the slogan **\"Melts in your mouth, not in your hand\"** perfectly captured the key benefit of M&M's, making them a practical and appealing treat, especially in warm conditions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1511,
+    211,
+    194,
+    380,
+    283,
+    297,
+    430,
+    382,
+    297,
+    203,
+    113
+  ],
+  "time_diffs": [
+    0.04916810989379883,
+    0.33567094802856445,
+    0.1448988914489746,
+    0.1138920783996582,
+    0.20711994171142578,
+    0.14887404441833496,
+    0.3573329448699951,
+    0.367232084274292,
+    0.12709903717041016,
+    0.0125579833984375,
+    0.0,
+    0.0
+  ]
+}

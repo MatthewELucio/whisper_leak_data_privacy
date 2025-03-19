@@ -1,0 +1,35 @@
+{
+  "local_port": 32860,
+  "remote_port": 443,
+  "prompt": "Do we have Financial Management in IPCC group 1 in may 2017? Websites show change in syllabus.",
+  "response": "Yes, Financial Management (FM) was part of IPCC Group 1 in May 2017.\n\nThe syllabus change you're seeing refers to the transition from the IPCC (Intermediate) level to the current Intermediate level under the revised scheme of education and training. The old syllabus included subjects like Accounting, Law, Cost Accounting & Financial Management, and Taxation. The new syllabus has different subjects and a different grouping.\n\nHowever, **in May 2017, the old IPCC syllabus was still in effect, and Financial Management was part of Paper 4, \"Cost Accounting and Financial Management,\" in Group 1.**\n\nTherefore, if you are referring to the May 2017 exam, then the answer is yes, Financial Management was a part of the curriculum as part of the paper on Cost Accounting and Financial Management.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1358,
+    210,
+    273,
+    364,
+    334,
+    412,
+    355,
+    414,
+    249,
+    162,
+    113
+  ],
+  "time_diffs": [
+    0.0507509708404541,
+    0.3752169609069824,
+    0.04378390312194824,
+    0.03817415237426758,
+    0.07781100273132324,
+    0.27820491790771484,
+    0.22302913665771484,
+    0.31633591651916504,
+    0.09036588668823242,
+    0.01012420654296875,
+    0.000125885009765625,
+    0.0
+  ]
+}

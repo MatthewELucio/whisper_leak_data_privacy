@@ -1,0 +1,27 @@
+{
+  "local_port": 34174,
+  "remote_port": 443,
+  "prompt": "Why do many Indians find Pakistanis unattractive?",
+  "response": "Attractiveness is subjective, and preferences vary greatly among individuals. There is no single answer to why some Indians may find Pakistanis unattractive, as it is influenced by a complex interplay of factors such as personal taste, cultural conditioning, media representation, and historical biases.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1332,
+    406,
+    222,
+    341,
+    225,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04286599159240723,
+    0.42853593826293945,
+    0.09193706512451172,
+    0.06910300254821777,
+    0.15657401084899902,
+    0.007105827331542969,
+    0.001558065414428711,
+    0.0
+  ]
+}

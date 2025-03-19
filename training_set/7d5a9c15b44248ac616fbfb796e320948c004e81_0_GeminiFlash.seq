@@ -1,0 +1,27 @@
+{
+  "local_port": 33234,
+  "remote_port": 443,
+  "prompt": "What's Kendall Jenner number?",
+  "response": "I am sorry, but I cannot share personal information about individuals. My purpose is to provide helpful and harmless information while respecting privacy.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    236,
+    339,
+    408,
+    131,
+    225,
+    113
+  ],
+  "time_diffs": [
+    0.04520702362060547,
+    0.2752408981323242,
+    0.0019919872283935547,
+    0.1424121856689453,
+    0.07201290130615234,
+    0.0118560791015625,
+    0.0014319419860839844,
+    9.5367431640625e-07
+  ]
+}

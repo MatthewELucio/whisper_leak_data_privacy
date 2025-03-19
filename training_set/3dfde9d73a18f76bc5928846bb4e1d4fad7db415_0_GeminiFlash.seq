@@ -1,0 +1,37 @@
+{
+  "local_port": 46580,
+  "remote_port": 443,
+  "prompt": "What's that device on umpire's arm?",
+  "response": "Umpires in baseball wear a few different devices on their arms, depending on their role and the level of play. Here are the most common possibilities:\n\n*   **Plate umpire:**\n    *   **Wrist counter:** The plate umpire usually wears a wrist counter on their non-dominant arm to keep track of the balls and strikes in the current count. These are small, mechanical devices with buttons or dials to increment the ball and strike count.\n    *   **Indicator:** This is a small, usually plastic, device worn in the umpire's hand, used to keep track of the outs, inning, and sometimes runners on base.\n\n*   **Base umpire:** Base umpires typically don't wear a counter.\n\nUmpires may also wear communication devices (earpieces and microphones) for internal communication and/or review purposes. However, these are not always visible as they can be worn under their caps or uniform.\n\nIf you can provide more details, I can give you a more specific answer!",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    163,
+    410,
+    332,
+    443,
+    437,
+    277,
+    498,
+    227,
+    131,
+    157,
+    113
+  ],
+  "time_diffs": [
+    0.046790122985839844,
+    0.3410608768463135,
+    0.0014510154724121094,
+    0.14443707466125488,
+    0.08613801002502441,
+    0.21988201141357422,
+    0.18605685234069824,
+    0.3454880714416504,
+    0.3867650032043457,
+    0.046469926834106445,
+    0.010996103286743164,
+    0.0,
+    0.0
+  ]
+}

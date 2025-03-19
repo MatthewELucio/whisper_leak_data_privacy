@@ -1,0 +1,43 @@
+{
+  "local_port": 47294,
+  "remote_port": 443,
+  "prompt": "Should I use two single pages, or both sides of a single piece of paper for a two-page resume?",
+  "response": "Using both sides of a single piece of paper for a two-page resume is generally **not recommended**. Here's why:\n\n*   **Professionalism and Readability:**\n    *   **Easier to Handle:** Recruiters often handle many resumes at once. Two separate pages are easier to spread out, read, and compare to other documents.\n    *   **Printing and Copying:** If a recruiter wants to make notes or pass your resume around, it's much simpler with separate pages. If they need to copy it, they won't have to deal with double-sided copying or scanning.\n    *   **Aesthetics:** It's simply more visually appealing and easier to read a resume that isn't printed on both sides. The back of the page might be slightly translucent, making the front harder to read, and some printers don't handle double-sided printing perfectly.\n*   **ATS Compatibility (Limited Impact but Still a Factor):**\n    *   **Potential Confusion:** While most modern Applicant Tracking Systems (ATS) can handle two-page resumes, some older or less sophisticated systems might have trouble processing information printed on both sides. This could lead to sections being missed or misread. Although this is less common now, it's still a slight risk.\n*   **Tradition and Expectations:**\n    *   **Standard Practice:** The standard practice in most industries is to submit a two-page resume on two separate sheets of paper. Deviating from this norm might be perceived as unconventional or even cost-cutting (even if that's not your intention).\n*   **Single-Sided Resumes Make it Easier to Refer to Information During an Interview**\n    *   During an interview, recruiters are able to lay out your resume, making it easy to refer to specific details and ask you about them.\n\n**In summary, opt for two separate pages for a two-page resume. It's the more professional, readable, and universally accepted approach.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    115,
+    245,
+    346,
+    320,
+    239,
+    421,
+    498,
+    387,
+    450,
+    352,
+    233,
+    291,
+    232,
+    113
+  ],
+  "time_diffs": [
+    0.0453028678894043,
+    0.4206840991973877,
+    0.0013718605041503906,
+    0.06761503219604492,
+    0.07806611061096191,
+    0.21995902061462402,
+    0.2531569004058838,
+    0.27815794944763184,
+    0.3040781021118164,
+    0.3796088695526123,
+    0.3463020324707031,
+    0.31348705291748047,
+    0.11396098136901855,
+    0.009521961212158203,
+    5.602836608886719e-05,
+    0.0001399517059326172
+  ]
+}

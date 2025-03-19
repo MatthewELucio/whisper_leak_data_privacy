@@ -1,0 +1,39 @@
+{
+  "local_port": 47106,
+  "remote_port": 443,
+  "prompt": "Do boys get friendzoned?",
+  "response": "Yes, absolutely. The concept of being \"friendzoned\" isn't exclusive to any gender. Anyone can experience unrequited romantic feelings for a friend, regardless of their gender identity or sexual orientation.\n\nThe idea behind the \"friendzone\" is that someone desires a romantic relationship with a friend who only wants a platonic relationship. This can happen to anyone.\n\nIt's important to remember that:\n\n*   **Friendship is valuable:** Just because someone doesn't want to date you doesn't mean they don't value you as a person.\n*   **People have the right to choose:** No one is obligated to return romantic feelings, regardless of gender.\n*   **The \"friendzone\" can be a harmful concept:** It can imply that friendship is a consolation prize or that someone is entitled to a romantic relationship simply by being a good friend.\n\nSo, yes, boys get friendzoned just as much as girls do, and it's a common experience for people of all genders.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    161,
+    142,
+    413,
+    352,
+    300,
+    231,
+    481,
+    272,
+    365,
+    221,
+    147,
+    113
+  ],
+  "time_diffs": [
+    0.04475212097167969,
+    0.5938799381256104,
+    0.0007989406585693359,
+    0.03430008888244629,
+    0.04298090934753418,
+    0.10817599296569824,
+    0.2031080722808838,
+    0.20184707641601562,
+    0.2697460651397705,
+    0.23525285720825195,
+    0.06260895729064941,
+    0.008331060409545898,
+    0.00010895729064941406,
+    8.416175842285156e-05
+  ]
+}

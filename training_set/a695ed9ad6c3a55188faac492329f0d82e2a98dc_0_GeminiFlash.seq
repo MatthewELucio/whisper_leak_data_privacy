@@ -1,0 +1,31 @@
+{
+  "local_port": 48104,
+  "remote_port": 443,
+  "prompt": "Can you trust and marry a non virgin girl?",
+  "response": "Whether to trust and marry someone who is not a virgin is a personal decision. Some people may not be concerned about their partner's sexual history, while others may consider it important. Factors to consider include your personal values, beliefs, and expectations in a relationship. Communication and understanding between partners are crucial in any relationship, regardless of past experiences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1261,
+    300,
+    369,
+    401,
+    470,
+    222,
+    229,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.046706199645996094,
+    0.3990328311920166,
+    0.00487518310546875,
+    0.09406900405883789,
+    0.09485697746276855,
+    0.20726585388183594,
+    0.004861116409301758,
+    0.009898900985717773,
+    0.0016970634460449219,
+    0.0017199516296386719
+  ]
+}

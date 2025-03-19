@@ -1,0 +1,27 @@
+{
+  "local_port": 57280,
+  "remote_port": 443,
+  "prompt": "I had a bar code for Jio sim but now it's showing REDEEMED what should I do?",
+  "response": "If",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    139,
+    405,
+    697,
+    569,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.03337407112121582,
+    0.2827160358428955,
+    0.40308189392089844,
+    0.19950318336486816,
+    0.003373861312866211,
+    0.05107307434082031,
+    0.027029037475585938,
+    0.0
+  ]
+}

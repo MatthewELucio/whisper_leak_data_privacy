@@ -1,0 +1,41 @@
+{
+  "local_port": 55212,
+  "remote_port": 443,
+  "prompt": "Can a Permanent Resident get the benefits of paying the tuition fee as a domestic student for doing masters in Australia?",
+  "response": "Generally, **yes, a permanent resident of Australia is usually eligible to pay domestic tuition fees for master's programs in Australian universities.**\n\nHowever, there are a few nuances and specific requirements to be aware of:\n\n*   **Permanent Residency Status:** You must hold a valid permanent residency visa. Temporary visas do not typically qualify you for domestic fees.\n*   **Residency Requirements:** Some universities may have specific residency requirements beyond just holding permanent residency. This might involve demonstrating that you have been living in Australia for a certain period (e.g., 12 months) prior to the course commencement.\n*   **Specific Courses or Universities:** There might be rare exceptions where certain specialized programs or individual universities have different rules. It's crucial to check the specific admission requirements for the master's program you're interested in at the university you plan to attend.\n*   **Citizenship:** Once you gain Australian citizenship, you are automatically eligible for domestic student fees.\n\n**How to confirm your eligibility:**\n\n1.  **University Websites:** The best place to start is by thoroughly reviewing the admission requirements and fee information on the specific university's website for the master's program you're interested in. Look for sections on \"Domestic vs. International Fees,\" \"Eligibility for Domestic Fees,\" or similar titles.\n2.  **Contact the University:** If you're unsure after reading the website, contact the university's admissions or international student office directly. They can provide definitive information about your eligibility based on your specific visa and residency situation.\n3.  **StudyAssist Website:** The Australian government's StudyAssist website (provided you are eligible for a Commonwealth Supported Place (CSP)) has details on eligibility. Check this website: [https://www.studyassist.gov.au/](https://www.studyassist.gov.au/)\n\n**In summary, while permanent residents are generally eligible for domestic tuition fees, it's essential to confirm the specific requirements of the university and program you're applying to.** Always check official sources for the most accurate and up-to-date information.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1268,
+    335,
+    319,
+    444,
+    231,
+    478,
+    432,
+    352,
+    366,
+    428,
+    475,
+    242,
+    197,
+    113
+  ],
+  "time_diffs": [
+    0.04366016387939453,
+    0.28780484199523926,
+    0.11070513725280762,
+    0.09123802185058594,
+    0.24404096603393555,
+    0.18205785751342773,
+    0.28910207748413086,
+    0.2588520050048828,
+    0.429049015045166,
+    0.2865140438079834,
+    0.33886003494262695,
+    0.1702408790588379,
+    0.00797891616821289,
+    0.0,
+    0.0
+  ]
+}

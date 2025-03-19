@@ -1,0 +1,43 @@
+{
+  "local_port": 46768,
+  "remote_port": 443,
+  "prompt": "What is gold digger?",
+  "response": "A \"gold digger\" is a term, typically used pejoratively, to describe someone who enters into a relationship (romantic or marital) primarily for financial gain or material possessions rather than for love or genuine affection.\n\nHere's a breakdown of the key aspects:\n\n*   **Financial Motivation:** The core of the term lies in the belief that the person is primarily motivated by the other person's wealth or resources.\n*   **Exploitation:** It implies an exploitative relationship, where one person is using the other for their money or possessions.\n*   **Lack of Genuine Affection:** There's an assumption that the person doesn't genuinely care for the other person beyond their financial assets.\n*   **Gender Bias:** While anyone can be motivated by financial gain in a relationship, the term \"gold digger\" is most commonly used to describe women who pursue relationships with wealthy men. There is a less common, but existing, term for the inverse called a \"sugar daddy\".\n\n**Important Considerations:**\n\n*   **Subjectivity:** Accusations of being a gold digger can be subjective and based on assumptions. It's difficult to know someone's true motivations.\n*   **Materialism in Relationships:** Material comfort and financial security can be important factors in relationships for many people. The line between seeking a comfortable life and being a \"gold digger\" can be blurry.\n*   **Sexist Undertones:** The term can be considered sexist, as it often reinforces negative stereotypes about women and their intentions in relationships. It can also overlook power dynamics and social inequalities that might influence relationship choices.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    241,
+    366,
+    395,
+    406,
+    454,
+    283,
+    334,
+    342,
+    388,
+    534,
+    338,
+    228,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.04758477210998535,
+    0.26227807998657227,
+    0.0013499259948730469,
+    0.004685163497924805,
+    0.10189104080200195,
+    0.08307290077209473,
+    0.18102598190307617,
+    0.15496301651000977,
+    0.2711489200592041,
+    0.2734191417694092,
+    0.3539259433746338,
+    0.43428587913513184,
+    0.026197195053100586,
+    0.009081840515136719,
+    0.0,
+    0.0
+  ]
+}

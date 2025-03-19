@@ -1,0 +1,37 @@
+{
+  "local_port": 51996,
+  "remote_port": 443,
+  "prompt": "When I eat sushi, what is the eel sauce made of?",
+  "response": "Eel sauce, also known as unagi sauce or nitsume, is a thick, sweet, and savory sauce that is commonly served with grilled eel (unagi) dishes, including sushi. While recipes can vary, the main ingredients are generally:\n\n*   **Soy Sauce:** Forms the base of the sauce, providing saltiness and umami.\n*   **Mirin:** A sweet rice wine similar to sake, but with lower alcohol content. Adds sweetness and a subtle complexity.\n*   **Sugar:** Contributes to the sauce's overall sweetness and thick, syrupy texture.\n*   **Sake:** Japanese rice wine used to add depth of flavor.\n*   **Eel Broth (Optional):** Some recipes incorporate eel bones and scraps simmered to make a broth, enhancing the sauce with a richer, more authentic eel flavor. This is often used in restaurants specializing in eel.\n\nThese ingredients are typically simmered together for an extended period, reducing the liquid and allowing the flavors to meld into a rich, glossy sauce. The exact proportions and simmering time can vary depending on the desired consistency and flavor profile.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1287,
+    237,
+    241,
+    316,
+    250,
+    466,
+    480,
+    518,
+    413,
+    182,
+    135,
+    113
+  ],
+  "time_diffs": [
+    0.04661202430725098,
+    0.45410704612731934,
+    0.03681802749633789,
+    0.06322693824768066,
+    0.12592387199401855,
+    0.16200804710388184,
+    0.1689760684967041,
+    0.2342360019683838,
+    0.33114004135131836,
+    0.20058584213256836,
+    0.009392976760864258,
+    0.0,
+    0.0
+  ]
+}

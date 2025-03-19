@@ -1,0 +1,31 @@
+{
+  "local_port": 40860,
+  "remote_port": 443,
+  "prompt": "If funds are moved to obscure their source, is that a crime?",
+  "response": "That depends on the specific circumstances. Moving funds to hide their origin can be considered money laundering, which is illegal.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    989,
+    457,
+    426,
+    441,
+    423,
+    569,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.036562204360961914,
+    0.25374579429626465,
+    0.3830389976501465,
+    0.19603419303894043,
+    0.08973288536071777,
+    0.18495392799377441,
+    0.08719515800476074,
+    0.0033788681030273438,
+    0.020621061325073242,
+    0.0017020702362060547
+  ]
+}

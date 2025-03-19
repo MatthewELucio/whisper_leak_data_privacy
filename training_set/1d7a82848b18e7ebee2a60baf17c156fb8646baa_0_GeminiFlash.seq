@@ -1,0 +1,39 @@
+{
+  "local_port": 58652,
+  "remote_port": 443,
+  "prompt": "What is more likely to happen than Donald Trump becoming president?",
+  "response": "Predicting the future is inherently uncertain, but here are some things that are generally considered more likely than Donald Trump becoming president again, based on current data and expert opinions:\n\n*   **The sun rising tomorrow:** Barring some unforeseen cosmic event, this is a near certainty.\n\n*   **You will breathe again in the next minute:** A basic human function that is highly probable unless you have a severe medical condition.\n\n*   **There will be another major hurricane in the Atlantic this year:** Hurricane season is an annual event, and experts predict a high likelihood of more major hurricanes.\n\n*   **The Earth will continue to orbit the sun:** This is a fundamental aspect of our solar system and is extremely likely to continue.\n\n*   **A popular franchise movie will release:** The movie industry relies on established franchises for box office success, making it probable that more movies from existing franchises will be released.\n\n**Factors that make Trump's presidency less certain:**\n\n*   **Legal challenges:** Trump faces numerous ongoing investigations and potential indictments, which could impact his eligibility or ability to campaign effectively.\n*   **Political landscape:** The political climate is constantly shifting, and the outcome of future elections is influenced by various factors, making it difficult to predict.\n*   **Health:** Like any individual, Trump's health could change, potentially impacting his ability to campaign and serve as president.\n*   **Public sentiment:** Public opinion can shift over time, and Trump's approval ratings fluctuate.\n*   **Other candidates:** The emergence of other strong candidates could split the vote and make it more difficult for Trump to win.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1383,
+    272,
+    240,
+    374,
+    482,
+    378,
+    462,
+    435,
+    379,
+    184,
+    244,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.04510903358459473,
+    0.3138298988342285,
+    0.14076018333435059,
+    0.09098196029663086,
+    0.2861599922180176,
+    0.2470569610595703,
+    0.26900506019592285,
+    0.3181498050689697,
+    0.3509840965270996,
+    0.3859870433807373,
+    0.015062093734741211,
+    0.013897895812988281,
+    0.0,
+    0.0
+  ]
+}

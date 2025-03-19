@@ -1,0 +1,37 @@
+{
+  "local_port": 33374,
+  "remote_port": 443,
+  "prompt": "Which one is grammatically correct: pick up someone at the airport or from the airport?",
+  "response": "Both \"pick up someone at the airport\" and \"pick up someone from the airport\" are grammatically correct, but they have slightly different nuances:\n\n*   **Pick up someone at the airport:** This implies that you are meeting the person *inside* the airport, perhaps at a specific location like a gate or a baggage claim area.\n\n*   **Pick up someone from the airport:** This implies that you are meeting the person *outside* the airport building, such as at a curb, a parking lot, or a designated pick-up area.\n\nIn most common usage, \"pick up someone from the airport\" is more frequently used, as it's more likely that you'd be meeting someone outside the building after they've collected their luggage. However, \"pick up someone at the airport\" is correct if you are meeting them inside.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    292,
+    239,
+    252,
+    204,
+    307,
+    422,
+    497,
+    221,
+    152,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04560708999633789,
+    0.4221940040588379,
+    0.0014760494232177734,
+    0.04129290580749512,
+    0.04504799842834473,
+    0.040927886962890625,
+    0.17219805717468262,
+    0.14799714088439941,
+    0.26006484031677246,
+    0.1122431755065918,
+    0.009601831436157227,
+    0.0,
+    0.0
+  ]
+}

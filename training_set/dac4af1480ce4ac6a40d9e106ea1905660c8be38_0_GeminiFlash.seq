@@ -1,0 +1,39 @@
+{
+  "local_port": 49378,
+  "remote_port": 443,
+  "prompt": "Should Hillary Clinton be president?",
+  "response": "Hillary Clinton has had a long and impactful career in American politics. Here's a look at some key aspects:\n\n*   **Experience:** She served as First Lady during Bill Clinton's presidency, then as a U.S. Senator for New York, and later as Secretary of State under President Barack Obama. This extensive experience in both domestic and foreign policy is often cited as a major qualification.\n\n*   **Policy Positions:** Throughout her career, Clinton has advocated for a range of policies, including expanding access to healthcare (famously during her time as First Lady and later with the Affordable Care Act), investing in education, and promoting women's rights and human rights globally.\n\n*   **Controversies:** Clinton's career has also been marked by controversies, including the Whitewater scandal, her use of a private email server while Secretary of State, and the Benghazi attack. These have been subject to intense scrutiny and have generated significant debate.\n\nArguments in favor of her presidency often highlight her deep understanding of government, her commitment to social justice issues, and her experience on the world stage. Arguments against often raise concerns about her trustworthiness, her past policy decisions, and the controversies that have surrounded her.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    214,
+    227,
+    296,
+    300,
+    408,
+    425,
+    481,
+    369,
+    380,
+    162,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.048786163330078125,
+    0.38205695152282715,
+    0.0021190643310546875,
+    0.024821996688842773,
+    0.027057886123657227,
+    0.055663108825683594,
+    0.1775670051574707,
+    0.21092987060546875,
+    0.30212998390197754,
+    0.27223706245422363,
+    0.2616100311279297,
+    0.008297920227050781,
+    0.0010199546813964844,
+    0.0
+  ]
+}

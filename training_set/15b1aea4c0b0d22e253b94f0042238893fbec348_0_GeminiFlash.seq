@@ -1,0 +1,41 @@
+{
+  "local_port": 38660,
+  "remote_port": 443,
+  "prompt": "Who is Teresa Fidlago, and what is she known for?",
+  "response": "You're likely thinking of **Teresa Fidalgo**.\n\nTeresa Fidalgo is the central figure in an internet urban legend, a purported \"ghostly hitchhiker\" video that went viral in the mid-2000s and continues to circulate.\n\n**What is she known for?**\n\n*   **The Teresa Fidalgo Video:** This is the primary reason for her notoriety. The video, presented as found footage, allegedly shows a group of friends driving on a dark road in Portugal. They pick up a hitchhiker, Teresa Fidalgo, who appears normal at first. However, as the video progresses, her face becomes distorted and terrifying, and the driver crashes the car. The video claims that everyone except the cameraman died, and that the cameraman was traumatized.\n\n*   **Urban Legend and Creepypasta:** The Teresa Fidalgo story is a classic example of an internet urban legend or creepypasta. It is designed to be scary, spread through word-of-mouth (or, in this case, word-of-text and video sharing), and often comes with warnings or \"true story\" claims to enhance its authenticity.\n\n*   **The Hoax:** Despite its popularity, the Teresa Fidalgo video is a well-known hoax. It was created by Portuguese filmmaker David Rebord\u00e3o as a short film project called \"A Curva\" (The Curve). He used special effects and a fabricated backstory to make it appear real.\n\nIn summary, Teresa Fidalgo is a fictional character from a viral internet hoax video that is often presented as a real-life ghost story. She is not a real person, although many people initially believed the story.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    282,
+    386,
+    334,
+    316,
+    284,
+    282,
+    421,
+    377,
+    330,
+    323,
+    204,
+    191,
+    113
+  ],
+  "time_diffs": [
+    0.051280975341796875,
+    0.3226900100708008,
+    0.0014390945434570312,
+    0.1465160846710205,
+    0.12705087661743164,
+    0.19095993041992188,
+    0.17107200622558594,
+    0.2719740867614746,
+    0.2491929531097412,
+    0.3827199935913086,
+    0.42812204360961914,
+    0.12005496025085449,
+    0.010265111923217773,
+    0.00015497207641601562,
+    0.00011301040649414062
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 42256,
+  "remote_port": 443,
+  "prompt": "What is a nomination fee?",
+  "response": "A nomination fee is a fee paid to enter a competition, contest, election, or other selection process where candidates are nominated. It's essentially the price of entry for a chance to be considered.\n\nHere's a breakdown of why they exist and what they're used for:\n\n*   **Covers Administrative Costs:** The most common reason is to help offset the costs associated with running the competition or election. This can include printing materials, hiring staff, renting venues, advertising, and managing the application process.\n\n*   **Deters Frivolous Nominations:** Nomination fees can discourage people who aren't serious or qualified from entering, which streamlines the process and ensures that only those with genuine interest and potential are considered.\n\n*   **Funding Prizes or Rewards:** In some cases, the fees collected might contribute to a prize pool or other rewards for the winner(s) or selected candidates.\n\n*   **Membership or Association Fees:** Sometimes the fee is tied to a required membership in an organization that is hosting the competition.\n\nThe specific amount of the fee, and how it's used, varies widely depending on the organization and the nature of the nomination process.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1278,
+    206,
+    302,
+    423,
+    458,
+    446,
+    284,
+    453,
+    446,
+    181,
+    135,
+    113
+  ],
+  "time_diffs": [
+    0.045539140701293945,
+    0.35813307762145996,
+    0.029318809509277344,
+    0.06756711006164551,
+    0.13232088088989258,
+    0.18689203262329102,
+    0.18259501457214355,
+    0.2629570960998535,
+    0.2795689105987549,
+    0.24915504455566406,
+    0.011442899703979492,
+    0.0,
+    0.0
+  ]
+}

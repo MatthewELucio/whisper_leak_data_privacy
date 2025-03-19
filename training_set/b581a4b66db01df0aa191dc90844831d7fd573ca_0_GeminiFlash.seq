@@ -1,0 +1,39 @@
+{
+  "local_port": 53650,
+  "remote_port": 443,
+  "prompt": "Who is Grandmaster Shifu Shaurya Bharadwaj?",
+  "response": "Grandmaster Shifu Shaurya Bharadwaj is a prominent figure in the world of martial arts, particularly known for his expertise in Kalaripayattu and his contributions to making it more accessible and mainstream. Here's a summary of what's known about him:\n\n*   **Master of Kalaripayattu:** He is a highly respected and skilled practitioner of Kalaripayattu, an ancient Indian martial art.\n*   **Founder of the Indian Academy of Martial Arts (IAMA):** He is the founder of the Indian Academy of Martial Arts (IAMA), an organization dedicated to promoting and teaching Kalaripayattu and other Indian martial arts.\n*   **Teaching and Promotion:** Shifu Shaurya Bharadwaj is actively involved in teaching Kalaripayattu to students of all ages and backgrounds. He has worked to spread awareness about the art form both within India and internationally.\n*   **Film Industry:** He has also worked in the film industry, providing training and choreography for martial arts sequences in movies.\n\nIn essence, Grandmaster Shifu Shaurya Bharadwaj is a key figure in the preservation, promotion, and modernization of Kalaripayattu, making it more accessible to a wider audience while maintaining its traditional roots.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    301,
+    331,
+    331,
+    311,
+    351,
+    327,
+    447,
+    397,
+    501,
+    166,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.048365116119384766,
+    0.36041903495788574,
+    0.0013878345489501953,
+    0.012479066848754883,
+    0.04518294334411621,
+    0.1439211368560791,
+    0.16526484489440918,
+    0.1658921241760254,
+    0.27017688751220703,
+    0.2685232162475586,
+    0.26348280906677246,
+    0.0038089752197265625,
+    0.0,
+    0.0
+  ]
+}

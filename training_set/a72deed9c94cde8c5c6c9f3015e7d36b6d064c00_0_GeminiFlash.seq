@@ -1,0 +1,29 @@
+{
+  "local_port": 58804,
+  "remote_port": 443,
+  "prompt": "If x is tripled, is it 3x or x^3?",
+  "response": "If x is tripled, it is 3x.\n\nTripling something means multiplying it by 3.\n\nx^3 means x raised to the power of 3, which is x multiplied by itself three times (x * x * x).\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1450,
+    263,
+    351,
+    283,
+    419,
+    148,
+    147,
+    113
+  ],
+  "time_diffs": [
+    0.045336008071899414,
+    0.330798864364624,
+    0.03484010696411133,
+    0.05097794532775879,
+    0.0982201099395752,
+    0.04294085502624512,
+    0.00885915756225586,
+    0.0015819072723388672,
+    0.0
+  ]
+}

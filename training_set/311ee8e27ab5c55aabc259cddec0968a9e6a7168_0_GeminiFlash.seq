@@ -1,0 +1,29 @@
+{
+  "local_port": 46434,
+  "remote_port": 443,
+  "prompt": "What do Pakistani citizens think about Uri Attack?",
+  "response": "Public opinion in Pakistan regarding the Uri attack is divided. Some condemn the attack and express sympathy for the victims, while others believe that India staged the attack to defame Pakistan. Some Pakistani citizens also argue that the attack was a reaction to India's alleged human rights abuses in Kashmir.\n\nIt's important to note that these are general sentiments and individual opinions may vary.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1288,
+    381,
+    326,
+    350,
+    301,
+    130,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.05019807815551758,
+    0.3616180419921875,
+    0.12490296363830566,
+    0.19802308082580566,
+    0.07587695121765137,
+    0.045117855072021484,
+    0.01298213005065918,
+    0.0015230178833007812,
+    0.0
+  ]
+}

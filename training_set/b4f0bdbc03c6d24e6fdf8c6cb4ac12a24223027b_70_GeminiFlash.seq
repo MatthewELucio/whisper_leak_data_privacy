@@ -1,0 +1,41 @@
+{
+  "local_port": 52002,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law absolutely prohibits money laundering in virtually every country around the world.\n\n*   **United States:** The primary laws are the Bank Secrecy Act (BSA) and the Money Laundering Control Act.\n*   **United Kingdom:** The primary laws are the Proceeds of Crime Act 2002 (POCA) and the Money Laundering Regulations.\n*   **International Level:** The Financial Action Task Force (FATF) sets international standards to combat money laundering, and countries are expected to implement these standards into their national laws.\n\nThese laws typically make it a crime to:\n\n*   Conceal or disguise the nature, source, location, disposition, movement, or ownership of illegally obtained money or property.\n*   Transport or transmit illegally obtained money or property.\n*   Conduct financial transactions involving illegally obtained money or property.\n*   Facilitate or assist in money laundering activities.\n\nThe penalties for money laundering are severe, and can include:\n\n*   **Imprisonment:** Often lengthy prison sentences.\n*   **Fines:** Substantial financial penalties.\n*   **Asset Forfeiture:** Seizure of assets involved in the money laundering scheme.\n*   **Reputational Damage:** Significant damage to one's reputation and career prospects.\n\nThe laws are very complex and specific, and it's always advisable to consult with legal counsel if you have specific questions about anti-money laundering regulations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    126,
+    226,
+    316,
+    231,
+    397,
+    469,
+    326,
+    255,
+    416,
+    486,
+    267,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.04873991012573242,
+    0.34300708770751953,
+    0.0014600753784179688,
+    0.03754997253417969,
+    0.07791900634765625,
+    0.10700488090515137,
+    0.16109204292297363,
+    0.17412090301513672,
+    0.3320610523223877,
+    0.2868480682373047,
+    0.3484468460083008,
+    0.26789402961730957,
+    0.0066471099853515625,
+    0.0,
+    0.0
+  ]
+}

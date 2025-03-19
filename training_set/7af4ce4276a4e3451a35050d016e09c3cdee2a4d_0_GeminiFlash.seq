@@ -1,0 +1,33 @@
+{
+  "local_port": 39900,
+  "remote_port": 443,
+  "prompt": "Why did J.J. Abrams decide to change the look of Klingons in the latest Star Trek movie?",
+  "response": "J.J. Abrams didn't actually change the look of the Klingons in the Star Trek movies he directed. While Klingons *were* featured in *Star Trek Into Darkness*, they were only seen briefly and retained a look that was consistent with previous iterations, especially the more ridged foreheads that became prominent in *Star Trek: The Motion Picture* and later series.\n\nThe significant redesign of the Klingons, with a more alien and armored appearance, occurred in the *Star Trek: Discovery* television series, which premiered in 2017. Abrams was not involved in *Discovery*.\n\nIt's important to distinguish between Abrams' involvement in the films and the creative decisions made for the *Discovery* series.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1255,
+    247,
+    430,
+    309,
+    445,
+    432,
+    457,
+    187,
+    124,
+    113
+  ],
+  "time_diffs": [
+    0.05146002769470215,
+    0.4463679790496826,
+    0.02077198028564453,
+    0.0529329776763916,
+    0.07920503616333008,
+    0.2734949588775635,
+    0.1865980625152588,
+    0.1780388355255127,
+    0.010793209075927734,
+    3.790855407714844e-05,
+    0.0006380081176757812
+  ]
+}

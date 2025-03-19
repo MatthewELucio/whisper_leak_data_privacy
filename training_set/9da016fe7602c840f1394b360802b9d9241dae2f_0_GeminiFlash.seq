@@ -1,0 +1,35 @@
+{
+  "local_port": 42492,
+  "remote_port": 443,
+  "prompt": "Why are norms important to a conservative society?",
+  "response": "In a conservative society, norms are seen as vital for maintaining social order, stability, and traditional values. Here's why:\n\n*   **Preservation of Tradition:** Norms often embody the accumulated wisdom and practices of previous generations. Conservatives value these traditions and believe they provide a foundation for a healthy society.\n\n*   **Social Order and Stability:** Clearly defined norms provide a framework for behavior, reducing uncertainty and promoting predictability. This contributes to social order and stability, which conservatives see as essential for a well-functioning society.\n\n*   **Moral Framework:** Norms often reflect a society's moral values, guiding individuals toward what is considered right and wrong. Conservatives believe that a strong moral compass is necessary for individual and societal well-being.\n\n*   **Social Cohesion:** Shared norms create a sense of belonging and unity among members of society. This social cohesion is seen as important for a strong and resilient community.\n\n*   **Guidance and Structure:** Norms provide individuals with clear expectations and guidance, particularly during formative years. This structure is seen as beneficial for raising responsible and well-adjusted citizens.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1272,
+    350,
+    222,
+    314,
+    277,
+    490,
+    430,
+    418,
+    254,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04681992530822754,
+    0.2939770221710205,
+    0.1119849681854248,
+    0.09896397590637207,
+    0.2111499309539795,
+    0.18586301803588867,
+    0.3330261707305908,
+    0.28027987480163574,
+    0.23393511772155762,
+    0.016853809356689453,
+    0.0,
+    0.0
+  ]
+}

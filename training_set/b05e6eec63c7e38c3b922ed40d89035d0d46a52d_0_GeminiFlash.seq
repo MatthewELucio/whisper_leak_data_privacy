@@ -1,0 +1,37 @@
+{
+  "local_port": 36800,
+  "remote_port": 443,
+  "prompt": "Is Bernie Sanders a populist?",
+  "response": "Yes, Bernie Sanders is widely considered a populist. Here's why:\n\n*   **Anti-establishment rhetoric:** He consistently critiques the political and economic establishment, arguing that they are rigged in favor of the wealthy and powerful.\n\n*   **Focus on economic inequality:** A central theme of his political message is the vast disparity between the rich and the poor, advocating for policies to redistribute wealth and power.\n\n*   **Appeal to the \"common person\":** His policies and rhetoric are geared towards addressing the concerns of working-class and middle-class individuals.\n\n*   **Direct appeal to the people:** He often bypasses traditional political channels, seeking to mobilize popular support through rallies and grassroots organizing.\n\nWhile most observers agree that Sanders is a populist, some scholars have offered a more nuanced analysis. They differentiate between left-wing and right-wing populism, noting that Sanders' populism is rooted in socialist ideals and focuses on economic justice, distinguishing him from right-wing populists who often emphasize nationalism and cultural grievances.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    243,
+    349,
+    314,
+    340,
+    416,
+    501,
+    358,
+    313,
+    190,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.047473907470703125,
+    0.3471689224243164,
+    0.0012660026550292969,
+    0.04184603691101074,
+    0.09590911865234375,
+    0.18508386611938477,
+    0.2140810489654541,
+    0.26508498191833496,
+    0.3121199607849121,
+    0.11748409271240234,
+    0.01350092887878418,
+    0.0,
+    0.0
+  ]
+}

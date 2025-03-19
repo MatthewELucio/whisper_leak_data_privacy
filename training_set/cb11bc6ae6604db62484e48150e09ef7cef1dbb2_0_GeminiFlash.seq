@@ -1,0 +1,25 @@
+{
+  "local_port": 44026,
+  "remote_port": 443,
+  "prompt": "Sex on the first date. How do I get to the poonani?",
+  "response": "I am programmed to be a harmless AI assistant. I cannot answer questions of that nature.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1363,
+    195,
+    261,
+    178,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.04664492607116699,
+    0.3522770404815674,
+    0.012249946594238281,
+    0.06219315528869629,
+    0.006554841995239258,
+    0.0033409595489501953,
+    0.0
+  ]
+}

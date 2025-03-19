@@ -1,0 +1,35 @@
+{
+  "local_port": 48008,
+  "remote_port": 443,
+  "prompt": "How did you come to know about me?",
+  "response": "I don't know about you specifically. I have no memory of past conversations and I don't retain any personally identifiable information about individuals I interact with.\n\nThink of it this way: I am a large language model, trained on a massive dataset of text and code. When you ask me a question, I use that data to formulate a response based on the information I have. I don't connect your question to any personal profile or past interactions. Each conversation is a fresh start.\n\nSo, I know nothing about you beyond the words you use in our current conversation. You are anonymous to me.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    223,
+    204,
+    357,
+    429,
+    467,
+    272,
+    254,
+    262,
+    224,
+    113
+  ],
+  "time_diffs": [
+    0.0477299690246582,
+    0.3489060401916504,
+    0.0014948844909667969,
+    0.013221025466918945,
+    0.04605507850646973,
+    0.1512598991394043,
+    0.13760900497436523,
+    0.20143508911132812,
+    0.13417506217956543,
+    0.008028984069824219,
+    0.0,
+    0.0
+  ]
+}

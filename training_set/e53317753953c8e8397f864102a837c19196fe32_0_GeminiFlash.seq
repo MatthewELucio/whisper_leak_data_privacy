@@ -1,0 +1,33 @@
+{
+  "local_port": 49302,
+  "remote_port": 443,
+  "prompt": "General: What is the Meaning of \"Do you have a mirror in your pocket? cuz i can see myself in your pants!\"",
+  "response": "This is a flirtatious (and arguably cheesy) pickup line. The person saying it is implying:\n\n*   They find the other person attractive.\n*   They are making a suggestive comment about the other person's pants (and what's inside them).\n*   The phrase \"I can see myself in your pants\" can be interpreted as wanting a sexual relationship with the person.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    295,
+    193,
+    220,
+    233,
+    372,
+    251,
+    163,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.0466618537902832,
+    0.3639070987701416,
+    0.0013110637664794922,
+    0.028589963912963867,
+    0.14390206336975098,
+    0.09710288047790527,
+    0.1118011474609375,
+    0.07804298400878906,
+    0.0069048404693603516,
+    0.00010609626770019531,
+    0.0014650821685791016
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 55718,
+  "remote_port": 443,
+  "prompt": "Is it okay to wash your body after playing basketball?",
+  "response": "Yes, it is absolutely okay, and in fact, **highly recommended** to wash your body after playing basketball!\n\nHere's why:\n\n*   **Hygiene:** Basketball is a sweaty activity. Sweat mixed with dirt and oil can clog pores and lead to acne or other skin problems.\n*   **Odor:** Sweat can create unpleasant body odor.\n*   **Muscle recovery:** A shower, especially one with temperature variation (warm to cool), can help relax muscles and aid in recovery.\n*   **Prevents the spread of germs:** You're likely touching other people and surfaces while playing, so washing helps prevent the spread of germs and bacteria.\n\nIn short, washing your body after basketball is important for hygiene, health, and preventing unpleasant odors.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    301,
+    151,
+    238,
+    381,
+    400,
+    368,
+    373,
+    218,
+    291,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.04829216003417969,
+    0.4094560146331787,
+    0.0014979839324951172,
+    0.02029895782470703,
+    0.07115602493286133,
+    0.09208297729492188,
+    0.2340869903564453,
+    0.20801997184753418,
+    0.27405595779418945,
+    0.03795504570007324,
+    0.008708953857421875,
+    0.0,
+    0.0
+  ]
+}

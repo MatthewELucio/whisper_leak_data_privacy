@@ -1,0 +1,41 @@
+{
+  "local_port": 55958,
+  "remote_port": 443,
+  "prompt": "How much money did Chetan Bhagat pay to Times of India for promoting his novel \"Half Girlfriend\" on the front page?",
+  "response": "It's impossible to know the exact amount Chetan Bhagat (or his publisher) paid to The Times of India for front-page promotion of \"Half Girlfriend.\" Here's why:\n\n*   **Confidential Agreements:** Advertising rates and promotional deals are almost always confidential between the advertiser (in this case, the publisher) and the media outlet (The Times of India).\n*   **Variable Pricing:** The cost of a front-page advertisement in a major newspaper like The Times of India is extremely variable. It depends on factors like:\n\n    *   **Size of the ad:** A full front page ad would cost significantly more than a smaller strip.\n    *   **Placement:** Specific placement on the front page can influence the price.\n    *   **Circulation:** The Times of India has different editions with varying circulation numbers.\n    *   **Day of the week:** Weekends often command higher rates.\n    *   **Negotiations:** Publishers often negotiate rates with media outlets, especially for large campaigns or long-term deals.\n    *   **Creative elements:** The format (like a jacket) will have an impact on cost\n\n*   **Barter or Package Deals:** Sometimes, promotions aren't just about a simple cash transaction. There might be a barter arrangement (e.g., the publisher provides advertising space in their own publications to The Times of India) or it could be part of a larger package deal covering multiple promotional activities.\n\n**General Estimates:**\n\n*   While I can't give you a precise number, a front-page advertisement in a major national newspaper like The Times of India would likely cost **millions of rupees** (tens or hundreds of thousands of US dollars) for a single day. For a wraparound, costs can be multiples of this.\n\n**In conclusion, the exact figure is a closely guarded secret between the involved parties.**",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    94,
+    202,
+    336,
+    494,
+    407,
+    415,
+    405,
+    413,
+    399,
+    407,
+    310,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.04597902297973633,
+    0.389542818069458,
+    0.0018241405487060547,
+    0.1058809757232666,
+    0.08788609504699707,
+    0.18915796279907227,
+    0.16605186462402344,
+    0.26305103302001953,
+    0.28105902671813965,
+    0.4909219741821289,
+    0.35900211334228516,
+    0.32346391677856445,
+    0.008300065994262695,
+    0.0,
+    0.0
+  ]
+}

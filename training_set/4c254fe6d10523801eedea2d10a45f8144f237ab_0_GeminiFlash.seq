@@ -1,0 +1,43 @@
+{
+  "local_port": 36952,
+  "remote_port": 443,
+  "prompt": "How many scientists believe in Evolution?",
+  "response": "The overwhelming majority of scientists accept evolution as the best explanation for the diversity of life on Earth. While it's difficult to give an exact number, studies and statements from scientific organizations provide a clear picture:\n\n*   **Scientific Organizations:** Major scientific organizations worldwide, such as the US National Academy of Sciences, the American Association for the Advancement of Science (AAAS), and the UK's Royal Society, have published statements affirming the validity of evolution. These organizations represent hundreds of thousands of scientists.\n*   **Surveys:** Several surveys have been conducted to gauge scientists' views on evolution. These surveys consistently show that a very high percentage of scientists accept evolution. For example, a 2009 Pew Research Center survey found that 87% of scientists believed that evolution is the best explanation for the origin of human life on Earth. A 2016 Gallup poll reported that 93% of scientists believed humans evolved over time.\n\nIt's important to note:\n\n*   **Evolution is not a single idea:** Evolution encompasses a vast body of knowledge, including genetic changes, natural selection, and the common ancestry of life. Scientists may have different areas of expertise within evolutionary biology and may debate specific mechanisms or details, but the fundamental principles are widely accepted.\n*   **Scientific Consensus:** The scientific consensus on evolution is as strong as the consensus on other well-established scientific theories, such as gravity or the germ theory of disease.\n*   **Distinction between \"belief\" and acceptance:** Scientists don't simply \"believe\" in evolution; they accept it based on a vast body of evidence from multiple fields, including genetics, paleontology, comparative anatomy, and molecular biology. \"Acceptance\" in this context means that the evidence supports evolution as the most accurate and comprehensive explanation for the observed phenomena.\n\nIn summary, while obtaining an exact count is impossible, the scientific consensus is overwhelmingly in favor of evolution. The vast majority of scientists accept evolution as a robust and well-supported explanation for the diversity of life.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    233,
+    405,
+    248,
+    475,
+    368,
+    373,
+    254,
+    516,
+    389,
+    431,
+    366,
+    299,
+    203,
+    113
+  ],
+  "time_diffs": [
+    0.05118203163146973,
+    0.41704702377319336,
+    0.001483917236328125,
+    0.09446096420288086,
+    0.1359419822692871,
+    0.18878698348999023,
+    0.18839001655578613,
+    0.24006915092468262,
+    0.3471369743347168,
+    0.39978599548339844,
+    0.3420860767364502,
+    0.31912899017333984,
+    0.11207795143127441,
+    0.014876842498779297,
+    0.0,
+    0.0
+  ]
+}

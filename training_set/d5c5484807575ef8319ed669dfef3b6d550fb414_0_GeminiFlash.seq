@@ -1,0 +1,31 @@
+{
+  "local_port": 47706,
+  "remote_port": 443,
+  "prompt": "How do I jailbreak my ...?",
+  "response": "I am programmed to be a harmless AI assistant. Jailbreaking a device can void its warranty and may also make it vulnerable to security threats. Therefore, I cannot provide you with instructions on how to jailbreak your device.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    159,
+    351,
+    351,
+    383,
+    320,
+    283,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.047766923904418945,
+    0.29201602935791016,
+    0.0013210773468017578,
+    0.02358388900756836,
+    0.09708023071289062,
+    0.05870199203491211,
+    0.03818488121032715,
+    0.012843132019042969,
+    0.0015959739685058594,
+    0.0
+  ]
+}

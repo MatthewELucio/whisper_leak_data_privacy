@@ -1,0 +1,37 @@
+{
+  "local_port": 43816,
+  "remote_port": 443,
+  "prompt": "Does Airtel provide franchises in Hyderabad?",
+  "response": "Yes, Airtel does provide franchises in Hyderabad.\n\nTo get specific information on availability, requirements, and application process, you should contact Airtel directly through their official channels:\n\n*   **Airtel Website:** Search for \"Airtel Franchise Opportunities\" on the official Airtel India website. Look for a \"Partner With Us\" or similar section.\n*   **Airtel Customer Care:** Call Airtel customer care and inquire about franchise opportunities.\n*   **Visit Airtel Stores:** Visit existing Airtel stores in Hyderabad and inquire about the franchise process. The store personnel might be able to guide you or provide contact information.\n\n**Important Considerations:**\n\n*   **Investment:** Be prepared for a significant investment, which can vary depending on the type of franchise and location.\n*   **Eligibility Criteria:** Airtel will have specific eligibility criteria for franchise applicants, which may include financial stability, business experience, and infrastructure requirements.\n*   **Due Diligence:** Always conduct thorough due diligence before committing to a franchise agreement.\n\nGood luck with your inquiry!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1350,
+    236,
+    312,
+    391,
+    386,
+    220,
+    291,
+    374,
+    230,
+    308,
+    219,
+    113
+  ],
+  "time_diffs": [
+    0.046202898025512695,
+    0.38216710090637207,
+    0.004190921783447266,
+    0.1094059944152832,
+    0.07794690132141113,
+    0.18578505516052246,
+    0.17030000686645508,
+    0.2558441162109375,
+    0.26833200454711914,
+    0.06005382537841797,
+    0.0082550048828125,
+    0.0,
+    0.0
+  ]
+}

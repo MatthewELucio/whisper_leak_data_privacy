@@ -1,0 +1,29 @@
+{
+  "local_port": 43750,
+  "remote_port": 443,
+  "prompt": "Are you on Facebook or not?",
+  "response": "I am a large language model, trained by Google. I do not have personal accounts on social media platforms like Facebook.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    115,
+    337,
+    262,
+    231,
+    251,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.04810285568237305,
+    0.3652610778808594,
+    0.0012841224670410156,
+    0.005005836486816406,
+    0.07052302360534668,
+    0.03293299674987793,
+    0.011880159378051758,
+    0.0014498233795166016,
+    0.00014019012451171875
+  ]
+}

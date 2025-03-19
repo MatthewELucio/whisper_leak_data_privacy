@@ -1,0 +1,43 @@
+{
+  "local_port": 40722,
+  "remote_port": 443,
+  "prompt": "Why is Quora eliminating topic-based moderation?",
+  "response": "Quora is **not** eliminating all topic-based moderation. Instead, they are **evolving their moderation system** to rely less on topic-specific volunteer moderators and more on:\n\n*   **AI and machine learning:** Quora is investing heavily in AI to detect and remove content that violates their policies, aiming for faster and more consistent enforcement across the platform.\n*   **Centralized, trained moderation teams:** They are building larger, dedicated teams of trained moderators who are responsible for enforcing Quora's policies across all topics.\n*   **Community reporting:** Users can still flag content for review, and these reports are a key input for the centralized moderation teams and AI models.\n\nHere are some of the reasons Quora is making these changes:\n\n*   **Inconsistency and bias:** Topic-based moderation relied on volunteers, who may have had varying interpretations of Quora's policies or personal biases, leading to inconsistent enforcement across different topics. Some topics were heavily moderated, while others were largely unmoderated.\n*   **Scalability:** As Quora grew, it became increasingly difficult to find and manage enough volunteer moderators for every topic.\n*   **Quality of moderation:** Not all volunteer moderators were equally effective or well-trained in applying Quora's policies. The quality of moderation could vary significantly from topic to topic.\n*   **Efficiency:** AI and centralized moderation teams can often review content more quickly and efficiently than volunteer moderators.\n*   **Transparency:** AI can be more transparent than human volunteer moderators, because it is able to generate reports on its actions.\n\nIn summary, Quora is shifting away from relying solely on topic-based volunteer moderation to a more centralized, AI-driven system in an effort to improve consistency, scalability, efficiency, and quality of moderation across the platform. They believe this approach will lead to a better overall experience for users.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    248,
+    369,
+    448,
+    288,
+    421,
+    323,
+    276,
+    343,
+    366,
+    289,
+    342,
+    166,
+    134,
+    113
+  ],
+  "time_diffs": [
+    0.04771590232849121,
+    0.44807004928588867,
+    0.001394033432006836,
+    0.0040378570556640625,
+    0.08645105361938477,
+    0.09396004676818848,
+    0.16921687126159668,
+    0.18800020217895508,
+    0.26308584213256836,
+    0.2580130100250244,
+    0.3834700584411621,
+    0.33844804763793945,
+    0.3294029235839844,
+    0.006386995315551758,
+    0.0,
+    0.0
+  ]
+}

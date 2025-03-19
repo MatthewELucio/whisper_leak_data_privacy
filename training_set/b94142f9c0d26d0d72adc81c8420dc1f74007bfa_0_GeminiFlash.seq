@@ -1,0 +1,35 @@
+{
+  "local_port": 51852,
+  "remote_port": 443,
+  "prompt": "What is the use of microbeads in cosmetics?",
+  "response": "Microbeads were used in cosmetics primarily for two main purposes:\n\n*   **Exfoliation:** They acted as physical exfoliants to remove dead skin cells and debris from the skin's surface. This was particularly common in facial scrubs, body washes, and toothpastes.\n\n*   **Texture and Feel:** They contributed to the texture and feel of the product, providing a smooth or creamy sensation. They could also be used to enhance the spreadability of the cosmetic.\n\nHowever, due to environmental concerns, their use has been widely banned in many countries. The small size of microbeads allowed them to easily pass through water filtration systems, leading to pollution of waterways and potential harm to aquatic life.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    298,
+    238,
+    281,
+    385,
+    426,
+    307,
+    326,
+    231,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.049259185791015625,
+    0.4455227851867676,
+    0.0014920234680175781,
+    0.02628803253173828,
+    0.05988001823425293,
+    0.0951070785522461,
+    0.19633197784423828,
+    0.1527090072631836,
+    0.20735406875610352,
+    0.0069179534912109375,
+    0.0,
+    0.0
+  ]
+}

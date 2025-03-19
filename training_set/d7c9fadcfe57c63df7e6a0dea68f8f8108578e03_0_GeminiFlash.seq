@@ -1,0 +1,35 @@
+{
+  "local_port": 38668,
+  "remote_port": 443,
+  "prompt": "Will yongnuo RF 603 ii RF triggers allows High speed sync triggering?",
+  "response": "No, the Yongnuo RF-603 II triggers **do not** support High-Speed Sync (HSS).\n\nThey are basic manual triggers, meaning they only support:\n\n*   **Basic firing:** They tell the flash to fire.\n*   **Single firing mode:** they fire only once per trigger.\n\nTo use HSS, you need triggers that specifically advertise and support it. Look for triggers like the Yongnuo YN-622C/N or other brands like Godox XPro, Profoto, etc. that clearly state HSS compatibility.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    166,
+    262,
+    359,
+    353,
+    244,
+    233,
+    219,
+    136,
+    203,
+    113
+  ],
+  "time_diffs": [
+    0.04512810707092285,
+    0.30079007148742676,
+    0.0014247894287109375,
+    0.029253005981445312,
+    0.06609416007995605,
+    0.07492804527282715,
+    0.28714489936828613,
+    0.19504809379577637,
+    0.14698481559753418,
+    0.0074651241302490234,
+    0.0,
+    0.0
+  ]
+}

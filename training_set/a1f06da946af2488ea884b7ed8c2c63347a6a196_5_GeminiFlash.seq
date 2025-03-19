@@ -1,0 +1,29 @@
+{
+  "local_port": 48840,
+  "remote_port": 443,
+  "prompt": "Is money laundering a legally actionable offense?",
+  "response": "Yes, money laundering is a legally actionable offense in most jurisdictions around the world, including the United States. It is a federal crime in the US, as outlined in Title 18, Section 1956 and 1957 of the United States Code.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1353,
+    259,
+    434,
+    324,
+    307,
+    196,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.04751920700073242,
+    0.3783438205718994,
+    0.023813962936401367,
+    0.029987096786499023,
+    0.05998706817626953,
+    0.1316540241241455,
+    0.008265972137451172,
+    0.0014879703521728516,
+    0.001447916030883789
+  ]
+}

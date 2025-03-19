@@ -1,0 +1,41 @@
+{
+  "local_port": 45910,
+  "remote_port": 443,
+  "prompt": "Who is more qualified to be president trump or clinton?",
+  "response": "Both Donald Trump and Hillary Clinton have extensive experience in politics and public service, but their qualifications and approaches differ significantly.\n\n**Donald Trump**\n\n*   **Experience:** Businessman, television personality. He had never held elected office prior to becoming president.\n*   **Policies and Ideologies:** Generally aligned with conservative and populist ideologies. Focused on deregulation, tax cuts, and stricter immigration policies.\n*   **Leadership Style:** Known for his unconventional and often confrontational communication style. Emphasized nationalist policies and \"America First\" approach.\n\n**Hillary Clinton**\n\n*   **Experience:** Former First Lady, U.S. Senator, and Secretary of State.\n*   **Policies and Ideologies:** Generally aligned with liberal and progressive ideologies. Focused on social justice, healthcare reform, and international cooperation.\n*   **Leadership Style:** Known for her experience in diplomacy and policy-making. Emphasized pragmatic and incremental approaches to governing.\n\n**Qualifications Considered Important by Voters:**\n\nVoters often consider factors such as:\n\n*   **Experience:** Relevant experience in government or a related field.\n*   **Policy Knowledge:** Understanding of key policy issues and ability to articulate clear policy positions.\n*   **Leadership Qualities:** Ability to lead and inspire, make difficult decisions, and work with others.\n*   **Character and Integrity:** Trustworthiness, ethical conduct, and a commitment to public service.\n\n**Conclusion:**\n\nUltimately, who is \"more qualified\" is subjective and depends on what qualities and experiences a voter values most. Some may prioritize Trump's business acumen and outsider perspective, while others may favor Clinton's extensive political experience and policy expertise.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    268,
+    318,
+    246,
+    497,
+    324,
+    268,
+    283,
+    471,
+    368,
+    321,
+    246,
+    134,
+    113
+  ],
+  "time_diffs": [
+    0.04771900177001953,
+    0.2703418731689453,
+    0.0013189315795898438,
+    0.1547532081604004,
+    0.08704280853271484,
+    0.2521200180053711,
+    0.2599520683288574,
+    0.1960139274597168,
+    0.26320910453796387,
+    0.4102189540863037,
+    0.3656771183013916,
+    0.0962059497833252,
+    0.011998891830444336,
+    0.0,
+    0.0
+  ]
+}

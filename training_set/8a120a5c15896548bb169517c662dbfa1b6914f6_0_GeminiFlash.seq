@@ -1,0 +1,35 @@
+{
+  "local_port": 54438,
+  "remote_port": 443,
+  "prompt": "Did the French ever fight for the Nazis?",
+  "response": "Yes, some French citizens fought for Nazi Germany during World War II. Here's a breakdown:\n\n*   **The Vichy Regime:** The Vichy government, which collaborated with Nazi Germany after the occupation of France in 1940, established the *Milice*, a political paramilitary organization that helped the Germans hunt down members of the Resistance, Jews, and other groups deemed undesirable by the Nazis.\n*   **The Charlemagne Division:** The most well-known French unit that fought for the Nazis was the *Charlemagne Division* (originally the *L\u00e9gion des Volontaires Fran\u00e7ais contre le Bolch\u00e9visme*). This unit was made up of French volunteers who fought on the Eastern Front against the Soviet Union.\n\nIt's important to note that these individuals and organizations represented a minority of the French population. The majority either actively resisted the Nazi occupation or remained neutral.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1321,
+    136,
+    391,
+    428,
+    325,
+    386,
+    514,
+    369,
+    253,
+    191,
+    113
+  ],
+  "time_diffs": [
+    0.046753883361816406,
+    0.447202205657959,
+    0.0467529296875,
+    0.045829057693481445,
+    0.07096290588378906,
+    0.20439505577087402,
+    0.17576289176940918,
+    0.2961249351501465,
+    0.21222305297851562,
+    0.009763002395629883,
+    0.0,
+    5.1021575927734375e-05
+  ]
+}

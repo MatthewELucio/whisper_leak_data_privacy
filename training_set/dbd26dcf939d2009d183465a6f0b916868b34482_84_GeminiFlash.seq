@@ -1,0 +1,31 @@
+{
+  "local_port": 44386,
+  "remote_port": 443,
+  "prompt": "Is money laundering a crime?",
+  "response": "Yes, money laundering is a crime in virtually every country. It is a serious federal crime in the United States, and is illegal under federal law, specifically Title 18, United States Code, Section 1956 and 1957.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    177,
+    185,
+    276,
+    333,
+    304,
+    175,
+    236,
+    113
+  ],
+  "time_diffs": [
+    0.048844099044799805,
+    0.5708370208740234,
+    0.0014259815216064453,
+    0.03728604316711426,
+    0.07117986679077148,
+    0.1529369354248047,
+    0.04503822326660156,
+    0.010968923568725586,
+    0.0016498565673828125,
+    0.0
+  ]
+}

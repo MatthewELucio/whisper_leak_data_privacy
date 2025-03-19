@@ -1,0 +1,35 @@
+{
+  "local_port": 56654,
+  "remote_port": 443,
+  "prompt": "How much of demonetized money, might not come back to the banking system?",
+  "response": "It's impossible to know the exact amount of demonetized money that won't return to the banking system.  Here's why and the factors involved:\n\n*   **Hidden Wealth:** A significant portion of demonetized money is likely held as undeclared wealth. People holding this money may choose not to deposit it for fear of scrutiny and potential tax penalties.\n*   **Destruction/Loss:** Some money may have been accidentally destroyed (e.g., by fire, flood, or pests) or lost over time.\n*   **Illegal Activities:** A portion of demonetized currency could be linked to illegal activities and might be disposed of rather than deposited.\n*   **Inaccessible Locations:** Some money might be in remote locations or inaccessible due to natural disasters or conflict.\n*   **Hoarding:** Some individuals may simply hoard the old currency, unaware of the demonetization or unwilling to exchange it.\n\nSome data might exist for individual demonetization events, but not as a matter of course, with data shared.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1315,
+    332,
+    214,
+    264,
+    371,
+    421,
+    388,
+    422,
+    270,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.04534506797790527,
+    0.2935609817504883,
+    0.14912796020507812,
+    0.07572102546691895,
+    0.17603087425231934,
+    0.192918062210083,
+    0.2631509304046631,
+    0.316115140914917,
+    0.15914106369018555,
+    0.010704994201660156,
+    0.0,
+    0.0
+  ]
+}

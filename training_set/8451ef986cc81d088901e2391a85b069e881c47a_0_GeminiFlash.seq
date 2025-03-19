@@ -1,0 +1,37 @@
+{
+  "local_port": 33788,
+  "remote_port": 443,
+  "prompt": "Is a kitesurfing launch being planned for Cooley Landing in East Palo Alto?",
+  "response": "I haven't found any information about a specific, planned kitesurfing launch at Cooley Landing in East Palo Alto.\n\nTo find out if kitesurfing is planned for Cooley Landing you should try the following:\n\n*   **Contact the City of East Palo Alto:** Reach out to the city's Parks and Recreation Department or City Hall directly to inquire about permits or any planned events related to kitesurfing.\n*   **Check the City of East Palo Alto website:** Check the city's official website for any posted news, events or park regulations.\n*   **Search local kitesurfing groups:** Local kitesurfing clubs or organizations might have information about permitted locations or planned activities in the area. Online forums or social media groups dedicated to kitesurfing in the San Francisco Bay Area could be helpful.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    248,
+    230,
+    207,
+    317,
+    468,
+    197,
+    279,
+    327,
+    195,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.044996023178100586,
+    0.3287630081176758,
+    0.001338958740234375,
+    0.049482107162475586,
+    0.04591083526611328,
+    0.12003803253173828,
+    0.1811389923095703,
+    0.1629941463470459,
+    0.30612993240356445,
+    0.07272005081176758,
+    0.013188838958740234,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 40786,
+  "remote_port": 443,
+  "prompt": "What is Inc company?",
+  "response": "\"Inc.\" is an abbreviation for \"Incorporated.\" It's a legal designation that a company uses after its name to indicate that it's a corporation.\n\nHere's a breakdown of what that means:\n\n*   **Corporation:** A corporation is a legal entity separate from its owners (shareholders). This means the corporation itself is responsible for its debts and obligations, not the individual owners.\n\n*   **Incorporation:** The process of forming a corporation is called incorporation. It involves registering the business with the state government.\n\n*   **Limited Liability:** One of the key benefits of incorporation is limited liability. The personal assets of the shareholders are generally protected from the company's debts and lawsuits.\n\n*   **Other Designations:** Other similar designations include \"Ltd.\" (Limited), \"LLC\" (Limited Liability Company), and \"PC\" (Professional Corporation). The specific designation depends on the type of business and the state's laws.\n\nIn short, \"Inc.\" after a company name indicates that it is a corporation, offering its owners limited liability protection.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1292,
+    199,
+    193,
+    330,
+    365,
+    374,
+    423,
+    492,
+    368,
+    282,
+    188,
+    113
+  ],
+  "time_diffs": [
+    0.044051170349121094,
+    0.37094998359680176,
+    0.007490873336791992,
+    0.10915899276733398,
+    0.09601998329162598,
+    0.10912108421325684,
+    0.20415186882019043,
+    0.2787160873413086,
+    0.22832798957824707,
+    0.1334540843963623,
+    0.015166044235229492,
+    0.0,
+    0.0
+  ]
+}

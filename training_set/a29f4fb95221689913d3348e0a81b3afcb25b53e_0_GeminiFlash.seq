@@ -1,0 +1,41 @@
+{
+  "local_port": 33524,
+  "remote_port": 443,
+  "prompt": "How do you add a profile picture on Quora?",
+  "response": "Adding a profile picture on Quora is straightforward:\n\n1.  **Log into your Quora account:** Go to quora.com and sign in using your email, Google account, or Facebook account.\n\n2.  **Navigate to your profile:** Click on your current profile picture (if you have one) or the placeholder icon in the top right corner of the screen. This will open a dropdown menu. Select \"Profile\" from the menu.\n\n3.  **Edit your profile picture:** Once on your profile page, hover your mouse over the existing profile picture (or the placeholder if you don't have one).  You should see a small camera icon or the words \"Edit Profile Picture\" appear. Click on it.\n\n4.  **Upload a new picture:** This will open a window where you can upload a picture from your computer. Click the \"Upload\" button (or it might say \"Choose File\", \"Browse\", etc. depending on your browser) and select the image file you want to use.\n\n5.  **Adjust the picture:** After uploading, you'll usually be able to crop and adjust the picture to fit the circular profile frame. Use the zoom and positioning controls to make it look the way you want.\n\n6.  **Save your changes:**  Once you're satisfied with the adjustments, click the \"Save\" or \"Apply\" button (the exact wording may vary).  Your new profile picture should now be visible on your Quora profile.\n\n**Important Considerations:**\n\n*   **Image Size and Format:** While Quora doesn't explicitly state specific size requirements, it's best to use a square image with a decent resolution (e.g., 500x500 pixels or larger). Common image formats like JPG, PNG, and GIF are generally supported.\n*   **Image Quality:** A clear, high-quality image will look better.\n*   **Appropriateness:** Choose a profile picture that represents you professionally and is appropriate for the Quora community. Avoid using offensive or inappropriate images.\n*   **Privacy:** Keep in mind that your profile picture will be publicly visible on Quora.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1277,
+    378,
+    260,
+    219,
+    366,
+    406,
+    315,
+    307,
+    345,
+    376,
+    373,
+    274,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.044384002685546875,
+    0.2896578311920166,
+    0.09199810028076172,
+    0.09303903579711914,
+    0.17019104957580566,
+    0.15979504585266113,
+    0.23916387557983398,
+    0.2907369136810303,
+    0.32614707946777344,
+    0.32311511039733887,
+    0.3582139015197754,
+    0.2579810619354248,
+    0.0117950439453125,
+    0.0,
+    0.00011301040649414062
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 59380,
+  "remote_port": 443,
+  "prompt": "What does this say (in English and Kanji)?",
+  "response": "Please provide me with the text you want me to translate! I need the text in either English or Kanji (or both) before I can tell you what it says.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1442,
+    301,
+    377,
+    275,
+    166,
+    214,
+    113
+  ],
+  "time_diffs": [
+    0.04537200927734375,
+    0.3095569610595703,
+    0.016783952713012695,
+    0.05203104019165039,
+    0.08307909965515137,
+    0.00989389419555664,
+    0.0013709068298339844,
+    0.0001270771026611328
+  ]
+}

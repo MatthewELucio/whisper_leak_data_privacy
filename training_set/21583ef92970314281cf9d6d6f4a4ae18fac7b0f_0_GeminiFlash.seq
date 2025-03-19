@@ -1,0 +1,43 @@
+{
+  "local_port": 60954,
+  "remote_port": 443,
+  "prompt": "What is cost of addidas brazuca (football)?",
+  "response": "The price of an Adidas Brazuca football varied widely depending on the quality, size, and where it was sold. Since it was the official match ball of the 2014 FIFA World Cup, it's no longer in regular production.\n\nHere's a general idea of the price range you might have seen back then, and what you might find now:\n\n*   **Official Match Ball (OMB):** These were the highest quality and most expensive. In 2014, they would have sold for around **$160 - $200 USD**. Finding one now would likely be more, especially if it's new and in good condition, as it would be considered a collector's item. Expect to pay a premium on sites like eBay.\n\n*   **Replica Balls:** These were made with less expensive materials and sold for less. Prices would have been in the range of **$30 - $50 USD.**\n\n*   **Training Balls:** These were generally more durable and designed for everyday use. They may have cost around **$40 - $60 USD.**\n\n**Where to look now (if you want to buy one):**\n\n*   **eBay:** This is probably your best bet for finding a Brazuca, especially an official match ball. Be sure to check the seller's feedback and carefully examine photos of the ball.\n*   **Other online auction sites:** Similar to eBay, check other online auction sites.\n*   **Sports memorabilia shops:** Some specialty shops might have one in stock.\n\nWhen looking to buy, pay close attention to the condition of the ball. Is it new, used, inflated, deflated? These factors will influence the price.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    191,
+    269,
+    445,
+    426,
+    231,
+    217,
+    403,
+    364,
+    365,
+    435,
+    393,
+    277,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.045102834701538086,
+    0.38944005966186523,
+    0.0005540847778320312,
+    0.011368989944458008,
+    0.1123189926147461,
+    0.09596586227416992,
+    0.1530320644378662,
+    0.1621100902557373,
+    0.3261120319366455,
+    0.29776883125305176,
+    0.3664519786834717,
+    0.4053480625152588,
+    0.1411740779876709,
+    0.01175689697265625,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 42114,
+  "remote_port": 443,
+  "prompt": "What is the meaning of \"gross amount\"?",
+  "response": "The \"gross amount\" refers to the **total amount of something before any deductions or expenses are taken out.** It's the raw, initial figure.\n\nHere's a breakdown with examples:\n\n*   **Gross Income:** This is the total amount of money you earn before taxes, insurance, and other deductions are subtracted.\n*   **Gross Profit:** This is a company's total revenue minus the cost of goods sold (COGS). It doesn't include other operating expenses.\n*   **Gross Sales:** This is the total revenue from sales before deductions like returns, discounts, and allowances.\n*   **Gross Weight:** This is the total weight of an item, including its packaging and any containers.\n\nIn essence, the \"gross amount\" provides the initial, undiluted picture before any subtractions are made to arrive at a net or final amount.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    155,
+    191,
+    327,
+    273,
+    426,
+    442,
+    378,
+    422,
+    279,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.04766583442687988,
+    0.4470641613006592,
+    0.0013959407806396484,
+    0.017520904541015625,
+    0.09106802940368652,
+    0.09293198585510254,
+    0.17775702476501465,
+    0.1174020767211914,
+    0.306088924407959,
+    0.15701603889465332,
+    0.010421037673950195,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

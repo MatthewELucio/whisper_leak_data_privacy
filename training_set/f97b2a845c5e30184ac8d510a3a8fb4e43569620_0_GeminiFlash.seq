@@ -1,0 +1,35 @@
+{
+  "local_port": 56092,
+  "remote_port": 443,
+  "prompt": "Can Trump revoke the same-sex marriage law?",
+  "response": "The Respect for Marriage Act, which codified the right to same-sex marriage into federal law, was passed by Congress and signed into law by President Biden in 2022.\n\nA president cannot unilaterally repeal a law passed by Congress. To repeal or change a law like the Respect for Marriage Act, Congress would have to pass new legislation to amend or repeal it. This would require a majority vote in both the House and the Senate. Then, the new legislation would need to be signed into law by the current president.\n\nEven if Congress were to pass a law repealing the Respect for Marriage Act, it would likely face legal challenges, potentially based on constitutional grounds such as equal protection under the law. The Supreme Court would then ultimately decide the law's constitutionality.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1293,
+    197,
+    432,
+    208,
+    461,
+    435,
+    491,
+    270,
+    274,
+    187,
+    113
+  ],
+  "time_diffs": [
+    0.04416799545288086,
+    0.35756778717041016,
+    0.0028221607208251953,
+    0.09191584587097168,
+    0.08022618293762207,
+    0.221221923828125,
+    0.18607401847839355,
+    0.3217029571533203,
+    0.04822492599487305,
+    0.006568193435668945,
+    0.0,
+    0.0
+  ]
+}

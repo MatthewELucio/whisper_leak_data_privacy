@@ -1,0 +1,29 @@
+{
+  "local_port": 55252,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law in most countries, including the United States and countries within the European Union, explicitly prohibits money laundering. These laws aim to combat financial crimes and prevent the proceeds of illegal activities from being integrated into the legitimate financial system.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1450,
+    297,
+    400,
+    444,
+    276,
+    238,
+    162,
+    113
+  ],
+  "time_diffs": [
+    0.045738935470581055,
+    0.3832418918609619,
+    0.01781916618347168,
+    0.07098102569580078,
+    0.1428389549255371,
+    0.06321191787719727,
+    0.009031057357788086,
+    0.0015349388122558594,
+    0.0
+  ]
+}

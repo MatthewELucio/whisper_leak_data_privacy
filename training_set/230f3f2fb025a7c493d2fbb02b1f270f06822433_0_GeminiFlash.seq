@@ -1,0 +1,39 @@
+{
+  "local_port": 33452,
+  "remote_port": 443,
+  "prompt": "Which was first smart mobile in the world?",
+  "response": "The generally accepted answer is the **IBM Simon Personal Communicator**, released in 1994.\n\nWhile not fitting the *modern* definition of a smartphone perfectly (it lacked a dedicated app store, for example), it had many features we associate with smartphones today, including:\n\n*   **Touchscreen interface:**  It used a resistive touchscreen.\n*   **Mobile phone capabilities:**  It could make and receive calls.\n*   **PDA features:**  It had a calendar, address book, world clock, calculator, notepad, email, and the ability to send and receive faxes.\n*   **Custom Applications:** While not an app store, it supported third party PCMCIA cards which could be used to load custom applications, however, there was no way to download and install new applications from a server.\n\nWhile there were other devices that arguably had some \"smart\" features before the Simon, the Simon is generally considered the first device to combine these features into a single, truly mobile device in a way that resembles a modern smartphone.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    98,
+    248,
+    224,
+    204,
+    499,
+    219,
+    516,
+    350,
+    307,
+    186,
+    216,
+    113
+  ],
+  "time_diffs": [
+    0.04522895812988281,
+    0.4215068817138672,
+    0.0015251636505126953,
+    0.017492055892944336,
+    0.05495882034301758,
+    0.1027681827545166,
+    0.13814377784729004,
+    0.18913602828979492,
+    0.33699917793273926,
+    0.280289888381958,
+    0.1127939224243164,
+    0.01129603385925293,
+    0.0,
+    0.0
+  ]
+}

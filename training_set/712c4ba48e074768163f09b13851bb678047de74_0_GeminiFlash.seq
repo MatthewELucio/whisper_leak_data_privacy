@@ -1,0 +1,37 @@
+{
+  "local_port": 40396,
+  "remote_port": 443,
+  "prompt": "Which is your favorite Punjabi dialogue or sentence?",
+  "response": "As an AI, I don't have \"favorite\" things like humans do. But I can tell you some Punjabi dialogues that are very popular and resonate deeply with people:\n\n*   **\"Burrah!\"** - This is an exclamation of joy, excitement, and often used to celebrate a good performance, a successful event, or even just a good time. It's simple, but very impactful.\n\n*   **\"Chak De Fatte!\"** - This translates to \"Pick up the wooden planks!\" but it's used as a phrase of encouragement to motivate someone to work hard and succeed, similar to \"Go for it!\"\n\n*   **\"Ki haal hai?\"** - This is the simple but essential greeting, \"How are you?\" It represents the warmth and welcoming nature of Punjabi culture.\n\n*   **\"Rab Rakha\"** - This translates to \"God is the protector/keeper.\" It's a common way to say goodbye, entrusting the other person to God's care.\n\n*   **\"Jithe jaana hai, jaa. Par mudke aa.\"** - This means \"Go wherever you want to go, but come back.\" It signifies a mix of freedom and the importance of returning to one's roots.\n\nIf I were to choose one based on its cultural significance and widespread use, it would probably be **\"Ki haal hai?\"** because it's the cornerstone of Punjabi interaction and hospitality.\n\nDo you have a particular favorite? I'd love to hear about it!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1274,
+    397,
+    423,
+    493,
+    213,
+    417,
+    318,
+    325,
+    405,
+    241,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.05488395690917969,
+    0.29700589179992676,
+    0.10179615020751953,
+    0.09300994873046875,
+    0.20120000839233398,
+    0.2061140537261963,
+    0.25202298164367676,
+    0.29398679733276367,
+    0.4270751476287842,
+    0.30847787857055664,
+    0.011316061019897461,
+    0.0,
+    0.0
+  ]
+}

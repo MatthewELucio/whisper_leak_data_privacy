@@ -1,0 +1,31 @@
+{
+  "local_port": 38280,
+  "remote_port": 443,
+  "prompt": "What are the top 10 rich Tanzania 2016?",
+  "response": "I do not have access to a specific and definitive list of the top 10 richest people in Tanzania for the year 2016. Rankings of wealth can be difficult to ascertain precisely, as much of the information is private or based on estimates. Public sources like Forbes do not consistently publish detailed wealth rankings for Tanzania specifically.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    172,
+    209,
+    330,
+    197,
+    486,
+    276,
+    207,
+    113
+  ],
+  "time_diffs": [
+    0.053977012634277344,
+    0.3736600875854492,
+    0.0015070438385009766,
+    0.036374807357788086,
+    0.059906005859375,
+    0.08495497703552246,
+    0.2531111240386963,
+    0.015037059783935547,
+    0.0015790462493896484,
+    0.0012559890747070312
+  ]
+}

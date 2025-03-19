@@ -1,0 +1,25 @@
+{
+  "local_port": 47846,
+  "remote_port": 443,
+  "prompt": "Which party will win election in 2017 in punjab?",
+  "response": "The Indian National Congress won the 2017 Punjab Assembly elections with 77 seats.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1379,
+    235,
+    360,
+    207,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.04646801948547363,
+    0.3380730152130127,
+    0.026135921478271484,
+    0.05163717269897461,
+    0.00837087631225586,
+    0.0016009807586669922,
+    0.0
+  ]
+}

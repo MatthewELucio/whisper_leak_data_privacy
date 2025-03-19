@@ -1,0 +1,41 @@
+{
+  "local_port": 35274,
+  "remote_port": 443,
+  "prompt": "Is money laundering a legally actionable offense?",
+  "response": "Yes, money laundering is a legally actionable offense in most countries, including the United States. It's a federal crime under various statutes, most notably:\n\n*   **18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments):** This statute prohibits a wide range of activities involving financial transactions with the proceeds of specified unlawful activities (SUAs). It covers actions taken with the intent to promote, conceal, or evade taxes.\n*   **18 U.S.C. \u00a7 1957 (Engaging in Monetary Transactions in Property Derived from Specified Unlawful Activity):** This statute makes it illegal to engage in monetary transactions involving property derived from SUAs if the value of the property exceeds $10,000.\n\nViolations of these laws can result in severe penalties, including:\n\n*   **Criminal Penalties:** Fines, imprisonment (often lengthy terms), and asset forfeiture.\n*   **Civil Penalties:** Significant monetary penalties and other sanctions.\n\nMoney laundering laws are enforced by various government agencies, including:\n\n*   **The Department of Justice (DOJ):** Prosecutes money laundering cases.\n*   **The Federal Bureau of Investigation (FBI):** Investigates money laundering.\n*   **The Internal Revenue Service (IRS):** Investigates financial crimes, including money laundering.\n*   **The Financial Crimes Enforcement Network (FinCEN):** Collects and analyzes financial intelligence to combat money laundering and other financial crimes.\n\nSo, to reiterate, money laundering is absolutely a legally actionable offense with serious consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    205,
+    300,
+    305,
+    389,
+    288,
+    413,
+    395,
+    287,
+    389,
+    517,
+    169,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.045413970947265625,
+    0.3504159450531006,
+    0.0012679100036621094,
+    0.027901172637939453,
+    0.05363178253173828,
+    0.13124418258666992,
+    0.21000885963439941,
+    0.1799790859222412,
+    0.30315589904785156,
+    0.2581210136413574,
+    0.39076900482177734,
+    0.37728404998779297,
+    0.010410070419311523,
+    0.0,
+    0.0
+  ]
+}

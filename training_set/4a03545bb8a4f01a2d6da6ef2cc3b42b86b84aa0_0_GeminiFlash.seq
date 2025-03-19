@@ -1,0 +1,31 @@
+{
+  "local_port": 49936,
+  "remote_port": 443,
+  "prompt": "Is Rep. Ryan simultaneously campaigning for a house seat and the position of Vice President?",
+  "response": "As of October 2024, this information is not accurate. Paul Ryan is no longer a member of the House of Representatives. He served as a U.S. Representative for Wisconsin's 1st congressional district from 1999 to 2019 and served as Speaker of the House from 2015 to 2019. He was also the Republican Party's nominee for Vice President in 2012, running alongside Mitt Romney. He is now a private citizen.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1510,
+    224,
+    402,
+    259,
+    423,
+    268,
+    139,
+    177,
+    113
+  ],
+  "time_diffs": [
+    0.0461580753326416,
+    0.29668092727661133,
+    0.11199116706848145,
+    0.15894198417663574,
+    0.11413192749023438,
+    0.1379849910736084,
+    0.06889104843139648,
+    0.008972883224487305,
+    0.0014519691467285156,
+    0.003329038619995117
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 57524,
+  "remote_port": 443,
+  "prompt": "Who is the voice behind Big Boss on Big Boss reality show?",
+  "response": "The voice of Bigg Boss in the Hindi version of the show is provided by **Atul Kapoor**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1276,
+    206,
+    270,
+    392,
+    199,
+    231,
+    113
+  ],
+  "time_diffs": [
+    0.04539680480957031,
+    0.3303182125091553,
+    0.02885890007019043,
+    0.09006810188293457,
+    0.016838788986206055,
+    0.009877204895019531,
+    0.001689910888671875,
+    0.009272098541259766
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 49750,
+  "remote_port": 443,
+  "prompt": "What is a good summary of the modern intersectional social justice, progressive, politically correct, cultural Marxist ideology?",
+  "response": "This ideology can be summarized as a framework that emphasizes the interconnected nature of social categorizations such as race, class, gender, and sexual orientation, creating overlapping systems of discrimination or disadvantage. It critiques societal structures and norms, identifying power imbalances and advocating for social justice through activism, advocacy, and policy changes. Key tenets include:\n\n*   **Intersectionality:** Understanding that individuals experience multiple forms of oppression based on their various social identities.\n*   **Social Justice:** Aiming to achieve equity and fairness by addressing systemic inequalities and challenging discriminatory practices.\n*   **Progressivism:** Advocating for social change and reform to address perceived injustices and improve society for marginalized groups.\n*   **Political Correctness:** Promoting inclusive language and behavior to avoid offense and marginalization of specific groups.\n*   **Cultural Marxism:** (A controversial term) Critiques cultural norms and institutions, arguing that they reinforce dominant power structures and perpetuate inequalities. It is often used pejoratively to suggest that these ideas are a threat to traditional values and social order.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    362,
+    317,
+    399,
+    468,
+    492,
+    361,
+    278,
+    234,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.0449671745300293,
+    0.306689977645874,
+    0.1299140453338623,
+    0.08317399024963379,
+    0.2300260066986084,
+    0.20305395126342773,
+    0.2590010166168213,
+    0.2930159568786621,
+    0.04999494552612305,
+    0.011027097702026367,
+    0.0,
+    0.0
+  ]
+}

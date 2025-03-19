@@ -1,0 +1,37 @@
+{
+  "local_port": 47088,
+  "remote_port": 443,
+  "prompt": "How long do y'all record for? Is there a lot you edit out?",
+  "response": "As a large language model, I don't actually \"record\" anything in the way a person or a recording device does. I don't have a microphone or a memory of past conversations that I store in a chronological fashion.\n\nThink of it this way: each time you ask me a question, it's like I'm starting fresh. Your prompt (the question you ask) is fed into my system, and I use all my knowledge and algorithms to generate the best possible response.\n\nSo, to answer your questions more directly:\n\n*   **How long do y'all record for?** I don't record at all. Every interaction is a fresh start.\n*   **Is there a lot you edit out?** There's no recording to edit. The response I generate is built up in real-time. My creators constantly work on improving my models and implementing safety measures to prevent the generation of harmful or inappropriate responses. These measures operate at a system level and aren't akin to 'editing'.\n\nI hope this clarifies how I operate!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    207,
+    232,
+    228,
+    317,
+    319,
+    494,
+    448,
+    360,
+    310,
+    161,
+    113
+  ],
+  "time_diffs": [
+    0.04722285270690918,
+    0.3051331043243408,
+    0.0014719963073730469,
+    0.1123960018157959,
+    0.09504199028015137,
+    0.17206907272338867,
+    0.23010492324829102,
+    0.25299501419067383,
+    0.32065606117248535,
+    0.13132381439208984,
+    0.009277105331420898,
+    0.0,
+    0.0
+  ]
+}

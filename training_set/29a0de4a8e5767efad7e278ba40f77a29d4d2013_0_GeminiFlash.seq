@@ -1,0 +1,33 @@
+{
+  "local_port": 60330,
+  "remote_port": 443,
+  "prompt": "What is \u2018double diameter\u2019 in a circle?",
+  "response": "The term \"double diameter\" in a circle is simply **twice the diameter**. Since the diameter is twice the radius, the double diameter is **four times the radius**.\n\nSo, if:\n\n*   radius (r) = 5\n*   diameter (d) = 2r = 10\n*   double diameter = 2d = 20  or 4r = 20",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    295,
+    168,
+    351,
+    249,
+    251,
+    232,
+    204,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.055581092834472656,
+    0.4072139263153076,
+    0.0015709400177001953,
+    0.012328147888183594,
+    0.08713579177856445,
+    0.07592010498046875,
+    0.14522790908813477,
+    0.06736898422241211,
+    0.010079145431518555,
+    0.0031299591064453125,
+    0.00018405914306640625
+  ]
+}

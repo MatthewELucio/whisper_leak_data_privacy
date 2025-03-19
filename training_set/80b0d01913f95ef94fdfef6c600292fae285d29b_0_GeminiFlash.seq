@@ -1,0 +1,35 @@
+{
+  "local_port": 35138,
+  "remote_port": 443,
+  "prompt": "Will I become a billionaire as a black man in America?",
+  "response": "Becoming a billionaire is statistically rare, regardless of race or gender. While there are successful Black billionaires in America who serve as inspiring examples, like Oprah Winfrey, Jay-Z, and Robert F. Smith, the path to that level of wealth is complex and depends on a multitude of factors. These include:\n\n*   **Education:** Access to quality education and relevant skills.\n*   **Career Choices:** Industries with high-growth potential or entrepreneurial ventures.\n*   **Financial Discipline:** Saving, investing, and managing finances wisely.\n*   **Networking:** Building relationships and accessing opportunities.\n*   **Market Conditions:** Favorable economic conditions and industry trends.\n*   **Systemic Barriers:** Overcoming potential biases and inequalities in access to funding, opportunities, and resources.\n\nIt's important to focus on your goals, develop your talents, and work hard to achieve success in your chosen field. While becoming a billionaire is a challenging goal, focusing on building wealth and making a positive impact is within reach.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1399,
+    298,
+    349,
+    283,
+    311,
+    518,
+    432,
+    235,
+    190,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.04797101020812988,
+    0.3319370746612549,
+    0.11499500274658203,
+    0.18908905982971191,
+    0.17112088203430176,
+    0.2459120750427246,
+    0.23108506202697754,
+    0.308150053024292,
+    0.11276578903198242,
+    0.00915217399597168,
+    0.0,
+    0.0
+  ]
+}

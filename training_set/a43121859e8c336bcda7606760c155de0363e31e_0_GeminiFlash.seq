@@ -1,0 +1,37 @@
+{
+  "local_port": 50448,
+  "remote_port": 443,
+  "prompt": "What is 3E - 3 tier AC in Duronto?",
+  "response": "3E in Duronto Express trains refers to **Economy AC 3-tier**.\n\nHere's a breakdown:\n\n*   **3:** 3-tier AC (air-conditioned compartments with three berths on each side)\n*   **E:** Economy (This usually means smaller berths compared to regular 3 AC and possibly fewer amenities to keep the fare lower.)\n*   **Duronto:** a type of long-distance, non-stop or fewer-stops train in India.\n\n**Key Differences from Regular 3 AC (3A):**\n\n*   **Fare:** Typically, 3E is cheaper than regular 3 AC.\n*   **Berth Size:** 3E berths *may* be slightly narrower or shorter compared to 3A.\n*   **Amenities:** The level of amenities *might* be marginally less than 3A. This could include things like individual reading lights, charging points, or side tables, although this is usually minor.\n\nTherefore, 3E in Duronto is a budget-friendly option for air-conditioned travel, providing a comfortable journey at a lower cost than the standard 3 AC class.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1375,
+    289,
+    289,
+    233,
+    472,
+    218,
+    398,
+    379,
+    385,
+    158,
+    163,
+    113
+  ],
+  "time_diffs": [
+    0.044873952865600586,
+    0.42998790740966797,
+    0.003244161605834961,
+    0.11944985389709473,
+    0.07697200775146484,
+    0.2280571460723877,
+    0.21900701522827148,
+    0.22015786170959473,
+    0.31905412673950195,
+    0.22719597816467285,
+    0.005857944488525391,
+    0.0,
+    0.0
+  ]
+}

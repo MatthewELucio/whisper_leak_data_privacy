@@ -1,0 +1,31 @@
+{
+  "local_port": 34258,
+  "remote_port": 443,
+  "prompt": "Hi I want to share for something?",
+  "response": "Okay! I'm ready. What would you like to share? I'm happy to listen and provide support or feedback as needed. Just let me know what's on your mind!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    233,
+    149,
+    302,
+    234,
+    407,
+    147,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.04602789878845215,
+    0.3344290256500244,
+    0.0016980171203613281,
+    0.0415499210357666,
+    0.08101415634155273,
+    0.07697296142578125,
+    0.026044845581054688,
+    0.009980201721191406,
+    0.0,
+    0.0016939640045166016
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 48768,
+  "remote_port": 443,
+  "prompt": "Will Donald Trump make Russia great again?",
+  "response": "That's a complex political topic without a simple answer. Different people have very different views about Trump's policies toward Russia.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    989,
+    427,
+    411,
+    413,
+    432,
+    422,
+    427,
+    422,
+    411,
+    414,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.023916006088256836,
+    0.26296091079711914,
+    0.28615713119506836,
+    0.07100892066955566,
+    0.0369260311126709,
+    0.043035030364990234,
+    0.05805802345275879,
+    0.03992295265197754,
+    0.045974016189575195,
+    0.04916691780090332,
+    0.047441959381103516,
+    0.037055015563964844,
+    0.07802319526672363,
+    0.2932889461517334,
+    0.0
+  ]
+}

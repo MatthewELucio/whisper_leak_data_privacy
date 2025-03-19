@@ -1,0 +1,31 @@
+{
+  "local_port": 34202,
+  "remote_port": 443,
+  "prompt": "Which is correct: \"a hour\" or \"an hour\"?",
+  "response": "\"An hour\" is correct.\n\nThe choice between \"a\" and \"an\" depends on the *sound* of the word that follows. Use \"an\" before words that begin with a vowel sound. Even though \"hour\" starts with the consonant \"h,\" it's pronounced with a silent \"h,\" so it begins with a vowel sound.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1495,
+    335,
+    364,
+    247,
+    453,
+    284,
+    241,
+    135,
+    113
+  ],
+  "time_diffs": [
+    0.04755091667175293,
+    0.33425307273864746,
+    0.013921022415161133,
+    0.06291699409484863,
+    0.1172339916229248,
+    0.1289219856262207,
+    0.05297994613647461,
+    0.010889053344726562,
+    0.0016620159149169922,
+    0.0
+  ]
+}

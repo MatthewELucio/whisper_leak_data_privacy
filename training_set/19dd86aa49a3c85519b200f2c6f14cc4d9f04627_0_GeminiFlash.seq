@@ -1,0 +1,35 @@
+{
+  "local_port": 38908,
+  "remote_port": 443,
+  "prompt": "In IIT Bombay medical studies are there or not?",
+  "response": "No, IIT Bombay does not have a dedicated medical school or offer MBBS (Bachelor of Medicine and Bachelor of Surgery) degrees.\n\nHowever, it does have a:\n\n*   **Department of Biosciences and Bioengineering (BSBE):** This department focuses on research and education in areas related to biology, biotechnology, and biomedical engineering.\n\n*   **Healthcare Technology Innovation Centre (HTIC):** This center works on developing innovative healthcare technologies.\n\nSo, while IIT Bombay doesn't offer traditional medical degrees like MBBS, it has significant activities in related fields like biomedical engineering, biotechnology, and healthcare technology, which contribute to the broader healthcare ecosystem.\n\nIn summary: IIT Bombay does *not* have medical studies in the sense of an MBBS program or a medical school.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1286,
+    293,
+    429,
+    214,
+    423,
+    280,
+    449,
+    265,
+    228,
+    161,
+    113
+  ],
+  "time_diffs": [
+    0.045629024505615234,
+    0.36554384231567383,
+    0.003787994384765625,
+    0.10327601432800293,
+    0.08989906311035156,
+    0.1890878677368164,
+    0.179063081741333,
+    0.284714937210083,
+    0.031222105026245117,
+    0.014429092407226562,
+    0.0,
+    0.0
+  ]
+}

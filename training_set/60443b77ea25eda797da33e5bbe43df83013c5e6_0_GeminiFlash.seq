@@ -1,0 +1,27 @@
+{
+  "local_port": 52570,
+  "remote_port": 443,
+  "prompt": "What is your current Facebook cover pic?",
+  "response": "I am a large language model, an AI. I don't have a Facebook account, so I don't have a cover photo.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1265,
+    238,
+    220,
+    379,
+    315,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.04675912857055664,
+    0.4120450019836426,
+    0.013761043548583984,
+    0.0865328311920166,
+    0.04566597938537598,
+    0.00786900520324707,
+    0.0017201900482177734,
+    0.0
+  ]
+}

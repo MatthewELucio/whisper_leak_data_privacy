@@ -1,0 +1,41 @@
+{
+  "local_port": 45388,
+  "remote_port": 443,
+  "prompt": "Does it hurt to get stitches removed?",
+  "response": "Generally, stitch removal doesn't usually *hurt*, but it can be a little uncomfortable. Most people describe it as a pulling or tugging sensation.\n\nHere's why it's usually not painful and some factors that can influence the experience:\n\n*   **No nerve endings are being cut:** The stitches are being snipped and pulled out, not digging into nerves.\n*   **The skin is usually healed:** By the time stitches are removed, the incision has typically healed enough that the skin is no longer as sensitive.\n*   **Quick process:** The whole process is usually very quick.\n\nHowever, some things can make it slightly more uncomfortable:\n\n*   **Tight stitches:** If the stitches were put in tightly, they may pull a bit more when removed.\n*   **Infection or irritation:** If the area around the stitches is infected or irritated, it might be more sensitive.\n*   **Location:** Some areas of the body are more sensitive than others.\n*   **Stitches grown into the skin:** In rare cases, the stitches can become embedded in the skin. This can make removal more difficult and potentially a bit more uncomfortable.\n*   **Anxiety:** If you are nervous about getting stitches removed, you may be more aware of any sensation and perceive it as more painful.\n\n**Tips for a smoother experience:**\n\n*   **Relax:** Try to relax your muscles while the stitches are being removed.\n*   **Communicate:** If you feel any pain, let the person removing the stitches know.\n*   **Trust the professional:** They are experienced in removing stitches and will do it as gently as possible.\n\n**In summary:** Stitch removal is usually a quick and relatively painless procedure. You might feel a tugging sensation, but it shouldn't be very painful. If you are concerned, talk to your doctor or the person removing the stitches.\n\n**Important Note:** This information is for general knowledge and does not substitute professional medical advice. Always consult with a healthcare provider for any medical concerns.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1263,
+    421,
+    393,
+    429,
+    249,
+    290,
+    447,
+    485,
+    452,
+    399,
+    412,
+    298,
+    231,
+    113
+  ],
+  "time_diffs": [
+    0.0516209602355957,
+    0.27292919158935547,
+    0.16323089599609375,
+    0.07801103591918945,
+    0.20888590812683105,
+    0.20144414901733398,
+    0.2686958312988281,
+    0.29487109184265137,
+    0.3807640075683594,
+    0.3381989002227783,
+    0.4096360206604004,
+    0.0721590518951416,
+    0.015666961669921875,
+    0.0,
+    0.0
+  ]
+}

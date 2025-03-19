@@ -1,0 +1,41 @@
+{
+  "local_port": 32858,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, the U.S. government has numerous laws against money laundering. The primary ones are:\n\n*   **The Bank Secrecy Act (BSA) of 1970:** This act is the foundation of U.S. anti-money laundering (AML) and counter-terrorism financing (CTF) efforts. It requires financial institutions to keep records and file reports on certain transactions that could indicate money laundering, tax evasion, or other criminal activities.\n*   **The Money Laundering Control Act of 1986:** This act made money laundering a federal crime. It prohibits knowingly engaging in financial transactions with the proceeds of certain crimes (specified unlawful activity or SUA) with the intent to promote the criminal activity, conceal the proceeds, or avoid transaction reporting requirements.\n*   **The USA PATRIOT Act of 2001:** Passed in response to the September 11th attacks, this act significantly expanded the BSA and MLCA. It broadened the definition of financial institutions subject to AML requirements, increased due diligence requirements for financial institutions dealing with foreign accounts, and made it easier to share information between law enforcement and financial institutions.\n\nThese laws, along with their subsequent amendments and implementing regulations, form the basis of the U.S. government's fight against money laundering. Various government agencies, such as the Financial Crimes Enforcement Network (FinCEN) and the Department of Justice, are responsible for enforcing these laws.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    120,
+    294,
+    306,
+    328,
+    463,
+    327,
+    512,
+    351,
+    443,
+    433,
+    296,
+    164,
+    113
+  ],
+  "time_diffs": [
+    0.04581809043884277,
+    0.3951139450073242,
+    0.0014231204986572266,
+    0.03039693832397461,
+    0.058714866638183594,
+    0.08145523071289062,
+    0.16276288032531738,
+    0.19292306900024414,
+    0.29944300651550293,
+    0.24790596961975098,
+    0.38112497329711914,
+    0.13018298149108887,
+    0.007646083831787109,
+    0.0,
+    0.0
+  ]
+}

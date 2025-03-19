@@ -1,0 +1,29 @@
+{
+  "local_port": 55528,
+  "remote_port": 443,
+  "prompt": "Why is it that \"ugly\" girls are so easy going and friendly while \"beautiful\" girls are rather \"reserved\"?",
+  "response": "Generalizations about personality based on appearance are not accurate and can be harmful. Everyone is an individual, and their behavior is shaped by a multitude of factors, including their upbringing, experiences, personality traits, and the way they are treated by others.\n\nAttributing specific personality traits to people based on whether they are considered \"ugly\" or \"beautiful\" is a stereotype. Stereotypes can perpetuate prejudice and discrimination, and they don't reflect the complexity and diversity of human personalities.\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1285,
+    268,
+    454,
+    344,
+    461,
+    213,
+    155,
+    113
+  ],
+  "time_diffs": [
+    0.0473940372467041,
+    0.29487109184265137,
+    0.1509559154510498,
+    0.09309506416320801,
+    0.18279600143432617,
+    0.15205788612365723,
+    0.007912158966064453,
+    0.0,
+    0.0
+  ]
+}

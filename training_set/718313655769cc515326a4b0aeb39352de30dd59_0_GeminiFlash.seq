@@ -1,0 +1,41 @@
+{
+  "local_port": 56640,
+  "remote_port": 443,
+  "prompt": "How long can white wine last after it has been open?",
+  "response": "White wine can generally last **3-5 days** in the refrigerator after opening. Here's a breakdown:\n\n*   **Lighter, Crisp Whites (Sauvignon Blanc, Pinot Grigio):** Tend to lose their flavor more quickly, so aim for **3 days.**\n\n*   **Fuller-Bodied Whites (Chardonnay, Viognier):** May last up to **5 days.**\n\nHere are some tips to maximize the lifespan of your open white wine:\n\n*   **Refrigerate Immediately:** Cold temperatures slow down oxidation.\n\n*   **Reseal Properly:** Use the original cork or a wine stopper to create a tight seal.\n\n*   **Use Inert Gas Wine Preserver:** Products like Private Preserve inject argon gas into the bottle, displacing oxygen.\n\n*   **Store Upright:** This reduces the surface area exposed to oxygen.\n\n**Signs your white wine has gone bad:**\n\n*   **Vinegar Smell:** A strong, vinegary aroma is a telltale sign of oxidation.\n\n*   **Off-Putting Flavors:** Flavors may be sour, bitter, or generally unpleasant.\n\n*   **Loss of Freshness:** The wine loses its vibrant flavors and aromas.\n\n*   **Brownish Tint:** While not always a definite sign, a noticeable browning can indicate oxidation.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    257,
+    393,
+    240,
+    242,
+    341,
+    422,
+    296,
+    427,
+    354,
+    297,
+    219,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.048284053802490234,
+    0.5924689769744873,
+    0.0015230178833007812,
+    0.018754959106445312,
+    0.07063698768615723,
+    0.07508397102355957,
+    0.1929020881652832,
+    0.16318583488464355,
+    0.3148620128631592,
+    0.32506895065307617,
+    0.36905503273010254,
+    0.016450166702270508,
+    0.009999990463256836,
+    0.0,
+    0.0
+  ]
+}

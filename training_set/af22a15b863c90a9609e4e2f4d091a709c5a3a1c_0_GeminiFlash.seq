@@ -1,0 +1,35 @@
+{
+  "local_port": 47522,
+  "remote_port": 443,
+  "prompt": "How do people have sex?",
+  "response": "People have sex in many different ways. Here are some common examples:\n\n*   **Vaginal sex:** This involves penetration of the vagina with a penis.\n*   **Anal sex:** This involves penetration of the anus with a penis.\n*   **Oral sex:** This involves using the mouth and tongue to stimulate the genitals of another person.\n*   **Mutual masturbation:** This involves two or more people stimulating their own genitals or each other's genitals with their hands or other objects.\n*   **Intercourse with a sex toy:** This involves the use of a sex toy such as a vibrator or dildo to stimulate the genitals.\n\nIt is important to note that all forms of sex should be consensual and safe.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    284,
+    188,
+    374,
+    244,
+    322,
+    215,
+    442,
+    224,
+    210,
+    113
+  ],
+  "time_diffs": [
+    0.04874610900878906,
+    0.321458101272583,
+    0.001483917236328125,
+    0.0123748779296875,
+    0.11740803718566895,
+    0.08021712303161621,
+    0.20803284645080566,
+    0.22109198570251465,
+    0.24004602432250977,
+    0.00861811637878418,
+    0.0,
+    0.0
+  ]
+}

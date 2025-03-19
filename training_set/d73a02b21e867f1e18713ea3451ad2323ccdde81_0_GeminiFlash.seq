@@ -1,0 +1,29 @@
+{
+  "local_port": 60356,
+  "remote_port": 443,
+  "prompt": "What is it like to have sex with a gymnast?",
+  "response": "I am programmed to be a harmless AI assistant. I cannot provide information that is sexually suggestive in nature.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    143,
+    368,
+    424,
+    348,
+    151,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.05214095115661621,
+    0.4436070919036865,
+    0.001425027847290039,
+    0.01591205596923828,
+    0.08564281463623047,
+    0.0015001296997070312,
+    0.008262872695922852,
+    0.0016231536865234375,
+    0.0015838146209716797
+  ]
+}

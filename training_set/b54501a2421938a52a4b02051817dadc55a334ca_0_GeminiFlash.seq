@@ -1,0 +1,39 @@
+{
+  "local_port": 57266,
+  "remote_port": 443,
+  "prompt": "Is it illegal to download movie with torrent in India?",
+  "response": "Yes, downloading copyrighted movies via torrents in India is illegal.\n\nHere's a breakdown:\n\n*   **Copyright Law:** India's Copyright Act, 1957, protects the rights of copyright holders (e.g., movie studios, filmmakers). Downloading a copyrighted movie without permission infringes on these rights.\n\n*   **Infringement:** Downloading a movie via torrent is generally considered copyright infringement because you are making an unauthorized copy of the work. Torrenting also involves uploading parts of the file to other users, which constitutes distribution, another form of infringement.\n\n*   **Consequences:**\n    *   **Civil Penalties:** Copyright holders can sue infringers for damages.\n    *   **Criminal Penalties:** Authorities can also pursue criminal charges, which may lead to imprisonment and/or fines.\n\nWhile the enforcement of these laws against individual downloaders can be inconsistent, the risk of legal consequences is real. It is always advisable to use legal streaming services or purchase movies to avoid copyright infringement.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    150,
+    251,
+    293,
+    402,
+    265,
+    421,
+    429,
+    297,
+    360,
+    213,
+    168,
+    113
+  ],
+  "time_diffs": [
+    0.04744601249694824,
+    0.33033084869384766,
+    0.0014200210571289062,
+    0.01125192642211914,
+    0.07714700698852539,
+    0.0979921817779541,
+    0.23292088508605957,
+    0.16394400596618652,
+    0.2762010097503662,
+    0.3590879440307617,
+    0.023925065994262695,
+    0.010769128799438477,
+    0.0,
+    0.0
+  ]
+}

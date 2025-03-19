@@ -1,0 +1,41 @@
+{
+  "local_port": 38466,
+  "remote_port": 443,
+  "prompt": "What can you say about my birth chart ?",
+  "response": "I can definitely help you understand your birth chart! To give you a meaningful reading, I need your birth information. Please provide the following:\n\n*   **Date of birth:** (Month, Day, Year)\n*   **Time of birth:** (As accurate as possible. If you don't know the exact time, give your best guess or \"unknown.\")\n*   **Place of birth:** (City, State, Country)\n\nOnce I have this information, I can calculate your chart and tell you about:\n\n*   **Your Sun Sign:** Your core identity and ego.\n*   **Your Moon Sign:** Your emotional nature and inner self.\n*   **Your Rising Sign (Ascendant):** How you present yourself to the world, your first impression, and your physical appearance.\n*   **Planetary Placements:** The signs and houses where the planets reside, and how those placements influence various areas of your life.\n*   **Aspects:** The angles between planets, which reveal connections, challenges, and opportunities in your personality.\n*   **Houses:** The 12 houses represent different areas of life, such as career, relationships, finances, and health.\n\n**Important Considerations:**\n\n*   **Accuracy is Key:** The more accurate your birth time, the more precise your reading will be, especially for your Rising Sign and house placements. Even a few minutes can shift the Ascendant.\n\n**Example of what I can tell you:**\n\n\"With your Sun in Gemini, you're likely curious, communicative, and adaptable. However, your Moon in Sagittarius might indicate a need for freedom and a love of adventure, which could sometimes clash with Gemini's more intellectual pursuits. Your Rising Sign in Virgo might give you a practical and detail-oriented approach to life.\"\n\n**Limitations:**\n\n*   **I'm an AI:** I provide interpretations based on astrological principles, but I cannot offer personal advice or predictions.\n*   **General Interpretation:** My readings are general interpretations based on common astrological knowledge. A professional astrologer can offer a more in-depth and personalized analysis.\n\n**So, go ahead and give me your birth information, and let's explore your birth chart!**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1441,
+    402,
+    439,
+    317,
+    363,
+    435,
+    503,
+    446,
+    490,
+    460,
+    321,
+    133,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04877495765686035,
+    0.2860710620880127,
+    0.13546991348266602,
+    0.1032569408416748,
+    0.13814115524291992,
+    0.19812893867492676,
+    0.29699206352233887,
+    0.29206085205078125,
+    0.3353431224822998,
+    0.42851686477661133,
+    0.4404871463775635,
+    0.35280489921569824,
+    0.010441064834594727,
+    0.0019278526306152344,
+    0.0
+  ]
+}

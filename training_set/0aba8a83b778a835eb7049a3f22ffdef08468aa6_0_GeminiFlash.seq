@@ -1,0 +1,39 @@
+{
+  "local_port": 35412,
+  "remote_port": 443,
+  "prompt": "Is it mandatory to wear western wear during the training period in Tech Mahindra?",
+  "response": "No, it is **not mandatory** to wear Western wear during the training period at Tech Mahindra.\n\nTech Mahindra generally has a business casual dress code. While the specifics might vary slightly depending on the team and location, the general guidelines are:\n\n*   **Business Casual:** This usually means neat and professional attire that is comfortable for a work environment.\n\n*   **Acceptable Attire:** Collared shirts (polo shirts or button-down shirts), dress pants or khakis, skirts (knee-length or longer), blouses, and sweaters are generally acceptable.\n\n*   **Unacceptable Attire:** Jeans, t-shirts with graphics, shorts, athletic wear, revealing clothing, and overly casual footwear are usually not permitted.\n\n*   **Traditional Indian Attire:** Is generally accepted and often encouraged. Salwar Kameez, kurtis with pants/leggings, and sarees are perfectly appropriate.\n\n**Key takeaway:** Focus on dressing professionally and comfortably. If you're unsure, it's always best to err on the side of being slightly more formal. When in doubt, you can ask your HR representative or trainer for clarification.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    122,
+    178,
+    223,
+    391,
+    470,
+    317,
+    425,
+    494,
+    288,
+    165,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.04828906059265137,
+    0.3204460144042969,
+    0.0014119148254394531,
+    0.023585081100463867,
+    0.034887075424194336,
+    0.12816691398620605,
+    0.1688079833984375,
+    0.17846202850341797,
+    0.2588810920715332,
+    0.3503999710083008,
+    0.19775986671447754,
+    0.00893402099609375,
+    0.0,
+    0.00026106834411621094
+  ]
+}

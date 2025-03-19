@@ -1,0 +1,43 @@
+{
+  "local_port": 40502,
+  "remote_port": 443,
+  "prompt": "Should I tell this girl I like her?",
+  "response": "Okay, this is a classic question! To give you the best advice, I need a little more information.  Tell me about:\n\n1.  **How long have you known her?**\n2.  **How often do you interact?**\n3.  **What is your relationship like?** (Friends? Acquaintances? Coworkers? Classmates?)\n4.  **Have you noticed any signs that she might like you back?** (Even small ones!)\n5.  **What are you hoping to get out of telling her?** (Do you want to start dating? Just get it off your chest? Something else?)\n6.  **What are your concerns about telling her?** (Rejection? Awkwardness? Ruining the friendship?)\n\nIn the meantime, here are some general thoughts to consider:\n\n*   **Pros of telling her:**\n    *   **You'll know where you stand.** This can be a huge relief, even if the answer isn't what you hoped for.\n    *   **It could lead to a relationship.** If she feels the same way, this is the first step!\n    *   **You'll be true to yourself.** It takes courage to express your feelings.\n\n*   **Cons of telling her:**\n    *   **Rejection.** This is the biggest fear, but it's important to remember that rejection doesn't mean you're not worthy.\n    *   **Awkwardness.** Things might be a little weird for a while, especially if you're already friends.\n    *   **Potential damage to the friendship.** This is a real concern, but a good friendship can often withstand this.\n\nOnce you answer my questions above, I can give you more specific and tailored advice. Good luck!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    131,
+    226,
+    265,
+    231,
+    368,
+    439,
+    365,
+    326,
+    404,
+    303,
+    421,
+    193,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.045107126235961914,
+    0.4056577682495117,
+    0.0006601810455322266,
+    0.026257038116455078,
+    0.044975996017456055,
+    0.09017801284790039,
+    0.24802279472351074,
+    0.15895700454711914,
+    0.19812417030334473,
+    0.2685708999633789,
+    0.32360196113586426,
+    0.32388997077941895,
+    0.27672600746154785,
+    0.011195182800292969,
+    0.0,
+    0.0
+  ]
+}

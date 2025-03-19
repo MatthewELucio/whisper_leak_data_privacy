@@ -1,0 +1,29 @@
+{
+  "local_port": 44050,
+  "remote_port": 443,
+  "prompt": "Can an iPhone 5S runs iOS7 be upgraded to iOS9?",
+  "response": "Yes, an iPhone 5S running iOS 7 can be upgraded to iOS 9.\n\nHowever, the highest version of iOS that the iPhone 5S can be upgraded to is **iOS 12.5.7**.  It cannot be upgraded beyond that.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1264,
+    264,
+    354,
+    379,
+    239,
+    245,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.04555106163024902,
+    0.3070988655090332,
+    0.02200603485107422,
+    0.04782509803771973,
+    0.06804800033569336,
+    0.08391094207763672,
+    0.010824918746948242,
+    0.0017499923706054688,
+    0.0016031265258789062
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "local_port": 45470,
+  "remote_port": 443,
+  "prompt": "Is the world getting worse?",
+  "response": "That's a complex question where reasonable people disagree. Some metrics like global poverty and child mortality have improved, while other trends like climate change and political polarization are concerning. Different perspectives exist on whether the world is overall getting better or worse.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    405,
+    405,
+    409,
+    432,
+    446,
+    460,
+    458,
+    444,
+    448,
+    438,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.021310091018676758,
+    0.28137993812561035,
+    0.3532559871673584,
+    0.0,
+    0.00177001953125,
+    0.07035398483276367,
+    0.1337890625,
+    0.22500991821289062,
+    0.18408799171447754,
+    0.13308405876159668,
+    0.13853001594543457,
+    0.08839893341064453,
+    0.008621931076049805,
+    0.009465217590332031,
+    0.0,
+    0.0
+  ]
+}

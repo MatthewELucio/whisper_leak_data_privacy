@@ -1,0 +1,41 @@
+{
+  "local_port": 38424,
+  "remote_port": 443,
+  "prompt": "Why was Nikki Haley chosen to given the Republican Response to Obama's 2016 State of the Union address?",
+  "response": "Nikki Haley was chosen to give the Republican response to President Obama's 2016 State of the Union address for several strategic reasons:\n\n*   **Rising Star:** At the time, Haley was the Governor of South Carolina and was widely seen as a rising star within the Republican Party. Giving her the response put her on a national stage and boosted her profile.\n*   **Appealing to a Broader Audience:** Haley, as a woman and the daughter of Indian immigrants, brought a different perspective to the Republican Party. This was seen as an opportunity to broaden the party's appeal, particularly to minority and female voters.\n*   **Moderate Voice:** Haley was considered a more moderate voice within the Republican Party, which allowed the party to present a more reasonable and less confrontational image.\n*   **Policy Experience:** As governor, Haley had executive experience and a track record of policy accomplishments, which gave her credibility to critique the President's policies.\n*   **Response to Events in Charleston:** In 2015, Haley had received bipartisan praise for her leadership in the aftermath of the Charleston church shooting, including her efforts to remove the Confederate flag from the South Carolina Statehouse grounds. This demonstrated her ability to handle sensitive issues with grace and decisiveness.\n\nUltimately, the Republican Party likely hoped that Haley's response would help them connect with a wider range of voters, showcase a more inclusive image, and offer a compelling alternative to President Obama's vision for the country.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    95,
+    250,
+    376,
+    401,
+    302,
+    308,
+    452,
+    331,
+    525,
+    450,
+    274,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.04531407356262207,
+    0.2955141067504883,
+    0.0013568401336669922,
+    0.026386022567749023,
+    0.0590970516204834,
+    0.12499403953552246,
+    0.1362290382385254,
+    0.1922597885131836,
+    0.2991361618041992,
+    0.31054186820983887,
+    0.37439513206481934,
+    0.25241994857788086,
+    0.011491060256958008,
+    0.0,
+    0.0
+  ]
+}

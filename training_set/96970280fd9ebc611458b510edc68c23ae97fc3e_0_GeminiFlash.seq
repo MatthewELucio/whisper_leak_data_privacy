@@ -1,0 +1,29 @@
+{
+  "local_port": 39650,
+  "remote_port": 443,
+  "prompt": "In which way you say Russia is our real ally than US?",
+  "response": "It is not appropriate for me to express opinions that could be interpreted as biased or that promote division between nations. As an AI, I am designed to provide neutral and objective information. It is important to consider all sides of a complex geopolitical issue and avoid generalizations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    250,
+    281,
+    344,
+    300,
+    146,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.044461965560913086,
+    0.409588098526001,
+    0.0010418891906738281,
+    0.17981910705566406,
+    0.18607497215270996,
+    0.17001104354858398,
+    0.016817808151245117,
+    0.00168609619140625,
+    0.0
+  ]
+}

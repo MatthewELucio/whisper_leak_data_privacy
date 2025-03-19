@@ -1,0 +1,31 @@
+{
+  "local_port": 44082,
+  "remote_port": 443,
+  "prompt": "Can someone screenshot a snap after I block them?",
+  "response": "No, someone cannot screenshot a Snap after you block them. Blocking someone on Snapchat prevents them from seeing your stories, Snaps, or chatting with you. They also won't be able to see your profile or send you Snaps. Therefore, they would not be able to screenshot anything from your account after you have blocked them.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    106,
+    446,
+    282,
+    367,
+    357,
+    140,
+    235,
+    113
+  ],
+  "time_diffs": [
+    0.05205488204956055,
+    0.2920081615447998,
+    0.0013189315795898438,
+    0.11586809158325195,
+    0.1018218994140625,
+    0.19652700424194336,
+    0.00019812583923339844,
+    0.009174823760986328,
+    0.0014770030975341797,
+    0.0
+  ]
+}

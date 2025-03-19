@@ -1,0 +1,27 @@
+{
+  "local_port": 37768,
+  "remote_port": 443,
+  "prompt": "What do transformers always transform?",
+  "response": "Transformers always transform **electrical energy** from one voltage level to another, while maintaining the same frequency.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    246,
+    148,
+    359,
+    160,
+    143,
+    113
+  ],
+  "time_diffs": [
+    0.04979205131530762,
+    0.3311789035797119,
+    0.0011820793151855469,
+    0.024476051330566406,
+    0.05995798110961914,
+    0.00792694091796875,
+    0.001447916030883789,
+    0.0
+  ]
+}

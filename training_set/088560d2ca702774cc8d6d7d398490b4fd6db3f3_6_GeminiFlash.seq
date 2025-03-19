@@ -1,0 +1,41 @@
+{
+  "local_port": 47580,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, governments around the world have laws against money laundering. These laws are designed to prevent criminals from disguising the origins of illegally obtained money, making it appear legitimate.\n\nHere's a general overview:\n\n*   **Purpose:** The primary goal is to combat organized crime, terrorism, drug trafficking, and other illegal activities by disrupting the financial flows that enable them.\n*   **Key Provisions:**\n    *   **Criminalizing Money Laundering:** It's illegal to knowingly conceal, disguise, or transfer funds derived from criminal activity.\n    *   **Customer Due Diligence (CDD):** Banks and other financial institutions are required to verify the identity of their customers and understand the nature of their business.\n    *   **Suspicious Activity Reporting (SAR):** Financial institutions must report transactions that appear suspicious or unusual.\n    *   **Record Keeping:** Financial institutions are required to keep detailed records of transactions.\n    *   **International Cooperation:** Governments often cooperate internationally to share information and coordinate efforts to combat money laundering.\n*   **Examples of Laws:**\n    *   **United States:** Bank Secrecy Act (BSA), USA PATRIOT Act\n    *   **United Kingdom:** Proceeds of Crime Act\n    *   **European Union:** Anti-Money Laundering Directives\n\nIt is important to note that specific laws and regulations vary from country to country.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    121,
+    240,
+    423,
+    291,
+    481,
+    467,
+    380,
+    304,
+    402,
+    434,
+    252,
+    214,
+    113
+  ],
+  "time_diffs": [
+    0.0449371337890625,
+    0.41965389251708984,
+    0.0015130043029785156,
+    0.03724408149719238,
+    0.01606297492980957,
+    0.10590791702270508,
+    0.1812751293182373,
+    0.2172079086303711,
+    0.2580239772796631,
+    0.21137499809265137,
+    0.3028120994567871,
+    0.0735018253326416,
+    0.010471105575561523,
+    0.0,
+    0.0
+  ]
+}

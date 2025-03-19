@@ -1,0 +1,37 @@
+{
+  "local_port": 42008,
+  "remote_port": 443,
+  "prompt": "What do the people of Pakistan think of the killing of Mullah Mansour inside Pakistan?",
+  "response": "The killing of Mullah Mansour inside Pakistan is a complex and controversial issue, and public opinion is divided. Here's a breakdown of the different perspectives:\n\n*   **Government officials** publicly condemned the drone strike as a violation of Pakistan's sovereignty and territorial integrity. They viewed it as an intrusion into their affairs and a breach of international law.\n*   **Some political parties and religious groups** echoed the government's stance, criticizing the U.S. for acting unilaterally without Pakistan's consent.\n*   **Analysts and commentators** noted that the presence of Mullah Mansour in Pakistan was evidence of the country's continued support for the Taliban, despite official denials.\n*   **Ordinary citizens** held varied views. Some supported the government's condemnation of the drone strike, while others believed that Mullah Mansour's presence in Pakistan was a threat to the country's security and stability. Some people might have been happy to see him gone, regardless of how it happened.\n\nOverall, the killing of Mullah Mansour inside Pakistan sparked a debate about the country's relationship with the U.S., its role in the Afghan conflict, and the presence of militant groups on its soil.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1309,
+    237,
+    344,
+    342,
+    486,
+    275,
+    509,
+    292,
+    311,
+    179,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.04762911796569824,
+    0.4391767978668213,
+    0.0012950897216796875,
+    0.05943799018859863,
+    0.06411099433898926,
+    0.20876598358154297,
+    0.18538808822631836,
+    0.3407139778137207,
+    0.2559928894042969,
+    0.28193020820617676,
+    0.009112834930419922,
+    5.0067901611328125e-05,
+    0.00012493133544921875
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 48688,
+  "remote_port": 443,
+  "prompt": "In pregnancy, why is tetracycline contraindicated?",
+  "response": "Tetracycline is contraindicated in pregnancy due to several significant risks to the developing fetus. Here's a breakdown of the reasons:\n\n*   **Tooth Discoloration:** Tetracycline readily crosses the placenta and is deposited in fetal teeth. This can cause permanent discoloration of the teeth (yellow, gray, or brown) in the child. This is particularly problematic during the second and third trimesters when tooth development is more rapid.\n\n*   **Bone Growth Inhibition:** Tetracycline can also be deposited in fetal bones, potentially inhibiting bone growth. This can lead to skeletal abnormalities or delayed bone development.\n\n*   **Hepatotoxicity:** In the mother, tetracycline can increase the risk of liver damage (hepatotoxicity), particularly with high doses or pre-existing liver problems. While less direct, the mother's health is critical for fetal well-being.\n\n*   **Other Potential Risks:** Some studies have suggested possible associations with other developmental problems, although the evidence is less conclusive.\n\n**In summary, tetracycline is avoided during pregnancy due to the significant risks of permanent tooth discoloration and potential bone growth inhibition in the developing fetus.** Safer alternatives are available for treating infections during pregnancy, and healthcare providers will choose medications that pose the least risk to the mother and baby.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    184,
+    229,
+    300,
+    313,
+    399,
+    283,
+    359,
+    360,
+    460,
+    184,
+    158,
+    113
+  ],
+  "time_diffs": [
+    0.1210319995880127,
+    0.3637659549713135,
+    0.001425027847290039,
+    0.04568004608154297,
+    0.07710504531860352,
+    0.05381488800048828,
+    0.14603304862976074,
+    0.17892694473266602,
+    0.29599905014038086,
+    0.31693601608276367,
+    0.2867438793182373,
+    0.006594181060791016,
+    0.000537872314453125,
+    0.0
+  ]
+}

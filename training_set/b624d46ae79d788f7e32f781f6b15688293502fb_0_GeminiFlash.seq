@@ -1,0 +1,35 @@
+{
+  "local_port": 39214,
+  "remote_port": 443,
+  "prompt": "Does Microsoft have chin-up bars at its offices?",
+  "response": "While Microsoft is known for its employee perks and modern office environments, it's difficult to say definitively whether all Microsoft offices have chin-up bars.\n\nHere's what we know and what to consider:\n\n*   **Microsoft's Focus on Employee Wellness:** Microsoft invests heavily in employee health and well-being. This often includes on-site gyms, fitness centers, and wellness programs.\n\n*   **Gyms and Fitness Centers:** Many larger Microsoft campuses and offices have well-equipped gyms, which would likely include chin-up bars.\n\n*   **Varied Office Spaces:** Microsoft has offices of various sizes and types worldwide. Smaller offices might not have the space or resources for a full gym.\n\n*   **Anectodal Evidence:** It is hard to know whether all Microsoft offices have chin-up bars, and there has been no official statement by Microsoft.\n\n**Conclusion:**\n\nIt's highly probable that many, but not all, Microsoft offices, particularly larger campuses, have chin-up bars within their gyms or fitness facilities. Smaller offices may not have them.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1287,
+    240,
+    342,
+    252,
+    410,
+    307,
+    494,
+    218,
+    163,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.046775102615356445,
+    0.39879608154296875,
+    0.13516688346862793,
+    0.07897591590881348,
+    0.15905404090881348,
+    0.16814494132995605,
+    0.287783145904541,
+    0.2792649269104004,
+    0.12970709800720215,
+    0.01031494140625,
+    0.0,
+    6.29425048828125e-05
+  ]
+}

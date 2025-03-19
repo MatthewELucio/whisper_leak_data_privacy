@@ -1,0 +1,27 @@
+{
+  "local_port": 41164,
+  "remote_port": 443,
+  "prompt": "Is Honey Singh from IIT-B?",
+  "response": "Honey Singh is not from IIT-B. He attended Guru Nanak Dev Engineering College in Ludhiana.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    115,
+    234,
+    255,
+    179,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.04494595527648926,
+    0.3585190773010254,
+    0.0016388893127441406,
+    0.14171409606933594,
+    0.017902851104736328,
+    0.009710073471069336,
+    0.0014140605926513672,
+    0.0
+  ]
+}

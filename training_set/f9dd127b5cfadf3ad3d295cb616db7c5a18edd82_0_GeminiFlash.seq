@@ -1,0 +1,27 @@
+{
+  "local_port": 47514,
+  "remote_port": 443,
+  "prompt": "I want to know the head of immigration service in Malaysia?",
+  "response": "The current Director General of Immigration in Malaysia is **Dato' Ruslin bin Jusoh**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    291,
+    294,
+    417,
+    177,
+    162,
+    113
+  ],
+  "time_diffs": [
+    0.04691290855407715,
+    0.3050971031188965,
+    0.0013468265533447266,
+    0.019710063934326172,
+    0.10787701606750488,
+    0.00985407829284668,
+    0.001622915267944336,
+    0.0016150474548339844
+  ]
+}

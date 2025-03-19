@@ -1,0 +1,35 @@
+{
+  "local_port": 56082,
+  "remote_port": 443,
+  "prompt": "Why are boys so emotional?",
+  "response": "Boys and girls both experience a full range of emotions. However, societal expectations and norms can influence how emotions are expressed. Traditionally, boys may be taught to suppress or hide emotions like sadness or fear, while girls may be given more space to express them. This doesn't mean boys don't feel emotions; it may just mean they express them differently.\n\nThere is increasing awareness of the importance of emotional intelligence for everyone, regardless of gender. Encouraging boys to acknowledge and express their emotions in healthy ways can lead to better mental health and relationships.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    198,
+    193,
+    285,
+    397,
+    452,
+    426,
+    308,
+    175,
+    168,
+    113
+  ],
+  "time_diffs": [
+    0.048249006271362305,
+    0.4094669818878174,
+    0.0014770030975341797,
+    0.04033184051513672,
+    0.04704999923706055,
+    0.09527707099914551,
+    0.17089605331420898,
+    0.2061009407043457,
+    0.04098105430603027,
+    0.005897045135498047,
+    0.0,
+    0.0
+  ]
+}

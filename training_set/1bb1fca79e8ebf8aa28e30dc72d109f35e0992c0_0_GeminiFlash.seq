@@ -1,0 +1,31 @@
+{
+  "local_port": 53508,
+  "remote_port": 443,
+  "prompt": "What etnicity would you describe me as? I am originally Iranian, this is due to most questions of \"ethnicity \" options on each application form?",
+  "response": "If you are originally from Iran, the most accurate ethnicity to select on a form would depend on the specific categories provided. However, here are some options and considerations:\n\n*   **Middle Eastern:** This is a common and generally accepted way to describe people of Iranian origin, as Iran is geographically located in the Middle East.\n\n*   **West Asian:** Similar to Middle Eastern, this term is based on geography and includes Iran.\n\nIt's important to note that ethnic identity can be complex, and the best choice may depend on the specific form and the options it provides. If you are unsure, you may want to choose the option that you feel most accurately reflects your background or the one that you are most comfortable with.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1367,
+    290,
+    432,
+    258,
+    343,
+    289,
+    270,
+    123,
+    113
+  ],
+  "time_diffs": [
+    0.04541301727294922,
+    0.2797679901123047,
+    0.14494800567626953,
+    0.06796407699584961,
+    0.20003890991210938,
+    0.17202210426330566,
+    0.28107786178588867,
+    0.01175999641418457,
+    0.0016231536865234375,
+    0.0015668869018554688
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 50048,
+  "remote_port": 443,
+  "prompt": "What are the legal ramifications of money laundering?",
+  "response": "Money laundering is a serious financial crime with significant legal consequences. Generally, it can result in:\n\n1. Criminal Penalties",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    405,
+    405,
+    426,
+    139,
+    1100,
+    569,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.023546934127807617,
+    1.380518913269043,
+    0.40499401092529297,
+    0.052987098693847656,
+    0.00150299072265625,
+    0.0,
+    0.4095010757446289,
+    0.07101583480834961,
+    0.007818222045898438,
+    0.01910877227783203,
+    0.0015752315521240234
+  ]
+}

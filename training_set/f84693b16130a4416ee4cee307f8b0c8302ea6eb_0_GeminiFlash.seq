@@ -1,0 +1,39 @@
+{
+  "local_port": 34714,
+  "remote_port": 443,
+  "prompt": "Why Democracy index 2012 assigned India to flawed Democracy category?",
+  "response": "The 2012 Democracy Index, produced by the Economist Intelligence Unit (EIU), categorized India as a \"flawed democracy\" due to a combination of factors, which likely included:\n\n*   **Functioning of Government:** Issues related to corruption, bureaucratic inefficiency, and a lack of transparency in government processes could have contributed to the lower score.\n*   **Political Participation:** While India has a robust electoral process, factors such as low voter turnout among certain demographics, the influence of money and muscle power in elections, and limitations on political participation for marginalized groups may have been considered.\n*   **Political Culture:** The prevalence of communal tensions, caste-based discrimination, and societal divisions could have been seen as hindering the development of a fully democratic political culture.\n*   **Civil Liberties:** Concerns about freedom of expression, media freedom, and the protection of minority rights might have played a role.\n*   **Electoral Process and Pluralism:** Even though India has regular elections, shortcomings in the electoral system, such as gerrymandering or difficulties in voter registration, might have been noted.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    228,
+    156,
+    244,
+    389,
+    276,
+    357,
+    483,
+    289,
+    331,
+    310,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.04549002647399902,
+    0.40143299102783203,
+    0.0014870166778564453,
+    0.012248039245605469,
+    0.0883328914642334,
+    0.050077199935913086,
+    0.19301295280456543,
+    0.20407605171203613,
+    0.25488781929016113,
+    0.26993298530578613,
+    0.13788509368896484,
+    0.009792089462280273,
+    0.0,
+    0.0
+  ]
+}

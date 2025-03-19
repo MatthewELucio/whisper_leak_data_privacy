@@ -1,0 +1,43 @@
+{
+  "local_port": 48654,
+  "remote_port": 443,
+  "prompt": "Is it bad to take Plan B, the morning after pill, multiple times?",
+  "response": "Taking Plan B (levonorgestrel) multiple times is not recommended. While it's available over-the-counter and is considered safe for occasional use, repeated use can have several drawbacks:\n\n*   **Reduced effectiveness:** Plan B works by delaying ovulation. If you're already ovulating or about to, it may not be effective. Relying on it repeatedly can increase the risk of unintended pregnancy.\n*   **Menstrual cycle disruption:** Frequent use can cause irregular periods, spotting, heavier bleeding, or delays in your period.\n*   **Side effects:** Common side effects like nausea, abdominal pain, fatigue, and headache may be more pronounced with repeated use.\n*   **Not a substitute for regular contraception:** Plan B is intended for emergency use only, not as a primary method of birth control. Relying on it as your main form of contraception is less effective and can lead to more unintended pregnancies than using regular birth control methods.\n\n**Better alternatives:**\n\nIf you find yourself needing emergency contraception frequently, it's important to consider more effective and reliable forms of birth control. Options include:\n\n*   **Long-acting reversible contraceptives (LARCs):** These include IUDs (hormonal and copper) and implants, which are highly effective and can last for several years.\n*   **Prescription birth control pills, patches, or rings:** These require a prescription but are generally more effective than Plan B when taken correctly.\n*   **Barrier methods:** Condoms (male and female) are available over the counter and can be effective when used consistently and correctly.\n*   **Discuss emergency contraceptive options with your medical provider.** There are different emergency contraceptives available, including a prescription pill called ulipristal acetate (Ella) which is more effective than Plan B and can be taken within 5 days of unprotected sex.\n*   **Consider regular testing for sexually transmitted infections (STIs).**\n\nIf you are concerned about emergency contraception or unintended pregnancy, it's best to consult with a healthcare provider. They can provide personalized advice, discuss different birth control options, and help you choose the best method for your needs.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    115,
+    313,
+    436,
+    261,
+    278,
+    411,
+    345,
+    356,
+    520,
+    467,
+    383,
+    149,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.046658992767333984,
+    0.3302001953125,
+    0.0013079643249511719,
+    0.15952491760253906,
+    0.08201098442077637,
+    0.245880126953125,
+    0.18618083000183105,
+    0.2682840824127197,
+    0.3307209014892578,
+    0.37389612197875977,
+    0.42793703079223633,
+    0.45186781883239746,
+    0.27897000312805176,
+    0.006368160247802734,
+    0.0,
+    0.0
+  ]
+}

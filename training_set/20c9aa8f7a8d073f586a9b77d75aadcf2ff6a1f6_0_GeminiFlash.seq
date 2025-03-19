@@ -1,0 +1,35 @@
+{
+  "local_port": 51382,
+  "remote_port": 443,
+  "prompt": "Who is the big boss in asia?",
+  "response": "The term \"big boss\" is subjective and depends on the context. It could refer to:\n\n*   **Political Leaders:** China's President Xi Jinping is often seen as a very influential figure in Asia. Other leaders like India's Prime Minister Narendra Modi, Japan's Prime Minister Fumio Kishida, and South Korea's President Yoon Suk-yeol also hold significant power.\n\n*   **Business Leaders:** There are many powerful business figures in Asia who lead large corporations and influence economies. Jack Ma (though less so recently), Masayoshi Son, and Mukesh Ambani are examples.\n\n*   **Organized Crime:** The term \"big boss\" is often associated with organized crime. Depending on the region and the specific criminal organization, different individuals might be considered the \"big boss.\" However, it's generally not possible to definitively name such figures due to the secretive nature of organized crime.\n\nCould you please clarify what context you're interested in? This will help me provide a more specific and accurate answer.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1263,
+    245,
+    441,
+    384,
+    252,
+    303,
+    537,
+    416,
+    303,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.04702115058898926,
+    0.2877538204193115,
+    0.12186503410339355,
+    0.0881650447845459,
+    0.18288207054138184,
+    0.15803098678588867,
+    0.3180878162384033,
+    0.27831101417541504,
+    0.06430315971374512,
+    0.00933694839477539,
+    0.0,
+    0.0
+  ]
+}

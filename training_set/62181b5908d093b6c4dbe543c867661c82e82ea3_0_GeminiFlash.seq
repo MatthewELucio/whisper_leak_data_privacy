@@ -1,0 +1,41 @@
+{
+  "local_port": 41588,
+  "remote_port": 443,
+  "prompt": "Why is the Mophie case charged by a micro-USB cable, and not a lightning cable?",
+  "response": "The reason Mophie cases often use Micro-USB instead of Lightning for charging boils down to a few key factors:\n\n*   **Cost:** Micro-USB is a much cheaper technology than Lightning. Using it helps keep the overall cost of the Mophie case down. Lightning cables require a license and components from Apple, adding to the manufacturing expense.\n*   **Older Cases:** Many Mophie cases were designed and manufactured before Lightning became ubiquitous. They stuck with Micro-USB as it was a widely available standard.\n*   **Functionality/Compatibility:** A micro-USB port can charge the Mophie battery pack and power the connected device simultaneously. Some people prefer a dedicated port to allow charging with less \"drain\" on the phone's battery itself.\n*   **Standardization:** At the time many Mophie cases were designed, Micro-USB was a more universal standard for charging various devices. This meant users were more likely to already have the necessary cables.\n\nHowever, it's worth noting that **some newer Mophie cases *do* use Lightning**. This is especially true for cases designed for newer iPhones. Mophie has adapted to market trends and the increasing prevalence of Lightning. Be sure to check the specifications of the specific Mophie case you're considering to confirm its charging port type.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    262,
+    328,
+    443,
+    301,
+    247,
+    290,
+    415,
+    473,
+    377,
+    172,
+    211,
+    151,
+    113
+  ],
+  "time_diffs": [
+    0.05231904983520508,
+    0.34334397315979004,
+    0.001497030258178711,
+    0.013422966003417969,
+    0.09809613227844238,
+    0.09707188606262207,
+    0.20165205001831055,
+    0.18020009994506836,
+    0.3674159049987793,
+    0.27811408042907715,
+    0.30266499519348145,
+    0.0684669017791748,
+    0.009160041809082031,
+    0.0,
+    5.1975250244140625e-05
+  ]
+}

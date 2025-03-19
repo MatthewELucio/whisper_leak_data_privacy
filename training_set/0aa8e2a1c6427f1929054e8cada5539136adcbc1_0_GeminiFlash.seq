@@ -1,0 +1,27 @@
+{
+  "local_port": 44444,
+  "remote_port": 443,
+  "prompt": "Is mercury a radioactive element?",
+  "response": "No, mercury is not a radioactive element. While some isotopes of mercury are radioactive, the naturally occurring isotopes are stable.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    87,
+    237,
+    194,
+    260,
+    135,
+    113
+  ],
+  "time_diffs": [
+    0.04539203643798828,
+    0.3604409694671631,
+    0.0013728141784667969,
+    0.1317131519317627,
+    0.04557204246520996,
+    0.01216888427734375,
+    0.001474142074584961,
+    9.5367431640625e-07
+  ]
+}

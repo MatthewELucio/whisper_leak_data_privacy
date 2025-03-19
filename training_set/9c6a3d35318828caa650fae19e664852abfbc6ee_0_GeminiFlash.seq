@@ -1,0 +1,31 @@
+{
+  "local_port": 54774,
+  "remote_port": 443,
+  "prompt": "\"Why ravindra babu ravula left cisco?\"",
+  "response": "Unfortunately, I don't have access to specific details about an individual's employment history, including why someone might have left a company like Cisco. Information about personnel matters is generally considered private.\n\nTo find information about Ravindra Babu Ravula's career, you might try:\n\n*   **Checking his LinkedIn profile:** Often, professionals will update their LinkedIn profiles to reflect career changes and sometimes provide brief explanations.\n*   **Searching news articles or press releases:** If he held a significant role at Cisco or moved to another notable position, it's possible there could be some publicly available information.\n*   **Reaching out to him directly:** If you know him personally, you could ask him directly about his career path.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1267,
+    271,
+    312,
+    319,
+    407,
+    502,
+    176,
+    145,
+    113
+  ],
+  "time_diffs": [
+    0.04656195640563965,
+    0.34212207794189453,
+    0.10391497611999512,
+    0.09299206733703613,
+    0.18307185173034668,
+    0.19705915451049805,
+    0.275972843170166,
+    0.019006967544555664,
+    1.1920928955078125e-06,
+    0.0015368461608886719
+  ]
+}

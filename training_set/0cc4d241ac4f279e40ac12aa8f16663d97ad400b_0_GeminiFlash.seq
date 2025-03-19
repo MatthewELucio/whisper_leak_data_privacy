@@ -1,0 +1,29 @@
+{
+  "local_port": 36676,
+  "remote_port": 443,
+  "prompt": "Do women think it's weird that I really like cunnilingus?",
+  "response": "Cunnilingus is a common and well-liked sexual act. Many women enjoy it, and there's nothing inherently weird about a person enjoying giving it. \n\nAttraction and preferences vary from person to person, so while some women may not enjoy receiving oral sex or may not be compatible with someone who prioritizes it, many others will appreciate and share your enthusiasm. Open communication with your partner is key to a healthy and fulfilling sex life.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1493,
+    364,
+    245,
+    341,
+    441,
+    226,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.045577049255371094,
+    0.31375598907470703,
+    0.10790205001831055,
+    0.11894702911376953,
+    0.22827696800231934,
+    0.20304203033447266,
+    0.009799003601074219,
+    0.001405954360961914,
+    0.0017240047454833984
+  ]
+}

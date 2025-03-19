@@ -1,0 +1,39 @@
+{
+  "local_port": 53208,
+  "remote_port": 443,
+  "prompt": "On a train in India, what does SL, 1A, 2A, 3A, 2S, CC mean?",
+  "response": "On Indian Railways, these are codes for different classes of accommodation:\n\n*   **SL (Sleeper Class):** This is the most common and affordable class with open berths. It has three tiers on each side (lower, middle, upper) and two side berths (side lower, side upper). It's non-air-conditioned.\n\n*   **1A (First Class AC):** The most luxurious class. It features cabins with either two (coupe) or four (cabin) berths. It's air-conditioned and provides the most privacy.\n\n*   **2A (Second Class AC):** Air-conditioned with four berths in each compartment (two upper and two lower). More spacious than 3A.\n\n*   **3A (Third Class AC):** Air-conditioned with six berths in each compartment (lower, middle, upper, and two side berths).\n\n*   **2S (Second Seating):** This is a non-air-conditioned seating class, typically with cushioned seats. It's often unreserved, or has a mix of reserved and unreserved seating.\n\n*   **CC (AC Chair Car):** Air-conditioned seating, usually used for shorter daytime journeys. It has comfortable, reclining chairs.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    184,
+    273,
+    233,
+    237,
+    455,
+    290,
+    342,
+    275,
+    216,
+    163,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.04682588577270508,
+    0.40585994720458984,
+    0.001341104507446289,
+    0.13468098640441895,
+    0.08904600143432617,
+    0.21904397010803223,
+    0.13785600662231445,
+    0.2660660743713379,
+    0.21818804740905762,
+    0.3764638900756836,
+    0.0,
+    0.011983156204223633,
+    0.0,
+    0.0
+  ]
+}

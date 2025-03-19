@@ -1,0 +1,31 @@
+{
+  "local_port": 40624,
+  "remote_port": 443,
+  "prompt": "Could CAT exam and MAT exam take place on same day (4th December 2016)?",
+  "response": "Yes, it is possible for the CAT exam and the MAT exam to have taken place on the same day, specifically December 4th, 2016.  While the CAT exam date is generally consistent year to year, the MAT exam is conducted multiple times in a year.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    211,
+    335,
+    230,
+    388,
+    331,
+    141,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.04678201675415039,
+    0.3179750442504883,
+    0.0012688636779785156,
+    0.04961991310119629,
+    0.025054216384887695,
+    0.0791478157043457,
+    0.20239615440368652,
+    0.011284828186035156,
+    0.001730203628540039,
+    0.0
+  ]
+}

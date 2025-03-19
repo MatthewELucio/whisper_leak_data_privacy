@@ -1,0 +1,37 @@
+{
+  "local_port": 53570,
+  "remote_port": 443,
+  "prompt": "Is money laundering a legally actionable offense?",
+  "response": "Yes, money laundering is a legally actionable offense. It is a federal crime in the United States, as well as in many other countries around the world.\n\nHere's why and how:\n\n*   **Definition:** Money laundering is the process of concealing the origins of illegally obtained money, so that it appears to come from a legitimate source.\n*   **Criminalization:** Laws such as the Bank Secrecy Act and the Money Laundering Control Act in the U.S. make it illegal to engage in activities related to money laundering.\n*   **Legal Consequences:** Individuals and entities convicted of money laundering can face severe penalties, including:\n    *   **Imprisonment:** Lengthy prison sentences.\n    *   **Fines:** Substantial financial penalties, often exceeding the amount of money laundered.\n    *   **Asset Forfeiture:** The government can seize assets involved in or derived from the illegal activity.\n*   **Civil Actions:** In some cases, victims of crimes that generate laundered money may also bring civil lawsuits to recover damages.\n\nMoney laundering laws are designed to combat a wide range of criminal activities by making it more difficult for criminals to profit from their illegal actions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1271,
+    344,
+    230,
+    258,
+    451,
+    326,
+    437,
+    398,
+    415,
+    207,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04188203811645508,
+    0.30211591720581055,
+    0.028756141662597656,
+    0.05312681198120117,
+    0.08401703834533691,
+    0.23010897636413574,
+    0.21253108978271484,
+    0.19960808753967285,
+    0.2820298671722412,
+    0.28985095024108887,
+    0.011628150939941406,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 36494,
+  "remote_port": 443,
+  "prompt": "Is it bad to launder money?",
+  "response": "It is illegal to launder money. Money laundering involves hiding the source of illegally obtained money by passing it through legitimate businesses or financial systems to make it appear legal. It's a serious crime that can result in significant legal penalties, including fines and imprisonment.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    990,
+    431,
+    438,
+    444,
+    438,
+    437,
+    429,
+    443,
+    437,
+    439,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.027167797088623047,
+    0.1915760040283203,
+    0.38295602798461914,
+    0.14002704620361328,
+    0.10529112815856934,
+    0.280775785446167,
+    0.20406818389892578,
+    0.10311603546142578,
+    0.05098390579223633,
+    0.06304097175598145,
+    0.16765809059143066,
+    0.0,
+    0.07260680198669434,
+    0.02153801918029785,
+    0.0
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 33942,
+  "remote_port": 443,
+  "prompt": "How does woman's body change after losing her virginity?",
+  "response": "Losing virginity is a social construct and not a medical event. The term \"virginity\" typically refers to the state of not having engaged in sexual intercourse. There are no specific physical changes to a woman's body after she first engages in sexual intercourse. The hymen, a thin membrane that may partially cover the vaginal opening, can be stretched or torn during various activities, not just sexual intercourse. Some women may experience discomfort or bleeding the first time they have sex, but this is not universal.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    195,
+    342,
+    340,
+    259,
+    330,
+    270,
+    310,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.04602313041687012,
+    0.4948399066925049,
+    0.0013451576232910156,
+    0.17859792709350586,
+    0.09483003616333008,
+    0.2011878490447998,
+    0.18586111068725586,
+    0.0014009475708007812,
+    0.008448123931884766,
+    0.0014939308166503906,
+    9.5367431640625e-07
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 48676,
+  "remote_port": 443,
+  "prompt": "What is the most popular hashtags for Instagram in 2016?",
+  "response": "Based on various reports and analyses from 2016, here's a list of some of the most popular Instagram hashtags that year:\n\n*   **#love**: This was a consistently popular hashtag.\n*   **#instagood**: This was a consistently popular hashtag.\n*   **#photooftheday**: This was a consistently popular hashtag.\n*   **#fashion**: This was a consistently popular hashtag.\n*   **#beautiful**: This was a consistently popular hashtag.\n*   **#happy**: This was a consistently popular hashtag.\n*   **#cute**: This was a consistently popular hashtag.\n*   **#tbt** (Throwback Thursday): This was a consistently popular hashtag.\n*   **#like4like**: This was a consistently popular hashtag.\n*   **#followme**: This was a consistently popular hashtag.\n\n**Important Considerations:**\n\n*   **\"Popular\" Definition:** Popularity can be measured in different ways (e.g., the number of posts using the hashtag, engagement with those posts).\n*   **General vs. Niche:** This list is skewed towards very general hashtags. Niche hashtags within specific communities (e.g., #fitness, #travel, #food) could be incredibly popular *within* those communities but wouldn't necessarily rank as high overall.\n*   **Algorithm Shifts:** Instagram's algorithm is constantly changing. While these hashtags were widely used, their effectiveness in reaching a broad audience likely varied depending on the specific user and the algorithm's current focus.\n*   **Authenticity:** Using *only* extremely popular hashtags is generally *not* a good strategy for growing an authentic following. It's better to combine a few popular hashtags with more specific and relevant ones.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1325,
+    302,
+    324,
+    373,
+    259,
+    371,
+    290,
+    434,
+    381,
+    362,
+    333,
+    235,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.04827404022216797,
+    0.3336360454559326,
+    0.01267099380493164,
+    0.04494500160217285,
+    0.1111750602722168,
+    0.1891648769378662,
+    0.13863611221313477,
+    0.23249292373657227,
+    0.2489769458770752,
+    0.3805379867553711,
+    0.3954792022705078,
+    0.22416996955871582,
+    0.005856037139892578,
+    0.0,
+    0.0
+  ]
+}

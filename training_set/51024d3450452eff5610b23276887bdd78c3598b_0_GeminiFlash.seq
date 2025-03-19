@@ -1,0 +1,33 @@
+{
+  "local_port": 47016,
+  "remote_port": 443,
+  "prompt": "How dangerous is Donald Trump?",
+  "response": "That's a complex question with a lot of different viewpoints.\n\nSome people see Donald Trump as a danger to democracy. They point to his rhetoric questioning the legitimacy of elections, his actions surrounding the January 6th Capitol attack, and his past statements that have been interpreted as authoritarian. They might also highlight concerns about his temperament and potential for abuse of power.\n\nOthers argue that these concerns are overblown. They might emphasize his policy achievements while in office, his supporters' strong belief in his leadership, and the checks and balances in the U.S. system that would prevent any single individual from becoming too powerful.\n\nIt's important to consider a range of perspectives and weigh the evidence when forming your own opinion.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    228,
+    238,
+    455,
+    393,
+    490,
+    420,
+    316,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.050765037536621094,
+    0.2877190113067627,
+    0.0014200210571289062,
+    0.10666298866271973,
+    0.12910008430480957,
+    0.28408384323120117,
+    0.17986607551574707,
+    0.2743489742279053,
+    0.011841058731079102,
+    0.0013709068298339844,
+    0.0
+  ]
+}

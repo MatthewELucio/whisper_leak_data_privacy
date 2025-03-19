@@ -1,0 +1,41 @@
+{
+  "local_port": 40756,
+  "remote_port": 443,
+  "prompt": "Why are Indian police so corrupt? (There are few honest ones though)",
+  "response": "It's a complex issue, and it's not really accurate to paint everyone with the same brush. You're right, there are definitely honest police officers in India, and they often face huge challenges. But, there are some factors that contribute to corruption within the Indian police force.\n\n*   **Low Salaries and Poor Working Conditions:** Historically, police salaries haven't always been competitive, especially at lower ranks. This can make officers more vulnerable to bribery as a way to supplement their income. Also, demanding work conditions, long hours, and inadequate resources can lead to disillusionment.\n\n*   **Political Interference:** Politicians sometimes use the police for their own agendas, influencing postings, promotions, and investigations. This erodes the independence of the police force and creates opportunities for corruption.\n\n*   **Lack of Accountability:** The mechanisms for holding corrupt officers accountable aren't always effective. Internal investigations can be slow and biased, and there's often a lack of transparency.\n\n*   **Societal Acceptance of Corruption:** Sadly, in some parts of society, petty corruption is almost seen as normal. This creates a culture where bribery is tolerated, and there's less pressure on police to be honest.\n\n*   **Colonial Legacy:** The police force was originally designed by the British to maintain order and control, rather than to serve the public. This legacy has contributed to a hierarchical structure and a lack of public trust.\n\n*   **Overburdened System:** The police are often stretched thin, dealing with a huge caseload and limited resources. This can lead to shortcuts and a lack of attention to detail, which can create opportunities for corruption.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1303,
+    231,
+    254,
+    425,
+    419,
+    466,
+    465,
+    472,
+    416,
+    500,
+    181,
+    200,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.04769301414489746,
+    0.3941009044647217,
+    0.0038950443267822266,
+    0.10654497146606445,
+    0.07352399826049805,
+    0.2281200885772705,
+    0.17458200454711914,
+    0.3435499668121338,
+    0.29210400581359863,
+    0.36698412895202637,
+    0.34410881996154785,
+    0.06238198280334473,
+    0.0075380802154541016,
+    0.0,
+    0.00043201446533203125
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 41120,
+  "remote_port": 443,
+  "prompt": "Do VoLTE calls work with data switched off?",
+  "response": "No, VoLTE (Voice over LTE) calls do not work with data switched off.\n\nHere's why:\n\n*   **VoLTE relies on the LTE data network:** VoLTE stands for \"Voice over LTE.\" LTE is a 4G data network. VoLTE uses this data network to transmit voice calls as data packets, similar to how VoIP (Voice over Internet Protocol) services like Skype or WhatsApp work.\n*   **Data is essential:** Without a data connection, the voice packets cannot be transmitted, and the call cannot be established or maintained.\n\n**In summary, a data connection is a fundamental requirement for VoLTE calls.**",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    113,
+    256,
+    257,
+    176,
+    389,
+    326,
+    415,
+    155,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.04716181755065918,
+    0.3167240619659424,
+    0.001352071762084961,
+    0.013438940048217773,
+    0.07007193565368652,
+    0.06299710273742676,
+    0.16592192649841309,
+    0.2019510269165039,
+    0.21003389358520508,
+    0.005377054214477539,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

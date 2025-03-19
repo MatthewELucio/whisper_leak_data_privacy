@@ -1,0 +1,35 @@
+{
+  "local_port": 33584,
+  "remote_port": 443,
+  "prompt": "Who sings a song titled \"You\"?",
+  "response": "There are many songs titled \"You\" by different artists. Here are some of the most well-known:\n\n*   **Lloyd:** This is a popular R&B song.\n*   **The Pretty Reckless:** This is a rock song.\n*   **Keane:** This is a piano-driven alternative rock song.\n*   **Miley Cyrus:** This is a pop song.\n\nTo help me narrow it down, could you provide more information such as the genre, or any lyrics you remember?",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    286,
+    173,
+    193,
+    206,
+    232,
+    233,
+    248,
+    255,
+    124,
+    113
+  ],
+  "time_diffs": [
+    0.04786515235900879,
+    0.45498204231262207,
+    0.00140380859375,
+    0.030476093292236328,
+    0.04516410827636719,
+    0.07770586013793945,
+    0.19900012016296387,
+    0.17532896995544434,
+    0.03693103790283203,
+    0.0072460174560546875,
+    0.00025200843811035156,
+    0.0011949539184570312
+  ]
+}

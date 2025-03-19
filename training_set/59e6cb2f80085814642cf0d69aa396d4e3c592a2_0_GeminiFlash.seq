@@ -1,0 +1,35 @@
+{
+  "local_port": 51786,
+  "remote_port": 443,
+  "prompt": "What is a type of energy?",
+  "response": "There are many types of energy! Here are a few common examples:\n\n*   **Kinetic Energy:** The energy of motion.\n*   **Potential Energy:** Stored energy due to position or condition.\n*   **Thermal Energy (Heat):** The energy of moving atoms and molecules.\n*   **Chemical Energy:** Energy stored in the bonds of atoms and molecules.\n*   **Electrical Energy:** Energy associated with the flow of electric charge.\n*   **Radiant Energy (Light):** Electromagnetic energy that travels in waves (e.g., light, radio waves, X-rays).\n*   **Nuclear Energy:** Energy stored in the nucleus of an atom.\n*   **Sound Energy:** The energy of vibrations traveling through a medium.\n\nWhich type of energy are you most interested in? I can provide more details if you have a specific type in mind.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    288,
+    338,
+    295,
+    253,
+    438,
+    230,
+    512,
+    190,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.04644918441772461,
+    0.32961487770080566,
+    0.0013201236724853516,
+    0.09369277954101562,
+    0.09124016761779785,
+    0.17704391479492188,
+    0.16780304908752441,
+    0.2692070007324219,
+    0.19216108322143555,
+    0.006689786911010742,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 46326,
+  "remote_port": 443,
+  "prompt": "What is the most powerful nuclear weapon or bomb ever?",
+  "response": "The most powerful nuclear weapon ever detonated was the **Tsar Bomba (RDS-220)**. It was a hydrogen bomb developed by the Soviet Union and tested on October 30, 1961, over the Novaya Zemlya archipelago in the Arctic Ocean.\n\nHere's a breakdown of why it holds the title:\n\n*   **Yield:** Estimated at **50 megatons of TNT**. This is equivalent to 50 million tons of TNT, making it far more powerful than any other nuclear weapon ever used or tested.\n*   **Purpose:** Primarily designed as a demonstration of Soviet power rather than a practical weapon for military use.\n*   **Modifications:** Originally designed for a yield of 100 megatons, it was reduced to 50 megatons to minimize fallout and damage to the aircraft delivering it.\n*   **Effects:** The explosion generated a mushroom cloud about 64 kilometers (40 miles) high. It caused thermal burns up to 100 kilometers (62 miles) away and shattered windows hundreds of kilometers away.\n\nWhile other countries have developed powerful nuclear weapons, none have approached the sheer destructive force of the Tsar Bomba.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    121,
+    204,
+    274,
+    195,
+    469,
+    392,
+    407,
+    472,
+    310,
+    196,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.04699397087097168,
+    0.33966684341430664,
+    0.001432180404663086,
+    0.011492013931274414,
+    0.11476588249206543,
+    0.07807397842407227,
+    0.12801408767700195,
+    0.20715999603271484,
+    0.2861959934234619,
+    0.31151604652404785,
+    0.31757092475891113,
+    0.010467052459716797,
+    0.0,
+    0.0
+  ]
+}

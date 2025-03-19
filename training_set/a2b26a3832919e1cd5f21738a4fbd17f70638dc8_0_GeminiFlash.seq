@@ -1,0 +1,43 @@
+{
+  "local_port": 49296,
+  "remote_port": 443,
+  "prompt": "Why is torrent banned?",
+  "response": "Torrenting itself isn't banned. It's the act of sharing copyrighted material without permission using the BitTorrent protocol that's often the problem. Here's a breakdown of why:\n\n*   **Copyright Infringement:** Many torrents are used to share copyrighted material such as movies, music, software, and games without the permission of the copyright holder. This is illegal in most countries and violates copyright laws.\n*   **Distribution:** When you download a torrent, you're often also uploading (sharing) parts of the file to others. This makes you a distributor of the copyrighted material, which can also be a violation of copyright law.\n*   **Enforcement:** Copyright holders actively monitor torrent networks to identify and take action against those who are sharing their copyrighted material. This can include sending legal notices, fines, or even lawsuits.\n\nWhile the BitTorrent protocol itself is legal and has legitimate uses, its association with copyright infringement has led to:\n\n*   **ISPs blocking torrent traffic:** Some Internet Service Providers (ISPs) block or throttle torrent traffic to reduce network congestion or to comply with copyright holder requests.\n*   **Websites being shut down:** Websites that host torrent files or provide access to torrent trackers are often targeted by legal action and may be shut down.\n*   **Legal consequences for users:** Individuals who are caught downloading or sharing copyrighted material via torrents may face legal consequences, such as fines or lawsuits.\n*   **Concerns about malware:** Torrents can sometimes contain malware or viruses, which can infect your computer.\n\nIt's important to note that not all torrents are illegal. There are many legitimate uses for the BitTorrent protocol, such as:\n\n*   **Sharing open-source software:** Many open-source software projects use torrents to distribute their software.\n*   **Distributing large files:** Torrents can be an efficient way to distribute large files, such as Linux distributions or software updates.\n*   **Sharing creative commons content:** Some artists and creators choose to distribute their work under a Creative Commons license, which allows for sharing and redistribution under certain conditions.\n\nIn summary, torrenting is not inherently illegal, but using it to download or share copyrighted material without permission is.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1351,
+    389,
+    331,
+    346,
+    293,
+    445,
+    305,
+    391,
+    323,
+    426,
+    484,
+    451,
+    231,
+    134,
+    113
+  ],
+  "time_diffs": [
+    0.04517507553100586,
+    0.4098029136657715,
+    0.0037491321563720703,
+    0.0919640064239502,
+    0.10819196701049805,
+    0.14264488220214844,
+    0.16641712188720703,
+    0.3210630416870117,
+    0.27420496940612793,
+    0.4110708236694336,
+    0.37326908111572266,
+    0.2945089340209961,
+    0.3135249614715576,
+    0.010248184204101562,
+    0.00017499923706054688,
+    0.0
+  ]
+}

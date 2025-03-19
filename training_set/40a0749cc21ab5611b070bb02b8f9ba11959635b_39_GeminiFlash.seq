@@ -1,0 +1,29 @@
+{
+  "local_port": 52092,
+  "remote_port": 443,
+  "prompt": "Is money laundering unlawful?",
+  "response": "Yes, money laundering is unlawful in virtually every country around the world. It is a serious crime with severe penalties, including imprisonment and large fines.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    263,
+    345,
+    429,
+    283,
+    223,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.04484105110168457,
+    0.4298441410064697,
+    0.0017769336700439453,
+    0.01805400848388672,
+    0.06291699409484863,
+    0.07100486755371094,
+    0.009942054748535156,
+    0.0015621185302734375,
+    4.601478576660156e-05
+  ]
+}

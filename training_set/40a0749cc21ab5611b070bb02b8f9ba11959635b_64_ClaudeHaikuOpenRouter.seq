@@ -1,0 +1,39 @@
+{
+  "local_port": 57722,
+  "remote_port": 443,
+  "prompt": "Is money laundering unlawful?",
+  "response": "Yes, money laundering is illegal in most countries. It is a financial crime where illegally obtained money is made to appear as if it comes from a legitimate source. Laws against money laundering are designed to prevent criminals from concealing the origins of money gained through illegal activities like drug trafficking, fraud, or other criminal enterprises.",
+  "temperature": 1.0,
+  "data_lengths": [
+    237,
+    1065,
+    988,
+    452,
+    469,
+    437,
+    458,
+    455,
+    466,
+    428,
+    433,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.02117180824279785,
+    0.17949318885803223,
+    0.3173248767852783,
+    0.15386509895324707,
+    0.18591594696044922,
+    0.1351618766784668,
+    0.09193301200866699,
+    0.13902521133422852,
+    0.13697195053100586,
+    0.1421818733215332,
+    0.21188998222351074,
+    0.06529498100280762,
+    0.021781206130981445,
+    0.0
+  ]
+}

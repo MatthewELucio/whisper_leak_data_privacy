@@ -1,0 +1,37 @@
+{
+  "local_port": 35524,
+  "remote_port": 443,
+  "prompt": "What is the minimum level of mathematical proficiency required to graduate from West Point?",
+  "response": "Graduates of West Point are required to demonstrate proficiency in a range of mathematical concepts. The specific courses and their content might evolve, but generally, the minimum level of mathematical proficiency needed to graduate includes:\n\n*   **Calculus:** A solid understanding of single-variable calculus, including limits, derivatives, integrals, and applications of these concepts. This is typically covered in Calculus I and often Calculus II.\n\n*   **Differential Equations:** Basic concepts of Ordinary Differential Equations. This may be a separate course or part of a combined calculus/differential equations sequence.\n\n*   **Linear Algebra:** Understanding of vectors, matrices, linear transformations, eigenvalues, and eigenvectors.\n\n*   **Probability and Statistics:** Basic probability concepts, descriptive statistics, hypothesis testing, and statistical inference.\n\n*   **Discrete Mathematics:** Logic, set theory, graph theory, and basic proof techniques may be included, often as part of the computer science curriculum.\n\nIn summary, a minimum requirement is a solid grounding in calculus (at least through Calculus I), linear algebra, probability and statistics. However, most cadets will take more advanced math courses depending on their major.\n\nIt's important to note:\n*   The precise course requirements and content can change.\n*   The level of understanding required goes beyond memorizing formulas; cadets need to apply these concepts to solve real-world problems in engineering, science, and military contexts.\n*   Cadets are also expected to use computational tools (like MATLAB or Python) to solve mathematical problems.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    302,
+    272,
+    381,
+    358,
+    368,
+    500,
+    353,
+    420,
+    520,
+    192,
+    113
+  ],
+  "time_diffs": [
+    0.04490995407104492,
+    0.3776519298553467,
+    0.001252889633178711,
+    0.0995330810546875,
+    0.12001204490661621,
+    0.15315508842468262,
+    0.20410990715026855,
+    0.23711395263671875,
+    0.2660951614379883,
+    0.3554849624633789,
+    0.2537689208984375,
+    9.298324584960938e-05,
+    9.202957153320312e-05
+  ]
+}

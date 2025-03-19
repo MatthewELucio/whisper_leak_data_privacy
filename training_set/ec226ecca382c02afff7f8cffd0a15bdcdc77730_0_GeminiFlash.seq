@@ -1,0 +1,29 @@
+{
+  "local_port": 43774,
+  "remote_port": 443,
+  "prompt": "When did Jaime and Cersei become lovers?",
+  "response": "The exact moment Jaime and Cersei's relationship turned romantic is never explicitly stated in the books or the show. However, it's heavily implied that their incestuous relationship began in their early adolescence, likely around the time they reached puberty.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    97,
+    435,
+    284,
+    423,
+    304,
+    235,
+    113
+  ],
+  "time_diffs": [
+    0.04683399200439453,
+    0.40131282806396484,
+    0.0013720989227294922,
+    0.14449310302734375,
+    0.0731818675994873,
+    0.09129500389099121,
+    0.009637117385864258,
+    0.0014798641204833984,
+    0.0
+  ]
+}

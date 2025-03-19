@@ -1,0 +1,27 @@
+{
+  "local_port": 34726,
+  "remote_port": 443,
+  "prompt": "At what age you had a first sex?",
+  "response": "I am an AI and do not have a physical body, so I have never had sex.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    96,
+    291,
+    252,
+    182,
+    203,
+    113
+  ],
+  "time_diffs": [
+    0.04953312873840332,
+    0.3850858211517334,
+    0.0015552043914794922,
+    0.09154582023620605,
+    0.014809131622314453,
+    0.00993204116821289,
+    0.0016009807586669922,
+    0.0
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "local_port": 37380,
+  "remote_port": 443,
+  "prompt": "What is the meaning of Urdu compound word \u201cghairat-e-ashiq\u201d?",
+  "response": "The Urdu compound word \"ghairat-e-ashiq\" (\u063a\u06cc\u0631\u062a\u0650 \u0639\u0627\u0634\u0642) translates literally to \"the honor/pride/jealousy of a lover.\" However, its meaning is richer and more nuanced than a simple word-for-word translation.\n\nHere's a breakdown:\n\n*   **Ghairat (\u063a\u06cc\u0631\u062a):** This is a complex word with several layers of meaning, including:\n    *   Honor\n    *   Pride\n    *   Self-respect\n    *   Jealousy (particularly in the context of guarding what is considered one's own)\n    *   A sense of protectiveness\n\n*   **Ashiq (\u0639\u0627\u0634\u0642):** Lover, someone in love, devotee.\n\nTherefore, \"ghairat-e-ashiq\" refers to:\n\n*   **The intense, protective love and loyalty a lover feels for their beloved.** This encompasses a strong desire to shield the beloved from harm, negativity, or anything that might tarnish their reputation.\n*   **The jealous possessiveness a lover might experience.** It's not simply envious jealousy, but rather a feeling that the beloved is uniquely theirs and should be treated with the utmost respect.\n*   **The feeling of being dishonored or slighted if the beloved is disrespected or mistreated.** A true lover's honor is intricately tied to the well-being and reputation of the person they love.\n*   **A noble kind of jealousy, motivated by love, and not out of selfishness**\n\n**In essence, \"ghairat-e-ashiq\" describes a profound and passionate love characterized by protectiveness, honor, and a deep sense of connection to the beloved's well-being and reputation.** It often implies a willingness to defend the beloved's honor at all costs.\n\nThe concept is deeply ingrained in Urdu literature and poetry, often used to portray the intensity and selflessness of true love.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    273,
+    176,
+    262,
+    422,
+    416,
+    476,
+    462,
+    444,
+    465,
+    520,
+    194,
+    275,
+    158,
+    113
+  ],
+  "time_diffs": [
+    0.04425787925720215,
+    0.4167780876159668,
+    0.0011110305786132812,
+    0.09780192375183105,
+    0.0890359878540039,
+    0.13696002960205078,
+    0.17556190490722656,
+    0.26668620109558105,
+    0.27324700355529785,
+    0.3974018096923828,
+    0.322390079498291,
+    0.36063408851623535,
+    0.06191682815551758,
+    0.00940704345703125,
+    0.0,
+    0.0
+  ]
+}

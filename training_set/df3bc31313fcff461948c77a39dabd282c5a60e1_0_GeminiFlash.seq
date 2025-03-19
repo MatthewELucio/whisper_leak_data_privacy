@@ -1,0 +1,31 @@
+{
+  "local_port": 36586,
+  "remote_port": 443,
+  "prompt": "When will Jesus come back? I'm quite bored already.",
+  "response": "The Bible says that no one knows the day or hour of Jesus' return (Matthew 24:36). There are different interpretations of the signs and prophecies related to his return, but Christians generally agree that we should be watchful and live in a way that pleases God.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    216,
+    284,
+    222,
+    260,
+    257,
+    213,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.05583000183105469,
+    0.4340639114379883,
+    0.001463174819946289,
+    0.012187004089355469,
+    0.09940290451049805,
+    0.1039590835571289,
+    0.1388688087463379,
+    0.009039163589477539,
+    0.001355886459350586,
+    0.00019812583923339844
+  ]
+}

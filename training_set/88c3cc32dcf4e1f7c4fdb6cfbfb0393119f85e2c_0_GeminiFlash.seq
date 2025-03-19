@@ -1,0 +1,39 @@
+{
+  "local_port": 35250,
+  "remote_port": 443,
+  "prompt": "What celebrities have converted to Islam?",
+  "response": "There have been a number of celebrities who have reportedly converted to Islam. Here are a few notable examples:\n\n*   **Malcolm X:** Though primarily known as an activist, Malcolm X's conversion and journey within Islam was a significant part of his life.\n*   **Muhammad Ali:** The legendary boxer converted to Islam in the 1960s.\n*   **Ice Cube:** The rapper and actor converted to Islam in the 1990s.\n*   **Dave Chappelle:** The comedian has spoken about his conversion to Islam.\n*   **Janet Jackson:** While her level of observance is private, reports indicated she converted upon marrying Wissam Al Mana.\n*   **Mike Tyson:** The former boxer converted to Islam while in prison.\n*   **Mos Def (Yasiin Bey):** The rapper and actor is a practicing Muslim.\n*   **Mahershala Ali:** The actor has publicly discussed his conversion to Islam.\n\nIt's worth noting that religious conversion is a personal matter, and some celebrities may not publicly discuss their faith. Also, the level of practice and adherence can vary greatly among individuals.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    282,
+    342,
+    295,
+    280,
+    264,
+    394,
+    478,
+    384,
+    370,
+    258,
+    177,
+    113
+  ],
+  "time_diffs": [
+    0.050276994705200195,
+    0.3315238952636719,
+    0.0013451576232910156,
+    0.010341882705688477,
+    0.07083296775817871,
+    0.09639501571655273,
+    0.19710803031921387,
+    0.16713714599609375,
+    0.37096095085144043,
+    0.3210270404815674,
+    0.17162799835205078,
+    0.00766301155090332,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

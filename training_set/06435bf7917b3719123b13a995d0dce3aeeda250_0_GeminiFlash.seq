@@ -1,0 +1,37 @@
+{
+  "local_port": 35544,
+  "remote_port": 443,
+  "prompt": "Does every student at iiser get fellowship?",
+  "response": "The answer is **yes, typically every student at an IISER (Indian Institutes of Science Education and Research) gets a fellowship**.\n\nHere's why:\n\n*   **Integrated Programs and Research Focus:** IISERs primarily offer integrated BS-MS (Bachelor of Science - Master of Science) programs and PhD programs. These programs are designed to encourage research from early on.\n*   **Fellowship as a Standard:** The fellowships are built into the structure of the programs as a means of supporting students during their studies and research.\n*   **Government Funding:** IISERs are funded by the Ministry of Education, Government of India, and a significant portion of this funding is earmarked for student fellowships.\n*   **Requirements for Continued Fellowship:** Students usually need to maintain a certain academic performance (minimum GPA/CPI) to continue receiving the fellowship. If a student's performance drops below the required level, the fellowship may be temporarily suspended or terminated.\n\n**In summary:** The structure and funding model of IISERs are designed to support students with fellowships. Maintaining good academic standing is usually a condition for continued fellowship.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    250,
+    429,
+    346,
+    285,
+    439,
+    283,
+    425,
+    234,
+    249,
+    124,
+    113
+  ],
+  "time_diffs": [
+    0.04809713363647461,
+    0.32251787185668945,
+    0.0015799999237060547,
+    0.15633106231689453,
+    0.06004810333251953,
+    0.19517183303833008,
+    0.1768341064453125,
+    0.2602410316467285,
+    0.31588292121887207,
+    0.17589807510375977,
+    0.00564885139465332,
+    0.00023221969604492188,
+    0.0
+  ]
+}

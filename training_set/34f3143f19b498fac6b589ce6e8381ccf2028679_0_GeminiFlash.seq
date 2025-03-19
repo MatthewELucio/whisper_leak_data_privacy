@@ -1,0 +1,33 @@
+{
+  "local_port": 40706,
+  "remote_port": 443,
+  "prompt": "What is the meaning of Urdu words 'Lafz' and 'Alfaaz'?",
+  "response": "The Urdu word **\"Lafz\" (\u0644\u0641\u0638)** means:\n\n*   **Word:** A single, distinct unit of language.\n\nThe Urdu word **\"Alfaaz\" (\u0627\u0644\u0641\u0627\u0638)** is the plural of \"Lafz\" and means:\n\n*   **Words:** Multiple individual units of language.\n    *   It can also mean **Vocabulary** or **Wording**, as in the specific words chosen to express something.\n\nSo, to summarize:\n\n*   **Lafz** = Word (singular)\n*   **Alfaaz** = Words (plural)\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    293,
+    418,
+    240,
+    427,
+    429,
+    391,
+    262,
+    225,
+    113
+  ],
+  "time_diffs": [
+    0.04506397247314453,
+    0.2666468620300293,
+    0.0013489723205566406,
+    0.11158108711242676,
+    0.10191011428833008,
+    0.17659282684326172,
+    0.19368410110473633,
+    0.1019899845123291,
+    0.010667085647583008,
+    0.0033299922943115234,
+    0.0
+  ]
+}

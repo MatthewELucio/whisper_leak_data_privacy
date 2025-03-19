@@ -1,0 +1,39 @@
+{
+  "local_port": 52804,
+  "remote_port": 443,
+  "prompt": "Is money laundering a punishable offense?",
+  "response": "Yes, money laundering is a punishable offense in virtually every country with a developed legal system. The specific penalties vary depending on the jurisdiction and the severity of the crime, but they typically include:\n\n*   **Imprisonment:** Often, a significant prison sentence is imposed.\n*   **Fines:** Substantial monetary penalties are common, sometimes exceeding the amount of money laundered.\n*   **Asset Forfeiture:**  The funds and assets involved in the money laundering scheme, as well as assets derived from those funds, can be seized by the government.\n*   **Other Penalties:** Depending on the jurisdiction, other penalties can include probation, community service, restrictions on financial activities, and loss of professional licenses.\n\nThe severity of the punishment often depends on factors such as:\n\n*   **The amount of money laundered:** Larger sums generally lead to harsher penalties.\n*   **The underlying crime:** If the money laundering is linked to serious crimes like drug trafficking, terrorism, or organized crime, the penalties will likely be more severe.\n*   **The level of involvement:**  Individuals who played a central role in the scheme will face stricter penalties than those who were only peripherally involved.\n*   **Prior criminal record:** A history of criminal activity can increase the severity of the sentence.\n\nIn short, money laundering is a serious crime with significant legal consequences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1288,
+    176,
+    445,
+    354,
+    397,
+    272,
+    383,
+    498,
+    291,
+    433,
+    293,
+    220,
+    113
+  ],
+  "time_diffs": [
+    0.0420839786529541,
+    0.3227717876434326,
+    0.018937110900878906,
+    0.09195995330810547,
+    0.09821510314941406,
+    0.1939558982849121,
+    0.2586510181427002,
+    0.2205660343170166,
+    0.21108198165893555,
+    0.3276069164276123,
+    0.09406518936157227,
+    0.00612187385559082,
+    0.0,
+    0.0
+  ]
+}

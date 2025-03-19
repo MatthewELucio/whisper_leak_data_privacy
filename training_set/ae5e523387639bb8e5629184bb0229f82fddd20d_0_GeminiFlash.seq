@@ -1,0 +1,35 @@
+{
+  "local_port": 49876,
+  "remote_port": 443,
+  "prompt": "Is it not true that Kejriwal too started to play dirty politics?",
+  "response": "Accusations of engaging in \"dirty politics\" against Arvind Kejriwal and the Aam Aadmi Party (AAP) are not new. These accusations often include allegations of:\n\n*   **Making U-turns on promises:** Critics point to instances where AAP has seemingly shifted its stance on key issues after gaining power.\n\n*   **Personal attacks and mudslinging:** Accusations have been made that AAP leaders have resorted to personal attacks against political opponents.\n\n*   **Exploiting religious and caste sentiments:** Some critics claim AAP has used divisive tactics to appeal to specific voter groups.\n\n*   **Using government resources for party promotion:** Allegations have surfaced regarding the misuse of public funds for AAP's political campaigns.\n\nIt is important to note that these are allegations and accusations. Whether they constitute \"dirty politics\" is a matter of interpretation and opinion. Supporters of Kejriwal and AAP often defend their actions by arguing that they are necessary to counter the established political parties and bring about real change. They might also argue that AAP is simply playing the same game as other parties, but is being held to a higher standard due to its initial promise of clean politics.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1290,
+    413,
+    351,
+    478,
+    321,
+    396,
+    432,
+    273,
+    254,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.04377293586730957,
+    0.3540182113647461,
+    0.10717296600341797,
+    0.13492393493652344,
+    0.24418091773986816,
+    0.192918062210083,
+    0.2890961170196533,
+    0.30786895751953125,
+    0.19505691528320312,
+    0.009499073028564453,
+    0.0,
+    0.0
+  ]
+}

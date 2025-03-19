@@ -1,0 +1,29 @@
+{
+  "local_port": 49426,
+  "remote_port": 443,
+  "prompt": "What is the course duration for an ME in civil engineering at the University of Alberta?",
+  "response": "The course duration for an ME (Master of Engineering) in Civil Engineering at the University of Alberta is typically **12 months (full-time)**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    166,
+    184,
+    363,
+    337,
+    228,
+    215,
+    113
+  ],
+  "time_diffs": [
+    0.046000003814697266,
+    0.33873605728149414,
+    0.0014529228210449219,
+    0.045484066009521484,
+    0.039964914321899414,
+    0.11141204833984375,
+    0.007513999938964844,
+    0.0014619827270507812,
+    0.0014579296112060547
+  ]
+}

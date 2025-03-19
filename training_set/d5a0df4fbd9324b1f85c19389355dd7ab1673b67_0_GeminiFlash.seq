@@ -1,0 +1,33 @@
+{
+  "local_port": 37424,
+  "remote_port": 443,
+  "prompt": "If we were both too drunk to consent to sex and had sex anyways, are we both guilty of rape?",
+  "response": "In many jurisdictions, if both individuals were too intoxicated to understand the nature of the act or to give consent, neither person could legally consent. In such a case, the act could be considered sexual assault or rape, and both individuals could potentially be considered perpetrators.\n\nHowever, the specifics can vary significantly depending on the jurisdiction and the exact circumstances. Factors like the degree of intoxication, the ability to understand what was happening, and the specific laws of the relevant jurisdiction would all be considered.\n\nGiven the serious legal implications, it's essential to consult with a legal professional for accurate advice tailored to the specific situation and location.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    188,
+    220,
+    427,
+    426,
+    468,
+    423,
+    293,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.046781063079833984,
+    0.26700282096862793,
+    0.0013430118560791016,
+    0.14150309562683105,
+    0.13788485527038574,
+    0.19132614135742188,
+    0.26493000984191895,
+    0.15212106704711914,
+    0.010731935501098633,
+    0.001664876937866211,
+    1.1920928955078125e-06
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 35024,
+  "remote_port": 443,
+  "prompt": "How do I solve this math equation?",
+  "response": "Please provide the math equation you want me to help you solve! I need to see the equation in order to give you specific instructions. \n\nFor example, you could say:\n\n* \"How do I solve: 2x + 5 = 11?\"\n* \"How do I solve:  (x^2 - 4) / (x + 2) = 0?\"\n* \"How do I solve:  Integrate x*sin(x) dx?\"\n\nOnce you give me the equation, I can help you break it down step-by-step.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1407,
+    359,
+    326,
+    335,
+    384,
+    435,
+    302,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.04569292068481445,
+    0.39723801612854004,
+    0.1416769027709961,
+    0.10083699226379395,
+    0.08529806137084961,
+    0.15995192527770996,
+    0.13915300369262695,
+    0.010421037673950195,
+    0.0,
+    0.0
+  ]
+}

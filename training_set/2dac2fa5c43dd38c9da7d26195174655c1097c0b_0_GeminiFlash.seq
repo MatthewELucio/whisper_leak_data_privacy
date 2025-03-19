@@ -1,0 +1,37 @@
+{
+  "local_port": 40120,
+  "remote_port": 443,
+  "prompt": "How fast can helicopters travel?",
+  "response": "The speed of a helicopter depends on the specific model. However, the top speed of most helicopters ranges from **130 to 180 knots (150 to 210 mph or 240 to 340 km/h).**\n\nThere are a few exceptions:\n\n*   **Record Holders:** Some purpose-built helicopters designed for speed have reached much higher speeds. For example, the Sikorsky X2 technology demonstrator achieved a speed of 250 knots (288 mph or 463 km/h).\n*   **Military Helicopters:** Some military helicopters, especially those designed for attack or transport, can reach speeds towards the higher end of the typical range, sometimes even exceeding 200 mph (320 km/h).\n\nKeep in mind that these are maximum speeds. Typical cruising speeds are often somewhat lower, as factors like fuel efficiency and noise levels can affect the chosen speed during regular operations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1280,
+    167,
+    290,
+    299,
+    368,
+    436,
+    408,
+    283,
+    362,
+    243,
+    172,
+    113
+  ],
+  "time_diffs": [
+    0.045137882232666016,
+    0.31442713737487793,
+    0.036923885345458984,
+    0.07104897499084473,
+    0.13127613067626953,
+    0.21198391914367676,
+    0.20300889015197754,
+    0.2611730098724365,
+    0.38091397285461426,
+    0.03813004493713379,
+    0.014117956161499023,
+    0.0010151863098144531,
+    0.0
+  ]
+}

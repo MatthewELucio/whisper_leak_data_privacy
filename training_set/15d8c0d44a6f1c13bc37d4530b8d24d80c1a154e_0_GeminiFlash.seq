@@ -1,0 +1,37 @@
+{
+  "local_port": 35804,
+  "remote_port": 443,
+  "prompt": "What is the best size of penis?",
+  "response": "The concept of \"best\" penis size is subjective and varies depending on individual preferences and perspectives. Research suggests that most women report satisfaction with a range of penis sizes. Studies focusing on vaginal dimensions indicate that the average vaginal depth is around 3 to 4 inches, meaning that a penis of average length can provide sufficient stimulation.\n\nSome studies have explored potential correlations between penis size and perceived attractiveness, but the findings are often inconsistent and influenced by various factors, including cultural norms and individual preferences. Some individuals may prioritize girth over length, while others may have different preferences.\n\nOverall, there is no universally agreed-upon \"best\" penis size, as satisfaction and desirability are influenced by a combination of factors beyond mere measurements. These factors include personal preferences, cultural norms, and the overall dynamics of a relationship.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    244,
+    254,
+    388,
+    216,
+    442,
+    358,
+    330,
+    282,
+    141,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.04769587516784668,
+    0.43920111656188965,
+    0.001664876937866211,
+    0.03890705108642578,
+    0.01721811294555664,
+    0.18216490745544434,
+    0.2200930118560791,
+    0.24486804008483887,
+    0.27927398681640625,
+    0.09862208366394043,
+    0.013808965682983398,
+    0.0,
+    0.00033092498779296875
+  ]
+}

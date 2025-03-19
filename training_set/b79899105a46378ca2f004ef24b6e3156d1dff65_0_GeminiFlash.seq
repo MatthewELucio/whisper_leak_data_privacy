@@ -1,0 +1,31 @@
+{
+  "local_port": 57254,
+  "remote_port": 443,
+  "prompt": "What is the IUPAC name of CCl3?",
+  "response": "The compound CCl3 is not a stable, neutral molecule. It's the **trichloromethyl radical**.\n\nTherefore, there is no standard IUPAC name for it as a standalone compound.  It's referred to as the **trichloromethyl radical**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    201,
+    288,
+    328,
+    385,
+    383,
+    190,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.04495096206665039,
+    0.4278829097747803,
+    0.001425027847290039,
+    0.03118300437927246,
+    0.08631706237792969,
+    0.07687997817993164,
+    0.11088299751281738,
+    0.00391697883605957,
+    0.0016520023345947266,
+    0.0
+  ]
+}

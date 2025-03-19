@@ -1,0 +1,43 @@
+{
+  "local_port": 41976,
+  "remote_port": 443,
+  "prompt": "Upto which rank does a reserved category student get IRS (IT)?",
+  "response": "The rank required for a reserved category student to get into the IRS (IT) varies each year depending on several factors, including:\n\n*   **Number of Vacancies:** The number of IRS (IT) positions available in a particular year for each reserved category significantly impacts the cutoff rank.\n*   **Exam Difficulty:** A tougher exam might lower overall scores and potentially lower the cutoff rank.\n*   **Category-wise Performance:** The performance of candidates within each reserved category affects the cutoff. If candidates in a specific category perform exceptionally well, the cutoff rank might increase.\n*   **Candidate Preferences:** The choices made by candidates during the preference filling stage also influence the allocation.\n\n**General Trends (Based on Previous Years):**\n\nWhile it's impossible to give an exact rank, here are some general trends from previous years. Please note these are indicative and can change significantly:\n\n*   **SC Category:** Ranks between 600-800 have had a decent chance to get IRS\n*   **ST Category:** Ranks between 850-1100 have had a decent chance to get IRS\n*   **OBC Category:** Ranks between 350-550 have had a decent chance to get IRS\n*   **EWS Category:** Ranks between 400-600 have had a decent chance to get IRS\n\n**Important Considerations:**\n\n*   **These are estimates based on past trends and are not definitive.** Do not rely solely on these numbers.\n*   **Official cutoff ranks are released by the UPSC** after the allocation process is complete. Refer to those for the most accurate information from previous years.\n*   **Consult experienced mentors, coaching centers, or online forums** that specialize in the civil services exam. They might have more up-to-date insights.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    295,
+    199,
+    415,
+    363,
+    456,
+    223,
+    403,
+    337,
+    418,
+    388,
+    527,
+    283,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.0476839542388916,
+    0.4330301284790039,
+    0.0014109611511230469,
+    0.03054189682006836,
+    0.054969072341918945,
+    0.08204507827758789,
+    0.17925500869750977,
+    0.21648883819580078,
+    0.24963617324829102,
+    0.28571081161499023,
+    0.27385497093200684,
+    0.3391702175140381,
+    0.37903785705566406,
+    0.007806062698364258,
+    0.0,
+    4.887580871582031e-05
+  ]
+}

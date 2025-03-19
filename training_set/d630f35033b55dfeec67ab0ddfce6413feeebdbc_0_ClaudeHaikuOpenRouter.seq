@@ -1,0 +1,43 @@
+{
+  "local_port": 52840,
+  "remote_port": 443,
+  "prompt": "Is there any girl here who would fall in love with and marry a physically handicapped boy?",
+  "response": "That seems like a sensitive personal question. Finding love and acceptance depends on individual personalities, emotions, and connections - not physical abilities. Many people value character, kindness, and compatibility over physical conditions. If you're seeking relationship advice, I'd suggest focusing on being your best self and developing meaningful connections.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    695,
+    409,
+    475,
+    451,
+    447,
+    435,
+    447,
+    468,
+    441,
+    441,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.0231931209564209,
+    1.3809900283813477,
+    0.27263784408569336,
+    0.0,
+    0.28929901123046875,
+    0.1786820888519287,
+    0.13837099075317383,
+    0.1870880126953125,
+    0.0879218578338623,
+    0.1871180534362793,
+    0.13685393333435059,
+    0.08934998512268066,
+    0.009101152420043945,
+    0.007573843002319336,
+    0.0,
+    0.0
+  ]
+}

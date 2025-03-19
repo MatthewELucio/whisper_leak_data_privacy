@@ -1,0 +1,31 @@
+{
+  "local_port": 57866,
+  "remote_port": 443,
+  "prompt": "Vayagra medecine tablet is good or not?",
+  "response": "I am an AI assistant and cannot provide medical advice. Vayagra is a medication used to treat erectile dysfunction. It is a prescription medication, so it is important to consult with a healthcare professional to determine if it is safe and appropriate for you. They can assess your individual medical history, potential drug interactions, and any other relevant factors to make an informed decision.\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    212,
+    194,
+    365,
+    448,
+    348,
+    130,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.044883012771606445,
+    0.2800590991973877,
+    0.001332998275756836,
+    0.0953969955444336,
+    0.10387396812438965,
+    0.20631098747253418,
+    0.04899191856384277,
+    0.03991103172302246,
+    0.0014660358428955078,
+    0.0
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 47908,
+  "remote_port": 443,
+  "prompt": "What is the highest temperature ever recorded in the universe?",
+  "response": "The highest temperature ever recorded in the universe isn't something we observe directly. Instead, we talk about the highest temperature achieved *experimentally*, which is what scientists believe existed a tiny fraction of a second after the Big Bang. That temperature is estimated to be **5.5 trillion degrees Celsius (9.9 trillion degrees Fahrenheit)**.\n\nThis incredibly hot state was achieved at the **Relativistic Heavy Ion Collider (RHIC)** at Brookhaven National Laboratory and later at the **Large Hadron Collider (LHC)** at CERN. They smash heavy ions, like gold or lead, together at near-light speed, creating a quark-gluon plasma. This plasma is thought to be the state of matter that existed in the very early universe.\n\nTherefore, to clarify:\n\n*   **Not directly \"recorded\" in the sense of an observed natural phenomenon:** This isn't like measuring the hottest day in the Sahara.\n*   **Experimentally achieved and theoretically linked to the early universe:** Scientists recreated conditions thought to be similar to those shortly after the Big Bang.\n*   **Estimate:** The 5.5 trillion degrees Celsius is based on calculations and models, not a direct temperature reading in the conventional sense.\n\nSo, while we can't point to a single spot in the cosmos and say \"that's the hottest place ever,\" the quark-gluon plasma experiments give us the best estimate of the highest temperature that likely existed in the early universe.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    221,
+    186,
+    297,
+    301,
+    366,
+    233,
+    373,
+    481,
+    425,
+    312,
+    178,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.04805111885070801,
+    0.3115499019622803,
+    0.0014591217041015625,
+    0.018522024154663086,
+    0.10003089904785156,
+    0.14910101890563965,
+    0.20602989196777344,
+    0.14208102226257324,
+    0.2769441604614258,
+    0.35625386238098145,
+    0.38732194900512695,
+    0.18018412590026855,
+    0.013434886932373047,
+    5.412101745605469e-05,
+    8.702278137207031e-05
+  ]
+}

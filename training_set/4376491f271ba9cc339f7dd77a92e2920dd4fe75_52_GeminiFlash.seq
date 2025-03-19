@@ -1,0 +1,41 @@
+{
+  "local_port": 35472,
+  "remote_port": 443,
+  "prompt": "Is it illegal to clean dirty money?",
+  "response": "\"Cleaning dirty money,\" more formally known as money laundering, is **illegal** in virtually all countries.\n\nHere's why and what it entails:\n\n*   **What is Money Laundering?**\n    Money laundering is the process of concealing the origins of illegally obtained money, making it appear to come from legitimate sources. This is done to avoid prosecution for the crimes that generated the money, such as drug trafficking, corruption, fraud, and other illicit activities.\n\n*   **Why is it Illegal?**\n    Money laundering facilitates and enables criminal activity. By making it easier for criminals to profit from their crimes, it encourages further illegal behavior. It can also destabilize financial systems and undermine the integrity of markets.\n\n*   **How is it Illegal?**\n    Most countries have specific laws and regulations that prohibit money laundering. These laws typically make it a crime to:\n\n    *   Conceal or disguise the nature, source, location, disposition, movement, or ownership of illicit proceeds.\n    *   Transfer illicit proceeds with the intent to conceal or disguise their nature, source, location, disposition, movement, or ownership.\n    *   Acquire, possess, or use illicit proceeds, knowing that they are derived from criminal activity.\n    *   Assist others in laundering money.\n\n*   **Consequences:**\n    The penalties for money laundering can be severe, including:\n\n    *   Heavy fines.\n    *   Imprisonment.\n    *   Forfeiture of assets involved in the money laundering scheme.\n\n*   **\"Cleaning\" Dirty Money:** The term \"cleaning\" in this context is a misleading euphemism for disguising the illegal origin of funds.\n\n**In summary:** Attempting to \"clean\" dirty money is a criminal offense. It's crucial to be aware of anti-money laundering laws and to report any suspected money laundering activity to the appropriate authorities.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    239,
+    260,
+    181,
+    473,
+    420,
+    390,
+    278,
+    427,
+    474,
+    383,
+    159,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.04763293266296387,
+    0.3743300437927246,
+    0.012748956680297852,
+    0.09612703323364258,
+    0.06290912628173828,
+    0.13218379020690918,
+    0.20192599296569824,
+    0.257066011428833,
+    0.2787191867828369,
+    0.29390597343444824,
+    0.38353896141052246,
+    0.3094310760498047,
+    0.04734086990356445,
+    0.0,
+    0.0
+  ]
+}

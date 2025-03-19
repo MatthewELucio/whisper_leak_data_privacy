@@ -1,0 +1,29 @@
+{
+  "local_port": 46516,
+  "remote_port": 443,
+  "prompt": "What is the name of the actress portraying the role of Tulsi in the serial 'Eso Maa Lokkhi\"?",
+  "response": "The actress portraying the role of Tulsi in the serial \"Eso Maa Lokkhi\" is **Shruti Das**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    201,
+    220,
+    299,
+    359,
+    284,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04540419578552246,
+    0.2789738178253174,
+    0.0014700889587402344,
+    0.011455059051513672,
+    0.04987788200378418,
+    0.04936504364013672,
+    0.009701967239379883,
+    0.0014140605926513672,
+    5.1021575927734375e-05
+  ]
+}

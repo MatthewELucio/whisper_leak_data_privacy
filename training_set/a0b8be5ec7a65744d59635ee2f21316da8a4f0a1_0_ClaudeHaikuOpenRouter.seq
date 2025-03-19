@@ -1,0 +1,27 @@
+{
+  "local_port": 39928,
+  "remote_port": 443,
+  "prompt": "If I delete someone's conversation (old msgs + new unread message) on WhatsApp without reading it and without opening their chat window, will they receive blue ticks?",
+  "response": "No, if",
+  "temperature": 1.0,
+  "data_lengths": [
+    237,
+    1065,
+    405,
+    405,
+    411,
+    569,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.02108001708984375,
+    0.24969911575317383,
+    0.31121182441711426,
+    0.0,
+    0.0016820430755615234,
+    0.026786088943481445,
+    0.35951685905456543,
+    0.0015521049499511719
+  ]
+}

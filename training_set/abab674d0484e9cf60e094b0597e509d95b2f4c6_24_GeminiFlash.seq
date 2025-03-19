@@ -1,0 +1,39 @@
+{
+  "local_port": 33416,
+  "remote_port": 443,
+  "prompt": "Would someone be committing a crime if they laundered money?",
+  "response": "Yes, in virtually all jurisdictions, laundering money is a crime. It is a federal crime in the United States, under laws like the Bank Secrecy Act and the Money Laundering Control Act. Other countries have similar laws prohibiting money laundering.\n\nThe specific charges and penalties can vary depending on the jurisdiction and the specifics of the offense, but generally, money laundering is a serious crime with significant penalties, including:\n\n*   **Imprisonment:** Often carries lengthy prison sentences.\n*   **Fines:** Can be substantial, often exceeding the amount of money laundered.\n*   **Asset Forfeiture:** The assets involved in the money laundering scheme (including the laundered money itself) can be seized by the government.\n*   **Other Penalties:** Depending on the jurisdiction and the specific circumstances, other penalties may include probation, community service, and restrictions on financial activities.\n\nThe purpose of money laundering laws is to combat organized crime, terrorism, drug trafficking, and other illegal activities by making it difficult to profit from these activities.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    206,
+    231,
+    319,
+    278,
+    380,
+    459,
+    487,
+    449,
+    298,
+    136,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.04518699645996094,
+    0.28879284858703613,
+    0.0015940666198730469,
+    0.012044906616210938,
+    0.1178121566772461,
+    0.08228588104248047,
+    0.16803693771362305,
+    0.183135986328125,
+    0.27065420150756836,
+    0.2499070167541504,
+    0.0850369930267334,
+    0.008121013641357422,
+    0.0,
+    0.0
+  ]
+}

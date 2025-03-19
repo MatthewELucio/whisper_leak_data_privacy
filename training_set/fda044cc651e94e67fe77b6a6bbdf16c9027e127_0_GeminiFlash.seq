@@ -1,0 +1,31 @@
+{
+  "local_port": 54246,
+  "remote_port": 443,
+  "prompt": "Why are most Muslim girls beautiful?",
+  "response": "Beauty is diverse and found in people of all backgrounds and faiths. Attributing beauty to one group over others is inaccurate and perpetuates stereotypes. Muslim women, like women everywhere, have diverse appearances and qualities that make them beautiful in their own unique ways.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    254,
+    260,
+    203,
+    319,
+    262,
+    215,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.04563403129577637,
+    0.40609192848205566,
+    0.0014281272888183594,
+    0.0032608509063720703,
+    0.12139105796813965,
+    0.1090240478515625,
+    0.0819540023803711,
+    0.007732868194580078,
+    0.0016851425170898438,
+    0.0
+  ]
+}

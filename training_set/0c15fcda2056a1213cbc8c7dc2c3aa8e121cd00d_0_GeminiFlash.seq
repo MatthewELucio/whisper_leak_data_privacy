@@ -1,0 +1,37 @@
+{
+  "local_port": 42374,
+  "remote_port": 443,
+  "prompt": "Where are the products of Coca-Cola manufactured?",
+  "response": "Coca-Cola products are manufactured in **many locations around the world**. Coca-Cola doesn't typically own and operate all the bottling and manufacturing plants itself. Instead, it operates through a network of **independent bottling partners**.\n\nHere's a breakdown:\n\n*   **Concentrate Production:** The Coca-Cola Company owns and operates facilities that produce the beverage base concentrates and syrups. These are primarily produced in the United States and then distributed to authorized bottlers globally.\n*   **Bottling and Packaging:** Coca-Cola licenses its brand and provides concentrates and syrups to authorized bottling partners worldwide. These partners add water, sweeteners (sugar or artificial sweeteners), and other ingredients to produce the final beverages. They then package and distribute the finished products to retailers.\n*   **Global Distribution:** Coca-Cola operates in over 200 countries and territories. Bottling and packaging occurs locally in a significant number of these regions to reduce shipping costs and meet local regulations and preferences.\n\nTherefore, Coca-Cola products are manufactured in **numerous bottling plants located across the globe** by its vast network of bottling partners.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1490,
+    148,
+    419,
+    445,
+    252,
+    269,
+    335,
+    304,
+    199,
+    209,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.044107913970947266,
+    0.3267171382904053,
+    0.045976877212524414,
+    0.0659339427947998,
+    0.08909416198730469,
+    0.1980419158935547,
+    0.21097898483276367,
+    0.26334095001220703,
+    0.28682518005371094,
+    0.13007378578186035,
+    0.011270999908447266,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 51516,
+  "remote_port": 443,
+  "prompt": "How many women are FDNY firefighters?",
+  "response": "As of 2023, approximately 1% of FDNY firefighters were women. This translates to roughly 40-45 women out of over 11,000 firefighters.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1255,
+    176,
+    233,
+    290,
+    194,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.04709792137145996,
+    0.35298800468444824,
+    0.08453893661499023,
+    0.09437203407287598,
+    0.04825615882873535,
+    0.006331920623779297,
+    0.0,
+    0.003298044204711914
+  ]
+}

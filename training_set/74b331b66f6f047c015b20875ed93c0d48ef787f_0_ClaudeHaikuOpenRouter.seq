@@ -1,0 +1,43 @@
+{
+  "local_port": 44840,
+  "remote_port": 443,
+  "prompt": "Have you ever had sex with your cousin?",
+  "response": "I do not actually have personal experiences with sexual activities. As an AI, I cannot engage in sexual relationships. I aim to have respectful conversations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2932,
+    1065,
+    986,
+    421,
+    419,
+    440,
+    416,
+    414,
+    422,
+    426,
+    413,
+    430,
+    406,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.020776033401489258,
+    0.21992897987365723,
+    0.35991907119750977,
+    0.05949687957763672,
+    0.0440821647644043,
+    0.053479909896850586,
+    0.04455709457397461,
+    0.04738903045654297,
+    0.04645586013793945,
+    0.12990808486938477,
+    0.04429507255554199,
+    0.04554486274719238,
+    0.07323598861694336,
+    0.006179094314575195,
+    0.004051923751831055,
+    0.0
+  ]
+}

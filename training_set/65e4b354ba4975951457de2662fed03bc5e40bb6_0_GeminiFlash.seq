@@ -1,0 +1,37 @@
+{
+  "local_port": 50790,
+  "remote_port": 443,
+  "prompt": "How early can you check in at the airport for international flight?",
+  "response": "The earliest you can check in for an international flight usually depends on the airline and the airport. However, here's a general guideline:\n\n*   **Online Check-in:** Typically opens **24 to 48 hours** before your scheduled departure time. This is the earliest option.\n*   **Airport Check-in:** This is usually available **3-4 hours** before the scheduled departure time for international flights.\n\n**Important Considerations:**\n\n*   **Airline Policy:** Always check the specific airline's website or app for their check-in policies. Each airline has its own rules.\n*   **Airport Size and Security:** Larger airports or airports with stricter security measures may benefit from arriving earlier.\n*   **Peak Travel Times:** During busy travel seasons, give yourself more time due to potentially longer lines at check-in and security.\n*   **Visa Requirements and Documentation Checks:** International flights often require additional document checks, which can take time.\n*   **Connecting Flights:** If you have connecting flights, consider the time needed to transfer between terminals and go through security again.\n\nTo be on the safe side, it's generally recommended to arrive at the airport **3 hours** before your scheduled international flight departure.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1271,
+    230,
+    277,
+    302,
+    340,
+    290,
+    339,
+    487,
+    544,
+    227,
+    141,
+    113
+  ],
+  "time_diffs": [
+    0.05078697204589844,
+    0.3852851390838623,
+    0.014950990676879883,
+    0.06316280364990234,
+    0.08188319206237793,
+    0.24219298362731934,
+    0.15412282943725586,
+    0.28377819061279297,
+    0.3622109889984131,
+    0.2812619209289551,
+    0.008974075317382812,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 54310,
+  "remote_port": 443,
+  "prompt": "Is money laundering unlawful?",
+  "response": "Yes, money laundering is unlawful. It is a federal crime in the United States and is illegal in most countries around the world.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1412,
+    208,
+    220,
+    397,
+    186,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.04695487022399902,
+    0.42104411125183105,
+    0.018538951873779297,
+    0.05958914756774902,
+    0.02764296531677246,
+    0.007024049758911133,
+    0.0014679431915283203,
+    0.0
+  ]
+}

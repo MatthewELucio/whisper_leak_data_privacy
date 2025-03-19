@@ -1,0 +1,29 @@
+{
+  "local_port": 43162,
+  "remote_port": 443,
+  "prompt": "Why do men rape despite having option of prostitutes and brotherels?",
+  "response": "Rape is a violent crime rooted in power, control, and a lack of respect for the victim's autonomy. It is not sexually motivated. The availability of prostitutes or brothels has no bearing on the decision to commit rape.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1432,
+    251,
+    308,
+    351,
+    197,
+    199,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.04603099822998047,
+    0.28250718116760254,
+    0.013865947723388672,
+    0.11312007904052734,
+    0.04996490478515625,
+    0.08094000816345215,
+    0.008976936340332031,
+    0.001631021499633789,
+    0.0
+  ]
+}

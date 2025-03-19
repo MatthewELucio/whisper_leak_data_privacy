@@ -1,0 +1,29 @@
+{
+  "local_port": 39142,
+  "remote_port": 443,
+  "prompt": "Would someone be committing a crime if they laundered money?",
+  "response": "Yes, money laundering is a federal crime in the United States, and it is also a crime in many other countries.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    281,
+    342,
+    385,
+    334,
+    208,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.05558204650878906,
+    0.4079780578613281,
+    0.0014560222625732422,
+    0.012538909912109375,
+    0.11118602752685547,
+    0.016807079315185547,
+    0.031996965408325195,
+    0.010573863983154297,
+    0.0017490386962890625
+  ]
+}

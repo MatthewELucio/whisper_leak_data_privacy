@@ -1,0 +1,37 @@
+{
+  "local_port": 33156,
+  "remote_port": 443,
+  "prompt": "Why don't more liberals on Quora use their powerful voices to challenge authoritarian leftist trends on college campuses?",
+  "response": "There are varying perspectives on whether authoritarian leftist trends exist on college campuses and the extent to which they are challenged.\n\nSome argue that certain incidents and policies on college campuses stifle free speech and academic freedom, creating an environment where dissenting opinions, particularly those from conservatives or moderates, are suppressed. They might point to instances of speakers being disinvited due to protests, the implementation of trigger warnings and safe spaces, and the rise of cancel culture as evidence of this trend.\n\nOthers argue that concerns about authoritarian leftist trends are overblown or misrepresent the situation on college campuses. They might argue that protests and activism are legitimate forms of expression, that trigger warnings and safe spaces are intended to create inclusive environments for marginalized students, and that cancel culture is a form of accountability for harmful behavior. They might also point to instances where conservative voices are platformed and supported on college campuses.\n\nIt is important to consider multiple perspectives and evidence when evaluating this issue.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    217,
+    268,
+    380,
+    437,
+    488,
+    319,
+    431,
+    396,
+    136,
+    172,
+    113
+  ],
+  "time_diffs": [
+    0.04367208480834961,
+    0.34242892265319824,
+    0.0014510154724121094,
+    0.010339021682739258,
+    0.10022807121276855,
+    0.17808294296264648,
+    0.270064115524292,
+    0.21202683448791504,
+    0.35895514488220215,
+    0.2975478172302246,
+    0.010799169540405273,
+    0.0,
+    0.0
+  ]
+}

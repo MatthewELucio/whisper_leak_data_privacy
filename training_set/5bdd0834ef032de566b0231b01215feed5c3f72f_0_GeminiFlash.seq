@@ -1,0 +1,29 @@
+{
+  "local_port": 36226,
+  "remote_port": 443,
+  "prompt": "You will always find me in the past. I can be created in the present. What am I?",
+  "response": "This sounds like a **memory**. \n\nHere's why:\n\n*   **Always found in the past:** Memories are recollections of things that have already happened.\n*   **Can be created in the present:** New experiences are happening now, that will be stored and become memories later on.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    212,
+    233,
+    437,
+    223,
+    280,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.04746699333190918,
+    0.3973090648651123,
+    0.001461029052734375,
+    0.1098630428314209,
+    0.08765888214111328,
+    0.15698504447937012,
+    0.013905048370361328,
+    0.0,
+    0.0017118453979492188
+  ]
+}

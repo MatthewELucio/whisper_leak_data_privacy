@@ -1,0 +1,41 @@
+{
+  "local_port": 54452,
+  "remote_port": 443,
+  "prompt": "What is the reason why pasteurization is important?",
+  "response": "Pasteurization is important for several key reasons, primarily relating to food safety and preservation:\n\n*   **Eliminating harmful microorganisms:** The main reason for pasteurization is to kill harmful bacteria, viruses, and other microorganisms (pathogens) that can cause foodborne illnesses. These pathogens can lead to serious health problems, including infections, food poisoning, and even death. Examples of pathogens killed by pasteurization include *Salmonella*, *E. coli*, *Listeria*, and *Campylobacter*.\n\n*   **Preventing food spoilage:** Pasteurization also significantly reduces the number of spoilage microorganisms (bacteria, yeasts, and molds) in foods and beverages. These microorganisms cause food to deteriorate, leading to off-flavors, odors, and textures. By reducing their numbers, pasteurization extends the shelf life of products.\n\n*   **Making food safer for vulnerable populations:** Certain groups are more susceptible to foodborne illnesses, including pregnant women, young children, the elderly, and people with weakened immune systems. Pasteurization makes food safer for these vulnerable populations.\n\n*   **Maintaining food quality:** While pasteurization aims to eliminate harmful organisms, it is designed to do so with minimal impact on the nutritional value, flavor, and other quality attributes of the food. The process uses heat, but carefully controlled temperatures and durations minimize undesirable changes.\n\nIn short, pasteurization is crucial for protecting public health by making food safer to consume and preventing food spoilage, all while preserving the quality of the food as much as possible.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    189,
+    261,
+    364,
+    311,
+    440,
+    454,
+    482,
+    433,
+    432,
+    269,
+    316,
+    204,
+    113
+  ],
+  "time_diffs": [
+    0.04526805877685547,
+    0.42557597160339355,
+    0.0015048980712890625,
+    0.02422499656677246,
+    0.07114315032958984,
+    0.08908390998840332,
+    0.16205596923828125,
+    0.1628279685974121,
+    0.2841989994049072,
+    0.2343130111694336,
+    0.38059520721435547,
+    0.2241837978363037,
+    0.0072650909423828125,
+    6.198883056640625e-05,
+    0.0001010894775390625
+  ]
+}

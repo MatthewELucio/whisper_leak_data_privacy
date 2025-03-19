@@ -1,0 +1,37 @@
+{
+  "local_port": 59266,
+  "remote_port": 443,
+  "prompt": "I have a Tata Indica 2007 model. Can I attach it with Ola?",
+  "response": "Unfortunately, you **cannot** attach your 2007 Tata Indica with Ola.\n\nHere's why:\n\n* **Vehicle Age Restrictions:** Ola, like many ride-hailing services, has vehicle age restrictions to ensure safety and maintain a consistent fleet quality.  Generally, Ola requires vehicles to be newer than a certain year, typically less than 6-7 years old. A 2007 model is significantly older than that.\n* **Vehicle Type/Category Restrictions:** Ola often has restrictions on which vehicle types can be used for different categories (e.g., Ola Mini, Ola Sedan, Ola Prime).  Even if your car met the age requirements, it might not qualify for a specific category that Ola offers.\n\n**Alternatives you might consider (though their feasibility depends on your location and specific situation):**\n\n* **Local Taxi Services:** Some local taxi services might have less strict requirements than Ola and Uber.\n* **Selling the Car:**  It might be more beneficial to sell your car and invest in a newer vehicle that meets the requirements for ride-hailing services.\n* **Other Local Transportation Options:** Depending on your location, there might be other transportation platforms with less restrictive requirements.\n\n**Before making any decisions, it's crucial to check the official Ola website or contact their driver support directly for the most up-to-date requirements in your specific city.** This information can change over time.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1271,
+    400,
+    344,
+    310,
+    290,
+    290,
+    473,
+    450,
+    447,
+    280,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04831504821777344,
+    0.5875270366668701,
+    0.15206098556518555,
+    0.04799485206604004,
+    0.19001221656799316,
+    0.19702386856079102,
+    0.2990090847015381,
+    0.3240230083465576,
+    0.43315887451171875,
+    0.22736811637878418,
+    0.005887031555175781,
+    0.0,
+    0.0
+  ]
+}

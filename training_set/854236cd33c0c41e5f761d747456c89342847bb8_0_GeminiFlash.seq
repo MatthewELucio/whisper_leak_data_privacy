@@ -1,0 +1,43 @@
+{
+  "local_port": 59060,
+  "remote_port": 443,
+  "prompt": "What is a summary of \"SparkNotes: Bread Givers\"?",
+  "response": "\"Bread Givers\" by Anzia Yezierska tells the story of Sara Smolinsky, a young Jewish woman growing up in the Lower East Side of New York City in the early 20th century. The novel follows Sara's struggle for independence and education against the traditional, patriarchal values of her Orthodox Jewish family, particularly her father, Reb Smolinsky.\n\nReb Smolinsky, a learned but impractical Talmud scholar, sees himself as a man above worldly concerns and expects his daughters to provide for him. He prioritizes finding wealthy husbands for them, viewing them as a means to his own comfort and prestige.\n\nSara, however, yearns for more than just marriage. She craves education and the freedom to choose her own destiny. She works tirelessly, often sacrificing her own well-being, to earn money for school. She clashes repeatedly with her father, who disapproves of her ambitions and attempts to control her future.\n\nThroughout the novel, Sara watches as her sisters are forced into unhappy marriages arranged by her father. She learns from their experiences and becomes even more determined to break free from his control. She eventually leaves home, enduring hardship and loneliness in her pursuit of education and self-sufficiency.\n\nThe novel culminates in Sara's graduation from college and her marriage to Hugo Seelig, a progressive educator who supports her ambitions. While she finds happiness and independence, she eventually reconciles with her father, realizing that despite their differences, they share a bond of love and understanding.\n\nIn essence, \"Bread Givers\" is a powerful story of a young woman's fight for self-determination, her rejection of traditional patriarchal values, and her eventual reconciliation with her heritage. It explores themes of immigration, assimilation, the clash between tradition and modernity, and the complex relationship between fathers and daughters.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    108,
+    335,
+    423,
+    297,
+    504,
+    438,
+    431,
+    444,
+    522,
+    324,
+    498,
+    144,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.045288801193237305,
+    0.36357617378234863,
+    0.001313924789428711,
+    0.021620988845825195,
+    0.1159510612487793,
+    0.08105897903442383,
+    0.13199496269226074,
+    0.244096040725708,
+    0.2530488967895508,
+    0.26158618927001953,
+    0.37488484382629395,
+    0.387714147567749,
+    0.2927968502044678,
+    0.007116079330444336,
+    0.0,
+    0.0
+  ]
+}

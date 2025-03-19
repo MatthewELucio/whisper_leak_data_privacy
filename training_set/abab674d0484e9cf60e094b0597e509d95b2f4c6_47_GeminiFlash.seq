@@ -1,0 +1,37 @@
+{
+  "local_port": 59228,
+  "remote_port": 443,
+  "prompt": "Would someone be committing a crime if they laundered money?",
+  "response": "Yes, money laundering is a crime in most jurisdictions around the world. The specific laws and penalties vary depending on the country and the amount of money involved.\n\n**Key reasons why money laundering is illegal:**\n\n*   **Hides Illicit Origin:** It conceals the source of illegally obtained money, making it appear legitimate.\n*   **Facilitates Crime:** By cleaning dirty money, it enables criminals to use the proceeds of their illegal activities without raising suspicion, perpetuating further crime.\n*   **Harms Financial Systems:** It can undermine the integrity and stability of financial institutions.\n*   **Supports Terrorism and Other Serious Crimes:** It provides funding for terrorist groups and other criminal organizations.\n\n**In summary,** laundering money is a serious crime because it helps criminals profit from their illegal activities, harms financial systems, and can fund further criminal enterprises.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    249,
+    224,
+    276,
+    380,
+    460,
+    468,
+    420,
+    247,
+    254,
+    186,
+    113
+  ],
+  "time_diffs": [
+    0.049182891845703125,
+    0.3416271209716797,
+    0.0015158653259277344,
+    0.029204130172729492,
+    0.06528878211975098,
+    0.0927281379699707,
+    0.18281197547912598,
+    0.24547195434570312,
+    0.26918911933898926,
+    0.2308058738708496,
+    0.009550094604492188,
+    0.0,
+    0.00034689903259277344
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 58920,
+  "remote_port": 443,
+  "prompt": "Can you wear a mask without wearing one?",
+  "response": "This sounds like a riddle! Here are a few ways you could \"wear a mask without wearing one\":\n\n*   **Figuratively:**\n    *   You could be wearing a \"mask\" of happiness when you're actually sad. This means you're hiding your true emotions.\n    *   You could be wearing a \"mask\" of confidence when you're actually insecure.\n*   **Contextually:**\n    *   Perhaps you're talking about a virtual mask in a video game or online.\n    *   Maybe you're using face paint or makeup to create the *illusion* of wearing a mask.\n\nIs there a particular context you had in mind?\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1276,
+    375,
+    342,
+    458,
+    239,
+    525,
+    162,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04773902893066406,
+    0.2559819221496582,
+    0.11099910736083984,
+    0.061131954193115234,
+    0.157850980758667,
+    0.1591660976409912,
+    0.2569727897644043,
+    0.008836984634399414,
+    0.0015451908111572266,
+    5.3882598876953125e-05
+  ]
+}

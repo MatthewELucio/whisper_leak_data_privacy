@@ -1,0 +1,37 @@
+{
+  "local_port": 43466,
+  "remote_port": 443,
+  "prompt": "What accessories make Indian men sexy?",
+  "response": "When it comes to accessories that can enhance a man's attractiveness, much of it boils down to personal style and what resonates with the individual. However, some accessories commonly associated with Indian men that many find appealing include:\n\n*   **Well-fitted traditional attire:** A tailored kurta pajama or sherwani can be incredibly striking.\n*   **A classic watch:** A timeless piece that adds sophistication.\n*   **Leather sandals or mojaris:** These can complement traditional and Indo-Western outfits.\n*   **A neatly styled beard:** A well-groomed beard can be a very attractive feature.\n*   **Simple jewelry:** A Kada (bracelet) or a subtle chain can add a touch of elegance.\n\nUltimately, confidence and how someone carries themselves are the most important factors in appearing attractive.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    278,
+    347,
+    263,
+    448,
+    255,
+    316,
+    444,
+    247,
+    144,
+    231,
+    113
+  ],
+  "time_diffs": [
+    0.04529094696044922,
+    0.286653995513916,
+    0.0018391609191894531,
+    0.03912997245788574,
+    0.11489391326904297,
+    0.11016702651977539,
+    0.18795108795166016,
+    0.2990128993988037,
+    0.267902135848999,
+    0.04535079002380371,
+    0.006765127182006836,
+    0.0,
+    0.0
+  ]
+}

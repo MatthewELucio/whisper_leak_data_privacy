@@ -1,0 +1,27 @@
+{
+  "local_port": 45122,
+  "remote_port": 443,
+  "prompt": "Is money laundering unlawful?",
+  "response": "Yes, money laundering is unlawful in virtually every country around the world.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    122,
+    314,
+    309,
+    212,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.0451200008392334,
+    0.38561391830444336,
+    0.0013959407806396484,
+    0.01548314094543457,
+    0.05062508583068848,
+    0.010266780853271484,
+    0.0014390945434570312,
+    0.00162506103515625
+  ]
+}

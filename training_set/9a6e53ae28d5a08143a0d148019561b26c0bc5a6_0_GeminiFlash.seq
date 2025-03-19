@@ -1,0 +1,39 @@
+{
+  "local_port": 49270,
+  "remote_port": 443,
+  "prompt": "Where can I get an activation code for the online game, Clash of Kings?",
+  "response": "Activation codes for Clash of Kings are generally obtained through:\n\n*   **Official In-Game Events and Promotions:** Keep an eye on the game's news section, in-game events, and official social media channels. Developers often distribute activation codes (also known as gift codes or redemption codes) as part of special events, celebrations, or collaborations.\n*   **Official Social Media Channels:** Follow the game's official Facebook page, Twitter account, and other social media platforms. They may occasionally post activation codes there.\n*   **Official Clash of Kings Forums and Community Sites:** Check official game forums or community websites. Sometimes, community managers or moderators will share codes.\n*   **Influencer and Partner Promotions:** Content creators (YouTubers, streamers, etc.) who partner with Clash of Kings may receive activation codes to share with their audience.\n*   **Customer Support:** In rare cases, customer support might provide an activation code to resolve a specific issue.\n\n**Important Notes:**\n\n*   **Be wary of unofficial sources:** Avoid websites or individuals promising activation codes in exchange for personal information or money. These are often scams.\n*   **Codes are time-sensitive:** Activation codes usually have an expiration date, so use them promptly.\n*   **Codes are case-sensitive:** Make sure you enter the code exactly as it is shown, paying attention to capitalization.\n*   **Codes can be region-locked:** Some codes may only work in specific regions.\n\nIf you are unsure whether a code is legitimate, it is best to check the official Clash of Kings website or social media accounts.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    183,
+    440,
+    236,
+    266,
+    398,
+    361,
+    292,
+    484,
+    454,
+    204,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.045990943908691406,
+    0.3740100860595703,
+    0.0013408660888671875,
+    0.08949613571166992,
+    0.08411598205566406,
+    0.20808982849121094,
+    0.15798401832580566,
+    0.25704097747802734,
+    0.23403716087341309,
+    0.37659502029418945,
+    0.28505587577819824,
+    0.008485078811645508,
+    0.0,
+    0.0
+  ]
+}

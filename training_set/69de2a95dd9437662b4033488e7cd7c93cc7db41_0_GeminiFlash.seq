@@ -1,0 +1,41 @@
+{
+  "local_port": 51420,
+  "remote_port": 443,
+  "prompt": "Where is the Royal Enfield Service Center in Kota City?",
+  "response": "Unfortunately, Royal Enfield doesn't have an official company-owned service center directly *in* Kota city.\n\nHere are your best options for Royal Enfield service in and around Kota:\n\n*   **Authorized Service Centers (closest options):**\n\n    *   **Kota:** As of my last update, there is a Royal Enfield Authorized Service Center in Kota. I would recommend that you call and confirm their existence before traveling there.\n\n    *   **Bundi:** Located approximately 40 km from Kota. You can find the address and contact information on Royal Enfield's official website.\n\n*   **Royal Enfield Website or App:** Use the Royal Enfield official website or the Royal Enfield app to find the most up-to-date list of authorized service centers. The website will allow you to search by location.\n    *   Go to the Royal Enfield website.\n    *   Look for the \"Service\" or \"Find a Service Center\" section.\n    *   Enter \"Kota\" or a nearby location.\n    *   The website should provide a list of authorized service centers with their addresses, phone numbers, and possibly customer reviews.\n\n*   **Local Mechanics:** There might be reputable independent motorcycle mechanics in Kota who are familiar with Royal Enfield motorcycles. However, using a non-authorized service center may affect your warranty, so proceed with caution. Ask local Royal Enfield riders for recommendations.\n\n**Before you go to any service center, it's highly recommended to:**\n\n*   **Call ahead:** Confirm their address, operating hours, and whether they can accommodate your specific service needs.\n*   **Check Reviews:** If possible, check online reviews of the service center to get an idea of their service quality.\n\nI hope this helps you find a service center for your Royal Enfield in or near Kota!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    239,
+    394,
+    430,
+    423,
+    263,
+    478,
+    442,
+    520,
+    362,
+    326,
+    203,
+    232,
+    113
+  ],
+  "time_diffs": [
+    0.04896688461303711,
+    0.37836718559265137,
+    0.0014798641204833984,
+    0.13262701034545898,
+    0.1452620029449463,
+    0.21101808547973633,
+    0.21010303497314453,
+    0.25702500343322754,
+    0.2661118507385254,
+    0.38762903213500977,
+    0.36506104469299316,
+    0.20277810096740723,
+    0.012124776840209961,
+    0.00019621849060058594,
+    0.0
+  ]
+}

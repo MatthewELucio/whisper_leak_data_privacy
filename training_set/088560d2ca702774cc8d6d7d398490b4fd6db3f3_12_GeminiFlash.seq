@@ -1,0 +1,31 @@
+{
+  "local_port": 37984,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, governments around the world, including the United States, have laws against money laundering. These laws are designed to combat financial crimes by making it illegal to conceal the origins of illegally obtained money.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    160,
+    323,
+    423,
+    364,
+    362,
+    159,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.0450589656829834,
+    0.38361501693725586,
+    0.00131988525390625,
+    0.013563156127929688,
+    0.06294703483581543,
+    0.11225485801696777,
+    0.03438997268676758,
+    0.008779048919677734,
+    0.0012350082397460938,
+    0.0
+  ]
+}

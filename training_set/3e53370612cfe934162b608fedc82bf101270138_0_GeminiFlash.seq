@@ -1,0 +1,29 @@
+{
+  "local_port": 51694,
+  "remote_port": 443,
+  "prompt": "Why did Facebook buy Quora?",
+  "response": "Facebook did not buy Quora. These are two separate companies. Facebook is a social networking platform, while Quora is a question-and-answer website.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    104,
+    356,
+    209,
+    245,
+    132,
+    231,
+    113
+  ],
+  "time_diffs": [
+    0.04533195495605469,
+    0.45234012603759766,
+    0.0012209415435791016,
+    0.06683611869812012,
+    0.05866599082946777,
+    0.016923904418945312,
+    0.00822591781616211,
+    0.0,
+    0.0016970634460449219
+  ]
+}

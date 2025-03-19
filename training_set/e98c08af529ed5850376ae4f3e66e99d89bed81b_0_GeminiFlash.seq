@@ -1,0 +1,41 @@
+{
+  "local_port": 47788,
+  "remote_port": 443,
+  "prompt": "Is this compulsory to marry a boy whom who has relationship?",
+  "response": "No, it is absolutely not compulsory to marry someone, regardless of whether you have been in a relationship with them or not.\n\nMarriage should always be a free and voluntary choice based on mutual love, respect, and compatibility. Societal pressure, family expectations, or feelings of obligation due to a past relationship should not force anyone into marriage.\n\nHere's a breakdown of why it's not compulsory:\n\n*   **Individual Autonomy:** Everyone has the right to make their own decisions about their life, including who they marry (or whether they marry at all).\n*   **Free Consent:** Marriage requires the free and informed consent of both parties. Consent given under duress, coercion, or obligation is not valid.\n*   **Unhappy Marriages:** Forcing someone into marriage often leads to unhappiness, resentment, and potentially abuse for both parties.\n*   **Changing Relationships:** Relationships evolve. Just because you were once in love doesn't mean you're compatible for marriage later on. People change, and their needs and desires change too.\n\n**In conclusion, you should never feel pressured to marry someone, even if you have a history with them. Marriage is a serious commitment that should only be entered into willingly and with a clear understanding of what you want and need in a life partner.**\n\nIf you are feeling pressured to marry someone, please reach out to trusted friends, family members, or a counselor for support. There are also resources available to help you understand your rights and options.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    135,
+    215,
+    388,
+    373,
+    441,
+    385,
+    370,
+    531,
+    332,
+    374,
+    172,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.04479694366455078,
+    0.28711819648742676,
+    0.0015828609466552734,
+    0.02326202392578125,
+    0.08789896965026855,
+    0.08722901344299316,
+    0.24891400337219238,
+    0.15512609481811523,
+    0.30512285232543945,
+    0.34445619583129883,
+    0.3866159915924072,
+    0.1920609474182129,
+    0.007665872573852539,
+    0.0,
+    0.0
+  ]
+}

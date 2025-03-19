@@ -1,0 +1,35 @@
+{
+  "local_port": 44598,
+  "remote_port": 443,
+  "prompt": "What are the legal ramifications of money laundering?",
+  "response": "Money laundering carries significant legal ramifications, both criminally and civilly, and can impact individuals, businesses, and financial institutions. Here's a breakdown:\n\n**Criminal Ramifications:**\n\n*   **Federal Charges (United States as an example):**\n    *   **18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments):** This is the primary federal money laundering statute.  It prohibits a wide range of activities involving financial transactions with the proceeds of unlawful activity, including:\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    292,
+    255,
+    445,
+    277,
+    253,
+    331,
+    400,
+    188,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.04656219482421875,
+    0.3581550121307373,
+    0.0014088153839111328,
+    0.012464046478271484,
+    0.08300304412841797,
+    0.07801389694213867,
+    0.1580359935760498,
+    0.23716998100280762,
+    0.3106861114501953,
+    0.012370109558105469,
+    0.0,
+    3.3855438232421875e-05
+  ]
+}

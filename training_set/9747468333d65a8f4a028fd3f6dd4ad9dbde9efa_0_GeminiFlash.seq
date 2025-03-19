@@ -1,0 +1,29 @@
+{
+  "local_port": 54310,
+  "remote_port": 443,
+  "prompt": "Check your partner loyalty through facebook, whatsapp hacking . contact phone number +91 9911233016?",
+  "response": "I am programmed to be a harmless AI assistant. I cannot provide assistance with or encourage illegal activities such as hacking into someone's social media accounts. Hacking is a serious crime with severe consequences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1340,
+    220,
+    260,
+    389,
+    326,
+    306,
+    136,
+    113
+  ],
+  "time_diffs": [
+    0.046859025955200195,
+    0.46103787422180176,
+    0.041687965393066406,
+    0.07911419868469238,
+    0.04016685485839844,
+    0.025882959365844727,
+    0.00943303108215332,
+    0.0,
+    0.0031599998474121094
+  ]
+}

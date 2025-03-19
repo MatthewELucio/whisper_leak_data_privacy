@@ -1,0 +1,43 @@
+{
+  "local_port": 58144,
+  "remote_port": 443,
+  "prompt": "What does job screening mean?",
+  "response": "Job screening is the process of reviewing applications and resumes to identify candidates who meet the minimum qualifications for a job. It's essentially the first step in the hiring process, used to filter out unsuitable candidates and create a manageable pool of qualified applicants to move forward with.\n\nHere's a breakdown of what it entails:\n\n*   **Reviewing Applications and Resumes:** Examining the information provided by applicants, including their work history, education, skills, and experience.\n\n*   **Identifying Minimum Qualifications:** Comparing the applicant's qualifications against the requirements outlined in the job description. This often includes things like:\n    *   Education level (e.g., Bachelor's degree, specific certifications)\n    *   Years of experience\n    *   Specific skills (e.g., proficiency in a certain software, programming language, or technical skill)\n    *   Industry knowledge\n\n*   **Using Screening Tools:** Often involves using Applicant Tracking Systems (ATS) and other software to automate parts of the screening process. These tools can:\n    *   Scan resumes for keywords related to the job\n    *   Score applications based on how well they match the job requirements\n    *   Filter out applicants who don't meet specific criteria\n\n*   **Eliminating Unqualified Candidates:** The goal is to quickly identify and remove candidates who clearly lack the necessary qualifications, saving time and resources for the hiring team.\n\n*   **Creating a Shortlist:** The screening process culminates in a shortlist of candidates who appear to be a good fit for the role and who will be considered for the next stages of the hiring process (e.g., phone screening, interviews).\n\n**In short, job screening is a critical step to narrow down a large pool of applicants to a manageable number of promising candidates who are worth further evaluation.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    280,
+    263,
+    261,
+    417,
+    286,
+    307,
+    361,
+    321,
+    307,
+    401,
+    439,
+    294,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.04794788360595703,
+    0.4078960418701172,
+    0.0014660358428955078,
+    0.024554967880249023,
+    0.08794713020324707,
+    0.09105181694030762,
+    0.17498111724853516,
+    0.15343403816223145,
+    0.21438002586364746,
+    0.2787039279937744,
+    0.2982320785522461,
+    0.342540979385376,
+    0.1893630027770996,
+    0.009294986724853516,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 33616,
+  "remote_port": 443,
+  "prompt": "What is the salary for a software engineering intern at Facebook in 2015?",
+  "response": "In 2015, Facebook software engineering interns were typically paid a very competitive salary. While precise figures vary based on factors like location and experience, the common range was **around $6,000 - $7,500 per month.**\n\nKeep in mind that this figure is a general estimate from available online sources like Glassdoor, Quora, and student reports from the time.  It's likely that some interns may have earned slightly more or less depending on individual circumstances.\n\nAlso, Facebook (now Meta) is known for providing excellent benefits to interns as well, including free housing or a housing stipend, relocation assistance, meals, and other perks.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    189,
+    455,
+    329,
+    482,
+    361,
+    292,
+    302,
+    158,
+    113
+  ],
+  "time_diffs": [
+    0.04099392890930176,
+    0.27065014839172363,
+    0.001483917236328125,
+    0.10541200637817383,
+    0.08696103096008301,
+    0.21326804161071777,
+    0.1578679084777832,
+    0.20296311378479004,
+    0.005856990814208984,
+    0.0014238357543945312,
+    1.1920928955078125e-06
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 33804,
+  "remote_port": 443,
+  "prompt": "What kinds of compounds does the element form?",
+  "response": "Please provide me with the element you are interested in! I need to know the element's symbol or name to tell you what kinds of compounds it forms.\n\nFor example, if you asked: \"What kinds of compounds does the element **Sodium** form?\", I could tell you about ionic compounds like sodium chloride (NaCl), oxides, hydroxides, and organosodium compounds.\n\nOnce you give me the element, I can give you a helpful answer!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    286,
+    190,
+    193,
+    222,
+    476,
+    450,
+    191,
+    130,
+    113
+  ],
+  "time_diffs": [
+    0.05008888244628906,
+    0.3339111804962158,
+    0.0010759830474853516,
+    0.012573957443237305,
+    0.08216404914855957,
+    0.10512495040893555,
+    0.18981504440307617,
+    0.16010689735412598,
+    0.006922006607055664,
+    0.001413106918334961,
+    0.003319978713989258
+  ]
+}

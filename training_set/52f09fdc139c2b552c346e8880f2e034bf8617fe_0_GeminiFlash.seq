@@ -1,0 +1,37 @@
+{
+  "local_port": 55404,
+  "remote_port": 443,
+  "prompt": "Is Business Insider Republican-leaning?",
+  "response": "Business Insider is generally considered a center-left to liberal news publication. While it covers business and economic issues from various perspectives, its overall editorial stance tends to align with more progressive viewpoints on social and economic matters.\n\nHere's why:\n\n*   **News Coverage:** Business Insider often highlights issues such as income inequality, climate change, and social justice, which are typically associated with the left.\n*   **Editorial Stance:** While not explicitly endorsing political parties, its opinion pieces and analysis often favor policies and perspectives that are generally supported by Democrats.\n*   **Ownership and Management:** While Business Insider's parent company, Axel Springer, has a diverse portfolio, Business Insider itself maintains an editorial independence that leans left.\n\nIt's important to note that Business Insider does cover business and economic news objectively, but its broader political and social commentary tends to reflect a center-left perspective.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    305,
+    351,
+    343,
+    451,
+    335,
+    292,
+    400,
+    286,
+    168,
+    229,
+    113
+  ],
+  "time_diffs": [
+    0.04617881774902344,
+    0.2987511157989502,
+    0.0014460086822509766,
+    0.023261070251464844,
+    0.07494783401489258,
+    0.12697911262512207,
+    0.2043168544769287,
+    0.21001315116882324,
+    0.31684088706970215,
+    0.19552302360534668,
+    0.007766008377075195,
+    0.0,
+    0.00019502639770507812
+  ]
+}

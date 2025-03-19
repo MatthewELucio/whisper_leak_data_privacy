@@ -1,0 +1,43 @@
+{
+  "local_port": 59108,
+  "remote_port": 443,
+  "prompt": "What is the average price for a desktop computer?",
+  "response": "The average price for a desktop computer varies widely based on its intended use, components, and brand. However, here's a general breakdown to give you a good idea:\n\n*   **Budget/Entry-Level:** $300 - $600. These are suitable for basic tasks like web browsing, email, and word processing.\n*   **Mid-Range:** $600 - $1200. These offer better performance for everyday use, some gaming, and tasks like photo editing.\n*   **High-End/Gaming:** $1200 - $2500+. These are designed for demanding tasks like gaming, video editing, and content creation.\n*   **All-in-One:** $500-$2000. These have the monitor and PC built together in one sleek design.\n\nConsidering all types of desktop computers, **a reasonable average price would be somewhere in the range of $700 to $1000.** However, keep in mind that this is a very general estimate, and you might find suitable options outside this range depending on your specific needs and preferences.\n\n**Factors affecting the price:**\n\n*   **Components:** Processor (CPU), Graphics card (GPU), RAM, Storage (SSD or HDD), Motherboard\n*   **Brand:** Some brands carry a premium.\n*   **Operating System:** Windows adds to the cost, while some come with Linux or none.\n*   **Features:** Extra ports, Wi-Fi, Bluetooth, etc.\n*   **Market Conditions:** Supply chain issues and demand can influence pricing.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    148,
+    160,
+    451,
+    295,
+    339,
+    342,
+    231,
+    271,
+    538,
+    383,
+    380,
+    262,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.046579837799072266,
+    0.38184595108032227,
+    0.0013990402221679688,
+    0.0015010833740234375,
+    0.09105801582336426,
+    0.08089590072631836,
+    0.1435260772705078,
+    0.15465998649597168,
+    0.24497008323669434,
+    0.2857990264892578,
+    0.33591580390930176,
+    0.429610013961792,
+    0.028701066970825195,
+    0.0081939697265625,
+    0.0,
+    0.0
+  ]
+}

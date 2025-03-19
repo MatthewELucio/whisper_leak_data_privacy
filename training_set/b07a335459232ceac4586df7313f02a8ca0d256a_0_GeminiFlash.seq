@@ -1,0 +1,29 @@
+{
+  "local_port": 41262,
+  "remote_port": 443,
+  "prompt": "Who do you think will win the 2016 US presidential elections and whom do you want to win and why?",
+  "response": "As an AI, I don't have personal opinions or preferences, so I can't express who I \"want\" to win. The 2016 US presidential election was between Donald Trump and Hillary Clinton. Donald Trump won the election, becoming the 45th President of the United States.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    267,
+    199,
+    180,
+    476,
+    241,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.049871206283569336,
+    0.33499693870544434,
+    0.0014400482177734375,
+    0.14754390716552734,
+    0.04620194435119629,
+    0.12794804573059082,
+    0.00876307487487793,
+    0.0015599727630615234,
+    0.001653909683227539
+  ]
+}

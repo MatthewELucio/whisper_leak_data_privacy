@@ -1,0 +1,43 @@
+{
+  "local_port": 33558,
+  "remote_port": 443,
+  "prompt": "Is money laundering considered an illegal practice?",
+  "response": "Yes, money laundering is an illegal practice in most countries. It involves concealing the origins of money obtained through illegal activities by passing it through legitimate businesses or financial systems to make it appear legal. Money laundering is a serious financial crime that can result in significant criminal penalties, including fines and imprisonment.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    405,
+    405,
+    408,
+    464,
+    450,
+    452,
+    459,
+    450,
+    447,
+    473,
+    406,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.02418208122253418,
+    0.17676591873168945,
+    0.31909799575805664,
+    0.001580953598022461,
+    0.0031881332397460938,
+    0.16248488426208496,
+    0.09572410583496094,
+    0.1322190761566162,
+    0.13405895233154297,
+    0.17897796630859375,
+    0.13829898834228516,
+    0.13207101821899414,
+    0.14486408233642578,
+    0.0013058185577392578,
+    0.014321088790893555,
+    0.0
+  ]
+}

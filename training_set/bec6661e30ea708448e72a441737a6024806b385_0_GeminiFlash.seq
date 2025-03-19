@@ -1,0 +1,37 @@
+{
+  "local_port": 55584,
+  "remote_port": 443,
+  "prompt": "When will Mu sigma pay the joining bonus of 5L? I am joining in Aug 2016!",
+  "response": "Unfortunately, I cannot provide you with the exact date you will receive your joining bonus from Mu Sigma. Here's why:\n\n*   **Company-Specific Policies:** Joining bonus payouts are governed by the specific policies of Mu Sigma, which are not publicly available.\n\n**How to find out when you will receive your joining bonus:**\n\n1.  **Review Your Offer Letter:** The most reliable source of information is your offer letter from Mu Sigma. It should outline the terms of the joining bonus, including the payout schedule and any conditions you need to meet.\n2.  **Contact HR:** Reach out to the HR department at Mu Sigma. They can give you the official information regarding your joining bonus payment.\n3.  **Ask Your Recruiter:** If you are still in contact with the recruiter who helped you get the job, they may be able to provide some insights or direct you to the appropriate contact within Mu Sigma.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    150,
+    380,
+    443,
+    241,
+    231,
+    452,
+    359,
+    345,
+    294,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.04743194580078125,
+    0.4243040084838867,
+    0.0012650489807128906,
+    0.033682823181152344,
+    0.043704986572265625,
+    0.07620096206665039,
+    0.16820406913757324,
+    0.1585381031036377,
+    0.2654750347137451,
+    0.19844388961791992,
+    0.008554935455322266,
+    8.702278137207031e-05,
+    0.0
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 51676,
+  "remote_port": 443,
+  "prompt": "What is the best TOR directory with active links and intelligent queries?",
+  "response": "I am not able to provide a specific \"best\" directory of Tor websites with active links and intelligent queries for a few key reasons:\n\n*   **Dynamic Nature:** The Tor network is constantly changing. Websites appear and disappear frequently. Any directory I could provide would quickly become outdated.\n\n*   **Risk of Malicious Links:** Some directories may intentionally or unintentionally list malicious websites (phishing sites, sites distributing malware, etc.). Providing a specific recommendation could put you at risk.\n\n*   **Ethical Considerations:** I am designed to be a safe and harmless AI assistant. Providing a direct recommendation for accessing the Tor network could be interpreted as endorsing potentially illegal or harmful activities that might occur on it, which goes against my ethical programming.\n\nThat being said, here is general advice for locating things on the Tor network:\n\n1.  **Start with Known Search Engines:** There are search engines designed to index .onion sites. DuckDuckGo is a private search engine that can return TOR links when searching the regular internet. Some older search engines that can search TOR links include Ahmia and Torch.\n\n2.  **Onion Links Repositories** Some onion links exist for the sole purpose of containing lists of other onion links. Be careful if you use one, as the TOR network is not moderated.\n\n3.  **Beware of Scams:** When searching for websites on the TOR network, be cautious. Scams and malicious websites are common.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    214,
+    325,
+    373,
+    375,
+    271,
+    270,
+    379,
+    321,
+    416,
+    269,
+    246,
+    229,
+    113
+  ],
+  "time_diffs": [
+    0.04741191864013672,
+    0.31448817253112793,
+    0.0015149116516113281,
+    0.05489802360534668,
+    0.0785679817199707,
+    0.13490605354309082,
+    0.17002201080322266,
+    0.1936168670654297,
+    0.297558069229126,
+    0.37113094329833984,
+    0.41866207122802734,
+    0.15253305435180664,
+    0.008666038513183594,
+    0.0,
+    4.982948303222656e-05
+  ]
+}

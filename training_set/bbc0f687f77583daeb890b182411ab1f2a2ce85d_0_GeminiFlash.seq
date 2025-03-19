@@ -1,0 +1,27 @@
+{
+  "local_port": 38114,
+  "remote_port": 443,
+  "prompt": "I'm a 5 letter word. I am normally below you. If you remove my 1st letter, you'll find me above you. If you remove my 1st & 2nd letters, you can't see me. What am I?",
+  "response": "This is a clever riddle! The answer is **BELOW**.\n\nHere's how it works:\n\n*   **BELOW** - A 5-letter word.\n*   **ELOW** - E is above L in the alphabet.\n*   **LOW** - You can't see when the lights are low.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1289,
+    297,
+    222,
+    434,
+    231,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.047759056091308594,
+    0.33185791969299316,
+    0.1491870880126953,
+    0.08097600936889648,
+    0.21000289916992188,
+    0.01690506935119629,
+    0.001592874526977539,
+    0.0
+  ]
+}

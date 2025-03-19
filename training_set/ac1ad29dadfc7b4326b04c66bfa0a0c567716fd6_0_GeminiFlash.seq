@@ -1,0 +1,43 @@
+{
+  "local_port": 46454,
+  "remote_port": 443,
+  "prompt": "Where can I find a power outlet for my laptop at Melbourne Airport?",
+  "response": "Melbourne Airport (MEL) provides power outlets and charging stations in various locations throughout the terminals. Here's a breakdown of where you're likely to find them:\n\n*   **Departure Lounges (After Security):**\n    *   **Near Seating Areas:** Look for power outlets and USB ports integrated into seating areas, particularly near gates. These are common in both the domestic and international terminals.\n    *   **Charging Stations:** Dedicated charging stations are often available, sometimes featuring a mix of power outlets and USB ports.\n    *   **Business Lounges:** If you have access to airline lounges (e.g., Qantas Club, Virgin Australia Lounge, Emirates Lounge), they typically offer ample power outlets.\n\n*   **Food Courts and Dining Areas:** Many tables in food courts and restaurants have power outlets nearby.\n\n*   **Before Security (Public Areas):** Finding outlets before security can be more challenging, but check:\n    *   **Near Seating Areas:** Sometimes, power outlets are available near seating areas in the check-in hall.\n    *   **Cafes:** Some cafes might have outlets available for customers.\n\n**Tips for Finding Outlets:**\n\n*   **Ask Airport Staff:** Don't hesitate to ask information desk staff or airline representatives where the nearest power outlets are located.\n*   **Use Airport Wi-Fi:** Connect to the airport Wi-Fi and search online for \"Melbourne Airport charging stations\" or similar terms. Other travelers may have shared specific locations.\n*   **Look Closely:** Outlets can sometimes be hidden under seats or behind furniture.\n*   **Bring a Power Adapter:** If you're traveling internationally, ensure you have the correct power adapter for Australian outlets (Type I).\n*   **Consider a Portable Power Bank:** A portable power bank is a reliable backup option to keep your devices charged, especially if you can't easily find an outlet.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    91,
+    276,
+    252,
+    361,
+    255,
+    311,
+    415,
+    356,
+    359,
+    494,
+    317,
+    264,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.04648613929748535,
+    0.30761003494262695,
+    0.0014858245849609375,
+    0.015343189239501953,
+    0.07514786720275879,
+    0.09372806549072266,
+    0.19847702980041504,
+    0.20406889915466309,
+    0.3563380241394043,
+    0.29919004440307617,
+    0.34755992889404297,
+    0.41874003410339355,
+    0.33086395263671875,
+    0.013581037521362305,
+    0.0,
+    0.0
+  ]
+}

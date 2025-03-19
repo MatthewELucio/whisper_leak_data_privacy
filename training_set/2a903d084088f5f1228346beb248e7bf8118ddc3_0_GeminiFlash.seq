@@ -1,0 +1,27 @@
+{
+  "local_port": 60258,
+  "remote_port": 443,
+  "prompt": "How many people to in the United States?",
+  "response": "The population of the United States is estimated to be around **336 million** as of 2024.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    299,
+    253,
+    247,
+    223,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.05582404136657715,
+    0.38709497451782227,
+    0.0015070438385009766,
+    0.1176900863647461,
+    0.013370037078857422,
+    0.01030278205871582,
+    0.0015971660614013672,
+    0.0
+  ]
+}

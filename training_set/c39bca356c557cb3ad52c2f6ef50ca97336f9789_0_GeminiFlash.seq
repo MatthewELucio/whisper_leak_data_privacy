@@ -1,0 +1,43 @@
+{
+  "local_port": 47296,
+  "remote_port": 443,
+  "prompt": "Complete an orbital diagram for scandium (Sc).?",
+  "response": "Okay, here's the orbital diagram for Scandium (Sc), which has an atomic number of 21:\n\n```\n   1s     2s     2p          3s     3p          4s     3d\n \u2191\u2193   \u2191\u2193   \u2191\u2193 \u2191\u2193 \u2191\u2193   \u2191\u2193   \u2191\u2193 \u2191\u2193 \u2191\u2193   \u2191\u2193   \u2191  _  _  _  _\n```\n\n**Explanation:**\n\n*   **Atomic Number:** Scandium (Sc) has an atomic number of 21, meaning it has 21 protons and, in its neutral state, 21 electrons.\n*   **Aufbau Principle:** We fill the orbitals in order of increasing energy.\n*   **Hund's Rule:** Within a subshell (e.g., the 2p, 3p, or 3d), electrons are individually placed in each orbital before any orbital gets a second electron.  Also, these unpaired electrons have the same spin (represented by the arrow direction)\n*   **Pauli Exclusion Principle:** Each orbital can hold a maximum of two electrons, and if two electrons are in the same orbital, they must have opposite spins.\n*   **Orbital Representation:**\n    *   Each box represents an orbital.\n    *   Arrows represent electrons.  Up arrows represent spin up (+1/2), and down arrows represent spin down (-1/2).\n\n**Step-by-step filling:**\n\n1.  **1s:**  Holds 2 electrons (\u2191\u2193)\n2.  **2s:** Holds 2 electrons (\u2191\u2193)\n3.  **2p:** Holds 6 electrons (\u2191\u2193 \u2191\u2193 \u2191\u2193)\n4.  **3s:** Holds 2 electrons (\u2191\u2193)\n5.  **3p:** Holds 6 electrons (\u2191\u2193 \u2191\u2193 \u2191\u2193)\n6.  **4s:** Holds 2 electrons (\u2191\u2193)\n7.  **3d:** Holds 1 electron (\u2191 )  The remaining four 3d orbitals are empty.\n\n**Electronic Configuration Notation:**\n\nThe electronic configuration for Scandium can also be written as: 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>4s<sup>2</sup>3d<sup>1</sup>\n\nor, in shorthand using the noble gas core: [Ar]4s<sup>2</sup>3d<sup>1</sup>\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1286,
+    192,
+    385,
+    327,
+    179,
+    499,
+    333,
+    518,
+    463,
+    292,
+    306,
+    232,
+    314,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.04514002799987793,
+    0.31195688247680664,
+    0.1422100067138672,
+    0.08080101013183594,
+    0.1791839599609375,
+    0.1573500633239746,
+    0.24559712409973145,
+    0.3182389736175537,
+    0.3862009048461914,
+    0.32743310928344727,
+    0.25699400901794434,
+    0.3850679397583008,
+    0.29485392570495605,
+    0.01209115982055664,
+    0.0,
+    0.00011587142944335938
+  ]
+}

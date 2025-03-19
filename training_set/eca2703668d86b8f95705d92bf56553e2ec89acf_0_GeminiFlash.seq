@@ -1,0 +1,31 @@
+{
+  "local_port": 50408,
+  "remote_port": 443,
+  "prompt": "Where is the town of Bomont in the movie Footloose?",
+  "response": "The town of Bomont in the original 1984 film *Footloose* is located in **Oklahoma**. However, in the 2011 remake, Bomont is in **Georgia.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    191,
+    266,
+    424,
+    194,
+    350,
+    157,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04530906677246094,
+    0.4175739288330078,
+    0.001493215560913086,
+    0.012232780456542969,
+    0.04020404815673828,
+    0.07605314254760742,
+    0.04685187339782715,
+    0.008890151977539062,
+    0.0016667842864990234,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 47358,
+  "remote_port": 443,
+  "prompt": "What does RFP stand for in healthcare?",
+  "response": "RFP in healthcare stands for **Request for Proposal**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    250,
+    283,
+    325,
+    211,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.04656791687011719,
+    0.39011502265930176,
+    0.0013470649719238281,
+    0.001519918441772461,
+    0.04487204551696777,
+    0.006791114807128906,
+    0.0031728744506835938,
+    0.00020003318786621094
+  ]
+}

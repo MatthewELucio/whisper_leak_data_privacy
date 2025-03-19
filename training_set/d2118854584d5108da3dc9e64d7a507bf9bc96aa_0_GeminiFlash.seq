@@ -1,0 +1,41 @@
+{
+  "local_port": 42236,
+  "remote_port": 443,
+  "prompt": "Graph Theory: What does it mean if vertices are adjacent?",
+  "response": "In graph theory, vertices are considered **adjacent** if they are directly connected by an **edge**.  In other words, if there is an edge linking two vertices, those vertices are adjacent.\n\nHere's a breakdown:\n\n* **Vertex (plural: vertices):** A node or point in the graph.\n* **Edge:** A line or connection between two vertices.\n* **Adjacent:** Meaning \"next to\" or \"neighboring.\"\n\n**Example:**\n\nImagine a graph representing a social network.\n\n*   Each **person** is a **vertex**.\n*   If two people are **friends**, there's an **edge** connecting their vertices.\n*   Therefore, two **friends** (vertices) are **adjacent** to each other in the graph.\n\n**Formally:**\n\nTwo vertices *u* and *v* in a graph *G* are adjacent if there exists an edge *e* in *G* such that *e* = {*u*, *v*} (for an undirected graph) or *e* = (*u*, *v*) (for a directed graph).\n\n**Importance:**\n\nThe concept of adjacency is fundamental to graph theory because:\n\n*   It defines the relationships and connections within the graph.\n*   Many graph algorithms and properties rely on knowing which vertices are adjacent.\n*   It helps in understanding the structure and connectivity of the graph.\n\nTherefore, \"adjacent\" is a crucial term for describing the basic building blocks of a graph and their relationships.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    186,
+    353,
+    308,
+    339,
+    296,
+    370,
+    273,
+    421,
+    442,
+    403,
+    182,
+    200,
+    113
+  ],
+  "time_diffs": [
+    0.047593116760253906,
+    0.3919680118560791,
+    9.989738464355469e-05,
+    0.006181001663208008,
+    0.07282710075378418,
+    0.06504082679748535,
+    0.19177603721618652,
+    0.1904149055480957,
+    0.2969532012939453,
+    0.29720091819763184,
+    0.4926290512084961,
+    0.22105693817138672,
+    0.031238079071044922,
+    0.0,
+    0.0
+  ]
+}

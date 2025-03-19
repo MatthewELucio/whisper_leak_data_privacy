@@ -1,0 +1,29 @@
+{
+  "local_port": 38036,
+  "remote_port": 443,
+  "prompt": "How long did it take you to get a job after graduating?",
+  "response": "As a large language model, I don't experience graduating or job seeking like a human does. I don't have a personal history or career path. I was developed and trained by Google AI. Therefore, the concept of \"getting a job\" doesn't apply to me.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1286,
+    155,
+    261,
+    455,
+    395,
+    163,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.046813011169433594,
+    0.5851349830627441,
+    0.0055391788482666016,
+    0.10825991630554199,
+    0.13775992393493652,
+    0.14350295066833496,
+    0.008778095245361328,
+    0.001405954360961914,
+    0.0
+  ]
+}

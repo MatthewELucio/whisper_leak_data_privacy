@@ -1,0 +1,37 @@
+{
+  "local_port": 55528,
+  "remote_port": 443,
+  "prompt": "Is CNN biased against Trump?",
+  "response": "That's a complex issue where reasonable people disagree. Different media outlets have varying perspectives on political coverage.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    405,
+    405,
+    409,
+    440,
+    451,
+    448,
+    406,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.03415989875793457,
+    0.25164794921875,
+    0.37345409393310547,
+    0.003726959228515625,
+    0.0,
+    0.14903903007507324,
+    0.1430189609527588,
+    0.1796891689300537,
+    0.06795477867126465,
+    0.014213085174560547,
+    0.007858037948608398,
+    0.0,
+    0.0
+  ]
+}

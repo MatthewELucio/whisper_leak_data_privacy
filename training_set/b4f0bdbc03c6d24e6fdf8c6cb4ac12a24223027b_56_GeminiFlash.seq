@@ -1,0 +1,43 @@
+{
+  "local_port": 59272,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law absolutely prohibits money laundering in virtually every country in the world.  There are comprehensive legal and regulatory frameworks designed to combat it.\n\nHere's a breakdown:\n\n*   **It's a crime:** Money laundering is a criminal offense in almost every jurisdiction.  Penalties can include hefty fines, imprisonment, and forfeiture of assets.\n\n*   **International treaties and organizations:** The Financial Action Task Force (FATF) is an inter-governmental body that sets international standards to combat money laundering and terrorist financing.  Countries that are members of FATF (and most countries strive to comply with its recommendations) have laws in place to address money laundering.  Other international organizations like the United Nations also play a role.\n\n*   **Specific laws:** Examples of laws prohibiting money laundering include:\n\n    *   In the **United States**, the primary laws are:\n        *   The Bank Secrecy Act (BSA): Requires financial institutions to keep records and file reports on certain transactions.\n        *   Money Laundering Control Act: Criminalizes money laundering.\n    *   In the **United Kingdom**, the primary legislation is the Proceeds of Crime Act 2002.\n    *   In the **European Union**, there are a series of Anti-Money Laundering Directives (AMLDs) that member states must implement into their national laws.\n\n*   **Purpose of the laws:** The goal of these laws is to:\n\n    *   Prevent criminals from enjoying the fruits of their illegal activities.\n    *   Disrupt criminal organizations.\n    *   Protect the financial system from being used for illicit purposes.\n    *   Combat terrorism financing (which often overlaps with money laundering).\n\n**In short, money laundering is illegal and actively combated by governments worldwide.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    233,
+    174,
+    438,
+    395,
+    311,
+    365,
+    417,
+    403,
+    460,
+    518,
+    444,
+    240,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.042524099349975586,
+    0.35118985176086426,
+    0.0013580322265625,
+    0.016518115997314453,
+    0.07206892967224121,
+    0.08819007873535156,
+    0.200639009475708,
+    0.2043929100036621,
+    0.2310800552368164,
+    0.3010280132293701,
+    0.3869898319244385,
+    0.3566281795501709,
+    0.24049782752990723,
+    0.008239030838012695,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 49706,
+  "remote_port": 443,
+  "prompt": "What's the meaning of ISO?",
+  "response": "ISO stands for the **International Organization for Standardization**.\n\nIt's an independent, non-governmental international organization that develops and publishes a wide range of international standards. These standards cover almost all aspects of technology and manufacturing, helping to make industries more efficient and effective.\n\nSo, in short, **ISO is the name of the organization that creates standards.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    120,
+    208,
+    410,
+    399,
+    250,
+    164,
+    225,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.046594858169555664,
+    0.30396008491516113,
+    0.001725912094116211,
+    0.048593997955322266,
+    0.049844980239868164,
+    0.10802412033081055,
+    0.18111300468444824,
+    0.04684185981750488,
+    0.030472993850708008,
+    0.0011000633239746094,
+    0.0
+  ]
+}

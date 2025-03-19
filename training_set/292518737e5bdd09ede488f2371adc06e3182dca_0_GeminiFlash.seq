@@ -1,0 +1,41 @@
+{
+  "local_port": 34432,
+  "remote_port": 443,
+  "prompt": "Does my comment violate BNBR policy?",
+  "response": "To assess whether your comment violates the \"Be Nice, Be Respectful\" (BNBR) policy, I need to see the comment itself. Please share the comment you're concerned about.\n\nHowever, I can give you some general guidelines based on what constitutes a violation of most BNBR policies:\n\n**Things that *likely* violate BNBR:**\n\n*   **Insults, name-calling, or personal attacks:** Any language intended to demean, belittle, or insult another user.\n*   **Harassment or stalking:** Repeatedly targeting someone with unwanted attention, threats, or intimidation.\n*   **Discrimination:** Making prejudiced remarks based on someone's race, ethnicity, religion, gender, sexual orientation, disability, or other protected characteristic.\n*   **Hate speech:** Promoting violence or hatred against any group.\n*   **Threats of violence:** Any statement that suggests you intend to harm yourself or others.\n*   **Offensive language:** Using slurs, profanity, or sexually explicit language in a way that is intended to offend or harass.\n*   **Doxing:** Sharing someone's personal information (address, phone number, etc.) without their consent.\n*   **Trolling:** Intentionally trying to provoke or disrupt conversations.\n*   **Spamming:** Posting irrelevant or repetitive content.\n\n**Things that are *less likely* to violate BNBR (but could, depending on context):**\n\n*   **Disagreement:** Expressing a different opinion, as long as it's done respectfully.\n*   **Criticism:** Offering constructive criticism, as long as it's focused on the content and not the person.\n*   **Humor:** Using humor, but being mindful that it doesn't cross the line into being offensive or hurtful.\n\n**When providing the comment, also consider telling me:**\n\n*   **The context:** Where did you post the comment? What was the discussion about?\n*   **Your intent:** What were you trying to communicate with the comment?\n*   **Who was the target?** Did you address the comment at a particular individual or group?\n\nOnce I have this information, I can give you a more accurate assessment.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1392,
+    230,
+    407,
+    464,
+    460,
+    329,
+    446,
+    483,
+    373,
+    537,
+    503,
+    282,
+    229,
+    113
+  ],
+  "time_diffs": [
+    0.04588198661804199,
+    0.2862999439239502,
+    0.1368699073791504,
+    0.08676505088806152,
+    0.1603250503540039,
+    0.20406293869018555,
+    0.2818779945373535,
+    0.2631230354309082,
+    0.3893120288848877,
+    0.3113679885864258,
+    0.41186094284057617,
+    0.3388340473175049,
+    0.011639118194580078,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 48998,
+  "remote_port": 443,
+  "prompt": "Do men or women have a better orgasm?",
+  "response": "There's no simple answer to whether men or women have \"better\" orgasms because the experience of orgasm is subjective and varies greatly from person to person. \n\nHere's a breakdown of factors to consider:\n\n*   **Physiological Differences:** Men typically experience orgasm through ejaculation, which involves a more defined and predictable physiological process. Women's orgasms can be more varied, involving different parts of the body and a wider range of sensations.\n\n*   **Subjective Experience:** What one person considers a \"good\" orgasm differs from another. Some may value intensity, while others prioritize emotional connection or the afterglow.\n\n*   **Frequency and Consistency:** Men generally report experiencing orgasm more consistently during sexual encounters than women. This doesn't necessarily mean their orgasms are \"better,\" but rather that they occur more predictably.\n\n*   **Cultural and Social Factors:** Societal expectations and attitudes towards sex can influence how people perceive and experience orgasm.\n\n*   **Individual Factors:** Individual anatomy, hormones, psychological state, and relationship dynamics all play a significant role in the quality of orgasm.\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    296,
+    240,
+    201,
+    345,
+    403,
+    383,
+    422,
+    412,
+    367,
+    207,
+    235,
+    113
+  ],
+  "time_diffs": [
+    0.046256065368652344,
+    0.4130699634552002,
+    0.0014798641204833984,
+    0.03345799446105957,
+    0.0579831600189209,
+    0.09708189964294434,
+    0.2269761562347412,
+    0.1882188320159912,
+    0.267017126083374,
+    0.24240589141845703,
+    0.1887221336364746,
+    0.004423856735229492,
+    0.0,
+    0.0
+  ]
+}

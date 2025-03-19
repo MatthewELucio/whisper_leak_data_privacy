@@ -1,0 +1,43 @@
+{
+  "local_port": 59928,
+  "remote_port": 443,
+  "prompt": "What is the name of Santa Claus in other countries?",
+  "response": "Santa Claus is known by many different names around the world, reflecting local traditions and languages. Here are some examples:\n\n*   **United States & Canada:** Santa Claus\n*   **United Kingdom:** Father Christmas\n*   **France:** P\u00e8re No\u00ebl\n*   **Germany:** Weihnachtsmann (Christmas Man)\n*   **Netherlands:** Sinterklaas (Saint Nicholas) - A separate figure who arrives earlier in December.\n*   **Belgium:** Kerstman (Christmas Man), or P\u00e8re No\u00ebl (French-speaking regions). Sinterklaas also plays a big role.\n*   **Spain:** Pap\u00e1 Noel\n*   **Italy:** Babbo Natale\n*   **Russia:** Ded Moroz (Grandfather Frost)\n*   **Finland:** Joulupukki (Christmas Goat)\n*   **Sweden:** Jultomten (Christmas Gnome/Elf)\n*   **Norway:** Julenissen (Christmas Gnome/Elf)\n*   **Denmark:** Julemanden (Christmas Man)\n*   **Poland:** \u015awi\u0119ty Miko\u0142aj (Saint Nicholas) or Dziadek Mr\u00f3z (Grandfather Frost)\n*   **Portugal:** Pai Natal\n*   **Brazil:** Papai Noel\n*   **Argentina:** Pap\u00e1 Noel\n*   **Chile:** Viejito Pascuero (Old Man Christmas)\n*   **Japan:** Santa Kurosu (Santa Claus) or Hotei-osho (one of the Seven Gods of Fortune, who also gives presents)\n*   **China:** Shengdan Laoren (Christmas Old Man)\n*   **Iceland:** J\u00f3lasveinn (Christmas Lads) - Actually, a group of 13 mischievous lads who visit one by one in the days leading up to Christmas.\n\nThis is just a small sampling, and there can be regional variations within countries as well. The traditions surrounding these figures also vary considerably.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    128,
+    356,
+    281,
+    276,
+    409,
+    313,
+    247,
+    455,
+    305,
+    492,
+    264,
+    171,
+    123,
+    113
+  ],
+  "time_diffs": [
+    0.04681396484375,
+    0.33107709884643555,
+    0.00146484375,
+    0.10736608505249023,
+    0.06403303146362305,
+    0.1541428565979004,
+    0.1569662094116211,
+    0.28099489212036133,
+    0.2792539596557617,
+    0.3625171184539795,
+    0.4869730472564697,
+    0.38485193252563477,
+    0.05375790596008301,
+    0.012269973754882812,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 53912,
+  "remote_port": 443,
+  "prompt": "Have my pants infested Quora too?",
+  "response": "As a large language model, I don't have personal experiences or the ability to browse the internet in real-time. Therefore, I have no information about pants infesting Quora or any other platform.\n\nThe idea of \"pants infesting\" Quora is likely a humorous or nonsensical concept. If you're encountering something unusual on Quora, it's best to:\n\n*   **Describe the situation in more detail:** What exactly are you seeing or experiencing that leads you to believe there's a problem?\n*   **Check Quora's help center:** Quora has resources to address various issues and concerns.\n*   **Contact Quora support:** If you can't find an answer in the help center, you can directly contact Quora's support team for assistance.\n\nIf this is just a joke, then I'm not sure what \"pants infesting\" would mean in that context!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    98,
+    291,
+    237,
+    377,
+    476,
+    352,
+    322,
+    166,
+    172,
+    113
+  ],
+  "time_diffs": [
+    0.0450749397277832,
+    0.25980615615844727,
+    0.0012810230255126953,
+    0.12074494361877441,
+    0.1039888858795166,
+    0.16991710662841797,
+    0.19113898277282715,
+    0.26789093017578125,
+    0.20818305015563965,
+    0.008534908294677734,
+    0.0,
+    0.0
+  ]
+}

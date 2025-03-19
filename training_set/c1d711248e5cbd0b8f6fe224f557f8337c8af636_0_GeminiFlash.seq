@@ -1,0 +1,41 @@
+{
+  "local_port": 42002,
+  "remote_port": 443,
+  "prompt": "What would happen if Donald Trump deported all illegal immigrants?",
+  "response": "Deporting all undocumented immigrants from the U.S. would have a wide range of complex and potentially significant consequences across various sectors.\n\n**Economic Impacts:**\n\n*   **Labor Force:** Certain industries, like agriculture, construction, and hospitality, rely heavily on undocumented labor. Mass deportations could lead to labor shortages, potentially increasing costs for businesses and consumers.\n*   **GDP:** The reduction in the workforce could negatively impact the nation's GDP. Some studies have estimated significant decreases in economic output.\n*   **Social Security and Medicare:** Some undocumented immigrants contribute to these systems through payroll taxes. Their removal could slightly weaken these programs.\n*   **Housing Market:** A decrease in population could soften demand in some housing markets, potentially leading to price declines.\n\n**Social Impacts:**\n\n*   **Families:** Deportations could separate families, impacting U.S. citizen children and spouses.\n*   **Communities:** Many communities have become integrated with undocumented immigrants. Their removal could disrupt social structures and local economies.\n*   **Education:** Schools could see a decline in enrollment, potentially leading to funding cuts.\n*   **Public Health:** Some fear that deportations could lead to a reluctance among remaining undocumented immigrants to seek medical care, potentially increasing the spread of diseases.\n\n**Political and Legal Impacts:**\n\n*   **Logistical Challenges:** Deporting millions of people would be a massive logistical undertaking, requiring significant resources and potentially straining the immigration system.\n*   **Legal Challenges:** Mass deportations could face legal challenges based on due process and human rights concerns.\n*   **International Relations:** The policy could strain relationships with countries from which the immigrants are deported.\n\nIt's important to note that the actual consequences would depend on the specific policies implemented, the speed of deportations, and the response of businesses and individuals.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    100,
+    271,
+    402,
+    344,
+    443,
+    444,
+    509,
+    537,
+    448,
+    357,
+    220,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.05013608932495117,
+    0.2674858570098877,
+    0.0014560222625732422,
+    0.10872197151184082,
+    0.08782196044921875,
+    0.1621229648590088,
+    0.20592808723449707,
+    0.3691599369049072,
+    0.28103113174438477,
+    0.42701101303100586,
+    0.35643696784973145,
+    0.27716898918151855,
+    0.008569002151489258,
+    0.00024390220642089844,
+    0.0
+  ]
+}

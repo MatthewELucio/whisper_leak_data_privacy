@@ -1,0 +1,39 @@
+{
+  "local_port": 41810,
+  "remote_port": 443,
+  "prompt": "Why do Navy squadrons start with a V?",
+  "response": "U.S. Navy squadron designations starting with \"V\" indicate squadrons that fly **fixed-wing aircraft**. This is a convention used to quickly identify the type of aircraft operated by a particular unit.\n\nHere's a more detailed breakdown:\n\n*   **V - Fixed-wing:** Generally signifies fixed-wing aircraft (airplanes)\n*   The second letter denotes the mission or type of aircraft:\n    *   A - Attack\n    *   F - Fighter\n    *   Q - Electronic Warfare\n    *   W - Early Warning\n    *   P - Maritime Patrol\n    *   C - Fleet Logistics Support\n    *   R - Reconnaissance\n    *   T - Training\n\n**Examples:**\n\n*   **VA** - Attack Squadron (flies attack aircraft like the F/A-18E/F Super Hornet in an attack role)\n*   **VF** - Fighter Squadron (flies fighter aircraft like the F/A-18E/F Super Hornet in a fighter role)\n*   **VP** - Patrol Squadron (flies maritime patrol aircraft like the P-8 Poseidon)\n*   **VQ** - Electronic Warfare Squadron (flies electronic warfare aircraft)\n*   **VR** - Fleet Logistics Support Squadron (flies transport aircraft)\n\n**Important Note:**\n\n*   Helicopter squadrons use \"H\" at the start of their designation.\n*   This is a general rule, and there can be occasional exceptions or changes over time as roles and aircraft evolve.\n\nSo, in summary, the \"V\" in Navy squadron designations signifies that the unit operates **fixed-wing aircraft**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1366,
+    325,
+    307,
+    384,
+    303,
+    391,
+    215,
+    380,
+    415,
+    309,
+    308,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.0475308895111084,
+    0.2772219181060791,
+    0.2060379981994629,
+    0.04787611961364746,
+    0.1832270622253418,
+    0.22904300689697266,
+    0.28110694885253906,
+    0.348024845123291,
+    0.24945306777954102,
+    0.3341491222381592,
+    0.15618181228637695,
+    0.01469111442565918,
+    0.0,
+    0.0
+  ]
+}

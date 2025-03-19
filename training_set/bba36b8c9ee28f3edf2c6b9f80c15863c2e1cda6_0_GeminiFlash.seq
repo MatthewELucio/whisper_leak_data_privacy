@@ -1,0 +1,33 @@
+{
+  "local_port": 51068,
+  "remote_port": 443,
+  "prompt": "As a dentist, what has been your most disgusting moment with you patients?",
+  "response": "As an AI, I am not a dentist and do not have personal experiences. However, I can share some of the common disgusting experiences that dentists have reported:\n\n*   **Severe neglect:** Patients with extreme dental neglect may have extensive decay, abscesses, and significant buildup of plaque and tartar, leading to unpleasant odors and sights.\n*   **Vomit:** Patients vomiting during treatment can be a challenging and unpleasant experience for dentists.\n*   **Other bodily fluids:** Dealing with excessive saliva, blood, or other bodily fluids can be off-putting.\n*   **Infections:** Encountering patients with active oral infections, such as fungal or bacterial infections, can be visually and olfactorily unpleasant.\n*   **Foreign objects:** Finding unexpected foreign objects in a patient's mouth, such as dentures that haven't been cleaned in years or even non-dental items, can be quite shocking.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1389,
+    190,
+    403,
+    326,
+    347,
+    475,
+    273,
+    277,
+    232,
+    113
+  ],
+  "time_diffs": [
+    0.0457158088684082,
+    0.4873380661010742,
+    0.1118161678314209,
+    0.11223387718200684,
+    0.24770593643188477,
+    0.26111507415771484,
+    0.2691168785095215,
+    0.2120990753173828,
+    0.00879812240600586,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

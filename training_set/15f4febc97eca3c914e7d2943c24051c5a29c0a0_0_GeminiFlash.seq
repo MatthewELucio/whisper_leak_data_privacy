@@ -1,0 +1,41 @@
+{
+  "local_port": 37526,
+  "remote_port": 443,
+  "prompt": "Why is the RuPay card not accepted in other countries?",
+  "response": "The primary reason RuPay cards aren't widely accepted outside of India is due to **limited international infrastructure and partnerships.** Here's a breakdown:\n\n*   **Network Reliance:** RuPay primarily operates on its own network and has partnerships with specific international payment networks (like Discover and Diners Club). If a merchant's payment terminal isn't connected to these networks, it can't process a RuPay transaction.\n\n*   **Limited Global Acceptance Footprint:** Visa and Mastercard have been around for decades and have built up vast global networks and acceptance. RuPay is relatively newer and is still in the process of expanding its international reach.\n\n*   **Focus on the Indian Market:** RuPay was initially designed and promoted as a domestic payment solution to reduce dependence on foreign payment networks. While international acceptance is growing, the primary focus remains on the Indian market.\n\n*   **Issuing Bank Agreements:** Even with international network partnerships, whether your specific RuPay card will work internationally depends on the agreements between the issuing bank and the payment networks. Some banks may issue RuPay cards with international functionality enabled, while others may not.\n\n**In summary:**  While RuPay is making strides in expanding its global reach through partnerships, its relatively young age and initial focus on the Indian market have resulted in limited international acceptance compared to established players like Visa and Mastercard.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    246,
+    335,
+    297,
+    376,
+    278,
+    451,
+    320,
+    420,
+    350,
+    198,
+    291,
+    221,
+    113
+  ],
+  "time_diffs": [
+    0.04534196853637695,
+    0.38048505783081055,
+    0.0014979839324951172,
+    0.003253936767578125,
+    0.07639503479003906,
+    0.07606887817382812,
+    0.1859760284423828,
+    0.1690080165863037,
+    0.26015400886535645,
+    0.29044198989868164,
+    0.3697211742401123,
+    0.06114077568054199,
+    0.008565187454223633,
+    0.0,
+    0.0
+  ]
+}

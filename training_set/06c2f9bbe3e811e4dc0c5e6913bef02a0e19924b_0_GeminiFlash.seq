@@ -1,0 +1,43 @@
+{
+  "local_port": 55858,
+  "remote_port": 443,
+  "prompt": "Which is the best brand of whisky in India?",
+  "response": "The concept of the \"best\" whisky is completely subjective and depends heavily on individual preferences. What one person considers the best, another might find completely unappealing. Factors like taste profile, budget, occasion, and even personal history all play a role.\n\nThat being said, some Indian whisky brands are consistently praised and popular:\n\n**For those seeking premium, single malt experiences:**\n\n*   **Amrut:** This brand is perhaps the most internationally recognized Indian whisky. They have a range of single malts, with the *Amrut Fusion* being a popular starting point. Amrut is known for its rich, complex flavors and maturation in the Indian climate.\n*   **Rampur:** Another single malt contender, Rampur is known for its smoother, more delicate profile compared to Amrut. They often release limited edition expressions.\n\n**For those seeking blends and more affordable options:**\n\n*   **Blenders Pride:** This is a very popular and widely available blended whisky known for its smooth taste. It is considered a good value-for-money option.\n*   **Royal Stag:** Another widely consumed blended whisky, Royal Stag is known for its accessible price point.\n*   **McDowell's No. 1:** A mass-market brand that includes whisky and other spirits, it is a very popular choice for its affordability.\n*   **Antiquity Blue:** A step up from the more budget-friendly options, offering a slightly more refined blend.\n\n**Important Considerations:**\n\n*   **Taste Preferences:** Do you prefer smoky, peaty whiskies? Fruity and spicy? Sweet and vanilla-driven? The answer will guide your selection.\n*   **Budget:** Whisky prices vary significantly. Determine how much you're willing to spend.\n*   **Availability:** Not all brands are available in all regions of India.\n*   **Research and Reviews:** Read reviews from whisky enthusiasts and experts to get a better understanding of different brands and expressions. Websites like Whisky Advocate, The Whisky Exchange, and individual blogs can be helpful.\n\n**Recommendation:**\n\nI would recommend starting with **Amrut Fusion** if you are looking to try an Indian Single Malt. If you are looking for a more economical option try **Blenders Pride**.\n\n**In conclusion, there's no single \"best\" Indian whisky. The best approach is to explore different brands and expressions to find what you personally enjoy the most.**",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1409,
+    233,
+    425,
+    393,
+    301,
+    362,
+    396,
+    291,
+    480,
+    381,
+    384,
+    382,
+    193,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.04764819145202637,
+    0.2812488079071045,
+    0.16521120071411133,
+    0.05353999137878418,
+    0.2042829990386963,
+    0.2400519847869873,
+    0.28200793266296387,
+    0.33682894706726074,
+    0.36886000633239746,
+    0.417309045791626,
+    0.4280099868774414,
+    0.3540310859680176,
+    0.16869592666625977,
+    0.007235050201416016,
+    0.0,
+    0.0
+  ]
+}

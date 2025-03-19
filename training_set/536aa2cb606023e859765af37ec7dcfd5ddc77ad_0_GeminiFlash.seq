@@ -1,0 +1,35 @@
+{
+  "local_port": 33124,
+  "remote_port": 443,
+  "prompt": "Would Trump be able to deport all illegal immigrants?",
+  "response": "Deporting all undocumented immigrants would present significant challenges. The exact number of undocumented immigrants in the U.S. is difficult to determine, but estimates range from 10 to 12 million.\n\nA large-scale deportation effort would require a significant increase in resources for Immigration and Customs Enforcement (ICE) and the court system. This would involve funding for personnel, detention facilities, transportation, and legal proceedings.\n\nEstimates of the cost of deporting all undocumented immigrants vary widely, but generally range in the hundreds of billions of dollars.\n\nThe economic impact of such an operation would also be considerable. Many undocumented immigrants work in essential sectors such as agriculture, construction, and hospitality. Their removal could lead to labor shortages and increased costs for businesses and consumers.\n\nThere would also be legal and ethical considerations. Mass deportations could raise concerns about due process and human rights. Additionally, separating families who have lived in the U.S. for many years could have significant social and emotional consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    275,
+    302,
+    372,
+    305,
+    434,
+    401,
+    431,
+    210,
+    182,
+    113
+  ],
+  "time_diffs": [
+    0.0451960563659668,
+    0.30466508865356445,
+    0.0012660026550292969,
+    0.15469598770141602,
+    0.07603883743286133,
+    0.2470231056213379,
+    0.16405606269836426,
+    0.400371789932251,
+    0.25770115852355957,
+    0.007246971130371094,
+    0.0,
+    0.0
+  ]
+}

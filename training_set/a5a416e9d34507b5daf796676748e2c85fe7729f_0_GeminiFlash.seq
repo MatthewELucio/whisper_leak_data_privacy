@@ -1,0 +1,37 @@
+{
+  "local_port": 55704,
+  "remote_port": 443,
+  "prompt": "How many ways are there to pronounce Quora?",
+  "response": "This is a fun question! Here's how we can break down the potential pronunciations of \"Quora\":\n\n*   **\"Qu\" sound:** The most common and likely correct pronunciation has a \"Kw\" sound, as in \"Quick.\" Some people might try to pronounce it closer to the French \"Q\" which sounds closer to \"K\".\n\n*   **\"o\" sound:** This vowel is the most flexible. Options include:\n    *   \"Oh\" (as in \"low\")\n    *   \"Ah\" (as in \"father\")\n    *   \"Uh\" (as in \"butter\")\n    *   \"Aw\" (as in \"law\")\n    *   \"Oor\" (as in poor)\n\n*   **\"ra\" sound:** This is generally pronounced as \"Rah\" (as in \"car\"), but some might say \"ruh\" (as in \"blur\").\n\nCombining these, we get a surprising number of possibilities:\n\nLet's be conservative and assign values to the variables:\n* Q can be either /Kw/ or /K/. Giving it 2 options.\n* O can be /oh/, /ah/, or /uh/. Giving it 3 options.\n* RA can be either /Rah/ or /Ruh/. Giving it 2 options.\n\nTherefore, 2 * 3 * 2 = 12.\n\nSo, there are probably about 12 reasonable ways people might pronounce \"Quora,\" though some would sound more natural than others.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1267,
+    407,
+    353,
+    433,
+    274,
+    400,
+    316,
+    499,
+    347,
+    164,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.04755401611328125,
+    0.2794380187988281,
+    0.09065413475036621,
+    0.0852060317993164,
+    0.1782670021057129,
+    0.19196391105651855,
+    0.2452690601348877,
+    0.27700304985046387,
+    0.33384180068969727,
+    0.2916240692138672,
+    0.008137941360473633,
+    0.0,
+    0.0
+  ]
+}

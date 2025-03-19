@@ -1,0 +1,29 @@
+{
+  "local_port": 38490,
+  "remote_port": 443,
+  "prompt": "Does the legal system recognize money laundering as an illegal activity?",
+  "response": "Yes, absolutely. The legal system in virtually every developed country recognizes money laundering as an illegal activity. It is a serious crime with significant penalties.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    106,
+    366,
+    437,
+    396,
+    196,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.04772806167602539,
+    0.38018798828125,
+    0.0014679431915283203,
+    0.02637195587158203,
+    0.08212614059448242,
+    0.041905879974365234,
+    0.012874126434326172,
+    0.001676797866821289,
+    0.0015711784362792969
+  ]
+}

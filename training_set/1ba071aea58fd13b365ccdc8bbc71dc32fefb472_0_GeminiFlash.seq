@@ -1,0 +1,39 @@
+{
+  "local_port": 41778,
+  "remote_port": 443,
+  "prompt": "Is Prime Minister of India a constitutional post?",
+  "response": "Yes, the Prime Minister of India is a constitutional post.\n\nHere's why:\n\n*   **Constitutionally Established:** The office of the Prime Minister is explicitly mentioned and established by the Constitution of India. Article 74 and Article 75 are key articles that deal with the Prime Minister and the Council of Ministers.\n\n*   **Duties and Powers:** The Constitution outlines the duties, powers, and functions of the Prime Minister. These include advising the President, heading the Council of Ministers, and being responsible to the Parliament.\n\n*   **Appointment Process:** The Constitution describes the process by which the Prime Minister is appointed (Article 75). The President appoints the Prime Minister, typically the leader of the majority party or coalition in the Lok Sabha (the lower house of Parliament).\n\nTherefore, because the post is created by the Constitution, its powers and duties are defined by the Constitution, and its appointment process is governed by the Constitution, the Prime Minister of India is undeniably a constitutional post.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    169,
+    217,
+    212,
+    420,
+    286,
+    357,
+    373,
+    389,
+    221,
+    181,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.04506993293762207,
+    0.4147510528564453,
+    0.0014238357543945312,
+    0.05618906021118164,
+    0.019251108169555664,
+    0.14714479446411133,
+    0.14299917221069336,
+    0.1988539695739746,
+    0.29929089546203613,
+    0.266754150390625,
+    0.0,
+    0.013567924499511719,
+    0.0,
+    0.0
+  ]
+}

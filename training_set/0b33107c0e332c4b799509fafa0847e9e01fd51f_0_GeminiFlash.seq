@@ -1,0 +1,35 @@
+{
+  "local_port": 58062,
+  "remote_port": 443,
+  "prompt": "How can I be less empathetic?",
+  "response": "It sounds like you're exploring a complex aspect of yourself. When people want to decrease their empathy, it's often because they feel overwhelmed by the emotions of others, or they're trying to protect themselves in certain situations.\n\nIf you're feeling overwhelmed, setting boundaries can be really helpful. This means deciding how much emotional energy you're willing to spend on others and learning to say \"no\" when you need to. Practicing self-care is also important \u2013 making sure you're getting enough rest, eating well, and doing things that you enjoy can help you recharge and feel less drained by other people's emotions.\n\nSometimes, focusing on understanding a situation from a more logical perspective can help create some distance. Instead of immediately feeling what someone else is feeling, try analyzing the situation objectively.\n\nIt's also worth considering whether there are specific situations or relationships where you feel your empathy is particularly high. Identifying these triggers can help you develop strategies for managing your reactions in those moments.\n\nIf you're finding it difficult to navigate these feelings on your own, talking to a therapist or counselor could provide you with additional support and guidance. They can help you explore the reasons behind your desire to decrease empathy and develop healthy coping mechanisms.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1408,
+    413,
+    281,
+    455,
+    309,
+    358,
+    556,
+    354,
+    227,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.04571413993835449,
+    0.39528584480285645,
+    0.16785001754760742,
+    0.10499095916748047,
+    0.1942119598388672,
+    0.18291211128234863,
+    0.37601304054260254,
+    0.33882594108581543,
+    0.24833106994628906,
+    0.013754844665527344,
+    0.0,
+    0.0
+  ]
+}

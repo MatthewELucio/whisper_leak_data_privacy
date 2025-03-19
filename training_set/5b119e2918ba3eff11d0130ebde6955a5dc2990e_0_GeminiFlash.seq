@@ -1,0 +1,31 @@
+{
+  "local_port": 39624,
+  "remote_port": 443,
+  "prompt": "Was Khizr Khan paid over 100k by CNN and NBC and 175k by the DNC?",
+  "response": "There are claims circulating online that Khizr Khan was paid by CNN, NBC, and the DNC. However, I have not been able to verify these claims through credible sources. It is important to note that unsubstantiated claims should be treated with caution, and it is always best to rely on verified information from reputable news organizations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    147,
+    388,
+    226,
+    245,
+    252,
+    285,
+    184,
+    113
+  ],
+  "time_diffs": [
+    0.049311161041259766,
+    0.2636117935180664,
+    0.0013020038604736328,
+    0.12054705619812012,
+    0.09810495376586914,
+    0.16431617736816406,
+    0.022774934768676758,
+    0.008143901824951172,
+    0.001583099365234375,
+    0.0
+  ]
+}

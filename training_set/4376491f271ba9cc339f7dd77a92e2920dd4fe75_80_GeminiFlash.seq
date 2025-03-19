@@ -1,0 +1,41 @@
+{
+  "local_port": 41888,
+  "remote_port": 443,
+  "prompt": "Is it illegal to clean dirty money?",
+  "response": "The act of \"cleaning dirty money,\" which is more commonly known as **money laundering**, is **illegal in virtually every country**.\n\nHere's why and what makes it illegal:\n\n*   **What is Money Laundering?**  Money laundering is the process of disguising the source of illegally obtained money to make it appear legitimate.  The illegal sources could include drug trafficking, fraud, corruption, terrorism financing, and many other criminal activities.\n\n*   **Why is it Illegal?**\n    *   **Hides Criminal Activity:** Money laundering allows criminals to profit from their crimes without detection, encouraging further criminal activity.\n    *   **Distorts Economies:** It can destabilize financial markets, lead to unfair competition, and undermine legitimate businesses.\n    *   **Supports Terrorism:** It can provide funding for terrorist organizations, posing a threat to national and international security.\n\n*   **How it's Illegal:**  Laws like the Bank Secrecy Act (BSA) in the U.S. and similar legislation in other countries specifically prohibit money laundering.  These laws impose strict requirements on financial institutions to identify and report suspicious transactions.  It's also illegal to structure transactions to avoid reporting requirements (e.g., breaking up large sums of money into smaller deposits).\n\n*   **Consequences:**  Penalties for money laundering are severe. They can include:\n    *   **Imprisonment:**  Long prison sentences (often decades).\n    *   **Fines:**  Substantial financial penalties, often exceeding the amount of money laundered.\n    *   **Asset Forfeiture:**  Seizure of assets involved in the money laundering process (e.g., property, bank accounts, vehicles).\n\nIn summary, cleaning dirty money is a serious crime with significant legal consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    275,
+    335,
+    235,
+    459,
+    424,
+    317,
+    303,
+    399,
+    284,
+    361,
+    252,
+    158,
+    113
+  ],
+  "time_diffs": [
+    0.047853946685791016,
+    0.2800889015197754,
+    0.0011680126190185547,
+    0.10759115219116211,
+    0.12184500694274902,
+    0.1661379337310791,
+    0.280048131942749,
+    0.2792389392852783,
+    0.29053497314453125,
+    0.38758397102355957,
+    0.31680798530578613,
+    0.1855299472808838,
+    0.010390996932983398,
+    0.0,
+    0.0
+  ]
+}

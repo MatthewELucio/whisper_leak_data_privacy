@@ -1,0 +1,41 @@
+{
+  "local_port": 46106,
+  "remote_port": 443,
+  "prompt": "What do freemasons study?",
+  "response": "Freemasonry is a fraternal organization that focuses on moral and spiritual development through allegory and symbolism. While they don't have a specific curriculum in the traditional sense, Freemasons engage in a system of learning that encompasses:\n\n*   **Symbolism:** A core element is the study and interpretation of symbols derived from stonemasonry, architecture, and ancient traditions. These symbols are meant to convey moral and philosophical lessons.\n*   **Ritual:** Freemasonry uses ritualistic ceremonies to impart knowledge and reinforce moral principles. Masons study the meaning and purpose behind these rituals.\n*   **Moral Philosophy:** Freemasonry emphasizes virtues like brotherly love, relief (charity), truth, temperance, fortitude, prudence, and justice. Masons are encouraged to reflect on these principles and apply them in their lives.\n*   **History:** Masonic history, including the legendary origins of the fraternity and the development of its traditions, is often explored.\n*   **Self-Improvement:** A central goal is to encourage members to become better individuals through self-reflection, ethical conduct, and service to others.\n*   **Esoteric Knowledge (in some systems):** Depending on the specific Masonic system and degree, some Masons delve into more esoteric topics, such as comparative religion, mythology, and hermeticism.\n\nIt's important to note that the specific areas of study and the depth of exploration can vary depending on the Masonic lodge, jurisdiction, and individual member's interests.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    289,
+    303,
+    377,
+    385,
+    472,
+    343,
+    429,
+    493,
+    530,
+    421,
+    225,
+    139,
+    113
+  ],
+  "time_diffs": [
+    0.04677104949951172,
+    0.4020369052886963,
+    0.0019910335540771484,
+    0.04366111755371094,
+    0.09534692764282227,
+    0.08400702476501465,
+    0.2380979061126709,
+    0.24387502670288086,
+    0.29518795013427734,
+    0.2642860412597656,
+    0.358928918838501,
+    0.24050211906433105,
+    0.01356196403503418,
+    0.0,
+    0.0
+  ]
+}

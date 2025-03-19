@@ -1,0 +1,39 @@
+{
+  "local_port": 54732,
+  "remote_port": 443,
+  "prompt": "Is it illegal to clean dirty money?",
+  "response": "When you say \"clean dirty money,\" I assume you mean **money laundering**.\n\n**Yes, money laundering is illegal in virtually every country in the world.**\n\nHere's why and what it entails:\n\n*   **What is Money Laundering?**  It's the process of disguising the origins of illegally obtained money so that it appears to come from a legitimate source. This is done to avoid detection and prosecution.\n\n*   **Why is it illegal?**\n    *   It allows criminals to profit from their crimes (drug trafficking, terrorism financing, fraud, corruption, etc.).\n    *   It undermines financial institutions and economic stability.\n    *   It can be used to fund further criminal activity.\n\n*   **How is it done?** The process is complex and often involves multiple steps, which can include:\n    *   **Placement:** Introducing the \"dirty\" money into the financial system.\n    *   **Layering:**  Moving the money through complex transactions to obscure its origin.  This might involve shell companies, transfers to different countries, etc.\n    *   **Integration:** Reintroducing the \"cleaned\" money back into the legitimate economy, making it appear as if it came from a legal source.\n\n*   **Penalties:** Penalties for money laundering are severe and can include:\n    *   Heavy fines\n    *   Imprisonment\n    *   Seizure of assets\n\n**Therefore, any activity designed to conceal the origin of illicit funds is illegal and can have serious consequences.**\n\nIf you are curious about specific types of money laundering or the laws against it, please ask a more specific question. If you have information about money laundering activities, you should report it to the appropriate law enforcement agencies.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1340,
+    425,
+    413,
+    462,
+    402,
+    425,
+    358,
+    541,
+    362,
+    314,
+    217,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04612112045288086,
+    0.3767879009246826,
+    0.11618804931640625,
+    0.1116800308227539,
+    0.16001391410827637,
+    0.18215417861938477,
+    0.292982816696167,
+    0.24690508842468262,
+    0.3733510971069336,
+    0.3567349910736084,
+    0.17807698249816895,
+    0.011664867401123047,
+    0.0,
+    0.0
+  ]
+}

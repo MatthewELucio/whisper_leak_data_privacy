@@ -1,0 +1,31 @@
+{
+  "local_port": 32858,
+  "remote_port": 443,
+  "prompt": "In the history of the modern Olympics, have there been more gold medals or silver medals given out?",
+  "response": "There have been more **silver** medals given out than gold medals in the history of the modern Olympics.\n\nThis is because in some events, a tie for a higher placing can occur, and the rules dictate that if there is a tie for gold, no silver medal is awarded. If there is a tie for silver, no bronze is awarded. This leads to situations where there are more silver medals awarded as they are sometimes awarded instead of bronze medals, but gold medals are not awarded instead of silver medals.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1503,
+    241,
+    353,
+    254,
+    223,
+    416,
+    170,
+    147,
+    113
+  ],
+  "time_diffs": [
+    0.048651933670043945,
+    0.33535099029541016,
+    0.03583407402038574,
+    0.05582785606384277,
+    0.11016702651977539,
+    0.22705793380737305,
+    0.21317601203918457,
+    0.012736082077026367,
+    0.0,
+    0.0015370845794677734
+  ]
+}

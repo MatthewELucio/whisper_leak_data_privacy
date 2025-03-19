@@ -1,0 +1,39 @@
+{
+  "local_port": 42106,
+  "remote_port": 443,
+  "prompt": "Have my wounds gone infected?",
+  "response": "It's impossible for me to tell you if your wounds are infected. I am not a medical professional and cannot provide medical advice. \n\nHowever, I can tell you some common signs of infection. **If you experience ANY of these, you should seek medical attention from a doctor or other qualified healthcare provider immediately:**\n\n*   **Increased Pain:** Pain that is getting worse, not better, after a few days.\n*   **Swelling:** Increased swelling around the wound.\n*   **Redness:** Increased redness spreading from the wound.\n*   **Heat:** The area around the wound feels warm to the touch.\n*   **Pus:** Yellow or green pus draining from the wound.\n*   **Fever:** A fever of 100.4\u00b0F (38\u00b0C) or higher.\n*   **Red Streaks:** Red streaks radiating out from the wound.\n*   **Swollen Lymph Nodes:** Swollen lymph nodes, especially near the wound.\n*   **Foul Odor:** An unpleasant odor coming from the wound.\n\n**What to do if you suspect an infection:**\n\n1.  **Clean the wound gently with mild soap and water.**\n2.  **Apply a sterile bandage.**\n3.  **Contact your doctor or visit an urgent care clinic as soon as possible.**\n\n**Do not try to treat a suspected infection yourself.** This could lead to serious complications.\n\nI hope this information helps. Please take care of yourself and seek medical attention if you are concerned.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    231,
+    306,
+    259,
+    503,
+    398,
+    246,
+    463,
+    486,
+    536,
+    231,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.05162692070007324,
+    0.5255510807037354,
+    0.0014429092407226562,
+    0.11843514442443848,
+    0.09633994102478027,
+    0.18674898147583008,
+    0.14196300506591797,
+    0.28412294387817383,
+    0.22402215003967285,
+    0.31276798248291016,
+    0.28781700134277344,
+    0.00975489616394043,
+    0.0,
+    0.0
+  ]
+}

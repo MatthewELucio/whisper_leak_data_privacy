@@ -1,0 +1,41 @@
+{
+  "local_port": 34074,
+  "remote_port": 443,
+  "prompt": "Is money laundering subject to legal prosecution?",
+  "response": "Yes, money laundering is absolutely subject to legal prosecution. It is a serious crime in most countries around the world.\n\nHere's a breakdown of why and how:\n\n*   **Definition:** Money laundering involves concealing the origins of illegally obtained money, making it appear to come from a legitimate source.\n*   **Legislation:** Most countries have specific laws and regulations criminalizing money laundering. These laws typically outline the various actions that constitute money laundering and set penalties for those convicted.\n*   **Criminal Penalties:** Penalties for money laundering can be severe, including:\n    *   **Imprisonment:** Lengthy prison sentences are common for those convicted of money laundering.\n    *   **Fines:** Substantial monetary fines can be levied.\n    *   **Asset Forfeiture:** Assets involved in the money laundering scheme, or derived from the illicit funds, can be seized by the government.\n*   **International Cooperation:** Because money laundering often involves moving funds across borders, there is significant international cooperation to combat it. This includes sharing information between law enforcement agencies and financial institutions in different countries.\n*   **Anti-Money Laundering (AML) Regulations:** Financial institutions and other businesses are typically required to implement AML programs to detect and prevent money laundering. This includes:\n    *   **Customer Due Diligence (CDD):** Verifying the identity of customers and understanding the nature of their business.\n    *   **Transaction Monitoring:** Monitoring transactions for suspicious activity.\n    *   **Reporting Suspicious Activity:** Reporting suspicious transactions to the appropriate authorities (e.g., through Suspicious Activity Reports or SARs).\n*   **Examples of Prosecution:** Individuals, businesses, and even financial institutions have been prosecuted for money laundering offenses.\n\n**In summary, money laundering is a crime with serious legal consequences, and is actively prosecuted by governments worldwide.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1448,
+    177,
+    413,
+    296,
+    378,
+    345,
+    243,
+    293,
+    343,
+    311,
+    392,
+    207,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.048623085021972656,
+    0.37343287467956543,
+    0.04498410224914551,
+    0.03686881065368652,
+    0.10711121559143066,
+    0.21846795082092285,
+    0.19255590438842773,
+    0.24996614456176758,
+    0.34255480766296387,
+    0.39014410972595215,
+    0.27402186393737793,
+    0.2396411895751953,
+    0.010942935943603516,
+    0.0,
+    0.0
+  ]
+}

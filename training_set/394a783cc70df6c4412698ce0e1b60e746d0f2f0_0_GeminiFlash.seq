@@ -1,0 +1,27 @@
+{
+  "local_port": 59404,
+  "remote_port": 443,
+  "prompt": "What is an example of a sentence with the word \"terse\"?",
+  "response": "Here's a sentence with the word \"terse\":\n\n\"Her reply was terse: 'No.'\"\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    274,
+    310,
+    398,
+    226,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.05244588851928711,
+    0.31333017349243164,
+    0.0015239715576171875,
+    0.10866189002990723,
+    0.029977083206176758,
+    0.008817911148071289,
+    0.0014500617980957031,
+    0.0
+  ]
+}

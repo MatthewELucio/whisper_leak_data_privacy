@@ -1,0 +1,43 @@
+{
+  "local_port": 56330,
+  "remote_port": 443,
+  "prompt": "If I were to watch my last movie, which movie would you recommend?",
+  "response": "Okay, this is a fun question!  To give you the best recommendation, I need a little more information about your tastes.  But, based on the information available I am going to make some assumptions.\n\nTo make sure that I give you the best recommendation I am going to give you three options. \n\n**If you want something that I feel is critically-acclaimed:**\n\n*   **\"Everything Everywhere All at Once\" (2022):** This movie won multiple awards last year. It is a mind-bending, action-packed, and emotionally resonant story about a Chinese-American woman who is swept up into an insane adventure where she alone can save the world by exploring other universes connecting with the lives she could have led. It's a truly unique and unforgettable experience.\n\n**If you want something based on the more recent top-performing movie that I have access to:**\n*   **\"Super Mario Bros. Movie\" (2023):** The Super Mario Bros. Movie is a fun adaptation of the popular video game franchise. The film follows Mario and Luigi as they enter a magical kingdom full of adventure and danger and team up with Princess Peach and Toad to stop the villainous Bowser from taking over the world. It is sure to be enjoyable for everyone.\n\n**If you want to go with a crowd favorite:**\n*   **\"The Shawshank Redemption\" (1994):** Often considered one of the greatest films ever made, this is a story of hope, friendship, and resilience in the face of unimaginable adversity. It's a powerful and moving drama that will stay with you long after the credits roll.\n\nPlease choose one of the recommendations and enjoy your last movie! If none of these appeal to you, please provide additional details so I can provide a recommendation that is best suited for you.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    303,
+    357,
+    276,
+    337,
+    374,
+    342,
+    357,
+    280,
+    510,
+    446,
+    525,
+    230,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.053320884704589844,
+    0.3695719242095947,
+    0.0014312267303466797,
+    0.011358976364135742,
+    0.061033010482788086,
+    0.08401679992675781,
+    0.17710399627685547,
+    0.1729121208190918,
+    0.2973029613494873,
+    0.38034605979919434,
+    0.22470998764038086,
+    0.3348240852355957,
+    0.2845778465270996,
+    0.011337995529174805,
+    0.0,
+    0.0
+  ]
+}

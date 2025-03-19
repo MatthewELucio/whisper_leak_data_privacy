@@ -1,0 +1,41 @@
+{
+  "local_port": 50692,
+  "remote_port": 443,
+  "prompt": "Where we can buy books online in Pune?",
+  "response": "Okay, here are some of the best options for buying books online in Pune, catering to different needs and preferences:\n\n**Major Online Retailers (National/International with strong Pune presence):**\n\n*   **Amazon.in:**  Huge selection (new and used), reliable delivery, often good discounts, and a vast range of genres.  Prime members often get faster shipping.  Pay-on-delivery is usually an option.\n*   **Flipkart:** Similar to Amazon in terms of selection and delivery reliability.  Worth checking both to compare prices.\n*   **Bookchor:** Good deals on second-hand books.\n\n**Specialized Online Bookstores (India-based):**\n\n*   **Infibeam.com:**  A good Indian online bookstore with a wide selection of titles, including academic and regional language books.\n*   **SapnaOnline.com:**  Well-known in South India, SapnaOnline has a good selection, especially for academic books, children's books, and regional language titles. They ship across India.\n*   **URead:** Online platform for renting books.\n\n**Independent Bookstores (May offer online ordering):**\n\n*   **Manney's Booksellers:** An iconic bookstore in Pune, you can check if they offer online ordering or if you can order via phone and have it delivered.\n\n**Tips for Choosing Where to Buy:**\n\n*   **Price Comparison:**  Always compare prices across multiple sites, including shipping costs.\n*   **Shipping Costs and Speed:** Factor in shipping charges and estimated delivery times.\n*   **Payment Options:**  Ensure they offer a payment method you're comfortable with (credit card, debit card, net banking, UPI, cash on delivery).\n*   **Return Policy:**  Check the return policy in case you receive a damaged or incorrect book.\n*   **Reviews:**  Read reviews of the book and the seller (if applicable) before making a purchase.\n\nI hope this comprehensive list helps you find the perfect online bookstore to satisfy your reading needs in Pune!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1304,
+    418,
+    355,
+    450,
+    328,
+    481,
+    486,
+    496,
+    312,
+    532,
+    311,
+    185,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.04560995101928711,
+    0.44657206535339355,
+    0.12293291091918945,
+    0.12711596488952637,
+    0.21775317192077637,
+    0.19433379173278809,
+    0.3171200752258301,
+    0.26711201667785645,
+    0.4292149543762207,
+    0.36937713623046875,
+    0.2925088405609131,
+    0.16453099250793457,
+    0.009863138198852539,
+    0.0006079673767089844,
+    5.1021575927734375e-05
+  ]
+}

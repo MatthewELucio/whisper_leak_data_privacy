@@ -1,0 +1,41 @@
+{
+  "local_port": 44738,
+  "remote_port": 443,
+  "prompt": "What is a bank branch name?",
+  "response": "A bank branch name is the specific name given to a physical location of a bank. It helps differentiate one bank location from another, even within the same bank.\n\nHere's a breakdown of what it usually entails:\n\n*   **Usually includes the bank's main name:** For example, \"Bank of America\"\n*   **Followed by a specific location identifier:** This could be:\n    *   **A city or town:** \"Bank of America - Anytown\"\n    *   **A neighborhood:** \"Chase - Midtown Branch\"\n    *   **A street address or intersection:** \"Wells Fargo - 123 Main Street\"\n    *   **A more creative or descriptive name:** (Less common, but sometimes used) \"TD Bank - Commerce Square\"\n\n**Why are branch names important?**\n\n*   **Identification:** Helps customers and employees know exactly which branch is being referred to.\n*   **Navigation:** Makes it easier to find the correct location, especially when searching online or using GPS.\n*   **Routing:** Internally, banks use branch names for routing transactions, mail, and other communications.\n*   **Marketing:** In some cases, a well-chosen branch name can contribute to a branch's local identity.\n\n**In Summary:** A bank branch name is the full designation of a bank's physical location, combining the bank's name with a location-specific identifier.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    229,
+    297,
+    415,
+    293,
+    326,
+    443,
+    501,
+    329,
+    526,
+    207,
+    136,
+    132,
+    113
+  ],
+  "time_diffs": [
+    0.04967498779296875,
+    0.43226194381713867,
+    0.0014710426330566406,
+    0.04140901565551758,
+    0.03955793380737305,
+    0.09759116172790527,
+    0.15196800231933594,
+    0.17297101020812988,
+    0.24716496467590332,
+    0.284451961517334,
+    0.3565330505371094,
+    0.1248939037322998,
+    0.009209156036376953,
+    0.0,
+    0.0
+  ]
+}

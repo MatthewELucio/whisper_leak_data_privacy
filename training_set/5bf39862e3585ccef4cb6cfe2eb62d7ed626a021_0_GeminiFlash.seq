@@ -1,0 +1,33 @@
+{
+  "local_port": 52952,
+  "remote_port": 443,
+  "prompt": "Is Narendra Modi on Quora?",
+  "response": "While there isn't an officially verified Quora account belonging to Narendra Modi, it's highly unlikely that he would be actively using the platform himself.\n\nHere's why:\n\n*   **High-Profile Figure:** As the Prime Minister of India, Narendra Modi's time and communications are heavily managed. It's improbable he would have the time to personally engage on a Q&A platform.\n*   **Official Channels:** Typically, leaders in such positions communicate through official government channels, press conferences, speeches, and official social media accounts that are managed by their staff.\n*   **Risk of Impersonation:** A personal account would be a significant target for impersonation and misinformation.\n\nSo, while there might be accounts *claiming* to be him, they are almost certainly not genuine.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1501,
+    343,
+    366,
+    461,
+    466,
+    385,
+    383,
+    241,
+    191,
+    113
+  ],
+  "time_diffs": [
+    0.04577898979187012,
+    0.6431839466094971,
+    0.15684008598327637,
+    0.07406306266784668,
+    0.19122982025146484,
+    0.20969700813293457,
+    0.2912790775299072,
+    0.046920061111450195,
+    0.03421187400817871,
+    0.0002911090850830078,
+    0.0006749629974365234
+  ]
+}

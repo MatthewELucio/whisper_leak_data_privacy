@@ -1,0 +1,43 @@
+{
+  "local_port": 43566,
+  "remote_port": 443,
+  "prompt": "What are the top 5 dating sites?",
+  "response": "The \"top\" dating sites really depend on what you're looking for. Here's a breakdown of 5 popular and well-regarded options, with a note about what they're generally known for:\n\n1.  **Match:**  A classic and established dating site, Match is known for its in-depth profiles and comprehensive search features.  It's often favored by those seeking more serious, long-term relationships.\n\n2.  **OkCupid:**  OkCupid stands out with its extensive questionnaire, which helps match you based on values, interests, and beliefs. It's generally considered more progressive and appeals to a younger audience. It offers both free and paid features.\n\n3.  **Tinder:** The quintessential swipe-based app. Tinder is known for its large user base and ease of use.  It's often associated with casual dating, but many users also find long-term relationships there.\n\n4.  **Bumble:** Bumble puts women in control by requiring them to make the first move after a match.  It's gained popularity for its focus on empowering women and creating a more respectful dating environment.\n\n5.  **Hinge:**  Hinge is marketed as \"the dating app designed to be deleted.\" It focuses on thoughtful prompts and encourages users to engage in meaningful conversations.  It's aimed at people looking for more serious connections than you might find on Tinder.\n\n**Important Considerations:**\n\n*   **What are you looking for?** Casual dating, long-term relationship, specific interests?  This will heavily influence your choice.\n*   **Your age and demographics:** Different sites tend to attract different age groups and demographics.\n*   **Free vs. Paid:** Most sites offer a free version, but paid subscriptions often unlock additional features and increase your visibility.\n*   **Reviews and personal experiences:**  Read reviews from other users to get a sense of the site's culture and user experience.\n\nIt's generally a good idea to try a few different sites to see which one feels like the best fit for you.  Good luck!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    285,
+    422,
+    259,
+    243,
+    475,
+    354,
+    341,
+    411,
+    382,
+    516,
+    402,
+    156,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.04649186134338379,
+    0.39586400985717773,
+    0.0013871192932128906,
+    0.09309196472167969,
+    0.07587289810180664,
+    0.1820521354675293,
+    0.15705394744873047,
+    0.25369811058044434,
+    0.23938393592834473,
+    0.3487570285797119,
+    0.33631300926208496,
+    0.36566686630249023,
+    0.2322700023651123,
+    0.008524179458618164,
+    0.0,
+    0.0
+  ]
+}

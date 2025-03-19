@@ -1,0 +1,33 @@
+{
+  "local_port": 44228,
+  "remote_port": 443,
+  "prompt": "What countries can I travel to without an Indian passport?",
+  "response": "Unfortunately, you **cannot** travel internationally without a passport, regardless of your nationality. A passport is an essential and universally required travel document for international travel. It serves as proof of your identity and citizenship and is required by immigration authorities worldwide.\n\nThe idea that you can travel without a passport is a common misconception.  Even if you are a citizen of a country, you still need a valid passport to enter that country if you are arriving from another country.\n\nTherefore, the answer to your question is **no countries**. You need a valid passport to travel internationally.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    98,
+    322,
+    239,
+    364,
+    310,
+    243,
+    241,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.044834136962890625,
+    0.384476900100708,
+    0.0016829967498779297,
+    0.1170949935913086,
+    0.1266040802001953,
+    0.27362608909606934,
+    0.18590378761291504,
+    0.05507397651672363,
+    0.008961200714111328,
+    0.0,
+    0.0012938976287841797
+  ]
+}

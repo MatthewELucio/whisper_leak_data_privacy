@@ -1,0 +1,33 @@
+{
+  "local_port": 34204,
+  "remote_port": 443,
+  "prompt": "What is the synonym of synonym?",
+  "response": "The most common and accurate synonym for \"synonym\" is **equivalent**.\n\nOther possibilities, depending on the specific context, could include:\n\n*   **Alternative word**\n*   **Substitute word**\n*   **Similar word**\n*   **Corresponding term**\n\nHowever, **equivalent** is generally the closest and most direct synonym.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    190,
+    330,
+    234,
+    309,
+    330,
+    195,
+    221,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.049017906188964844,
+    0.4687340259552002,
+    0.0014410018920898438,
+    0.05249905586242676,
+    0.04588484764099121,
+    0.057943105697631836,
+    0.16935992240905762,
+    0.05994009971618652,
+    0.007772922515869141,
+    0.0,
+    0.00156402587890625
+  ]
+}

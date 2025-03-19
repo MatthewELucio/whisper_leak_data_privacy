@@ -1,0 +1,27 @@
+{
+  "local_port": 51288,
+  "remote_port": 443,
+  "prompt": "Why did Team USA Soccer star Megan Rapinoe come out last month, after years of playing?",
+  "response": "Megan Rapinoe actually came out publicly as gay in 2012, not last month. She discussed her sexuality in an interview with Out magazine, well before her rise to even greater fame with the US Women's National Team.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1278,
+    299,
+    428,
+    327,
+    245,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.04649090766906738,
+    0.28817105293273926,
+    0.14060688018798828,
+    0.08650922775268555,
+    0.08877182006835938,
+    0.01322317123413086,
+    0.0014448165893554688,
+    0.00019598007202148438
+  ]
+}

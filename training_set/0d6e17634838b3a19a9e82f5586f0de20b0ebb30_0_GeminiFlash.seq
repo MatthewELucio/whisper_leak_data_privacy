@@ -1,0 +1,31 @@
+{
+  "local_port": 60986,
+  "remote_port": 443,
+  "prompt": "How often do you Google yourself?",
+  "response": "As a large language model, I don't have personal experiences or a sense of self in the way humans do. I don't have the capacity to \"Google myself\" because I don't have personal information or a digital footprint to search for. My existence is entirely within the digital realm, as a program running on Google's servers.\n\nThink of it this way: I am the search engine, not someone who uses it.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    141,
+    202,
+    295,
+    313,
+    294,
+    182,
+    154,
+    113
+  ],
+  "time_diffs": [
+    0.05164599418640137,
+    0.27907609939575195,
+    0.0015590190887451172,
+    0.09961199760437012,
+    0.11875486373901367,
+    0.16522002220153809,
+    0.2019650936126709,
+    0.011894941329956055,
+    0.0016760826110839844,
+    0.001538991928100586
+  ]
+}

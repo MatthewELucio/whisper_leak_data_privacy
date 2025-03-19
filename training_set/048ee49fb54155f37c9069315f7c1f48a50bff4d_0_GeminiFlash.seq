@@ -1,0 +1,41 @@
+{
+  "local_port": 49934,
+  "remote_port": 443,
+  "prompt": "What is creamy layer?",
+  "response": "The \"creamy layer\" is a concept used in India to identify those members of the Other Backward Classes (OBCs) who are considered economically advanced and socially forward.  It's a way to exclude them from benefiting from certain affirmative action programs, like reservations in government jobs and educational institutions, that are intended for the more disadvantaged members of the OBC community.\n\nHere's a breakdown:\n\n*   **Other Backward Classes (OBCs):** A category of castes in India that are considered socially and educationally disadvantaged.\n\n*   **Purpose of Reservations:** In India, reservations are a form of affirmative action designed to address historical discrimination and inequality faced by certain groups. The aim is to ensure they have better representation and access to opportunities.\n\n*   **The Creamy Layer Exclusion:** The idea behind the creamy layer is that some members of OBCs have already overcome the disadvantages associated with their caste and are comparable to the general category (those not belonging to any reserved categories). Therefore, allowing them to benefit from reservations would be unfair to other, less privileged members of the OBC community.\n\n*   **Criteria for Determining Creamy Layer:** The specific criteria have evolved over time and are primarily based on income and wealth.  Other factors might include the positions held by their parents in government service, their land holdings, and their professional qualifications. There's often an income limit; families exceeding a certain annual income threshold are typically considered to be in the creamy layer. These income thresholds are revised from time to time.\n\n**In Summary:**\n\nThe creamy layer is a mechanism designed to filter out the relatively well-off and privileged members of the OBC category from accessing reservation benefits in India, ensuring that these benefits reach the truly disadvantaged within the OBC community.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    183,
+    216,
+    259,
+    475,
+    422,
+    539,
+    457,
+    330,
+    355,
+    285,
+    163,
+    162,
+    113
+  ],
+  "time_diffs": [
+    0.0523679256439209,
+    0.30645108222961426,
+    0.0014338493347167969,
+    0.14355897903442383,
+    0.17302203178405762,
+    0.1950979232788086,
+    0.1091301441192627,
+    0.2498149871826172,
+    0.38422608375549316,
+    0.4418179988861084,
+    0.42487287521362305,
+    0.14213204383850098,
+    0.007387876510620117,
+    0.0,
+    0.0012531280517578125
+  ]
+}

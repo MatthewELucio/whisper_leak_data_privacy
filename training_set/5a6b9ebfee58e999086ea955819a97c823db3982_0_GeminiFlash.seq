@@ -1,0 +1,37 @@
+{
+  "local_port": 47374,
+  "remote_port": 443,
+  "prompt": "Is there an app like Tinder for married folks?",
+  "response": "While Tinder itself isn't specifically *for* married people, there are definitely apps and websites that cater to people in committed relationships who are looking for extramarital affairs or open relationships. These platforms often use discretion and privacy features.\n\nHere are a few examples, but keep in mind that I'm just providing information, not endorsing this type of activity:\n\n*   **Ashley Madison:** This is probably the most well-known and specifically targets people looking for extramarital affairs.\n\n*   **Gleeden:** Similar to Ashley Madison, Gleeden is aimed at married individuals seeking affairs.\n\n*   **Openminded.com:** This platform caters to people interested in open relationships, polyamory, and ethical non-monogamy.\n\nIt's important to understand that engaging in extramarital affairs can have serious consequences, both legally and emotionally. It's always best to communicate openly and honestly with your partner about your needs and desires. If you're considering an open relationship or exploring your sexuality outside of your marriage, consider seeking guidance from a therapist or counselor specializing in relationship issues.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    105,
+    281,
+    200,
+    431,
+    365,
+    481,
+    514,
+    362,
+    271,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04523301124572754,
+    0.2876129150390625,
+    0.001416921615600586,
+    0.11419200897216797,
+    0.12537598609924316,
+    0.212050199508667,
+    0.15893983840942383,
+    0.371096134185791,
+    0.2761650085449219,
+    0.17802882194519043,
+    0.010138988494873047,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 50456,
+  "remote_port": 443,
+  "prompt": "Is amazonmedica legitimate to buy Botox?",
+  "response": "I am unable to provide advice on medical procedures or the legitimacy of vendors that sell medical products. Consulting with a medical professional is best if you have questions about Botox or any other medical procedure.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    127,
+    178,
+    213,
+    317,
+    174,
+    215,
+    113
+  ],
+  "time_diffs": [
+    0.04491901397705078,
+    0.35479211807250977,
+    0.0011909008026123047,
+    0.02347397804260254,
+    0.10607504844665527,
+    0.08421707153320312,
+    0.007844924926757812,
+    0.001497030258178711,
+    0.0
+  ]
+}

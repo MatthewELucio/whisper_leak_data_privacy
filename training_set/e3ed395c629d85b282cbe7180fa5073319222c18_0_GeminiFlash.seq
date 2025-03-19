@@ -1,0 +1,31 @@
+{
+  "local_port": 52612,
+  "remote_port": 443,
+  "prompt": "Who is \u200f@Being_Humor on Twitter?",
+  "response": "@Being_Humor on Twitter is a popular account known for posting humorous, relatable, and often self-deprecating tweets. The account's tweets are typically short, witty observations about everyday life, relationships, and the human experience. While the exact identity of the person (or people) behind the account is not publicly known, its content resonates with a large audience, making it a well-recognized and followed humor account on Twitter.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1275,
+    372,
+    370,
+    410,
+    439,
+    385,
+    165,
+    236,
+    113
+  ],
+  "time_diffs": [
+    0.04649996757507324,
+    0.427501916885376,
+    0.03577113151550293,
+    0.07691287994384766,
+    0.10011100769042969,
+    0.15083098411560059,
+    0.17045211791992188,
+    0.011719942092895508,
+    0.0,
+    0.0017490386962890625
+  ]
+}

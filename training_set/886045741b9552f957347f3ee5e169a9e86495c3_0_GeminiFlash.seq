@@ -1,0 +1,41 @@
+{
+  "local_port": 49062,
+  "remote_port": 443,
+  "prompt": "Can an L2 visa holder work without EAD?",
+  "response": "No, an L2 visa holder **cannot** legally work in the United States without an Employment Authorization Document (EAD).\n\nHere's a breakdown:\n\n*   **L2 Visa:** The L2 visa is a dependent visa granted to the spouse and unmarried children (under 21) of L1 visa holders. L1 visa holders are intracompany transferees who work in a managerial or specialized knowledge capacity for a U.S. company that is affiliated with a foreign company.\n\n*   **EAD Requirement:** To legally work in the U.S., an L2 visa holder *must* obtain an EAD from U.S. Citizenship and Immigration Services (USCIS).\n\n*   **Before 2021:** Previously, L2 spouses (but not children) were automatically authorized to work incident to their status. They simply needed to prove their L2 status.\n\n*   **Current Rule (as of 2022):** As of January 2022, the previous policy was changed. Now, **all** L2 spouses *and* children who want to work in the U.S. must apply for and receive an EAD.\n\n*   **Why the Change?** The change was largely driven by processing delays and the need for USCIS to properly track and verify employment eligibility.\n\n**In summary, an L2 visa alone does not grant work authorization. An L2 visa holder needs to apply for and receive an EAD to legally work in the United States.**  Working without authorization can have serious consequences, including deportation and difficulty obtaining future visas.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    200,
+    335,
+    396,
+    401,
+    336,
+    406,
+    489,
+    286,
+    480,
+    540,
+    286,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.0505831241607666,
+    0.331035852432251,
+    0.0011630058288574219,
+    0.013086080551147461,
+    0.08010601997375488,
+    0.07789993286132812,
+    0.20422601699829102,
+    0.18007993698120117,
+    0.2437431812286377,
+    0.2720458507537842,
+    0.3494110107421875,
+    0.41190409660339355,
+    0.013915061950683594,
+    0.0,
+    0.0
+  ]
+}

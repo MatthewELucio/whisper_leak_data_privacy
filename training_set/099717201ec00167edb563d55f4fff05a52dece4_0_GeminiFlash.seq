@@ -1,0 +1,25 @@
+{
+  "local_port": 60648,
+  "remote_port": 443,
+  "prompt": "Do you take a piss in the shower?",
+  "response": "As an AI, I don't have a physical body, so I'm not capable of taking a shower, or any other physical activity.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1256,
+    273,
+    225,
+    212,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.04621696472167969,
+    0.438507080078125,
+    0.1509408950805664,
+    0.050848960876464844,
+    0.012232065200805664,
+    0.0015721321105957031,
+    0.0
+  ]
+}

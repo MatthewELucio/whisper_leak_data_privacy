@@ -1,0 +1,39 @@
+{
+  "local_port": 47278,
+  "remote_port": 443,
+  "prompt": "Am I pregnant? We used a condom it did not break but I think I was fertile that time. I took nordette though",
+  "response": "It's understandable that you're feeling anxious and want to know if you're pregnant. Let's break down the situation:\n\n*   **Condom Use:** Using a condom correctly significantly reduces the risk of pregnancy. If the condom didn't break, that's a good sign. However, no method is 100% effective.\n*   **Fertile Time:** If you were likely fertile, the risk of pregnancy might be slightly higher if there was any error in condom use.\n*   **Nordette:** Nordette is a combined oral contraceptive pill. If taken correctly (as prescribed), it is highly effective at preventing pregnancy. The effectiveness depends on consistent and correct usage.\n\nGiven the information, here's what to consider:\n\n1.  **How consistently and correctly did you take Nordette?** If you've been taking it as prescribed, the pill offers significant protection.\n2.  **When did you take Nordette in relation to the encounter?**\n3.  **Consider taking a pregnancy test:** The most accurate way to determine if you're pregnant is to take a pregnancy test. Home pregnancy tests are generally reliable when taken at least 2 weeks after possible conception, or a week after a missed period. You can purchase these at most pharmacies or grocery stores.\n4.  **Consult a Doctor:** If you have any concerns or questions, it's always best to consult a doctor or healthcare professional. They can provide personalized advice and conduct necessary tests.\n\nKeep in mind:\n\n*   **Stress and Anxiety:** Stress can sometimes affect your menstrual cycle.\n*   **Spotting:** If you experience any unusual spotting or bleeding, it's best to consult a doctor.\n\nThe most accurate way to determine pregnancy is to take a test. It\u2019s understandable that you're concerned, and seeking medical advice will help you get the information you need.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1496,
+    297,
+    291,
+    291,
+    429,
+    398,
+    442,
+    536,
+    455,
+    508,
+    265,
+    221,
+    113
+  ],
+  "time_diffs": [
+    0.048165082931518555,
+    0.33518505096435547,
+    0.11680102348327637,
+    0.09296798706054688,
+    0.14613986015319824,
+    0.18756914138793945,
+    0.33356785774230957,
+    0.28551506996154785,
+    0.453718900680542,
+    0.336575984954834,
+    0.401212215423584,
+    0.011855840682983398,
+    0.0,
+    0.0
+  ]
+}

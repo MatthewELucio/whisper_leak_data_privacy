@@ -1,0 +1,41 @@
+{
+  "local_port": 55622,
+  "remote_port": 443,
+  "prompt": "What causes a sonic boom?",
+  "response": "A sonic boom is caused by an object moving through the air faster than the speed of sound. Here's a breakdown of the process:\n\n*   **Sound Waves:** When an object moves through the air, it generates pressure waves, which we perceive as sound. These waves travel outward from the object at the speed of sound.\n\n*   **Subsonic Speed:** When an object moves slower than the speed of sound, the pressure waves can move ahead of it. These waves spread out smoothly.\n\n*   **Sonic Speed (Speed of Sound):** As the object approaches the speed of sound, the pressure waves start to bunch up in front of the object.\n\n*   **Supersonic Speed (Faster than Speed of Sound):** Once the object exceeds the speed of sound, it's moving faster than its own pressure waves. The waves cannot get out of the way and become compressed together. This creates a shock wave, a region of extremely high air pressure.\n\n*   **The Cone of Pressure:** The shock wave forms a cone shape behind the moving object. This is because the object is continuously generating pressure waves as it moves, and these waves are forced to pile up at the edge of the cone.\n\n*   **The Boom:** When the cone of the shock wave passes over a listener on the ground, they experience a sudden and dramatic change in air pressure. This sudden pressure change is what we hear as a sonic boom. It is essentially the concentrated release of the energy from all those compressed sound waves.\n\n**In summary:**\n\nThe key is that the object is moving faster than the sound it's creating. This leads to a build-up of pressure waves into a shock wave, which produces the sonic boom when it passes over you. It's not a single event happening *at* the moment the sound barrier is broken, but rather a continuous phenomenon as long as the object is traveling at supersonic speed.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1352,
+    302,
+    285,
+    181,
+    343,
+    402,
+    466,
+    246,
+    416,
+    515,
+    484,
+    177,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.05018210411071777,
+    0.38675999641418457,
+    0.003448009490966797,
+    0.0744168758392334,
+    0.06059598922729492,
+    0.19367313385009766,
+    0.16992688179016113,
+    0.29305100440979004,
+    0.2963871955871582,
+    0.32698583602905273,
+    0.3350789546966553,
+    0.37313008308410645,
+    0.010271072387695312,
+    0.0,
+    0.0
+  ]
+}

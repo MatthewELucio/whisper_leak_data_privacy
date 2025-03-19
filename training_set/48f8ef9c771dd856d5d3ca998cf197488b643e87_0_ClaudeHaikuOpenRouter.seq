@@ -1,0 +1,43 @@
+{
+  "local_port": 35242,
+  "remote_port": 443,
+  "prompt": "How professional are you?",
+  "response": "I aim to be professional by being helpful, direct, honest, and ethical. I won't help with anything illegal or harmful. I'll do my best to provide accurate information and useful assistance.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    139,
+    990,
+    427,
+    435,
+    425,
+    434,
+    419,
+    430,
+    429,
+    425,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.0271148681640625,
+    0.3068270683288574,
+    0.4045848846435547,
+    0.40811896324157715,
+    0.11146712303161621,
+    0.11595702171325684,
+    0.029896974563598633,
+    0.09515094757080078,
+    0.0519099235534668,
+    0.05094313621520996,
+    0.08342790603637695,
+    0.08149909973144531,
+    0.09145593643188477,
+    0.005625009536743164,
+    0.020843982696533203,
+    0.0
+  ]
+}

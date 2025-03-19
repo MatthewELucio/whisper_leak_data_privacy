@@ -1,0 +1,25 @@
+{
+  "local_port": 38206,
+  "remote_port": 443,
+  "prompt": "Was 9/11 planned?",
+  "response": "Yes, the 9/11 attacks were planned and carried out by al-Qaeda, a militant Islamist organization.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1509,
+    248,
+    259,
+    193,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.0506439208984375,
+    0.3870229721069336,
+    0.06407690048217773,
+    0.04985618591308594,
+    0.0058858394622802734,
+    0.0017750263214111328,
+    0.0
+  ]
+}

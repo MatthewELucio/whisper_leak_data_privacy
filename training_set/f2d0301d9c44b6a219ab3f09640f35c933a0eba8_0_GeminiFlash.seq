@@ -1,0 +1,35 @@
+{
+  "local_port": 34742,
+  "remote_port": 443,
+  "prompt": "Which is the real photo of Shivaji Maharaj drawn byMir Muhammad?",
+  "response": "There is no known authentic or confirmed photograph of Shivaji Maharaj drawn by Mir Muhammad or anyone else. Photography did not exist during Shivaji Maharaj's lifetime (1630-1680).\n\nWhat exists are:\n\n*   **Paintings and artistic depictions:** Many artists have created paintings and images of Shivaji Maharaj over the centuries. These are based on descriptions, historical accounts, and artistic interpretation, rather than a photograph.\n*   **Later portraits:** Some portraits were created well after Shivaji Maharaj's death, often based on descriptions and imagination.\n\nThere is no definitive \"real\" image because a photographic portrait was impossible during his life. Any image you see is an artist's representation.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    285,
+    253,
+    418,
+    283,
+    362,
+    413,
+    387,
+    192,
+    216,
+    113
+  ],
+  "time_diffs": [
+    0.04560708999633789,
+    0.3621938228607178,
+    0.0014121532440185547,
+    0.004075050354003906,
+    0.0969839096069336,
+    0.07546401023864746,
+    0.19579100608825684,
+    0.20014595985412598,
+    0.33635711669921875,
+    0.010376930236816406,
+    0.0,
+    0.0
+  ]
+}

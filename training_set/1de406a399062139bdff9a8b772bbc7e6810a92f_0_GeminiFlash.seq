@@ -1,0 +1,43 @@
+{
+  "local_port": 58462,
+  "remote_port": 443,
+  "prompt": "Stephen Hsu (physicist): What does Stephen Hsu think of MIRI?",
+  "response": "Stephen Hsu, a theoretical physicist and entrepreneur, has been a vocal and somewhat controversial figure in discussions surrounding AI safety. Here's a summary of his likely views on MIRI (Machine Intelligence Research Institute), based on his public statements and writing:\n\n**Likely Negative or Critical View of MIRI:**\n\n*   **Disagreement with MIRI's Alignment Focus:** Hsu has expressed skepticism about the specific AI alignment problems that MIRI focuses on. MIRI is known for its deep dive into theoretical alignment challenges, particularly those related to agent foundations, formalizing agency, and preventing unintended consequences in superintelligent AI. Hsu seems less convinced that these theoretical challenges are the most pressing or relevant threats. He seems to think that the probability that superintelligent AI will be aligned with human values is very high.\n\n*   **Emphasis on AI Development Speed and Competition:** Hsu has often emphasized the importance of rapid AI development and the role of geopolitical competition. He appears to believe that slowing down AI progress to focus on alignment could be detrimental to national security or economic competitiveness. This contrasts with MIRI's approach, which sometimes advocates for caution and prioritizing alignment research, even if it slows down overall AI advancement.\n\n*   **Skepticism Towards Existential Risk Scenarios:** Hsu has expressed doubts about some of the more extreme scenarios involving existential risk from AI that are often discussed in the AI safety community. He may see these scenarios as less plausible or more remote than MIRI does.\n\n**Important Considerations:**\n\n*   **Nuance and Evolution of Views:** Hsu's views, like anyone's, can evolve over time. It's possible that his current opinions are more nuanced than what's readily available in older statements or online discussions.\n*   **Lack of Direct Commentary:** I don't know of any specific quotes where Hsu directly comments on MIRI itself. He has spoken about specific AI safety issues which are central to MIRI's concerns.\n\n**In summary, based on his general views on AI safety and related topics, Stephen Hsu likely holds a critical or skeptical view of MIRI's specific research agenda and its perceived prioritization of theoretical AI alignment challenges over the speed of AI development and competition.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1383,
+    307,
+    412,
+    354,
+    276,
+    470,
+    297,
+    525,
+    506,
+    430,
+    298,
+    388,
+    277,
+    207,
+    113
+  ],
+  "time_diffs": [
+    0.04760384559631348,
+    0.43935608863830566,
+    0.014780998229980469,
+    0.09907007217407227,
+    0.09296488761901855,
+    0.20096492767333984,
+    0.184218168258667,
+    0.33842897415161133,
+    0.2885289192199707,
+    0.39545702934265137,
+    0.37248706817626953,
+    0.33436083793640137,
+    0.26888298988342285,
+    0.008537054061889648,
+    0.0,
+    0.0
+  ]
+}

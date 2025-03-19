@@ -1,0 +1,31 @@
+{
+  "local_port": 38350,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law absolutely prohibits money laundering.  It is a serious crime in virtually every country, including the United States, the United Kingdom, and countries within the European Union.  Laws are designed to prevent and punish those who engage in this activity.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    154,
+    216,
+    256,
+    413,
+    445,
+    273,
+    125,
+    113
+  ],
+  "time_diffs": [
+    0.04506707191467285,
+    0.3336009979248047,
+    0.001194000244140625,
+    0.06484389305114746,
+    0.07103419303894043,
+    0.06714797019958496,
+    0.10392284393310547,
+    0.00693511962890625,
+    0.0015048980712890625,
+    0.001583099365234375
+  ]
+}

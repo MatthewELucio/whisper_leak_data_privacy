@@ -1,0 +1,33 @@
+{
+  "local_port": 38488,
+  "remote_port": 443,
+  "prompt": "What is the actual cost before profit to Samsung for  manufacturing a Samsung Galaxy Tab 2?",
+  "response": "Estimates from 2012, when the Samsung Galaxy Tab 2 (10.1-inch) was released, put the bill of materials (BOM) cost at around **$226.83**.  Adding in manufacturing costs would bring the total cost before profit to approximately **$260-$270**.\n\nKeep in mind these are estimates, and the exact cost would be proprietary information held by Samsung. Factors like component sourcing changes, manufacturing yield rates, and other efficiencies could have affected the final cost.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1391,
+    320,
+    333,
+    370,
+    332,
+    463,
+    389,
+    279,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.046029090881347656,
+    0.4276869297027588,
+    0.004658937454223633,
+    0.08215713500976562,
+    0.09421992301940918,
+    0.19996309280395508,
+    0.21411681175231934,
+    0.045098066329956055,
+    0.008261919021606445,
+    0.0,
+    0.0
+  ]
+}

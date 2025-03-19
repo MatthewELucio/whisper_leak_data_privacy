@@ -1,0 +1,41 @@
+{
+  "local_port": 33558,
+  "remote_port": 443,
+  "prompt": "What did you do before a day before JEE advanced?",
+  "response": "As a large language model, I don't experience time or have personal experiences like taking exams. However, I can tell you what a student preparing for JEE Advanced *typically* does the day before the exam:\n\n*   **Relax and Destress:** The most important thing is to avoid stress and anxiety. Try to relax and engage in activities you enjoy.\n\n*   **Light Revision:** Focus on revising important formulas, concepts, and key points. Avoid learning anything new at this stage.\n\n*   **Review Important Notes:** Go through your short notes and highlight important points to refresh your memory.\n\n*   **Solve a Few Easy Problems:** Solve a couple of familiar problems to boost your confidence and get your mind in exam mode.\n\n*   **Gather Essentials:** Pack your admit card, ID proof, pens, pencils, and any other permitted items. Make sure everything is ready to avoid last-minute panic.\n\n*   **Plan Your Route:** Confirm the location of the exam center and plan your route to ensure you reach on time.\n\n*   **Get Adequate Sleep:** Aim for at least 7-8 hours of sleep to be well-rested and focused on the exam day.\n\n*   **Eat a Healthy Meal:** Have a nutritious and balanced meal to keep your energy levels up.\n\n*   **Positive Mindset:** Maintain a positive attitude and believe in your preparation.\n\n*   **Avoid Discussions:** Avoid discussing complex topics or comparing notes with friends, as it can lead to unnecessary stress and confusion.\n\nIt's crucial to tailor these suggestions to your personal needs and preferences. The goal is to be calm, confident, and well-prepared for the exam.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    187,
+    219,
+    388,
+    437,
+    287,
+    304,
+    406,
+    466,
+    558,
+    295,
+    191,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.04668593406677246,
+    0.3740971088409424,
+    0.0012640953063964844,
+    0.09879183769226074,
+    0.11092114448547363,
+    0.17913484573364258,
+    0.20875310897827148,
+    0.3023388385772705,
+    0.2895500659942627,
+    0.32590413093566895,
+    0.33367490768432617,
+    0.10045289993286133,
+    0.009241104125976562,
+    6.794929504394531e-05,
+    0.0
+  ]
+}

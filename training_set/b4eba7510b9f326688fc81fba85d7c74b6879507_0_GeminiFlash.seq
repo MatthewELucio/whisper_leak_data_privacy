@@ -1,0 +1,29 @@
+{
+  "local_port": 37030,
+  "remote_port": 443,
+  "prompt": "Why do you hate Narendra Modi?",
+  "response": "As an AI, I don't have personal opinions or feelings like hate. My purpose is to provide information and complete tasks neutrally. \n\nIt's important to remember that Narendra Modi is a prominent political figure, and opinions about him vary widely. Some people admire him for his economic policies and strong leadership, while others criticize him for policies related to social issues and secularism. News sources and academic articles can provide different perspectives on his actions and their impact.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1290,
+    420,
+    283,
+    364,
+    437,
+    284,
+    211,
+    113
+  ],
+  "time_diffs": [
+    0.04659295082092285,
+    0.3070399761199951,
+    0.11002898216247559,
+    0.08407306671142578,
+    0.23207998275756836,
+    0.2200779914855957,
+    0.010706901550292969,
+    0.0012691020965576172,
+    0.001967906951904297
+  ]
+}

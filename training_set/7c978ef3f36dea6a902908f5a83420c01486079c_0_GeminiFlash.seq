@@ -1,0 +1,39 @@
+{
+  "local_port": 47238,
+  "remote_port": 443,
+  "prompt": "Can a Singaporean stay in Malaysia indefinitely without a visa?",
+  "response": "No, a Singaporean cannot stay in Malaysia indefinitely without a visa.\n\nWhile Singaporeans enjoy visa-free entry into Malaysia, the permitted length of stay is typically **90 days**.\n\nAfter 90 days, a Singaporean needs to either:\n\n*   **Leave Malaysia and re-enter:** This is sometimes called a \"visa run,\" but there's no guarantee of re-entry, and immigration officers may become suspicious if it's done frequently. They might suspect the person is trying to live in Malaysia without proper authorization.\n*   **Apply for a long-term visa or permit:** This could be for employment, education, or other specific purposes. Examples include a work permit, student visa, or Malaysia My Second Home (MM2H) program (note: MM2H has changed significantly and is currently under review).\n\nStaying in Malaysia beyond the permitted visa-free period is illegal and can result in fines, detention, and deportation, as well as a ban from re-entering Malaysia in the future.\n\n**Important Considerations:**\n\n*   **Purpose of Visit:** Immigration officers may question the purpose of your visit upon entry. Being clear and honest about your intentions is important.\n*   **Enforcement:** While some people may overstay and not get caught, it's a risky gamble. Enforcement can vary.\n*   **Changing Regulations:** Immigration rules can change. Always check the latest regulations with the Malaysian Immigration Department or the Malaysian embassy/consulate in Singapore before traveling.\n\nTherefore, a Singaporean **cannot** stay in Malaysia indefinitely without a visa or a valid long-term permit.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1285,
+    345,
+    435,
+    399,
+    301,
+    300,
+    474,
+    312,
+    448,
+    417,
+    161,
+    207,
+    113
+  ],
+  "time_diffs": [
+    0.04532980918884277,
+    0.34539103507995605,
+    0.013903141021728516,
+    0.09632992744445801,
+    0.13277006149291992,
+    0.19201993942260742,
+    0.2192060947418213,
+    0.27199578285217285,
+    0.3170781135559082,
+    0.3788928985595703,
+    0.3672621250152588,
+    0.013830900192260742,
+    0.0,
+    0.00011301040649414062
+  ]
+}

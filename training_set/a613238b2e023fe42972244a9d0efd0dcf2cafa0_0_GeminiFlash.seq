@@ -1,0 +1,37 @@
+{
+  "local_port": 51756,
+  "remote_port": 443,
+  "prompt": "How is the word 'dexterous' used in a sentence?",
+  "response": "Here are a few examples of how the word \"dexterous\" can be used in a sentence:\n\n*   **The surgeon was highly dexterous, performing the delicate operation with ease.** (This highlights skill and precision with hands)\n*   **She was a dexterous knitter, creating intricate patterns effortlessly.** (This describes skilled handwork)\n*   **The pickpocket was so dexterous that no one noticed their wallets disappearing.** (This illustrates cunning and skill in a negative way)\n*   **He showed a dexterous use of language in his persuasive speech.** (This extends the meaning beyond physical skill to include mental agility and eloquence)\n*   **The craftsman's dexterous hands shaped the clay into a beautiful vase.** (This focuses on the artist's hand skills)",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    237,
+    260,
+    371,
+    372,
+    461,
+    277,
+    453,
+    422,
+    310,
+    192,
+    113
+  ],
+  "time_diffs": [
+    0.046575069427490234,
+    0.29137492179870605,
+    0.0012500286102294922,
+    0.04931211471557617,
+    0.023144006729125977,
+    0.10821390151977539,
+    0.1929919719696045,
+    0.1821880340576172,
+    0.2929999828338623,
+    0.09416699409484863,
+    0.00519108772277832,
+    0.001786947250366211,
+    0.0
+  ]
+}

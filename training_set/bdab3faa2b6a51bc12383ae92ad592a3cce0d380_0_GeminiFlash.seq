@@ -1,0 +1,27 @@
+{
+  "local_port": 51430,
+  "remote_port": 443,
+  "prompt": "What kind of speech impediment is Jeff Bridges suffering from?",
+  "response": "Jeff Bridges doesn't have a speech impediment in the traditional sense. His characteristic way of speaking is often described as **relaxed, gravelly, and somewhat slurred**, but it's considered a stylistic choice and part of his persona, not a speech disorder.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1262,
+    421,
+    347,
+    378,
+    143,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.04805803298950195,
+    0.2828829288482666,
+    0.11259913444519043,
+    0.1205129623413086,
+    0.09746193885803223,
+    0.015517950057983398,
+    0.0,
+    0.0015621185302734375
+  ]
+}

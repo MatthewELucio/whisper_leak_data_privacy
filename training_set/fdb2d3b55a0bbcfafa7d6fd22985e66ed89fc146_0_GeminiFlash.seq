@@ -1,0 +1,25 @@
+{
+  "local_port": 50756,
+  "remote_port": 443,
+  "prompt": "How do you say this in English?",
+  "response": "Please provide the sentence or phrase you want translated into English. I need the original sentence to be able to help you!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1381,
+    366,
+    274,
+    307,
+    173,
+    113
+  ],
+  "time_diffs": [
+    0.0474851131439209,
+    0.278393030166626,
+    0.10983395576477051,
+    0.03621482849121094,
+    0.04807019233703613,
+    0.001544952392578125,
+    9.5367431640625e-07
+  ]
+}

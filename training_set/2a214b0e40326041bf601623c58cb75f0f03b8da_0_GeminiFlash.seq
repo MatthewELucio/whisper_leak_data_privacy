@@ -1,0 +1,27 @@
+{
+  "local_port": 60222,
+  "remote_port": 443,
+  "prompt": "Who is Princess Rajyashree of Bikaner's husband?",
+  "response": "Princess Rajyashree Kumari of Bikaner is married to Shri Parthajeet Singh.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    214,
+    211,
+    397,
+    258,
+    188,
+    113
+  ],
+  "time_diffs": [
+    0.045719146728515625,
+    0.3719968795776367,
+    0.0014119148254394531,
+    0.011265993118286133,
+    0.0991811752319336,
+    0.007863998413085938,
+    0.0015149116516113281,
+    0.0016660690307617188
+  ]
+}

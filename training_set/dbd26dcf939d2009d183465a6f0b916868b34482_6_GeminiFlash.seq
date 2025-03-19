@@ -1,0 +1,25 @@
+{
+  "local_port": 57812,
+  "remote_port": 443,
+  "prompt": "Is money laundering a crime?",
+  "response": "Yes, money laundering is a crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1400,
+    168,
+    294,
+    305,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.04749488830566406,
+    0.4281620979309082,
+    0.013810873031616211,
+    0.013020992279052734,
+    0.023183107376098633,
+    0.0,
+    0.0011928081512451172
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 59020,
+  "remote_port": 443,
+  "prompt": "How many users does imo have?",
+  "response": "While imo doesn't publicly release official user numbers very often, the most recent estimate I could find suggests that **imo has over 200 million monthly active users globally.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    194,
+    387,
+    297,
+    295,
+    287,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.047521114349365234,
+    0.31331896781921387,
+    0.0013928413391113281,
+    0.21348309516906738,
+    0.02191305160522461,
+    0.05725693702697754,
+    0.01060795783996582,
+    0.0019350051879882812,
+    0.001535177230834961
+  ]
+}

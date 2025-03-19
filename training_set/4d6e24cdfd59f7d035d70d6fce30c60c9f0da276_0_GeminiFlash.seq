@@ -1,0 +1,31 @@
+{
+  "local_port": 53278,
+  "remote_port": 443,
+  "prompt": "Can men feel the hymen when they insert their penis into the vagina?",
+  "response": "Whether a man can feel the hymen during vaginal penetration varies. The hymen is a membrane that surrounds or partially covers the vaginal opening. It has different shapes and sizes, and its elasticity also varies.\n\nSome men might feel a slight resistance or a pop if the hymen is relatively intact and not very elastic. However, many women have already stretched or broken their hymen through activities like sports, using tampons, or even during normal growth. In these cases, the man is unlikely to feel anything at all.\n\nIt's also worth noting that the sensation, or lack thereof, doesn't indicate anything about a woman's virginity or sexual experience.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1330,
+    192,
+    412,
+    259,
+    434,
+    367,
+    251,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.04671287536621094,
+    0.4767570495605469,
+    0.10396599769592285,
+    0.08234000205993652,
+    0.201768159866333,
+    0.210068941116333,
+    0.19449496269226074,
+    0.00850987434387207,
+    0.0014331340789794922,
+    0.0
+  ]
+}

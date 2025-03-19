@@ -1,0 +1,37 @@
+{
+  "local_port": 49082,
+  "remote_port": 443,
+  "prompt": "Did the US lose the War of 1812?",
+  "response": "The War of 1812 is often considered a draw, or a stalemate. Here's why:\n\n*   **No clear winner:** Neither side achieved its main war aims. The U.S. didn't conquer Canada, and Britain failed to decisively defeat the U.S.\n*   **Territorial status quo:** The Treaty of Ghent, which ended the war, restored pre-war boundaries. No territory changed hands.\n*   **American perspective:** The U.S. successfully defended its sovereignty and prevented further British impressment of American sailors. This was seen as a victory in preserving national honor.\n*   **British perspective:** Britain was more focused on the Napoleonic Wars in Europe. After Napoleon's defeat, they were willing to end the conflict with the U.S. without major concessions.\n\nSo, while it wasn't a clear victory for the U.S., it wasn't a loss either. It's more accurate to describe it as a tie.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1477,
+    281,
+    182,
+    374,
+    481,
+    307,
+    387,
+    468,
+    264,
+    215,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.049627065658569336,
+    0.3025541305541992,
+    0.015860795974731445,
+    0.08312416076660156,
+    0.09701085090637207,
+    0.1927640438079834,
+    0.21322107315063477,
+    0.2885470390319824,
+    0.22751903533935547,
+    0.06076979637145996,
+    0.01087498664855957,
+    1.1920928955078125e-06,
+    0.0005519390106201172
+  ]
+}

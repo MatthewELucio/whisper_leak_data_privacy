@@ -1,0 +1,31 @@
+{
+  "local_port": 47144,
+  "remote_port": 443,
+  "prompt": "Is the elephant-headed god \"Ganesh\" or \"Ganesha\"?",
+  "response": "Both \"Ganesh\" and \"Ganesha\" are correct and refer to the same elephant-headed Hindu god.\n\n*   **Ganesh** is a more common and simplified spelling, often used in popular contexts.\n*   **Ganesha** is a more accurate transliteration from Sanskrit, the ancient language of Hinduism.\n\nUltimately, the choice between the two is a matter of preference.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1477,
+    370,
+    270,
+    316,
+    457,
+    387,
+    141,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.0453801155090332,
+    0.36367297172546387,
+    0.04874396324157715,
+    0.05292010307312012,
+    0.0767068862915039,
+    0.2364790439605713,
+    0.06513595581054688,
+    0.013911008834838867,
+    0.0,
+    0.001661062240600586
+  ]
+}

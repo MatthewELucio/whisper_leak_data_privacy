@@ -1,0 +1,29 @@
+{
+  "local_port": 38616,
+  "remote_port": 443,
+  "prompt": "Is it true that Pakistan imports salt from India?",
+  "response": "While it might seem counterintuitive given the relationship between the two countries, reports suggest that Pakistan does indeed import salt from India. This is often due to factors like cost-effectiveness and specific types of salt needed for industrial or other purposes.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    168,
+    307,
+    218,
+    419,
+    261,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.049095869064331055,
+    0.2817220687866211,
+    0.0014820098876953125,
+    0.15244507789611816,
+    0.08094382286071777,
+    0.07122397422790527,
+    0.009006977081298828,
+    0.0,
+    0.0016591548919677734
+  ]
+}

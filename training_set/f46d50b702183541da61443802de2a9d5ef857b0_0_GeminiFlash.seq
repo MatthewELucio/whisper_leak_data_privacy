@@ -1,0 +1,35 @@
+{
+  "local_port": 35084,
+  "remote_port": 443,
+  "prompt": "Why are there two capital letters in the surname McCall?",
+  "response": "The capital letter in the middle of the surname \"McCall\" is a convention derived from the Gaelic languages, specifically Scottish and Irish Gaelic. The \"Mc\" (or \"Mac\") is a prefix meaning \"son of.\" The capital letter following it indicates that it's a separate word element, the name of the father.\n\nSo, McCall means \"son of Call.\" The capital \"C\" distinguishes it as the name of the father, rather than just a lowercase letter that might blend into a longer word. It's a visual indicator of the Gaelic origin and the patronymic nature of the surname.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    132,
+    226,
+    290,
+    295,
+    280,
+    230,
+    294,
+    288,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04623079299926758,
+    0.3238182067871094,
+    0.001466989517211914,
+    0.0,
+    0.07114481925964355,
+    0.09633898735046387,
+    0.22478318214416504,
+    0.21427392959594727,
+    0.15933799743652344,
+    0.02144789695739746,
+    1.1920928955078125e-06,
+    0.0009908676147460938
+  ]
+}

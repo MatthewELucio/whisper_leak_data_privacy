@@ -1,0 +1,33 @@
+{
+  "local_port": 48720,
+  "remote_port": 443,
+  "prompt": "Who is most reachest Bollywood actor?",
+  "response": "Determining the absolute \"richest\" Bollywood actor is tricky because net worth figures are often estimates and private financial details aren't always public. However, based on available information and reports, **Shah Rukh Khan** is widely considered to be the wealthiest Bollywood actor.\n\nWhile other actors like Amitabh Bachchan and Salman Khan are also incredibly successful and wealthy, Shah Rukh Khan's diverse income streams, including production company Red Chillies Entertainment, his ownership stake in the Kolkata Knight Riders cricket team, brand endorsements, and real estate investments, contribute significantly to his overall net worth.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    253,
+    308,
+    348,
+    366,
+    329,
+    263,
+    233,
+    208,
+    113
+  ],
+  "time_diffs": [
+    0.04509401321411133,
+    0.4390079975128174,
+    0.0013990402221679688,
+    0.11098504066467285,
+    0.09318399429321289,
+    0.21424508094787598,
+    0.1709599494934082,
+    0.09508991241455078,
+    0.009897947311401367,
+    0.0014050006866455078,
+    0.0016760826110839844
+  ]
+}

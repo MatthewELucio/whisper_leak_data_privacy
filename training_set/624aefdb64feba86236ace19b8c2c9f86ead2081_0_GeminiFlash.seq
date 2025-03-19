@@ -1,0 +1,33 @@
+{
+  "local_port": 41738,
+  "remote_port": 443,
+  "prompt": "Why can't a duck quack echo?",
+  "response": "This is a classic riddle! The answer is that **a duck *can* quack echo.**\n\nThe riddle plays on the idea that there's something inherently different about a duck's quack that prevents it from echoing. But there's no scientific reason why a duck's quack wouldn't echo. Echoes are simply the reflection of sound waves, and a duck's quack is a sound wave like any other.\n\nThe humor comes from the unexpected misdirection.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    169,
+    282,
+    358,
+    397,
+    480,
+    244,
+    226,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.05521893501281738,
+    0.3809330463409424,
+    0.0012021064758300781,
+    0.04735684394836426,
+    0.0640420913696289,
+    0.1093900203704834,
+    0.15135908126831055,
+    0.1744399070739746,
+    0.007998943328857422,
+    0.001399993896484375,
+    0.0
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 45808,
+  "remote_port": 443,
+  "prompt": "Is it a felony to launder money?",
+  "response": "Yes, in the United States and in many other countries, money laundering is a felony. The specific penalties and definitions can vary depending on the jurisdiction, but generally, money laundering involves concealing the origins of illegally obtained money, and it is treated as a serious crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    268,
+    147,
+    265,
+    325,
+    315,
+    263,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.0470430850982666,
+    0.397258996963501,
+    0.0014638900756835938,
+    0.02939915657043457,
+    0.07308697700500488,
+    0.09093999862670898,
+    0.12206602096557617,
+    0.011793851852416992,
+    0.0016820430755615234,
+    0.0
+  ]
+}

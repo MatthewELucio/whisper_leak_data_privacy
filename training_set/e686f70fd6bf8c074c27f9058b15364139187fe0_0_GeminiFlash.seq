@@ -1,0 +1,27 @@
+{
+  "local_port": 51936,
+  "remote_port": 443,
+  "prompt": "Does Al Pacino smoke?",
+  "response": "Yes, Al Pacino is known to be a smoker. He has been seen smoking cigarettes and cigars for many years.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1410,
+    281,
+    350,
+    226,
+    190,
+    145,
+    113
+  ],
+  "time_diffs": [
+    0.04820394515991211,
+    0.644705057144165,
+    0.0538790225982666,
+    0.0387570858001709,
+    0.07807803153991699,
+    0.009109020233154297,
+    0.0013048648834228516,
+    0.0001671314239501953
+  ]
+}

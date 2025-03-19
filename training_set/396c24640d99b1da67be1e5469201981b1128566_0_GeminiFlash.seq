@@ -1,0 +1,43 @@
+{
+  "local_port": 53590,
+  "remote_port": 443,
+  "prompt": "What do Shahrukh Khan and Sahid Kapoor use on their hair?",
+  "response": "It's difficult to know *exactly* what Shah Rukh Khan and Shahid Kapoor use on their hair because celebrities often have a team of stylists and access to professional products, and they might change their routines frequently.\n\nHowever, here's what's generally known and speculated about their hair care:\n\n**Shah Rukh Khan:**\n\n*   **Coloring:** SRK has been known to color his hair to cover up grey.\n*   **Styling Products:** He likely uses a combination of hair gel, mousse, or hair wax/clay for styling, depending on the desired look.\n*   **Professional Care:** Given his status, he almost certainly relies on professional stylists who use high-quality salon products from brands like L'Oreal Professionnel, Wella Professionals, or similar professional lines.\n*   **Hair transplant** SRK has had a hair transplant to cover a balding scalp.\n\n**Shahid Kapoor:**\n\n*   **Styling Products:** Shahid is known for experimenting with different hairstyles and likely uses a range of products like hair wax, pomade, clay, or texturizing sprays to achieve various looks.\n*   **Hair Care Products** He may use products to keep his hair from being dry, shampoos, oils and conditioners.\n*   **Professional Care:** Similar to SRK, Shahid likely benefits from professional styling and access to top-tier hair care brands.\n*   **Haircut** Shaid has been known to cut his hair regularly.\n\n**Important Considerations:**\n\n*   **Individual Needs:** Hair care is highly individual. What works for one person may not work for another due to differences in hair type, texture, and scalp condition.\n*   **Professional Advice:** The best way to determine the right products for *your* hair is to consult with a qualified hairstylist or dermatologist.\n*   **Brands:** Celebrities are often brand ambassadors, so they might promote specific brands, but it doesn't necessarily mean those are the *only* products they use.\n\nI cannot give you exact products that they use, and information online might not be accurate.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    178,
+    341,
+    452,
+    296,
+    415,
+    473,
+    445,
+    291,
+    365,
+    513,
+    351,
+    135,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.048323869705200195,
+    0.34674811363220215,
+    0.0013539791107177734,
+    0.08142209053039551,
+    0.12399101257324219,
+    0.1680150032043457,
+    0.16971993446350098,
+    0.3544800281524658,
+    0.3144979476928711,
+    0.34800195693969727,
+    0.33364009857177734,
+    0.3222830295562744,
+    0.2421708106994629,
+    0.0068111419677734375,
+    0.00010585784912109375,
+    0.0
+  ]
+}

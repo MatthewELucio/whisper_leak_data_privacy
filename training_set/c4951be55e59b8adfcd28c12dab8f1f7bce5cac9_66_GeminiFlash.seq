@@ -1,0 +1,41 @@
+{
+  "local_port": 59022,
+  "remote_port": 443,
+  "prompt": "Is money laundering subject to legal prosecution?",
+  "response": "Yes, money laundering is definitely subject to legal prosecution in most countries around the world.  It's a serious crime with significant legal consequences.  These consequences can include:\n\n*   **Criminal Penalties:** Fines, imprisonment, or both. The length of imprisonment and the amount of fines can vary widely depending on the jurisdiction, the amount of money laundered, and the specific circumstances of the case.\n*   **Asset Forfeiture:** The money or property involved in the money laundering scheme can be seized by the government. This can include not only the illegal funds but also assets purchased with those funds.\n*   **Civil Penalties:** In addition to criminal charges, individuals and businesses can also face civil penalties for money laundering violations.\n*   **Reputational Damage:** A conviction for money laundering can severely damage a person's or company's reputation, making it difficult to obtain financing, conduct business, or even travel.\n*   **Professional Sanctions:** Professionals, such as lawyers, accountants, and bankers, can lose their licenses and be barred from practicing their professions if they are convicted of money laundering.\n\nLaws like the Bank Secrecy Act (BSA) and the Patriot Act in the United States are examples of legislation designed to combat money laundering. Similar laws exist in many other countries.\n\nThe specific laws and penalties vary depending on the country and the jurisdiction. If you have questions about specific laws, consult with a legal professional.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    98,
+    209,
+    413,
+    369,
+    273,
+    367,
+    297,
+    361,
+    415,
+    431,
+    207,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.04679989814758301,
+    0.3540480136871338,
+    0.0013799667358398438,
+    0.023368120193481445,
+    0.10117888450622559,
+    0.08573198318481445,
+    0.1862630844116211,
+    0.2340409755706787,
+    0.35422205924987793,
+    0.28972792625427246,
+    0.37225794792175293,
+    0.18358421325683594,
+    0.007742881774902344,
+    0.0,
+    0.0
+  ]
+}

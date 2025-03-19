@@ -1,0 +1,43 @@
+{
+  "local_port": 51456,
+  "remote_port": 443,
+  "prompt": "Is erectile dysfunction treatable or not?",
+  "response": "Yes, erectile dysfunction (ED) is treatable. There are many different treatment options available, and the best approach depends on the underlying cause of the ED, as well as individual factors such as overall health and preferences.\n\nHere's a breakdown of common treatment options:\n\n*   **Lifestyle Changes:** In some cases, ED can be improved or even reversed by making lifestyle changes such as losing weight, quitting smoking, reducing alcohol consumption, and increasing physical activity.\n\n*   **Oral Medications:** These are often the first line of treatment. They work by increasing blood flow to the penis. Common examples include sildenafil (Viagra), tadalafil (Cialis), vardenafil (Levitra), and avanafil (Stendra).\n\n*   **Injections:** Medications can be injected directly into the penis to cause an erection. Alprostadil is a common medication used for this purpose.\n\n*   **Vacuum Erection Devices (VEDs):** These devices create a vacuum around the penis, drawing blood into it and causing an erection. A constriction ring is then placed at the base of the penis to maintain the erection.\n\n*   **Intraurethral Suppositories:** Alprostadil can also be administered as a suppository inserted into the urethra.\n\n*   **Testosterone Replacement Therapy:** If ED is caused by low testosterone levels, testosterone replacement therapy may be recommended.\n\n*   **Penile Implants:** These are surgically implanted devices that allow a man to have an erection on demand.\n\n*   **Counseling and Therapy:** If psychological factors are contributing to ED, therapy or counseling may be helpful.\n\nIt's important to consult with a healthcare professional to determine the underlying cause of ED and to discuss the best treatment options. They can help you find a safe and effective solution that works for you.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    288,
+    233,
+    399,
+    367,
+    479,
+    446,
+    260,
+    287,
+    447,
+    423,
+    424,
+    200,
+    224,
+    113
+  ],
+  "time_diffs": [
+    0.04318809509277344,
+    0.2980678081512451,
+    0.0014791488647460938,
+    0.024739980697631836,
+    0.07285904884338379,
+    0.10401391983032227,
+    0.14713501930236816,
+    0.18378901481628418,
+    0.2283039093017578,
+    0.25239014625549316,
+    0.36235594749450684,
+    0.40224289894104004,
+    0.26508498191833496,
+    0.010081052780151367,
+    0.0,
+    0.0
+  ]
+}

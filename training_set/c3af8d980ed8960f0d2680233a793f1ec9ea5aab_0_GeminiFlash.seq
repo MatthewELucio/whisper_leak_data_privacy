@@ -1,0 +1,33 @@
+{
+  "local_port": 48350,
+  "remote_port": 443,
+  "prompt": "What percentage of Quora users ask and answer questions?",
+  "response": "Quora doesn't publicly release the exact percentage of users who both ask and answer questions. However, they have stated that a significant portion of their users primarily consume content (read questions and answers) rather than actively contributing (asking or answering).\n\nIt's generally understood that a relatively small percentage of users actively create the majority of content on most online platforms, including Quora. This is often referred to as the \"1% rule\" or the \"90-9-1 rule,\" though the actual percentages may vary.\n\nTherefore, while I can't give you a precise figure, it's safe to say that **significantly less than 50% of Quora users both ask and answer questions.** The percentage is likely considerably lower, possibly closer to the single digits.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1273,
+    413,
+    406,
+    482,
+    389,
+    262,
+    260,
+    159,
+    136,
+    113
+  ],
+  "time_diffs": [
+    0.04563403129577637,
+    0.26524806022644043,
+    0.12194299697875977,
+    0.12108182907104492,
+    0.19896912574768066,
+    0.1740429401397705,
+    0.2919800281524658,
+    0.025988101959228516,
+    0.012948989868164062,
+    0.0014629364013671875,
+    0.0
+  ]
+}

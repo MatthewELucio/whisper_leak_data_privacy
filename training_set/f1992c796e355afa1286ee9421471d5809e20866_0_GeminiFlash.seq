@@ -1,0 +1,39 @@
+{
+  "local_port": 45376,
+  "remote_port": 443,
+  "prompt": "What should be America's role in the world today?",
+  "response": "That's a really interesting question! There are a lot of different perspectives on what America's role in the world should be. Here are a few common viewpoints:\n\n*   **Global Leadership:** Some argue that the U.S. should continue to be a global leader, promoting democracy, human rights, and free markets. This view often involves maintaining a strong military presence and actively engaging in international diplomacy.\n\n*   **International Cooperation:** Others believe the U.S. should prioritize collaboration with other nations through international organizations and agreements to address global challenges like climate change, pandemics, and economic inequality.\n\n*   **National Interests First:** A more isolationist perspective suggests the U.S. should focus primarily on its own domestic needs and security, avoiding foreign entanglements and prioritizing American interests above all else.\n\n*   **Humanitarian Focus:** Some advocate for a greater emphasis on humanitarian aid and development assistance, working to alleviate poverty, disease, and suffering around the world.\n\nThese different perspectives often overlap and can be combined in various ways. The specific actions the U.S. takes on the world stage are influenced by a range of factors, including domestic politics, economic considerations, and evolving global events.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    283,
+    167,
+    264,
+    266,
+    442,
+    329,
+    329,
+    395,
+    349,
+    211,
+    157,
+    113
+  ],
+  "time_diffs": [
+    0.05189013481140137,
+    0.36683177947998047,
+    0.0014300346374511719,
+    0.043470144271850586,
+    0.051106929779052734,
+    0.04999804496765137,
+    0.1609950065612793,
+    0.15407490730285645,
+    0.2890770435333252,
+    0.2937889099121094,
+    0.34043312072753906,
+    0.008812904357910156,
+    0.0,
+    0.0
+  ]
+}

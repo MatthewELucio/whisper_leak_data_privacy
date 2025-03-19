@@ -1,0 +1,27 @@
+{
+  "local_port": 53318,
+  "remote_port": 443,
+  "prompt": "Have you ever survived a plane crash?",
+  "response": "As a large language model, I don't have a physical body and therefore cannot experience real-world events like a plane crash. So, no, I have never survived one.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1287,
+    365,
+    377,
+    218,
+    316,
+    170,
+    113
+  ],
+  "time_diffs": [
+    0.05089282989501953,
+    0.34601402282714844,
+    0.016109943389892578,
+    0.01952815055847168,
+    0.09658384323120117,
+    0.012807130813598633,
+    0.0015950202941894531,
+    0.0016949176788330078
+  ]
+}

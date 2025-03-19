@@ -1,0 +1,29 @@
+{
+  "local_port": 41514,
+  "remote_port": 443,
+  "prompt": "What was the IIT-JEE AIR of Shiraz Minwalla?",
+  "response": "Shiraz Minwalla secured an All India Rank (AIR) of 7 in the IIT-JEE examination.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    244,
+    186,
+    345,
+    215,
+    252,
+    182,
+    113
+  ],
+  "time_diffs": [
+    0.04503297805786133,
+    0.42702698707580566,
+    0.0014050006866455078,
+    0.03505992889404297,
+    0.08012700080871582,
+    0.03583097457885742,
+    0.0072710514068603516,
+    0.0015408992767333984,
+    6.103515625e-05
+  ]
+}

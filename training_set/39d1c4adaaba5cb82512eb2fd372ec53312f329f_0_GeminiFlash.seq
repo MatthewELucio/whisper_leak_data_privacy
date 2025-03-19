@@ -1,0 +1,35 @@
+{
+  "local_port": 45766,
+  "remote_port": 443,
+  "prompt": "Where can I buy this t-shirt?",
+  "response": "I can't help you without knowing what the t-shirt looks like. You'll need to give me more information so I can find it for you, such as:\n\n*   **A description of the t-shirt:** What color is it? What's the design on it? Does it have any words or images?\n*   **A photo of the t-shirt:** If you have a picture, that would be the most helpful.\n*   **Any keywords associated with the t-shirt:** For example, \"vintage band t-shirt,\" \"funny cat t-shirt,\" \"custom logo t-shirt,\" etc.\n\nOnce I have some information, I can try to find it for you online or suggest places where you might be able to buy it.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1284,
+    197,
+    431,
+    424,
+    363,
+    231,
+    260,
+    400,
+    313,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.04424405097961426,
+    0.3154120445251465,
+    0.015096902847290039,
+    0.09502911567687988,
+    0.10499000549316406,
+    0.1360929012298584,
+    0.16887497901916504,
+    0.2542409896850586,
+    0.04878997802734375,
+    0.009824037551879883,
+    0.0,
+    0.0
+  ]
+}

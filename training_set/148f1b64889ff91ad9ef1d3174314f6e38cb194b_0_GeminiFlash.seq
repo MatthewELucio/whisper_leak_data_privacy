@@ -1,0 +1,31 @@
+{
+  "local_port": 49016,
+  "remote_port": 443,
+  "prompt": "Is Turkey considered to be more in Asia or in Europe?",
+  "response": "Turkey is a transcontinental country, meaning it lies on both the continents of Asia and Europe. However, **most of its landmass is geographically in Asia.** Only a small portion of Turkey, known as East Thrace, is located in Europe.\n\nTherefore, while technically on both continents, **Turkey is generally considered to be more in Asia.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    299,
+    212,
+    457,
+    246,
+    266,
+    195,
+    220,
+    113
+  ],
+  "time_diffs": [
+    0.04529905319213867,
+    0.3156468868255615,
+    0.0018711090087890625,
+    0.013189077377319336,
+    0.09698796272277832,
+    0.12925481796264648,
+    0.17619609832763672,
+    0.01580190658569336,
+    0.0014941692352294922,
+    0.0
+  ]
+}

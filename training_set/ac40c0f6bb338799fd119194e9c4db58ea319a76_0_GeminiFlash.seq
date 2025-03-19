@@ -1,0 +1,41 @@
+{
+  "local_port": 37100,
+  "remote_port": 443,
+  "prompt": "What is so special about Hauz Khas night life?",
+  "response": "Hauz Khas Village (HKV) nightlife is special due to a unique combination of factors:\n\n*   **Bohemian Atmosphere:** HKV has a distinct artistic and bohemian vibe, attracting a creative crowd. You'll find art galleries, boutiques selling quirky items, and cafes with live music.\n*   **Diverse Food & Drink Options:** From rooftop bars with stunning views to cozy cafes, gastropubs with craft beers, and restaurants serving global cuisines, HKV caters to varied tastes.\n*   **Lakeside Setting:** The presence of the historic Hauz Khas Complex and the surrounding lake adds a charming and picturesque element, especially at night when the area is lit up.\n*   **Historic Charm:** The juxtaposition of modern bars and restaurants within the ruins of historical structures creates a unique and captivating atmosphere.\n*   **Music Scene:** Many venues in HKV feature live music, from acoustic sets to DJs playing electronic music, catering to different musical preferences.\n*   **Lively Crowd:** HKV attracts a mix of students, young professionals, tourists, and expats, creating a vibrant and energetic atmosphere.\n*   **Accessibility:** Despite its popularity, HKV is relatively accessible via metro and other forms of transport.\n*   **Walkable Area:** The compact nature of HKV makes it easy to hop between different bars and restaurants.\n\nHowever, it's also worth noting:\n\n*   **Can get crowded:** HKV is a popular spot, especially on weekends, so it can get very crowded.\n*   **Parking can be difficult:** Finding parking in HKV can be a challenge.\n*   **Noise levels:** Due to the concentration of bars and restaurants, noise levels can be high, especially on weekends.\n\nDespite these potential drawbacks, the overall blend of history, art, food, music, and ambiance makes Hauz Khas Village a distinctive and popular nightlife destination in Delhi.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1435,
+    222,
+    359,
+    441,
+    341,
+    461,
+    331,
+    317,
+    320,
+    300,
+    297,
+    243,
+    157,
+    113
+  ],
+  "time_diffs": [
+    0.044280052185058594,
+    0.31560802459716797,
+    0.023801803588867188,
+    0.08204317092895508,
+    0.0850830078125,
+    0.23398494720458984,
+    0.2671499252319336,
+    0.28308606147766113,
+    0.3100860118865967,
+    0.3615128993988037,
+    0.3640470504760742,
+    0.32097411155700684,
+    0.009199857711791992,
+    0.0,
+    0.0
+  ]
+}

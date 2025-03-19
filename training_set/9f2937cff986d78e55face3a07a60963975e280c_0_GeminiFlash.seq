@@ -1,0 +1,35 @@
+{
+  "local_port": 33242,
+  "remote_port": 443,
+  "prompt": "Is the sexual revolution harmful or helpful?",
+  "response": "The sexual revolution is a complex topic with diverse perspectives on its impact.\n\nSome argue that it has been beneficial, leading to greater sexual freedom, gender equality, and acceptance of diverse sexual orientations and identities. They might point to increased access to contraception and abortion, which have given individuals more control over their reproductive health and life choices.\n\nOthers argue that the sexual revolution has had harmful consequences, such as increased rates of sexually transmitted infections, unintended pregnancies, and the objectification of women. They might also argue that it has led to a decline in traditional family values and an increase in promiscuity.\n\nUltimately, whether the sexual revolution is viewed as harmful or helpful depends on one's individual values and beliefs. There is no single answer to this question.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    258,
+    185,
+    290,
+    382,
+    424,
+    308,
+    479,
+    187,
+    193,
+    113
+  ],
+  "time_diffs": [
+    0.04524397850036621,
+    0.32347702980041504,
+    0.0015439987182617188,
+    0.024291038513183594,
+    0.08117103576660156,
+    0.1100609302520752,
+    0.18606185913085938,
+    0.18208718299865723,
+    0.28516197204589844,
+    0.011884927749633789,
+    0.0,
+    0.0
+  ]
+}

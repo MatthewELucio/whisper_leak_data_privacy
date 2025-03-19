@@ -1,0 +1,43 @@
+{
+  "local_port": 59508,
+  "remote_port": 443,
+  "prompt": "Is there an inpatient Drug and Alcohol Rehab Center in Shasta County California?",
+  "response": "Yes, there are inpatient drug and alcohol rehab centers in Shasta County, California.\n\nTo find the most suitable option for you or someone you know, I recommend the following:\n\n*   **SAMHSA's Behavioral Health Treatment Services Locator:** This is a confidential and anonymous source of information for locating drug and alcohol treatment facilities, mental health services, and substance use disorder treatment programs around the U.S. You can search specifically for inpatient rehabs in Shasta County. [https://findtreatment.samhsa.gov/](https://findtreatment.samhsa.gov/)\n*   **California Department of Health Care Services (DHCS):** The DHCS has a directory of licensed and certified substance use disorder treatment providers in California. You can search by county.  Look for the \"Substance Use Disorder Treatment Facility Locator.\"\n*   **Call 2-1-1:** Dial 2-1-1 to connect with a community resource specialist who can help you find local treatment options.\n*   **Search Online:** Use search terms like \"inpatient drug rehab Shasta County CA\" or \"alcohol rehab Shasta County CA.\"  Be sure to check reviews and verify the facility's licensing.\n*   **Consult with a Healthcare Professional:** Your doctor or a therapist can provide recommendations based on individual needs.\n*   **Check with your Insurance Provider:** See which facilities are in your insurance network.\n\nWhen researching, be sure to consider:\n\n*   **Types of treatment offered:** (e.g., detox, individual therapy, group therapy, medication-assisted treatment)\n*   **Specialized programs:** (e.g., for adolescents, veterans, LGBTQ+ individuals)\n*   **Insurance accepted**\n*   **Cost and payment options**\n*   **Licensing and accreditation**\n*   **Reviews and testimonials**\n\n**Disclaimer:** *I am an AI chatbot and cannot provide medical advice or endorse specific treatment facilities. It is essential to do your own research and consult with qualified professionals to determine the best course of action for your individual circumstances.*",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1433,
+    182,
+    236,
+    395,
+    451,
+    346,
+    455,
+    254,
+    450,
+    450,
+    349,
+    394,
+    147,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.04408979415893555,
+    0.40781211853027344,
+    0.0034399032592773438,
+    0.07541012763977051,
+    0.0900719165802002,
+    0.2662649154663086,
+    0.21759605407714844,
+    0.24237513542175293,
+    0.27978992462158203,
+    0.33789896965026855,
+    0.34043192863464355,
+    0.39058804512023926,
+    0.17592597007751465,
+    0.27259397506713867,
+    0.0,
+    0.0
+  ]
+}

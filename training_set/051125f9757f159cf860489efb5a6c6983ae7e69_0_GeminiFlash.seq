@@ -1,0 +1,33 @@
+{
+  "local_port": 41084,
+  "remote_port": 443,
+  "prompt": "What's like to have sex for the first time?",
+  "response": "Experiences of first-time sex vary greatly. Some people describe it as awkward, clumsy, and maybe even a little painful. Others find it exciting, pleasurable, and a bonding experience. It's common to feel a mix of emotions, including nervousness, anticipation, and vulnerability.\n\nPhysically, there might be some discomfort or pain, especially for people with vaginas if penetration is involved. Using plenty of lubricant and communicating openly with your partner can help with this. It's also important to remember that orgasm isn't guaranteed the first time, and that's perfectly normal.\n\nEmotionally, first-time sex can be a big deal. It can feel like a significant step in a relationship, and it's important to feel safe, comfortable, and respected with your partner. Open communication about boundaries, desires, and expectations is key to a positive experience.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1480,
+    345,
+    216,
+    339,
+    319,
+    359,
+    321,
+    288,
+    152,
+    113
+  ],
+  "time_diffs": [
+    0.04667210578918457,
+    0.38907384872436523,
+    0.1719980239868164,
+    0.11577296257019043,
+    0.18245220184326172,
+    0.2610349655151367,
+    0.28090596199035645,
+    0.1813809871673584,
+    0.0046329498291015625,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 35688,
+  "remote_port": 443,
+  "prompt": "Who investigates the Federal Bureau of Investigation?",
+  "response": "Several entities have oversight and investigative roles concerning the Federal Bureau of Investigation (FBI):\n\n*   **The Department of Justice (DOJ) Inspector General (IG):** The DOJ IG is responsible for investigating allegations of misconduct involving DOJ employees, including FBI agents. They conduct audits and investigations of DOJ programs and operations.\n\n*   **The Government Accountability Office (GAO):** The GAO audits and evaluates government agencies and programs, including the FBI. They provide reports and recommendations to Congress on how to improve government operations.\n\n*   **Congressional Committees:** Various congressional committees, such as the House Judiciary Committee, the Senate Judiciary Committee, the House Oversight Committee, and the Senate Homeland Security and Governmental Affairs Committee, have the authority to conduct oversight hearings and investigations of the FBI.\n\n*   **The Special Counsel:** In certain situations, a special counsel may be appointed to investigate specific allegations of wrongdoing within the DOJ or FBI, particularly when there is a conflict of interest or the matter requires an independent investigation.\n\n*   **The Office of Professional Responsibility (OPR) within the DOJ:** OPR investigates allegations of misconduct by DOJ attorneys, which can include those working within the FBI.\n\n*   **The FBI's Inspection Division:** Within the FBI itself, the Inspection Division conducts internal reviews and inspections to ensure compliance with policies and regulations.\n\n*   **The Courts:** The judicial branch can also play a role through legal proceedings and rulings that affect the FBI's actions and policies.\n\nThese entities provide different layers of oversight to ensure accountability and compliance with laws and regulations within the FBI.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    252,
+    344,
+    420,
+    357,
+    412,
+    466,
+    294,
+    350,
+    358,
+    261,
+    203,
+    113
+  ],
+  "time_diffs": [
+    0.046794891357421875,
+    0.27117300033569336,
+    0.0015170574188232422,
+    0.19634008407592773,
+    0.044740915298461914,
+    0.16832900047302246,
+    0.21796798706054688,
+    0.3241429328918457,
+    0.31528615951538086,
+    0.44035983085632324,
+    0.417147159576416,
+    0.016716957092285156,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

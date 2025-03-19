@@ -1,0 +1,41 @@
+{
+  "local_port": 52666,
+  "remote_port": 443,
+  "prompt": "Can I wear solid colors over camo?",
+  "response": "Yes, you can definitely wear solid colors over camo. There's no rule against it, and it can even be a stylish choice. Here's why and some things to consider:\n\n*   **Functionality:** Sometimes you might need the warmth or protection of a solid-colored jacket or vest over your camo. For example, a bright orange vest over camo is common for hunters during firearms season for safety reasons.\n*   **Fashion:** Mixing camo with solid colors is a popular trend. It can create a balanced and visually interesting outfit.\n*   **Practicality:** You might simply want to tone down the camo pattern for a particular situation, making it less noticeable.\n\nWhen wearing solid colors over camo, consider the following:\n\n*   **Color Harmony:** Think about which solid colors will complement the camo pattern. Earthy tones, black, olive green, and browns usually work well.\n*   **Fit:** Ensure the solid-colored garment fits comfortably over your camo clothing without being too tight or restrictive.\n*   **Occasion:** Consider the setting where you'll be wearing the outfit. A casual outing might allow for bolder color choices, while a more formal setting might call for more subdued tones.\n*   **Personal Style:** Ultimately, choose what you feel confident and comfortable wearing.\n\nIn short, feel free to experiment and have fun with the combination of solid colors and camo.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    146,
+    294,
+    302,
+    334,
+    434,
+    308,
+    394,
+    309,
+    330,
+    380,
+    194,
+    209,
+    113
+  ],
+  "time_diffs": [
+    0.045126914978027344,
+    0.4375340938568115,
+    0.0014879703521728516,
+    0.013538122177124023,
+    0.057389020919799805,
+    0.1014108657836914,
+    0.2752540111541748,
+    0.17512202262878418,
+    0.3466939926147461,
+    0.23944902420043945,
+    0.4248340129852295,
+    0.13244390487670898,
+    0.01250600814819336,
+    0.0008511543273925781,
+    9.5367431640625e-07
+  ]
+}

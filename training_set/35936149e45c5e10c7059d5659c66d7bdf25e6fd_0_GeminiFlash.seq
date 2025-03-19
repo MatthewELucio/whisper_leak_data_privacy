@@ -1,0 +1,43 @@
+{
+  "local_port": 51530,
+  "remote_port": 443,
+  "prompt": "How long does a Swiffer Sweeper vac replacement battery usually last?",
+  "response": "The lifespan of a Swiffer SweeperVac replacement battery can vary depending on usage and care, but here's a general idea:\n\n*   **Typical Lifespan:** Expect a Swiffer SweeperVac battery to last **between 1 and 2 years** with normal use.\n\n*   **Factors Affecting Lifespan:**\n\n    *   **Frequency of Use:** The more often you use the SweeperVac, the shorter the battery life.\n    *   **Run Time per Use:** Longer cleaning sessions drain the battery more quickly.\n    *   **Charging Habits:**\n        *   **Overcharging:** Leaving the unit plugged in after it's fully charged can damage the battery over time.\n        *   **Deep Discharging:** Consistently draining the battery completely before recharging can also shorten its lifespan.\n    *   **Storage:** Storing the SweeperVac in a cool, dry place can help preserve the battery. Extreme temperatures can negatively impact battery life.\n    *   **Battery Quality:** The quality of the replacement battery itself can influence its lifespan.\n    *   **Original battery brand vs. aftermarket:** Aftermarket batteries can often have a lower lifespan than the original manufactured battery.\n\n*   **Signs of a Dying Battery:**\n\n    *   Reduced run time.\n    *   Battery no longer holds a charge.\n    *   Weaker suction.\n    *   Takes longer to charge than usual.\n\n**Tips to Maximize Battery Life:**\n\n*   Charge the SweeperVac only when the battery is low.\n*   Unplug the unit once it's fully charged.\n*   Avoid completely draining the battery regularly.\n*   Store the SweeperVac in a cool, dry place.\n\nKeep in mind that this is a general estimate. Some users may experience longer or shorter battery life depending on their specific usage patterns and environmental conditions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    162,
+    167,
+    229,
+    393,
+    241,
+    429,
+    458,
+    465,
+    407,
+    359,
+    508,
+    272,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.0460968017578125,
+    0.31229114532470703,
+    0.0018780231475830078,
+    0.022410869598388672,
+    0.08882808685302734,
+    0.06720685958862305,
+    0.1648721694946289,
+    0.19896292686462402,
+    0.2612459659576416,
+    0.30126094818115234,
+    0.40920019149780273,
+    0.3322148323059082,
+    0.2658350467681885,
+    0.01121211051940918,
+    0.0,
+    0.0005819797515869141
+  ]
+}

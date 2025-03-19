@@ -1,0 +1,43 @@
+{
+  "local_port": 45228,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, governments around the world have laws against money laundering. These laws are designed to prevent criminals from disguising the origins of illegally obtained money so that it appears to come from a legitimate source.\n\nHere's a breakdown of why and how these laws exist:\n\n*   **Why Money Laundering Laws Exist:** Money laundering allows criminals to profit from illegal activities like drug trafficking, human trafficking, corruption, and terrorism. By making it harder to \"clean\" illicit funds, governments aim to disrupt these criminal enterprises.\n\n*   **Key Elements of Money Laundering Laws:**\n\n    *   **Criminalization:** Laws typically make money laundering a criminal offense.\n    *   **Customer Due Diligence (CDD):** Banks and other financial institutions are required to verify the identity of their customers and monitor transactions for suspicious activity.\n    *   **Reporting Requirements:** Financial institutions must report large transactions and suspected money laundering activity to the appropriate authorities (e.g., through Suspicious Activity Reports - SARs).\n    *   **Record Keeping:** Financial institutions are required to keep detailed records of transactions.\n    *   **International Cooperation:** Many countries cooperate to share information and coordinate efforts to combat money laundering.\n\n*   **Examples of Laws:**\n\n    *   **United States:** The primary laws are the Bank Secrecy Act (BSA) and the Money Laundering Control Act.\n    *   **United Kingdom:** The Proceeds of Crime Act 2002.\n    *   **European Union:** The EU has issued several Anti-Money Laundering Directives that member states must implement into their national laws.\n    *   **Internationally:** The Financial Action Task Force (FATF) is an intergovernmental body that sets international standards for combating money laundering and terrorist financing.\n    *   Virtually every developed country has laws against money laundering.\n*   **Consequences of Violating Money Laundering Laws:** Penalties for money laundering can be severe, including imprisonment, fines, and forfeiture of assets.\n\nIn short, money laundering is illegal, and governments have implemented extensive laws and regulations to combat it.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1292,
+    145,
+    235,
+    348,
+    238,
+    335,
+    402,
+    391,
+    416,
+    498,
+    493,
+    312,
+    195,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.04510998725891113,
+    0.39989709854125977,
+    0.017596006393432617,
+    0.07016992568969727,
+    0.09232211112976074,
+    0.13875198364257812,
+    0.22711396217346191,
+    0.26994991302490234,
+    0.24821209907531738,
+    0.3189399242401123,
+    0.3312489986419678,
+    0.33637094497680664,
+    0.20462512969970703,
+    0.010764837265014648,
+    5.602836608886719e-05,
+    0.00017905235290527344
+  ]
+}

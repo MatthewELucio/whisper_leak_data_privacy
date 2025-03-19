@@ -1,0 +1,31 @@
+{
+  "local_port": 34404,
+  "remote_port": 443,
+  "prompt": "If someone launders money, do they break the law?",
+  "response": "Yes, money laundering is a crime in most countries. It involves concealing the origins of illegally obtained money so that it appears to come from a legitimate source. This is done to avoid prosecution for the underlying crime that generated the money, such as drug trafficking, fraud, or extortion.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    125,
+    293,
+    232,
+    238,
+    424,
+    143,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04710793495178223,
+    0.39612603187561035,
+    0.001377105712890625,
+    0.03862595558166504,
+    0.07674002647399902,
+    0.09516000747680664,
+    0.1151738166809082,
+    0.011644124984741211,
+    0.0018529891967773438,
+    0.0
+  ]
+}

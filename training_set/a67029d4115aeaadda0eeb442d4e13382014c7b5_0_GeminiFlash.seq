@@ -1,0 +1,37 @@
+{
+  "local_port": 50674,
+  "remote_port": 443,
+  "prompt": "Rahul Gandhi predicted as next PM?",
+  "response": "Predicting who will be the next Prime Minister of India is a complex task. Here's why:\n\n*   **Elections are Decisive:** The Prime Minister is chosen after a general election. The party or coalition that wins a majority of seats in the Lok Sabha (the lower house of Parliament) gets to form the government, and their leader typically becomes the Prime Minister.\n\n*   **Current Political Landscape:** The Indian political scene is dynamic. The Bharatiya Janata Party (BJP), led by Narendra Modi, is currently in power. However, the Indian National Congress, led by Rahul Gandhi, is a major opposition party. There are also many regional parties with significant influence in different states.\n\n*   **Factors Influencing Elections:** Many things can influence election outcomes, including:\n    *   Public opinion\n    *   Economic conditions\n    *   Social issues\n    *   Campaign strategies\n    *   Alliances between parties\n\n*   **Predicting is Difficult:** Polling agencies and political analysts offer predictions, but they are not always accurate. It's hard to foresee how all the different factors will play out.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    136,
+    302,
+    236,
+    483,
+    335,
+    496,
+    404,
+    377,
+    257,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.04793596267700195,
+    0.29297399520874023,
+    0.001444101333618164,
+    0.129957914352417,
+    0.07521986961364746,
+    0.1643221378326416,
+    0.20809602737426758,
+    0.2565138339996338,
+    0.2876591682434082,
+    0.25252294540405273,
+    0.007934093475341797,
+    0.0,
+    0.0
+  ]
+}

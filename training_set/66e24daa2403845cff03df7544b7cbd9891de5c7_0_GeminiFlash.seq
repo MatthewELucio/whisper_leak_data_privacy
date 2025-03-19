@@ -1,0 +1,35 @@
+{
+  "local_port": 47266,
+  "remote_port": 443,
+  "prompt": "Is there hostel in SIG?",
+  "response": "SIG, as an abbreviation, can refer to many different things. To answer your question about a hostel, I need to know which \"SIG\" you're referring to. Please provide more context. For example, are you referring to:\n\n*   **A specific Special Interest Group (SIG)?** If so, which one? Knowing the focus of the SIG might give clues as to where they might be located or if they hold events that would necessitate nearby accommodation.\n*   **A town or city with the abbreviation SIG?** If so, what is the full name of the location?\n\nOnce I know what \"SIG\" refers to, I can research whether there are hostels in that location or near the location of the event/group.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    149,
+    423,
+    312,
+    319,
+    446,
+    271,
+    184,
+    134,
+    169,
+    113
+  ],
+  "time_diffs": [
+    0.046192169189453125,
+    0.2874128818511963,
+    0.0014739036560058594,
+    0.16271209716796875,
+    0.08996105194091797,
+    0.18205785751342773,
+    0.20293903350830078,
+    0.25206804275512695,
+    0.0016279220581054688,
+    0.010322093963623047,
+    0.0,
+    0.0
+  ]
+}

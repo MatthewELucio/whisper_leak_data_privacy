@@ -1,0 +1,41 @@
+{
+  "local_port": 35770,
+  "remote_port": 443,
+  "prompt": "How common is using \"ex\" as the short for \"example\"?",
+  "response": "Using \"ex\" as a short for \"example\" is **somewhat common but generally informal.** You'll find it more often in:\n\n*   **Informal writing:** Such as personal notes, emails to friends, drafts, or informal documentation.\n*   **Technical contexts:** When space is limited, or quick notation is needed (e.g., coding comments, internal documentation).\n*   **Lists and tables:** Where brevity is desirable.\n\nIt's **less common (and often discouraged) in formal writing**, such as:\n\n*   Academic papers\n*   Professional reports\n*   Published articles\n*   Any document where a polished and professional tone is required.\n\nIn formal writing, it's much better to use \"e.g.\" (short for *exempli gratia*, Latin for \"for example\") or the full word \"example.\"\n\nHere's a quick summary:\n\n*   **\"ex\"**: Informal, use with caution.\n*   **\"e.g.\"**: Formal, widely accepted.\n*   **\"example\"**: Most formal, always appropriate.\n\nConsider your audience and the context when deciding which to use. If in doubt, err on the side of formality and use \"e.g.\" or \"example.\"\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    171,
+    343,
+    315,
+    337,
+    264,
+    264,
+    381,
+    259,
+    364,
+    336,
+    263,
+    182,
+    113
+  ],
+  "time_diffs": [
+    0.04770088195800781,
+    0.3473200798034668,
+    0.001477956771850586,
+    0.0,
+    0.08633995056152344,
+    0.08911609649658203,
+    0.2160499095916748,
+    0.18103504180908203,
+    0.26714611053466797,
+    0.24634885787963867,
+    0.3564891815185547,
+    0.0,
+    0.017522811889648438,
+    0.0,
+    0.0
+  ]
+}

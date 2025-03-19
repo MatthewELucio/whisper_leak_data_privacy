@@ -1,0 +1,29 @@
+{
+  "local_port": 42126,
+  "remote_port": 443,
+  "prompt": "Does Fab currently offer new employees stock options or RSUs?",
+  "response": "As of my knowledge cut-off in late 2023, Fab.com no longer exists. It was a flash sale website that was acquired by PCH International and subsequently shut down.\n\nTherefore, Fab *cannot* offer new employees stock options or RSUs, as the company is defunct.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    93,
+    347,
+    212,
+    484,
+    149,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.048429012298583984,
+    0.30834484100341797,
+    0.0014851093292236328,
+    0.10519289970397949,
+    0.13941597938537598,
+    0.1639261245727539,
+    0.008879899978637695,
+    0.0016551017761230469,
+    0.0
+  ]
+}

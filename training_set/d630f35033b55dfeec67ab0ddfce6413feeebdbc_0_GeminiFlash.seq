@@ -1,0 +1,29 @@
+{
+  "local_port": 44320,
+  "remote_port": 443,
+  "prompt": "Is there any girl here who would fall in love with and marry a physically handicapped boy?",
+  "response": "Whether someone falls in love and marries another person depends on a multitude of factors, including personality, values, shared interests, emotional connection, and life goals. Physical ability is only one aspect of a person. Some women would be open to a relationship with a physically handicapped man, and some would not. Everyone has different preferences and priorities when choosing a partner.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1337,
+    248,
+    370,
+    382,
+    208,
+    175,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.047772884368896484,
+    0.3692312240600586,
+    0.13587284088134766,
+    0.09361696243286133,
+    0.2584671974182129,
+    0.06809091567993164,
+    0.0066280364990234375,
+    0.0,
+    0.0016129016876220703
+  ]
+}

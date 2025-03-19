@@ -1,0 +1,41 @@
+{
+  "local_port": 33716,
+  "remote_port": 443,
+  "prompt": "Did we get a better class of presidential nominee when the party bosses selected the candidate? Weren't the bosses more pragmatic than ideological?",
+  "response": "That's a really interesting question that historians and political scientists still debate. On one hand, there's a case to be made that party bosses, focused on winning above all else, might have favored more moderate, broadly appealing candidates. The argument is they were pragmatic, looking for someone who could unite different factions within the party and win over independent voters. Some historians point to figures like Harry Truman or even FDR as examples of candidates who, while having strong policy beliefs, were also skilled at compromise and coalition-building, qualities that might have been valued by party bosses.\n\nHowever, there are also strong arguments against this idea. Critics of the \"boss\" system point out that it was often undemocratic and prone to corruption. The bosses' priorities weren't always aligned with the best interests of the public, and their decisions could be influenced by patronage, personal relationships, and even bribery. Some historians argue that this system often excluded qualified candidates who didn't have the right connections or weren't willing to play the game. Also, while some bosses might have been pragmatic, others were deeply ideological themselves, and their choices would reflect those biases.\n\nIt's also worth remembering that the definition of \"better\" is subjective. What one person considers a good candidate \u2013 someone with strong convictions, perhaps \u2013 another might see as too extreme or divisive. The old system certainly had its flaws, but the current primary system isn't perfect either. It can be influenced by money, media coverage, and the enthusiasm of relatively small groups of voters, potentially leading to the nomination of candidates who are more extreme or less experienced. There's no easy answer to whether one system is inherently better than the other.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    190,
+    248,
+    232,
+    451,
+    508,
+    478,
+    485,
+    424,
+    433,
+    228,
+    195,
+    200,
+    113
+  ],
+  "time_diffs": [
+    0.050878047943115234,
+    0.28819799423217773,
+    0.0011589527130126953,
+    0.12569308280944824,
+    0.08994698524475098,
+    0.223038911819458,
+    0.2551569938659668,
+    0.23978614807128906,
+    0.36452388763427734,
+    0.39684605598449707,
+    0.465299129486084,
+    0.09685587882995605,
+    0.007779121398925781,
+    0.0,
+    0.0
+  ]
+}

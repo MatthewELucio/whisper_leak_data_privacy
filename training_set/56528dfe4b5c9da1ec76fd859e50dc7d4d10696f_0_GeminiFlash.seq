@@ -1,0 +1,37 @@
+{
+  "local_port": 52982,
+  "remote_port": 443,
+  "prompt": "What makes someone a pervert?",
+  "response": "There isn't a single, universally agreed-upon definition of \"pervert.\" The term is subjective and often carries negative connotations. Generally, it's used to describe someone whose sexual interests or behaviors are considered deviant or unacceptable by societal norms.\n\nFactors that contribute to something being labeled as \"perverted\" can include:\n\n*   **Non-consensual acts:** Sexual acts committed without the willing and informed consent of all parties involved.\n*   **Fetishes:** Intense sexual interests in non-genital body parts, objects, or situations. While having a fetish isn't inherently problematic, it can become so if it leads to harm or non-consensual behavior.\n*   **Paraphilias:** Intense and persistent sexual interests that are atypical and may cause distress or impairment to the individual or others. Some paraphilias involve non-consenting individuals, which are illegal and harmful.\n*   **Social and cultural norms:** What is considered \"normal\" or \"deviant\" varies across different cultures and time periods. Behaviors accepted in one context may be seen as perverted in another.\n\nIt is important to distinguish between harmless, consensual sexual interests and behaviors that are harmful, illegal, or non-consensual. Using the term \"pervert\" can be stigmatizing and harmful, especially when applied to individuals whose behavior is simply outside the mainstream but does not cause harm.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1312,
+    436,
+    420,
+    448,
+    437,
+    488,
+    452,
+    300,
+    483,
+    226,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.051405906677246094,
+    0.2798159122467041,
+    0.0925149917602539,
+    0.09575819969177246,
+    0.1873178482055664,
+    0.18287897109985352,
+    0.29228711128234863,
+    0.34778308868408203,
+    0.3813948631286621,
+    0.18017292022705078,
+    0.0066411495208740234,
+    0.00036406517028808594,
+    8.487701416015625e-05
+  ]
+}

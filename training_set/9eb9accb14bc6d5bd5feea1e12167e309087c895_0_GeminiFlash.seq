@@ -1,0 +1,25 @@
+{
+  "local_port": 38486,
+  "remote_port": 443,
+  "prompt": "Does Walter White die?",
+  "response": "Yes, Walter White dies in the series finale of Breaking Bad.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1258,
+    153,
+    284,
+    198,
+    133,
+    113
+  ],
+  "time_diffs": [
+    0.04509878158569336,
+    0.435683012008667,
+    0.03800511360168457,
+    0.04091501235961914,
+    0.009857892990112305,
+    0.0016031265258789062,
+    0.0017619132995605469
+  ]
+}

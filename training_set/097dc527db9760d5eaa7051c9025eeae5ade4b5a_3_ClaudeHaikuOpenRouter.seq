@@ -1,0 +1,43 @@
+{
+  "local_port": 38362,
+  "remote_port": 443,
+  "prompt": "Isn't money laundering illegal?",
+  "response": "Yes, money laundering is illegal. It involves attempting to conceal the origins of money obtained through illegal activities by passing it through legitimate businesses or financial systems. Money laundering is",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    139,
+    139,
+    405,
+    405,
+    408,
+    426,
+    437,
+    428,
+    453,
+    446,
+    447,
+    569,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.023218870162963867,
+    0.18948602676391602,
+    0.40601396560668945,
+    0.4121260643005371,
+    0.14810895919799805,
+    0.0013380050659179688,
+    0.0,
+    0.06968307495117188,
+    0.04702305793762207,
+    0.047966957092285156,
+    0.09007692337036133,
+    0.09339094161987305,
+    0.13076210021972656,
+    0.0032501220703125,
+    0.023338794708251953,
+    0.0
+  ]
+}

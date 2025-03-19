@@ -1,0 +1,35 @@
+{
+  "local_port": 37514,
+  "remote_port": 443,
+  "prompt": "How do I solve the equation?",
+  "response": "Please provide the equation you want me to solve! I need the equation to be able to help you. \n\nFor example, you could say:\n\n* \"How do I solve the equation `2x + 5 = 11`?\"\n* \"How do I solve the equation `x^2 - 4x + 3 = 0`?\"\n* \"How do I solve the equation `sin(x) = 0.5`?\"\n\nOnce you give me the equation, I'll do my best to guide you through the steps to solve it.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    298,
+    173,
+    375,
+    326,
+    205,
+    246,
+    369,
+    133,
+    200,
+    113
+  ],
+  "time_diffs": [
+    0.0487370491027832,
+    0.5240950584411621,
+    0.001199960708618164,
+    0.0276949405670166,
+    0.0680849552154541,
+    0.06702208518981934,
+    0.16968202590942383,
+    0.16942286491394043,
+    0.08391904830932617,
+    0.007136106491088867,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

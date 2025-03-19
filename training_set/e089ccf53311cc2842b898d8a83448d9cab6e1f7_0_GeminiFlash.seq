@@ -1,0 +1,31 @@
+{
+  "local_port": 35328,
+  "remote_port": 443,
+  "prompt": "Is the name Lulubelle a real name?",
+  "response": "Yes, Lulubelle is a real name, although it is considered somewhat old-fashioned and uncommon. It is often seen as a cutesy or whimsical name. It's generally a combination of \"Lulu\" (a diminutive of names like Louise or Lucille) and \"belle\" (French for beautiful).\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    286,
+    209,
+    247,
+    261,
+    442,
+    197,
+    186,
+    113
+  ],
+  "time_diffs": [
+    0.04993891716003418,
+    0.40790605545043945,
+    0.0014569759368896484,
+    0.0028030872344970703,
+    0.07661008834838867,
+    0.08099794387817383,
+    0.20699191093444824,
+    0.005944967269897461,
+    0.0,
+    0.0015511512756347656
+  ]
+}

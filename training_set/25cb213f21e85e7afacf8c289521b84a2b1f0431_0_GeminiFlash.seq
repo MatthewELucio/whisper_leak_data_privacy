@@ -1,0 +1,43 @@
+{
+  "local_port": 60192,
+  "remote_port": 443,
+  "prompt": "What is the best option for Indian politics and politicians?",
+  "response": "That's a really complex question! There's no single \"best\" option that everyone agrees on. India is incredibly diverse, and what works for one group of people might not work for another.\n\nHere's a breakdown of some key areas and different perspectives:\n\n*   **Economic Development:** Some argue for policies that prioritize rapid economic growth, even if it means some inequality. Others advocate for more inclusive growth models that focus on social welfare and reducing poverty. There's also debate on the role of the government \u2013 should it be more involved in regulating the economy, or should it take a more hands-off approach?\n\n*   **Social Justice:** Caste, religion, and gender are all major factors in Indian society. Some believe that affirmative action policies are essential to address historical injustices, while others argue that they perpetuate discrimination. There are also different views on how to balance individual rights with the needs of communities.\n\n*   **Governance and Corruption:** Many people are concerned about corruption in Indian politics. Some advocate for stronger anti-corruption laws and independent institutions to hold politicians accountable. Others focus on electoral reforms to make the system fairer and more transparent.\n\n*   **Foreign Policy:** India is a major player on the world stage, and there are different opinions on how it should engage with other countries. Some favor closer ties with the United States, while others prioritize relationships with countries like Russia and China. There's also debate on India's role in regional conflicts and its approach to issues like climate change.\n\n*   **Political Ideologies:**\n    *   **Right-wing:** Often emphasizes nationalism, economic liberalization, and a strong military.\n    *   **Left-wing:** Typically focuses on social justice, economic equality, and secularism.\n    *   **Centrist:** Seeks to find a middle ground between these two extremes, often emphasizing pragmatism and compromise.\n\nUltimately, the \"best\" option depends on your own values and priorities. It's important to stay informed, consider different perspectives, and participate in the political process to make your voice heard.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    172,
+    442,
+    351,
+    333,
+    305,
+    411,
+    420,
+    526,
+    560,
+    371,
+    455,
+    304,
+    215,
+    113
+  ],
+  "time_diffs": [
+    0.04770016670227051,
+    0.392132043838501,
+    0.0014319419860839844,
+    0.09598207473754883,
+    0.12548494338989258,
+    0.19907283782958984,
+    0.18695712089538574,
+    0.2811250686645508,
+    0.28203296661376953,
+    0.3672928810119629,
+    0.3236870765686035,
+    0.3269050121307373,
+    0.16951704025268555,
+    0.00898885726928711,
+    0.0,
+    5.1021575927734375e-05
+  ]
+}

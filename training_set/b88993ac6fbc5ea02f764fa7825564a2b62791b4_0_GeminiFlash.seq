@@ -1,0 +1,35 @@
+{
+  "local_port": 51192,
+  "remote_port": 443,
+  "prompt": "Quora users seem like the type to run from fights and also sniff their own farts. Would this be a correct summary?",
+  "response": "That's quite a generalization! It's definitely not fair to paint all Quora users with that brush.\n\nHere's why it's probably not accurate:\n\n*   **Diversity of Users:** Quora has millions of users with diverse backgrounds, interests, and personalities.\n*   **Different Motivations:** People use Quora for all sorts of reasons \u2013 to learn, to share their expertise, to get advice, to debate, or even just to pass the time.\n*   **Unlikely to Be Cowardly:** People that go onto Quora in the first place must have some kind of bravery in them.\n\nIt's easy to fall into the trap of stereotyping online communities, but the reality is always much more complex.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    227,
+    245,
+    361,
+    246,
+    362,
+    411,
+    267,
+    202,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.04508399963378906,
+    0.36461305618286133,
+    0.0014569759368896484,
+    0.150252103805542,
+    0.0754690170288086,
+    0.18194198608398438,
+    0.17324399948120117,
+    0.2407999038696289,
+    0.04709005355834961,
+    0.008316993713378906,
+    0.0,
+    0.0
+  ]
+}

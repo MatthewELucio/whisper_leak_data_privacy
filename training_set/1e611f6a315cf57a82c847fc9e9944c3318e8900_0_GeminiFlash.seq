@@ -1,0 +1,35 @@
+{
+  "local_port": 57010,
+  "remote_port": 443,
+  "prompt": "What is the name of the model in oyo rooms advert?",
+  "response": "Unfortunately, I don't have access to the names of the models used in specific Oyo Rooms advertisements. Model information is often not widely publicized unless the model is a celebrity or a very well-known personality.\n\nHowever, here are some tips you might find useful:\n\n*   **Check Oyo Rooms' social media:** Sometimes brands will tag models or mention them in the comments of their posts. Check their Facebook, Instagram, and Twitter for the specific ad you're interested in.\n*   **Use image search tools:** Take a screenshot of the model in the ad and use Google Image Search or TinEye to see if you can find other images of her online, which might lead to an identification.\n*   **Contact Oyo Rooms directly:** You could try reaching out to Oyo Rooms' customer service or marketing department and ask if they can provide the model's name. However, they may not be able to release that information.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    235,
+    357,
+    228,
+    464,
+    438,
+    376,
+    504,
+    191,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.04475712776184082,
+    0.3292720317840576,
+    0.0013010501861572266,
+    0.13154101371765137,
+    0.07996082305908203,
+    0.16301202774047852,
+    0.18238496780395508,
+    0.31977415084838867,
+    0.1986989974975586,
+    0.010802030563354492,
+    0.0,
+    0.0
+  ]
+}

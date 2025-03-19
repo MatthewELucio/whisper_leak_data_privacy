@@ -1,0 +1,35 @@
+{
+  "local_port": 51130,
+  "remote_port": 443,
+  "prompt": "Are shares debt or equity?",
+  "response": "Shares represent **equity** in a company, not debt.\n\nHere's why:\n\n*   **Equity represents ownership:** When you buy shares, you're buying a small piece of ownership in the company. You have a claim on the company's assets and earnings (after debts are paid).\n*   **Debt is a loan:** Debt represents money that a company has borrowed and must repay with interest. Bondholders (who hold debt) are creditors of the company, not owners.\n*   **Different rights and risks:** Shareholders have voting rights (to elect board members and on certain major decisions), but they are also last in line to receive assets if the company goes bankrupt. Debt holders have no voting rights but are first in line to be repaid if the company is liquidated.\n\nIn summary:\n\n*   **Shares = Equity = Ownership**\n*   **Bonds = Debt = Loan**",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1503,
+    354,
+    332,
+    239,
+    384,
+    370,
+    457,
+    428,
+    272,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.04700112342834473,
+    0.3368370532989502,
+    0.013782978057861328,
+    0.0810399055480957,
+    0.07892799377441406,
+    0.18426513671875,
+    0.20797181129455566,
+    0.3120291233062744,
+    0.17572903633117676,
+    0.010496854782104492,
+    0.0,
+    0.00011301040649414062
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 40738,
+  "remote_port": 443,
+  "prompt": "Does masturbation stunt height growth in male teenagers?",
+  "response": "There is no scientific evidence that masturbation affects height growth in teenagers. Hormones and genetics primarily determine height during puberty.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    139,
+    695,
+    436,
+    431,
+    432,
+    415,
+    452,
+    414,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.024239063262939453,
+    0.22764897346496582,
+    0.4100940227508545,
+    0.053955793380737305,
+    0.003135204315185547,
+    0.003179788589477539,
+    0.028446197509765625,
+    0.07023501396179199,
+    0.08680582046508789,
+    0.07892799377441406,
+    0.03919100761413574,
+    0.4049520492553711,
+    9.5367431640625e-07
+  ]
+}

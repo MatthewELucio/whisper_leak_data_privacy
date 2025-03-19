@@ -1,0 +1,43 @@
+{
+  "local_port": 60862,
+  "remote_port": 443,
+  "prompt": "Can I use my VSP insurance to purchase glasses at LensCrafters?",
+  "response": "Yes, you can generally use your VSP insurance at LensCrafters. LensCrafters is a large, national chain of optical stores and is usually an in-network provider for many VSP plans.\n\nHowever, it's always best to **confirm your specific VSP plan and coverage** with both VSP and LensCrafters before making a purchase. Here's why:\n\n*   **Specific Plan Coverage:** VSP has different plans with varying levels of coverage. Knowing your specific plan details will help you understand what's covered (e.g., frames, lenses, contacts) and any associated copays or allowances.\n*   **In-Network Status:** While LensCrafters is often in-network, provider networks can change. Confirming they are still in-network for your plan ensures you receive the maximum benefits.\n*   **Potential Restrictions:** Some VSP plans may have restrictions on where you can use your benefits, or specific frame or lens limitations.\n\n**How to Confirm:**\n\n1.  **VSP Website/App:** Log in to your VSP account online or through the VSP app. You should be able to find your plan details and a provider directory.\n2.  **VSP Customer Service:** Call VSP's customer service line. They can answer specific questions about your coverage.\n3.  **LensCrafters Store:** Visit or call your local LensCrafters store. Ask them if they accept your VSP plan and how it applies to your purchase. Provide them with your VSP member information.\n\nBy confirming beforehand, you can avoid any surprises at the time of purchase and ensure you're maximizing your VSP benefits.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    182,
+    330,
+    433,
+    394,
+    338,
+    432,
+    492,
+    339,
+    526,
+    455,
+    333,
+    239,
+    145,
+    113
+  ],
+  "time_diffs": [
+    0.042749881744384766,
+    0.46443796157836914,
+    0.0016062259674072266,
+    0.08277678489685059,
+    0.04767417907714844,
+    0.06531381607055664,
+    0.14800810813903809,
+    0.19203400611877441,
+    0.22194194793701172,
+    0.31038713455200195,
+    0.2694239616394043,
+    0.3766629695892334,
+    0.08276605606079102,
+    0.008256912231445312,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 37508,
+  "remote_port": 443,
+  "prompt": "What is some proof that the Illuminati is real?",
+  "response": "The original Illuminati was a real group. It was a secret society founded in Bavaria in 1776. Its goals were to promote reason and challenge the power of the church and state. However, it was short-lived and disbanded in 1785.\n\nThere is no credible evidence that the Illuminati exists today or that it controls world events. Conspiracy theories about the Illuminati persist, but they are based on speculation and misinterpretations of historical events.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1277,
+    339,
+    335,
+    332,
+    251,
+    292,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.04420900344848633,
+    0.37885403633117676,
+    0.09576416015625,
+    0.09012293815612793,
+    0.18708491325378418,
+    0.17886805534362793,
+    0.01141500473022461,
+    0.0002090930938720703,
+    0.0001728534698486328
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 53316,
+  "remote_port": 443,
+  "prompt": "What are some signs that a woman is on her period?",
+  "response": "Some common signs that a woman is on her period include:\n\n*   **Menstrual bleeding:** This is the most obvious sign, with blood flowing from the vagina. The flow can vary from light to heavy.\n*   **Cramps:** Painful muscle contractions in the abdomen are common, and can range from mild to severe.\n*   **Bloating:** Feeling of fullness or tightness in the abdomen.\n*   **Breast tenderness:** Breasts may feel swollen, sensitive, or painful.\n*   **Mood changes:** Irritability, anxiety, sadness, or increased emotional sensitivity.\n*   **Headaches:** Some women experience headaches or migraines around their period.\n*   **Fatigue:** Feeling tired or lacking energy.\n*   **Acne:** Breakouts can occur due to hormonal fluctuations.\n*   **Changes in appetite:** Some women experience increased cravings or decreased appetite.\n\nIt's important to remember that not every woman experiences all of these symptoms, and the severity can vary from person to person and from cycle to cycle.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1376,
+    258,
+    237,
+    266,
+    307,
+    470,
+    433,
+    232,
+    158,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.050811052322387695,
+    0.36740899085998535,
+    0.08176493644714355,
+    0.05963706970214844,
+    0.21025896072387695,
+    0.17707514762878418,
+    0.2749359607696533,
+    0.27396488189697266,
+    0.11285519599914551,
+    0.007754802703857422,
+    0.0,
+    0.0
+  ]
+}

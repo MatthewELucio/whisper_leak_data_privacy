@@ -1,0 +1,27 @@
+{
+  "local_port": 51490,
+  "remote_port": 443,
+  "prompt": "What is the feminine of stepson?",
+  "response": "The feminine of stepson is **stepdaughter**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    256,
+    386,
+    395,
+    255,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.048390865325927734,
+    0.3013880252838135,
+    0.001611948013305664,
+    0.013306140899658203,
+    0.049978017807006836,
+    0.008884906768798828,
+    0.0,
+    0.0015759468078613281
+  ]
+}

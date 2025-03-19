@@ -1,0 +1,29 @@
+{
+  "local_port": 51556,
+  "remote_port": 443,
+  "prompt": "Is English an Indo-European language?",
+  "response": "Yes, English is an Indo-European language. It belongs to the West Germanic branch of the Germanic languages within the Indo-European family.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    104,
+    151,
+    232,
+    411,
+    142,
+    192,
+    113
+  ],
+  "time_diffs": [
+    0.04599499702453613,
+    0.4136791229248047,
+    0.0014328956604003906,
+    0.016424179077148438,
+    0.06999588012695312,
+    0.09420514106750488,
+    0.009441852569580078,
+    0.0033309459686279297,
+    0.0
+  ]
+}

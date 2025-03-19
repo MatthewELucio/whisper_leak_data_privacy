@@ -1,0 +1,43 @@
+{
+  "local_port": 49218,
+  "remote_port": 443,
+  "prompt": "How do you see the PM Modi\u2019s move of banning old 500 and 1000 rupee currency notes?",
+  "response": "The demonetization of 500 and 1000 rupee notes by Prime Minister Modi in November 2016 was a bold and controversial move. Here's a look at the arguments for and against it:\n\n**Arguments in favor:**\n\n*   **Curbing black money:** A primary goal was to flush out unaccounted wealth held in cash. The idea was that people holding illicit money would be forced to declare it, pay taxes, or destroy it, thereby reducing the amount of black money in the economy.\n*   **Counterfeiting:** The old notes were supposedly easier to counterfeit. Introducing new notes with enhanced security features was intended to make it more difficult to produce fake currency.\n*   **Terrorist financing:** Demonetization aimed to disrupt the flow of funds used for illegal activities, including terrorism.\n*   **Promoting digital transactions:** By making cash transactions more difficult, the government hoped to encourage the use of digital payment methods, leading to a more transparent and efficient economy.\n\n**Arguments against:**\n\n*   **Economic disruption:** The sudden removal of a large portion of the currency in circulation caused significant disruption to businesses, particularly small businesses and those in the informal sector that relied heavily on cash transactions.\n*   **Hardship for ordinary citizens:** Many people, especially in rural areas and those without bank accounts, faced difficulties exchanging their old notes for new ones. This led to long queues at banks and considerable inconvenience.\n*   **Limited impact on black money:** Critics argued that most black money is not held in cash but in assets like real estate, gold, and foreign accounts. Therefore, demonetization was seen as a largely ineffective way to tackle the problem.\n*   **Cost of implementation:** The exercise of printing new notes and managing the exchange process was expensive.\n\n**Overall impact:**\n\nThe actual impact of demonetization is still debated. While it may have had some success in curbing black money and promoting digital transactions, the economic disruption and hardship caused to ordinary citizens were significant. The long-term effects on the Indian economy are still being studied and analyzed.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1266,
+    247,
+    232,
+    293,
+    404,
+    480,
+    343,
+    498,
+    409,
+    501,
+    326,
+    363,
+    196,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.04523515701293945,
+    0.45657896995544434,
+    0.0015549659729003906,
+    0.021260976791381836,
+    0.09204411506652832,
+    0.20383787155151367,
+    0.19625210762023926,
+    0.26888585090637207,
+    0.2761051654815674,
+    0.32532382011413574,
+    0.39276719093322754,
+    0.3740968704223633,
+    0.23417210578918457,
+    0.012512922286987305,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 34202,
+  "remote_port": 443,
+  "prompt": "When was the last year that America was great according to the Trump campaign?",
+  "response": "During his campaigns and presidency, Donald Trump frequently used the slogan \"Make America Great Again.\" The implication was that America had at some point in the past been \"great\" but had since declined. However, the Trump campaign did not specify a particular year when America was last great. The idea of a past \"golden age\" was left open to interpretation.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1483,
+    314,
+    264,
+    330,
+    159,
+    285,
+    130,
+    113
+  ],
+  "time_diffs": [
+    0.046217918395996094,
+    0.4548671245574951,
+    0.1849808692932129,
+    0.11299514770507812,
+    0.18694281578063965,
+    0.0014760494232177734,
+    0.010628938674926758,
+    0.0014162063598632812,
+    0.0
+  ]
+}

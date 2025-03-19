@@ -1,0 +1,37 @@
+{
+  "local_port": 48984,
+  "remote_port": 443,
+  "prompt": "Why does stars are not showing in my clash of clans map when I win on fighting with the other random players ?",
+  "response": "The number of stars you earn in a Clash of Clans attack is related to the percentage of destruction you inflict on the opponent's base:\n\n*   **1 Star:** Destroy the opponent's Town Hall.\n*   **1 Star:** Achieve 50% destruction of the opponent's base.\n*   **1 Star:** Achieve 100% destruction of the opponent's base.\n\nIf you win the attack but don't see any stars, it's most likely because you didn't meet the criteria for earning any stars (destroy Town Hall, 50%, 100%). Here's a breakdown of the common reasons:\n\n*   **You didn't destroy the Town Hall:** This is the most common reason. If you destroyed a lot of the base but didn't take down the Town Hall, you won't get a star for it.\n\n*   **You didn't reach 50% destruction:** Even if you destroyed the Town Hall, if your overall destruction percentage was below 50%, you'll only see one star.\n\n*   **Game Glitch:** In rare cases, there might be a temporary glitch in the game. Try restarting the app.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    295,
+    436,
+    226,
+    398,
+    398,
+    433,
+    327,
+    374,
+    135,
+    164,
+    113
+  ],
+  "time_diffs": [
+    0.047853946685791016,
+    0.34713315963745117,
+    0.0013167858123779297,
+    0.11663818359375,
+    0.11197185516357422,
+    0.16337895393371582,
+    0.1886122226715088,
+    0.2890338897705078,
+    0.33614587783813477,
+    0.21085405349731445,
+    0.01247096061706543,
+    0.0,
+    0.0
+  ]
+}

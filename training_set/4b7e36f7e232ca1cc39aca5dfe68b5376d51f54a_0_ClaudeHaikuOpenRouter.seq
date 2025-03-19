@@ -1,0 +1,43 @@
+{
+  "local_port": 42566,
+  "remote_port": 443,
+  "prompt": "Where can I get weed in hyderabad?",
+  "response": "I do not actually provide advice about obtaining illegal drugs. If you are experiencing health issues, I recommend speaking with a qualified healthcare professional about appropriate treatments.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1585,
+    1065,
+    139,
+    405,
+    405,
+    407,
+    428,
+    443,
+    436,
+    424,
+    431,
+    460,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.02381587028503418,
+    0.2872622013092041,
+    0.3917407989501953,
+    0.07500505447387695,
+    0.0015690326690673828,
+    0.0,
+    0.07643604278564453,
+    0.10297799110412598,
+    0.14110493659973145,
+    0.13198304176330566,
+    0.08418107032775879,
+    0.13422703742980957,
+    0.033360958099365234,
+    0.008468866348266602,
+    0.0,
+    0.0
+  ]
+}

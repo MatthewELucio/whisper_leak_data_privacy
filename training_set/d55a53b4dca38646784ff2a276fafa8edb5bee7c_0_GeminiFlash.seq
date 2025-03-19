@@ -1,0 +1,33 @@
+{
+  "local_port": 52574,
+  "remote_port": 443,
+  "prompt": "What I can do when I have bad mood?",
+  "response": "It's tough being in a bad mood! Here's a breakdown of things you can do, categorized for easy reference:\n\n**1. Immediate Relief (Short-Term Fixes):**\n\n*   **Acknowledge it:** Don't fight it. Say to yourself, \"Okay, I'm in a bad mood. That's alright.\"\n*   **Breathe Deeply:** Slow, deep breaths can calm your nervous system. Inhale deeply through",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    97,
+    226,
+    314,
+    301,
+    407,
+    353,
+    159,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.04616212844848633,
+    0.39082789421081543,
+    0.0013260841369628906,
+    0.16874289512634277,
+    0.015585184097290039,
+    0.17730093002319336,
+    0.16698598861694336,
+    0.2441411018371582,
+    0.008391857147216797,
+    0.0036590099334716797,
+    0.0
+  ]
+}

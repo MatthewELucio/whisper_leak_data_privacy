@@ -1,0 +1,37 @@
+{
+  "local_port": 54718,
+  "remote_port": 443,
+  "prompt": "What is the average price of a wedding dress?",
+  "response": "The average price of a wedding dress in the United States typically falls between **$2,000 and $4,000**.\n\nHowever, it's important to remember that this is just an average, and there's a wide range of factors that can influence the final cost:\n\n*   **Designer:** High-end designers often command a premium price.\n*   **Materials:** Silk, lace, and embellishments like beads and crystals can significantly increase the cost.\n*   **Location:** Prices can vary depending on the bridal salon and its location.\n*   **Alterations:** Don't forget to budget for alterations, which can add several hundred dollars to the total.\n*   **Sales and Discounts:** Look for trunk shows, sample sales, and off-the-rack options to save money.\n*   **Customization:** Custom designs or significant modifications will likely increase the price.\n\nTherefore, while $2,000-$4,000 is a good benchmark, some brides spend less than $1,000, while others spend $10,000 or more. It really depends on your personal preferences and budget.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1290,
+    318,
+    262,
+    163,
+    442,
+    301,
+    374,
+    452,
+    304,
+    190,
+    220,
+    113
+  ],
+  "time_diffs": [
+    0.04634594917297363,
+    0.44565701484680176,
+    0.03488016128540039,
+    0.04788994789123535,
+    0.06095600128173828,
+    0.14121198654174805,
+    0.17686200141906738,
+    0.2541170120239258,
+    0.25374484062194824,
+    0.250690221786499,
+    0.01033782958984375,
+    0.0,
+    5.316734313964844e-05
+  ]
+}

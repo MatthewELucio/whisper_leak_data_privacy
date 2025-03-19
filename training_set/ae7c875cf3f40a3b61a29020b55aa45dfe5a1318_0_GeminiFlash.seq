@@ -1,0 +1,43 @@
+{
+  "local_port": 52250,
+  "remote_port": 443,
+  "prompt": "How do I get person online status when he is on whatsapp call?",
+  "response": "Unfortunately, **WhatsApp does not publicly provide an official API or method to directly determine if a user is on a WhatsApp call**. This is due to privacy considerations and the end-to-end encryption that WhatsApp employs.\n\nHere's a breakdown of why you can't do it and what limitations you face:\n\n* **Privacy:** WhatsApp prioritizes user privacy.  Revealing call status would be a significant privacy breach, potentially exposing sensitive information about a user's activities.\n* **End-to-End Encryption:** WhatsApp's encryption prevents even WhatsApp themselves from knowing the content of calls or messages.  The information simply isn't available to be shared, even if they wanted to.\n* **Lack of Official API:**  WhatsApp's official API focuses on business-related interactions, not personal user status.  There are no functions to query whether a user is on a call.\n* **Third-Party Apps and Methods:** Any app claiming to do this is almost certainly:\n    * **Violating WhatsApp's Terms of Service:** This could lead to your WhatsApp account being banned.\n    * **Malware/Scam:**  These apps often steal your data or install malicious software.\n    * **Unreliable:** Even if they work temporarily, WhatsApp could easily block them with an update.\n\n**What you *might* observe (but not reliably):**\n\n* **Last Seen:** If a user has \"Last Seen\" enabled, it might not update while they are on a call. However, this isn't a guaranteed indicator.  They might have disabled \"Last Seen\" altogether, or it might update briefly after the call ends.\n* **Double Check Marks:** If you send a message, and it only shows one check mark (sent but not delivered to the recipient's phone) for an extended period, they *might* be on a call, but it could also mean:\n    * Their phone is off or has no internet connection.\n    * They have blocked you.\n    * They are in an area with poor connectivity.\n    * They have simply not opened WhatsApp.\n\n**In summary:** There is no reliable or ethical way to determine if someone is on a WhatsApp call.  Respect user privacy and avoid using any third-party apps that claim to do so.  They are likely to be scams or malware, and they violate WhatsApp's terms of service.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1477,
+    418,
+    444,
+    379,
+    279,
+    279,
+    394,
+    513,
+    382,
+    404,
+    474,
+    483,
+    252,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.046144962310791016,
+    0.2736241817474365,
+    0.15586400032043457,
+    0.07296895980834961,
+    0.17507100105285645,
+    0.16090703010559082,
+    0.25590991973876953,
+    0.27834200859069824,
+    0.42860889434814453,
+    0.35010504722595215,
+    0.4628450870513916,
+    0.3607940673828125,
+    0.23105382919311523,
+    0.007256031036376953,
+    0.00018310546875,
+    8.487701416015625e-05
+  ]
+}

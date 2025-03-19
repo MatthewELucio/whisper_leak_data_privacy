@@ -1,0 +1,35 @@
+{
+  "local_port": 45196,
+  "remote_port": 443,
+  "prompt": "What are the lyrics to the song, \u201cTruly Dear\u201d?",
+  "response": "You're asking about \"Truly Dear,\" which is also known as \"Alma Mater\" by Alfred Tennyson. Here are the lyrics:\n\n**Truly Dear (Alma Mater)**\n\nShadows are falling, the night is near\nThe lamps are lighted, our hearts are here\nIn silent token, of love profound\nWe raise our voices, in music sound.\n\n*Chorus:*\nTruly dear, school of our heart\nTill life shall end, we\u2019ll never part\nTruly dear, school of our heart\nTill life shall end, we\u2019ll never part.\n\nYears may divide us, by land and sea\nBut still united, in memory\nWe\u2019ll think of days, that have flown away\nAnd bless the place, where we used to play.\n\n*Chorus:*\nTruly dear, school of our heart\nTill life shall end, we\u2019ll never part\nTruly dear, school of our heart\nTill life shall end, we\u2019ll never part.\n\nTherefore, the lyrics might differ slightly from performance to performance or across different schools.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1285,
+    386,
+    329,
+    231,
+    254,
+    317,
+    303,
+    430,
+    249,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.04581499099731445,
+    0.35602617263793945,
+    0.1531388759613037,
+    0.01761794090270996,
+    0.24995017051696777,
+    0.25777482986450195,
+    0.2155771255493164,
+    0.22619295120239258,
+    0.15002894401550293,
+    0.0006320476531982422,
+    0.00017309188842773438,
+    0.0
+  ]
+}

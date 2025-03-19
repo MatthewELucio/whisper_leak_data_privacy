@@ -1,0 +1,27 @@
+{
+  "local_port": 38092,
+  "remote_port": 443,
+  "prompt": "Was Hillary Clinton reading her speech from a paper in the third debate?",
+  "response": "Sources indicate that Hillary Clinton, like other candidates in debates, likely used notes during the third presidential debate. While she didn't read from a prepared speech, candidates often have notes with them to reference key points, statistics, and rebuttals.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1260,
+    367,
+    299,
+    217,
+    148,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.04519009590148926,
+    0.28943896293640137,
+    0.20115184783935547,
+    0.1009969711303711,
+    0.11192011833190918,
+    0.008862972259521484,
+    0.0015490055084228516,
+    0.0
+  ]
+}

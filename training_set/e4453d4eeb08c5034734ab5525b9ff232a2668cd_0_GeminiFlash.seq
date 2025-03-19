@@ -1,0 +1,41 @@
+{
+  "local_port": 60682,
+  "remote_port": 443,
+  "prompt": "What symptoms of Post Traumatic Stress Disorder does Katniss suffer from in The Hunger Games: Catching Fire (2013 movie)?",
+  "response": "In *Catching Fire* (2013), Katniss exhibits several symptoms of Post-Traumatic Stress Disorder (PTSD) stemming from her experiences in the 74th Hunger Games:\n\n*   **Intrusive Memories/Flashbacks:** Katniss experiences vivid and distressing flashbacks to the Games. These flashbacks are often triggered by seemingly innocuous sights, sounds, or smells that remind her of the arena. The most prominent examples include nightmares, and the flashbacks triggered by the scent of roses (associated with President Snow).\n\n*   **Avoidance:** Katniss actively tries to avoid things that remind her of the Games. This includes avoiding discussions about the Hunger Games, trying to maintain a facade of normalcy in her life, and resisting the emotional connection to Peeta, as he reminds her of her trauma and vulnerability during the Games.\n\n*   **Negative Thoughts and Feelings:** Katniss experiences persistent negative beliefs about herself and the world. She feels guilt and self-blame for surviving the Games while others died. She struggles with feelings of hopelessness and detachment, questioning the value of her life and the future.\n\n*   **Hyperarousal:** Katniss displays heightened startle responses, irritability, and difficulty concentrating. She is constantly on edge, anticipating danger and reacting strongly to unexpected noises or movements. This hypervigilance is a result of her having been in a state of constant threat during the Games.\n\nWhile the movie depicts these symptoms, it's important to note that PTSD diagnosis should be done by trained professionals. The portrayal in the movie is a dramatic representation of some of the challenges faced by survivors of trauma.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    113,
+    330,
+    265,
+    377,
+    329,
+    335,
+    321,
+    513,
+    436,
+    243,
+    233,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.047035932540893555,
+    0.45887303352355957,
+    0.0015211105346679688,
+    0.09543895721435547,
+    0.10594606399536133,
+    0.17708182334899902,
+    0.2050321102142334,
+    0.30167293548583984,
+    0.29439401626586914,
+    0.3362600803375244,
+    0.3441338539123535,
+    0.04009699821472168,
+    0.008423089981079102,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 39204,
+  "remote_port": 443,
+  "prompt": "America is divided into how many classes of people?",
+  "response": "Social scientists often describe American society as having multiple social classes, but there's no single, universally agreed-upon number. Different models use varying criteria like income, education, occupation, and wealth to define these classes.\n\nSome common models include:\n\n*   **Three-Class Model:** Upper, Middle, and Lower class.\n*   **Five-Class Model:** Upper, Upper-Middle, Middle, Working, and Lower class.\n*   **Six-Class Model:** Upper or Elite, Upper-Middle, Middle, Working, Lower-Working, and Underclass.\n\nThe boundaries between these classes are often blurry and subjective, and there's a lot of debate about the specific characteristics of each class and the size of each class.\n\nIt's important to note that class is a complex and multifaceted concept, and these models are just simplified representations of a more nuanced reality.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1275,
+    334,
+    380,
+    370,
+    220,
+    433,
+    258,
+    145,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.04363894462585449,
+    0.2747030258178711,
+    0.1669309139251709,
+    0.10003209114074707,
+    0.2123410701751709,
+    0.22809791564941406,
+    0.31704092025756836,
+    0.17975401878356934,
+    0.015442132949829102,
+    0.001425027847290039,
+    0.0
+  ]
+}

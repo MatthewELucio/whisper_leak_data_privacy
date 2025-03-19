@@ -1,0 +1,35 @@
+{
+  "local_port": 34232,
+  "remote_port": 443,
+  "prompt": "Does Donald Trump believe in global warming?",
+  "response": "Donald Trump's views on climate change have been inconsistent and often contradictory.\n\n*   **Early statements:** In the past, he has called climate change a \"hoax\" and a \"con\" perpetrated by China.\n*   **During his presidency:** While he acknowledged some level of climate change, he also downplayed its significance and questioned the extent to which it was human-caused. He withdrew the United States from the Paris Agreement on climate change.\n*   **Recent statements:** He has continued to express skepticism about climate change and its causes.\n\nIt's difficult to definitively state his current beliefs, as his public statements have varied over time.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    281,
+    175,
+    348,
+    232,
+    300,
+    371,
+    393,
+    158,
+    139,
+    113
+  ],
+  "time_diffs": [
+    0.04485893249511719,
+    0.394305944442749,
+    0.0014829635620117188,
+    0.0034999847412109375,
+    0.10151910781860352,
+    0.11107397079467773,
+    0.21509695053100586,
+    0.19281816482543945,
+    0.1870729923248291,
+    0.0070459842681884766,
+    0.0,
+    0.0
+  ]
+}

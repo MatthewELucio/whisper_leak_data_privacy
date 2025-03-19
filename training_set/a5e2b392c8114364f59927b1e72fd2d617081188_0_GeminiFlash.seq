@@ -1,0 +1,35 @@
+{
+  "local_port": 35526,
+  "remote_port": 443,
+  "prompt": "How do I get weed in California?",
+  "response": "In California, adults 21 and over can legally purchase cannabis from licensed dispensaries. You'll need a valid government-issued photo ID to prove your age. You can find dispensaries using online resources like Weedmaps or Leafly. These sites often include dispensary menus, customer reviews, and information about deals and discounts.\n\nKeep in mind that there are limits on how much cannabis you can purchase and possess. You can legally purchase up to one ounce (28.5 grams) of cannabis flower or eight grams of concentrated cannabis (like edibles or vape cartridges) per day. It's also important to consume cannabis responsibly and in accordance with state and local laws. For example, it's illegal to consume cannabis in public places or while driving.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    283,
+    403,
+    276,
+    344,
+    329,
+    478,
+    407,
+    270,
+    211,
+    113
+  ],
+  "time_diffs": [
+    0.05519390106201172,
+    0.30295300483703613,
+    0.0013279914855957031,
+    0.14154791831970215,
+    0.07791018486022949,
+    0.33219385147094727,
+    0.17562413215637207,
+    0.29330897331237793,
+    0.038064002990722656,
+    0.01141500473022461,
+    0.0,
+    0.0
+  ]
+}

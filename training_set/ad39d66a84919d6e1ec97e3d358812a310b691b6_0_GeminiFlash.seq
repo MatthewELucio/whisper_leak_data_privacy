@@ -1,0 +1,43 @@
+{
+  "local_port": 43528,
+  "remote_port": 443,
+  "prompt": "What is reliance jio?",
+  "response": "Reliance Jio, officially Reliance Jio Infocomm Limited, is an Indian telecommunications company and a subsidiary of Reliance Industries, headquartered in Mumbai. It operates a national LTE network, covering all 22 telecom circles.\n\nHere's a breakdown of what makes Reliance Jio significant:\n\n*   **Telecommunications Provider:** Jio primarily provides mobile network services (voice and data).\n*   **LTE Network:** It runs a nationwide 4G LTE network, and is rapidly deploying 5G.\n*   **Disruptive Entry:** When Jio launched in 2016, it disrupted the Indian telecom market by offering very affordable data plans and free voice calls. This led to a price war and significant changes in the industry.\n*   **Customer Base:** It has a massive subscriber base, making it one of the largest mobile network operators in India and globally.\n*   **Other Services:** Beyond mobile services, Jio offers other products and services, including JioFiber (fiber-to-the-home broadband), JioTV (streaming platform), JioCinema (streaming platform), JioSaavn (music streaming), and JioMart (e-commerce).\n*   **Ecosystem Approach:** Jio aims to create a digital ecosystem, integrating its various services to offer a comprehensive digital experience to its users.\n*   **Technology Focus:** Jio is actively involved in developing and deploying new technologies like 5G and exploring emerging technologies.\n*   **Reliance Industries:** As part of Reliance Industries, it has the backing of a large and diversified conglomerate.\n\nIn short, Reliance Jio is a major player in the Indian telecommunications market, known for its disruptive entry, large customer base, and expanding ecosystem of digital services.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    260,
+    198,
+    415,
+    207,
+    343,
+    395,
+    374,
+    513,
+    314,
+    318,
+    231,
+    297,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.045111894607543945,
+    0.3526341915130615,
+    0.001458883285522461,
+    0.04753398895263672,
+    0.053585052490234375,
+    0.14465808868408203,
+    0.17253589630126953,
+    0.17136502265930176,
+    0.2590200901031494,
+    0.2811119556427002,
+    0.4144878387451172,
+    0.38192200660705566,
+    0.09758210182189941,
+    0.009023904800415039,
+    0.0,
+    5.507469177246094e-05
+  ]
+}

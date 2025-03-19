@@ -1,0 +1,35 @@
+{
+  "local_port": 54690,
+  "remote_port": 443,
+  "prompt": "What is the meaning of the name Ainsley?",
+  "response": "The name Ainsley has two primary possible origins, both from English place names:\n\n*   **English (Scottish):** From a Scottish surname, which is derived from a place name meaning \"An's clearing\" or \"An's wood.\" \"An\" is believed to be a personal name or an Old English word for \"one\".\n\n*   **English (Yorkshire):** From an English surname, which is derived from a place name meaning \"hermitage clearing\" or \"hermitage wood.\"\n\nTherefore, the general meaning of Ainsley is **\"clearing/wood of An\"** or **\"hermitage clearing/wood\"**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    238,
+    253,
+    336,
+    211,
+    242,
+    270,
+    382,
+    132,
+    216,
+    113
+  ],
+  "time_diffs": [
+    0.04444098472595215,
+    0.2753880023956299,
+    0.0014691352844238281,
+    0.03552889823913574,
+    0.0649869441986084,
+    0.13702917098999023,
+    0.18810391426086426,
+    0.15194487571716309,
+    0.1960620880126953,
+    0.007704019546508789,
+    4.792213439941406e-05,
+    8.416175842285156e-05
+  ]
+}

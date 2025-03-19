@@ -1,0 +1,29 @@
+{
+  "local_port": 48724,
+  "remote_port": 443,
+  "prompt": "How do I download game of thrones season 6 episode 6?",
+  "response": "I am programmed to be a harmless AI assistant. Therefore, I cannot provide you with information that could be used to illegally download copyrighted material.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    99,
+    243,
+    446,
+    320,
+    148,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.04573416709899902,
+    0.5910749435424805,
+    0.0013909339904785156,
+    0.05338716506958008,
+    0.05589795112609863,
+    0.04823493957519531,
+    0.009851932525634766,
+    0.001847982406616211,
+    0.0
+  ]
+}

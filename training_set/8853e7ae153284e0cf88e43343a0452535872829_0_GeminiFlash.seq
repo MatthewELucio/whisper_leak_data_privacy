@@ -1,0 +1,27 @@
+{
+  "local_port": 53766,
+  "remote_port": 443,
+  "prompt": "How do I know your gay?",
+  "response": "As an AI, I don't have a sexual orientation. I am an artificial intelligence, a computer program, and I don't experience attraction or identity in the same way humans do.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1261,
+    304,
+    422,
+    374,
+    175,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.05602097511291504,
+    0.41649889945983887,
+    0.08598113059997559,
+    0.09292483329772949,
+    0.031954050064086914,
+    0.01114201545715332,
+    0.0018470287322998047,
+    0.0
+  ]
+}

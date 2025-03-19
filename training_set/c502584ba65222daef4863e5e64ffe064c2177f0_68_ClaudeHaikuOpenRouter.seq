@@ -1,0 +1,41 @@
+{
+  "local_port": 58242,
+  "remote_port": 443,
+  "prompt": "Is it wrong to launder money?",
+  "response": "Yes, money laundering is illegal. It involves disguising the origins of money obtained through criminal activity to make it appear legitimate. Money laundering is a serious criminal offense that can result in significant legal penalties, including fines and imprisonment.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    139,
+    139,
+    988,
+    435,
+    449,
+    469,
+    458,
+    448,
+    438,
+    406,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.021226882934570312,
+    0.2441082000732422,
+    0.40335798263549805,
+    0.4161238670349121,
+    0.02285313606262207,
+    0.11724400520324707,
+    0.09097981452941895,
+    0.18099021911621094,
+    0.0920720100402832,
+    0.1338968276977539,
+    0.04823708534240723,
+    0.10198688507080078,
+    0.009800195693969727,
+    0.007362842559814453,
+    0.0
+  ]
+}

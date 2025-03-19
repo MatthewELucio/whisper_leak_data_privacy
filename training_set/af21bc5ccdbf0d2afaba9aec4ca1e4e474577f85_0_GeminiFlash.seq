@@ -1,0 +1,39 @@
+{
+  "local_port": 49378,
+  "remote_port": 443,
+  "prompt": "What's the most unfortunate thing happening to India?",
+  "response": "India faces a complex array of challenges, and what constitutes the \"most\" unfortunate is subjective and depends on individual priorities. However, some critical issues with significant impact include:\n\n*   **Poverty and Inequality:** Despite economic growth, a large percentage of the population still lives in poverty, and the gap between the rich and poor remains wide. This disparity affects access to basic necessities, healthcare, and education.\n\n*   **Environmental Issues:** Air and water pollution are major concerns, contributing to health problems and environmental degradation. Climate change impacts, such as droughts and floods, also pose significant threats.\n\n*   **Social Issues:** Discrimination based on caste, religion, and gender persists, hindering social progress and equality.\n\n*   **Corruption:** Corruption can undermine development efforts and erode public trust in institutions.\n\n*   **Healthcare Infrastructure:** While there have been improvements, access to quality healthcare remains a challenge, especially in rural areas.\n\nIt's important to remember that these issues are interconnected and influence each other. Addressing them requires multifaceted strategies and sustained efforts from the government, civil society, and individuals.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    257,
+    271,
+    303,
+    261,
+    481,
+    325,
+    426,
+    303,
+    381,
+    309,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04405093193054199,
+    0.32478904724121094,
+    0.0014519691467285156,
+    0.02331995964050293,
+    0.05098414421081543,
+    0.10904693603515625,
+    0.23679113388061523,
+    0.17841196060180664,
+    0.29512786865234375,
+    0.26392507553100586,
+    0.15526604652404785,
+    0.010925054550170898,
+    0.0,
+    0.0
+  ]
+}

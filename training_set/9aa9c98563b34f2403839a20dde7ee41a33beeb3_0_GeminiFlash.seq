@@ -1,0 +1,31 @@
+{
+  "local_port": 36232,
+  "remote_port": 443,
+  "prompt": "Is there any Indian celebrity and foreign celebrity who looks similar?",
+  "response": "Yes, there are a few instances where people have pointed out similarities between Indian and foreign celebrities. Here are a couple of prominent examples:\n\n*   **Dia Mirza and Anne Hathaway:** Many people have noted a resemblance between the Indian actress Dia Mirza and the American actress Anne Hathaway, particularly in their facial features and smiles.\n\nIt's worth remembering that \"looking similar\" is subjective, and not everyone will agree on these comparisons. These are just a few of the most frequently cited examples.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1313,
+    263,
+    289,
+    384,
+    450,
+    444,
+    148,
+    136,
+    113
+  ],
+  "time_diffs": [
+    0.04517817497253418,
+    0.4107389450073242,
+    0.015722036361694336,
+    0.08120894432067871,
+    0.09792804718017578,
+    0.1451129913330078,
+    0.16600799560546875,
+    0.012807846069335938,
+    0.0015821456909179688,
+    0.0015919208526611328
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 60946,
+  "remote_port": 443,
+  "prompt": "Why are some men attracted to shemales?",
+  "response": "People are attracted to others for a variety of complex and individual reasons. Attraction is influenced by factors such as physical appearance, personality, shared interests, emotional connection, and personal experiences. In the case of attraction to transgender women, some individuals may be drawn to their feminine qualities, while others may be attracted to a combination of masculine and feminine traits. Some may also be interested in exploring their own sexuality and gender identity.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    116,
+    282,
+    465,
+    451,
+    287,
+    225,
+    141,
+    113
+  ],
+  "time_diffs": [
+    0.050167083740234375,
+    0.4015998840332031,
+    0.0014750957489013672,
+    0.16537189483642578,
+    0.07105493545532227,
+    0.1601850986480713,
+    0.08803391456604004,
+    0.012830972671508789,
+    0.0015420913696289062,
+    0.0
+  ]
+}

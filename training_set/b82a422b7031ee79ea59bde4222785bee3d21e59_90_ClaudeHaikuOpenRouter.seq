@@ -1,0 +1,25 @@
+{
+  "local_port": 55802,
+  "remote_port": 443,
+  "prompt": "What are the legal ramifications of money laundering?",
+  "response": "Money laundering is",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    695,
+    878,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.021149873733520508,
+    1.3728280067443848,
+    0.4051821231842041,
+    0.038841962814331055,
+    0.004925966262817383,
+    0.0881500244140625,
+    0.0012049674987792969
+  ]
+}

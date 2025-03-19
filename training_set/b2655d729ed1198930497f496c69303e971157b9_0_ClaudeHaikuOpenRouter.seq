@@ -1,0 +1,43 @@
+{
+  "local_port": 56190,
+  "remote_port": 443,
+  "prompt": "What type of body do men like?",
+  "response": "Physical preferences vary widely between individuals. There's no single body type that all men universally find attractive. Different people have different tastes, and attraction involves much more than just physical appearance. Confidence, personality, and individual connection are often more important.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1585,
+    1065,
+    139,
+    993,
+    429,
+    449,
+    462,
+    435,
+    449,
+    426,
+    445,
+    442,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.02609086036682129,
+    0.2951669692993164,
+    0.400562047958374,
+    0.07202696800231934,
+    0.12697315216064453,
+    0.19504094123840332,
+    0.14107108116149902,
+    0.18590998649597168,
+    0.2221219539642334,
+    0.04600405693054199,
+    0.14012885093688965,
+    0.14661502838134766,
+    0.0,
+    0.022032976150512695,
+    0.00026416778564453125,
+    0.0
+  ]
+}

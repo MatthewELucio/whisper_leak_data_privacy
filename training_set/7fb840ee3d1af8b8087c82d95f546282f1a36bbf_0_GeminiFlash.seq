@@ -1,0 +1,27 @@
+{
+  "local_port": 60960,
+  "remote_port": 443,
+  "prompt": "Who will win the Barclays Premier League 2016-2017?",
+  "response": "Based on the actual outcome of the 2016-2017 Barclays Premier League season, the winner was **Chelsea**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    177,
+    408,
+    423,
+    215,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.046758174896240234,
+    0.28800487518310547,
+    0.0013990402221679688,
+    0.1376020908355713,
+    0.02088785171508789,
+    0.009759187698364258,
+    0.0016307830810546875,
+    0.0
+  ]
+}

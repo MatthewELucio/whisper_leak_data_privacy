@@ -1,0 +1,37 @@
+{
+  "local_port": 51708,
+  "remote_port": 443,
+  "prompt": "Why do women never open doors for men, but men are expected to open doors for women?",
+  "response": "The practice of men opening doors for women is rooted in traditional gender roles and chivalry. Historically, it was seen as a way for men to show respect and provide protection to women, who were often considered more delicate or less capable. Some sources suggest it also stemmed from a time when women wore voluminous dresses that made opening doors more difficult.\n\nHowever, societal norms have evolved significantly. While some people still appreciate the gesture as a sign of politeness, others view it as outdated and even sexist, as it reinforces the idea that women need assistance from men.\n\nThe expectation for men to open doors for women is not universal, and many women do open doors for men, especially in modern contexts where gender equality is emphasized. Ultimately, whether someone opens a door for another person often depends on individual preferences and social context rather than strict gender roles.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    298,
+    207,
+    249,
+    294,
+    485,
+    316,
+    324,
+    448,
+    223,
+    226,
+    113
+  ],
+  "time_diffs": [
+    0.05093502998352051,
+    0.40114903450012207,
+    0.0013439655303955078,
+    0.012312889099121094,
+    0.09414410591125488,
+    0.11318802833557129,
+    0.2251420021057129,
+    0.2088618278503418,
+    0.322160005569458,
+    0.10615706443786621,
+    0.01253199577331543,
+    0.0,
+    0.0
+  ]
+}

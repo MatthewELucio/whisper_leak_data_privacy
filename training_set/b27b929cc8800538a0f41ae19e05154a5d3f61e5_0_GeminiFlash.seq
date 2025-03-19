@@ -1,0 +1,33 @@
+{
+  "local_port": 34178,
+  "remote_port": 443,
+  "prompt": "How do cooking soda and baking soda differ?",
+  "response": "While the terms \"cooking soda\" and \"baking soda\" are often used interchangeably, they refer to the **same chemical compound: sodium bicarbonate (NaHCO\u2083)**.\n\nTherefore, **there is no difference between cooking soda and baking soda.** It's just a matter of preference in terminology.\n\nYou might find \"baking soda\" more commonly used in recipes and grocery stores, but \"cooking soda\" is also acceptable and means the same thing.\n\nThink of it like \"cola\" and \"soda\" - they often refer to the same type of beverage.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1336,
+    251,
+    219,
+    373,
+    291,
+    327,
+    351,
+    154,
+    204,
+    113
+  ],
+  "time_diffs": [
+    0.04422616958618164,
+    0.45679283142089844,
+    0.018493175506591797,
+    0.05415201187133789,
+    0.08215880393981934,
+    0.17363619804382324,
+    0.18956995010375977,
+    0.1089320182800293,
+    0.008641958236694336,
+    0.0,
+    0.0
+  ]
+}

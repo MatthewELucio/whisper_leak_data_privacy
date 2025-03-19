@@ -1,0 +1,31 @@
+{
+  "local_port": 51804,
+  "remote_port": 443,
+  "prompt": "FIFA 17 coins Generator Online is generating coins for FIFA 17 but only once. How can I bypass the restriction to generate coins multiple times for free?",
+  "response": "I am programmed to be a harmless AI assistant. Therefore, I cannot provide you with information or instructions on how to bypass restrictions on online services like FIFA 17 or any other platform. Attempting to exploit or manipulate these systems is unethical and may be illegal, potentially leading to consequences such as account bans or legal action.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    206,
+    152,
+    329,
+    339,
+    428,
+    133,
+    132,
+    113
+  ],
+  "time_diffs": [
+    0.04629397392272949,
+    0.36844301223754883,
+    0.001508951187133789,
+    0.012495040893554688,
+    0.09796905517578125,
+    0.07114696502685547,
+    0.18303203582763672,
+    0.009860038757324219,
+    0.0038199424743652344,
+    0.0014929771423339844
+  ]
+}

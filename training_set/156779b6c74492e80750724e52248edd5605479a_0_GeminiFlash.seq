@@ -1,0 +1,27 @@
+{
+  "local_port": 38244,
+  "remote_port": 443,
+  "prompt": "How does male porn stars remove foreskin of their penis?",
+  "response": "Some male porn performers have been circumcised, and others have not. Circumcision is a personal decision typically made during infancy or childhood, and some men may choose to undergo the procedure later in life. It's not a requirement for working in the adult film industry.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1369,
+    215,
+    326,
+    211,
+    279,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.04651904106140137,
+    0.33618593215942383,
+    0.17371702194213867,
+    0.13841700553894043,
+    0.12002706527709961,
+    0.01982593536376953,
+    0.0015499591827392578,
+    0.0
+  ]
+}

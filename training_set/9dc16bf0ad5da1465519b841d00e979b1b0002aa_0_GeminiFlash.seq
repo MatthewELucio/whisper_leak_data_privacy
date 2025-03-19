@@ -1,0 +1,39 @@
+{
+  "local_port": 43424,
+  "remote_port": 443,
+  "prompt": "Can pigs show affection?",
+  "response": "Yes, pigs can definitely show affection! They are intelligent and social animals capable of forming strong bonds with humans and other animals. Here's how they show it:\n\n*   **Physical Contact:** They often enjoy being petted, scratched behind the ears, and belly rubs. They might lean into you or nudge you for attention.\n*   **Vocalization:** Pigs have a wide range of vocalizations. Soft grunts and purrs can indicate contentment and affection.\n*   **Following You:** Pigs often follow their favorite people around, wanting to be near them.\n*   **Sleeping Close By:** They might choose to sleep near you or other animals they are bonded with.\n*   **Grooming:** Pigs sometimes groom each other (and occasionally humans) as a sign of affection.\n*   **Playing:** Playful behavior, like nudging or chasing, can be a way of showing affection and bonding.\n*   **Showing Interest:** If a pig is happy to see you, they may wag their tail and be happy to interact with you.\n\nIt's worth noting that each pig has a unique personality, and some may be more outwardly affectionate than others.\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    205,
+    155,
+    442,
+    420,
+    407,
+    244,
+    384,
+    259,
+    282,
+    197,
+    216,
+    113
+  ],
+  "time_diffs": [
+    0.04794597625732422,
+    0.4325070381164551,
+    0.0014309883117675781,
+    0.03456401824951172,
+    0.056842803955078125,
+    0.1264660358428955,
+    0.17268705368041992,
+    0.18517208099365234,
+    0.293057918548584,
+    0.26795506477355957,
+    0.17261695861816406,
+    0.008133888244628906,
+    0.0,
+    0.0
+  ]
+}

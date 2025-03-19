@@ -1,0 +1,37 @@
+{
+  "local_port": 54264,
+  "remote_port": 443,
+  "prompt": "Can I directly get an admission in 12th (Arts) after 10th (Maharashtra)?",
+  "response": "No, you cannot directly get admission into 12th (Arts) after 10th in Maharashtra.\n\nHere's why:\n\n*   **11th is Compulsory:** In Maharashtra, like most education systems, you need to complete the 11th grade (also known as Junior College) before you can enter the 12th grade.\n*   **10th is the Entrance:** Your 10th-grade results are the basis for admission to 11th grade. You will apply to colleges or junior colleges after your 10th results are declared, indicating your desired stream (Arts, Science, Commerce, etc.).\n*   **Progression:** The standard academic progression is 1st to 10th, then 11th, and finally 12th.\n\nTherefore, after completing your 10th, you will need to apply and get accepted into a Junior College for the 11th grade with the Arts stream. Once you successfully complete the 11th grade, you can then be admitted into the 12th grade (Arts) at the same or a different institution.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1269,
+    333,
+    202,
+    248,
+    423,
+    333,
+    496,
+    330,
+    333,
+    208,
+    200,
+    113
+  ],
+  "time_diffs": [
+    0.046391963958740234,
+    1.433509111404419,
+    0.057312965393066406,
+    0.006201982498168945,
+    0.0643310546875,
+    0.21808600425720215,
+    0.16131901741027832,
+    0.27784085273742676,
+    0.2226250171661377,
+    0.2554020881652832,
+    0.009317874908447266,
+    3.910064697265625e-05,
+    6.198883056640625e-05
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "local_port": 37972,
+  "remote_port": 443,
+  "prompt": "Why does the Justin Bieber video Baby have more dislikes than likes?",
+  "response": "Justin Bieber's \"Baby\" video has a legendary dislike-to-like ratio on YouTube, and the reasons are a mix of factors that all piled on top of each other:\n\n*   **Early YouTube Culture & Trolling:** In the early days of YouTube, there was a more prevalent culture of \"trolling\" and disliking things just for the sake of it, or to cause a reaction. \"Baby\" became a prime target for this behavior.\n\n*   **Bieber's Image at the Time:** When the video blew up, Bieber was a young teen idol with a very particular image that appealed mostly to young girls. This made him a target of mockery and dislike from other demographics, particularly older viewers and those who weren't fans of his type of music. There was a perception that he was manufactured and lacked authenticity.\n\n*   **Video Overexposure:** The song and video were *everywhere*. Constant play on the radio, TV, and online meant that people who were already indifferent or annoyed by Bieber were subjected to it constantly. This saturation fueled the dislike, as some people were simply tired of seeing and hearing it.\n\n*   **Meme Status & Internet Bandwagon:** The high dislike count itself became a meme. People started disliking it simply because it already had so many dislikes. It turned into a self-perpetuating phenomenon, a sort of internet bandwagon effect.\n\n*   **Quality Concerns:** Subjectively, some people genuinely disliked the song itself. They may have found the lyrics, melody, or Bieber's vocals unappealing.\n\n*   **Alleged Botting (Debatable):** There have been claims that bots were used to inflate the dislike count, but this is difficult to prove definitively. It's more likely that the genuine dislike was so strong that it didn't require bots.\n\nIn short, \"Baby\" became a perfect storm. A young, heavily-promoted artist targeted by early YouTube trolling, overexposure, and dislike fueled by various internet trends created a negative feedback loop that resulted in its infamous dislike ratio.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    295,
+    263,
+    242,
+    245,
+    388,
+    326,
+    479,
+    360,
+    292,
+    540,
+    497,
+    261,
+    230,
+    113
+  ],
+  "time_diffs": [
+    0.056118011474609375,
+    0.27669596672058105,
+    0.0013260841369628906,
+    0.12461495399475098,
+    0.1288909912109375,
+    0.2001941204071045,
+    0.2172079086303711,
+    0.3351321220397949,
+    0.25832080841064453,
+    0.4510002136230469,
+    0.37429380416870117,
+    0.38948798179626465,
+    0.23038315773010254,
+    0.016208887100219727,
+    0.0,
+    0.0
+  ]
+}

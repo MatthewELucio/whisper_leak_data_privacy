@@ -1,0 +1,33 @@
+{
+  "local_port": 46642,
+  "remote_port": 443,
+  "prompt": "What regulation do libertarians advocate?",
+  "response": "Libertarians generally advocate for minimal government regulation, primarily focusing on regulations that protect individual rights and safety. This often includes:\n\n*   **Property rights:** Regulations that define and protect private property rights are seen as essential for a free market.\n*   **Contract enforcement:** Regulations that ensure contracts are honored and disputes are resolved fairly.\n*   **Criminal law:** Laws against violence, theft, and fraud are considered necessary to protect individuals and their property.\n*   **National defense:** Maintaining a military to protect the country from external threats.\n*   **Basic infrastructure:** Some libertarians support government involvement in essential infrastructure like roads and utilities, though often with a preference for private solutions where possible.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    296,
+    293,
+    295,
+    407,
+    296,
+    358,
+    228,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.04566311836242676,
+    0.387178897857666,
+    0.0014450550079345703,
+    0.10654497146606445,
+    0.0898599624633789,
+    0.20916414260864258,
+    0.2151029109954834,
+    0.2804849147796631,
+    0.010140180587768555,
+    0.0017609596252441406,
+    0.0
+  ]
+}

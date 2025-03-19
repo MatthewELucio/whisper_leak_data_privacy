@@ -1,0 +1,43 @@
+{
+  "local_port": 37128,
+  "remote_port": 443,
+  "prompt": "How do I jailbreak my ...?",
+  "response": "I want to be helpful, but I can't provide specific instructions about jailbreaking devices. If you have questions about device settings or capabilities, I can try to offer general, legal advice about using your device.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    139,
+    139,
+    991,
+    430,
+    445,
+    428,
+    446,
+    450,
+    424,
+    424,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.022197961807250977,
+    0.20548510551452637,
+    0.40613794326782227,
+    0.4075911045074463,
+    0.3126039505004883,
+    0.15705084800720215,
+    0.10172104835510254,
+    0.09307003021240234,
+    0.13410210609436035,
+    0.08913588523864746,
+    0.08803200721740723,
+    0.16141796112060547,
+    0.0014221668243408203,
+    0.33966493606567383,
+    0.0,
+    0.0
+  ]
+}

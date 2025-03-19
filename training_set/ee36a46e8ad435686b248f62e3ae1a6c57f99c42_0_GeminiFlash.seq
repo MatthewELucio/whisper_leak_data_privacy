@@ -1,0 +1,43 @@
+{
+  "local_port": 46080,
+  "remote_port": 443,
+  "prompt": "What is LG G4?",
+  "response": "The LG G4 was a high-end Android smartphone released by LG in 2015. It was known for several key features:\n\n*   **Leather Back (Optional):** One of its most distinctive features was the option to have a genuine leather back, adding a premium look and feel.\n*   **Excellent Camera:** The G4's camera was highly praised for its image quality, featuring a 16MP rear camera with optical image stabilization (OIS), a wide f/1.8 aperture, and laser autofocus. It also allowed for manual controls, a feature favored by photography enthusiasts.\n*   **Display:** It had a 5.5-inch Quad HD (2560 x 1440) IPS display, known for its vibrant colors and sharpness.\n*   **Performance:** It was powered by a Qualcomm Snapdragon 808 processor with 3GB of RAM. While not the most powerful chip available at the time, it provided smooth performance for most tasks.\n*   **Removable Battery and microSD Card Slot:** Unlike many modern smartphones, the G4 had a removable battery and a microSD card slot for expandable storage.\n\nHowever, it also had some drawbacks:\n\n*   **\"Bootloop\" Issues:** A significant number of G4 units suffered from a hardware issue that caused them to get stuck in a bootloop (repeatedly restarting), eventually rendering them unusable. This was a well-known problem that affected many users.\n*   **Processor Choice:** While the Snapdragon 808 was decent, some felt that LG should have used the higher-end Snapdragon 810.\n\nIn summary, the LG G4 was a well-regarded smartphone for its time, especially appreciated for its camera and design, but marred by the widespread bootloop issue.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    154,
+    274,
+    367,
+    370,
+    304,
+    469,
+    299,
+    313,
+    530,
+    363,
+    362,
+    219,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.047380924224853516,
+    0.3276979923248291,
+    0.0014069080352783203,
+    0.012307167053222656,
+    0.06506490707397461,
+    0.09101009368896484,
+    0.1921079158782959,
+    0.17300891876220703,
+    0.2269899845123291,
+    0.2561161518096924,
+    0.3562629222869873,
+    0.3771390914916992,
+    0.21985602378845215,
+    0.00969386100769043,
+    0.0,
+    0.0005271434783935547
+  ]
+}

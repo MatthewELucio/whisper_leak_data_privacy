@@ -1,0 +1,29 @@
+{
+  "local_port": 44514,
+  "remote_port": 443,
+  "prompt": "Does any member of a Instagram group see the message I send?",
+  "response": "Yes, if you send a message to an Instagram group, **all members of that group can see it.**\n\nThink of it like a group text message. Everyone in the group chat will receive and be able to read your message.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1336,
+    327,
+    268,
+    333,
+    310,
+    171,
+    152,
+    113
+  ],
+  "time_diffs": [
+    0.04620695114135742,
+    0.3316361904144287,
+    0.042897939682006836,
+    0.05800890922546387,
+    0.09501409530639648,
+    0.07108306884765625,
+    0.007842779159545898,
+    0.001499176025390625,
+    0.0
+  ]
+}

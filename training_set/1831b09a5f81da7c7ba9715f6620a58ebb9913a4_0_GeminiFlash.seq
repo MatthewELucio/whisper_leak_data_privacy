@@ -1,0 +1,37 @@
+{
+  "local_port": 49744,
+  "remote_port": 443,
+  "prompt": "What are some sentence examples using \"homophone\"?",
+  "response": "Okay, here are some sentence examples using the word \"homophone\":\n\n*   \"The word 'there' is a homophone because it sounds the same as 'their' and 'they're', but has a different meaning and spelling.\"\n*   \"Students often get confused by homophones, especially when writing formal essays.\"\n*   \"My teacher gave us a list of common homophones to study for the vocabulary test.\"\n*   \"It's important to understand the context of a sentence to correctly interpret which homophone is being used.\"\n*   \"The humorous effect of the joke relied on the use of a homophone.\"\n*   \"Many riddles are based on homophones, playing on the double meaning of words that sound alike.\"\n*   \"When proofreading, pay close attention to homophones to avoid errors in your writing.\"\n* \"Learning about homophones can be a fun way to improve your vocabulary and spelling skills.\"\n* \"The word 'flour' is a homophone of 'flower'.\"",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    156,
+    195,
+    201,
+    387,
+    386,
+    315,
+    379,
+    365,
+    169,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.05205392837524414,
+    0.40652012825012207,
+    0.0014138221740722656,
+    0.11404609680175781,
+    0.10396409034729004,
+    0.21813392639160156,
+    0.15206193923950195,
+    0.3230271339416504,
+    0.2218949794769287,
+    0.10003185272216797,
+    0.0186159610748291,
+    0.0,
+    0.00011610984802246094
+  ]
+}

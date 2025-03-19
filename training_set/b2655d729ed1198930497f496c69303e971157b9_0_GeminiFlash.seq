@@ -1,0 +1,31 @@
+{
+  "local_port": 33012,
+  "remote_port": 443,
+  "prompt": "What type of body do men like?",
+  "response": "Men, like people in general, are attracted to a variety of body types. Preferences are influenced by individual factors, cultural background, personal experiences, and what they've been exposed to in the media. \n\nSome men may be drawn to athletic builds, while others might prefer a curvier figure. Some might prioritize a healthy appearance overall, regardless of size or shape. Ultimately, attraction is subjective and varies greatly from person to person.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    134,
+    325,
+    223,
+    390,
+    253,
+    219,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.047514915466308594,
+    0.28108811378479004,
+    0.0014128684997558594,
+    0.16946816444396973,
+    0.06812691688537598,
+    0.21310710906982422,
+    0.16606998443603516,
+    0.009966850280761719,
+    0.0015120506286621094,
+    0.0
+  ]
+}

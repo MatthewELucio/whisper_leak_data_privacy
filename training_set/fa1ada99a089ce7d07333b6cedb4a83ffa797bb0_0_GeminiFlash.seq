@@ -1,0 +1,39 @@
+{
+  "local_port": 36232,
+  "remote_port": 443,
+  "prompt": "What is the speed of light in a vacuum dependent on?",
+  "response": "The speed of light in a vacuum (often denoted as *c*) is a fundamental constant of the universe and is **not dependent on anything.**  It is a fixed value.\n\nSpecifically, it is:\n\n*   **Not dependent on the motion of the source:** Whether the light source is moving towards you, away from you, or stationary, the speed of the light emitted will always be *c* relative to any observer. This is a core principle of special relativity.\n\n*   **Not dependent on the observer's motion:** Similarly, your motion as the observer doesn't change the speed of light you measure.\n\n*   **Not dependent on the frequency or wavelength of the light:** All electromagnetic radiation, from radio waves to gamma rays, travels at the same speed in a vacuum.\n\nThe speed of light in a vacuum is defined exactly as 299,792,458 meters per second. This definition is used to define the meter itself, based on the second (which is defined by the atomic properties of Cesium).\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    163,
+    265,
+    327,
+    356,
+    378,
+    443,
+    406,
+    385,
+    280,
+    194,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.05399799346923828,
+    0.5555989742279053,
+    0.0018100738525390625,
+    0.027367830276489258,
+    0.055943965911865234,
+    0.11531710624694824,
+    0.19395208358764648,
+    0.17198586463928223,
+    0.327286958694458,
+    0.21623802185058594,
+    0.1311969757080078,
+    0.009409189224243164,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 36684,
+  "remote_port": 443,
+  "prompt": "How do Michael Jordan grow taller?",
+  "response": "Michael Jordan did not grow taller after reaching adulthood. His adult height was around 6'6\" (1.98 meters). While there are surgical procedures to increase height, they are not common and there is no evidence that Michael Jordan ever underwent such a procedure.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    96,
+    249,
+    423,
+    201,
+    216,
+    153,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.05468106269836426,
+    0.37152791023254395,
+    0.001344919204711914,
+    0.024506092071533203,
+    0.10468506813049316,
+    0.0781259536743164,
+    0.11707401275634766,
+    0.009778976440429688,
+    0.0013098716735839844,
+    6.508827209472656e-05
+  ]
+}

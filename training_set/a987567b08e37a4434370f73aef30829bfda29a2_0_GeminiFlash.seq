@@ -1,0 +1,39 @@
+{
+  "local_port": 47198,
+  "remote_port": 443,
+  "prompt": "What does President Duterte think of Donald Trump?",
+  "response": "President Duterte has expressed a range of opinions about Donald Trump over the years. Here's a summary of some key points:\n\n*   **Initial Positive Remarks:** Early on, Duterte spoke favorably of Trump, particularly after Trump's election in 2016. He often highlighted their similar leadership styles and personalities, noting their shared tendency to be outspoken.\n*   **Praise for Trump's Approach:** Duterte has praised Trump's \"America First\" policy, suggesting it allowed the Philippines to focus on its own interests. He also appreciated Trump's apparent non-interference in the Philippines' domestic policies, particularly regarding the war on drugs.\n*   **Shifting Tone:** There were instances where Duterte's tone shifted, especially after Trump's departure from office. In 2021, Duterte criticized Trump's handling of the COVID-19 pandemic, particularly his skepticism towards vaccines.\n*   **Overall Perception:** Generally, Duterte seemed to view Trump as a leader he could work with, appreciating what he perceived as a pragmatic and non-interventionist approach to foreign policy. However, this view evolved somewhat over time.\n\nIt's worth noting that political statements can be influenced by various factors, so these views should be seen within the context of Philippine-US relations and Duterte's broader foreign policy objectives.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1262,
+    212,
+    427,
+    366,
+    306,
+    289,
+    386,
+    274,
+    492,
+    311,
+    155,
+    235,
+    113
+  ],
+  "time_diffs": [
+    0.04679298400878906,
+    0.5540409088134766,
+    0.04310798645019531,
+    0.05692410469055176,
+    0.11399292945861816,
+    0.2378990650177002,
+    0.21604084968566895,
+    0.28722310066223145,
+    0.2391219139099121,
+    0.40830016136169434,
+    0.051245927810668945,
+    0.013382911682128906,
+    0.0,
+    0.0
+  ]
+}

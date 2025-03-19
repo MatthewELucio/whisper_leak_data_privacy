@@ -1,0 +1,39 @@
+{
+  "local_port": 43704,
+  "remote_port": 443,
+  "prompt": "How much is expected cut off for HRM programme for TISSNET 2017?",
+  "response": "Predicting exact cut-offs for TISSNET is difficult as they depend on factors like:\n\n*   **Overall difficulty of the exam:** If the exam is tougher, cut-offs tend to be lower.\n*   **Number of applicants:** More applicants usually mean higher cut-offs.\n*   **Number of seats available:** Fewer seats can lead to higher cut-offs.\n*   **Performance of candidates:** The overall performance of candidates significantly impacts the cut-offs.\n\nHowever, based on past trends and analyses for TISSNET 2017 (and keeping in mind cutoffs vary year to year), **a score of around 70-75 out of 100** was generally considered a competitive score for the HRM programme at TISS Mumbai.\n\n**Important Considerations:**\n\n*   **This is just an estimate.** Actual cut-offs could be higher or lower.\n*   **Cut-offs also vary by category (General, OBC, SC, ST, etc.).** The estimate above is generally for the General category. Category cut-offs are usually lower.\n*   **TISS uses a multi-stage selection process.**  A good TISSNET score is essential to be shortlisted for the next stages (pre-interview test (PIT) and personal interview (PI)).  The final selection is based on the combined scores of TISSNET, PIT, and PI.\n\n**Recommendation:**\n\nWhile this gives you a general idea, the best approach is to:\n\n1.  **Look for information on the TISS official website and reputable coaching centers.** They sometimes provide analyses and estimates based on past trends.\n\nRemember that aiming for a high score is always the best strategy to maximize your chances of selection. Good luck!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1320,
+    251,
+    273,
+    287,
+    370,
+    508,
+    480,
+    334,
+    482,
+    366,
+    203,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.047601938247680664,
+    0.3871021270751953,
+    0.09399700164794922,
+    0.08402395248413086,
+    0.16358184814453125,
+    0.15977907180786133,
+    0.2705271244049072,
+    0.2694427967071533,
+    0.41524720191955566,
+    0.3645498752593994,
+    0.20621013641357422,
+    0.008775949478149414,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 50374,
+  "remote_port": 443,
+  "prompt": "How many rounds of admission will be conducted for an MBA at NIT Trichy?",
+  "response": "NIT Trichy typically conducts **two rounds** of admissions for its MBA program.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    185,
+    183,
+    305,
+    302,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.05335497856140137,
+    0.45355701446533203,
+    0.0014328956604003906,
+    0.013825178146362305,
+    0.025985002517700195,
+    0.011647939682006836,
+    0.0017120838165283203,
+    0.0034627914428710938
+  ]
+}

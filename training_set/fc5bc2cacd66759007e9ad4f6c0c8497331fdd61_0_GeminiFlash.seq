@@ -1,0 +1,31 @@
+{
+  "local_port": 57202,
+  "remote_port": 443,
+  "prompt": "In Japanese, what is the meaning of \"Kimigayo\"?",
+  "response": "\"Kimigayo\" (\u541b\u304c\u4ee3) translates to **\"May Your Reign Last Forever\"** or **\"May Your Reign Continue for a Thousand Generations.\"**\n\nIt's a wish for the long and prosperous reign of the Emperor.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    280,
+    231,
+    333,
+    328,
+    358,
+    201,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.04559612274169922,
+    0.3578159809112549,
+    0.001744985580444336,
+    0.04868793487548828,
+    0.06997799873352051,
+    0.12090897560119629,
+    0.07583117485046387,
+    0.00603795051574707,
+    0.0016009807586669922,
+    0.0017778873443603516
+  ]
+}

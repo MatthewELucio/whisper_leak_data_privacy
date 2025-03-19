@@ -1,0 +1,35 @@
+{
+  "local_port": 36788,
+  "remote_port": 443,
+  "prompt": "Can anyone help me with this physics 102 problem?",
+  "response": "Please provide the physics 102 problem you need help with! I need the text of the problem to be able to assist you.  The more information you give me (diagrams, any work you've already done, relevant formulas you think might apply), the better I can help you understand the problem and find a solution.\n\nFor example, tell me:\n\n*   **The exact wording of the problem.**\n*   **Any given values (e.g., mass, velocity, angle, distance, etc.).**\n*   **What you are asked to find (e.g., acceleration, force, time, etc.).**\n*   **What you've tried so far.**\n*   **Any concepts you're struggling with.**\n\nOnce you provide this information, I'll do my best to guide you through the problem-solving process.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    111,
+    370,
+    323,
+    365,
+    461,
+    315,
+    290,
+    146,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.04716205596923828,
+    0.4321470260620117,
+    0.0015299320220947266,
+    0.13251590728759766,
+    0.06491208076477051,
+    0.18806004524230957,
+    0.15417695045471191,
+    0.2410900592803955,
+    0.14802289009094238,
+    0.01190805435180664,
+    0.0,
+    0.0
+  ]
+}

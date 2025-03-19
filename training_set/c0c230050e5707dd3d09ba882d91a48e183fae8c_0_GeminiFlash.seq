@@ -1,0 +1,29 @@
+{
+  "local_port": 44548,
+  "remote_port": 443,
+  "prompt": "Do you still masturbate after getting married?",
+  "response": "Whether or not someone masturbates after getting married is a personal choice. There's no right or wrong answer, and people's preferences and behaviors vary.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    121,
+    175,
+    422,
+    420,
+    261,
+    211,
+    113
+  ],
+  "time_diffs": [
+    0.041710853576660156,
+    0.3234131336212158,
+    0.0015690326690673828,
+    0.0425870418548584,
+    0.012915849685668945,
+    0.1643199920654297,
+    0.006685972213745117,
+    0.001589059829711914,
+    0.0014770030975341797
+  ]
+}

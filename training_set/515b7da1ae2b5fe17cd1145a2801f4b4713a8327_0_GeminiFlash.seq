@@ -1,0 +1,39 @@
+{
+  "local_port": 50348,
+  "remote_port": 443,
+  "prompt": "At what time do some of you Harvard students sleep?",
+  "response": "It's tough to give you a single answer for when Harvard students sleep, as sleep schedules vary wildly depending on individual habits, workload, extracurricular commitments, and personal preferences. However, here's a general idea:\n\n*   **Weeknights:** Many students aim to be in bed between **12:00 AM and 2:00 AM**, but this can easily be pushed later due to late classes, study groups, assignments, or social events. Some students, particularly those with demanding schedules or those who prefer to work late, may not get to sleep until **3:00 AM or later**.\n*   **Weekends:** Sleep schedules tend to be more relaxed on weekends. Students might sleep in later and go to bed later as well, with bedtimes often falling between **1:00 AM and 3:00 AM**, or even later if there are social gatherings or events.\n*   **Exam Periods:** During midterms and finals, sleep schedules can become highly irregular and significantly reduced. It's not uncommon for students to pull all-nighters or get only a few hours of sleep per night during these periods.\n\nKeep in mind that these are just general observations, and there will always be students who consistently sleep early and those who consistently sleep late. Additionally, some students prioritize sleep and maintain a more regular sleep schedule, even with a busy workload.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    247,
+    333,
+    442,
+    420,
+    402,
+    317,
+    470,
+    416,
+    263,
+    303,
+    145,
+    113
+  ],
+  "time_diffs": [
+    0.044137001037597656,
+    0.3624260425567627,
+    0.0012710094451904297,
+    0.11072897911071777,
+    0.09816503524780273,
+    0.17628002166748047,
+    0.17989301681518555,
+    0.2401270866394043,
+    0.33209800720214844,
+    0.3887310028076172,
+    0.17954182624816895,
+    0.012493133544921875,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 45120,
+  "remote_port": 443,
+  "prompt": "Have any good riddles?",
+  "response": "Okay, here are a few riddles for you, ranging in difficulty:\n\n**Easy:**\n\n1.  What has to be broken before you can use it?\n    \\\n    ... An egg\n\n2.  What is full of holes but still holds water?\n    \\\n    ... A sponge\n\n**Medium:**\n\n3.  What has an eye, but cannot see?\n    \\\n    ... A needle\n\n4.  What is always in front of you but can't be seen?\n    \\\n    ... The future\n\n**Hard:**\n\n5.  I have cities, but no houses, forests, but no trees, and water, but no fish. What am I?\n    \\\n    ... A map\n\n6.  What is always coming, but never arrives?\n    \\\n    ... Tomorrow\n\nLet me know if you'd like more! I can tailor them to a specific topic if you have one in mind. Good luck solving!  \ud83d\ude0a\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1259,
+    322,
+    290,
+    380,
+    435,
+    405,
+    262,
+    328,
+    293,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.0483250617980957,
+    0.3054029941558838,
+    0.022439956665039062,
+    0.05917692184448242,
+    0.12036514282226562,
+    0.11868596076965332,
+    0.16118192672729492,
+    0.2027430534362793,
+    0.24618005752563477,
+    0.008002996444702148,
+    0.0,
+    0.0
+  ]
+}

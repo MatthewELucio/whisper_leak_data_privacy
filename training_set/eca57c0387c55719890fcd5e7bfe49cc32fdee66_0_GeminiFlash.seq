@@ -1,0 +1,39 @@
+{
+  "local_port": 59168,
+  "remote_port": 443,
+  "prompt": "Why sound waves cannot be polarized?",
+  "response": "Sound waves cannot be polarized, because they are **longitudinal** waves.\n\nHere's why that's important:\n\n*   **Polarization:** Polarization is a property that applies to transverse waves.  It refers to the direction of the oscillation (vibration) relative to the direction the wave is traveling.  A wave is polarized if its oscillations are confined to a single plane.\n\n*   **Transverse Waves:** In transverse waves (like light or waves on a string), the oscillations are *perpendicular* to the direction of wave propagation.  Because the oscillations are perpendicular, there's a \"direction\" to the oscillation that can be aligned or filtered.\n\n*   **Longitudinal Waves:** In longitudinal waves (like sound in air), the oscillations are *parallel* to the direction of wave propagation.  The wave travels as compressions and rarefactions (regions of high and low density/pressure) along the direction of travel.  Since the motion is along the same line as the wave's travel, there is no \"direction\" *perpendicular* to the propagation that can be filtered or aligned. There's no sideways vibration to align in a particular direction.\n\n**In summary:** Polarization relies on having oscillations perpendicular to the wave's direction of travel. Sound waves, being longitudinal, lack this perpendicular oscillation and therefore cannot be polarized.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1270,
+    262,
+    218,
+    188,
+    438,
+    463,
+    389,
+    350,
+    422,
+    330,
+    189,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.047882080078125,
+    0.41969895362854004,
+    0.050932884216308594,
+    0.05440402030944824,
+    0.08370804786682129,
+    0.18498587608337402,
+    0.16985821723937988,
+    0.2813148498535156,
+    0.31600499153137207,
+    0.37078213691711426,
+    0.05017900466918945,
+    0.01164102554321289,
+    0.00021600723266601562,
+    3.886222839355469e-05
+  ]
+}

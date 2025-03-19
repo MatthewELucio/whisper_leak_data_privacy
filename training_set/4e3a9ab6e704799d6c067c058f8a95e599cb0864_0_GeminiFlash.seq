@@ -1,0 +1,35 @@
+{
+  "local_port": 39346,
+  "remote_port": 443,
+  "prompt": "Are there any antibiotics that can be purchased over the counter?",
+  "response": "No, antibiotics cannot be purchased over the counter in most countries, including the United States, Canada, the United Kingdom, and the European Union. They require a prescription from a licensed healthcare professional.\n\nThe reason for this restriction is to prevent antibiotic resistance. Overuse and misuse of antibiotics can lead to bacteria developing resistance to these medications, making infections harder to treat.\n\nThere are some exceptions in certain countries or regions, but these are becoming increasingly rare due to global efforts to combat antibiotic resistance.\n\nIf you suspect you have a bacterial infection, it is important to consult with a doctor or other qualified healthcare provider for diagnosis and treatment. They can determine if antibiotics are necessary and prescribe the appropriate medication.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    168,
+    208,
+    232,
+    225,
+    385,
+    299,
+    396,
+    246,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.046124935150146484,
+    0.3659851551055908,
+    0.0013968944549560547,
+    0.004030942916870117,
+    0.05843210220336914,
+    0.09209203720092773,
+    0.17144393920898438,
+    0.19269394874572754,
+    0.20458698272705078,
+    0.006582021713256836,
+    0.0,
+    0.0
+  ]
+}

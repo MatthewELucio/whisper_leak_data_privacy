@@ -1,0 +1,37 @@
+{
+  "local_port": 35034,
+  "remote_port": 443,
+  "prompt": "Will Hillary Clinton start a nuclear war with Russia?",
+  "response": "Hillary Clinton has a long record in public life, and during that time she's expressed a range of views on foreign policy. When she was Secretary of State, she advocated for a \"reset\" in relations with Russia, but that relationship later deteriorated, particularly after Russia's annexation of Crimea.\n\nIn her public statements, she's been critical of Vladimir Putin's actions and has supported a strong U.S. stance against Russian aggression. She's also emphasized the importance of maintaining a strong military and honoring our commitments to NATO allies.\n\nNow, when it comes to nuclear war, it's worth remembering that the use of nuclear weapons is a decision of immense consequence. Any U.S. president would have to consider a vast amount of information and advice before even contemplating such action. It's impossible to say with certainty what any individual's specific decision-making process would be in that kind of crisis.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    159,
+    367,
+    226,
+    395,
+    369,
+    403,
+    436,
+    451,
+    140,
+    215,
+    113
+  ],
+  "time_diffs": [
+    0.04672098159790039,
+    0.33319091796875,
+    0.0012149810791015625,
+    0.04769396781921387,
+    0.11105108261108398,
+    0.09986209869384766,
+    0.2480158805847168,
+    0.1703650951385498,
+    0.32189202308654785,
+    0.2521088123321533,
+    0.0024461746215820312,
+    0.0,
+    0.0
+  ]
+}

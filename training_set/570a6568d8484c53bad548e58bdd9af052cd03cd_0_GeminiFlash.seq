@@ -1,0 +1,31 @@
+{
+  "local_port": 45626,
+  "remote_port": 443,
+  "prompt": "What are 13.1 and 26.2 stickers and what do they mean?",
+  "response": "The stickers \"13.1\" and \"26.2\" are references to distances in running, specifically:\n\n*   **13.1:** Refers to a **half marathon**, which is 13.1 miles.\n*   **26.2:** Refers to a **full marathon**, which is 26.2 miles.\n\nThese stickers are often displayed by runners on their cars, water bottles, laptops, etc., to show their accomplishment of completing a half or full marathon. It's a badge of honor and a way to connect with other runners.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1292,
+    252,
+    305,
+    403,
+    463,
+    447,
+    261,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.05539584159851074,
+    0.29437708854675293,
+    0.09005403518676758,
+    0.08502388000488281,
+    0.14888811111450195,
+    0.18517708778381348,
+    0.11593985557556152,
+    0.0068590641021728516,
+    0.0015459060668945312,
+    0.0017821788787841797
+  ]
+}

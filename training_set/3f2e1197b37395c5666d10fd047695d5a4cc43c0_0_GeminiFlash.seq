@@ -1,0 +1,27 @@
+{
+  "local_port": 55610,
+  "remote_port": 443,
+  "prompt": "Is it true that white guys don't like black girls?",
+  "response": "Generalizing about who someone is attracted to based on their race is inaccurate and relies on harmful stereotypes. Attraction is individual and depends on personal preferences and experiences, not race.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    210,
+    423,
+    427,
+    287,
+    150,
+    113
+  ],
+  "time_diffs": [
+    0.04669904708862305,
+    0.4632549285888672,
+    0.0014319419860839844,
+    0.16341614723205566,
+    0.09506106376647949,
+    0.008864879608154297,
+    0.0015380382537841797,
+    0.0017070770263671875
+  ]
+}

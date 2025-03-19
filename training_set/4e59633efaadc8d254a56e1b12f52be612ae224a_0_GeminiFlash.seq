@@ -1,0 +1,35 @@
+{
+  "local_port": 52900,
+  "remote_port": 443,
+  "prompt": "How free is Pakistan Occupied Kashmir compared to Indian Kashmir?",
+  "response": "Multiple sources indicate that both Pakistan-administered Kashmir (Azad Kashmir and Gilgit-Baltistan) and Indian-administered Kashmir have significant restrictions on freedom, though the nature and sources of these restrictions differ.\n\nIn Pakistan-administered Kashmir, while the region has its own president and prime minister, the Pakistani government maintains significant control. There have been reports of restrictions on freedom of expression, assembly, and the press. The Pakistani military also has a strong presence and influence.\n\nIn Indian-administered Kashmir, there have been concerns about human rights abuses, restrictions on freedom of movement, and communication blackouts, particularly following the revocation of Article 370 in 2019. There is also a significant military presence in the region.\n\nTherefore, it's difficult to definitively say one is \"more free\" than the other, as freedoms are restricted in different ways and to varying degrees in both regions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    170,
+    338,
+    350,
+    261,
+    389,
+    365,
+    277,
+    161,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.044409990310668945,
+    0.38005709648132324,
+    0.0015289783477783203,
+    0.09476399421691895,
+    0.08216404914855957,
+    0.21780991554260254,
+    0.19921207427978516,
+    0.29691481590270996,
+    0.17796015739440918,
+    0.008228063583374023,
+    0.0,
+    0.0
+  ]
+}

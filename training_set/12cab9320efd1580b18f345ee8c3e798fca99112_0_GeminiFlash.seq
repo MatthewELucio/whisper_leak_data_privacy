@@ -1,0 +1,37 @@
+{
+  "local_port": 44796,
+  "remote_port": 443,
+  "prompt": "Which authors inspire Dushka Zapata?",
+  "response": "In various interviews and writings, Dushka Zapata has mentioned being inspired by a number of authors and thinkers. Here's a breakdown of some prominent figures she has cited:\n\n*   **Joseph Campbell:** Campbell's work on mythology, particularly *The Hero with a Thousand Faces*, has deeply influenced Zapata's thinking on personal growth, meaning, and the universal patterns of human experience.\n*   **Ana\u00efs Nin:** Nin's introspective diaries and exploration of female sexuality and psychology have resonated with Zapata.\n*   **Carl Jung:** Zapata has spoken about Jung's theories of archetypes, the collective unconscious, and individuation.\n*   **Alan Watts:** Watts's philosophical works on Zen Buddhism, Eastern philosophy, and the nature of reality are clear inspiration.\n*   **Hermann Hesse:** Hesse's novels like *Siddhartha* and *Steppenwolf*, dealing with self-discovery, spirituality, and the search for meaning, align with themes present in Zapata's own writing.\n*   **Tom Robbins:** Zapata has mentioned an appreciation for the playful prose, philosophical musings, and unconventional narratives found in Tom Robbins's books.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    227,
+    332,
+    225,
+    497,
+    286,
+    509,
+    483,
+    470,
+    170,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.05006909370422363,
+    0.2728080749511719,
+    0.0014400482177734375,
+    0.14739584922790527,
+    0.07792401313781738,
+    0.17525410652160645,
+    0.19684600830078125,
+    0.23407196998596191,
+    0.2652139663696289,
+    0.23880290985107422,
+    0.010950088500976562,
+    0.0,
+    0.0
+  ]
+}

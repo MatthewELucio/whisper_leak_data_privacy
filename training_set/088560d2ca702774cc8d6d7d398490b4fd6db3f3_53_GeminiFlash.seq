@@ -1,0 +1,41 @@
+{
+  "local_port": 38806,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, the U.S. government has numerous laws against money laundering. Here are some of the key ones:\n\n*   **Bank Secrecy Act (BSA):** This is the cornerstone of U.S. anti-money laundering (AML) efforts. It requires financial institutions to keep records and file reports on transactions that might indicate money laundering or other financial crimes.\n*   **Money Laundering Control Act of 1986:** This was the first federal law to criminalize money laundering itself.\n*   **USA PATRIOT Act of 2001:** Enacted in response to the 9/11 terrorist attacks, this act strengthened AML laws by expanding the scope of the BSA, enhancing due diligence requirements for financial institutions, and increasing information sharing between agencies.\n*   **Money Laundering and Financial Crimes Strategy Act of 1998:** This act requires the development of a national strategy for combating money laundering.\n\nThese laws, along with their amendments and related regulations, form the basis of the U.S. government's efforts to combat money laundering. They aim to prevent criminals from disguising the proceeds of illegal activities and to disrupt financial networks that support criminal enterprises.\n\nMany other countries also have their own laws against money laundering. International cooperation is a crucial aspect of combating this global problem.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    154,
+    288,
+    302,
+    394,
+    322,
+    275,
+    414,
+    438,
+    502,
+    404,
+    209,
+    230,
+    113
+  ],
+  "time_diffs": [
+    0.0466151237487793,
+    0.40515589714050293,
+    0.0013971328735351562,
+    0.03359198570251465,
+    0.026948928833007812,
+    0.0831749439239502,
+    0.20099496841430664,
+    0.17105698585510254,
+    0.2820911407470703,
+    0.29765987396240234,
+    0.4137711524963379,
+    0.04041886329650879,
+    0.007714033126831055,
+    0.0,
+    4.792213439941406e-05
+  ]
+}

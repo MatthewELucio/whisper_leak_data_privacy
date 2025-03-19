@@ -1,0 +1,37 @@
+{
+  "local_port": 38424,
+  "remote_port": 443,
+  "prompt": "How do I start learning digital marketing?",
+  "response": "Okay, let's break down how to start learning digital marketing. There's a lot to it, but with a structured approach, you can learn the fundamentals and start applying them.\n\n**1. Understanding the Landscape (Foundation):**\n\n*   **What is Digital Marketing?**  Grasp the core concept. It's using online channels to promote and sell products or services. Think: websites, social media, email, search engines, and more.  It's about understanding consumer behavior online and reaching them effectively.\n*   **Key Channels & Disciplines:**  Become familiar with the main components.  Don't try to master them all at once, but understand what they are:\n    *   **Search Engine Optimization (SEO):**  Optimizing websites to rank higher in search engine results (Google, Bing, etc.).\n    *   **Search Engine Marketing (SEM) / Pay-Per-Click (PPC) Advertising:**  Running paid ads on search",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    274,
+    228,
+    432,
+    244,
+    373,
+    428,
+    316,
+    378,
+    156,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.04523110389709473,
+    0.31158995628356934,
+    0.0016770362854003906,
+    0.11038494110107422,
+    0.09496808052062988,
+    0.19297099113464355,
+    0.202131986618042,
+    0.3160970211029053,
+    0.1870708465576172,
+    0.2992250919342041,
+    0.008585929870605469,
+    0.0,
+    0.0
+  ]
+}

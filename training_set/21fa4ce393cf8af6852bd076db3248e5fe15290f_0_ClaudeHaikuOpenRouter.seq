@@ -1,0 +1,41 @@
+{
+  "local_port": 60308,
+  "remote_port": 443,
+  "prompt": "Which experience do you think is more surreal: being a billionaire or President of the United States?",
+  "response": "I want to be direct with you. I do not actually have personal experiences or opinions about surreal perceptions. I aim to provide helpful information. If you're interested, I could discuss different perspectives on the unique experiences of billionaires and US Presidents.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1585,
+    1065,
+    695,
+    406,
+    436,
+    468,
+    447,
+    438,
+    414,
+    451,
+    436,
+    421,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.01955890655517578,
+    0.2342240810394287,
+    0.40613389015197754,
+    0.0015652179718017578,
+    0.24666786193847656,
+    0.13567805290222168,
+    0.1821279525756836,
+    0.14188599586486816,
+    0.08522701263427734,
+    0.14185404777526855,
+    0.08601808547973633,
+    0.13611888885498047,
+    0.023526906967163086,
+    0.014168024063110352,
+    0.0
+  ]
+}

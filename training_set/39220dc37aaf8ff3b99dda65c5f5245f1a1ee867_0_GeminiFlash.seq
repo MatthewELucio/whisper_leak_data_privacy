@@ -1,0 +1,37 @@
+{
+  "local_port": 41564,
+  "remote_port": 443,
+  "prompt": "How does a half moon happen?",
+  "response": "A half moon happens because of the relative positions of the Sun, Earth, and Moon. Here's a breakdown:\n\n*   **The Moon doesn't produce its own light:** We see the Moon because it reflects sunlight.\n\n*   **The Moon orbits the Earth:** As the Moon orbits us, different amounts of its sunlit surface become visible from Earth.\n\n*   **Halfway through the cycle:** When the Moon is roughly at a right angle (90 degrees) to the Earth relative to the Sun, we see half of the Moon illuminated and half in shadow. This occurs twice during each lunar cycle:\n\n    *   **First Quarter Moon:** This happens about a week after the New Moon. The right half of the Moon appears lit.\n\n    *   **Third Quarter Moon:** This happens about a week after the Full Moon. The left half of the Moon appears lit.\n\n**In summary:** A half moon occurs when we see exactly half of the Moon's sunlit surface from Earth, a position that is reached twice in the lunar cycle at the first and third quarter phases.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    119,
+    344,
+    335,
+    247,
+    305,
+    264,
+    337,
+    229,
+    157,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.046511173248291016,
+    0.2703278064727783,
+    0.0013511180877685547,
+    0.14044809341430664,
+    0.08001899719238281,
+    0.1260688304901123,
+    0.19512510299682617,
+    0.21301794052124023,
+    0.2513859272003174,
+    0.15587615966796875,
+    0.00989985466003418,
+    0.0,
+    0.00041103363037109375
+  ]
+}

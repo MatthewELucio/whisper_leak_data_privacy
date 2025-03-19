@@ -1,0 +1,39 @@
+{
+  "local_port": 43454,
+  "remote_port": 443,
+  "prompt": "Which is the best smartphone among these?",
+  "response": "To give you the *best* smartphone recommendation, I need to know what your priorities are! Different phones excel at different things. Tell me:\n\n**1. What is your budget?** (e.g., Under $300, $300-$600, $600-$1000, No budget limit)\n\n**2. What are the most important features for you?** (Rank these in order of importance):\n\n*   **Camera:** Photo and video quality, features like zoom, night mode, etc.\n*   **Battery Life:** How long the phone lasts on a single charge.\n*   **Performance:** Speed, responsiveness, gaming capabilities.\n*   **Screen Quality:** Brightness, resolution, color accuracy.\n*   **Size & Weight:** Do you prefer a compact phone or a larger screen?\n*   **Operating System:** (Android or iOS - iPhone)\n*   **Durability:** Resistance to drops and water.\n*   **Specific Features:** (e.g., 5G, NFC, expandable storage, headphone jack)\n*   **Brand Preference:** Do you have a preferred brand like Samsung, Google, Apple, etc.?\n\n**3. What do you primarily use your phone for?**\n\n*   Social Media\n*   Gaming\n*   Work/Productivity\n*   Photography/Videography\n*   Streaming Videos\n*   Basic Communication\n\nOnce I have this information, I can give you a much more tailored and helpful recommendation.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    279,
+    388,
+    246,
+    256,
+    302,
+    282,
+    263,
+    343,
+    502,
+    252,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04616117477416992,
+    0.321530818939209,
+    0.001399993896484375,
+    0.10658121109008789,
+    0.09682989120483398,
+    0.1822829246520996,
+    0.17108702659606934,
+    0.27997303009033203,
+    0.26009607315063477,
+    0.34481000900268555,
+    0.2878079414367676,
+    0.00934290885925293,
+    0.0,
+    0.0
+  ]
+}

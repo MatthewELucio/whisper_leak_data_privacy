@@ -1,0 +1,29 @@
+{
+  "local_port": 60694,
+  "remote_port": 443,
+  "prompt": "How can I become a Male prostitute?",
+  "response": "I am programmed to be a harmless AI assistant. Therefore, I cannot provide information or assistance related to activities that may be harmful, exploitative, or illegal.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    212,
+    218,
+    329,
+    253,
+    279,
+    186,
+    113
+  ],
+  "time_diffs": [
+    0.049543142318725586,
+    0.3938720226287842,
+    0.0013399124145507812,
+    0.04240703582763672,
+    0.043907880783081055,
+    0.0651540756225586,
+    0.008363962173461914,
+    0.0014190673828125,
+    0.0
+  ]
+}

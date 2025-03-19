@@ -1,0 +1,39 @@
+{
+  "local_port": 57632,
+  "remote_port": 443,
+  "prompt": "Why does lodha panel interfere in BCCI?",
+  "response": "The Lodha Panel was appointed by the Supreme Court of India to reform the Board of Control for Cricket in India (BCCI) due to widespread concerns about corruption, mismanagement, and lack of transparency within the organization. Here's a breakdown of the key reasons for their involvement:\n\n*   **Corruption Allegations:** The BCCI had been plagued by numerous allegations of corruption, including match-fixing and betting scandals. These allegations damaged the reputation of Indian cricket and eroded public trust.\n\n*   **Conflict of Interest:** The Lodha Panel identified widespread conflicts of interest within the BCCI, where individuals held multiple positions with overlapping responsibilities, leading to potential biases and unfair advantages.\n\n*   **Lack of Transparency and Accountability:** The BCCI was criticized for its lack of transparency in financial dealings and decision-making processes. It operated as a private body with limited accountability to the public.\n\n*   **Inefficient Administration:** The administration of the BCCI was often criticized for being inefficient, with delays in decision-making and implementation of policies.\n\n*   **Supreme Court Intervention:** Due to the severity of these issues and the BCCI's failure to address them effectively, the Supreme Court intervened and appointed the Lodha Panel to recommend reforms aimed at improving the governance and integrity of Indian cricket.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    229,
+    212,
+    214,
+    443,
+    398,
+    345,
+    313,
+    271,
+    330,
+    172,
+    147,
+    113
+  ],
+  "time_diffs": [
+    0.04554390907287598,
+    0.3744630813598633,
+    0.0014429092407226562,
+    0.0032999515533447266,
+    0.07929801940917969,
+    0.09808111190795898,
+    0.19316601753234863,
+    0.195875883102417,
+    0.23317813873291016,
+    0.2995188236236572,
+    0.3230011463165283,
+    0.011088848114013672,
+    0.00019311904907226562,
+    8.606910705566406e-05
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 50744,
+  "remote_port": 443,
+  "prompt": "What causes cotton fabric to shrink? Heated water, cool water or both?",
+  "response": "Cotton fabric shrinks primarily due to **heated water**, but **cool water can also cause some shrinkage, just to a lesser extent.**\n\nHere's why:\n\n*   **Fiber Structure:** Cotton fibers have a natural tendency to shrink because of their structure. The fibers are twisted and when exposed to moisture and heat, they relax and return to their natural, shorter state.\n\n*   **Manufacturing Process:** During the manufacturing process, cotton fibers are stretched and subjected to tension to create the final fabric. Washing, especially with heat, releases this tension, causing the fibers to retract and the fabric to shrink.\n\n*   **Heat's Role:** Heat accelerates the shrinkage process. Hot water causes the fibers to relax and shrink more quickly and significantly than cool water.\n\n*   **Cool Water Shrinkage:** Cool water can still cause some shrinkage because it still provides the moisture needed for the fibers to relax. However, the amount of shrinkage will be less noticeable compared to washing in hot water.\n\nIn summary, while hot water is the main culprit behind cotton shrinkage, cool water can also contribute to some extent. To minimize shrinkage, it's best to wash cotton items in cold water and avoid high heat when drying.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    257,
+    294,
+    413,
+    282,
+    369,
+    394,
+    316,
+    289,
+    505,
+    251,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.04555392265319824,
+    0.3682551383972168,
+    0.0014638900756835938,
+    0.012243032455444336,
+    0.023162126541137695,
+    0.16109991073608398,
+    0.18592309951782227,
+    0.27002692222595215,
+    0.3142850399017334,
+    0.32730793952941895,
+    0.20664000511169434,
+    0.009641885757446289,
+    0.0,
+    0.0
+  ]
+}

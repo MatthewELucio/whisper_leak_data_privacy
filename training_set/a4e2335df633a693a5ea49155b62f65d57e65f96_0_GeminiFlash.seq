@@ -1,0 +1,35 @@
+{
+  "local_port": 46950,
+  "remote_port": 443,
+  "prompt": "How many jobs would increased border security and a border wall being built make?",
+  "response": "It is difficult to provide a precise number for the jobs that would be created by increased border security and the construction of a border wall. Estimates vary widely and depend on numerous factors, including the scope and scale of the projects, the technology used, the materials sourced, and the duration of the construction and security enhancements.\n\nSome reports suggest that a border wall project could create thousands of jobs in construction, engineering, and manufacturing. Additionally, increased border security measures could lead to jobs in law enforcement, surveillance technology, and related support services.\n\nHowever, other analyses argue that these job gains might be offset by job losses in other sectors, such as those that rely on cross-border trade and labor. Furthermore, the economic impact of reduced immigration on various industries could also affect employment levels.\n\nIt is important to consider that the actual number of jobs created would depend on the specific policies implemented and the economic conditions at the time.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1395,
+    165,
+    264,
+    258,
+    473,
+    432,
+    324,
+    316,
+    251,
+    213,
+    113
+  ],
+  "time_diffs": [
+    0.046595096588134766,
+    0.3243539333343506,
+    0.026784896850585938,
+    0.057348012924194336,
+    0.12011194229125977,
+    0.22368502616882324,
+    0.2029891014099121,
+    0.29286694526672363,
+    0.23107004165649414,
+    0.008779048919677734,
+    0.0,
+    0.0
+  ]
+}

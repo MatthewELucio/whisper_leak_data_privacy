@@ -1,0 +1,37 @@
+{
+  "local_port": 48204,
+  "remote_port": 443,
+  "prompt": "How does a penis become erect?",
+  "response": "Erection is a complex process involving the brain, nerves, hormones, muscles, and blood vessels. Here's a simplified overview:\n\n1.  **Stimulation:** Sexual thoughts, visual stimuli, or physical contact can trigger the process. This stimulation sends signals from the brain to the nerves in the penis.\n2.  **Nerve Signals:** The nerves release neurotransmitters, including nitric oxide, which relax the smooth muscles in the arteries of the penis.\n3.  **Blood Flow Increase:** The relaxed arteries allow more blood to flow into the two spongy chambers called the corpora cavernosa and the corpus spongiosum within the penis.\n4.  **Engorgement:** As the chambers fill with blood, they expand. The expanding corpora cavernosa compress the veins that normally drain blood from the penis.\n5.  **Erection:** With more blood flowing in and less flowing out, the penis becomes firm and erect. The corpus spongiosum also fills with blood, preventing the urethra from being pinched closed, which allows for ejaculation.\n6.  **Resolution:** After orgasm or when stimulation ceases, the nerve signals decrease, the arteries constrict, and blood flow to the penis decreases. The blood then drains out of the penis, and it returns to its flaccid state.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    244,
+    211,
+    282,
+    316,
+    369,
+    433,
+    278,
+    522,
+    275,
+    143,
+    113
+  ],
+  "time_diffs": [
+    0.04461097717285156,
+    0.3170440196990967,
+    0.0010790824890136719,
+    0.10680699348449707,
+    0.09911108016967773,
+    0.18591880798339844,
+    0.15429902076721191,
+    0.26882314682006836,
+    0.311201810836792,
+    0.4454619884490967,
+    0.014765024185180664,
+    0.0,
+    0.0
+  ]
+}

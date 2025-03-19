@@ -1,0 +1,43 @@
+{
+  "local_port": 49292,
+  "remote_port": 443,
+  "prompt": "Will Northern Ireland have an independence referendum after the Brexit vote?",
+  "response": "The question of a potential independence referendum in Northern Ireland following Brexit is complex and multifaceted. Here's a breakdown of the key factors:\n\n*   **Brexit Impact:** Brexit has undoubtedly heightened the debate around Northern Ireland's constitutional status. The majority in Northern Ireland voted to remain in the EU, and Brexit has created economic and political challenges, particularly regarding the border with the Republic of Ireland.\n\n*   **The Good Friday Agreement:** The Good Friday Agreement (GFA) provides a framework for Northern Ireland's constitutional future. It states that Northern Ireland will remain part of the United Kingdom unless a majority of its people vote otherwise in a referendum.\n\n*   **Demographic and Political Shifts:** There have been shifts in demographics and political representation in recent years. Nationalist parties, who generally favor Irish reunification, have gained ground. Sinn F\u00e9in became the largest party in the Northern Ireland Assembly for the first time in the 2022 election.\n\n*   **Public Opinion:** Opinion polls on Irish reunification have shown varying results. Some polls suggest increasing support for reunification, while others indicate that a majority still prefer to remain in the UK. The specific wording of the referendum question and the prevailing political and economic context can influence poll results.\n\n*   **Role of the UK Government:** Under the GFA, the UK government has the power to call a border poll (referendum on Irish unity) if it appears likely that a majority would vote in favor of leaving the UK and joining a united Ireland. However, the agreement does not define the specific criteria for determining when such a likelihood exists.\n\n*   **Economic Considerations:** The economic implications of reunification are a significant factor in the debate. There are questions about currency, taxation, public services, and the potential impact on trade and investment.\n\n**In Conclusion:**\n\nWhile Brexit has fueled the discussion about Northern Ireland's future and there have been demographic and political shifts, there is no guarantee of an imminent independence referendum. The UK government ultimately decides when to call a border poll, and it is likely to consider a range of factors, including public opinion, political stability, and the potential economic consequences, before making a decision. Public opinion remains divided on the issue, with shifting allegiances.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1333,
+    204,
+    265,
+    315,
+    371,
+    374,
+    506,
+    303,
+    338,
+    390,
+    493,
+    499,
+    211,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.04657578468322754,
+    0.43019604682922363,
+    0.00345611572265625,
+    0.07649397850036621,
+    0.07686495780944824,
+    0.22318291664123535,
+    0.15710711479187012,
+    0.24873900413513184,
+    0.30039501190185547,
+    0.4497559070587158,
+    0.42265796661376953,
+    0.347912073135376,
+    0.362699031829834,
+    0.008155107498168945,
+    0.0,
+    0.0
+  ]
+}

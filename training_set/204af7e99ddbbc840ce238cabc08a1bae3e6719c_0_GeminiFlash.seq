@@ -1,0 +1,41 @@
+{
+  "local_port": 56148,
+  "remote_port": 443,
+  "prompt": "Why isn't Snoop Dogg arrested for smoking marijuana?",
+  "response": "Snoop Dogg's relationship with marijuana and the legal consequences, or lack thereof, are a bit complex and have evolved over time due to a few factors:\n\n*   **Changing Laws:** Marijuana laws have been changing rapidly in the United States and around the world. Many states have legalized marijuana for recreational or medical use. In these states, possessing or using marijuana within the legal limits is not a crime.\n\n*   **Location Matters:** If Snoop Dogg is in a state or country where marijuana is legal, he is not breaking the law by smoking it.\n\n*   **Private vs. Public Use:** Even in places where marijuana is legal, there may be restrictions on where it can be used. Smoking in public might be prohibited, even if possession is legal.\n\n*   **Medical Marijuana:** In some cases, individuals may have a medical marijuana card that allows them to use marijuana for medical purposes, even in states where it is not fully legal.\n\n*   **Discretion:** Law enforcement sometimes exercises discretion, especially in cases involving minor offenses. An officer might choose to issue a warning rather than make an arrest, particularly if the person is cooperative and the situation is not causing harm to others.\n\n*   **Privacy:** What Snoop Dogg does in his private residence is generally not subject to legal action unless it violates specific local ordinances (e.g., noise complaints, creating a public nuisance).\n\nIt's important to note that I don't have real-time information on Snoop Dogg's current activities or legal status. The information above is based on general legal principles and common knowledge about marijuana laws.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    253,
+    284,
+    408,
+    447,
+    484,
+    461,
+    297,
+    317,
+    486,
+    500,
+    135,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.04551887512207031,
+    0.44623899459838867,
+    0.0013301372528076172,
+    0.015457868576049805,
+    0.12026715278625488,
+    0.08000802993774414,
+    0.23699498176574707,
+    0.23015689849853516,
+    0.3570590019226074,
+    0.3723909854888916,
+    0.384782075881958,
+    0.4239530563354492,
+    0.0077550411224365234,
+    0.0,
+    0.0003039836883544922
+  ]
+}

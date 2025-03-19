@@ -1,0 +1,41 @@
+{
+  "local_port": 41014,
+  "remote_port": 443,
+  "prompt": "How long can a milkshake last out of the fridge?",
+  "response": "A milkshake's lifespan outside the fridge is unfortunately pretty short. **It's generally best to consume a milkshake within 1-2 hours if it's left at room temperature (around 70\u00b0F or 21\u00b0C).**\n\nHere's why:\n\n*   **Dairy Products:** Milkshakes are primarily made with dairy products (milk and ice cream), which are prone to bacterial growth when left at room temperature.\n*   **Temperature Danger Zone:** Bacteria multiply rapidly in the \"temperature danger zone,\" which is between 40\u00b0F (4\u00b0C) and 140\u00b0F (60\u00b0C). Milkshakes fall squarely into this range when left out.\n*   **Ingredients:** Other ingredients like fruit, syrups, or whipped cream can also contribute to spoilage.\n\n**After 2 hours, the risk of bacterial contamination increases significantly, which could lead to food poisoning.** You might not be able to see or smell the spoilage, but the bacteria could still be present.\n\n**Factors that might affect the spoilage rate:**\n\n*   **Ambient Temperature:** A hot day will cause it to spoil much faster.\n*   **Ingredients:** Some ingredients spoil faster than others.\n*   **Hygiene:** How clean the milkshake was prepared.\n\n**In summary, to be safe, don't leave a milkshake out of the fridge for more than 1-2 hours. If in doubt, throw it out!**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    212,
+    149,
+    325,
+    203,
+    320,
+    309,
+    374,
+    403,
+    300,
+    339,
+    230,
+    216,
+    113
+  ],
+  "time_diffs": [
+    0.05128908157348633,
+    0.3944849967956543,
+    9.393692016601562e-05,
+    0.05793190002441406,
+    0.06091499328613281,
+    0.03207206726074219,
+    0.24409103393554688,
+    0.1820240020751953,
+    0.24618291854858398,
+    0.2862861156463623,
+    0.47168397903442383,
+    0.18896698951721191,
+    0.008067846298217773,
+    0.0,
+    0.0
+  ]
+}

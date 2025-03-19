@@ -1,0 +1,35 @@
+{
+  "local_port": 55560,
+  "remote_port": 443,
+  "prompt": "How do you block someone on Quora?",
+  "response": "Blocking someone on Quora is pretty straightforward:\n\n1.  **Navigate to their profile:** Find the person you want to block by searching for their name or encountering their content in your feed. Click on their name to go to their Quora profile.\n\n2.  **Click the three dots:** On their profile page, look for a small menu represented by three dots (usually located near the top right corner of their profile).\n\n3.  **Select \"Block\":** Click on the three dots, and a dropdown menu should appear. One of the options will be \"Block.\" Click on \"Block.\"\n\n4.  **Confirm:** A confirmation window will pop up asking if you're sure you want to block the person. Confirm your choice.\n\nThat's it! The person is now blocked. They will no longer be able to follow you, see your answers, upvote or downvote your content, send you messages, or interact with you on Quora in any way. They will also be unable to see your profile.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1333,
+    225,
+    409,
+    414,
+    330,
+    378,
+    400,
+    314,
+    230,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.045886993408203125,
+    0.29906606674194336,
+    0.13108086585998535,
+    0.0809330940246582,
+    0.17609691619873047,
+    0.17081093788146973,
+    0.23612213134765625,
+    0.33304405212402344,
+    0.06823897361755371,
+    0.0070989131927490234,
+    0.0,
+    0.0
+  ]
+}

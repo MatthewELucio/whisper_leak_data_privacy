@@ -1,0 +1,41 @@
+{
+  "local_port": 51678,
+  "remote_port": 443,
+  "prompt": "How can I watch the Shorty Awards on TV in the US?",
+  "response": "Unfortunately, the Shorty Awards are **not typically broadcast on traditional television**. \n\nHere's how they are usually presented and how you can watch them:\n\n*   **Online Streaming:** The most common way to watch the Shorty Awards is through **online streaming platforms**. They often stream the ceremony live on platforms like:\n    *   **YouTube:** Check the Shorty Awards official YouTube channel.\n    *   **Shorty Awards Website:** Keep an eye on the official Shorty Awards website. They often embed the livestream directly on their site.\n    *   **Social Media:** Sometimes, they might stream or share clips on platforms like X (formerly Twitter), Facebook, and Twitch.\n\n*   **Past Events on YouTube:** Search on YouTube for \"Shorty Awards [Year]\". You can often find full recordings of previous award ceremonies.\n\n**To find the most up-to-date information for the current year's awards:**\n\n1.  **Visit the Official Shorty Awards Website:** This is your best source for the official schedule and streaming links: shortyawards.com\n2.  **Follow Their Social Media:** Follow the Shorty Awards on platforms like X, Instagram, Facebook, and TikTok for announcements and updates.\n\n**In summary, don't expect to find the Shorty Awards on your regular TV channels. Focus on looking for live streams and recordings online.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    175,
+    142,
+    233,
+    416,
+    299,
+    273,
+    428,
+    458,
+    428,
+    272,
+    276,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.04776406288146973,
+    0.4065828323364258,
+    0.0013589859008789062,
+    0.0032880306243896484,
+    0.0732259750366211,
+    0.126082181930542,
+    0.15699291229248047,
+    0.19081902503967285,
+    0.27353501319885254,
+    0.24939298629760742,
+    0.38814496994018555,
+    0.14384794235229492,
+    0.011028051376342773,
+    0.0,
+    0.0
+  ]
+}

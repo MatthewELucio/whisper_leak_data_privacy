@@ -1,0 +1,29 @@
+{
+  "local_port": 45832,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law absolutely prohibits money laundering.  Virtually every developed nation has laws against it.  These laws are often very complex and have significant penalties for those convicted.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    272,
+    231,
+    268,
+    292,
+    291,
+    125,
+    113
+  ],
+  "time_diffs": [
+    0.04633808135986328,
+    0.35251402854919434,
+    0.001338958740234375,
+    0.012310981750488281,
+    0.0862569808959961,
+    0.1340348720550537,
+    0.012000083923339844,
+    0.0015649795532226562,
+    0.0
+  ]
+}

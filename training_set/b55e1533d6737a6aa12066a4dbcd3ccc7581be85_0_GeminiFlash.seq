@@ -1,0 +1,35 @@
+{
+  "local_port": 53094,
+  "remote_port": 443,
+  "prompt": "Who is best hockey player of 2015?",
+  "response": "The consensus best hockey player of 2015 was **Sidney Crosby**.\n\nHere's why:\n\n*   **Individual Performance:** While the Penguins didn't have a deep playoff run, Crosby was still an elite performer. He consistently ranked among the league's top scorers and was a dominant force on the ice.\n*   **Hart Trophy (MVP):** While Carey Price won the Hart Trophy in 2015, Crosby was still considered a top candidate and was coming off winning the award the year before.\n*   **Overall Impact:** Crosby's impact on the game goes beyond just stats. He's a leader, a playmaker, and a player who elevates the performance of those around him.\n\nWhile players like Carey Price (who had an incredible season and won the Vezina and Hart Trophies) were certainly in the conversation, Crosby's sustained excellence and overall talent generally placed him at the top of the list.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1452,
+    208,
+    279,
+    299,
+    289,
+    273,
+    359,
+    375,
+    287,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.05484795570373535,
+    0.40898799896240234,
+    0.04387784004211426,
+    0.053922176361083984,
+    0.1421220302581787,
+    0.19518589973449707,
+    0.2060070037841797,
+    0.2707340717315674,
+    0.26236891746520996,
+    0.009479045867919922,
+    0.0,
+    0.0
+  ]
+}

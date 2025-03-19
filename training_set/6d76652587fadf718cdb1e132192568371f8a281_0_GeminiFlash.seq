@@ -1,0 +1,31 @@
+{
+  "local_port": 34100,
+  "remote_port": 443,
+  "prompt": "Who invented the first touch screen phone? By which company? Where?",
+  "response": "The first touch screen phone was the **IBM Simon Personal Communicator**. It was invented by **IBM** and prototyped in **1992**. It was released to the public in **1994**, sold by **BellSouth Cellular** in the **United States**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    210,
+    192,
+    326,
+    327,
+    413,
+    233,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04964709281921387,
+    0.3850829601287842,
+    0.0014958381652832031,
+    0.0,
+    0.10732102394104004,
+    0.07608699798583984,
+    0.13917016983032227,
+    0.0058460235595703125,
+    0.0016398429870605469,
+    0.0015320777893066406
+  ]
+}

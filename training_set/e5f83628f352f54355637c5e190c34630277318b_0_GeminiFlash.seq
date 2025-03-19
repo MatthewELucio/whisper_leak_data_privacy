@@ -1,0 +1,35 @@
+{
+  "local_port": 58972,
+  "remote_port": 443,
+  "prompt": "Which species of snake is this?",
+  "response": "To identify the snake, I need a bit more information! Please provide me with one or more of the following:\n\n*   **A picture or video of the snake.** This is the most helpful thing you can provide.\n*   **A detailed description of the snake's appearance:**\n    *   Color and pattern (e.g., stripes, spots, blotches, bands)\n    *   Size (approximate length)\n    *   Head shape (e.g., triangular, round)\n    *   Scale texture (e.g., smooth, keeled/ridged)\n*   **The snake's location:** Knowing the geographic location where the snake was found is crucial, as snake species vary widely by region. (e.g., \"Found in my backyard in central Texas\")\n*   **Habitat**: What environment the snake was found in. (e.g., forest, desert, grassland, near water)\n\nOnce I have this information, I'll do my best to identify the species of snake.\n\n**Important Safety Note:** If you are unsure of a snake's species, it's best to keep a safe distance and avoid handling it. Some snakes are venomous, and it's crucial to prioritize your safety.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1381,
+    278,
+    325,
+    282,
+    268,
+    328,
+    380,
+    422,
+    166,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.046777963638305664,
+    0.24608707427978516,
+    0.09588098526000977,
+    0.09858107566833496,
+    0.18452095985412598,
+    0.18302202224731445,
+    0.28405094146728516,
+    0.29610586166381836,
+    0.29293322563171387,
+    0.007879972457885742,
+    0.0,
+    0.0
+  ]
+}

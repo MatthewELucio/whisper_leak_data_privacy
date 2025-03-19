@@ -1,0 +1,29 @@
+{
+  "local_port": 35268,
+  "remote_port": 443,
+  "prompt": "Can a gay man fall in love with a woman?",
+  "response": "While it's less common, it's possible for someone who identifies as gay to fall in love with a woman. Sexuality is complex and can be fluid for some people. Some individuals may identify as gay but still experience attraction to women, or their attractions may evolve over time. It's also important to remember that attraction and love aren't always the same thing.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1384,
+    410,
+    404,
+    247,
+    380,
+    145,
+    125,
+    113
+  ],
+  "time_diffs": [
+    0.048922061920166016,
+    0.4380190372467041,
+    0.10085892677307129,
+    0.09704899787902832,
+    0.2130119800567627,
+    0.05012702941894531,
+    0.008139848709106445,
+    0.0016770362854003906,
+    0.0
+  ]
+}

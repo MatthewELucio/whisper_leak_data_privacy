@@ -1,0 +1,35 @@
+{
+  "local_port": 46322,
+  "remote_port": 443,
+  "prompt": "Where can I get COMSOL Multiphysics full version software?",
+  "response": "You can obtain the full version of COMSOL Multiphysics software through these official channels:\n\n*   **COMSOL Website:** This is the primary source for obtaining COMSOL software. You can request a quote or contact sales directly through their website (www.comsol.com).\n\n*   **COMSOL Sales Representatives:** COMSOL has sales offices and representatives located worldwide. You can find contact information for your local representative on the COMSOL website.\n\n*   **COMSOL Certified Consultants:** Some COMSOL Certified Consultants may also be authorized to provide software licenses. Check with COMSOL directly for a list of authorized consultants in your area.\n\nIt's very important to obtain COMSOL through legitimate channels to ensure you receive genuine software, valid licenses, and access to official support and updates. Using cracked or pirated versions can expose your system to security risks, malware, and legal issues.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1389,
+    159,
+    256,
+    384,
+    358,
+    307,
+    439,
+    303,
+    244,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.046244144439697266,
+    0.5327398777008057,
+    0.014641046524047852,
+    0.06498193740844727,
+    0.07318305969238281,
+    0.1810600757598877,
+    0.1559278964996338,
+    0.28995704650878906,
+    0.24483394622802734,
+    0.01000213623046875,
+    0.0,
+    0.0
+  ]
+}

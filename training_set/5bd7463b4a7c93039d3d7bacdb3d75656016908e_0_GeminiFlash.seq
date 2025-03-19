@@ -1,0 +1,35 @@
+{
+  "local_port": 54232,
+  "remote_port": 443,
+  "prompt": "Is World War 3 more imminent than expected?",
+  "response": "Tensions are definitely high in a few different parts of the world right now. We've got the ongoing conflict in Ukraine, which has involved a lot of international players and raised concerns about escalation. Then there's the situation in the Middle East, with the Israel-Hamas conflict and its potential to draw in other countries and groups. And let's not forget the increasing competition between the US and China, which plays out in trade, technology, and geopolitics.\n\nExperts have differing opinions on how close we are to a major global conflict. Some believe the risk is higher than it's been in decades, pointing to the breakdown of international norms and the rise of nationalism. Others argue that the interconnectedness of the global economy and the potential for mutually assured destruction still act as strong deterrents. It's a complex picture with a lot of uncertainty.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    139,
+    361,
+    238,
+    274,
+    252,
+    416,
+    286,
+    219,
+    197,
+    113
+  ],
+  "time_diffs": [
+    0.04786181449890137,
+    0.2908501625061035,
+    0.00011491775512695312,
+    0.12104296684265137,
+    0.08521103858947754,
+    0.1747589111328125,
+    0.21003103256225586,
+    0.37401914596557617,
+    0.16729497909545898,
+    0.007526874542236328,
+    0.0,
+    0.0
+  ]
+}

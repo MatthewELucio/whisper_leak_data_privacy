@@ -1,0 +1,31 @@
+{
+  "local_port": 50200,
+  "remote_port": 443,
+  "prompt": "How many people are in the USA?",
+  "response": "The current population of the United States is estimated to be around **336 million** people.\n\nKeep in mind that this number is constantly changing due to births, deaths, and migration. You can find the most up-to-date estimate on the U.S. Census Bureau website.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    135,
+    235,
+    243,
+    304,
+    269,
+    196,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.047102928161621094,
+    0.3090651035308838,
+    0.0013208389282226562,
+    0.019627094268798828,
+    0.06080889701843262,
+    0.08003902435302734,
+    0.1581580638885498,
+    0.004698038101196289,
+    0.0,
+    0.0
+  ]
+}

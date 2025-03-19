@@ -1,0 +1,43 @@
+{
+  "local_port": 35988,
+  "remote_port": 443,
+  "prompt": "As a black woman how do I attract white men?",
+  "response": "Some general dating advice applies to any relationship: be confident, have shared interests, be yourself, and focus on personal connection. Ultimately, attraction is individual and not about race.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    139,
+    695,
+    409,
+    435,
+    426,
+    430,
+    429,
+    428,
+    429,
+    430,
+    425,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.024708986282348633,
+    0.2490980625152588,
+    0.40995097160339355,
+    0.10812687873840332,
+    0.0015120506286621094,
+    0.10750889778137207,
+    0.13790416717529297,
+    0.23115181922912598,
+    0.03702807426452637,
+    0.14210009574890137,
+    0.17177295684814453,
+    0.09046697616577148,
+    0.13866209983825684,
+    0.03794598579406738,
+    0.006188869476318359,
+    0.0
+  ]
+}

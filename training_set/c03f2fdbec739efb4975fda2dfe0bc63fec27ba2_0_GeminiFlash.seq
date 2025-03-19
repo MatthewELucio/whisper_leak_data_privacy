@@ -1,0 +1,35 @@
+{
+  "local_port": 51416,
+  "remote_port": 443,
+  "prompt": "How do you say \"thank you\" in your language?",
+  "response": "As a large language model, I don't have a native language in the same way a person does. However, I am trained on a massive dataset of text and code that includes many languages.\n\nThe most common way to say \"thank you\" that I would use is **\"Thank you.\"**\n\nBut, because I can speak many languages, here are a few other ways to say \"thank you\":\n\n*   **Spanish:** Gracias\n*   **French:** Merci\n*   **German:** Danke\n*   **Italian:** Grazie\n*   **Japanese:** \u3042\u308a\u304c\u3068\u3046 (Arigatou)\n*   **Chinese (Mandarin):** \u8c22\u8c22 (Xi\u00e8xi\u00e8)\n*   **Russian:** \u0421\u043f\u0430\u0441\u0438\u0431\u043e (Spasibo)\n\nEssentially, I can express gratitude in whichever language you prefer!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    290,
+    421,
+    374,
+    258,
+    385,
+    324,
+    294,
+    261,
+    136,
+    113
+  ],
+  "time_diffs": [
+    0.05804610252380371,
+    0.4117400646209717,
+    0.0014009475708007812,
+    0.08568000793457031,
+    0.07074189186096191,
+    0.19837498664855957,
+    0.16493511199951172,
+    0.23301100730895996,
+    0.10529708862304688,
+    0.006447792053222656,
+    0.00044918060302734375,
+    0.0
+  ]
+}

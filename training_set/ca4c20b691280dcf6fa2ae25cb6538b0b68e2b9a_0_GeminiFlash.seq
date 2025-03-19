@@ -1,0 +1,41 @@
+{
+  "local_port": 51040,
+  "remote_port": 443,
+  "prompt": "What is the difference between straight leg jeans and tapered leg jeans?",
+  "response": "The main difference between straight leg jeans and tapered leg jeans lies in the shape of the leg from the thigh down to the ankle. Here's a breakdown:\n\n**Straight Leg Jeans:**\n\n*   **Shape:** The leg opening has approximately the same width from the thigh down to the ankle. It's essentially a straight line.\n*   **Fit:** Offers a more relaxed, uniform fit down the leg.\n*   **Visual:** Creates a more balanced, classic, and sometimes more casual look.\n\n**Tapered Leg Jeans:**\n\n*   **Shape:** The leg gradually narrows from the thigh down to the ankle. The ankle opening is noticeably smaller than the thigh.\n*   **Fit:** More fitted around the lower leg and ankle.\n*   **Visual:** Creates a more streamlined, modern, and sometimes more dressy look. The taper can also help accentuate the shape of the legs (depending on how dramatic the taper is).\n\n**Here's a simple analogy:**\n\n*   **Straight Leg:** Think of a ruler - the width stays consistent.\n*   **Tapered Leg:** Think of an ice cream cone - it gets narrower towards the bottom.\n\n**In summary:** Straight leg jeans maintain a consistent width down the leg, while tapered jeans narrow as they approach the ankle. This difference in shape affects the fit and overall look of the jeans.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    141,
+    219,
+    275,
+    238,
+    412,
+    281,
+    422,
+    326,
+    274,
+    188,
+    146,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.04631805419921875,
+    0.3594999313354492,
+    0.0023949146270751953,
+    0.052375078201293945,
+    0.037188053131103516,
+    0.07072782516479492,
+    0.17525100708007812,
+    0.22325420379638672,
+    0.24945592880249023,
+    0.2402510643005371,
+    0.38031697273254395,
+    0.07437300682067871,
+    0.01518702507019043,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

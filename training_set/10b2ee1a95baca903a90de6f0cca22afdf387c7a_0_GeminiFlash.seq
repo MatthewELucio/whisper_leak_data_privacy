@@ -1,0 +1,33 @@
+{
+  "local_port": 41718,
+  "remote_port": 443,
+  "prompt": "Who is your least favorite character from Big Bang Theory? If there is any,why?",
+  "response": "As a large language model, I don't have personal opinions or preferences, so I can't have a \"least favorite\" character.\n\nHowever, I can tell you that **Sheldon Cooper** is a character that often polarizes viewers. While many find his eccentricities and social awkwardness hilarious and endearing, others find him to be arrogant, insensitive, and difficult to relate to. His treatment of others, particularly his friends, can sometimes be seen as selfish and inconsiderate.\n\nUltimately, whether someone likes or dislikes a character like Sheldon is subjective and depends on their individual sense of humor and what they look for in a character.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1283,
+    187,
+    296,
+    392,
+    325,
+    467,
+    295,
+    258,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.04390597343444824,
+    0.38477015495300293,
+    0.0038080215454101562,
+    0.07243990898132324,
+    0.06176304817199707,
+    0.1802048683166504,
+    0.1348710060119629,
+    0.1881120204925537,
+    0.008082151412963867,
+    0.001422882080078125,
+    0.0
+  ]
+}

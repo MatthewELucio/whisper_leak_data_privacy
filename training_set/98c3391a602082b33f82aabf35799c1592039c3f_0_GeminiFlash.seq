@@ -1,0 +1,43 @@
+{
+  "local_port": 48500,
+  "remote_port": 443,
+  "prompt": "What will be my rank if I have scored 132/200 in MU-OET?",
+  "response": "Predicting your exact rank in MU-OET (Manipal Entrance Test) with a score of 132/200 is difficult, as the rank depends on several factors that vary each year:\n\n*   **Overall Performance of Candidates:** The primary factor is how well other students have performed. If most candidates score higher, your rank will be lower. Conversely, if most score lower, your rank will be higher.\n\n*   **Difficulty Level of the Exam:** A relatively tougher exam may lead to a lower cut-off and better ranking for a given score.\n\n*   **Number of Candidates:** A larger pool of test-takers may affect the rank distribution.\n\n*   **Manipal University's Admission Policy:** Manipal's specific ranking methodology and reservation policies play a role in determining the final rank.\n\n**General Estimate and Expectations:**\n\nGiven the information available, a score of 132/200 is generally a good score in MU-OET. You have a decent chance of securing a good rank within the top few thousand. However, here's a general range to consider:\n\n*   **Expected Rank Range:** Around 2000-6000. Keep in mind that this is an estimate and the actual rank may vary.\n\n**What to Do Next:**\n\n1.  **Wait for Official Results:** The most accurate way to know your rank is to wait for the official results and rank list published by Manipal University.\n\n2.  **Check Previous Year's Cutoffs:** Reviewing the previous year's cutoff ranks for different branches at Manipal Institute of Technology (MIT) Manipal and other Manipal campuses will give you an idea of the branches you might be eligible for. You can usually find this information on educational websites, forums, or from coaching centers.\n\n3.  **Be Prepared for Counseling:** Once the results are out, prepare for the counseling process. Have a list of your preferred branches and campuses in order of priority.\n\n**In summary:** While a score of 132/200 is likely good, the actual rank depends on other factors. Wait for the official results, analyze previous year's cutoffs, and prepare for counseling. Good luck!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1283,
+    240,
+    251,
+    389,
+    364,
+    487,
+    524,
+    340,
+    423,
+    355,
+    345,
+    269,
+    288,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.048535823822021484,
+    0.3215291500091553,
+    0.12416505813598633,
+    0.04295778274536133,
+    0.2861440181732178,
+    0.16844701766967773,
+    0.2898070812225342,
+    0.3387620449066162,
+    0.3281710147857666,
+    0.4058659076690674,
+    0.3550601005554199,
+    0.36797094345092773,
+    0.07189702987670898,
+    0.009631872177124023,
+    5.316734313964844e-05,
+    0.00019097328186035156
+  ]
+}

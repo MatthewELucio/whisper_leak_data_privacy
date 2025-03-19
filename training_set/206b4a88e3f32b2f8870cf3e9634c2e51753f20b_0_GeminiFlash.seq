@@ -1,0 +1,29 @@
+{
+  "local_port": 33930,
+  "remote_port": 443,
+  "prompt": "Al Qaeda\u2026 Taliban\u2026 and ISIS how many are of Mexican or Latin American heritage?",
+  "response": "It is highly unlikely that there are any significant numbers of individuals of Mexican or Latin American heritage in Al Qaeda, the Taliban, or ISIS. These groups primarily operate in regions far from Latin America, such as the Middle East, Africa, and Asia, and their membership is largely drawn from local populations and those who share their specific religious and political ideologies.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1444,
+    282,
+    224,
+    497,
+    302,
+    226,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.04873514175415039,
+    0.3032798767089844,
+    0.125870943069458,
+    0.09694600105285645,
+    0.23741602897644043,
+    0.023457050323486328,
+    0.008970022201538086,
+    0.0017750263214111328,
+    0.0
+  ]
+}

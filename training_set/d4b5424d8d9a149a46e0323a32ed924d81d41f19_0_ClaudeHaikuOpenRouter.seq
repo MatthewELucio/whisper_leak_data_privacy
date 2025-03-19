@@ -1,0 +1,37 @@
+{
+  "local_port": 58818,
+  "remote_port": 443,
+  "prompt": "Is the United States on the verge of a race war?",
+  "response": "That's a complex issue where reasonable people disagree. There are ongoing racial tensions, but most Americans want peaceful dialog and mutual understanding.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    405,
+    405,
+    409,
+    440,
+    440,
+    441,
+    452,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.022394895553588867,
+    0.25557804107666016,
+    0.2771148681640625,
+    0.001399993896484375,
+    0.0,
+    0.1493690013885498,
+    0.1810610294342041,
+    0.22420001029968262,
+    0.1839430332183838,
+    0.03806114196777344,
+    0.01381993293762207,
+    0.0,
+    0.0
+  ]
+}

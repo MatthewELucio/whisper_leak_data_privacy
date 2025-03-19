@@ -1,6 +1,6 @@
 __pycache__/
 api_key*.txt
-training_set/
+training_set/*.pcap
 models/
 results/
 *.swp

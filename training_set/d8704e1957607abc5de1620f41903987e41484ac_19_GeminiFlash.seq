@@ -1,0 +1,37 @@
+{
+  "local_port": 53012,
+  "remote_port": 443,
+  "prompt": "Is money laundering a contravention of legal standards?",
+  "response": "Yes, money laundering is a **serious contravention of legal standards** in virtually every country. It is a criminal offense with severe penalties, including:\n\n*   **Imprisonment:** Often lengthy prison sentences.\n*   **Fines:** Substantial monetary fines.\n*   **Asset forfeiture:** Seizure of assets involved in the laundering process or derived from the underlying criminal activity.\n*   **Reputational damage:** Significant harm to personal and professional reputation.\n\nMoney laundering laws and regulations are designed to:\n\n*   **Combat crime:** By depriving criminals of the profits of their illegal activities.\n*   **Prevent terrorism:** By disrupting the flow of funds to terrorist organizations.\n*   **Protect the financial system:** By maintaining the integrity and stability of financial institutions.\n*   **Promote international cooperation:** By working with other countries to combat money laundering on a global scale.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    91,
+    365,
+    249,
+    338,
+    360,
+    272,
+    413,
+    385,
+    270,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.04662609100341797,
+    0.46913599967956543,
+    0.0011839866638183594,
+    0.014714956283569336,
+    0.06812095642089844,
+    0.09289908409118652,
+    0.20302700996398926,
+    0.20214104652404785,
+    0.24304485321044922,
+    0.19512510299682617,
+    0.011071920394897461,
+    0.0,
+    0.0
+  ]
+}

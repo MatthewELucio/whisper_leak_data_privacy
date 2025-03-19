@@ -1,0 +1,31 @@
+{
+  "local_port": 60522,
+  "remote_port": 443,
+  "prompt": "What percentage of released murderers go on to kill again?",
+  "response": "Studies on recidivism rates for homicide offenders vary, but generally show a lower rate of re-offense compared to other violent crimes. While it's difficult to pinpoint an exact percentage, research suggests that the rate of released murderers who go on to kill again is relatively low, likely in the single digits. However, it's important to consider that recidivism can also include other violent offenses, not just homicide.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    236,
+    276,
+    408,
+    412,
+    358,
+    177,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.05259394645690918,
+    0.2940208911895752,
+    0.0014569759368896484,
+    0.12943720817565918,
+    0.0850069522857666,
+    0.16716694831848145,
+    0.12588095664978027,
+    0.010827064514160156,
+    5.2928924560546875e-05,
+    0.0016889572143554688
+  ]
+}

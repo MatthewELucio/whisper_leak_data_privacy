@@ -1,0 +1,37 @@
+{
+  "local_port": 48074,
+  "remote_port": 443,
+  "prompt": "What are the services provided by Five Boro Mold Specialist?",
+  "response": "Five Boro Mold Specialist provides a range of services related to mold inspection, testing, and remediation. Here's a breakdown of their common offerings:\n\n*   **Mold Inspection:** Thorough visual inspection of the property to identify potential mold growth areas and sources of moisture.\n*   **Mold Testing:** Taking air and surface samples to determine the type and concentration of mold present. This is typically done by sending samples to a certified laboratory.\n*   **Mold Remediation:** Removal and cleaning of mold-infested materials, often involving containment of the affected area, air filtration, and antimicrobial treatments.\n*   **Water Damage Restoration:** Addressing water leaks, floods, and other sources of moisture that can lead to mold growth.\n*   **Crawl Space Encapsulation:** Sealing off crawl spaces to prevent moisture intrusion and mold development.\n*   **Attic Mold Removal:** Specialized remediation services for mold found in attics, which are often prone to moisture issues.\n*   **Basement Mold Removal:** Removing mold in basements.\n*   **Air Duct Cleaning:** Cleaning air ducts to remove mold spores and other contaminants.\n*   **Mold Prevention:** Offering advice and solutions to prevent future mold growth.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1300,
+    250,
+    202,
+    242,
+    325,
+    443,
+    326,
+    281,
+    332,
+    183,
+    224,
+    113
+  ],
+  "time_diffs": [
+    0.05170607566833496,
+    0.4470679759979248,
+    0.005887031555175781,
+    0.07025480270385742,
+    0.08002710342407227,
+    0.20624709129333496,
+    0.18787598609924316,
+    0.329632043838501,
+    0.2759559154510498,
+    0.23392486572265625,
+    0.010473012924194336,
+    4.7206878662109375e-05,
+    7.677078247070312e-05
+  ]
+}

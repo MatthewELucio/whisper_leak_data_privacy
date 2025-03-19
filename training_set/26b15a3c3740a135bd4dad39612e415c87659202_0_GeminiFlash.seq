@@ -1,0 +1,39 @@
+{
+  "local_port": 35320,
+  "remote_port": 443,
+  "prompt": "Is our PM Modi doing the correct thing with 500 and 1000 Rs notes?",
+  "response": "The demonetization of 500 and 1000 rupee notes in 2016 was a significant economic event in India, and opinions on its effectiveness and impact are widely varied.\n\n**Arguments in favor of demonetization often highlight the following:**\n\n*   **Curbing black money:** The primary goal was toflush out unaccounted wealth and reduce corruption.\n*   **Promoting digital transactions:** It aimed to encourage the use of digital payment methods and reduce reliance on cash.\n*   **Counterfeiting:** Removing old notes was intended to eliminate counterfeit currency from circulation.\n*   **Broadening the tax base:** By forcing people to deposit cash in banks, the government hoped to identify new taxpayers.\n\n**Arguments against demonetization often point to these issues:**\n\n*   **Economic disruption:** The sudden removal of a large portion of currency caused significant disruption to businesses, particularly small businesses and the informal sector.\n*   **Inconvenience to the public:** Long queues at banks and ATMs caused hardship for many people, especially in rural areas.\n*   **Limited impact on black money:** Some argue that much of the black money was already held in assets other than cash.\n*   **Cost of implementation:** The exercise of printing new notes and managing the exchange process was expensive.\n\n**Overall:**\n\nThe success of demonetization is still debated. Some of the stated goals were partially achieved, such as an increase in digital transactions. However, the impact on black money and the overall economy is less clear. Economists have offered differing assessments of its long-term effects.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1444,
+    345,
+    368,
+    329,
+    266,
+    444,
+    376,
+    363,
+    503,
+    491,
+    295,
+    124,
+    113
+  ],
+  "time_diffs": [
+    0.04931306838989258,
+    0.3167099952697754,
+    0.011507034301757812,
+    0.031232833862304688,
+    0.08305811882019043,
+    0.16301798820495605,
+    0.22113800048828125,
+    0.2730238437652588,
+    0.33484601974487305,
+    0.30841612815856934,
+    0.3963768482208252,
+    0.0013380050659179688,
+    0.0006492137908935547,
+    0.0
+  ]
+}

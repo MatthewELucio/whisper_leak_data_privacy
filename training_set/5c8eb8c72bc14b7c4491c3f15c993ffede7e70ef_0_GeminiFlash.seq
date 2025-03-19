@@ -1,0 +1,29 @@
+{
+  "local_port": 54442,
+  "remote_port": 443,
+  "prompt": "Do white people have a right to be offended when generalisations are made about them?",
+  "response": "Yes, anyone, including white people, has the right to be offended by generalizations made about them. Experiencing offense is a subjective emotional response.\n\nGeneralizations, regardless of the group they target, can perpetuate stereotypes and prejudice. White people are not a monolith, and generalizing about them can be inaccurate and harmful.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1352,
+    280,
+    203,
+    408,
+    291,
+    291,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.048851966857910156,
+    0.3060770034790039,
+    0.02605295181274414,
+    0.07366204261779785,
+    0.10853290557861328,
+    0.19063210487365723,
+    0.006112098693847656,
+    0.0029997825622558594,
+    0.0
+  ]
+}

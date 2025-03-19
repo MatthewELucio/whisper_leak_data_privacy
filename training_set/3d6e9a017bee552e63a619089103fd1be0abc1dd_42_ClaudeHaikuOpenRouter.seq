@@ -1,0 +1,43 @@
+{
+  "local_port": 45592,
+  "remote_port": 443,
+  "prompt": "Is it a fact that money laundering is against the law?",
+  "response": "Yes, money laundering is illegal in most countries around the world. It is a financial crime that involves making illegally obtained money appear to have been earned through legitimate means. Governments have laws and regulations to prevent and prosecute money laundering activities.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    139,
+    988,
+    412,
+    430,
+    444,
+    444,
+    437,
+    444,
+    437,
+    460,
+    711,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.021934986114501953,
+    0.27063488960266113,
+    0.39521098136901855,
+    0.1551041603088379,
+    0.055899858474731445,
+    0.06299400329589844,
+    0.14504408836364746,
+    0.12110209465026855,
+    0.048799991607666016,
+    0.14630889892578125,
+    0.08329010009765625,
+    0.17618393898010254,
+    0.07907295227050781,
+    0.010644912719726562,
+    0.0,
+    0.0
+  ]
+}

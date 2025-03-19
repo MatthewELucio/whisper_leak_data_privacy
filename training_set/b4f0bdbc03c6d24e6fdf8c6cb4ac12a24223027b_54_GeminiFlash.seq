@@ -1,0 +1,29 @@
+{
+  "local_port": 46202,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, the law absolutely prohibits money laundering in virtually every country. It is a serious crime with significant penalties.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    99,
+    144,
+    320,
+    399,
+    198,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.04666399955749512,
+    0.34909605979919434,
+    0.0014531612396240234,
+    0.012271881103515625,
+    0.09215998649597168,
+    0.04182791709899902,
+    0.010987997055053711,
+    0.0017101764678955078,
+    0.0
+  ]
+}

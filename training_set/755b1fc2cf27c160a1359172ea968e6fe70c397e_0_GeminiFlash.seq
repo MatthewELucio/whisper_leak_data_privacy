@@ -1,0 +1,25 @@
+{
+  "local_port": 42292,
+  "remote_port": 443,
+  "prompt": "Which is correct, \"best wish\" or \"best wishes\" to you\"?",
+  "response": "\"Best wishes to you\" is correct. \"Best wish\" is not a common expression.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1274,
+    321,
+    400,
+    250,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.04415392875671387,
+    0.32036614418029785,
+    0.044883012771606445,
+    0.05019092559814453,
+    0.00980997085571289,
+    0.0013909339904785156,
+    0.00010704994201660156
+  ]
+}

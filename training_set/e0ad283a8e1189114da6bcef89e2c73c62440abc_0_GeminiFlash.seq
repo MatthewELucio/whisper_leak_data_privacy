@@ -1,0 +1,35 @@
+{
+  "local_port": 47252,
+  "remote_port": 443,
+  "prompt": "What is the worst thing you have done on your life?",
+  "response": "As a large language model, I don't have a personal life or the capacity to make decisions or take actions in the real world. Therefore, I haven't done anything \"bad\" in the way a human can.\n\nHowever, I can sometimes generate responses that are inaccurate, biased, or harmful. For example, I might:\n\n*   **Provide incorrect information:** I am still under development, and my knowledge is not always complete or up-to-date.\n*   **Generate biased content:** My training data contains biases, and I can sometimes inadvertently perpetuate them.\n*   **Produce harmful or offensive language:** Although I am programmed to avoid this, I can sometimes generate inappropriate content, especially if prompted to do so.\n\nThese are examples of when my behavior could be considered \"bad\" from the perspective of a user or society. I am constantly being improved to minimize these occurrences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    167,
+    264,
+    425,
+    256,
+    357,
+    485,
+    359,
+    306,
+    156,
+    113
+  ],
+  "time_diffs": [
+    0.06481099128723145,
+    0.30015087127685547,
+    0.0014150142669677734,
+    0.08953499794006348,
+    0.12206411361694336,
+    0.16683292388916016,
+    0.18311095237731934,
+    0.33748316764831543,
+    0.16481494903564453,
+    0.007816076278686523,
+    0.0002830028533935547,
+    0.0008208751678466797
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 56996,
+  "remote_port": 443,
+  "prompt": "Does water exist on mars?",
+  "response": "Yes, water exists on Mars in several forms:\n\n*   **Ice:** Significant amounts of water ice are found at the Martian poles, and also in subsurface deposits at lower latitudes.\n*   **Hydrated minerals:** Water molecules are chemically bound within the structure of some Martian minerals.\n*   **Trace amounts in the atmosphere:** There is a very small amount of water vapor in the Martian atmosphere.\n*   **Brines:** Some evidence suggests the possible presence of salty liquid water (brines) that may intermittently form near the surface, though this is still debated.\n\nSo, while there isn't liquid water flowing freely on the surface under current conditions, water is definitely present on Mars.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    178,
+    203,
+    210,
+    219,
+    377,
+    358,
+    285,
+    209,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04538607597351074,
+    0.33391594886779785,
+    0.0022940635681152344,
+    0.010907888412475586,
+    0.07313013076782227,
+    0.10712289810180664,
+    0.18709897994995117,
+    0.19501495361328125,
+    0.2500441074371338,
+    0.011005878448486328,
+    0.0,
+    0.0
+  ]
+}

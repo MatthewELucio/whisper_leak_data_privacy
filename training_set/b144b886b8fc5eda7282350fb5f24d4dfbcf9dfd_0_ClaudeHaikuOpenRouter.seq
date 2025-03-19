@@ -1,0 +1,41 @@
+{
+  "local_port": 57072,
+  "remote_port": 443,
+  "prompt": "Do older men prefer younger women?",
+  "response": "That's a complex topic where preferences vary widely among individuals. Some men prefer partners closer to their own age, while others may seek younger partners. Preferences depend on personal values, cultural background, and individual personalities.",
+  "temperature": 1.0,
+  "data_lengths": [
+    237,
+    1065,
+    405,
+    405,
+    409,
+    429,
+    448,
+    455,
+    444,
+    437,
+    449,
+    714,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.022411823272705078,
+    1.3945391178131104,
+    0.3972020149230957,
+    0.0,
+    0.0056688785552978516,
+    0.09723806381225586,
+    0.1794910430908203,
+    0.2266068458557129,
+    0.13832521438598633,
+    0.1808319091796875,
+    0.13475990295410156,
+    0.11783099174499512,
+    0.010143041610717773,
+    0.00021314620971679688,
+    0.00016999244689941406
+  ]
+}

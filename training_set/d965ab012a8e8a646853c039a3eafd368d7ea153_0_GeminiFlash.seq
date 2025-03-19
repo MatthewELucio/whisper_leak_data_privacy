@@ -1,0 +1,41 @@
+{
+  "local_port": 45010,
+  "remote_port": 443,
+  "prompt": "Why does a player get three or four tennis balls from ball boys and choose two among them for serve?  What is that they look for in selecting the balls to serve?",
+  "response": "There are a few reasons why players are given multiple balls and choose between them before serving:\n\n*   **Preferred ball:** Players often develop a preference for how a ball feels and bounces. Some might like a newer, fluffier ball, while others prefer a slightly older, worn ball. This preference is based on factors like weight, fluffiness, and bounce consistency.\n\n*   **Ball condition:** Players check the balls for obvious defects. They look for things like:\n    *   **Fuzz:** The amount of fuzz on the ball can affect how it grips the strings and the amount of spin a player can impart.\n    *   **Shape:** A perfectly round ball is ideal for consistent bounce. They will avoid balls that are obviously misshapen.\n    *   **Seam:** The seam of the ball can also affect how it travels through the air.\n    *   **Moisture/Dirt:** A wet or dirty ball will affect grip and bounce.\n\n*   **Bounce:** Players will often bounce the balls to get a sense of their liveliness and consistency. They want a ball that bounces predictably.\n\n*   **Tactical choice:** Sometimes, the choice is tactical. They might choose the livelier ball for a first serve, aiming for power and pace, and a slightly older, deader ball for the second serve to focus on placement and spin with controlled bounce.\n\nUltimately, the choice comes down to feel and confidence. Players want to feel comfortable and confident with the balls they are using, as this can impact their performance and serve accuracy.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    287,
+    288,
+    401,
+    379,
+    462,
+    461,
+    377,
+    397,
+    329,
+    396,
+    265,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.050985097885131836,
+    0.41478395462036133,
+    0.0016179084777832031,
+    0.01830291748046875,
+    0.07708406448364258,
+    0.10412096977233887,
+    0.2270340919494629,
+    0.16706109046936035,
+    0.39092397689819336,
+    0.263671875,
+    0.4194159507751465,
+    0.2833671569824219,
+    0.009388923645019531,
+    0.0,
+    0.0
+  ]
+}

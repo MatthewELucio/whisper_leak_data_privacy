@@ -1,0 +1,39 @@
+{
+  "local_port": 47876,
+  "remote_port": 443,
+  "prompt": "What is the difference between a possum and an opossum?",
+  "response": "The difference between a possum and an opossum is primarily one of geography and common usage.\n\n*   **Opossum:** This is the scientifically correct and original name for the marsupials belonging to the family Didelphidae, native to the Americas. The Virginia opossum ( *Didelphis virginiana* ) is the only opossum species found in North America, often simply referred to as \"opossum.\"\n\n*   **Possum:** This term refers to a separate group of marsupials native to Australia and surrounding islands, belonging to the suborder Phalangeriformes. They are more closely related to kangaroos and koalas than to opossums. The most common possum is the brushtail possum.\n\nIn short:\n\n*   **Opossums are found in the Americas.**\n*   **Possums are found in Australia and surrounding islands.**\n\nOften, people in North America shorten \"opossum\" to \"possum\" in casual conversation. While technically incorrect, it's generally understood to mean the Virginia opossum.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    181,
+    365,
+    338,
+    289,
+    441,
+    382,
+    396,
+    409,
+    204,
+    293,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.04644012451171875,
+    0.3276658058166504,
+    0.0013611316680908203,
+    0.013804912567138672,
+    0.08674097061157227,
+    0.12010812759399414,
+    0.17294883728027344,
+    0.19097208976745605,
+    0.2900810241699219,
+    0.21854090690612793,
+    0.0546422004699707,
+    0.008879899978637695,
+    0.0,
+    0.0
+  ]
+}

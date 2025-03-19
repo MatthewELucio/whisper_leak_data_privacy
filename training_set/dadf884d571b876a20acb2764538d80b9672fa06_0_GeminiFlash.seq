@@ -1,0 +1,33 @@
+{
+  "local_port": 60084,
+  "remote_port": 443,
+  "prompt": "Is Ravana's golden lanka still in Sri Lanka?",
+  "response": "No, according to the Ramayana, Ravana's golden Lanka no longer exists in its original form in Sri Lanka (or anywhere else). The epic describes how Hanuman, in his search for Sita, set fire to Lanka, causing widespread destruction. While some accounts suggest the city was rebuilt, it was never the same opulent, golden city it once was.\n\nThere's no archaeological evidence to support the existence of a literal golden city as described in the Ramayana. Some believe that the legend of Lanka's golden nature might be a metaphor for its wealth and prosperity during Ravana's reign. Others suggest that the city may have been richly decorated with gold, giving it a golden appearance.\n\nRegardless, the consensus based on the Ramayana and historical and archaeological evidence is that Ravana's golden Lanka, as depicted in the epic, does not exist today.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1301,
+    258,
+    218,
+    461,
+    426,
+    274,
+    307,
+    245,
+    136,
+    113
+  ],
+  "time_diffs": [
+    0.05433487892150879,
+    0.29007506370544434,
+    0.11378288269042969,
+    0.13197898864746094,
+    0.16314196586608887,
+    0.20305705070495605,
+    0.3021111488342285,
+    0.16176295280456543,
+    0.012254953384399414,
+    0.0,
+    0.0
+  ]
+}

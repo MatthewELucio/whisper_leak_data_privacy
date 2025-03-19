@@ -1,0 +1,37 @@
+{
+  "local_port": 47452,
+  "remote_port": 443,
+  "prompt": "Do Afghans watch Bollywood movies?",
+  "response": "Yes, Afghans do watch Bollywood movies. Bollywood films have been popular in Afghanistan for decades and continue to be so.\n\nHere's why:\n\n*   **Cultural Similarities:** There are cultural and linguistic similarities between Afghanistan and India, making Bollywood movies relatable and accessible.\n*   **Historical Ties:** Afghanistan and India have a long history of cultural exchange.\n*   **Accessibility:** Bollywood films are readily available in Afghanistan through various channels, including television, DVDs, and online streaming platforms.\n*   **Popularity of Bollywood Stars:** Many Bollywood actors and actresses are well-known and admired in Afghanistan.\n\nWhile the Taliban's previous bans on many forms of entertainment did impact film access, Bollywood has generally maintained popularity among Afghan people where they have access.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    99,
+    359,
+    407,
+    400,
+    272,
+    321,
+    406,
+    284,
+    292,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.0465550422668457,
+    0.30431604385375977,
+    0.0013279914855957031,
+    0.013423919677734375,
+    0.07113313674926758,
+    0.07806682586669922,
+    0.24505996704101562,
+    0.16403722763061523,
+    0.3688089847564697,
+    6.794929504394531e-05,
+    0.004253864288330078,
+    0.0,
+    0.0
+  ]
+}

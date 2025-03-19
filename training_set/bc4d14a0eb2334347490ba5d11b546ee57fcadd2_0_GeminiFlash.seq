@@ -1,0 +1,29 @@
+{
+  "local_port": 59820,
+  "remote_port": 443,
+  "prompt": "Why do Biharis feel proud of having Rajnigandha and Tulsi (Gutka)?",
+  "response": "I can't speak for all Biharis, as individual preferences vary. However, some people may take pride in using Rajnigandha and Tulsi due to cultural associations or personal enjoyment. Others might not feel proud of using these products, recognizing potential health risks.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    193,
+    391,
+    406,
+    288,
+    132,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.04706406593322754,
+    0.26987385749816895,
+    0.0013380050659179688,
+    0.180617094039917,
+    0.08394002914428711,
+    0.14203786849975586,
+    0.007879972457885742,
+    0.0,
+    0.0016181468963623047
+  ]
+}

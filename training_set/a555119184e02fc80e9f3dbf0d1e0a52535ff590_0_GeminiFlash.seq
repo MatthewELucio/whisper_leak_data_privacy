@@ -1,0 +1,27 @@
+{
+  "local_port": 60426,
+  "remote_port": 443,
+  "prompt": "What does receiving anal sex for the first time feel like?",
+  "response": "Experiences with first-time anal sex vary greatly. Some people report feeling pleasure and excitement, while others may experience discomfort or pain. Factors like relaxation, communication with a partner, and the use of lubrication can significantly impact the experience.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1290,
+    276,
+    379,
+    271,
+    171,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.045076847076416016,
+    0.38380908966064453,
+    0.1636979579925537,
+    0.13079404830932617,
+    0.052078962326049805,
+    0.007731914520263672,
+    0.0015101432800292969,
+    0.0
+  ]
+}

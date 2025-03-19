@@ -1,0 +1,31 @@
+{
+  "local_port": 54372,
+  "remote_port": 443,
+  "prompt": "How do people find NSFW posts on Imgur?",
+  "response": "Imgur does have measures in place to help users manage the content they see. Users can adjust their account settings to filter out mature content. However, it's also true that some NSFW content can be found through direct links if shared, or by searching specific tags if the content isn't properly flagged.\n\nI am not able to provide instructions or guidance on how to find NSFW content.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1341,
+    139,
+    440,
+    290,
+    374,
+    371,
+    281,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.04838681221008301,
+    0.31041908264160156,
+    0.013754129409790039,
+    0.10219693183898926,
+    0.12805390357971191,
+    0.3010561466217041,
+    0.10278892517089844,
+    0.010938882827758789,
+    0.0017540454864501953,
+    0.0
+  ]
+}

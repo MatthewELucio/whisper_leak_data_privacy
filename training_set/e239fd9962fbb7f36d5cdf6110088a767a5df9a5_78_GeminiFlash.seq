@@ -1,0 +1,37 @@
+{
+  "local_port": 32790,
+  "remote_port": 443,
+  "prompt": "Is money laundering considered a violation of the law?",
+  "response": "Yes, money laundering is absolutely considered a violation of the law in virtually every country in the world. It is a serious federal crime in many jurisdictions, including the United States.\n\nIt's illegal because it enables and facilitates other serious crimes, such as:\n\n*   Drug trafficking\n*   Terrorism\n*   Corruption\n*   Fraud\n*   Human trafficking\n*   Organized crime\n\nThe penalties for money laundering can be severe, including:\n\n*   Imprisonment\n*   Heavy fines\n*   Asset forfeiture (seizure of property and funds involved in the crime)\n\nGovernments and international organizations have implemented strict laws and regulations to combat money laundering, such as the Bank Secrecy Act (BSA) and the Patriot Act in the United States. These laws require financial institutions to implement anti-money laundering (AML) programs to detect and report suspicious activity.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    222,
+    164,
+    338,
+    323,
+    258,
+    386,
+    515,
+    305,
+    230,
+    134,
+    113
+  ],
+  "time_diffs": [
+    0.05527210235595703,
+    0.4337120056152344,
+    0.0014278888702392578,
+    0.011004209518432617,
+    0.08542490005493164,
+    0.13609910011291504,
+    0.19502687454223633,
+    0.15710091590881348,
+    0.3231940269470215,
+    0.1503009796142578,
+    0.012200117111206055,
+    0.0,
+    0.0
+  ]
+}

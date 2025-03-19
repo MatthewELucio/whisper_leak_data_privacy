@@ -1,0 +1,31 @@
+{
+  "local_port": 44444,
+  "remote_port": 443,
+  "prompt": "Is someone born in 1977 generation X or Y?",
+  "response": "Someone born in 1977 is generally considered to be part of **Generation X**.\n\nWhile there isn't a universally agreed-upon cutoff, most sources place the Generation X birth years between the mid-1960s and the early 1980s. Millennials (Generation Y) typically start in the early 1980s.\n\nTherefore, 1977 falls squarely within the commonly accepted Generation X range.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1285,
+    138,
+    270,
+    380,
+    446,
+    403,
+    282,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.047044992446899414,
+    0.32258105278015137,
+    0.051078081130981445,
+    0.08369684219360352,
+    0.04894614219665527,
+    0.20617389678955078,
+    0.14887309074401855,
+    0.010644912719726562,
+    0.0033960342407226562,
+    0.0
+  ]
+}

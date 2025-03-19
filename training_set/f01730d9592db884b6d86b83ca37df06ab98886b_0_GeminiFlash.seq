@@ -1,0 +1,43 @@
+{
+  "local_port": 34300,
+  "remote_port": 443,
+  "prompt": "What is the Tinder like limit?",
+  "response": "Tinder doesn't have a hard, set-in-stone \"like limit\" in the way they used to. However, they have implemented a system that effectively limits how many likes you can give out within a certain timeframe, especially if you're not a paying subscriber (Tinder Plus, Gold, or Platinum).\n\nHere's a breakdown of how it works:\n\n*   **For Free Users:** You are limited in the number of \"likes\" you can give out in a 12-hour period. Once you hit this limit, you'll likely see a message indicating you've run out of likes and prompting you to subscribe to a paid plan. The exact number of likes before hitting this limit is not publicly disclosed by Tinder and may vary depending on factors like your usage patterns and location. It's also likely that this number fluctuates based on Tinder's algorithm adjustments. It used to be around 100, but anecdotal evidence suggests it can be much lower now, perhaps as low as 25-50.\n*   **For Tinder Plus, Gold, and Platinum Subscribers:** These premium subscriptions typically offer unlimited likes. This is one of the main advantages touted by Tinder to encourage users to upgrade.\n\n**Why the Limit?**\n\nTinder's implementation of a like limit serves several purposes:\n\n*   **Encourages Paid Subscriptions:** By restricting the number of free likes, Tinder motivates users to subscribe to paid plans to gain unlimited liking ability.\n*   **Combats Spam and Bots:** Limits can help prevent bots and spam accounts from indiscriminately liking profiles.\n*   **Promotes More Thoughtful Swiping:** The limit is meant to encourage users to be more selective and thoughtful about who they like, rather than just swiping right on everyone.\n*   **Algorithm Optimization:** Tinder's algorithm is constantly learning and adjusting. The like limit, along with other factors, helps them fine-tune the matching process.\n\n**In summary:** While there's no specific number Tinder publicly states, free users are definitely limited in the number of likes they can give per 12-hour period. Paid subscribers generally get unlimited likes.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    157,
+    265,
+    380,
+    309,
+    464,
+    383,
+    304,
+    344,
+    439,
+    496,
+    328,
+    269,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.051197052001953125,
+    0.32278990745544434,
+    0.0013659000396728516,
+    0.15851998329162598,
+    0.07890820503234863,
+    0.19100594520568848,
+    0.18216300010681152,
+    0.32508182525634766,
+    0.26627516746520996,
+    0.40184783935546875,
+    0.3914351463317871,
+    0.23555397987365723,
+    0.2934730052947998,
+    0.008116960525512695,
+    0.0,
+    0.0
+  ]
+}

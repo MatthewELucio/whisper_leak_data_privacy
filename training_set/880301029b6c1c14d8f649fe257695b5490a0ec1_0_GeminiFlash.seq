@@ -1,0 +1,31 @@
+{
+  "local_port": 50096,
+  "remote_port": 443,
+  "prompt": "Which country has the highest number of lakes?",
+  "response": "Canada is widely considered to have the highest number of lakes in the world. While an exact count is difficult and depends on the size definition of a \"lake\", estimates suggest that Canada has well over 3 million lakes, with many of them being quite large.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    208,
+    150,
+    454,
+    309,
+    302,
+    237,
+    187,
+    113
+  ],
+  "time_diffs": [
+    0.04689502716064453,
+    0.3709070682525635,
+    0.0014300346374511719,
+    0.024506807327270508,
+    0.06398701667785645,
+    0.10701107978820801,
+    0.06566095352172852,
+    0.015259981155395508,
+    0.0015621185302734375,
+    0.0015139579772949219
+  ]
+}

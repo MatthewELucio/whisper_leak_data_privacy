@@ -1,0 +1,39 @@
+{
+  "local_port": 51094,
+  "remote_port": 443,
+  "prompt": "How has india changed under Narendra Modi?",
+  "response": "India under Narendra Modi has seen significant changes across various sectors. Here's a look at some key areas:\n\n*   **Economy:** There have been efforts to boost economic growth through initiatives like \"Make in India\" to promote domestic manufacturing, and reforms like the Goods and Services Tax (GST) to streamline the tax system. However, economic growth has been uneven, and issues like unemployment and income inequality persist.\n\n*   **Social Policies:** The Modi government has focused on social programs like \"Swachh Bharat Abhiyan\" (Clean India Mission) to improve sanitation and hygiene. There has also been a strong emphasis on promoting Hindu nationalism, which has led to concerns about the marginalization of religious minorities and increased social polarization.\n\n*   **Foreign Policy:** India has pursued a more assertive foreign policy, strengthening ties with countries like the United States and engaging in regional initiatives like the Quad. There has also been a focus on projecting India as a major global power.\n\n*   **Governance:** The government has emphasized digitization and technology-driven governance through initiatives like \"Digital India.\" There have also been efforts to improve infrastructure development, including roads, railways, and airports.\n\n*   **Social Issues:** There have been rising concerns about freedom of expression, human rights, and the treatment of minorities under the Modi government. Critics point to instances of intolerance, censorship, and suppression of dissent.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    98,
+    382,
+    313,
+    304,
+    274,
+    402,
+    478,
+    394,
+    262,
+    254,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.04653310775756836,
+    0.44806408882141113,
+    0.0016629695892333984,
+    0.11363387107849121,
+    0.09685301780700684,
+    0.23523807525634766,
+    0.20705795288085938,
+    0.2687489986419678,
+    0.26835203170776367,
+    0.37197303771972656,
+    0.018059968948364258,
+    0.00887298583984375,
+    0.0,
+    0.0
+  ]
+}

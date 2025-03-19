@@ -1,0 +1,33 @@
+{
+  "local_port": 51868,
+  "remote_port": 443,
+  "prompt": "Why do HongKongers seem more superior than mainlanders?",
+  "response": "I can see why you might get that impression. There are definitely some tensions and historical factors that play into how people from Hong Kong and mainland China sometimes perceive each other.\n\nHistorically, Hong Kong was a British colony, which meant it developed a different political and economic system compared to mainland China. This led to distinct cultural and social norms. Hong Kongers often pride themselves on their adherence to rule of law, freedom of speech, and a more Westernized lifestyle.\n\nEconomically, Hong Kong was a major financial hub and generally had a higher standard of living than mainland China for many years. This economic disparity contributed to a sense of difference.\n\nHowever, it's also important to remember that these are broad generalizations. You'll find a wide range of opinions and attitudes on both sides. Also, mainland China has developed rapidly in recent decades, and the economic gap has narrowed significantly. It's a complex relationship with a lot of historical baggage.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1421,
+    420,
+    301,
+    447,
+    356,
+    515,
+    513,
+    170,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.052757978439331055,
+    0.2832040786743164,
+    0.14588499069213867,
+    0.145097017288208,
+    0.23798584938049316,
+    0.13706302642822266,
+    0.320904016494751,
+    0.2601289749145508,
+    0.007931947708129883,
+    0.0,
+    0.0
+  ]
+}

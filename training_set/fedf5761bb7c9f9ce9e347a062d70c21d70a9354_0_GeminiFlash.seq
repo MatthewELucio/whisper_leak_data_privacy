@@ -1,0 +1,39 @@
+{
+  "local_port": 41856,
+  "remote_port": 443,
+  "prompt": "What is the temperature on the planet Mercury at the demarcation point between light and dark?",
+  "response": "The temperature at the terminator (the demarcation point between light and dark) on Mercury is a bit tricky to pin down to one specific number because it changes depending on various factors, but a good approximation is around **400 Kelvin (127 degrees Celsius or 260 degrees Fahrenheit)**.\n\nHere's why it's variable and why that's a reasonable estimate:\n\n*   **Rapid Temperature Change:** Because Mercury has almost no atmosphere to insulate the surface, temperatures change dramatically and quickly. The terminator is where this rapid change happens.\n\n*   **Factors influencing the exact temperature:**\n\n    *   **Solar Angle:** The angle at which sunlight hits the surface at the terminator influences the temperature.\n    *   **Surface Composition:** Different surface materials (rock, dust, craters) absorb and radiate heat differently.\n    *   **Time of Mercury's Day:** Mercury has a very long solar day (about 176 Earth days). As the terminator slowly moves across the surface, the temperature behind it will gradually increase.\n\n*   **General Range:**  The temperature range on Mercury is extreme (about -173\u00b0C to 427\u00b0C). The terminator is a transitional zone, so its temperature falls somewhere between these extremes. The number I gave is a reasonable value in that transitional zone, but expect variance.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1287,
+    196,
+    228,
+    226,
+    352,
+    311,
+    445,
+    453,
+    519,
+    343,
+    198,
+    230,
+    113
+  ],
+  "time_diffs": [
+    0.04628491401672363,
+    0.8745908737182617,
+    0.03606104850769043,
+    0.04185199737548828,
+    0.0800161361694336,
+    0.19308090209960938,
+    0.2361760139465332,
+    0.2569000720977783,
+    0.25809597969055176,
+    0.3400728702545166,
+    0.13082098960876465,
+    0.01949906349182129,
+    9.5367431640625e-07,
+    5.817413330078125e-05
+  ]
+}

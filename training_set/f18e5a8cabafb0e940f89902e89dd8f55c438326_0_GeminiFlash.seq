@@ -1,0 +1,33 @@
+{
+  "local_port": 34062,
+  "remote_port": 443,
+  "prompt": "Is a platypus considered a bird?",
+  "response": "No, a platypus is not a bird. It is a mammal.\n\nWhile it has some bird-like characteristics, such as laying eggs and having a duck-like bill, its mammalian characteristics are definitive:\n\n*   **Fur:** Platypuses have fur, which is a characteristic of mammals.\n*   **Mammary Glands:** They produce milk to feed their young, a defining feature of mammals.\n*   **Three middle ear bones:** Distinct feature of Mammals.\n*   **Single bone on each side of the jaw:** Also a distinct feature of mammals.\n\nTherefore, the platypus is classified as a mammal, specifically a monotreme (an egg-laying mammal).",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1356,
+    169,
+    221,
+    346,
+    352,
+    253,
+    442,
+    300,
+    158,
+    113
+  ],
+  "time_diffs": [
+    0.04506516456604004,
+    0.4818079471588135,
+    0.04883289337158203,
+    0.0849921703338623,
+    0.07899284362792969,
+    0.12823796272277832,
+    0.17387104034423828,
+    0.21919512748718262,
+    0.0077610015869140625,
+    0.0,
+    0.0
+  ]
+}

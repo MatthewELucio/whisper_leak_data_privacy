@@ -1,0 +1,29 @@
+{
+  "local_port": 51642,
+  "remote_port": 443,
+  "prompt": "Is India violating human rights in Kashmir?",
+  "response": "Reports from various organizations and governments suggest a complex human rights situation in Kashmir.\n\nSome sources, including human rights organizations like Amnesty International and Human Rights Watch, have documented human rights violations in Kashmir. These include excessive use of force by security forces, arbitrary detentions, restrictions on freedom of expression and assembly, and allegations of torture and extrajudicial killings.\n\nThe Indian government has stated that its security forces operate under strict rules of engagement and that any violations are investigated. They have also emphasized the need to maintain law and order in the face of terrorism and insurgency.\n\nThere are differing perspectives on the situation, with some arguing that the Indian government's actions are necessary for national security, while others maintain that they constitute human rights violations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1469,
+    437,
+    450,
+    492,
+    410,
+    412,
+    236,
+    113
+  ],
+  "time_diffs": [
+    0.050889015197753906,
+    0.29433202743530273,
+    0.2240309715270996,
+    0.10316705703735352,
+    0.20781707763671875,
+    0.20808196067810059,
+    0.285006046295166,
+    0.011400938034057617,
+    5.0067901611328125e-05
+  ]
+}

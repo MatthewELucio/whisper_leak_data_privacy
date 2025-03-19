@@ -1,0 +1,31 @@
+{
+  "local_port": 37774,
+  "remote_port": 443,
+  "prompt": "Who is the head of the dover republican party?",
+  "response": "Unfortunately, I don't have access to real-time information on specific local political party leadership positions like the head of the Dover Republican Party. These positions can change frequently.\n\nHere's how you can find that information:\n\n*   **Check the official website of the Dover Republican Party (if they have one).** Many local parties have websites or social media pages listing their officers.\n*   **Contact the New Hampshire Republican Party.** They might be able to direct you to the right person.\n*   **Search online news articles or local government websites.** Sometimes announcements of party leadership changes are reported in local media.\n\nGood luck with your search!",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1393,
+    369,
+    417,
+    274,
+    469,
+    461,
+    254,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.046885013580322266,
+    0.40657687187194824,
+    0.1592700481414795,
+    0.07694602012634277,
+    0.11122894287109375,
+    0.16703295707702637,
+    0.16791296005249023,
+    0.010892152786254883,
+    0.0015020370483398438,
+    0.0
+  ]
+}

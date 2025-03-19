@@ -1,0 +1,37 @@
+{
+  "local_port": 42440,
+  "remote_port": 443,
+  "prompt": "In one episode of Impractical Jokers, Murr married Sal's sister for Sal's punishment. Is it true and did it actually happen or was it a publicity gimmick?",
+  "response": "Yes, in one episode of Impractical Jokers, Murr did \"marry\" Sal's sister, Jenna Vulcano, as Sal's punishment. However, it was a very short-lived and non-legally binding ceremony.\n\nHere's what's important to know:\n\n*   **It was for comedic effect and the show:** The \"marriage\" was orchestrated purely for the show and to humiliate Sal as his punishment.\n*   **Not legally binding:** The ceremony was not legally binding. It wasn't registered as a marriage, and it served only the purpose of the TV show.\n*   **Publicity:** While part of the show, it did generate buzz and publicity due to the nature of the stunt.\n*   **Brief duration:** It's also worth noting that after the wedding Sal stated that the marriage lasted about an hour.\n\nSo, to be clear: Murr and Jenna did participate in a \"wedding\" ceremony for Impractical Jokers, but it was not a real, legally recognized marriage.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1271,
+    293,
+    255,
+    185,
+    379,
+    279,
+    399,
+    327,
+    202,
+    285,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.04614901542663574,
+    0.3287069797515869,
+    0.023843050003051758,
+    0.06490588188171387,
+    0.10044503211975098,
+    0.2047889232635498,
+    0.2200942039489746,
+    0.357105016708374,
+    0.2499089241027832,
+    0.11225104331970215,
+    0.014361858367919922,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 47886,
+  "remote_port": 443,
+  "prompt": "Is it a felony to launder money?",
+  "response": "In the United States, and in many other countries, money laundering is a federal crime, and it is typically classified as a **felony**.\n\nThe specific penalties and severity of the felony can vary depending on several factors, including:\n\n*   **The amount of money laundered:** Larger sums usually lead to more severe charges.\n*   **The nature of the underlying criminal activity:** If the money was derived from serious crimes like drug trafficking, terrorism, or organized crime, the penalties will be harsher.\n*   **The defendant's prior criminal history:** Repeat offenders will face increased penalties.\n*   **Specific statutes violated:** Different laws address different aspects of money laundering, and each carries its own potential penalties.\n*   **Whether there was intent to evade taxes or other legal requirements.**\n\nFederal laws like the Bank Secrecy Act and the Money Laundering Control Act criminalize various aspects of money laundering. Penalties can include substantial fines, lengthy prison sentences (often years, even decades), and asset forfeiture.\n\nBecause laws vary, it's important to consult the specific laws of the jurisdiction in question and seek professional legal counsel for accurate and detailed information.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1434,
+    458,
+    282,
+    307,
+    315,
+    502,
+    296,
+    320,
+    229,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.04426908493041992,
+    0.31879591941833496,
+    0.1296391487121582,
+    0.10135889053344727,
+    0.2069709300994873,
+    0.17706799507141113,
+    0.2830071449279785,
+    0.3166999816894531,
+    0.23432397842407227,
+    0.009962081909179688,
+    0.0,
+    5.1975250244140625e-05
+  ]
+}

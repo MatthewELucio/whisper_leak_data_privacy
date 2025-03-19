@@ -1,0 +1,37 @@
+{
+  "local_port": 42886,
+  "remote_port": 443,
+  "prompt": "Is the plant pictured below poison ivy?",
+  "response": "I am an AI and cannot give medical advice. Also, I am unable to see the image you are referring to.\nTo determine if a plant is poison ivy, you can do the following:\n1.  Look for the saying, \"Leaves of three, let it be.\" Poison ivy typically has three leaflets.\n2.  Examine the leaf shape. Poison ivy leaves are usually oval or almond-shaped with pointed tips.\n3.  Check for the presence of vines. Poison ivy often grows as a vine, either trailing along the ground or climbing up trees or other structures.\n4.  Note the leaf surface. The leaves of poison ivy may have a glossy or waxy appearance.\n5.  Be aware of seasonal variations. The appearance of poison ivy can change depending on the time of year. In the spring, the leaves may be reddish, while in the summer, they are typically green. In the fall, the leaves can turn yellow, orange, or red.\n\nIf you are still unsure, consult a plant identification guide or contact a local expert.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    97,
+    436,
+    448,
+    241,
+    471,
+    438,
+    490,
+    270,
+    267,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.04721379280090332,
+    0.2765932083129883,
+    0.0013859272003173828,
+    0.14154291152954102,
+    0.11292314529418945,
+    0.17115998268127441,
+    0.18002700805664062,
+    0.2750728130340576,
+    0.2662241458892822,
+    0.07927298545837402,
+    0.007118940353393555,
+    0.0,
+    0.0
+  ]
+}

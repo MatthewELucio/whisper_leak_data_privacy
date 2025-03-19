@@ -1,0 +1,35 @@
+{
+  "local_port": 59864,
+  "remote_port": 443,
+  "prompt": "Who all are having there IIM Indore IPM interview on 10th June in Delhi?",
+  "response": "Unfortunately, I don't have access to real-time information about who is scheduled for specific interview dates. This kind of data is private and not shared publicly.\n\nHowever, if you are looking to connect with other candidates who might be interviewing on the same day, here are some suggestions:\n\n*   **Online Forums and Communities:** Look for online forums, social media groups, or student communities dedicated to IIM Indore IPM aspirants. You might find groups on platforms like Facebook, Telegram, or dedicated education forums.\n*   **Coaching Center Groups:** If you attended coaching classes for the IPMAT, check if your coaching center has a group or platform where students can connect and discuss their interview schedules.\n\n**Please note:** Be cautious when sharing personal information online and only connect with people you feel comfortable with.\n\nGood luck with your interview!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    309,
+    424,
+    422,
+    422,
+    264,
+    498,
+    436,
+    232,
+    208,
+    113
+  ],
+  "time_diffs": [
+    0.04996514320373535,
+    0.3078320026397705,
+    0.0010080337524414062,
+    0.09479594230651855,
+    0.09801101684570312,
+    0.16112184524536133,
+    0.17605900764465332,
+    0.28982019424438477,
+    0.11914491653442383,
+    0.014322042465209961,
+    0.0,
+    4.982948303222656e-05
+  ]
+}

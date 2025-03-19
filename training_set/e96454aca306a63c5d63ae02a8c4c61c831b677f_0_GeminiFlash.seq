@@ -1,0 +1,35 @@
+{
+  "local_port": 46962,
+  "remote_port": 443,
+  "prompt": "Who is more likely to be the next President of India?",
+  "response": "It is difficult to predict definitively who will be the next President of India. The election process involves an electoral college comprising elected members of Parliament and state legislative assemblies. The ruling party often plays a significant role in nominating a candidate who aligns with their ideology and agenda. However, the opposition can also field a candidate, leading to a contested election. \n\nSome potential contenders who have been discussed in the media and political circles include:\n\n*   **Droupadi Murmu:** She served as the Governor of Jharkhand and belongs to the BJP. She was also the Presidential candidate nominated by the NDA in 2022.\n*   **Venkaiah Naidu:** He has served as the Vice President of India and is a senior leader of the BJP.\n\nThese are just a few names that have been mentioned, and the actual candidates could be different depending on the political climate and alliances at the time of the election.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    231,
+    442,
+    305,
+    490,
+    295,
+    439,
+    381,
+    290,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.046553850173950195,
+    0.39716410636901855,
+    0.0014660358428955078,
+    0.1576528549194336,
+    0.14280414581298828,
+    0.19829392433166504,
+    0.19991612434387207,
+    0.2951338291168213,
+    0.18185710906982422,
+    0.008625030517578125,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

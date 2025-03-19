@@ -1,0 +1,33 @@
+{
+  "local_port": 60718,
+  "remote_port": 443,
+  "prompt": "If someone launders money, do they break the law?",
+  "response": "Yes, money laundering is a crime in virtually every country. It's a violation of numerous laws and can result in severe penalties, including:\n\n*   **Imprisonment:** Often lengthy prison sentences.\n*   **Fines:** Substantial monetary penalties.\n*   **Asset forfeiture:** Government seizure of assets involved in the money laundering scheme.\n\nMoney laundering is a serious crime because it enables criminals to profit from illegal activities such as drug trafficking, terrorism, human trafficking, and corruption. It also undermines the integrity of financial systems.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1455,
+    225,
+    382,
+    401,
+    478,
+    323,
+    247,
+    205,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04760599136352539,
+    0.4202430248260498,
+    0.03369712829589844,
+    0.266232967376709,
+    0.23592281341552734,
+    0.22105002403259277,
+    0.040856122970581055,
+    0.06240200996398926,
+    0.020267963409423828,
+    0.0,
+    0.0
+  ]
+}

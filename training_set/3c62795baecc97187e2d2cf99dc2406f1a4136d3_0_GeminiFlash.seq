@@ -1,0 +1,25 @@
+{
+  "local_port": 40972,
+  "remote_port": 443,
+  "prompt": "What is the next number in the series?",
+  "response": "Please provide the series so I can determine the next number.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1471,
+    282,
+    316,
+    288,
+    139,
+    113
+  ],
+  "time_diffs": [
+    0.04610800743103027,
+    0.4340341091156006,
+    0.04163384437561035,
+    0.011904001235961914,
+    0.04918813705444336,
+    0.00138092041015625,
+    0.0
+  ]
+}

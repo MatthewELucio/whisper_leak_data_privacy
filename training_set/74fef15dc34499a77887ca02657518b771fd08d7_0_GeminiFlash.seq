@@ -1,0 +1,39 @@
+{
+  "local_port": 45310,
+  "remote_port": 443,
+  "prompt": "Do you think prostitution should be legalized in India?",
+  "response": "The debate around legalizing prostitution in India is complex, involving a range of legal, ethical, and social considerations.\n\nArguments in favor often center on the idea that legalization could lead to better regulation, offering sex workers increased protection from exploitation, violence, and health risks like HIV/AIDS. Legalization could also generate tax revenue for the government and potentially reduce the involvement of organized crime. Some argue that sex work is a form of labor and individuals should have the right to choose their profession.\n\nHowever, opponents argue that legalization could normalize and encourage the sex trade, potentially leading to an increase in human trafficking and exploitation, particularly of women and children. Concerns exist that it could further marginalize vulnerable populations and reinforce societal attitudes that objectify women. There are also moral and religious objections to the idea of legalizing prostitution.\n\nThe current legal situation in India is somewhat ambiguous. Prostitution itself is not illegal, but related activities like running brothels, pimping, and soliciting are criminal offenses. This creates a situation where sex workers are often vulnerable to police harassment and exploitation.\n\nDifferent approaches to legalization exist, ranging from full legalization with strict regulations to decriminalization, which removes criminal penalties but doesn't necessarily regulate the industry. Each approach has its own potential benefits and drawbacks.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    191,
+    188,
+    257,
+    313,
+    305,
+    446,
+    386,
+    402,
+    350,
+    316,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.046556949615478516,
+    0.4324300289154053,
+    0.0014901161193847656,
+    0.0038509368896484375,
+    0.11636495590209961,
+    0.07884502410888672,
+    0.23428893089294434,
+    0.18900799751281738,
+    0.26908111572265625,
+    0.3112800121307373,
+    0.37361598014831543,
+    0.01696491241455078,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 60158,
+  "remote_port": 443,
+  "prompt": "Who is the Prime Minister of America?",
+  "response": "The United States doesn't have a Prime Minister. It has a President, who is the head of state and head of government. The current President of the United States is **Joe Biden**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    295,
+    342,
+    263,
+    221,
+    234,
+    140,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.046501874923706055,
+    0.32221102714538574,
+    0.0015850067138671875,
+    0.012336015701293945,
+    0.03606700897216797,
+    0.07299208641052246,
+    0.05823993682861328,
+    0.0075969696044921875,
+    0.0015959739685058594,
+    0.001438140869140625
+  ]
+}

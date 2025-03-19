@@ -1,0 +1,35 @@
+{
+  "local_port": 49578,
+  "remote_port": 443,
+  "prompt": "Is the Galatasaray jersey available at Ataturk International Airport?",
+  "response": "Unfortunately, I cannot provide you with a definitive answer on whether the Galatasaray jersey is available for purchase at Ataturk International Airport. Here's why:\n\n*   **Ataturk International Airport is no longer in operation for commercial passenger flights.** It was replaced by Istanbul Airport (IST) in 2019.\n*   **Retail availability changes frequently.** Even if the airport was open, the specific items available in shops can change depending on the vendors and time of year.\n\nIf you are currently at Istanbul Airport (IST) or planning to travel through there, you can check the airport's website or app for a directory of shops to see if any sports retailers are listed. If so, you could try contacting them directly.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    144,
+    343,
+    262,
+    383,
+    359,
+    501,
+    270,
+    298,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.0685889720916748,
+    0.29421091079711914,
+    0.0014109611511230469,
+    0.10862398147583008,
+    0.05393099784851074,
+    0.15710902214050293,
+    0.230010986328125,
+    0.32189416885375977,
+    0.00547480583190918,
+    0.007258176803588867,
+    0.0,
+    0.0
+  ]
+}

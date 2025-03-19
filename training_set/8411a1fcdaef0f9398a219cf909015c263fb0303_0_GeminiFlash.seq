@@ -1,0 +1,33 @@
+{
+  "local_port": 34942,
+  "remote_port": 443,
+  "prompt": "How did Helena Maurya died?",
+  "response": "There is no historical evidence of a woman named \"Helena Maurya.\" It's possible you are thinking of:\n\n*   **Helena of Macedonia (or Helen):** She was the wife of Emperor Chandragupta Maurya. The circumstances surrounding her death are not clearly documented in historical records. Some stories say she chose to become a Jain nun and died peacefully, while others suggest she died as a result of a conspiracy, possibly poisoned. However, these are more in the realm of legend and speculation than established historical fact.\n\nIt is important to note that information about figures from ancient India can be limited and sometimes mixed with legend.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    173,
+    298,
+    319,
+    318,
+    417,
+    436,
+    200,
+    208,
+    113
+  ],
+  "time_diffs": [
+    0.045211076736450195,
+    0.2746908664703369,
+    0.0014681816101074219,
+    0.172562837600708,
+    0.04591012001037598,
+    0.17995786666870117,
+    0.26282215118408203,
+    0.16343283653259277,
+    0.01587700843811035,
+    9.5367431640625e-07,
+    0.00011515617370605469
+  ]
+}

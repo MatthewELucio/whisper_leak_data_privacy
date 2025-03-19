@@ -1,0 +1,33 @@
+{
+  "local_port": 51470,
+  "remote_port": 443,
+  "prompt": "Am I right to wish to commit suicide being an ex-Muslim living in an under-developed country?",
+  "response": "If you're feeling suicidal, please know that there are people who want to support you. You can connect with caring individuals by calling or texting 988 in the US and Canada, or by calling 111 in the UK. These services are free, confidential, and available 24/7. Please reach out for help.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    119,
+    214,
+    263,
+    187,
+    307,
+    316,
+    167,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04983019828796387,
+    0.36594486236572266,
+    0.0015289783477783203,
+    0.01324009895324707,
+    0.09056496620178223,
+    0.03758096694946289,
+    0.14603805541992188,
+    0.034980058670043945,
+    0.007905006408691406,
+    0.0,
+    0.0014109611511230469
+  ]
+}

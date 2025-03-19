@@ -1,0 +1,37 @@
+{
+  "local_port": 34368,
+  "remote_port": 443,
+  "prompt": "How long can meth be detected through a urine drug screen?",
+  "response": "Methamphetamine (meth) can typically be detected in urine for **2-5 days** after the last use.\n\nHowever, several factors can influence this detection window, including:\n\n*   **Frequency and amount of use:** Heavy, chronic users will have a longer detection window compared to occasional users.\n*   **Metabolism:** Individuals with faster metabolisms may eliminate the drug more quickly.\n*   **Hydration:** Drinking plenty of fluids can dilute urine and potentially shorten the detection window, although this is not a reliable method to pass a drug test.\n*   **Kidney function:** Impaired kidney function can slow down the elimination of drugs from the body.\n*   **Physical activity:** Exercise can increase metabolism and potentially shorten the detection window.\n*   **Cut-off level of the test:** Drug tests have different cut-off levels (the concentration of the drug that must be present to trigger a positive result). A lower cut-off level will result in a longer detection window.\n\nIt's important to note that this is a general guideline, and individual results can vary.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    239,
+    211,
+    425,
+    359,
+    400,
+    305,
+    388,
+    240,
+    293,
+    163,
+    113
+  ],
+  "time_diffs": [
+    0.045124053955078125,
+    0.35878896713256836,
+    0.0011279582977294922,
+    0.17141509056091309,
+    0.09639286994934082,
+    0.20993804931640625,
+    0.19188714027404785,
+    0.3008608818054199,
+    0.2983090877532959,
+    0.12400603294372559,
+    0.010159969329833984,
+    0.0,
+    0.0
+  ]
+}

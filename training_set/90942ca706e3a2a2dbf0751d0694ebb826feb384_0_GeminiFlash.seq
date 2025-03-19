@@ -1,0 +1,43 @@
+{
+  "local_port": 51290,
+  "remote_port": 443,
+  "prompt": "What are some of the most common examples of an imperative sentence?",
+  "response": "Imperative sentences give commands or instructions. Here are some common examples:\n\n**Direct Commands:**\n\n*   **Close the door.**\n*   **Sit down.**\n*   **Listen carefully.**\n*   **Be quiet.**\n*   **Stop!**\n*   **Go away.**\n*   **Do your homework.**\n*   **Clean your room.**\n*   **Eat your vegetables.**\n*   **Take out the trash.**\n\n**Instructions/Directions:**\n\n*   **Add two cups of water.**\n*   **Stir the mixture until smooth.**\n*   **Turn left at the next intersection.**\n*   **Preheat the oven to 350 degrees.**\n*   **Press the power button to turn it on.**\n*   **Download the file and double-click to install.**\n\n**Polite Requests (Often using \"Please\"):**\n\n*   **Please pass the salt.**\n*   **Please be quiet.**\n*   **Please take a seat.**\n*   **Please help me with this.**\n*   **Please let me know if you have any questions.**\n\n**Suggestions/Advice (Sometimes using \"Let's\"):**\n\n*   **Let's go to the park.**\n*   **Try a different approach.**\n*   **Consider your options carefully.**\n*   **Think about the consequences.**\n*   **Don't give up.**\n\n**Exhortations/Encouragement:**\n\n*   **Believe in yourself!**\n*   **Never give up!**\n*   **Go for it!**\n*   **Be brave!**\n\n**Key characteristics of imperative sentences:**\n\n*   **They often omit the subject \"you,\"** as it's implied. (The subject is almost always \"you.\")\n*   **The verb is in its base form.** (No conjugation for person or number).\n*   **They often end with a period, but can also end with an exclamation point for emphasis.**\n\nThese examples cover a wide range of uses for imperative sentences in everyday language.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    284,
+    398,
+    379,
+    398,
+    400,
+    391,
+    414,
+    407,
+    296,
+    499,
+    281,
+    278,
+    143,
+    113
+  ],
+  "time_diffs": [
+    0.050592899322509766,
+    0.30167698860168457,
+    0.001425027847290039,
+    0.11342811584472656,
+    0.08016800880432129,
+    0.16588902473449707,
+    0.17614197731018066,
+    0.2680208683013916,
+    0.29714512825012207,
+    0.323469877243042,
+    0.3294961452484131,
+    0.42274904251098633,
+    0.23679685592651367,
+    0.010595083236694336,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 48000,
+  "remote_port": 443,
+  "prompt": "Is it true that we fantasize about friends of opposite gender?",
+  "response": "Whether or not people fantasize about friends of the opposite gender is a complex question with no single, universally true answer. Here's a breakdown of the factors involved:\n\n*   **Sexuality:** Sexual orientation plays a significant role. Heterosexual individuals may be more likely to fantasize about friends of the opposite gender, while homosexual individuals may be more likely to fantasize about friends of the same gender. Bisexual individuals might fantasize about friends of either gender. Asexual individuals may or may not experience sexual fantasies at all.\n\n*   **Attraction:** Attraction, whether sexual or romantic, is a key factor. If someone is attracted to a friend of the opposite gender, they may be more likely to fantasize about them. This attraction could be based on physical appearance, personality, or a combination of factors.\n\n*   **Relationship Dynamics:** The nature of the friendship also matters. A close, intimate friendship might lead to fantasies more easily than a more distant, casual one.\n\n*   **Individual Differences:** People have different levels of sex drive, different fantasy lives, and different attitudes towards sex and relationships. Some people are simply more prone to fantasizing in general.\n\n*   **Social Conditioning:** Societal norms and expectations can influence who we are \"allowed\" to find attractive or fantasize about.\n\n*   **Curiosity:** Fantasies don't always indicate a deep desire. Sometimes, they can be a way of exploring possibilities or simply indulging in curiosity.\n\n**In summary:**\n\n*   It is **not universally true** that everyone fantasizes about friends of the opposite gender.\n*   It **is common** for people to experience such fantasies, particularly if they are attracted to the friend in question.\n*   Fantasies do not necessarily indicate a desire to act on them or change the nature of the friendship.\n*   Individual experiences vary greatly depending on sexuality, attraction, relationship dynamics, and personal preferences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1272,
+    316,
+    249,
+    353,
+    312,
+    322,
+    357,
+    544,
+    311,
+    418,
+    278,
+    238,
+    113
+  ],
+  "time_diffs": [
+    0.04807686805725098,
+    0.4211580753326416,
+    0.11396312713623047,
+    0.0965878963470459,
+    0.1404280662536621,
+    0.14304089546203613,
+    0.21804404258728027,
+    0.2611229419708252,
+    0.36280298233032227,
+    0.3724350929260254,
+    0.37509703636169434,
+    0.015295028686523438,
+    0.0,
+    0.00010991096496582031
+  ]
+}

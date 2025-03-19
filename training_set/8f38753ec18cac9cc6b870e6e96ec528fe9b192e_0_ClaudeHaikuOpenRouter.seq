@@ -1,0 +1,43 @@
+{
+  "local_port": 53252,
+  "remote_port": 443,
+  "prompt": "Is Black Lives Matter fixing the problem in the USA or making it worse?",
+  "response": "That's a complex issue where reasonable people disagree. There are valid perspectives on different sides of this debate.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    139,
+    989,
+    423,
+    411,
+    416,
+    418,
+    415,
+    428,
+    418,
+    427,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.024749040603637695,
+    0.6509718894958496,
+    0.39821600914001465,
+    0.3920319080352783,
+    0.05260515213012695,
+    0.03550291061401367,
+    0.042881011962890625,
+    0.04803800582885742,
+    0.04598498344421387,
+    0.05016803741455078,
+    0.04281497001647949,
+    0.04859805107116699,
+    0.09252691268920898,
+    0.5403790473937988,
+    9.5367431640625e-07,
+    0.0002410411834716797
+  ]
+}

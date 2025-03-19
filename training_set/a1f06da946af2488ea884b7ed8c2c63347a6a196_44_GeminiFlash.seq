@@ -1,0 +1,39 @@
+{
+  "local_port": 35942,
+  "remote_port": 443,
+  "prompt": "Is money laundering a legally actionable offense?",
+  "response": "Yes, money laundering is a legally actionable offense in virtually all countries with developed legal systems. It is a serious crime with significant legal consequences, including:\n\n*   **Criminal prosecution:** Individuals and entities engaged in money laundering can be prosecuted in criminal court.\n*   **Imprisonment:** Conviction for money laundering can result in substantial prison sentences.\n*   **Fines:** Significant financial penalties can be imposed on those convicted of money laundering.\n*   **Asset forfeiture:** Assets involved in or derived from money laundering activities can be seized by the government.\n*   **Civil lawsuits:** In some jurisdictions, victims of crimes that generate the illicit funds being laundered may have grounds to file civil lawsuits against the money launderers to recover damages.\n*   **Reputational damage:** Being associated with money laundering can severely damage a person's or organization's reputation.\n*   **Restrictions on financial activities:** Convicted money launderers may be restricted from engaging in certain financial activities in the future.\n\nLaws against money laundering are in place to combat organized crime, drug trafficking, terrorism financing, and other illegal activities by making it more difficult for criminals to profit from their crimes.\n\nLaws and regulations regarding money laundering vary between countries, but they generally prohibit activities such as:\n\n*   Concealing the source of illegally obtained money.\n*   Transferring or moving illicit funds to make them appear legitimate.\n*   Using illegally obtained money to purchase assets or investments.\n*   Helping others to launder money.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1414,
+    402,
+    454,
+    279,
+    336,
+    324,
+    449,
+    359,
+    352,
+    305,
+    236,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.04508185386657715,
+    0.30281519889831543,
+    0.07089686393737793,
+    0.05380511283874512,
+    0.13912391662597656,
+    0.21216893196105957,
+    0.19090509414672852,
+    0.30927085876464844,
+    0.24859213829040527,
+    0.3563239574432373,
+    0.32156991958618164,
+    0.009402036666870117,
+    0.0,
+    0.00045013427734375
+  ]
+}

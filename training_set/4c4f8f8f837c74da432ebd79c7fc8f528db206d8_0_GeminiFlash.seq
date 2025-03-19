@@ -1,0 +1,37 @@
+{
+  "local_port": 40132,
+  "remote_port": 443,
+  "prompt": "Why have you decided to get married?",
+  "response": "As a large language model, I am not capable of getting married. I am an AI and do not have the capacity to form relationships, have personal feelings, or make life decisions like marriage. \n\nPerhaps you were asking this question in a hypothetical sense, or maybe you meant to ask a human why *they* decided to get married. In that case, the reasons are vast and deeply personal, but here are some common ones:\n\n*   **Love and commitment:** They deeply love their partner and want to publicly declare their commitment to each other for life.\n*   **Companionship:** They enjoy spending their lives with their partner and want to build a life together.\n*   **Starting a family:** They want to have children and believe marriage provides a stable foundation for raising them.\n*   **Legal and financial benefits:** Marriage offers certain legal rights and financial advantages, such as tax breaks, inheritance rights, and healthcare benefits.\n*   **Social and cultural expectations:** They may feel pressure from family, friends, or society to get married.\n*   **Religious beliefs:** Their religious beliefs may encourage or require marriage.\n*   **Personal growth:** They believe that marriage will help them grow as individuals and as a couple.\n\nUltimately, the decision to get married is a personal one, and the reasons for doing so can vary greatly from person to person.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1311,
+    447,
+    355,
+    457,
+    465,
+    495,
+    439,
+    360,
+    431,
+    158,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.051087141036987305,
+    0.43152904510498047,
+    0.09594893455505371,
+    0.10680890083312988,
+    0.20831799507141113,
+    0.18396210670471191,
+    0.29396796226501465,
+    0.2680690288543701,
+    0.31111907958984375,
+    0.0653388500213623,
+    0.007583141326904297,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 34148,
+  "remote_port": 443,
+  "prompt": "Is money laundering subject to legal prosecution?",
+  "response": "Yes, money laundering is a serious crime and is subject to legal prosecution in most countries around the world.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1278,
+    190,
+    224,
+    260,
+    184,
+    132,
+    113
+  ],
+  "time_diffs": [
+    0.04623699188232422,
+    0.3476889133453369,
+    0.013796091079711914,
+    0.07930397987365723,
+    0.0013709068298339844,
+    0.0061490535736083984,
+    0.0017390251159667969,
+    0.0
+  ]
+}

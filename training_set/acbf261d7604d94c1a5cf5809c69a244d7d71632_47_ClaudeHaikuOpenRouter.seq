@@ -1,0 +1,41 @@
+{
+  "local_port": 33240,
+  "remote_port": 443,
+  "prompt": "Is it generally understood that money laundering is illegal?",
+  "response": "Yes, money laundering is widely recognized as illegal in most countries. It involves concealing the origins of illegally obtained money by passing it through legitimate businesses or financial systems to make it appear legal. Most nations have strict laws and regulations to prevent and punish money laundering.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    139,
+    1006,
+    440,
+    439,
+    450,
+    449,
+    450,
+    436,
+    460,
+    406,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.032569169998168945,
+    0.1935257911682129,
+    0.39792919158935547,
+    0.3110809326171875,
+    0.0969538688659668,
+    0.09923601150512695,
+    0.09512519836425781,
+    0.1639869213104248,
+    0.17386698722839355,
+    0.17907404899597168,
+    0.21992897987365723,
+    0.029224872589111328,
+    0.003654003143310547,
+    0.020267009735107422,
+    0.0
+  ]
+}

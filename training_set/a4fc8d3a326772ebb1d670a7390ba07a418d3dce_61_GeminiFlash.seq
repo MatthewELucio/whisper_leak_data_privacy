@@ -1,0 +1,41 @@
+{
+  "local_port": 46480,
+  "remote_port": 443,
+  "prompt": "Is money laundering a punishable offense?",
+  "response": "Yes, money laundering is a punishable offense in virtually every country with a developed legal system.\n\nHere's why and some of the potential consequences:\n\n*   **Criminal Activity:** Money laundering is inherently tied to underlying criminal activity (like drug trafficking, fraud, corruption, etc.). It's the process of disguising the origins of illegally obtained money so that it appears to come from a legitimate source.\n*   **Laws and Regulations:** Governments have enacted laws specifically targeting money laundering, often based on international standards set by organizations like the Financial Action Task Force (FATF).\n*   **Penalties:** The penalties for money laundering can be severe and typically include:\n    *   **Imprisonment:** Often lengthy prison sentences.\n    *   **Fines:** Substantial monetary fines, often far exceeding the amount of money laundered.\n    *   **Asset Forfeiture:** Seizure of the laundered funds and any assets acquired with them.\n    *   **Criminal Record:** A criminal conviction, which can have long-term consequences for employment, travel, and reputation.\n    *   **Other Sanctions:** Depending on the jurisdiction and the nature of the offense, other sanctions may include restrictions on financial activities, business licenses, and professional licenses.\n\nThe severity of the punishment depends on factors such as:\n\n*   **The amount of money laundered.**\n*   **The underlying criminal activity.**\n*   **The level of involvement of the individual.**\n*   **The jurisdiction where the crime occurred.**\n\nIn short, money laundering is a serious crime with significant legal consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    198,
+    154,
+    309,
+    443,
+    471,
+    431,
+    388,
+    275,
+    539,
+    479,
+    135,
+    143,
+    113
+  ],
+  "time_diffs": [
+    0.047586917877197266,
+    0.5342819690704346,
+    0.0012919902801513672,
+    0.014408111572265625,
+    0.13626909255981445,
+    0.11687493324279785,
+    0.20449304580688477,
+    0.20877981185913086,
+    0.2462019920349121,
+    0.27284812927246094,
+    0.37613487243652344,
+    0.36455321311950684,
+    0.007911920547485352,
+    0.0,
+    5.1021575927734375e-05
+  ]
+}

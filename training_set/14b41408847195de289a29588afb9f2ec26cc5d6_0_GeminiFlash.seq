@@ -1,0 +1,41 @@
+{
+  "local_port": 43424,
+  "remote_port": 443,
+  "prompt": "What are Bernie Sanders' economic policy views?",
+  "response": "Bernie Sanders' economic policy views generally fall under the umbrella of democratic socialism. Here's a breakdown of some key areas:\n\n*   **Income and Wealth Inequality:** Sanders is a vocal critic of income and wealth inequality. He supports policies like a higher minimum wage, progressive taxation (taxing higher earners at a higher rate), and stronger unions to redistribute wealth and reduce the gap between the rich and the poor.\n\n*   **Healthcare:** A signature policy of Sanders is \"Medicare for All,\" a single-payer healthcare system that would guarantee healthcare as a right to all Americans. This would involve replacing private health insurance with a government-run program.\n\n*   **Education:** Sanders advocates for tuition-free public colleges and universities, funded by taxes on Wall Street and the wealthy. He also supports canceling student debt.\n\n*   **Jobs and the Economy:** He proposes large-scale public investments in infrastructure, renewable energy, and affordable housing to create jobs and stimulate economic growth. He also supports policies like a Green New Deal to address climate change while creating jobs.\n\n*   **Trade:** Sanders is critical of free trade agreements that he believes have led to job losses in the United States. He supports trade policies that protect American workers and industries.\n\n*   **Social Security:** He wants to expand Social Security benefits and ensure its long-term solvency by raising taxes on higher earners.\n\n*   **Regulation:** Sanders supports increased regulation of Wall Street and the financial industry to prevent another economic crisis.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    88,
+    232,
+    299,
+    327,
+    368,
+    378,
+    526,
+    391,
+    522,
+    490,
+    222,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.04784393310546875,
+    0.38411498069763184,
+    0.0014619827270507812,
+    0.0032379627227783203,
+    0.09206223487854004,
+    0.09634900093078613,
+    0.18691182136535645,
+    0.15699315071105957,
+    0.3420529365539551,
+    0.25183892250061035,
+    0.3355591297149658,
+    0.2277669906616211,
+    0.012759923934936523,
+    0.0,
+    0.0
+  ]
+}

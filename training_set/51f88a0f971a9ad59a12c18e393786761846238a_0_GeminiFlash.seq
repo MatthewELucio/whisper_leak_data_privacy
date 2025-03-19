@@ -1,0 +1,41 @@
+{
+  "local_port": 49390,
+  "remote_port": 443,
+  "prompt": "Do flu shots really work?",
+  "response": "The effectiveness of flu shots can vary from year to year, but overall, they are considered the best way to protect against the flu. Here's a breakdown of what the science says:\n\n*   **Flu shots reduce your risk of getting sick with the flu.** Studies show that flu vaccines can reduce the risk of flu illness by 40% to 60% when the vaccine viruses are well-matched to the circulating flu viruses.\n\n*   **Even when the vaccine isn't a perfect match, it can still provide some protection.** The vaccine can lessen the severity of your illness if you do get the flu, and it can also reduce your risk of complications like pneumonia, hospitalization, and even death.\n\n*   **The effectiveness of the flu shot depends on several factors:**\n    *   **Age and health:** Flu vaccines tend to work better in healthy adults and older children. They may be less effective in older adults or people with certain health conditions.\n    *   **Match between the vaccine and circulating viruses:** The flu virus is constantly changing, so scientists try to predict which strains will be most common each year and include them in the vaccine. If the vaccine is a good match, it will be more effective.\n    *   **Individual response:** Some people's immune systems respond better to the vaccine than others.\n\nWhile the flu shot isn't perfect, it's still the best tool we have for preventing the flu and its complications. Health organizations like the CDC and WHO recommend that everyone over 6 months of age get a flu shot every year, especially those who are at high risk of complications.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    204,
+    426,
+    278,
+    256,
+    248,
+    332,
+    273,
+    360,
+    350,
+    266,
+    159,
+    204,
+    113
+  ],
+  "time_diffs": [
+    0.044996023178100586,
+    0.28578686714172363,
+    0.001165151596069336,
+    0.10774993896484375,
+    0.07720494270324707,
+    0.22896790504455566,
+    0.17415714263916016,
+    0.26398205757141113,
+    0.25465989112854004,
+    0.3449549674987793,
+    0.3690810203552246,
+    0.03162813186645508,
+    0.01028585433959961,
+    0.0,
+    0.0
+  ]
+}

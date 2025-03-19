@@ -1,0 +1,39 @@
+{
+  "local_port": 50074,
+  "remote_port": 443,
+  "prompt": "How Indian Air Force Chief SP Tyagi was involved in Augusta Westland Scam?",
+  "response": "S. P. Tyagi's alleged involvement in the AgustaWestland scam centers around accusations that he accepted bribes to influence the selection of AgustaWestland's AW101 helicopter as the new VVIP transport for the Indian Air Force. Here's a breakdown of the allegations:\n\n*   **Changing Technical Requirements:** The core allegation is that Tyagi, while serving as the Air Chief Marshal, played a role in altering the technical specifications of the tender. Specifically, the permissible cabin height of the helicopter was lowered, and the requirement for a three-engine helicopter was removed. These changes allegedly made AgustaWestland's AW101 eligible for the contract, as it would have otherwise been excluded.\n\n*   **Bribery Allegations:** Italian investigators claimed that bribes were paid to middlemen, who in turn allegedly paid money to Tyagi and his cousins (Sanjeev, Rajeev, and Sandeep Tyagi) to facilitate the deal. The alleged bribes were routed through various companies and offshore accounts.\n\n*   **CBI Investigation:** The Central Bureau of Investigation (CBI) in India has been investigating the case and has filed a chargesheet against Tyagi and others. The chargesheet alleges criminal conspiracy, cheating, and corruption.\n\n*   **Denials:** Tyagi has consistently denied all the allegations against him. He maintains that the decision to change the specifications was a collective one, taken after due consideration and to broaden the field of potential bidders.\n\nIt's important to note that the case is still ongoing in Indian courts, and no final verdict has been reached regarding Tyagi's guilt or innocence.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1283,
+    284,
+    384,
+    246,
+    509,
+    391,
+    447,
+    512,
+    503,
+    393,
+    139,
+    234,
+    113
+  ],
+  "time_diffs": [
+    0.04544711112976074,
+    0.37023496627807617,
+    0.09101200103759766,
+    0.10271906852722168,
+    0.21422982215881348,
+    0.24529218673706055,
+    0.34862303733825684,
+    0.32032299041748047,
+    0.3927888870239258,
+    0.43628907203674316,
+    0.06910395622253418,
+    0.00828099250793457,
+    5.793571472167969e-05,
+    5.91278076171875e-05
+  ]
+}

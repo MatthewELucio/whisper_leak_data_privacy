@@ -1,0 +1,39 @@
+{
+  "local_port": 56732,
+  "remote_port": 443,
+  "prompt": "Are there legal consequences for money laundering?",
+  "response": "Yes, there are very serious legal consequences for money laundering in most jurisdictions around the world. These consequences can include:\n\n*   **Criminal Charges:** Money laundering is a federal crime in many countries.\n*   **Imprisonment:** Lengthy prison sentences are common upon conviction.\n*   **Fines:** Substantial financial penalties can be imposed.\n*   **Asset Forfeiture:** Assets involved in or derived from the money laundering activity can be seized by the government.\n*   **Civil Penalties:** In addition to criminal charges, civil penalties may also be imposed.\n*   **Reputational Damage:** A conviction for money laundering can severely damage a person's or company's reputation.\n*   **Restrictions on Business Activities:** Convicted individuals may be barred from certain professions or business activities.\n*   **International Cooperation:** Many countries cooperate in the investigation and prosecution of money laundering offenses.\n\nThe specific penalties for money laundering can vary depending on the jurisdiction, the amount of money involved, the nature of the underlying criminal activity, and the individual's role in the money laundering scheme.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    270,
+    279,
+    369,
+    200,
+    296,
+    350,
+    267,
+    470,
+    304,
+    228,
+    187,
+    113
+  ],
+  "time_diffs": [
+    0.050128936767578125,
+    0.3196840286254883,
+    0.001363992691040039,
+    0.011374950408935547,
+    0.08297920227050781,
+    0.09102892875671387,
+    0.2003018856048584,
+    0.22492218017578125,
+    0.2671658992767334,
+    0.3089470863342285,
+    0.10013699531555176,
+    0.012984991073608398,
+    0.0,
+    0.0
+  ]
+}

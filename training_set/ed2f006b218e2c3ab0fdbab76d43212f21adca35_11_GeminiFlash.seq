@@ -1,0 +1,39 @@
+{
+  "local_port": 46030,
+  "remote_port": 443,
+  "prompt": "What is the legal status of money laundering?",
+  "response": "Money laundering is a serious federal crime in most countries, including the United States. It is illegal to engage in financial transactions with the proceeds of illegal activity, and the penalties for money laundering can be severe, including imprisonment, fines, and asset forfeiture.\n\nThe specific laws and regulations governing money laundering vary from country to country, but the basic principles are generally the same: it is illegal to disguise the source of funds obtained through illegal activity in order to make them appear legitimate.\n\nIn the United States, the primary laws used to prosecute money laundering are:\n\n*   **18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments):** This statute prohibits a wide range of activities related to concealing or disguising the nature, location, source, ownership, or control of illegally derived property. It also covers the transportation of funds into or out of the United States for the purpose of promoting illegal activity.\n*   **18 U.S.C. \u00a7 1957 (Engaging in Monetary Transactions in Property Derived from Specified Unlawful Activity):** This statute prohibits knowingly engaging in a monetary transaction with criminally derived property of a value greater than $10,000.\n\nThese laws are enforced by various federal agencies, including the Department of Justice, the Federal Bureau of Investigation (FBI), and the Internal Revenue Service (IRS).\n\nMany other countries have similar laws in place to combat money laundering. The Financial Action Task Force (FATF) is an intergovernmental organization that sets international standards to combat money laundering and terrorist financing.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1298,
+    389,
+    401,
+    430,
+    309,
+    353,
+    374,
+    253,
+    477,
+    408,
+    226,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.046762943267822266,
+    0.6100130081176758,
+    0.2029099464416504,
+    0.08205318450927734,
+    0.14778995513916016,
+    0.11228108406066895,
+    0.11100578308105469,
+    0.04599404335021973,
+    0.244981050491333,
+    0.3762218952178955,
+    0.18767309188842773,
+    0.008047103881835938,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 45778,
+  "remote_port": 443,
+  "prompt": "After TEDx event is finished, do organizers receive a certificate from TED?",
+  "response": "No, TEDx organizers do not receive a certificate from TED after their event is finished.\n\nWhile TED provides a license to organizers to host a TEDx event, and organizers undergo training and receive support materials, there's no official certificate of completion or recognition given to them *after* the event.\n\nThe reward for organizers comes in the form of:\n\n*   **Successfully hosting a TEDx event:** The satisfaction of bringing ideas worth spreading to their community.\n*   **Networking and community building:** Connecting with speakers, attendees, and other organizers.\n*   **Access to the TEDx network:** Ongoing support and collaboration with other TEDx organizers worldwide.\n\nThink of it like running a marathon. You get the satisfaction of completing it, but no certificate from the marathon organizers specifically *after* the race to prove you did it. The evidence is the event itself, the video archives, and the positive impact on the community.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    105,
+    213,
+    354,
+    324,
+    295,
+    276,
+    355,
+    156,
+    152,
+    113
+  ],
+  "time_diffs": [
+    0.049884796142578125,
+    0.4068441390991211,
+    0.0014469623565673828,
+    0.13743996620178223,
+    0.12517905235290527,
+    0.21153497695922852,
+    0.20447301864624023,
+    0.23894309997558594,
+    0.19408392906188965,
+    0.008905887603759766,
+    0.0,
+    0.0
+  ]
+}

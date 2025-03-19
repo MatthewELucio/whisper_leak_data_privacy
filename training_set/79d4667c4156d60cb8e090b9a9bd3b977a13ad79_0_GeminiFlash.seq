@@ -1,0 +1,43 @@
+{
+  "local_port": 60716,
+  "remote_port": 443,
+  "prompt": "Which Pakistani universities are recognized by Australian immigration department?",
+  "response": "The Australian Department of Home Affairs does **not** publish a specific list of recognized Pakistani universities. They assess qualifications on a case-by-case basis based on Australian standards.\n\nHowever, generally, degrees from reputable and well-established Pakistani universities that are recognized by the Higher Education Commission (HEC) of Pakistan are more likely to be favorably assessed.\n\nHere's what you need to consider and how to find out more:\n\n*   **HEC Recognition is Key:**  Ensure the university and the specific degree you hold are recognized by the Higher Education Commission (HEC) of Pakistan.  This is a fundamental requirement. You can check the HEC website (www.hec.gov.pk) for lists of recognized institutions and programs.\n\n*   **Australian Education Standards:** Your qualifications will be assessed against the Australian Qualifications Framework (AQF). The assessing body relevant to your occupation or visa type will determine if your degree is equivalent to an Australian qualification.\n\n*   **Skills Assessment:** For many skilled visas, you'll need a skills assessment from a relevant Australian assessing authority. These authorities will evaluate your education, work experience, and other factors to determine if you meet the required standard.  The assessing authority will have specific requirements for qualifications they accept.\n\n*   **Visa Subclass Requirements:** Different visa subclasses have different requirements. Some may have specific educational requirements.\n\n*   **Seek Professional Advice:**  The best course of action is to:\n\n    *   **Identify the relevant assessing authority:** Determine which body will assess your skills based on your occupation.\n    *   **Contact the assessing authority directly:**  Ask them about their requirements for Pakistani qualifications. They are the most reliable source of information.\n    *   **Consider using a registered migration agent:** A migration agent specializing in Australian visas can provide personalized advice based on your specific circumstances. They can help you navigate the visa application process and ensure you meet all the necessary requirements.\n\n**In summary, instead of looking for a list of \"recognized\" universities, focus on the following:**\n\n1.  **HEC Recognition:**  Ensure your university and degree are recognized by the HEC of Pakistan.\n2.  **Skills Assessment Requirements:** Determine the requirements of the assessing authority for your occupation.\n3.  **Visa Subclass Requirements:**  Understand the specific educational criteria for the visa you are applying for.\n4.  **Professional Advice:** Consult with a registered migration agent or directly with the relevant assessing authority.\n\nGood luck with your visa application!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    115,
+    397,
+    427,
+    320,
+    401,
+    407,
+    470,
+    524,
+    439,
+    485,
+    434,
+    361,
+    240,
+    113
+  ],
+  "time_diffs": [
+    0.045092105865478516,
+    0.35014891624450684,
+    0.0014269351959228516,
+    0.12925100326538086,
+    0.11795902252197266,
+    0.20686912536621094,
+    0.1770939826965332,
+    0.2768988609313965,
+    0.2722740173339844,
+    0.43885016441345215,
+    0.3631157875061035,
+    0.3375570774078369,
+    0.33235812187194824,
+    0.23631691932678223,
+    0.00034499168395996094,
+    0.00044989585876464844
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 57056,
+  "remote_port": 443,
+  "prompt": "What's it like to be married to a pornstar?",
+  "response": "Being married to a porn star is a unique experience, and like any marriage, it comes with its own set of challenges and rewards.\n\nSome potential challenges might include:\n\n*   **Societal stigma:** Dealing with the judgment or misconceptions of others about their partner's profession.\n*   **Jealousy and insecurity:** Managing feelings related to their partner's intimate interactions with others on screen.\n*   **Privacy:** Navigating the public nature of their partner's work and maintaining a sense of privacy in their personal life.\n*   **Communication:** Open and honest communication is crucial to address any concerns, insecurities, or boundaries that arise.\n\nOn the other hand, there can also be positive aspects:\n\n*   **Open-mindedness:** Often, these relationships are built on a foundation of acceptance and open-mindedness.\n*   **Strong communication:** The need to address potential challenges can lead to very strong communication skills within the relationship.\n*   **Financial benefits:** Depending on the success of the porn star, there may be financial stability and opportunities.\n*   **Excitement and adventure:** The lifestyle can be unconventional and exciting for some.\n\nUltimately, the success of the marriage depends on the individuals involved, their values, their communication skills, and their ability to navigate the specific challenges and rewards that come with this type of relationship.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    274,
+    327,
+    407,
+    473,
+    415,
+    356,
+    395,
+    482,
+    396,
+    257,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.04834914207458496,
+    0.3555319309234619,
+    0.0014379024505615234,
+    0.10282611846923828,
+    0.11556887626647949,
+    0.19510722160339355,
+    0.22516798973083496,
+    0.254990816116333,
+    0.2686941623687744,
+    0.3546910285949707,
+    0.0953378677368164,
+    0.00881505012512207,
+    0.0,
+    0.0
+  ]
+}

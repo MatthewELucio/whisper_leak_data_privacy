@@ -1,0 +1,43 @@
+{
+  "local_port": 38574,
+  "remote_port": 443,
+  "prompt": "Can foreigners move to Cuba?",
+  "response": "Yes, foreigners can move to Cuba, but it's not a straightforward process and depends heavily on their reasons for wanting to move.  Here's a breakdown of the main pathways:\n\n*   **Marriage to a Cuban Citizen:** This is one of the most common and generally easier routes. A foreigner who marries a Cuban citizen can apply for residency.\n\n*   **Work Visa:** Foreigners can obtain residency if they are hired by a Cuban company or an international company operating in Cuba. This usually requires specialized skills that are in demand.\n\n*   **Investment:** Foreigners who make significant investments in Cuba may be eligible for residency.\n\n*   **Retirement:** Cuba offers a retirement visa for foreigners who can demonstrate a sufficient and stable income from abroad to support themselves.\n\n*   **Family Reunification:** This applies to close relatives of Cuban citizens or permanent residents.\n\n**Important Considerations:**\n\n*   **Bureaucracy:** Cuban bureaucracy can be slow and complex. Be prepared for paperwork and delays.\n*   **Restrictions:** There are restrictions on what foreigners can own in Cuba.\n*   **Language:** Learning Spanish is highly recommended, if not essential, for navigating daily life.\n*   **Healthcare:** Foreigners can access Cuban healthcare, but it's often recommended to have international health insurance.\n*   **Cost of Living:** While some things are affordable, imported goods can be expensive.\n*   **Internet Access:** Internet access can be limited and expensive in some areas.\n*   **Political Climate:** It's important to be aware of the political and economic situation in Cuba.\n\n**In summary:** Moving to Cuba is possible, but it requires careful planning, patience, and often, a strong connection to the country through family, marriage, or work.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    137,
+    171,
+    390,
+    289,
+    450,
+    386,
+    336,
+    435,
+    513,
+    383,
+    342,
+    220,
+    217,
+    113
+  ],
+  "time_diffs": [
+    0.04578900337219238,
+    0.5743920803070068,
+    0.0014369487762451172,
+    0.03518199920654297,
+    0.058055877685546875,
+    0.06681203842163086,
+    0.15725016593933105,
+    0.22003889083862305,
+    0.3040909767150879,
+    0.28167009353637695,
+    0.3274550437927246,
+    0.3293018341064453,
+    0.1947791576385498,
+    0.012379884719848633,
+    0.0,
+    0.0
+  ]
+}

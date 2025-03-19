@@ -1,0 +1,43 @@
+{
+  "local_port": 54958,
+  "remote_port": 443,
+  "prompt": "Should you rinse with water after mouthwash?",
+  "response": "Whether or not you should rinse with water after using mouthwash depends on the type of mouthwash you're using. Here's a breakdown:\n\n*   **Fluoride Mouthwash:**\n    *   **No rinsing!** The purpose of fluoride mouthwash is to leave a thin layer of fluoride on your teeth to help strengthen enamel and prevent cavities. Rinsing with water immediately after using a fluoride mouthwash will wash away the fluoride and reduce its effectiveness. You should wait at least 30 minutes before eating, drinking, or rinsing with anything else.\n\n*   **Antiseptic/Antimicrobial Mouthwash (e.g., Listerine, chlorhexidine):**\n    *   **No rinsing (usually preferred):** These mouthwashes are designed to kill bacteria and freshen breath. Rinsing immediately after use can dilute the solution and decrease its effectiveness. Waiting at least 30 minutes is generally recommended.\n    *   **However, some people find the taste of these mouthwashes unpleasant and may choose to rinse very lightly.** If you do rinse, use a small amount of water and swish very gently. The longer you can wait, the better.\n\n*   **Cosmetic Mouthwash:**\n    *   **Optional rinsing:** These mouthwashes primarily freshen breath and don't offer significant therapeutic benefits. Rinsing after use is a matter of personal preference.\n\n**General Recommendations:**\n\n*   **Follow the instructions on the mouthwash bottle.** The manufacturer's instructions are the best guide.\n*   **Wait to eat or drink.** Regardless of the type of mouthwash, it's generally recommended to wait at least 30 minutes after using mouthwash before eating or drinking.\n*   **Use mouthwash at the right time:** Mouthwash is most effective when used after brushing and flossing, as this removes food particles and plaque, allowing the mouthwash to reach all areas of your mouth.\n\n**In summary, avoid rinsing with water after using fluoride or antiseptic mouthwash to maximize their benefits. Cosmetic mouthwashes are less critical.**",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    239,
+    283,
+    377,
+    372,
+    260,
+    430,
+    427,
+    430,
+    416,
+    289,
+    472,
+    314,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04880094528198242,
+    0.28799891471862793,
+    0.0012440681457519531,
+    0.12598514556884766,
+    0.05084395408630371,
+    0.2548840045928955,
+    0.22220182418823242,
+    0.2861361503601074,
+    0.2380969524383545,
+    0.3904080390930176,
+    0.2998850345611572,
+    0.38102293014526367,
+    0.21935391426086426,
+    0.00875401496887207,
+    0.0,
+    0.0
+  ]
+}

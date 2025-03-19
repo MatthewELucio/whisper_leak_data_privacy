@@ -1,0 +1,35 @@
+{
+  "local_port": 54730,
+  "remote_port": 443,
+  "prompt": "Is money laundering a legally actionable offense?",
+  "response": "Yes, money laundering is a legally actionable offense in virtually all countries with developed legal systems. This means that individuals or entities engaged in money laundering can be prosecuted and face legal consequences, including:\n\n*   **Criminal penalties:** Imprisonment, fines, and forfeiture of assets.\n*   **Civil penalties:** Fines and injunctions.\n\nMoney laundering is criminalized because it facilitates a wide range of underlying criminal activities, such as drug trafficking, terrorism, fraud, and corruption. It undermines the integrity of financial systems and can have significant economic and social consequences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    156,
+    363,
+    363,
+    225,
+    384,
+    362,
+    236,
+    174,
+    236,
+    113
+  ],
+  "time_diffs": [
+    0.04659605026245117,
+    0.2694740295410156,
+    0.0012710094451904297,
+    0.013386964797973633,
+    0.13516712188720703,
+    0.0789029598236084,
+    0.18500900268554688,
+    0.19205784797668457,
+    0.06240105628967285,
+    0.011349916458129883,
+    0.0,
+    0.0
+  ]
+}

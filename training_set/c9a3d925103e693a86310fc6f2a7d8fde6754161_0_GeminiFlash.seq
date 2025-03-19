@@ -1,0 +1,41 @@
+{
+  "local_port": 51732,
+  "remote_port": 443,
+  "prompt": "What was it that saved your marriage the most?",
+  "response": "As an AI, I don't have personal experiences like marriage. However, I can access and process information from a vast range of sources, including relationship advice, studies on marriage, and personal anecdotes shared online. Based on this information, some key factors that frequently contribute to saving a marriage include:\n\n*   **Open and Honest Communication:** This is often cited as the most crucial element. Being able to express feelings, needs, and concerns without fear of judgment, and actively listening to your partner, can resolve many issues.\n\n*   **Commitment to Change:** Both partners must be willing to acknowledge their roles in the problems and be committed to making positive changes in their behavior and attitudes.\n\n*   **Seeking Professional Help:** Couples therapy can provide a safe space to address difficult issues with the guidance of a trained professional. A therapist can offer tools and strategies for better communication, conflict resolution, and understanding each other's perspectives.\n\n*   **Rebuilding Trust:** If trust has been broken (through infidelity, lies, or other betrayals), rebuilding it takes time, effort, and consistent actions. It requires honesty, transparency, and a willingness to demonstrate trustworthiness.\n\n*   **Rediscovering Connection and Intimacy:** Reconnecting emotionally and physically is vital. This can involve spending quality time together, pursuing shared interests, and prioritizing intimacy.\n\n*   **Forgiveness:** Holding onto resentment and anger can poison a marriage. Forgiveness, both of oneself and one's partner, is essential for moving forward.\n\n*   **Focusing on the Positive:** It's easy to get caught up in the negative aspects of a relationship. Actively focusing on the positive qualities of your partner and the good times you've shared can help to reignite feelings of love and appreciation.\n\nThese are general themes and the specific ingredients for saving a marriage will depend on the unique circumstances of each relationship.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    255,
+    207,
+    436,
+    434,
+    274,
+    337,
+    308,
+    587,
+    505,
+    536,
+    246,
+    220,
+    113
+  ],
+  "time_diffs": [
+    0.04667997360229492,
+    0.31275296211242676,
+    0.0016989707946777344,
+    0.11458516120910645,
+    0.09700584411621094,
+    0.24111509323120117,
+    0.17696809768676758,
+    0.2588388919830322,
+    0.3603830337524414,
+    0.3109290599822998,
+    0.33481884002685547,
+    0.3709070682525635,
+    0.004446983337402344,
+    0.0,
+    0.0
+  ]
+}

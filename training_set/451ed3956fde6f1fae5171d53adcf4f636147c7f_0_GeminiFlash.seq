@@ -1,0 +1,43 @@
+{
+  "local_port": 38270,
+  "remote_port": 443,
+  "prompt": "What do people of Pakistan Occupied Kashmir think about India?",
+  "response": "Views on India in Pakistan-administered Kashmir (also referred to as Azad Kashmir by Pakistan) are varied and complex, influenced by historical events, political affiliations, and personal experiences. It's important to avoid generalizations and acknowledge the diversity of opinions. Here's a breakdown of some common perspectives:\n\n*   **Distrust and animosity:** Decades of conflict, the unresolved Kashmir dispute, and narratives promoted by Pakistani media have fostered distrust and animosity towards India among some residents. They may view India as an occupying force in Indian-administered Kashmir and express solidarity with the Kashmiri people there.\n\n*   **Mixed feelings:** Some individuals may harbor mixed feelings, acknowledging cultural and historical ties with India while remaining critical of Indian policies in Kashmir. They might express a desire for peaceful relations but emphasize the need for a resolution of the Kashmir dispute that respects the wishes of the Kashmiri people.\n\n*   **Positive views:** Some residents may hold positive views of India, particularly if they have family or personal connections across the Line of Control. They may admire India's economic progress or democratic institutions. However, expressing such views publicly can be sensitive due to the prevailing political climate.\n\n*   **Focus on local issues:** Many people in Pakistan-administered Kashmir are primarily concerned with their own local issues, such as economic development, governance, and human rights. Their views on India may be secondary to these concerns.\n\n**Factors influencing opinions:**\n\n*   **Generational differences:** Younger generations may have different perspectives compared to older generations who directly experienced the conflicts of 1947-48 or subsequent wars.\n*   **Socioeconomic status:** Economic opportunities and access to information can influence attitudes towards India.\n*   **Political affiliation:** Support for different political parties within Pakistan-administered Kashmir can shape views on India.\n*   **Personal experiences:** Individual experiences with cross-border interactions, family connections, or exposure to different narratives can significantly impact opinions.\n\nOverall, there is no single, monolithic view of India in Pakistan-administered Kashmir. Opinions are diverse and shaped by a variety of factors.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    226,
+    271,
+    393,
+    476,
+    288,
+    398,
+    466,
+    529,
+    516,
+    363,
+    426,
+    233,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.047158002853393555,
+    0.29270195960998535,
+    0.0014820098876953125,
+    0.1426379680633545,
+    0.09288907051086426,
+    0.2377629280090332,
+    0.22938108444213867,
+    0.3841080665588379,
+    0.2781989574432373,
+    0.3700089454650879,
+    0.4241940975189209,
+    0.40389394760131836,
+    0.15193510055541992,
+    0.014811992645263672,
+    0.0,
+    0.0
+  ]
+}

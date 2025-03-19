@@ -1,0 +1,27 @@
+{
+  "local_port": 52208,
+  "remote_port": 443,
+  "prompt": "Which enzyme uses both NAD+ and NADP+ as a coenzyme?",
+  "response": "The enzyme that uses both NAD+ and NADP+ as a coenzyme is **glutamate dehydrogenase**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    229,
+    188,
+    392,
+    258,
+    200,
+    113
+  ],
+  "time_diffs": [
+    0.048857927322387695,
+    0.312640905380249,
+    0.0016520023345947266,
+    0.013776063919067383,
+    0.08045411109924316,
+    0.013942956924438477,
+    0.0032639503479003906,
+    0.0
+  ]
+}

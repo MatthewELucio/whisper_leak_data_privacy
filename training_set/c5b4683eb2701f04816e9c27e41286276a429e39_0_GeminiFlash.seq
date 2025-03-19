@@ -1,0 +1,31 @@
+{
+  "local_port": 51404,
+  "remote_port": 443,
+  "prompt": "If I have someone blocked on Instagram, and view their story, can they see I viewed it?",
+  "response": "No, if you have someone blocked on Instagram, they cannot see that you viewed their story. Blocking someone on Instagram prevents them from seeing your profile, posts, stories, and any other activity you do on the platform.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    285,
+    279,
+    372,
+    258,
+    179,
+    189,
+    184,
+    113
+  ],
+  "time_diffs": [
+    0.04904007911682129,
+    0.4856228828430176,
+    0.0015950202941894531,
+    0.037162065505981445,
+    0.042327880859375,
+    0.09206604957580566,
+    0.0666341781616211,
+    0.00694584846496582,
+    0.0002319812774658203,
+    0.0033571720123291016
+  ]
+}

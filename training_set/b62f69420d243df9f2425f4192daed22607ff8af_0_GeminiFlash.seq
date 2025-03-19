@@ -1,0 +1,41 @@
+{
+  "local_port": 58350,
+  "remote_port": 443,
+  "prompt": "Is this PC good for gaming?",
+  "response": "To tell you if a PC is good for gaming, I need some information about its specifications.  Please provide the following:\n\n*   **CPU (Processor):**  What is the make and model of the CPU? (e.g., Intel Core i5-12600K, AMD Ryzen 5 5600X)\n*   **GPU (Graphics Card/Video Card):** What is the make and model of the GPU? (e.g., NVIDIA GeForce RTX 3060, AMD Radeon RX 6700 XT)\n*   **RAM (Memory):** How much RAM is installed, and what is its speed (MHz)? (e.g., 16GB 3200MHz DDR4)\n*   **Storage:** What type and size of storage is used? (e.g., 1TB NVMe SSD, 2TB HDD)\n*   **Resolution and Refresh Rate of your monitor:** What resolution do you want to play at? (1080p, 1440p, 4k) What is your monitor's refresh rate? (60hz, 144hz, 240hz)\n\nOnce I have this information, I can give you a much more accurate assessment of its gaming capabilities.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    125,
+    135,
+    407,
+    415,
+    301,
+    329,
+    385,
+    478,
+    462,
+    338,
+    144,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.04675698280334473,
+    0.4196929931640625,
+    0.001837015151977539,
+    0.020328044891357422,
+    0.055223941802978516,
+    0.10492897033691406,
+    0.16024112701416016,
+    0.1667919158935547,
+    0.21516895294189453,
+    0.22934198379516602,
+    0.29404115676879883,
+    0.04134178161621094,
+    0.009509086608886719,
+    0.0,
+    0.0
+  ]
+}

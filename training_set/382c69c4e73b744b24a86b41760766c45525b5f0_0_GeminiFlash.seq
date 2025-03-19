@@ -1,0 +1,41 @@
+{
+  "local_port": 39792,
+  "remote_port": 443,
+  "prompt": "Do wrestlers have to stretch before they workout?",
+  "response": "Yes, absolutely. Stretching is crucial for wrestlers before a workout (and after!). Here's why:\n\n*   **Injury Prevention:** Wrestling is a high-impact, physically demanding sport. Stretching helps to warm up the muscles and increase flexibility, which reduces the risk of strains, sprains, and other injuries.\n*   **Improved Performance:** Flexible muscles allow for a greater range of motion, which is essential for executing wrestling techniques effectively. Stretching can improve agility, speed, and overall athletic performance.\n*   **Increased Blood Flow:** Stretching increases blood flow to the muscles, delivering oxygen and nutrients that are necessary for optimal performance and recovery.\n*   **Mental Preparation:** Stretching can also serve as a mental preparation for the workout or competition. It allows wrestlers to focus on their bodies and get mentally ready for the physical challenges ahead.\n\n**Types of Stretching:**\n\n*   **Dynamic Stretching:** These are active movements that take the muscles through a full range of motion. Examples include arm circles, leg swings, torso twists, and walking lunges. Dynamic stretching is typically done before a workout to warm up the muscles.\n*   **Static Stretching:** These involve holding a stretch for a period of time, typically 15-30 seconds. Static stretching is typically done after a workout to cool down the muscles and improve flexibility.\n\nTherefore, incorporating stretching into a wrestler's routine is a necessity to make sure they are prepared, able to perform at the highest level, and prevent potential injuries.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    173,
+    159,
+    225,
+    356,
+    321,
+    338,
+    384,
+    471,
+    359,
+    342,
+    166,
+    229,
+    113
+  ],
+  "time_diffs": [
+    0.045548200607299805,
+    0.3730759620666504,
+    0.0015130043029785156,
+    0.014534950256347656,
+    0.1069939136505127,
+    0.09201717376708984,
+    0.1480419635772705,
+    0.24916791915893555,
+    0.2049570083618164,
+    0.2822151184082031,
+    0.2807478904724121,
+    0.22463297843933105,
+    0.005553007125854492,
+    0.0,
+    0.0002200603485107422
+  ]
+}

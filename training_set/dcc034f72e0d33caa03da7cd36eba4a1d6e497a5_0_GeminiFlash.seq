@@ -1,0 +1,41 @@
+{
+  "local_port": 36462,
+  "remote_port": 443,
+  "prompt": "What is the salary of systems engineer for freshers in TCS India?",
+  "response": "The salary for a Systems Engineer at TCS in India for freshers can vary depending on a few factors like:\n\n*   **Academic qualifications:** Graduates from IITs and NITs may receive slightly higher offers.\n*   **Specific skills:** Having relevant skills in demand can sometimes lead to a higher starting salary.\n*   **Location:** Salaries might differ slightly based on the city of employment.\n\n**However, a reasonable estimate for the typical salary range for a fresher Systems Engineer at TCS in India is:**\n\n*   **\u20b93.5 LPA to \u20b94.5 LPA (Rupees Lakhs Per Annum)**.\n\n**Keep in Mind:**\n*   This is just an estimated range.\n*   The actual offer you receive will be based on your performance during the selection process and the company's current compensation policies.\n*   There might be additional benefits and perks offered by TCS, like insurance, allowances, etc., which are not factored into the base salary.\n\n**Where to find more accurate information:**\n\n*   **Glassdoor:** You can find user-submitted salary data on Glassdoor, although the data might not always be completely up-to-date.\n*   **AmbitionBox:** Similar to Glassdoor, AmbitionBox provides salary information based on employee reviews.\n*   **Your placement cell:** If you are a student, your college's placement cell will be the best source for the most accurate and current salary data for TCS and other companies.\n\nGood luck with your job search!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    201,
+    187,
+    241,
+    343,
+    445,
+    371,
+    417,
+    406,
+    386,
+    276,
+    269,
+    150,
+    113
+  ],
+  "time_diffs": [
+    0.04628300666809082,
+    0.40544915199279785,
+    0.0009670257568359375,
+    0.03606390953063965,
+    0.0580449104309082,
+    0.14004206657409668,
+    0.22638201713562012,
+    0.15009689331054688,
+    0.23776602745056152,
+    0.27974414825439453,
+    0.2962210178375244,
+    0.24070286750793457,
+    0.015006065368652344,
+    0.0010058879852294922,
+    0.0
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "local_port": 43812,
+  "remote_port": 443,
+  "prompt": "Is it illegal to clean dirty money?",
+  "response": "Cleaning dirty money, also known as money laundering, is illegal in most countries. It involves trying to make illegally obtained money appear legal by passing it through legitimate businesses or financial systems. Money laundering is a serious criminal offense that can result in significant legal penalties, including fines and imprisonment.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    405,
+    405,
+    426,
+    448,
+    443,
+    451,
+    438,
+    758,
+    441,
+    453,
+    420,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.020034074783325195,
+    0.17695403099060059,
+    0.39119696617126465,
+    0.0013630390167236328,
+    0.003545999526977539,
+    0.10800695419311523,
+    0.0921471118927002,
+    0.12948298454284668,
+    0.12663888931274414,
+    0.2102351188659668,
+    0.06332588195800781,
+    0.17705607414245605,
+    0.0465390682220459,
+    0.0004258155822753906,
+    0.2880280017852783,
+    9.5367431640625e-07
+  ]
+}

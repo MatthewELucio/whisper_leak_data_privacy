@@ -1,0 +1,37 @@
+{
+  "local_port": 37178,
+  "remote_port": 443,
+  "prompt": "What was the weirdest compliment you've ever received?",
+  "response": "Okay, this one is a bit odd and still makes me chuckle. Someone once told me, \"You have a very... *consistent* face. Like, I can always tell it's you, even from a distance, because your features are just... reliably you.\"\n\nI think they meant I have distinctive, recognizable features, but the way they phrased it made it sound like my face was stubbornly adhering to a rigid, unchanging template. It was like my face was the opposite of a chameleon. \"Reliably me\" somehow translated to \"unimaginatively you\" in my brain.\n\nI'm still not entirely sure if it was a compliment, an observation, or a subtle insult, but it definitely stands out as the weirdest!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    110,
+    243,
+    395,
+    399,
+    292,
+    238,
+    274,
+    247,
+    263,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.04667091369628906,
+    0.32910609245300293,
+    0.0014488697052001953,
+    0.013334989547729492,
+    0.10401701927185059,
+    0.1208951473236084,
+    0.2542858123779297,
+    0.17929911613464355,
+    0.3338620662689209,
+    0.03186988830566406,
+    0.008996963500976562,
+    0.0,
+    1.1920928955078125e-06
+  ]
+}

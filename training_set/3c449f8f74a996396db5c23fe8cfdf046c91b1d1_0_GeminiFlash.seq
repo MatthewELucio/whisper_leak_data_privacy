@@ -1,0 +1,29 @@
+{
+  "local_port": 34612,
+  "remote_port": 443,
+  "prompt": "Who was the original choice to play Bob Lee Swagger in Shooter (2007 movie)?",
+  "response": "According to various sources, including IMDb, the original choice to play Bob Lee Swagger in the 2007 film \"Shooter\" was **Mark Wahlberg**. He was ultimately cast in the role.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    149,
+    358,
+    340,
+    381,
+    136,
+    209,
+    113
+  ],
+  "time_diffs": [
+    0.054715871810913086,
+    0.30402708053588867,
+    0.0013740062713623047,
+    0.11560201644897461,
+    0.06398296356201172,
+    0.06511211395263672,
+    0.003618001937866211,
+    0.003535032272338867,
+    0.0016160011291503906
+  ]
+}

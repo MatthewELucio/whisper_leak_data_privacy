@@ -1,0 +1,41 @@
+{
+  "local_port": 48300,
+  "remote_port": 443,
+  "prompt": "What should be my 12th board percentage to get admission in St. Xavier's College Autonomous, Mumbai for B.Com?",
+  "response": "St. Xavier's College, Mumbai, is highly competitive, and the cut-off marks for B.Com change every year based on the overall performance of students in the 12th board exams and the number of applicants.  However, I can give you a general idea based on past trends:\n\n**Generally, you should aim for a percentage *above* 95% to have a good chance of getting into the B.Com program at St. Xavier's.**  In some years, the first merit list cut-offs have even exceeded 97%.\n\n**Here's why it's hard to give you an exact number and what you should keep in mind:**\n\n*   **Year-to-Year Variation:** The cut-off depends on the difficulty level of the board exams, the overall scoring of students that year, and the number of applications received.\n*   **Different Boards:** Cut-offs may vary slightly depending on whether you are from the Maharashtra State Board, CBSE, or other boards.  Generally, CBSE students sometimes face higher cut-offs due to the perceived higher scoring potential.\n*   **Merit Lists:** St. Xavier's usually releases multiple merit lists.  If you don't make the first list, you might still have a chance in subsequent lists if seats are available.\n*   **The application process is entirely online.**\n\n**Key takeaways:**\n\n*   **Aim as high as possible:** Strive for the highest percentage you can achieve in your 12th boards.  Every fraction of a percent matters.\n*   **Keep an eye on official announcements:** Once the board results are out, carefully monitor the official St. Xavier's College website and notice boards for the official admission notifications and cut-off lists.\n*   **Have backup options:** Due to the high competition, it's wise to apply to other reputable colleges as well to ensure you have options.\n\n**Important:** Don't rely solely on this information. Always check the official St. Xavier's College, Mumbai, website for the most up-to-date and accurate admission criteria and cut-off information when the application process begins. Good luck!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1268,
+    346,
+    389,
+    496,
+    363,
+    466,
+    337,
+    491,
+    395,
+    316,
+    433,
+    249,
+    170,
+    113
+  ],
+  "time_diffs": [
+    0.043212890625,
+    0.40439820289611816,
+    0.0790557861328125,
+    0.10920000076293945,
+    0.16194820404052734,
+    0.1870269775390625,
+    0.25515103340148926,
+    0.2600409984588623,
+    0.33501601219177246,
+    0.36887598037719727,
+    0.3232560157775879,
+    0.2780277729034424,
+    0.00902700424194336,
+    0.0009400844573974609,
+    0.0
+  ]
+}

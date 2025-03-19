@@ -1,0 +1,35 @@
+{
+  "local_port": 38176,
+  "remote_port": 443,
+  "prompt": "Do convictions for drug crimes include alcohol as being a drug?",
+  "response": "Generally, no. Convictions for drug crimes typically refer to **illegal drugs**, such as:\n\n*   Marijuana\n*   Cocaine\n*   Heroin\n*   Methamphetamine\n*   Ecstasy (MDMA)\n*   Illegally obtained prescription drugs\n\nAlcohol is a controlled substance, and while it's regulated and can be the basis for crimes (like DUI or public intoxication), it's usually treated separately from crimes involving illegal drugs.\n\nIn legal terminology and in the context of criminal convictions, \"drug crimes\" typically refer to offenses involving substances that are illegal to possess, manufacture, or distribute without proper authorization. Alcohol is legal for adults of a certain age.\n\nTherefore, a conviction for a \"drug crime\" will generally *not* include offenses related solely to alcohol. These are typically categorized as alcohol-related offenses.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1263,
+    272,
+    289,
+    359,
+    254,
+    426,
+    449,
+    264,
+    167,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04655098915100098,
+    0.3601219654083252,
+    0.054888010025024414,
+    0.06613612174987793,
+    0.0830390453338623,
+    0.2510998249053955,
+    0.2799551486968994,
+    0.26341986656188965,
+    0.11564016342163086,
+    0.009413957595825195,
+    0.0,
+    0.0
+  ]
+}

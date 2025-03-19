@@ -1,0 +1,35 @@
+{
+  "local_port": 41976,
+  "remote_port": 443,
+  "prompt": "Are we going to see the next world war?",
+  "response": "Predicting whether or not a world war will happen is incredibly complex, and there's no way to say for sure. On one hand, we have a number of factors that could increase the risk. Tensions between major global powers are definitely present, and we're seeing conflicts in various regions around the world. Economic instability, competition for resources, and the spread of misinformation can also fuel conflict. Plus, advancements in military technology, including nuclear weapons, raise the stakes significantly.\n\nOn the other hand, there are strong disincentives for a world war. The potential for catastrophic destruction, especially with nuclear weapons, acts as a major deterrent. International organizations, diplomatic efforts, and economic interdependence all work to promote cooperation and prevent conflicts from escalating. Public opinion in many countries also generally favors peace and diplomacy. \n\nUltimately, whether we see another world war depends on the choices leaders and nations make. A combination of factors and miscalculations could lead to a global conflict, but it's not inevitable.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    263,
+    261,
+    328,
+    342,
+    345,
+    399,
+    360,
+    208,
+    220,
+    113
+  ],
+  "time_diffs": [
+    0.04825401306152344,
+    0.37154603004455566,
+    0.001409769058227539,
+    0.10406112670898438,
+    0.07548809051513672,
+    0.26909494400024414,
+    0.20075488090515137,
+    0.3373091220855713,
+    0.31636905670166016,
+    0.010748863220214844,
+    0.0,
+    0.0
+  ]
+}

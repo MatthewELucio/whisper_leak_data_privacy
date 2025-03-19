@@ -1,0 +1,43 @@
+{
+  "local_port": 34494,
+  "remote_port": 443,
+  "prompt": "Why am I a failure?",
+  "response": "It sounds like you're going through a tough time and feeling really down on yourself.  It's important to remember that everyone experiences feelings of inadequacy or failure at some point in their lives.  It's a universal human experience, and it doesn't define you.\n\nFirst, let's address the statement \"I am a failure.\" This is a very broad and absolute statement.  It's highly unlikely that *every* aspect of your life is a failure.  Often, when people feel this way, they are focusing on specific areas where they feel they are falling short.\n\nTo help you (and myself) understand what's going on, let's break down why you feel this way.  Could you tell me more about what makes you feel like a failure?  For example:\n\n*   **What specific areas of your life are you struggling with?** (e.g., career, relationships, finances, health, education, personal goals)\n*   **What are your expectations for yourself?** Are they realistic and achievable? Sometimes we hold ourselves to impossible standards.\n*   **Are you comparing yourself to others?** Social comparison can be a major source of dissatisfaction and feelings of inadequacy.\n*   **Have you experienced any recent setbacks or disappointments?**\n*   **What do you define as success?** Is your definition aligned with your values and what truly matters to you?\n\nIn the meantime, please know that you are not alone in feeling this way.  It takes courage to even ask the question, and acknowledging your feelings is the first step toward feeling better. You can get better, and you can and will get through this.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    94,
+    283,
+    320,
+    214,
+    467,
+    436,
+    414,
+    436,
+    441,
+    549,
+    363,
+    263,
+    216,
+    113
+  ],
+  "time_diffs": [
+    0.04631304740905762,
+    0.3504807949066162,
+    0.0014791488647460938,
+    0.02153301239013672,
+    0.08492398262023926,
+    0.07604098320007324,
+    0.22341394424438477,
+    0.18665313720703125,
+    0.3202548027038574,
+    0.2410421371459961,
+    0.32968997955322266,
+    0.37783193588256836,
+    0.17116808891296387,
+    0.010251045227050781,
+    0.0,
+    0.0
+  ]
+}

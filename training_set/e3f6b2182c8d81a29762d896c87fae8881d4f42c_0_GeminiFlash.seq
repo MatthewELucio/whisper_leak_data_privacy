@@ -1,0 +1,43 @@
+{
+  "local_port": 33732,
+  "remote_port": 443,
+  "prompt": "What is the \"Dale la vuelta a la tortilla!\" video all about?",
+  "response": "\"Dale la vuelta a la tortilla!\" is a popular internet meme and phrase that originated in Spain.  It literally translates to \"Flip the tortilla!\" (referring to a Spanish tortilla, which is a thick omelet made with potatoes and onions).  However, in a figurative sense, it means \"Turn the tables,\" \"Change the situation,\" or \"Turn things around.\"\n\nHere's a breakdown of what the video and meme are all about:\n\n*   **Origin and Content:** The original video features a man attempting to flip a large Spanish tortilla in a restaurant. It's a dramatic moment, usually accompanied by nervous anticipation and potential for disaster.\n\n*   **Meme Usage:** The phrase \"Dale la vuelta a la tortilla!\" is used as an encouragement or a call to action to reverse a negative situation or to seize an opportunity to change things for the better.  It's often used humorously or ironically.\n\n*   **Figurative Meaning:** It embodies the idea of:\n    *   **Changing perspectives:** Looking at a problem from a different angle.\n    *   **Taking control:** Actively working to improve a situation.\n    *   **Reversing fortunes:** Turning a bad situation into a good one.\n    *   **Seizing an opportunity:** Taking advantage of a chance to change things.\n\n*   **Example:** Imagine a sports team is losing badly. Someone might say \"\u00a1Dale la vuelta a la tortilla!\" to encourage them to rally and turn the game around. Or if someone is having a bad day, a friend might say it to inspire them to change their attitude and turn things around.\n\nIn short, the video and the phrase \"Dale la vuelta a la tortilla!\" are about the exciting (and potentially nerve-wracking) act of flipping a Spanish tortilla, but more importantly, it's a metaphor for changing fortunes, seizing opportunities, and turning situations around in life.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    265,
+    158,
+    389,
+    421,
+    482,
+    237,
+    367,
+    329,
+    291,
+    279,
+    481,
+    274,
+    168,
+    113
+  ],
+  "time_diffs": [
+    0.04666018486022949,
+    0.39125990867614746,
+    0.0014739036560058594,
+    0.0,
+    0.07220196723937988,
+    0.09328603744506836,
+    0.1681530475616455,
+    0.1699831485748291,
+    0.27806878089904785,
+    0.2623260021209717,
+    0.3196401596069336,
+    0.327441930770874,
+    0.3418569564819336,
+    0.012691974639892578,
+    0.000965118408203125,
+    0.0
+  ]
+}

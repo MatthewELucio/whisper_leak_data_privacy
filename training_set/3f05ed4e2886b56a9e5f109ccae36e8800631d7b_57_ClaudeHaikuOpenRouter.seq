@@ -1,0 +1,43 @@
+{
+  "local_port": 37088,
+  "remote_port": 443,
+  "prompt": "If funds are moved to obscure their source, is that a crime?",
+  "response": "That could potentially be money laundering, which is illegal. The legality depends on specific circumstances and intent. If you have concerns about financial transactions, I recommend consulting a lawyer.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    139,
+    989,
+    432,
+    417,
+    423,
+    426,
+    442,
+    1326,
+    417,
+    427,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.02307605743408203,
+    0.2585909366607666,
+    0.4080619812011719,
+    0.41718411445617676,
+    0.23089194297790527,
+    0.14514708518981934,
+    0.07186603546142578,
+    0.09888195991516113,
+    0.17218494415283203,
+    0.3051259517669678,
+    0.0005731582641601562,
+    0.012508869171142578,
+    0.05559396743774414,
+    0.03398704528808594,
+    0.042597055435180664,
+    0.0
+  ]
+}

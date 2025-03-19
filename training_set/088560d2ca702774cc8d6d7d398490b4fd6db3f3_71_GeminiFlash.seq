@@ -1,0 +1,41 @@
+{
+  "local_port": 43654,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, the U.S. government has several laws against money laundering. Here are some of the key ones:\n\n*   **Bank Secrecy Act (BSA):** This act requires financial institutions to keep records and file reports that are useful in identifying and tracking money laundering and other financial crimes.\n\n*   **Money Laundering Control Act of 1986:** This was the first federal law to specifically criminalize money laundering. It makes it a crime to conduct a financial transaction with the proceeds of certain specified unlawful activities (SUAs), knowing that the property involved represents the proceeds of some form of unlawful activity.\n\n*   **USA PATRIOT Act of 2001:** Passed in response to the September 11th attacks, this act significantly expanded the scope of anti-money laundering laws. It includes provisions to strengthen customer identification programs, enhance due diligence for foreign financial institutions, and increase information sharing between law enforcement and financial institutions.\n\n*   **Money Laundering and Financial Crimes Strategy Act of 1998:** Requires the development of a national strategy for combating money laundering.\n\nThese laws make it illegal to engage in activities like:\n\n*   Hiding the source of illegally obtained money.\n*   Transferring money to avoid detection of illegal activity.\n*   Using legitimate businesses to disguise illegal funds.\n\nThere are also international efforts to combat money laundering, such as the Financial Action Task Force (FATF), which sets international standards and promotes effective implementation of legal, regulatory, and operational measures for combating money laundering, terrorist financing, and other related threats to the integrity of the international financial system.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1378,
+    147,
+    288,
+    322,
+    279,
+    437,
+    380,
+    392,
+    369,
+    422,
+    294,
+    272,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.052249908447265625,
+    0.4546811580657959,
+    0.02729487419128418,
+    0.07429099082946777,
+    0.026597976684570312,
+    0.20481300354003906,
+    0.1750040054321289,
+    0.30028319358825684,
+    0.3287339210510254,
+    0.34493207931518555,
+    0.4057948589324951,
+    0.029137134552001953,
+    0.034848928451538086,
+    0.0,
+    0.0002760887145996094
+  ]
+}

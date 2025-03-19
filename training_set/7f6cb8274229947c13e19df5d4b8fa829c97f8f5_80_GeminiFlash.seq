@@ -1,0 +1,43 @@
+{
+  "local_port": 56722,
+  "remote_port": 443,
+  "prompt": "Are there legal consequences for money laundering?",
+  "response": "Yes, there are significant legal consequences for money laundering. These consequences vary depending on the jurisdiction, the amount of money laundered, the nature of the underlying crime, and the individual's role in the money laundering operation. However, some common legal consequences include:\n\n*   **Criminal charges:** Money laundering is a federal crime in many countries, including the United States.\n\n*   **Imprisonment:** A conviction for money laundering can result in a lengthy prison sentence. The length of the sentence can vary widely depending on the factors mentioned above.\n\n*   **Fines:** Substantial fines can be imposed on individuals and organizations convicted of money laundering. These fines can be far greater than the amount of money laundered.\n\n*   **Asset forfeiture:** Law enforcement agencies can seize assets involved in or derived from money laundering activities. This can include bank accounts, real estate, vehicles, and other property.\n\n*   **Civil penalties:** In addition to criminal penalties, individuals and organizations may face civil lawsuits and penalties for money laundering.\n\n*   **Reputational damage:** A money laundering conviction can severely damage an individual's or organization's reputation, making it difficult to conduct business or obtain credit in the future.\n\n*   **Loss of professional licenses:** Professionals such as lawyers, accountants, and financial advisors may lose their licenses if convicted of money laundering.\n\n*   **International sanctions:** Money laundering can trigger international sanctions, restricting access to financial markets and other international activities.\n\n*   **Extradition:** Individuals accused of money laundering may be extradited to face charges in another country.\n\nIt's important to consult with a legal professional for advice on specific situations involving money laundering.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    299,
+    339,
+    226,
+    339,
+    252,
+    223,
+    323,
+    470,
+    452,
+    471,
+    416,
+    264,
+    219,
+    113
+  ],
+  "time_diffs": [
+    0.055809974670410156,
+    0.3821699619293213,
+    0.001714944839477539,
+    0.031213998794555664,
+    0.018896102905273438,
+    0.09677481651306152,
+    0.19440698623657227,
+    0.14967608451843262,
+    0.28030991554260254,
+    0.33147215843200684,
+    0.34426093101501465,
+    0.40934205055236816,
+    0.0653069019317627,
+    0.010547161102294922,
+    0.0,
+    0.00019097328186035156
+  ]
+}

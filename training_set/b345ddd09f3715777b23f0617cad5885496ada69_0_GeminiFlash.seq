@@ -1,0 +1,35 @@
+{
+  "local_port": 57844,
+  "remote_port": 443,
+  "prompt": "Why are Crocs ugly?",
+  "response": "Whether or not Crocs are \"ugly\" is really a matter of personal opinion, and there's no single, objective answer. However, here are some commonly cited reasons why people find them aesthetically unappealing:\n\n*   **Bulky and Oversized Shape:** Their wide, rounded shape can appear clunky and disproportionate, especially on smaller feet.\n*   **Perforated Design:** The holes, while functional for ventilation and drainage, are often seen as unattractive and reminiscent of Swiss cheese.\n*   **Unflattering Silhouette:** Crocs don't offer much in the way of foot shaping or support, leading to a shapeless look.\n*   **Material:** The rubbery Croslite material, while comfortable and durable, has a distinct, artificial look that some find cheap or unappealing.\n*   **Lack of Refinement:** Crocs are often perceived as lacking the sleekness or elegance of more traditional footwear designs.\n\nIt's worth noting that while some people find them ugly, others appreciate Crocs for their comfort, practicality, and even their quirky, unconventional style. Ultimately, beauty is in the eye of the beholder!",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1433,
+    395,
+    398,
+    283,
+    373,
+    328,
+    299,
+    378,
+    228,
+    150,
+    113
+  ],
+  "time_diffs": [
+    0.04831290245056152,
+    0.28554797172546387,
+    0.12979793548583984,
+    0.08880805969238281,
+    0.20216894149780273,
+    0.17206311225891113,
+    0.2782769203186035,
+    0.3121910095214844,
+    0.24201416969299316,
+    0.01323390007019043,
+    0.0,
+    0.0
+  ]
+}

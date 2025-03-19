@@ -1,0 +1,33 @@
+{
+  "local_port": 56354,
+  "remote_port": 443,
+  "prompt": "What song has the lyric \"at night I think of you\"?",
+  "response": "There are many songs that contain the lyric \"at night I think of you\". To help me narrow it down, could you provide me with any of the following information?\n\n*   **Genre:** What style of music is it? (e.g., pop, rock, country, R&B, etc.)\n*   **Male or Female Vocalist:** Is it sung by a man, a woman, or a group?\n*   **Approximate Year:** When do you think the song was released?\n*   **Any other lyrics:** Even a small snippet of another line would be helpful.\n*   **How you heard it:** Radio, a movie, a store, etc.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1482,
+    272,
+    199,
+    192,
+    350,
+    314,
+    401,
+    213,
+    197,
+    113
+  ],
+  "time_diffs": [
+    0.04610300064086914,
+    0.4280879497528076,
+    0.0029990673065185547,
+    0.07550597190856934,
+    0.07911515235900879,
+    0.16324281692504883,
+    0.1448361873626709,
+    0.21004199981689453,
+    0.009897947311401367,
+    0.0,
+    0.0
+  ]
+}

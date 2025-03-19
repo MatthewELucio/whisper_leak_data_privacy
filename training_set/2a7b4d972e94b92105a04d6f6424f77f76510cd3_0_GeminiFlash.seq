@@ -1,0 +1,27 @@
+{
+  "local_port": 35660,
+  "remote_port": 443,
+  "prompt": "Have you ever starred as an extra in a movie?",
+  "response": "As a large language model, I don't have a physical body, so I can't be an extra in a movie. I exist only as code and data. My \"acting\" is limited to generating text, translating languages, writing different kinds of creative content, and answering your questions in an informative way.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1371,
+    325,
+    418,
+    358,
+    197,
+    150,
+    113
+  ],
+  "time_diffs": [
+    0.047981977462768555,
+    0.3188650608062744,
+    0.09184694290161133,
+    0.09323501586914062,
+    0.1460721492767334,
+    0.007248878479003906,
+    0.003473997116088867,
+    0.0
+  ]
+}

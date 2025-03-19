@@ -1,0 +1,39 @@
+{
+  "local_port": 41238,
+  "remote_port": 443,
+  "prompt": "Is money laundering a legally actionable offense?",
+  "response": "Yes, money laundering is a legally actionable offense in virtually all developed countries and many developing countries. It is a crime under both federal and state laws in the United States, as well as under international laws and treaties.\n\nHere's a breakdown of why it's legally actionable:\n\n*   **It's defined by statute:** Laws like the Bank Secrecy Act and the Money Laundering Control Act in the U.S., and similar legislation elsewhere, specifically define what constitutes money laundering.\n\n*   **It carries criminal penalties:** Conviction for money laundering can result in imprisonment, significant fines, and forfeiture of assets involved in the crime.\n\n*   **It can lead to civil penalties:** In addition to criminal prosecution, individuals and entities can face civil lawsuits related to money laundering, potentially leading to further financial penalties and other sanctions.\n\n*   **It can trigger investigations and prosecutions:** Law enforcement agencies, such as the FBI, IRS, and DEA in the U.S., and their counterparts internationally, actively investigate and prosecute money laundering offenses.\n\n*   **It's a predicate offense for other crimes:** Money laundering is often linked to and facilitates other serious crimes, such as drug trafficking, terrorism, fraud, and corruption. Therefore, prosecuting money laundering helps disrupt and dismantle criminal organizations.\n\nIn summary, money laundering is a serious crime with significant legal consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1280,
+    178,
+    204,
+    414,
+    289,
+    373,
+    426,
+    264,
+    413,
+    206,
+    170,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.04607105255126953,
+    0.31133294105529785,
+    0.013853073120117188,
+    0.10001111030578613,
+    0.11550092697143555,
+    0.2246260643005371,
+    0.18994784355163574,
+    0.2720930576324463,
+    0.28911614418029785,
+    0.5059618949890137,
+    0.07287907600402832,
+    0.009822845458984375,
+    0.0,
+    5.0067901611328125e-05
+  ]
+}

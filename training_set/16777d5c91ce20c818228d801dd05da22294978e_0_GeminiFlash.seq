@@ -1,0 +1,27 @@
+{
+  "local_port": 58206,
+  "remote_port": 443,
+  "prompt": "How many Bollywood Actresses consume alcohol in real life?",
+  "response": "It's impossible to say exactly how many Bollywood actresses consume alcohol. This is a private matter, and there's no official record or study that tracks this information.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1282,
+    151,
+    461,
+    364,
+    131,
+    217,
+    113
+  ],
+  "time_diffs": [
+    0.05649209022521973,
+    0.5035529136657715,
+    0.046804189682006836,
+    0.04304385185241699,
+    0.10705900192260742,
+    0.008948087692260742,
+    0.0015020370483398438,
+    0.0
+  ]
+}

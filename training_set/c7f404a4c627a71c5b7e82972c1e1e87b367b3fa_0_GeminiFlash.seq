@@ -1,0 +1,39 @@
+{
+  "local_port": 48128,
+  "remote_port": 443,
+  "prompt": "Which Ivy League university is the easiest to get into?",
+  "response": "It's tricky to definitively say which Ivy League school is the \"easiest\" to get into, as \"easy\" is relative and depends on the applicant. However, based purely on **acceptance rates**, **Cornell University** generally has the highest acceptance rate among the Ivies.\n\nHere's a general idea of recent acceptance rates (keep in mind these fluctuate year to year):\n\n*   **Cornell University:** Typically around 8-9%\n*   Other Ivies (Harvard, Yale, Princeton, Columbia, UPenn, Dartmouth, Brown): Generally range from 3-7%\n\n**Important Considerations Beyond Acceptance Rates:**\n\n*   **Acceptance rates are a very broad statistic.** They don't tell the whole story.\n*   **Different Programs:** Some programs within a university are more competitive than others.  For example, certain engineering or business programs at Cornell might be more competitive than some programs in the humanities.\n*   **Fit:** A school might be a better \"fit\" for you based on your academic interests, extracurricular activities, and personal preferences, even if its acceptance rate is lower. A strong fit can increase your chances of admission, even at a highly selective school.\n*   **Strength of Applicant Pool:** The applicant pools at these universities are incredibly competitive. Even at Cornell, you still need to be an outstanding student with impressive achievements to be considered.\n\n**In summary:**\n\nWhile Cornell often has the highest acceptance rate of the Ivies, remember that *all* Ivy League schools are extremely selective. Focus on developing a strong academic record, pursuing your passions, and crafting a compelling application that showcases your unique strengths and goals. Don't just target the school with the \"easiest\" acceptance rate; aim for the school that is the best *fit* for you.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1456,
+    217,
+    212,
+    500,
+    314,
+    527,
+    518,
+    395,
+    366,
+    384,
+    316,
+    197,
+    113
+  ],
+  "time_diffs": [
+    0.04513406753540039,
+    0.3055849075317383,
+    0.0928030014038086,
+    0.07793116569519043,
+    0.19225096702575684,
+    0.17699003219604492,
+    0.2539949417114258,
+    0.3050088882446289,
+    0.3476841449737549,
+    0.38196301460266113,
+    0.2081298828125,
+    0.006850004196166992,
+    0.0,
+    0.0
+  ]
+}

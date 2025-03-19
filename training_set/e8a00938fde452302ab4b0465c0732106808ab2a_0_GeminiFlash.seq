@@ -1,0 +1,41 @@
+{
+  "local_port": 37722,
+  "remote_port": 443,
+  "prompt": "Was Azad Kashmir's demography changed post 1947? Why are most people in Azad Kashmir the Panjab people of Pakistan? I hope for some unbiased answers.",
+  "response": "There have been demographic shifts in Azad Kashmir since 1947, though the extent and causes are subjects of debate. Here's a breakdown:\n\n*   **Initial Displacement:** The 1947 partition led to significant displacement on both sides of the Line of Control (LoC). Many Hindus and Sikhs left Azad Kashmir for India, while Muslims from India migrated to Azad Kashmir. This immediately altered the region's demographic makeup.\n*   **Pakistani Influence:** Azad Kashmir has close ties with Pakistan, and Pakistani citizens can generally travel and reside there. Over time, there has been migration from various parts of Pakistan into Azad Kashmir, seeking economic opportunities or other prospects.\n*   **Punjabi Presence:** It's inaccurate to state that most people in Azad Kashmir are Punjabis. The majority are Pahari-speaking people closely related to those in the adjacent Murree Hills and Potohar Plateau, along with Gujjars. However, there is a notable presence of Punjabis due to migration and integration over the decades.\n*   **Kashmiri Identity:** While the region is called \"Azad Kashmir,\" the primary identity of the inhabitants remains rooted in Kashmiri culture and heritage.\n\n**Factors Influencing Demography:**\n\n*   **Conflict and Displacement:** Ongoing tensions and conflicts along the LoC have caused periodic displacement, impacting population distribution.\n*   **Economic Factors:** The search for better economic opportunities has driven migration patterns, both within Azad Kashmir and from other parts of Pakistan.\n*   **Government Policies:** Policies related to residency, employment, and land ownership can influence demographic shifts over time.\n\nIt's important to consult reliable sources and academic studies to get a comprehensive understanding of the demographic changes in Azad Kashmir.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    256,
+    355,
+    247,
+    316,
+    315,
+    405,
+    412,
+    343,
+    507,
+    255,
+    304,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.048536062240600586,
+    0.3613269329071045,
+    0.0015110969543457031,
+    0.10153889656066895,
+    0.11312603950500488,
+    0.23293709754943848,
+    0.28001999855041504,
+    0.34596800804138184,
+    0.3985178470611572,
+    0.4124281406402588,
+    0.4242870807647705,
+    0.1290738582611084,
+    0.015619039535522461,
+    0.0,
+    0.0
+  ]
+}

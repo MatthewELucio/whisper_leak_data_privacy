@@ -1,0 +1,41 @@
+{
+  "local_port": 55096,
+  "remote_port": 443,
+  "prompt": "How much money does a Ranji Trophy cricketer earn?",
+  "response": "The earnings of a Ranji Trophy cricketer can vary significantly based on several factors:\n\n*   **Grade/Category:** Players are typically assigned to different grades (A, B, C, etc.) by their state associations, which determine their match fees and retainers.\n*   **Match Fees:** The Board of Control for Cricket in India (BCCI) sets the match fees for Ranji Trophy players. For the 2023-24 season:\n    *   Players in the playing XI get \u20b960,000 per match day (\u20b92.4 Lakhs for a 4 day match).\n    *   Reserve players get \u20b930,000 per match day.\n*   **Retainer Fees:** Some state associations offer retainer fees to their players, providing a fixed income for the season, regardless of match appearances. The amount varies.\n*   **BCCI Benefits:** Players who have represented India at the international level may receive additional benefits or pensions from the BCCI.\n*   **Sponsorships/Endorsements:** Top-performing Ranji Trophy players might attract local or regional sponsorships, further boosting their income.\n*   **State Association Policies:** State associations have the discretion to provide additional incentives or benefits to their players.\n\n**Estimated Earnings Range:**\n\nA Ranji Trophy cricketer's earnings can vary widely. A player who plays all matches in a season and is in the playing XI can expect to earn around \u20b915-\u20b920 Lakhs solely from match fees. However, the actual earnings can be higher with retainer fees, sponsorships, and other incentives. Players who are not regular members of the playing XI or who are in lower grades may earn significantly less.\n\n**Important Notes:**\n\n*   The figures above are estimates based on available information and can change over time.\n*   The financial situation of Ranji Trophy cricketers has improved in recent years, with the BCCI increasing match fees.\n*   Earnings can vary widely depending on location and the financial health of the respective State Cricket Associations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1375,
+    375,
+    247,
+    308,
+    292,
+    366,
+    546,
+    418,
+    397,
+    535,
+    299,
+    283,
+    132,
+    113
+  ],
+  "time_diffs": [
+    0.04688215255737305,
+    0.2826719284057617,
+    0.11084508895874023,
+    0.11203193664550781,
+    0.24299907684326172,
+    0.18104290962219238,
+    0.2791788578033447,
+    0.3024790287017822,
+    0.3452479839324951,
+    0.36734700202941895,
+    0.3960001468658447,
+    0.1707758903503418,
+    0.012670040130615234,
+    0.0,
+    0.0
+  ]
+}

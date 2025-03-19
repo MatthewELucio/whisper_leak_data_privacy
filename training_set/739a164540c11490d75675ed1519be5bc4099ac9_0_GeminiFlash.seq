@@ -1,0 +1,35 @@
+{
+  "local_port": 51942,
+  "remote_port": 443,
+  "prompt": "What percentage of people using Quora have ever heard of \"Google\"?",
+  "response": "While Quora doesn't publish statistics on its users' awareness of Google, it's safe to say that the percentage is **extremely close to 100%**. Here's why:\n\n*   **Digital Literacy:** People using Quora are generally internet-savvy and actively seek information online. Awareness of Google is a fundamental aspect of using the internet.\n*   **Google's Dominance:** Google is the dominant search engine worldwide. It's virtually impossible to use the internet regularly without encountering Google in some way.\n*   **Quora's Dependence:** Quora itself relies heavily on Google for traffic and visibility. Many users likely find Quora through Google searches.\n\nTherefore, it's reasonable to assume that **over 99.9%** of Quora users are aware of Google.\n\nWhile it's impossible to get a definitive number without internal data from Quora, it's a near certainty.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    133,
+    336,
+    374,
+    331,
+    242,
+    339,
+    342,
+    246,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.044116973876953125,
+    0.3750419616699219,
+    0.001394033432006836,
+    0.09725403785705566,
+    0.10689687728881836,
+    0.16819119453430176,
+    0.18411993980407715,
+    0.2409379482269287,
+    0.2330329418182373,
+    0.006577968597412109,
+    1.1920928955078125e-06,
+    0.0
+  ]
+}

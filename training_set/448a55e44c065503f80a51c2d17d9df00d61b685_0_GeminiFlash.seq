@@ -1,0 +1,43 @@
+{
+  "local_port": 40598,
+  "remote_port": 443,
+  "prompt": "Why is Google blocked in China?",
+  "response": "Google is blocked in China primarily due to the Chinese government's strict internet censorship policies, often referred to as the \"Great Firewall.\" Here's a breakdown of the key reasons:\n\n*   **Censorship and Content Control:** The Chinese government requires all internet companies operating within China to censor content deemed politically sensitive, critical of the government, or harmful to social stability. Google was unwilling to fully comply with these censorship demands, particularly concerning search results and content related to topics like human rights, democracy, the Tiananmen Square massacre, and the Dalai Lama.\n\n*   **Data Localization and Sovereignty:** China's cybersecurity laws mandate that data collected from Chinese users must be stored within China. This requirement aligns with the government's broader emphasis on data sovereignty and control. Google's refusal to store data locally in a way that would grant the Chinese government access to it was another major point of contention.\n\n*   **Competition with Local Companies:** Some believe that the blocking of Google benefited domestic Chinese tech companies like Baidu, which became the dominant search engine in China. By limiting competition from foreign players, the government aimed to foster the growth of its own tech industry.\n\n*   **Security Concerns:** The Chinese government has often raised concerns about national security and the potential for foreign technology companies to be used for espionage or surveillance. While these concerns have not been explicitly linked to Google's blocking, they contribute to the overall atmosphere of suspicion towards foreign tech firms.\n\nIn 2010, Google largely withdrew its search engine services from mainland China, citing censorship concerns and a major cyberattack originating from within China that targeted Gmail accounts of Chinese human rights activists. While Google has explored ways to re-enter the Chinese market in the past, these efforts have been met with significant obstacles and have not resulted in a full-scale return.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    279,
+    395,
+    231,
+    257,
+    301,
+    296,
+    497,
+    423,
+    417,
+    354,
+    430,
+    251,
+    153,
+    113
+  ],
+  "time_diffs": [
+    0.04541301727294922,
+    0.33551692962646484,
+    0.001316070556640625,
+    0.0,
+    0.07860207557678223,
+    0.0767669677734375,
+    0.1864948272705078,
+    0.21099019050598145,
+    0.23309803009033203,
+    0.2685689926147461,
+    0.32219386100769043,
+    0.4175760746002197,
+    0.2659580707550049,
+    0.01229095458984375,
+    0.0,
+    0.0
+  ]
+}

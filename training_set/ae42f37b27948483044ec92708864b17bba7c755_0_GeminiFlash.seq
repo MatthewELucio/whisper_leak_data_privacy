@@ -1,0 +1,41 @@
+{
+  "local_port": 59200,
+  "remote_port": 443,
+  "prompt": "College and NCAA Football: (NFL) In overtime, is the kicking team allowed to do an onside kick and if successful does the other team get the ball afterwards?",
+  "response": "Okay, let's break down the rules regarding onside kicks in overtime for college/NCAA and NFL football, as they are different.\n\n**NCAA (College) Football**\n\n*   **Onside Kicks in Overtime:** No.  Onside kicks are not used in the college overtime format. The standard overtime format in college is an alternating possession format. Each team gets a possession starting from the opponent's 25-yard line. The team with the highest score at the end of that process wins.\n\n**NFL Football**\n\n*   **Onside Kicks in Overtime:** Yes, onside kicks are possible in the NFL overtime format.\n*   **Overtime Structure**: The overtime format is different from college. If the team that gets the ball first scores a touchdown on the opening possession, they win the game. If the first team kicks a field goal, the next team gets the ball and an opportunity to score and win the game. If the first team does not score, the opposing team gets the ball on offense.\n*   **Onside Kick Opportunity**: The onside kick will only occur if the first team has scored a touchdown or field goal.\n*   **After Successful Onside Kick**: Yes, if the kicking team successfully recovers an onside kick in overtime, they retain possession of the ball. They then continue their offensive drive and have another opportunity to score.\n\n**In summary:**\n\n*   **College:** No onside kicks in overtime.\n*   **NFL:** Onside kicks are permitted in overtime under the regular rules, and if successful, the kicking team retains possession.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    221,
+    217,
+    327,
+    238,
+    299,
+    297,
+    371,
+    295,
+    455,
+    346,
+    200,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.04617190361022949,
+    0.2926309108734131,
+    0.0014450550079345703,
+    0.166517972946167,
+    0.03891611099243164,
+    0.2281959056854248,
+    0.15393805503845215,
+    0.2660338878631592,
+    0.25308918952941895,
+    0.4077467918395996,
+    0.35776710510253906,
+    0.054656028747558594,
+    0.010617971420288086,
+    0.0,
+    0.0
+  ]
+}

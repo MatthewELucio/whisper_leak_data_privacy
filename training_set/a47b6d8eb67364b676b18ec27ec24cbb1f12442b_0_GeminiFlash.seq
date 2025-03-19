@@ -1,0 +1,35 @@
+{
+  "local_port": 44024,
+  "remote_port": 443,
+  "prompt": "In no more than 200 words please describe a time you gave remarkable service to one of your customer?",
+  "response": "While working at a bookstore, a frantic woman rushed in, desperately seeking a specific first edition for her husband's milestone birthday. She'd searched everywhere.  Unfortunately, our inventory system showed we didn't have it.\n\nInstead of simply saying \"no,\" I offered to personally investigate. I called other branches, contacted rare book dealers, and scoured online marketplaces. After two hours, I located a copy, painstakingly arranged for expedited shipping, and even negotiated a slight discount.\n\nI called her with the good news, and she was overjoyed.  The next day, she came in, tearfully thanking me.  She explained that book held deep sentimental value, and I\u2019d saved the day. Knowing I went above and beyond to fulfill her need, turning a near-impossible situation into a perfect gift, was incredibly rewarding.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    221,
+    364,
+    385,
+    276,
+    306,
+    495,
+    375,
+    300,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04510617256164551,
+    0.3684408664703369,
+    0.001399993896484375,
+    0.16373395919799805,
+    0.11101698875427246,
+    0.23514699935913086,
+    0.2389521598815918,
+    0.31307101249694824,
+    0.11472392082214355,
+    0.010149002075195312,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 45684,
+  "remote_port": 443,
+  "prompt": "How do I find a gay guy to have sex with?",
+  "response": "There are many ways to meet gay men for sex. Here are a few options:\n\n*   **Dating apps:** Apps like Grindr, Scruff, Tinder, and Bumble are popular for meeting people for casual encounters or more serious relationships.\n*   **Social media:** Some people use social media platforms like Twitter or Instagram to connect with others who share their interests.\n*   **Online forums and communities:** Online forums and communities dedicated to gay men can be a place to meet people with similar interests.\n*   **Bars and clubs:** Gay bars and clubs are a traditional place to meet other gay men.\n*   **Bathhouses and saunas:** Some bathhouses and saunas cater to gay men and can be a place to meet people for sex.\n\nIt's important to be safe and respectful when meeting people online or in person. Always meet in a public place for the first time, and let a friend know where you're going. Be clear about your intentions and boundaries, and respect the other person's boundaries as well. Practice safe sex by using condoms and getting tested regularly for STIs.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1280,
+    197,
+    324,
+    264,
+    471,
+    232,
+    297,
+    432,
+    240,
+    252,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.04895806312561035,
+    0.41484904289245605,
+    0.03499293327331543,
+    0.043678998947143555,
+    0.09407305717468262,
+    0.21727490425109863,
+    0.15797710418701172,
+    0.23041987419128418,
+    0.26877617835998535,
+    0.18586182594299316,
+    0.00920414924621582,
+    0.0,
+    5.1021575927734375e-05
+  ]
+}

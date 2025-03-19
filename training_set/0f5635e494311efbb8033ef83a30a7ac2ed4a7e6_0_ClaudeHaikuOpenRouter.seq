@@ -1,0 +1,41 @@
+{
+  "local_port": 44044,
+  "remote_port": 443,
+  "prompt": "What are the full forms of HDFC & ICICI?",
+  "response": "Here are the full forms of HDFC and ICICI:\n\n1. HDFC: Housing Development Finance Corporation\n\n2. ICICI: Industrial Credit and Investment Corporation of India\n\nBoth are major Indian financial institutions and banks that provide various banking and financial services.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    405,
+    405,
+    409,
+    435,
+    425,
+    457,
+    454,
+    446,
+    481,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.023283004760742188,
+    0.0836789608001709,
+    0.3636050224304199,
+    0.0014460086822509766,
+    0.0003299713134765625,
+    0.10869312286376953,
+    0.09391593933105469,
+    0.1399979591369629,
+    0.08516812324523926,
+    0.17994999885559082,
+    0.35897302627563477,
+    0.023633956909179688,
+    0.01623988151550293,
+    0.0,
+    5.0067901611328125e-05
+  ]
+}

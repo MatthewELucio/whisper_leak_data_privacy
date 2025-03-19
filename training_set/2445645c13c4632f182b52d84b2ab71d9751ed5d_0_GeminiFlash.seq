@@ -1,0 +1,27 @@
+{
+  "local_port": 55584,
+  "remote_port": 443,
+  "prompt": "What is kale called in Hindi or Marathi?",
+  "response": "*   **Hindi:** \u0915\u0947\u0932 (kel)\n*   **Marathi:** \u0915\u0947\u0933 (kel)\n\nBoth Hindi and Marathi use similar words.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    232,
+    314,
+    252,
+    197,
+    235,
+    113
+  ],
+  "time_diffs": [
+    0.05535602569580078,
+    0.361926794052124,
+    0.0015780925750732422,
+    0.08052611351013184,
+    0.09004878997802734,
+    0.008671045303344727,
+    0.0014481544494628906,
+    0.0017628669738769531
+  ]
+}

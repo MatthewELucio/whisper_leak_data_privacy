@@ -1,0 +1,41 @@
+{
+  "local_port": 37920,
+  "remote_port": 443,
+  "prompt": "Does the government have laws against money laundering?",
+  "response": "Yes, governments around the world, including the United States, have laws against money laundering. These laws are designed to prevent criminals from disguising the proceeds of illegal activities as legitimate funds.\n\nIn the United States, the primary laws against money laundering are:\n\n*   **The Bank Secrecy Act (BSA):** Requires financial institutions to keep records and file reports that are useful in identifying and preventing money laundering and other financial crimes.\n*   **Money Laundering Control Act of 1986:** Made money laundering a federal crime.\n*   **USA PATRIOT Act of 2001:** Expanded the scope of money laundering laws and increased penalties for violations.\n\nThese laws prohibit a wide range of activities, including:\n\n*   Concealing or disguising the nature, location, source, ownership, or control of illegally obtained funds.\n*   Transferring illegally obtained funds into or out of the country.\n*   Structuring transactions to avoid reporting requirements.\n\nViolations of money laundering laws can result in severe penalties, including:\n\n*   Criminal charges and imprisonment.\n*   Civil fines and penalties.\n*   Forfeiture of assets involved in the money laundering scheme.\n\nMany other countries have similar laws in place as well, often in compliance with international standards set by organizations like the Financial Action Task Force (FATF).",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    274,
+    379,
+    331,
+    340,
+    442,
+    301,
+    292,
+    446,
+    535,
+    183,
+    298,
+    153,
+    113
+  ],
+  "time_diffs": [
+    0.04888510704040527,
+    0.46813201904296875,
+    0.0014958381652832031,
+    0.03338003158569336,
+    0.043862104415893555,
+    0.1150979995727539,
+    0.1591188907623291,
+    0.17809510231018066,
+    0.24701499938964844,
+    0.30234789848327637,
+    0.42688703536987305,
+    0.04340791702270508,
+    0.00904703140258789,
+    6.914138793945312e-05,
+    0.0
+  ]
+}

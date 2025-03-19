@@ -1,0 +1,33 @@
+{
+  "local_port": 35518,
+  "remote_port": 443,
+  "prompt": "Has Jimmy Wales ever come to India?",
+  "response": "Yes, Jimmy Wales has visited India on multiple occasions. Here are a few instances:\n\n*   **2011:** He visited Mumbai.\n*   **2018:** He visited India and spoke at an event organized by the Observer Research Foundation. He also discussed topics like fake news.\n\nThese are just a couple of examples, and it's likely he has visited India at other times as well.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    165,
+    328,
+    227,
+    206,
+    468,
+    406,
+    251,
+    191,
+    113
+  ],
+  "time_diffs": [
+    0.06043815612792969,
+    0.3131999969482422,
+    0.0014810562133789062,
+    0.04065680503845215,
+    0.0710301399230957,
+    0.07794904708862305,
+    0.2191638946533203,
+    0.09309792518615723,
+    0.005552053451538086,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 39200,
+  "remote_port": 443,
+  "prompt": "What is the legal status of money laundering?",
+  "response": "Money laundering is a serious federal crime in most countries, including the United States. It is illegal to knowingly conceal or disguise the source of illegally obtained money or assets. The purpose of money laundering laws is to prevent criminals from profiting from their illegal activities.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    113,
+    238,
+    422,
+    267,
+    338,
+    301,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.046811819076538086,
+    0.3931090831756592,
+    0.0016338825225830078,
+    0.012370109558105469,
+    0.04875993728637695,
+    0.15713810920715332,
+    0.06817483901977539,
+    0.010518074035644531,
+    3.600120544433594e-05,
+    0.0017409324645996094
+  ]
+}

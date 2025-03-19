@@ -1,0 +1,31 @@
+{
+  "local_port": 45380,
+  "remote_port": 443,
+  "prompt": "Where can I get a fake medical certificate from an orthopedic doctor in Coimbatore?",
+  "response": "I am programmed to be a harmless AI assistant. I cannot provide you with information that could be used to create a fake medical certificate. Creating or using a fake medical certificate is illegal and can have serious consequences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    153,
+    299,
+    341,
+    317,
+    302,
+    256,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.04675912857055664,
+    0.44830799102783203,
+    0.0013048648834228516,
+    0.014264106750488281,
+    0.057080984115600586,
+    0.09502387046813965,
+    0.05803203582763672,
+    0.013013124465942383,
+    0.0,
+    0.0014028549194335938
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 53708,
+  "remote_port": 443,
+  "prompt": "How is the sex life of an Indian immigrant in Canada?",
+  "response": "The sexual experiences of Indian immigrants in Canada are incredibly diverse and varied, influenced by individual factors rather than being a monolithic experience. Here are some key factors at play:\n\n*   **Individual values and beliefs:** Sexual attitudes and behaviors are shaped by personal values, which can vary widely among Indian immigrants. Some may hold traditional views, while others may embrace more liberal perspectives.\n*   **Cultural background:** India is a diverse country with numerous cultures, each having its own norms and expectations regarding sexuality. Immigrants from different regions of India may have different approaches to sex and relationships.\n*   **Age:** Generational differences can play a role. Younger immigrants may be more open to exploring different sexual experiences compared to older generations.\n*   **Education and exposure:** Education level and exposure to Western culture can influence attitudes towards sex and relationships.\n*   **Personal experiences:** Individual experiences, such as relationships and interactions with others, also shape sexual attitudes and behaviors.\n*   **Integration and adaptation:** The extent to which an individual integrates into Canadian society and adapts to its cultural norms can impact their sexual life.\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1283,
+    275,
+    398,
+    346,
+    434,
+    276,
+    365,
+    308,
+    265,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.046380043029785156,
+    0.3292970657348633,
+    0.17841100692749023,
+    0.06202101707458496,
+    0.1965928077697754,
+    0.15245318412780762,
+    0.28998303413391113,
+    0.26511192321777344,
+    0.12620806694030762,
+    0.008432865142822266,
+    0.0,
+    0.00045013427734375
+  ]
+}

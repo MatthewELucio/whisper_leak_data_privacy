@@ -1,0 +1,29 @@
+{
+  "local_port": 49286,
+  "remote_port": 443,
+  "prompt": "What would Jake Williams rather be? A fox or a wolf?",
+  "response": "To answer this question, I would need to know who Jake Williams is and if they have stated a preference for being a fox or wolf somewhere. \n\nWithout additional information, I cannot answer this question.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    90,
+    375,
+    282,
+    244,
+    299,
+    201,
+    113
+  ],
+  "time_diffs": [
+    0.04895305633544922,
+    0.42946696281433105,
+    0.0014259815216064453,
+    0.1165010929107666,
+    0.09493398666381836,
+    0.03902792930603027,
+    0.010531187057495117,
+    0.003484964370727539,
+    0.0
+  ]
+}

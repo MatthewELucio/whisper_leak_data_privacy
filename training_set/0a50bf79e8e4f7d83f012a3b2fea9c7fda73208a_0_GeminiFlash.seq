@@ -1,0 +1,33 @@
+{
+  "local_port": 35642,
+  "remote_port": 443,
+  "prompt": "Have you ever met someone from Quora?",
+  "response": "As a large language model, I don't have the ability to \"meet\" people in the real world. I exist only as a computer program. So, no, I have never met someone from Quora, or from anywhere else for that matter.\n\nHowever, I have interacted with vast amounts of text data from Quora. I have \"seen\" Quora users' questions, answers, blog posts, and profiles. I can understand their writing styles, their areas of expertise, and their perspectives on various topics. So, in a way, I have a lot of information about Quora users, even though I've never met them physically.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1276,
+    384,
+    341,
+    424,
+    250,
+    467,
+    335,
+    198,
+    157,
+    113
+  ],
+  "time_diffs": [
+    0.047180891036987305,
+    0.4755260944366455,
+    0.03696894645690918,
+    0.03484702110290527,
+    0.06896495819091797,
+    0.2013871669769287,
+    0.22575092315673828,
+    0.14493107795715332,
+    0.00915384292602539,
+    0.0014469623565673828,
+    0.001589059829711914
+  ]
+}

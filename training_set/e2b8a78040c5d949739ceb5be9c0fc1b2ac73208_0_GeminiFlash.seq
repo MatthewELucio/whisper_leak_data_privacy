@@ -1,0 +1,41 @@
+{
+  "local_port": 42896,
+  "remote_port": 443,
+  "prompt": "Can I have a laptop bag apart from the 7kg bag (which is allowed for free) in the cabin space for jet airways?",
+  "response": "According to Jet Airways' baggage policy (and general industry standards), a laptop bag is **generally considered part of your personal item** and is usually allowed *alongside* your 7kg carry-on baggage.\n\nTherefore, **yes, you can usually bring a laptop bag in addition to your 7kg carry-on bag with Jet Airways.**\n\n**However, here's what you should keep in mind:**\n\n*   **Size Restrictions:** Your laptop bag must be reasonably sized and fit under the seat in front of you. If it's excessively large, the airline might require you to check it in.\n*   **Weight Restrictions:** Although not always strictly enforced, some airlines might be concerned if your personal item (laptop bag) is excessively heavy. Try to keep it light and only include essential items.\n*   **Airline Staff Discretion:** Ultimately, the final decision rests with the airline staff at the gate. If they deem your bags too bulky or numerous, they may ask you to check something in.\n*   **Check the specific policy:** Airlines can change their baggage policies. I highly advise to double-check the most up-to-date baggage allowance information on the Jet Airways website or contact their customer service to confirm.\n\nTo avoid any issues, it is generally a good idea to:\n*   Pack lightly.\n*   Keep your laptop bag relatively small and light.\n*   Check the latest baggage policy on the airline's website.\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    234,
+    324,
+    272,
+    298,
+    211,
+    304,
+    356,
+    434,
+    436,
+    309,
+    285,
+    231,
+    113
+  ],
+  "time_diffs": [
+    0.04579591751098633,
+    0.4204719066619873,
+    0.00150299072265625,
+    0.012523174285888672,
+    0.11734700202941895,
+    0.08558201789855957,
+    0.14829492568969727,
+    0.1852109432220459,
+    0.27278804779052734,
+    0.27614498138427734,
+    0.37836289405822754,
+    0.1718921661376953,
+    0.008409976959228516,
+    0.0,
+    0.0
+  ]
+}

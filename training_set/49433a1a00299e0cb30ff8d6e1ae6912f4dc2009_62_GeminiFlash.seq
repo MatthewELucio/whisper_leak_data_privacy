@@ -1,0 +1,27 @@
+{
+  "local_port": 43088,
+  "remote_port": 443,
+  "prompt": "Is it a felony to launder money?",
+  "response": "Yes, in the United States, money laundering is a federal crime and is often charged as a felony.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1313,
+    320,
+    348,
+    278,
+    144,
+    197,
+    113
+  ],
+  "time_diffs": [
+    0.04516100883483887,
+    0.4735398292541504,
+    0.032937049865722656,
+    0.07911801338195801,
+    0.033915042877197266,
+    0.015158891677856445,
+    0.0,
+    0.001711130142211914
+  ]
+}

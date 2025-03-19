@@ -1,0 +1,29 @@
+{
+  "local_port": 38268,
+  "remote_port": 443,
+  "prompt": "How do you trace a pinger phone number?",
+  "response": "I am programmed to be a helpful and harmless AI assistant. I cannot provide you with information or instructions on how to trace a Pinger phone number or any phone number without proper authorization. This kind of activity can be illegal and unethical, as it violates privacy laws.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    145,
+    360,
+    361,
+    392,
+    142,
+    154,
+    113
+  ],
+  "time_diffs": [
+    0.045629024505615234,
+    0.2610478401184082,
+    0.0014281272888183594,
+    0.10854196548461914,
+    0.08001589775085449,
+    0.14281821250915527,
+    0.008935928344726562,
+    0.0015878677368164062,
+    0.0016951560974121094
+  ]
+}

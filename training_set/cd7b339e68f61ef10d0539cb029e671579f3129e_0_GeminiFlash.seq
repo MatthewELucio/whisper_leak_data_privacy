@@ -1,0 +1,25 @@
+{
+  "local_port": 34820,
+  "remote_port": 443,
+  "prompt": "With such a pronounced Adam's apple, is Ann Coulter a transgender woman?",
+  "response": "Ann Coulter is a cisgender woman. There is no evidence to suggest that she is transgender.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1448,
+    240,
+    305,
+    279,
+    188,
+    113
+  ],
+  "time_diffs": [
+    0.04443788528442383,
+    0.4581639766693115,
+    0.039457082748413086,
+    0.06593608856201172,
+    0.009819984436035156,
+    0.0017948150634765625,
+    0.0
+  ]
+}

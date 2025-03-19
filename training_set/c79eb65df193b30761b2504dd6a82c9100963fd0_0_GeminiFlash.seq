@@ -1,0 +1,27 @@
+{
+  "local_port": 38868,
+  "remote_port": 443,
+  "prompt": "How often do you buy new smart phones?",
+  "response": "As a large language model, I don't buy smartphones or any physical goods. I exist only as a computer program.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1452,
+    271,
+    418,
+    178,
+    296,
+    161,
+    113
+  ],
+  "time_diffs": [
+    0.0517120361328125,
+    0.42496705055236816,
+    0.03709912300109863,
+    0.09494590759277344,
+    0.0689859390258789,
+    0.01165008544921875,
+    0.0016970634460449219,
+    0.0
+  ]
+}

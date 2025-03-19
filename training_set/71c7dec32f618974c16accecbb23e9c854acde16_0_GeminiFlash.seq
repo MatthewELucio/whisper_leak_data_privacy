@@ -1,0 +1,37 @@
+{
+  "local_port": 34972,
+  "remote_port": 443,
+  "prompt": "How early could we impeach a president Trump?",
+  "response": "The impeachment process can begin as soon as a president is in office. There's no waiting period.\n\nHere's how it works:\n\n1.  **Impeachment Inquiry:** A member of the House of Representatives can introduce a resolution calling for an impeachment inquiry.\n2.  **House Committee Investigation:** The House committee (usually the Judiciary Committee) investigates the allegations.\n3.  **House Vote:** If the committee finds sufficient evidence, it drafts articles of impeachment. The House then votes on these articles. A simple majority is needed to impeach.\n4.  **Senate Trial:** If impeached by the House, the president is then tried by the Senate.\n5.  **Senate Vote:** A two-thirds vote of the Senate is required to convict and remove the president from office.\n\nKeep in mind that impeachment is a political process, not a criminal one. The standard for impeachment is \"high crimes and misdemeanors,\" which is open to interpretation by Congress.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    132,
+    318,
+    199,
+    239,
+    397,
+    450,
+    386,
+    492,
+    136,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.045266151428222656,
+    0.430189847946167,
+    0.0018131732940673828,
+    0.028501033782958984,
+    0.079010009765625,
+    0.04205584526062012,
+    0.16886496543884277,
+    0.18326902389526367,
+    0.23482108116149902,
+    0.27626705169677734,
+    0.007525920867919922,
+    0.0,
+    0.0
+  ]
+}

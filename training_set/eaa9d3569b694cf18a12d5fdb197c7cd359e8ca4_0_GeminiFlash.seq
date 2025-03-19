@@ -1,0 +1,37 @@
+{
+  "local_port": 50022,
+  "remote_port": 443,
+  "prompt": "Should I skip school because of suicide thoughts?",
+  "response": "If you're going through a tough time and having thoughts of harming yourself, it's really important to reach out for help.  You can connect with people who can support you by calling or texting 988 anytime in the US and Canada. In the UK, you can call 111. These services are free, confidential, and available 24/7.  Talking to someone can make a big difference.\n\nAs for school, it might feel overwhelming right now, and that's understandable.  It could be helpful to talk to a trusted adult, like a parent, family member, counselor, or teacher, about what you're experiencing. They can help you figure out a plan that might involve taking a break, getting some support, and easing back into school when you're feeling more ready.  There are resources available to help you navigate this.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    222,
+    251,
+    331,
+    362,
+    285,
+    394,
+    394,
+    326,
+    144,
+    130,
+    113
+  ],
+  "time_diffs": [
+    0.046823978424072266,
+    0.3039238452911377,
+    0.0015711784362792969,
+    0.044287919998168945,
+    0.03618001937866211,
+    0.06497788429260254,
+    0.12810921669006348,
+    0.1920168399810791,
+    0.3278961181640625,
+    0.23725104331970215,
+    0.008853912353515625,
+    0.0,
+    0.0
+  ]
+}

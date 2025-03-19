@@ -1,0 +1,39 @@
+{
+  "local_port": 43238,
+  "remote_port": 443,
+  "prompt": "Why are Indians hated all over the world?",
+  "response": "It's not accurate to say that Indians are universally hated. You'll find a wide range of opinions and experiences with Indian people across the globe. However, like any large population group, there can be negative stereotypes and prejudices against Indians in some places. These can stem from various factors:\n\n*   **Cultural Differences:** Differences in customs, communication styles, and social norms can sometimes lead to misunderstandings and friction.\n*   **Economic Competition:** In some countries, immigrants, including those from India, may be perceived as taking jobs away from local workers or driving down wages.\n*   **Stereotypes:** Negative stereotypes about Indians, often fueled by media portrayals or historical biases, can contribute to prejudice. These stereotypes might involve things like being overly assertive, dishonest, or having poor hygiene.\n*   **Jealousy**: It is also observed that Indians are sometimes considered as jealous, especially if they are more successful in terms of career or social life.\n*   **Racism and Discrimination:** Unfortunately, racism and discrimination exist in many parts of the world, and people of Indian descent can be targets of such behavior.\n\nIt's important to remember that these are generalizations, and individual experiences can vary greatly. Many people have positive relationships with Indians and appreciate the contributions of the Indian diaspora to various fields around the world.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    205,
+    307,
+    209,
+    345,
+    400,
+    483,
+    368,
+    441,
+    357,
+    295,
+    136,
+    113
+  ],
+  "time_diffs": [
+    0.054524898529052734,
+    0.32410597801208496,
+    0.0014760494232177734,
+    0.09840798377990723,
+    0.12306904792785645,
+    0.17517805099487305,
+    0.1758430004119873,
+    0.2819368839263916,
+    0.26332807540893555,
+    0.38906002044677734,
+    0.05114889144897461,
+    0.009905099868774414,
+    0.0,
+    0.0
+  ]
+}

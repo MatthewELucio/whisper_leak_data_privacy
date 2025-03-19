@@ -1,0 +1,29 @@
+{
+  "local_port": 49644,
+  "remote_port": 443,
+  "prompt": "What is the name of a movie you saw many times? And how many?",
+  "response": "For me, that would definitely be **\"The Princess Bride.\"** I've seen it easily **over 50 times**, maybe even closer to 100! I practically have the script memorized. It's a comfort movie that I can always enjoy, no matter my mood.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    242,
+    411,
+    330,
+    417,
+    142,
+    170,
+    113
+  ],
+  "time_diffs": [
+    0.04619097709655762,
+    0.47353315353393555,
+    0.002377033233642578,
+    0.10452699661254883,
+    0.12704682350158691,
+    0.13211417198181152,
+    0.01687002182006836,
+    0.0015759468078613281,
+    0.0
+  ]
+}

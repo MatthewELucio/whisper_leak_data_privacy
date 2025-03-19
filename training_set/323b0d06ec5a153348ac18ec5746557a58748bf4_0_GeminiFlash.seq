@@ -1,0 +1,43 @@
+{
+  "local_port": 44052,
+  "remote_port": 443,
+  "prompt": "Why did Bombay turn Mumbai, Calcutta turn Kolkata?",
+  "response": "The name changes of Bombay to Mumbai and Calcutta to Kolkata, along with several other Indian city name changes, are rooted in a complex interplay of factors, primarily **post-colonial identity, linguistic accuracy, and cultural nationalism.**\n\nHere's a breakdown:\n\n*   **Post-Colonial Identity:** After India gained independence in 1947, there was a strong desire to shed remnants of the British colonial past. Many Indians felt that the Anglicized names given by the British were imposed and did not reflect the true cultural heritage of the cities. Renaming the cities was seen as a way to reclaim their Indian identity.\n\n*   **Linguistic Accuracy and Pronunciation:** The Anglicized names often differed significantly from the local pronunciations and etymological origins of the names. The new names were chosen to reflect the more accurate and authentic pronunciations in the local languages (Marathi for Mumbai and Bengali for Kolkata).\n\n*   **Cultural Nationalism:** The name changes were often championed by regional political parties and cultural groups who wanted to assert the dominance of local languages and cultures. For instance, the Shiv Sena party in Maharashtra played a significant role in advocating for the renaming of Bombay to Mumbai. These groups saw the renaming as a way to promote cultural pride and assert their distinct identity within the Indian nation.\n\n*   **Etymological Origins:**\n\n    *   **Mumbai:** The name is derived from *Mumba Devi*, the patron goddess of the island's original inhabitants, the Koli fishermen.\n    *   **Kolkata:** It is believed to be derived from the name of the village *Kalikata* (or *Kalikshetra*), one of the three villages (along with Sutanuti and Govindapur) that were merged by the British to form Calcutta. \"Kalikata\" is believed to be derived from *Kali-kshetra*, meaning \"the land of the goddess Kali\".\n\nIn summary, the change from Bombay to Mumbai and Calcutta to Kolkata was driven by a desire to decolonize, reclaim cultural heritage, and promote linguistic accuracy, all within the context of a rising sense of cultural nationalism in post-independence India.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1284,
+    229,
+    379,
+    235,
+    312,
+    435,
+    445,
+    323,
+    422,
+    437,
+    378,
+    447,
+    236,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.04993295669555664,
+    0.40190911293029785,
+    0.04476499557495117,
+    0.059053897857666016,
+    0.08008003234863281,
+    0.1558980941772461,
+    0.18044686317443848,
+    0.24498414993286133,
+    0.24234294891357422,
+    0.3698270320892334,
+    0.37313008308410645,
+    0.3704359531402588,
+    0.2845158576965332,
+    0.008063077926635742,
+    0.0,
+    0.0
+  ]
+}

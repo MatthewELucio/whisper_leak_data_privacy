@@ -1,0 +1,37 @@
+{
+  "local_port": 58574,
+  "remote_port": 443,
+  "prompt": "Does weed help with period cramps?",
+  "response": "Research and anecdotal evidence on using cannabis for period cramps (dysmenorrhea) are mixed. Some studies and personal accounts suggest that cannabis may help relieve pain, relax muscles, and reduce anxiety associated with menstrual cramps. However, other studies have not found significant benefits, and more research is needed to confirm these effects and determine optimal dosages and methods of administration.\n\nIt is important to note that the effects of cannabis can vary depending on the individual, the strain, the dosage, and the method of consumption. Additionally, cannabis use can have potential side effects and may interact with certain medications.\n\nIf you are considering using cannabis to manage period cramps, it is essential to consult with a healthcare professional to discuss the potential risks and benefits and to determine if it is a safe and appropriate option for you.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    216,
+    191,
+    312,
+    321,
+    336,
+    427,
+    345,
+    409,
+    199,
+    211,
+    113
+  ],
+  "time_diffs": [
+    0.045638084411621094,
+    0.339465856552124,
+    0.0013191699981689453,
+    0.05243396759033203,
+    0.049865007400512695,
+    0.10906386375427246,
+    0.19227004051208496,
+    0.19699597358703613,
+    0.24908113479614258,
+    0.04952383041381836,
+    0.00937509536743164,
+    0.0,
+    0.0
+  ]
+}

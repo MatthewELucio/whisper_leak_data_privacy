@@ -1,0 +1,33 @@
+{
+  "local_port": 36444,
+  "remote_port": 443,
+  "prompt": "With the terrorist attack in Uri, is going to war with Pakistan is the only option left with India ?",
+  "response": "The 2016 Uri attack, where militants attacked an Indian Army base in Uri, Kashmir, was a serious event that led to a lot of public anger and calls for strong action. In the aftermath, the Indian government explored a range of responses.\n\nMilitary options were definitely considered, and India did conduct surgical strikes across the Line of Control, targeting militant launchpads. Beyond military action, India also pursued diplomatic and economic strategies. Diplomatically, India worked to isolate Pakistan internationally, highlighting its alleged support for terrorism. Economically, there were discussions about reviewing trade relations.\n\nIt's worth remembering that war is a complex decision with huge consequences. Factors like the potential for escalation, the impact on the region, and the economic costs are all weighed very carefully. In the case of the Uri attack, the Indian government ultimately chose a multi-faceted approach that combined military action with diplomatic and economic pressure.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1306,
+    424,
+    231,
+    475,
+    509,
+    308,
+    260,
+    254,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04645586013793945,
+    0.34544920921325684,
+    0.14325284957885742,
+    0.1005401611328125,
+    0.24958300590515137,
+    0.28769493103027344,
+    0.3180079460144043,
+    0.20816397666931152,
+    0.010065078735351562,
+    0.0010018348693847656,
+    0.0
+  ]
+}

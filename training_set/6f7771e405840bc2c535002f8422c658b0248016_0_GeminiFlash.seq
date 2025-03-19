@@ -1,0 +1,39 @@
+{
+  "local_port": 49600,
+  "remote_port": 443,
+  "prompt": "Was the Suicide Squad movie good in your opinion?",
+  "response": "Whether \"Suicide Squad\" (2016) is \"good\" is really subjective, and there's no single right answer. It's one of those movies that people either seem to love or hate, with not much in between.\n\nHere's a breakdown of common opinions:\n\n*   **Criticisms:** Many critics and viewers found the plot confusing and disjointed, with weak character development and an over-reliance on style over substance. Some felt the tone was inconsistent, trying to be both dark and comedic without succeeding at either. Editing was also a common complaint.\n*   **Positives:** Some viewers enjoyed the stylized visuals, the energetic soundtrack, and the performances of certain cast members, particularly Margot Robbie as Harley Quinn. The movie attempted a different tone and style within the superhero genre, which some appreciated.\n\n**In conclusion,** \"Suicide Squad\" is a divisive film. It has aspects that some people find enjoyable, but it also has significant flaws that many others find off-putting. Whether you'll like it depends on your personal taste and what you're looking for in a superhero movie.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    282,
+    204,
+    221,
+    292,
+    332,
+    277,
+    447,
+    341,
+    458,
+    260,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.04482293128967285,
+    0.3047640323638916,
+    0.001497030258178711,
+    0.012123823165893555,
+    0.04824519157409668,
+    0.12801194190979004,
+    0.20111489295959473,
+    0.21814417839050293,
+    0.28398895263671875,
+    0.28859400749206543,
+    0.1902010440826416,
+    0.010523796081542969,
+    0.0002460479736328125,
+    0.0
+  ]
+}

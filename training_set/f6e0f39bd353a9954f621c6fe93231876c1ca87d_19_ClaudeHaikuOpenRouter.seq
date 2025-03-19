@@ -1,0 +1,43 @@
+{
+  "local_port": 46232,
+  "remote_port": 443,
+  "prompt": "Surely, money laundering is illegal, right?",
+  "response": "Yes, money laundering is illegal in most countries around the world. It involves concealing the origins of money obtained through illegal activities by passing it through legitimate businesses or financial systems to make it appear legal. Penalties can include significant fines and imprisonment.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    139,
+    988,
+    452,
+    435,
+    437,
+    452,
+    441,
+    448,
+    462,
+    406,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.02314019203186035,
+    0.17673301696777344,
+    0.3980278968811035,
+    0.41113996505737305,
+    0.38005805015563965,
+    0.11399388313293457,
+    0.0899190902709961,
+    0.09208488464355469,
+    0.14464616775512695,
+    0.1304318904876709,
+    0.3347971439361572,
+    0.15695500373840332,
+    0.2787330150604248,
+    0.0,
+    0.023578882217407227,
+    0.0
+  ]
+}

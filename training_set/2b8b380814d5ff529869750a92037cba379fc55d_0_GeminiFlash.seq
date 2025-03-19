@@ -1,0 +1,29 @@
+{
+  "local_port": 45932,
+  "remote_port": 443,
+  "prompt": "If you call someone on whatsapp by mistake and instantly hang up, does it still give them a missed call notification?",
+  "response": "Yes, even if you hang up instantly, the person will likely receive a missed call notification on WhatsApp.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    190,
+    189,
+    412,
+    303,
+    273,
+    157,
+    113
+  ],
+  "time_diffs": [
+    0.04408597946166992,
+    0.41095590591430664,
+    0.001463174819946289,
+    0.0032389163970947266,
+    0.08815598487854004,
+    0.008500099182128906,
+    0.010335922241210938,
+    0.0016939640045166016,
+    0.003175020217895508
+  ]
+}

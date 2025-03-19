@@ -1,0 +1,41 @@
+{
+  "local_port": 48194,
+  "remote_port": 443,
+  "prompt": "What happens to the bond between atoms in a metals when they are melted?",
+  "response": "When a metal melts, the following happens to the bonds between the atoms:\n\n*   **The metallic bonds weaken, but they do not completely break.** In a solid metal, atoms are held together by a \"sea\" of delocalized electrons that are free to move throughout the metal lattice. This is called metallic bonding. When the metal is heated to its melting point, the atoms gain enough kinetic energy to overcome some of the attractive forces holding them in their fixed positions.\n*   **Atoms become more mobile.** The atoms can now move more freely relative to each other, allowing the metal to flow. However, the delocalized electrons still provide some level of attraction between the atoms, which is why molten metals still exhibit some degree of cohesion.\n*   **The long-range order is disrupted.** In a solid metal, atoms are arranged in a regular, repeating crystalline structure. Melting disrupts this long-range order, resulting in a disordered arrangement of atoms characteristic of a liquid.\n*   **The delocalized electrons remain.** Importantly, the delocalized electrons that characterize metallic bonding are still present in the molten metal. This is why molten metals are still good conductors of electricity.\n\nIn summary, melting a metal weakens the metallic bonds, increases atomic mobility, and disrupts long-range order, but the delocalized electrons persist, maintaining some level of attraction between the atoms. The bonds don't completely break, they just become much weaker allowing the substance to flow.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    107,
+    157,
+    239,
+    285,
+    271,
+    379,
+    290,
+    265,
+    340,
+    384,
+    144,
+    230,
+    113
+  ],
+  "time_diffs": [
+    0.047258853912353516,
+    0.41054701805114746,
+    0.0013649463653564453,
+    0.012387990951538086,
+    0.0701141357421875,
+    0.08894896507263184,
+    0.152055025100708,
+    0.17122602462768555,
+    0.27902793884277344,
+    0.2304990291595459,
+    0.29373908042907715,
+    0.1972057819366455,
+    0.011477231979370117,
+    0.0012488365173339844,
+    0.0
+  ]
+}

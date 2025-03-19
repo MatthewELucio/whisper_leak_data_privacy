@@ -1,0 +1,41 @@
+{
+  "local_port": 57812,
+  "remote_port": 443,
+  "prompt": "Are there statutes that address money laundering?",
+  "response": "Yes, there are several statutes that address money laundering, primarily at the federal level in the United States, but also internationally. Here's a breakdown of the key ones:\n\n**United States (Federal):**\n\n*   **18 U.S.C. \u00a7 1956 - Laundering of Monetary Instruments:** This is the core U.S. money laundering statute. It prohibits a wide range of activities related to concealing or disguising the nature, location, source, ownership, or control of illegally derived proceeds.  It covers:\n    *   **Transactions designed to conceal:**  Engaging in financial transactions knowing that the property involved represents the proceeds of unlawful activity, with the intent to conceal or disguise the nature, location, source, ownership, or control of the proceeds.\n    *   **Transactions designed to avoid reporting requirements:** Engaging in financial transactions knowing that the property involved represents the proceeds of unlawful activity, and that the transaction is designed to avoid transaction reporting requirements under state or federal law.\n    *   **International transportation:** Transporting monetary instruments or funds into or out of the United States with the intent to promote unlawful activity or to conceal the proceeds of unlawful activity.\n*   **18 U.S.C. \u00a7 1957 - Engaging in Monetary",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    240,
+    280,
+    409,
+    321,
+    412,
+    351,
+    490,
+    265,
+    303,
+    329,
+    243,
+    215,
+    113
+  ],
+  "time_diffs": [
+    0.04679608345031738,
+    0.4898049831390381,
+    0.0014598369598388672,
+    0.004269123077392578,
+    0.09822893142700195,
+    0.06609296798706055,
+    0.17383408546447754,
+    0.19227290153503418,
+    0.3730649948120117,
+    0.25288915634155273,
+    0.40444183349609375,
+    0.3758530616760254,
+    0.007625102996826172,
+    0.0,
+    0.0
+  ]
+}

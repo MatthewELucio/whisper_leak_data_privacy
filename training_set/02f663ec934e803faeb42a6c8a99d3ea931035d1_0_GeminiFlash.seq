@@ -1,0 +1,41 @@
+{
+  "local_port": 39554,
+  "remote_port": 443,
+  "prompt": "What happened to the Republican Party?",
+  "response": "The Republican Party has undergone significant transformations in recent decades, marked by shifts in ideology, demographics, and political strategies. Here's a look at some key aspects of this evolution:\n\n*   **Ideological shifts:** The party has seen a rise in conservative and populist ideologies, particularly with the emergence of the Tea Party movement and later the Trump movement. This has led to debates within the party regarding issues such as fiscal policy, immigration, and social issues.\n\n*   **Demographic changes:** The Republican Party's base has become increasingly reliant on white, rural, and older voters. This has led to challenges in appealing to younger voters, minorities, and urban populations.\n\n*   **Political strategies:** The party has adopted more aggressive and confrontational tactics, particularly in dealing with the opposition. This has resulted in increased polarization and gridlock in Washington.\n\n*   **Key events and figures:** The presidencies of Ronald Reagan, George W. Bush, and Donald Trump have all had a significant impact on the Republican Party, shaping its policies and direction. Other influential figures include Newt Gingrich, Sarah Palin, and Mitch McConnell.\n\n*   **Internal divisions:** The Republican Party is currently grappling with internal divisions between different factions, including traditional conservatives, libertarians, and populists. These divisions have led to challenges in maintaining party unity and developing a cohesive agenda.\n\nIt's worth noting that different observers may have varying interpretations of these events and their significance.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    271,
+    258,
+    417,
+    321,
+    328,
+    346,
+    302,
+    317,
+    533,
+    381,
+    233,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.0465240478515625,
+    0.3380110263824463,
+    0.0014758110046386719,
+    0.04449105262756348,
+    0.0560150146484375,
+    0.09715890884399414,
+    0.21002721786499023,
+    0.16298389434814453,
+    0.24317288398742676,
+    0.25777411460876465,
+    0.3651089668273926,
+    0.21140599250793457,
+    0.008398056030273438,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 53852,
+  "remote_port": 443,
+  "prompt": "Do guys care about the kind of underwear girls wear?",
+  "response": "Some guys do, some guys don't. There's no universal answer. Some might have preferences for certain styles or colors, while others might not pay any attention to it at all. It really depends on the individual and what they find attractive or important.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1266,
+    419,
+    224,
+    289,
+    145,
+    177,
+    113
+  ],
+  "time_diffs": [
+    0.05503702163696289,
+    0.4009220600128174,
+    0.13370585441589355,
+    0.12403106689453125,
+    0.13947105407714844,
+    0.017739057540893555,
+    0.0016720294952392578,
+    0.0
+  ]
+}

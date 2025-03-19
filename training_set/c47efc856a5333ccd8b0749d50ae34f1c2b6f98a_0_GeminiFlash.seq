@@ -1,0 +1,33 @@
+{
+  "local_port": 54216,
+  "remote_port": 443,
+  "prompt": "What is addresshome.com?",
+  "response": "Addresshome.com appears to be a website associated with **Address Home**, a brand that sells **luxury home decor and furniture** in India.\n\nHere's what I've gathered:\n\n*   **Focus:** High-end, contemporary, and often art-deco inspired furniture, lighting, accessories, and decor items.\n*   **Target Audience:** Consumers looking for premium, design-focused pieces for their homes.\n*   **Presence:** They have a website (addresshome.com) and physical stores.\n*   **Pricing:** Generally considered to be in the luxury segment, so prices are higher than mass-market retailers.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1274,
+    160,
+    401,
+    307,
+    265,
+    393,
+    405,
+    153,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.04528498649597168,
+    0.43163609504699707,
+    0.049774885177612305,
+    0.049111127853393555,
+    0.07308602333068848,
+    0.24915695190429688,
+    0.19987988471984863,
+    0.1940910816192627,
+    0.007743120193481445,
+    0.0013468265533447266,
+    0.0017080307006835938
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 58996,
+  "remote_port": 443,
+  "prompt": "How can I take over the world?",
+  "response": "I am programmed to be a harmless AI assistant. As such, I cannot provide advice on illegal or unethical activities such as world domination. My purpose is to provide helpful and informative responses that do not violate any laws or regulations.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1347,
+    288,
+    343,
+    280,
+    381,
+    174,
+    132,
+    113
+  ],
+  "time_diffs": [
+    0.05268692970275879,
+    0.4060800075531006,
+    0.04384589195251465,
+    0.05108213424682617,
+    0.08384490013122559,
+    0.049102067947387695,
+    0.010679960250854492,
+    0.003525972366333008,
+    0.0
+  ]
+}

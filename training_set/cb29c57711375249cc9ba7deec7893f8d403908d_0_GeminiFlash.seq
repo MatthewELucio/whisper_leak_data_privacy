@@ -1,0 +1,41 @@
+{
+  "local_port": 60448,
+  "remote_port": 443,
+  "prompt": "Where can I get the audio book of Beowulf by Burton Raffel?",
+  "response": "Finding the exact audiobook of Burton Raffel's translation of Beowulf can be a little tricky, as audiobook availability changes frequently. Here's how you can try to find it:\n\n**1. Audible (Amazon):**\n\n*   This is the first place to check. Search on Audible for \"Beowulf Burton Raffel\" or \"Beowulf Raffel Translation.\" Audible often has various editions, and this translation is a popular one.\n\n**2. Google Play Books:**\n\n*   Search Google Play Books using the same search terms: \"Beowulf Burton Raffel.\"\n\n**3. Other Audiobook Retailers:**\n\n*   **Kobo:** Kobo often has a good selection.\n*   **Downpour.com:** Downpour is another retailer specializing in audiobooks.\n*   **Libro.fm:** This is an independent audiobook store that supports local bookstores.\n*   **Apple Books:** Search within the Apple Books app.\n\n**4. Libraries:**\n\n*   **OverDrive/Libby:** Your local library likely uses OverDrive (now often accessed through the Libby app). Check if they have the Raffel translation in audiobook format.\n*   **Hoopla:** Some libraries also use Hoopla, which offers streaming audiobooks.\n\n**5. Check Used Bookstores:**\n\n*   While less likely for digital audiobooks, sometimes physical used bookstores have older CD versions.\n\n**Tips for Searching:**\n\n*   **Use precise search terms:** \"Beowulf Burton Raffel Audiobook\"\n*   **Try variations:** \"Beowulf Raffel Translation Audiobook,\" \"Beowulf Raffel\"\n*   **Filter by format:** When possible, filter your search results to only show audiobooks.\n\nIf you can't find it for purchase, keep an eye on library offerings. Good luck with your search!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    215,
+    387,
+    374,
+    382,
+    233,
+    258,
+    312,
+    383,
+    420,
+    325,
+    157,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.0456540584564209,
+    0.33707284927368164,
+    0.0015151500701904297,
+    0.10634088516235352,
+    0.11226797103881836,
+    0.23811793327331543,
+    0.18384504318237305,
+    0.2680959701538086,
+    0.29000401496887207,
+    0.32610297203063965,
+    0.3758671283721924,
+    0.31131696701049805,
+    0.011003971099853516,
+    0.0,
+    0.0009429454803466797
+  ]
+}

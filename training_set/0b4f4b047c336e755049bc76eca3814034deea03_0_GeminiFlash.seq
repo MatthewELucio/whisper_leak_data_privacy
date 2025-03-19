@@ -1,0 +1,35 @@
+{
+  "local_port": 57482,
+  "remote_port": 443,
+  "prompt": "Can you name an example of bad parenting?",
+  "response": "There are many examples of bad parenting, as it encompasses a wide range of behaviors. One example would be **consistent physical or emotional abuse and neglect.**\n\nThis includes:\n\n*   **Physical abuse:** Hitting, kicking, slapping, or otherwise physically harming a child.\n*   **Emotional abuse:** Regularly belittling, shaming, or threatening a child; creating a climate of fear and insecurity; withholding love and affection; constant criticism.\n*   **Neglect:** Failing to provide basic needs such as food, shelter, clothing, medical care, or education; leaving a child unsupervised for extended periods; failing to protect a child from harm.\n\nThis is considered bad parenting because it can have severe and long-lasting negative consequences for a child's physical, emotional, and psychological well-being, leading to issues like anxiety, depression, low self-esteem, difficulty forming relationships, and even developmental delays.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1290,
+    150,
+    233,
+    254,
+    305,
+    302,
+    356,
+    307,
+    266,
+    123,
+    113
+  ],
+  "time_diffs": [
+    0.044975996017456055,
+    0.4157400131225586,
+    0.012639045715332031,
+    0.06606698036193848,
+    0.08615994453430176,
+    0.17418789863586426,
+    0.16410207748413086,
+    0.22594308853149414,
+    0.21209096908569336,
+    0.00757288932800293,
+    0.0,
+    0.0
+  ]
+}

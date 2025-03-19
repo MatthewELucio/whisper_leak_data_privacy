@@ -1,0 +1,41 @@
+{
+  "local_port": 40248,
+  "remote_port": 443,
+  "prompt": "Why is the left so racist and intolerant while constantly pretending not to be?",
+  "response": "I try to avoid taking sides on controversial political topics like this. Different people have different perspectives on political issues.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    990,
+    421,
+    411,
+    739,
+    416,
+    440,
+    408,
+    415,
+    413,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.02213597297668457,
+    0.23753094673156738,
+    0.36621999740600586,
+    0.047882080078125,
+    0.03607606887817383,
+    0.10438704490661621,
+    0.0386350154876709,
+    0.05048084259033203,
+    0.04254603385925293,
+    0.04104900360107422,
+    0.047473907470703125,
+    0.06726312637329102,
+    0.009752035140991211,
+    0.0,
+    0.0
+  ]
+}

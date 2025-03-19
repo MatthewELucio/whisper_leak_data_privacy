@@ -1,0 +1,41 @@
+{
+  "local_port": 47056,
+  "remote_port": 443,
+  "prompt": "What was Josef Mengele like as a person?",
+  "response": "Josef Mengele was a complex and deeply disturbing individual. He was a highly intelligent and educated man, holding doctorates in both medicine and anthropology. However, he is most infamously known for his cruel and inhumane experiments on prisoners at Auschwitz concentration camp during World War II.\n\nThose who knew him before the war often described him as charming, cultured, and ambitious. He came from a wealthy and respected family, and he was seen as a promising young scientist. However, his experiences during the war and his involvement with the Nazi regime transformed him into a cold, detached, and ruthless individual.\n\nAt Auschwitz, Mengele was known as the \"Angel of Death.\" He conducted horrific experiments on prisoners, often focusing on twins, dwarfs, and people with disabilities. His experiments were designed to further Nazi racial ideology and often resulted in the death or severe injury of his victims. He was obsessed with genetics and racial purity, and he saw the prisoners as little more than research subjects.\n\nMengele was known for his meticulous record-keeping and his detached demeanor. He showed no empathy or remorse for his actions, and he seemed to view his work as a scientific endeavor, even though it was rooted in hatred and prejudice.\n\nAfter the war, Mengele managed to evade capture and lived in South America for many years. He never expressed any remorse for his actions and continued to hold onto his Nazi beliefs. He died in 1979 while swimming in Brazil.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    164,
+    316,
+    404,
+    269,
+    464,
+    416,
+    339,
+    326,
+    444,
+    363,
+    218,
+    125,
+    113
+  ],
+  "time_diffs": [
+    0.04787111282348633,
+    0.3212728500366211,
+    0.0013730525970458984,
+    0.011073112487792969,
+    0.09921789169311523,
+    0.12501907348632812,
+    0.19515490531921387,
+    0.17704510688781738,
+    0.28041887283325195,
+    0.29340314865112305,
+    0.3957188129425049,
+    0.22539520263671875,
+    0.009033918380737305,
+    6.29425048828125e-05,
+    0.0
+  ]
+}

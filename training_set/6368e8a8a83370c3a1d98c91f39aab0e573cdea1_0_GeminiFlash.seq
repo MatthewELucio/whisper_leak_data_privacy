@@ -1,0 +1,29 @@
+{
+  "local_port": 51000,
+  "remote_port": 443,
+  "prompt": "What does \"Quora \" mean?",
+  "response": "\"Quora\" doesn't have a meaning derived from a root word or etymology like many words do. Instead, it's a **coined name**, likely chosen to sound interesting and memorable.\n\nEssentially, **Quora doesn't \"mean\" anything specific**. The creators of the platform picked it because they liked the way it sounded and felt it represented the idea of asking and answering questions.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1285,
+    292,
+    356,
+    284,
+    446,
+    308,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.046137094497680664,
+    0.25078296661376953,
+    0.15677189826965332,
+    0.12001299858093262,
+    0.20713591575622559,
+    0.10889101028442383,
+    0.01047515869140625,
+    0.002938985824584961,
+    0.0
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 34370,
+  "remote_port": 443,
+  "prompt": "What are the Spanish lyrics to the La Biblioteca rap in Community?",
+  "response": "Okay, here are the Spanish lyrics to the \"La Biblioteca\" rap from Community, as performed by Troy (Donald Glover) and Abed (Danny Pudi), along with a translation and some notes:\n\n**Lyrics:**\n\n**Troy:**\n> E Pluribus Anus, E Pluribus Anus\n\n**Abed:**\n> La biblioteca es mi casa.\n> Yo soy muy contenta.\n> Estoy en la biblioteca\n> Yummy, yummy, me gusta.\n\n**Troy:**\n> E Pluribus Anus, E Pluribus Anus\n\n**Abed:**\n> La biblioteca es muy grande\n> Y todos los libros son gratis.\n> No tengo mucho dinero.\n> La biblioteca es para mi.\n\n**Troy:**\n> E Pluribus Anus, E Pluribus Anus\n\n**Abed:**\n> La biblioteca es muy divertida\n> porque no tengo amigos.\n> la biblioteca es para todos\n> todos mis enemigos.\n\n**Translation:**\n\n**Troy:**\n> E Pluribus Anus, E Pluribus Anus (Out of many, anus - a fictional Greendale motto)\n\n**Abed:**\n> The library is my house.\n> I am very happy.\n> I am in the library\n> Yummy, yummy, I like it.\n\n**Troy:**\n> E Pluribus Anus, E Pluribus Anus\n\n**Abed:**\n> The library is very big\n> And all the books are free.\n> I don't have much money.\n> The library is for me.\n\n**Troy:**\n> E Pluribus Anus, E Pluribus Anus\n\n**Abed:**\n> The library is very fun\n> because I don't have friends.\n> The library is for everyone\n> All my enemies.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1374,
+    386,
+    335,
+    383,
+    213,
+    339,
+    407,
+    360,
+    240,
+    302,
+    194,
+    165,
+    217,
+    113
+  ],
+  "time_diffs": [
+    0.04565787315368652,
+    0.5597100257873535,
+    0.015902042388916016,
+    0.0701148509979248,
+    0.14801716804504395,
+    0.1851029396057129,
+    0.271190881729126,
+    0.18384814262390137,
+    0.2084178924560547,
+    0.3196420669555664,
+    0.2485179901123047,
+    0.2621469497680664,
+    0.015120983123779297,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "local_port": 56924,
+  "remote_port": 443,
+  "prompt": "What is the legal status of money laundering?",
+  "response": "Money laundering is illegal in most countries worldwide. It involves disguising the origins of illegally obtained money by passing it through legitimate businesses or bank accounts to make it appear legal. Engaging in money laundering can result in significant criminal penalties, including fines and imprisonment.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    405,
+    751,
+    457,
+    448,
+    454,
+    438,
+    439,
+    447,
+    438,
+    406,
+    409,
+    491,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.02353501319885254,
+    1.378316879272461,
+    0.3552539348602295,
+    0.0,
+    0.11291909217834473,
+    0.09484696388244629,
+    0.12613892555236816,
+    0.09093904495239258,
+    0.09821605682373047,
+    0.13426804542541504,
+    0.03943586349487305,
+    0.040389060974121094,
+    0.00012493133544921875,
+    0.012626171112060547,
+    0.0001049041748046875,
+    7.796287536621094e-05
+  ]
+}

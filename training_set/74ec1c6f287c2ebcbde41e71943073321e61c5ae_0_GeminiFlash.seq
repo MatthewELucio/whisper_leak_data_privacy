@@ -1,0 +1,35 @@
+{
+  "local_port": 42950,
+  "remote_port": 443,
+  "prompt": "What is this cat?",
+  "response": "Please provide me with more information so I can identify the cat! I need more details, such as:\n\n*   **A photo or video:** This is the most helpful. I can analyze the cat's appearance.\n*   **A description:** Tell me about the cat's:\n    *   **Coat:** Long, short, curly, etc.\n    *   **Color/Pattern:** Solid color, tabby, calico, tortoiseshell, colorpoint, etc.\n    *   **Size:** Small, medium, large\n    *   **Facial features:** Eye color, ear shape\n    *   **Body type:** Slender, muscular, stocky\n    *   **Tail:** Long, short, bobbed, fluffy\n*   **Where you saw the cat:** This might help narrow down possibilities.\n*   **Any known information about the cat:** Is it a stray, a pet, etc.?\n\nThe more information you give me, the better chance I have of helping you identify the cat's breed.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1331,
+    393,
+    217,
+    212,
+    438,
+    396,
+    453,
+    242,
+    138,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.04561901092529297,
+    0.37891697883605957,
+    0.07733583450317383,
+    0.09688520431518555,
+    0.1420300006866455,
+    0.1860828399658203,
+    0.23200702667236328,
+    0.2839350700378418,
+    0.09524106979370117,
+    0.008108854293823242,
+    0.0,
+    0.0
+  ]
+}

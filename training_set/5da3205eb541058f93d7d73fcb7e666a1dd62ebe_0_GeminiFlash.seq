@@ -1,0 +1,39 @@
+{
+  "local_port": 56588,
+  "remote_port": 443,
+  "prompt": "Why do the minions in Despicable Me love bananas?",
+  "response": "The exact reason why the Minions love bananas is never explicitly stated in the Despicable Me franchise. However, it's heavily implied that it's a combination of:\n\n*   **Simple, Visual Humor:** The Minions are designed to be funny and endearing. Their obsession with bananas, a readily recognizable and comical fruit, is a simple way to achieve this. Their excited noises, gestures, and antics when they see a banana are inherently humorous.\n*   **Their Childlike Nature:** The Minions often behave like children, and their banana obsession plays into this. Children are often depicted as having simple, sometimes irrational, attachments to certain foods or objects.\n*   **In-Universe Lore (Implied):** It is implied that bananas might be nutritious and essential to the Minions. Their behavior around bananas suggests a need for them beyond just liking the taste.\n\nIn short, it's a comedic quirk that adds to the Minions' charm and provides plenty of opportunities for slapstick and funny situations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    114,
+    154,
+    381,
+    265,
+    401,
+    303,
+    439,
+    353,
+    341,
+    262,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.05409407615661621,
+    0.4436759948730469,
+    0.0015819072723388672,
+    0.00034999847412109375,
+    0.07416415214538574,
+    0.09479689598083496,
+    0.16994595527648926,
+    0.16795706748962402,
+    0.29636192321777344,
+    0.3118131160736084,
+    0.029961109161376953,
+    0.008934974670410156,
+    0.00019288063049316406,
+    5.698204040527344e-05
+  ]
+}

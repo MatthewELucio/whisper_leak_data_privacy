@@ -1,0 +1,43 @@
+{
+  "local_port": 46572,
+  "remote_port": 443,
+  "prompt": "What is an In-Flight Crew Member?",
+  "response": "An in-flight crew member, most commonly referred to as a **flight attendant**, is a member of the aircrew on commercial flights whose primary duty is to ensure the safety and comfort of passengers.\n\nHere's a more detailed breakdown of what that entails:\n\n*   **Safety:** This is the top priority. Flight attendants are trained to handle a variety of emergency situations, including:\n    *   Evacuations\n    *   Medical emergencies\n    *   Turbulence\n    *   Fire suppression\n    *   Security threats\n\n*   **Customer Service:** Flight attendants are responsible for providing a positive and comfortable flying experience for passengers. This includes:\n    *   Greeting passengers and assisting with seating\n    *   Providing food and beverage service\n    *   Answering questions and addressing concerns\n    *   Providing special assistance to passengers with disabilities or other needs\n\n*   **Pre-flight duties:** Before takeoff, flight attendants:\n    *   Ensure the aircraft is clean and stocked with necessary supplies\n    *   Check emergency equipment\n    *   Brief passengers on safety procedures\n\n*   **Post-flight duties:** After landing, flight attendants:\n    *   Ensure passengers disembark safely\n    *   Report any incidents or concerns to the captain\n    *   Prepare the cabin for the next flight\n\n* **Compliance:** Flight attendants also enforce federal regulations and airline policies to maintain order and safety on board.\n\nIn short, in-flight crew members are more than just servers in the sky. They are trained safety professionals and customer service representatives, all in one. Their role is critical to ensuring a safe and pleasant flying experience for everyone on board.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    249,
+    233,
+    320,
+    386,
+    389,
+    252,
+    513,
+    394,
+    375,
+    524,
+    341,
+    209,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.0495600700378418,
+    0.3034219741821289,
+    0.00144195556640625,
+    0.010270118713378906,
+    0.06615805625915527,
+    0.11605286598205566,
+    0.16202211380004883,
+    0.19806790351867676,
+    0.2569389343261719,
+    0.2817971706390381,
+    0.38901185989379883,
+    0.4411301612854004,
+    0.06042790412902832,
+    0.00849604606628418,
+    0.0,
+    0.0
+  ]
+}

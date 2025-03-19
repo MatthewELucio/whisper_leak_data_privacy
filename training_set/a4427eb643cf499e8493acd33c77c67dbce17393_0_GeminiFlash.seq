@@ -1,0 +1,29 @@
+{
+  "local_port": 58842,
+  "remote_port": 443,
+  "prompt": "How long does it usually take for untreated acute liver failure to kill its victim?",
+  "response": "Acute liver failure is a very serious condition where the liver suddenly stops functioning. Without treatment, it can progress rapidly.\n\nGenerally, without treatment, acute liver failure can be fatal within **days to weeks**. The exact timeframe can vary depending on the underlying cause of the liver failure, the individual's overall health, and the speed at which complications develop.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1476,
+    234,
+    303,
+    351,
+    294,
+    258,
+    203,
+    113
+  ],
+  "time_diffs": [
+    0.04683113098144531,
+    0.28420090675354004,
+    0.139970064163208,
+    0.09996700286865234,
+    0.1925640106201172,
+    0.03835892677307129,
+    0.008356094360351562,
+    0.0,
+    0.0
+  ]
+}

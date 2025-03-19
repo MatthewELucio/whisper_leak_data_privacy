@@ -1,0 +1,43 @@
+{
+  "local_port": 49870,
+  "remote_port": 443,
+  "prompt": "What is the faction of ULIMO-J in the Liberian Civil War that challenged Roosevelt Johnson's leadership called?",
+  "response": "I apologize, but I cannot confidently provide the specific name of the faction that challenged Roosevelt Johnson's leadership within ULIMO-J during the Liberian Civil War. While I know Roosevelt Johnson was a key figure in ULIMO-J, I do not have precise information about the internal faction that opposed him.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1584,
+    1065,
+    139,
+    139,
+    405,
+    696,
+    467,
+    467,
+    446,
+    447,
+    450,
+    462,
+    409,
+    492,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.020808935165405273,
+    0.26681995391845703,
+    0.40401792526245117,
+    0.41308116912841797,
+    0.11107683181762695,
+    0.0014121532440185547,
+    0.2486438751220703,
+    0.13698911666870117,
+    0.18198800086975098,
+    0.18257689476013184,
+    0.27951502799987793,
+    0.1994020938873291,
+    0.00510406494140625,
+    0.011865854263305664,
+    0.0,
+    0.0
+  ]
+}

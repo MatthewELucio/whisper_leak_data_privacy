@@ -1,0 +1,37 @@
+{
+  "local_port": 50684,
+  "remote_port": 443,
+  "prompt": "A shop was selling 3 chocolates for Re. 1 and if you return three wrappers you get 1 free. If so, how many chocolates can you get for Rs. 45?",
+  "response": "Here's how to solve this problem:\n\n*   **Initial Purchase:** For Rs. 45, you can initially buy 45 * 3 = 135 chocolates.\n*   **Free Chocolates from Wrappers:** With 135 wrappers, you can get 135 / 3 = 45 free chocolates.\n*   **More Free Chocolates:** Now you have 45 wrappers, so you can get another 45 / 3 = 15 free chocolates.\n*   **Even More Free Chocolates:** With 15 wrappers, you can get 15 / 3 = 5 free chocolates.\n*   **Final Free Chocolates:** With 5 wrappers, you can get 5 / 3 = 1 free chocolate with 2 wrappers left over.\n*   **Total Chocolates:** In total, you get 135 + 45 + 15 + 5 + 1 = 201 chocolates.\n\nSo, you can get 201 chocolates for Rs. 45.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    212,
+    265,
+    297,
+    337,
+    203,
+    402,
+    351,
+    220,
+    312,
+    168,
+    113
+  ],
+  "time_diffs": [
+    0.04505586624145508,
+    0.3666520118713379,
+    0.0014581680297851562,
+    0.1096029281616211,
+    0.09797811508178711,
+    0.17991876602172852,
+    0.15877008438110352,
+    0.2254350185394287,
+    0.20571112632751465,
+    0.14773297309875488,
+    0.011253833770751953,
+    0.0,
+    0.0
+  ]
+}

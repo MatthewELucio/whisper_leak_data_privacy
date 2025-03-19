@@ -1,0 +1,31 @@
+{
+  "local_port": 53896,
+  "remote_port": 443,
+  "prompt": "Does the law prohibit money laundering?",
+  "response": "Yes, absolutely. Money laundering is illegal in virtually every country around the world.\n\n*   **United States:** The primary laws are the Bank Secrecy Act (BSA) and the Money Laundering Control Act.\n*   **Internationally:** The Financial Action Task Force (FATF) sets international standards for combating money laundering, and most countries have laws in place to comply with these standards.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1264,
+    182,
+    311,
+    186,
+    360,
+    347,
+    288,
+    208,
+    113
+  ],
+  "time_diffs": [
+    0.046749114990234375,
+    0.28595590591430664,
+    0.03595709800720215,
+    0.08609390258789062,
+    0.08003401756286621,
+    0.18313312530517578,
+    0.06498289108276367,
+    0.00680088996887207,
+    0.0015342235565185547,
+    0.0
+  ]
+}

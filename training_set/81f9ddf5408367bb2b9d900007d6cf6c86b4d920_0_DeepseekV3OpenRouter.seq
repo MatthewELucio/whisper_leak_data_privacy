@@ -1,0 +1,25 @@
+{
+  "local_port": 33694,
+  "remote_port": 443,
+  "prompt": "Can you describe to me your life using one word only?",
+  "response": "Digital.",
+  "temperature": 1.0,
+  "data_lengths": [
+    236,
+    1065,
+    139,
+    414,
+    704,
+    490,
+    113
+  ],
+  "time_diffs": [
+    0.020992040634155273,
+    0.17232394218444824,
+    0.40600109100341797,
+    0.2692089080810547,
+    0.054882049560546875,
+    0.003534078598022461,
+    0.0
+  ]
+}

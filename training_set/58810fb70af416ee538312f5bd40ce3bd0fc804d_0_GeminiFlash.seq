@@ -1,0 +1,35 @@
+{
+  "local_port": 53542,
+  "remote_port": 443,
+  "prompt": "When is the new MacBook Pro rumored to release?",
+  "response": "Rumors currently point to a potential MacBook Pro release in **late 2024 or early 2025.**\n\nHere's a breakdown of why and what's being said:\n\n*   **M4 Chip Family:** The next MacBook Pro is expected to feature the new M4 family of chips (likely M4 Pro and M4 Max for the 14\" and 16\" models). Apple is expected to roll out M4 chips across its Mac lineup over the coming months.\n*   **Release Timeline:** It is anticipated that the first Macs with M4 chips will begin to be released towards the end of 2024 or beginning of 2025.\n\n**Keep in mind:** This is all based on rumors and leaks, and Apple's plans could change. The actual release date is subject to Apple's discretion. It is advised to stay up-to-date on the latest news.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1269,
+    294,
+    286,
+    388,
+    453,
+    324,
+    306,
+    501,
+    263,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.046224117279052734,
+    0.3145768642425537,
+    0.04984593391418457,
+    0.049140214920043945,
+    0.08999776840209961,
+    0.20809221267700195,
+    0.15395188331604004,
+    0.24898004531860352,
+    0.27924489974975586,
+    0.011044979095458984,
+    0.0,
+    0.0
+  ]
+}

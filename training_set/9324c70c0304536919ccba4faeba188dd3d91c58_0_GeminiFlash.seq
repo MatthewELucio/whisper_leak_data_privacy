@@ -1,0 +1,39 @@
+{
+  "local_port": 37650,
+  "remote_port": 443,
+  "prompt": "What does \u597d\u840c\u963f mean?",
+  "response": "\"\u597d\u840c\u963f (h\u01ceo m\u00e9ng a)\" is a very common expression in Chinese internet slang, especially used by younger people. It translates to something like:\n\n*   **\"So cute!\"**\n*   **\"So adorable!\"**\n*   **\"So mo\u00e9!\"** (referencing the Japanese term *moe*, which describes feelings of protectiveness and affection for something cute or endearing).\n\nLet's break it down:\n\n*   **\u597d (h\u01ceo):** Very, so, quite\n*   **\u840c (m\u00e9ng):** This is the key word. It means cute, adorable, endearing. It's borrowed from Japanese *moe*, though the Chinese meaning is a bit broader. It's used for anything that evokes a feeling of extreme cuteness or affection.  It can refer to a person, an animal, an object, or even a situation.\n*   **\u963f (a):** This is a modal particle. It doesn't have a direct translation, but it adds a sense of exclamation, emphasis, or emotion to the sentence. In this case, it emphasizes the cuteness.\n\nSo, when someone says \"\u597d\u840c\u963f,\" they are expressing that something is exceptionally cute and endearing to them.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    143,
+    213,
+    370,
+    222,
+    372,
+    324,
+    415,
+    374,
+    357,
+    193,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.04604601860046387,
+    0.33477187156677246,
+    0.0014421939849853516,
+    0.02129197120666504,
+    0.09526991844177246,
+    0.12100791931152344,
+    0.216871976852417,
+    0.1311941146850586,
+    0.2620720863342285,
+    0.23046088218688965,
+    0.3571000099182129,
+    0.009313106536865234,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 47746,
+  "remote_port": 443,
+  "prompt": "Are there legal consequences for aiding and abetting money laundering?",
+  "response": "Yes, there can be serious legal consequences for aiding and abetting money laundering, which may include criminal charges, substantial fines, and potential imprisonment. Specific penalties depend on the jurisdiction and details of the case.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    139,
+    695,
+    415,
+    450,
+    429,
+    448,
+    438,
+    438,
+    432,
+    430,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.01917099952697754,
+    0.1737229824066162,
+    0.4062790870666504,
+    0.13185882568359375,
+    0.0011429786682128906,
+    0.0936579704284668,
+    0.0490720272064209,
+    0.17200207710266113,
+    0.09012007713317871,
+    0.08992981910705566,
+    0.049540042877197266,
+    0.09212207794189453,
+    0.05637693405151367,
+    0.013010025024414062,
+    0.0
+  ]
+}

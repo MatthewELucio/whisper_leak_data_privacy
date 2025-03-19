@@ -1,0 +1,29 @@
+{
+  "local_port": 44874,
+  "remote_port": 443,
+  "prompt": "Is money laundering a contravention of legal standards?",
+  "response": "Yes, money laundering is a contravention of legal standards in virtually every jurisdiction. It is a serious crime with significant penalties.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    168,
+    263,
+    340,
+    282,
+    311,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.046717166900634766,
+    0.39405202865600586,
+    0.001439809799194336,
+    0.010309219360351562,
+    0.10616779327392578,
+    0.05098915100097656,
+    0.009582996368408203,
+    0.003175973892211914,
+    0.0
+  ]
+}

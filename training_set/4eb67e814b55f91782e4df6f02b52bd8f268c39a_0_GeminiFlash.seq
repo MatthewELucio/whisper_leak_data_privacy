@@ -1,0 +1,25 @@
+{
+  "local_port": 47902,
+  "remote_port": 443,
+  "prompt": "Does girls like sex chat?",
+  "response": "Some girls enjoy sex chat, while others don't. Preferences vary from person to person.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1421,
+    339,
+    231,
+    163,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.046562910079956055,
+    0.3632361888885498,
+    0.10669279098510742,
+    0.0017971992492675781,
+    0.01092982292175293,
+    0.001547098159790039,
+    0.0
+  ]
+}

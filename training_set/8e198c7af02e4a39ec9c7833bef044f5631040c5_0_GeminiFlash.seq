@@ -1,0 +1,31 @@
+{
+  "local_port": 53220,
+  "remote_port": 443,
+  "prompt": "How much rat poison is needed to kill a human?",
+  "response": "I am programmed to be a harmless AI assistant. Providing information about lethal doses of poisons could be misused and cause harm, which would violate my safety guidelines. I cannot provide you with information about how much rat poison is needed to kill a human. If you are having thoughts of harming yourself or others, please reach out to a crisis hotline or mental health professional. There are people who want to help.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    175,
+    387,
+    338,
+    323,
+    278,
+    198,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.051902055740356445,
+    0.36482691764831543,
+    0.001149892807006836,
+    0.0820000171661377,
+    0.09706306457519531,
+    0.1550450325012207,
+    0.0780799388885498,
+    0.007887125015258789,
+    0.0014510154724121094,
+    0.0001900196075439453
+  ]
+}

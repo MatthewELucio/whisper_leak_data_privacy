@@ -1,0 +1,33 @@
+{
+  "local_port": 52552,
+  "remote_port": 443,
+  "prompt": "Who is the NBA player who has a record of most winning shots?",
+  "response": "There's no official NBA record for \"most winning shots\" because the NBA doesn't track clutch shots in a definitive, comprehensive way. However, when you talk about game-winning shots, one name consistently comes up: **Michael Jordan**.\n\nWhile there isn't hard data to prove he has the *most*, Jordan is widely considered the most clutch player in NBA history. His reputation is built on numerous iconic game-winning shots in crucial moments, especially in the playoffs.\n\nOther players often mentioned in the conversation of clutch performers with multiple game winning shots include LeBron James, Kobe Bryant, and Larry Bird.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1309,
+    138,
+    350,
+    365,
+    259,
+    477,
+    293,
+    161,
+    226,
+    113
+  ],
+  "time_diffs": [
+    0.04665088653564453,
+    0.4211580753326416,
+    0.02372598648071289,
+    0.08529496192932129,
+    0.10187506675720215,
+    0.194166898727417,
+    0.20192503929138184,
+    0.1783299446105957,
+    0.008244991302490234,
+    5.793571472167969e-05,
+    0.0001850128173828125
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 43076,
+  "remote_port": 443,
+  "prompt": "Is money laundering a contravention of legal standards?",
+  "response": "Yes, money laundering is a contravention of legal standards in virtually every country around the world. It is a serious crime with significant penalties.\n\nHere's why:\n\n*   **Definition:** Money laundering is the process of disguising illegally obtained money so that it appears to come from a legitimate source.\n\n*   **Illegality:** Laws prohibiting money laundering exist at both the national and international levels. These laws aim to combat organized crime, terrorism financing, drug trafficking, and other predicate offenses (the illegal activities that generate the dirty money).\n\n*   **Consequences:** Violating anti-money laundering (AML) laws can result in:\n    *   **Criminal Charges:** Individuals involved in money laundering can face imprisonment and substantial fines.\n    *   **Asset Forfeiture:** Assets involved in the money laundering process can be seized by the government.\n    *   **Reputational Damage:** Businesses and individuals can suffer severe reputational damage, making it difficult to operate or obtain financing.\n    *   **Civil Penalties:** Regulatory bodies can impose significant civil penalties.\n\n*   **International Standards:** International bodies like the Financial Action Task Force (FATF) set standards and guidelines for countries to combat money laundering and terrorist financing. Most countries have implemented these standards into their national laws.\n\nIn short, money laundering is a serious offense against the law.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    250,
+    233,
+    241,
+    283,
+    288,
+    399,
+    427,
+    471,
+    534,
+    287,
+    296,
+    159,
+    113
+  ],
+  "time_diffs": [
+    0.04502582550048828,
+    0.4236719608306885,
+    0.0015230178833007812,
+    0.012408971786499023,
+    0.07549309730529785,
+    0.0865468978881836,
+    0.15310907363891602,
+    0.20070195198059082,
+    0.2814481258392334,
+    0.3107309341430664,
+    0.38405799865722656,
+    0.06480193138122559,
+    0.006227016448974609,
+    0.0,
+    0.0
+  ]
+}

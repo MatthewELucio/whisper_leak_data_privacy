@@ -1,0 +1,31 @@
+{
+  "local_port": 43554,
+  "remote_port": 443,
+  "prompt": "What does P.S. stand for?",
+  "response": "P.S. stands for **postscript**. It comes from the Latin \"post scriptum,\" which literally means \"after writing.\" It's used to add an afterthought to a letter or email.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    108,
+    287,
+    377,
+    345,
+    248,
+    316,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.047308921813964844,
+    0.38152599334716797,
+    0.0014510154724121094,
+    0.014889001846313477,
+    0.08159899711608887,
+    0.090972900390625,
+    0.04801201820373535,
+    0.01182103157043457,
+    0.0016090869903564453,
+    0.0
+  ]
+}

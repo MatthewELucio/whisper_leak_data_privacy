@@ -1,0 +1,33 @@
+{
+  "local_port": 59672,
+  "remote_port": 443,
+  "prompt": "Which parts of Japan were settled last?",
+  "response": "Generally speaking, the last areas of Japan to be significantly settled were:\n\n*   **Hokkaido:** While Hokkaido had been inhabited by the indigenous Ainu people for a long time, large-scale Japanese settlement didn't really begin until the Meiji Restoration in the late 19th century. The government actively encouraged migration to Hokkaido to develop the region and secure it against Russian expansion.\n*   **Okinawa Prefecture (Ryukyu Islands):** Though the Ryukyu Kingdom had its own distinct culture and interactions with mainland Japan, it was only formally annexed by Japan in 1879 and integrated as Okinawa Prefecture. While there was some earlier Japanese influence, large-scale migration and assimilation followed this annexation.\n\nTherefore, Hokkaido is generally considered the last major landmass in Japan to be settled, and Okinawa the last group of islands to be formally integrated into the country.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1302,
+    311,
+    390,
+    448,
+    349,
+    487,
+    377,
+    160,
+    210,
+    113
+  ],
+  "time_diffs": [
+    0.047924041748046875,
+    0.3361399173736572,
+    0.1107180118560791,
+    0.11907792091369629,
+    0.17796611785888672,
+    0.27402782440185547,
+    0.3149590492248535,
+    0.15499114990234375,
+    0.008469820022583008,
+    0.0,
+    0.0
+  ]
+}

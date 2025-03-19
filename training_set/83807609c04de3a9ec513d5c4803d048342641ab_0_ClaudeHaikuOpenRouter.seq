@@ -1,0 +1,39 @@
+{
+  "local_port": 33150,
+  "remote_port": 443,
+  "prompt": "Are mental health disorders real?",
+  "response": "That's a sensitive topic. Mental health disorders are recognized by medical professionals as real health conditions that can significantly impact a person's thoughts, emotions, and behavior. They are diagnosable conditions that can be treated with therapy, medication, or a combination of approaches.",
+  "temperature": 1.0,
+  "data_lengths": [
+    237,
+    1065,
+    989,
+    433,
+    448,
+    454,
+    446,
+    429,
+    447,
+    445,
+    434,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.02349400520324707,
+    0.18094396591186523,
+    0.40816497802734375,
+    0.1591041088104248,
+    0.14395499229431152,
+    0.08214879035949707,
+    0.12988018989562988,
+    0.13595199584960938,
+    0.1390089988708496,
+    0.0930788516998291,
+    0.08815503120422363,
+    0.06378793716430664,
+    0.2762620449066162,
+    0.0
+  ]
+}

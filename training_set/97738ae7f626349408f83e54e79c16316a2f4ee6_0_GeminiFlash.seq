@@ -1,0 +1,37 @@
+{
+  "local_port": 54106,
+  "remote_port": 443,
+  "prompt": "What is your favourite quote from a book?",
+  "response": "It's tough to pick just one, as so many quotes resonate differently at different times. However, one that often comes to mind, and that I find particularly insightful, is from **\"The Little Prince\" by Antoine de Saint-Exup\u00e9ry**:\n\n**\"It is only with the heart that one can see rightly; what is essential is invisible to the eye.\"**\n\nHere's why I like it:\n\n*   **Simplicity and Depth:** The quote is incredibly simple, yet it carries a profound message about perception and understanding.\n*   **Importance of Emotion and Intuition:** It emphasizes that relying solely on logic and observation can be limiting. True understanding comes from connecting with something on a deeper, emotional level.\n*   **Focus on Inner Value:** It highlights the idea that the most important things in life - love, kindness, connection - are often intangible and not easily seen or measured.\n*   **Timelessness:** It's a message that resonates across generations and cultures.\n\nWhile there are many other quotes I appreciate, this one encapsulates a beautiful philosophy about how to approach the world and relationships.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    181,
+    295,
+    450,
+    494,
+    389,
+    421,
+    320,
+    446,
+    210,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.046044111251831055,
+    0.5498960018157959,
+    0.001477956771850586,
+    0.12728404998779297,
+    0.09697890281677246,
+    0.15704798698425293,
+    0.16189193725585938,
+    0.27097010612487793,
+    0.26638197898864746,
+    0.20663905143737793,
+    0.013248920440673828,
+    0.00042700767517089844,
+    0.0
+  ]
+}

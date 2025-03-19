@@ -1,0 +1,43 @@
+{
+  "local_port": 49534,
+  "remote_port": 443,
+  "prompt": "What happens if we don't swing our hands when we walk?",
+  "response": "If you don't swing your arms when you walk, several things can happen:\n\n*   **Less efficient walking:** Arm swinging helps with balance and momentum, reducing the energy required to walk. Without it, you might tire more quickly.\n*   **Balance issues:** Arm movements counteract the rotation of your lower body, contributing to stability. Holding your arms still can make you feel less balanced, especially on uneven surfaces.\n*   **Altered gait:** Your walking pattern might change to compensate for the lack of arm swing. This could involve a wider stance or adjustments to your stride length.\n*   **Increased energy expenditure:** While it might not feel like much, swinging your arms actually saves energy. Holding them still forces your body to work harder to maintain balance and move forward.\n*   **Muscle imbalances:** Over time, not swinging your arms could lead to certain muscles becoming weaker or tighter as they adapt to the new walking pattern.\n*   **Unnatural appearance:** Most people swing their arms naturally when walking, so holding them still can look stiff or awkward.\n*   **Potential causes of not swinging arms:** There are various reasons why someone might not swing their arms when walking, including:\n    *   **Injury or pain:** Shoulder, arm, or back pain can restrict movement.\n    *   **Nervous system disorders:** Conditions like Parkinson's disease can affect arm swing.\n    *   **Habit:** Some people simply develop the habit of not swinging their arms.\n    *   **Carrying something:** Holding items in both hands will restrict swinging.\n\nIn summary, while you can walk without swinging your arms, it's generally less efficient, can affect your balance and gait, and may indicate an underlying issue if it's a sudden or unusual change.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    99,
+    153,
+    419,
+    393,
+    243,
+    346,
+    300,
+    321,
+    361,
+    435,
+    444,
+    160,
+    173,
+    113
+  ],
+  "time_diffs": [
+    0.04934811592102051,
+    0.30116891860961914,
+    0.0014350414276123047,
+    0.011188983917236328,
+    0.06721901893615723,
+    0.1670219898223877,
+    0.2558560371398926,
+    0.2062678337097168,
+    0.30599021911621094,
+    0.28896379470825195,
+    0.3976171016693115,
+    0.42955803871154785,
+    0.24148893356323242,
+    0.010601997375488281,
+    0.0008349418640136719,
+    0.0
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 43612,
+  "remote_port": 443,
+  "prompt": "How much did it cost to build Walt Disney World?",
+  "response": "The initial cost to build Walt Disney World, which opened in 1971, was approximately **$400 million**.\n\nThis figure covers the cost of purchasing the land, constructing the Magic Kingdom park, the Contemporary and Polynesian Village Resorts, and the infrastructure like roads and utilities.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    130,
+    286,
+    374,
+    223,
+    375,
+    136,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.047744035720825195,
+    0.31616997718811035,
+    0.0010271072387695312,
+    0.016681909561157227,
+    0.08898401260375977,
+    0.09912109375,
+    0.2259368896484375,
+    0.007917165756225586,
+    0.0015897750854492188,
+    0.0
+  ]
+}

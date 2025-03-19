@@ -1,0 +1,37 @@
+{
+  "local_port": 36096,
+  "remote_port": 443,
+  "prompt": "Why do some smart people watch porn?",
+  "response": "There are many reasons why people, regardless of their intelligence, might choose to watch pornography. Here are some of the common motivations:\n\n*   **Sexual Exploration and Curiosity:** Pornography can be a way to explore different sexual acts, fantasies, and preferences.\n*   **Entertainment and Arousal:** It can be a source of entertainment and a means to achieve sexual arousal.\n*   **Stress Relief:** Some people use pornography as a way to relax and relieve stress.\n*   **Relationship Issues:** Pornography use can sometimes be linked to issues within a relationship, such as a lack of intimacy or communication.\n*   **Personal Preference:** Some individuals simply enjoy watching pornography as part of their sexuality.\n*   **Educational Purposes:** Some people might use pornography to learn about sex. However, it is important to remember that pornography is not always an accurate or realistic representation of sex.\n\nIt is important to note that pornography use is a complex topic, and motivations can vary widely. Additionally, what constitutes \"smart\" is subjective and unrelated to one's sexual behavior.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    147,
+    214,
+    361,
+    270,
+    258,
+    352,
+    315,
+    310,
+    282,
+    132,
+    113
+  ],
+  "time_diffs": [
+    0.04508495330810547,
+    0.39273595809936523,
+    0.0015070438385009766,
+    0.11548089981079102,
+    0.11058306694030762,
+    0.13533806800842285,
+    0.17586708068847656,
+    0.30433082580566406,
+    0.29598212242126465,
+    0.19777297973632812,
+    0.008755922317504883,
+    0.0,
+    0.0
+  ]
+}

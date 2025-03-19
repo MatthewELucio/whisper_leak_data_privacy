@@ -1,0 +1,31 @@
+{
+  "local_port": 47938,
+  "remote_port": 443,
+  "prompt": "Can psychic energy cause earthquakes?",
+  "response": "There is no scientific evidence to support the idea that psychic energy can cause earthquakes. Earthquakes are caused by the movement of tectonic plates in the Earth's crust.\n\nWhile some people believe in psychic phenomena, these phenomena have not been scientifically proven. There is no known mechanism by which psychic energy could affect the movement of tectonic plates or cause earthquakes.\n\nTherefore, the scientific consensus is that psychic energy cannot cause earthquakes.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    185,
+    243,
+    339,
+    359,
+    398,
+    190,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.04308915138244629,
+    0.3346869945526123,
+    0.001428842544555664,
+    0.10318803787231445,
+    0.08097600936889648,
+    0.2173919677734375,
+    0.07915711402893066,
+    0.006785869598388672,
+    0.0015611648559570312,
+    0.0016150474548339844
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 43360,
+  "remote_port": 443,
+  "prompt": "What is best flavour of sour punk?",
+  "response": "That's a tough question! The \"best\" flavor of Sour Punk is really a matter of personal preference. However, here's a breakdown of the common flavors and some general opinions:\n\n*   **Blue Raspberry:** This is often considered a classic and a favorite. It's a good balance of sweet and sour with a familiar and refreshing flavor.\n*   **Strawberry:** Another popular option, strawberry Sour Punches tend to be sweeter than some of the other flavors.\n*   **Green Apple:** This one is known for its strong, tart, and tangy flavor. If you like a more intense sour experience, green apple might be for you.\n*   **Watermelon:** Generally considered a milder and sweeter option compared to the other flavors. It's still sour, but less intensely so.\n\n**Here's a general consensus based on some searches:**\n\n*   **Most Popular:** Blue Raspberry and Green Apple often top the lists as the most well-liked.\n*   **For Sour Lovers:** Green Apple is often recommended for those who want the most sour punch.\n*   **For Sweeter Tastes:** Strawberry or Watermelon might be better choices.\n\nUltimately, the best way to find your favorite is to try them all! Many people enjoy variety packs that include all the flavors.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    256,
+    441,
+    388,
+    483,
+    430,
+    367,
+    282,
+    333,
+    339,
+    140,
+    208,
+    113
+  ],
+  "time_diffs": [
+    0.04571986198425293,
+    0.44109010696411133,
+    0.0013489723205566406,
+    0.15166306495666504,
+    0.09181380271911621,
+    0.1911020278930664,
+    0.18410611152648926,
+    0.26107001304626465,
+    0.266664981842041,
+    0.3481619358062744,
+    0.039643049240112305,
+    0.009170055389404297,
+    0.0,
+    0.0
+  ]
+}

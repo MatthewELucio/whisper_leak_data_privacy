@@ -1,0 +1,37 @@
+{
+  "local_port": 43714,
+  "remote_port": 443,
+  "prompt": "How much money did each candidate spend in the 1912 election?",
+  "response": "Here's a breakdown of the reported campaign expenditures for the major candidates in the 1912 election:\n\n*   **Woodrow Wilson (Democrat):** Approximately $648,000\n*   **Theodore Roosevelt (Progressive \"Bull Moose\"):** Approximately $1,574,000\n*   **William Howard Taft (Republican):** Approximately $978,000\n*   **Eugene V. Debs (Socialist):** Approximately $66,000\n\n**Important Considerations:**\n\n*   **Official vs. Actual:** These figures are based on reported expenditures. It's likely that actual spending, especially from third-party groups or unreported sources, was higher.\n*   **Varying Estimates:** Different historical sources may have slightly different figures due to variations in how expenses were categorized or calculated.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    88,
+    148,
+    380,
+    371,
+    276,
+    212,
+    484,
+    472,
+    249,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.0541081428527832,
+    0.40265679359436035,
+    0.0014030933380126953,
+    0.0015010833740234375,
+    0.09502696990966797,
+    0.10024499893188477,
+    0.1768498420715332,
+    0.1409440040588379,
+    0.27538514137268066,
+    0.17385196685791016,
+    0.010148048400878906,
+    0.0,
+    0.0
+  ]
+}

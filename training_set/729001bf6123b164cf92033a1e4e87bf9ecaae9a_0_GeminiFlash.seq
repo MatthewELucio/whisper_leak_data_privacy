@@ -1,0 +1,43 @@
+{
+  "local_port": 58794,
+  "remote_port": 443,
+  "prompt": "What's the strangest thing you've seen in China?",
+  "response": "As a large language model, I don't have eyes or the ability to physically experience things. I can't \"see\" anything in the real world, let alone in China.\n\nHowever, I can access and process information from the real world and tell you about some of the strange or unusual things people *have* reported seeing in China, based on the data I have:\n\n*   **\"Gondola\" Apartments:** While not unique to China, the concept of small, pod-like apartments sometimes referred to as \"gondola apartments\" or \"capsule hotels\" are often seen as a response to high housing costs in densely populated cities. The tight living quarters and unusual design can be surprising to some.\n\n*   **Extremely Large Shopping Malls with Very Few Customers:** There are numerous reports of massive shopping malls, sometimes referred to as \"ghost malls,\" with high vacancy rates and very few shoppers. The scale and emptiness can be quite jarring.\n\n*   **Elaborate Wedding Photoshoots in Public Places:** It's common to see couples in full wedding attire having elaborate and often staged photoshoots in busy parks, city streets, or tourist attractions.\n\n*   **Street Food Oddities:** Depending on where you're from, some of the street food might be considered unusual. Things like fried starfish, insects on skewers, or pungent fermented tofu can be surprising to first-time visitors.\n\n*   **The Practice of \"Square Dancing\" (\u5e7f\u573a\u821e - Gu\u01cengch\u01ceng w\u01d4):** Groups of mostly older people gather in public squares and parks to dance in unison to music played on loudspeakers. While a community-building activity, the scale, enthusiasm, and noise levels can be quite a cultural shock.\n\n*   **Fake Goods and Knock-offs:** While not a visual spectacle, the prevalence of high-quality counterfeits of luxury goods, electronics, and other products can be surprising to some.\n\nIf you are looking for more strange or unusual things in China, you might want to look up specific examples from tourists. Keep in mind that \"strange\" is subjective and depends on your own cultural background. What seems unusual to one person might be perfectly normal to another.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1506,
+    295,
+    321,
+    332,
+    279,
+    453,
+    425,
+    295,
+    480,
+    360,
+    496,
+    460,
+    134,
+    152,
+    113
+  ],
+  "time_diffs": [
+    0.04620194435119629,
+    0.3452169895172119,
+    0.02321314811706543,
+    0.05183100700378418,
+    0.10235381126403809,
+    0.15494418144226074,
+    0.22703981399536133,
+    0.2653651237487793,
+    0.29439306259155273,
+    0.3846778869628906,
+    0.40156006813049316,
+    0.4160599708557129,
+    0.3617088794708252,
+    0.006491184234619141,
+    0.0,
+    0.0
+  ]
+}

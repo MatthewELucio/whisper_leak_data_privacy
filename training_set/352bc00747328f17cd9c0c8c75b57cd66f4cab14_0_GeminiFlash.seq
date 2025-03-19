@@ -1,0 +1,29 @@
+{
+  "local_port": 38848,
+  "remote_port": 443,
+  "prompt": "Why was MM kalburgi killed?",
+  "response": "M.M. Kalburgi was a prominent Indian scholar and rationalist who was assassinated in 2015. While the investigation is ongoing, it is widely believed that he was killed for his outspoken views against superstition, religious orthodoxy, and idol worship, which offended some religious groups. Several individuals with ties to right-wing Hindu organizations have been implicated in the murder, but no one has been definitively convicted.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1264,
+    384,
+    303,
+    388,
+    224,
+    224,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.05019998550415039,
+    0.41558289527893066,
+    0.14300203323364258,
+    0.09299206733703613,
+    0.2531769275665283,
+    0.09691500663757324,
+    0.006865024566650391,
+    0.0,
+    0.0016570091247558594
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 56980,
+  "remote_port": 443,
+  "prompt": "I scored 570 in neet 2 . What would be my expected rank, in total from neet 1 & 2?",
+  "response": "Based on past NEET trends, a score of 570 in NEET 2, considering the scores of both NEET 1 & 2, could potentially place you within a rank range of approximately **30,000 to 40,000**.\n\nHere's why this estimate is reasonable, and what factors influence it:\n\n*   **Total Candidate Pool:** The combined total of students who appeared in NEET 1 and NEET 2 is a very large number. A score of 570 is considered a decent score, but there will be many others with higher scores.\n\n*   **Score Distribution:** The rank corresponding to a particular score varies slightly each year, depending on the overall difficulty level of the exam and the distribution of scores among all candidates.\n\n*   **Cut-off Scores:** The closing rank and cut-off score for each medical college will depend on the category and reservation.\n\n**Disclaimer:**\n\nPlease note that this is just an estimated range and not an exact prediction. The actual rank may vary due to several factors. For precise information, please refer to official NEET results and rank lists released by the National Testing Agency (NTA).",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    88,
+    330,
+    237,
+    349,
+    314,
+    328,
+    293,
+    477,
+    203,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.04772305488586426,
+    0.3629879951477051,
+    0.0014328956604003906,
+    0.11816215515136719,
+    0.13846993446350098,
+    0.1610569953918457,
+    0.17242693901062012,
+    0.28257012367248535,
+    0.2232038974761963,
+    0.23265600204467773,
+    0.007765054702758789,
+    0.0002830028533935547,
+    0.0006959438323974609
+  ]
+}

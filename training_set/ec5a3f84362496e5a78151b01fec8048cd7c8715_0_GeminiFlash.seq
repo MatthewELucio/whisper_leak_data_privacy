@@ -1,0 +1,39 @@
+{
+  "local_port": 48586,
+  "remote_port": 443,
+  "prompt": "What hotel in Patna would be safe for unmarried couples, without the harassment of police, hotel staff, and moral police?",
+  "response": "Finding hotels that explicitly advertise as \"couple-friendly\" or \"unmarried couple-friendly\" is the best way to ensure a hassle-free experience in Patna. These hotels generally understand the needs of unmarried couples and have policies in place to avoid unnecessary questions or harassment.\n\nSome tips for finding a safe and welcoming hotel:\n\n*   **Use Online Travel Platforms:** Websites like MakeMyTrip, GoIbibo, and Cleartrip often have filters that allow you to search for \"couple-friendly\" hotels. These platforms may also display user reviews that mention the experiences of unmarried couples.\n*   **Read Reviews Carefully:** Pay close attention to reviews from other couples who have stayed at the hotel. Look for mentions of privacy, staff behavior, and any issues related to being an unmarried couple.\n*   **Call the Hotel Directly:** Before booking, call the hotel and inquire about their policy regarding unmarried couples. Be direct and ask if they have any restrictions or requirements.\n*   **Check Hotel Policies:** Look for hotels that explicitly state their policies regarding unmarried couples on their website or booking platform.\n*   **Choose Reputable Chains:** While not a guarantee, larger and more established hotel chains are often more professional and less likely to engage in moral policing.\n\nDue to the potential for policies to change, I cannot provide a definite list of hotels. However, this method would assist you in finding a safe hotel.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    273,
+    242,
+    261,
+    491,
+    387,
+    421,
+    298,
+    393,
+    438,
+    229,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.04622697830200195,
+    0.4066751003265381,
+    0.0010828971862792969,
+    0.09273600578308105,
+    0.07766509056091309,
+    0.23139309883117676,
+    0.19049787521362305,
+    0.24072599411010742,
+    0.2690610885620117,
+    0.3611750602722168,
+    0.1378939151763916,
+    0.007188081741333008,
+    0.0,
+    0.0
+  ]
+}

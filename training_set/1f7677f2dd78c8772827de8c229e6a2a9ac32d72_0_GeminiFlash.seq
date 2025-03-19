@@ -1,0 +1,39 @@
+{
+  "local_port": 35144,
+  "remote_port": 443,
+  "prompt": "What do yellow roses symbolize?",
+  "response": "Yellow roses symbolize several things, depending on the context and time period. Here's a breakdown of the most common meanings:\n\n*   **Friendship:** This is the most widely accepted and popular meaning of yellow roses. They represent care, appreciation, and platonic affection.\n\n*   **Caring:** The bright and cheerful nature of yellow roses can also convey feelings of warmth, caring, and thoughtfulness.\n\n*   **Get Well Soon:** Their sunny color can be uplifting and is often used to express wishes for a speedy recovery.\n\n*   **Joy and Delight:** Yellow is a color often associated with happiness and good cheer, and yellow roses can express feelings of joy, happiness, and delight.\n\nHistorically, yellow roses had different connotations. In Victorian times, they could symbolize:\n\n*   **Jealousy:** The Victorian language of flowers, also known as floriography, assigned a negative meaning to yellow roses.\n*   **Infidelity:** Some interpretations also linked them to romantic betrayal.\n\nIt's worth noting that the negative connotations are largely outdated. These days, yellow roses are almost universally seen as a positive symbol of friendship and happiness. When in doubt, consider the relationship with the recipient and the overall context when giving yellow roses.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    225,
+    225,
+    325,
+    228,
+    407,
+    451,
+    463,
+    375,
+    346,
+    314,
+    185,
+    113
+  ],
+  "time_diffs": [
+    0.04531097412109375,
+    0.328510046005249,
+    0.0014600753784179688,
+    0.004170894622802734,
+    0.03430891036987305,
+    0.10484814643859863,
+    0.18320894241333008,
+    0.19114899635314941,
+    0.27649807929992676,
+    0.2940390110015869,
+    0.3680880069732666,
+    0.007493019104003906,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 36904,
+  "remote_port": 443,
+  "prompt": "Will Lerer Ventures hold its summer school this year (2016)?",
+  "response": "Yes, according to publicly available information, Lerer Hippeau Ventures (formerly Lerer Ventures) held their summer program in 2016. You can find mentions of it in articles and blog posts from that time.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1326,
+    268,
+    400,
+    418,
+    176,
+    152,
+    113
+  ],
+  "time_diffs": [
+    0.045243024826049805,
+    0.32956886291503906,
+    0.11208105087280273,
+    0.10885810852050781,
+    0.03311586380004883,
+    0.008021116256713867,
+    0.001394033432006836,
+    0.0
+  ]
+}

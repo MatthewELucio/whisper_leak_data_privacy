@@ -1,0 +1,35 @@
+{
+  "local_port": 51960,
+  "remote_port": 443,
+  "prompt": "How did Oliver Sykes damaged his voice exactly?",
+  "response": "Oliver Sykes, the frontman of Bring Me The Horizon, has damaged his voice over the years primarily due to:\n\n*   **Screaming Technique:** Early in his career, his screaming technique was likely improper and aggressive, leading to vocal strain and damage.\n*   **Touring and Overuse:** Consistent touring and performing at a high intensity can take a toll on the vocal cords if not managed properly.\n*   **Lifestyle:** In the past, his lifestyle choices, including smoking and alcohol consumption, could have contributed to vocal issues.\n\nWhile the specific details of the damage aren't publicly documented, it's clear that a combination of these factors has impacted his vocal health over time, leading to changes in his singing and screaming style.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    92,
+    258,
+    353,
+    326,
+    256,
+    277,
+    316,
+    221,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.04273700714111328,
+    0.33698296546936035,
+    0.0015180110931396484,
+    0.01377105712890625,
+    0.0797879695892334,
+    0.08599615097045898,
+    0.2021489143371582,
+    0.18186306953430176,
+    0.3531229496002197,
+    0.008683919906616211,
+    0.0005390644073486328,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 36356,
+  "remote_port": 443,
+  "prompt": "Is it against the law to launder money?",
+  "response": "Yes, it is against the law to launder money in virtually every country in the world.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1352,
+    358,
+    388,
+    229,
+    296,
+    156,
+    113
+  ],
+  "time_diffs": [
+    0.04770302772521973,
+    0.42629098892211914,
+    0.03880620002746582,
+    0.03596782684326172,
+    0.0014061927795410156,
+    0.007689952850341797,
+    0.003017902374267578,
+    0.0
+  ]
+}

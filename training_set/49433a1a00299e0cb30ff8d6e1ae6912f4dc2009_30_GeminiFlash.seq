@@ -1,0 +1,43 @@
+{
+  "local_port": 38400,
+  "remote_port": 443,
+  "prompt": "Is it a felony to launder money?",
+  "response": "In the United States, money laundering is a federal crime and is **typically a felony**.\n\nHere's a breakdown of why and some key points:\n\n*   **Federal Law:** Money laundering is primarily prosecuted under federal law, specifically 18 U.S.C. \u00a7 1956 and 18 U.S.C. \u00a7 1957.\n\n*   **Felony Penalties:** The penalties for money laundering are severe, reflecting the seriousness of the crime. They can include:\n\n    *   **Significant prison sentences:**  Often ranging from several years to 20 years or more, depending on the specific charges, the amount of money involved, and other aggravating factors.\n    *   **Substantial fines:** These can be in the hundreds of thousands or even millions of dollars, and can sometimes be tied to the amount of money laundered.\n    *   **Forfeiture of assets:**  The government can seize assets involved in the money laundering scheme, including the money itself, property purchased with the laundered funds, and other assets used to facilitate the crime.\n\n*   **State Laws:** While the federal government is the primary enforcer of money laundering laws, some states also have their own money laundering statutes. These are also generally felonies.\n\n*   **Severity Factors:** The specific penalties for money laundering can vary based on several factors, including:\n\n    *   **The amount of money laundered.**\n    *   **The underlying criminal activity** that generated the funds (e.g., drug trafficking, fraud, terrorism).\n    *   **The sophistication of the laundering scheme.**\n    *   **The defendant's prior criminal history.**\n    *   **Whether the defendant acted knowingly and intentionally.**\n\n**In Summary:** Money laundering is a serious federal crime and is almost always a felony, carrying significant penalties of imprisonment, fines, and asset forfeiture.\nIt is important to consult with a qualified attorney to get advice about your specific situation. This information is for educational purposes only and does not constitute legal advice.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    132,
+    324,
+    362,
+    453,
+    340,
+    476,
+    259,
+    387,
+    507,
+    509,
+    355,
+    198,
+    130,
+    113
+  ],
+  "time_diffs": [
+    0.0468289852142334,
+    0.31272006034851074,
+    0.0018677711486816406,
+    0.11298108100891113,
+    0.07720208168029785,
+    0.19336795806884766,
+    0.19801807403564453,
+    0.23703789710998535,
+    0.28001999855041504,
+    0.34424304962158203,
+    0.38579487800598145,
+    0.3213181495666504,
+    0.16597700119018555,
+    0.007091045379638672,
+    4.887580871582031e-05,
+    6.413459777832031e-05
+  ]
+}

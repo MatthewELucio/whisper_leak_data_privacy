@@ -1,0 +1,31 @@
+{
+  "local_port": 58244,
+  "remote_port": 443,
+  "prompt": "What is the AT&T wireless voicemail number?",
+  "response": "The AT&T Wireless voicemail access number is **+1.805.637.7423**.\n\nYou can also usually access your voicemail by holding down the \"1\" key on your phone's dialpad.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    263,
+    307,
+    276,
+    239,
+    254,
+    224,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.049163818359375,
+    0.37528204917907715,
+    0.0012669563293457031,
+    0.0017080307006835938,
+    0.10389995574951172,
+    0.11895608901977539,
+    0.06212806701660156,
+    0.005800962448120117,
+    9.5367431640625e-07,
+    0.00150299072265625
+  ]
+}

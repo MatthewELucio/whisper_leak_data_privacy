@@ -1,0 +1,43 @@
+{
+  "local_port": 52358,
+  "remote_port": 443,
+  "prompt": "why do people like bubble football in UK?",
+  "response": "Bubble football, also known as zorb football, has become popular in the UK for a few key reasons:\n\n*   **Novelty and Fun:** The core appeal lies in its sheer novelty. It's not every day you get to run around encased in a giant inflatable bubble, making it a memorable and hilarious experience. The inherent clumsiness and the guaranteed tumbles add to the fun.\n\n*   **Accessibility:** It's easy to pick up, doesn't require specialized skills, and can be enjoyed by people of varying fitness levels. The bubbles effectively equalize the playing field (literally and figuratively!), making it inclusive.\n\n*   **Social and Team-Building Activity:** Bubble football is often booked for social events like stag/hen parties, birthday celebrations, corporate team-building events, and even casual get-togethers with friends. It encourages teamwork and interaction in a lighthearted and less competitive environment.\n\n*   **Spectator Value:** It's not just fun to play; it's also entertaining to watch. Seeing people bounce and roll around is naturally comical, making it an enjoyable activity for spectators as well.\n\n*   **Safety:** While it looks chaotic, reputable bubble football providers prioritize safety with well-maintained equipment, clear rules, and supervised sessions. This gives participants peace of mind while they enjoy the experience.\n\n*   **Variety and Adaptability:** Many providers offer different game modes and variations beyond standard football, keeping the experience fresh and engaging for repeat customers.\n\nIn summary, bubble football in the UK thrives on its fun factor, accessibility, social appeal, and the memorable experience it offers. It's a unique and entertaining activity that caters to a broad range of people and occasions.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    124,
+    186,
+    389,
+    415,
+    263,
+    419,
+    322,
+    315,
+    396,
+    324,
+    197,
+    165,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.05026817321777344,
+    0.30507588386535645,
+    0.0014870166778564453,
+    0.027529001235961914,
+    0.052781105041503906,
+    0.09116888046264648,
+    0.2520740032196045,
+    0.21710705757141113,
+    0.3472299575805664,
+    0.2846860885620117,
+    0.504997968673706,
+    0.4018268585205078,
+    0.0703439712524414,
+    0.011115074157714844,
+    0.0,
+    0.0
+  ]
+}

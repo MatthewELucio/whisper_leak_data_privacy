@@ -1,0 +1,41 @@
+{
+  "local_port": 43234,
+  "remote_port": 443,
+  "prompt": "Are there statutes that address money laundering?",
+  "response": "Yes, there are definitely statutes that address money laundering. The primary federal statutes in the United States are:\n\n*   **18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments):** This is the core money laundering statute. It prohibits a wide range of activities, including:\n\n    *   Conducting financial transactions knowing that the property involved represents the proceeds of some form of unlawful activity, and with the intent to promote the carrying on of specified unlawful activity.\n\n    *   Conducting financial transactions knowing that the property involved represents the proceeds of some form of unlawful activity, and knowing that the transaction is designed in whole or in part to conceal or disguise the nature, location, source, ownership, or control of the proceeds of specified unlawful activity.\n\n    *   Transporting, transmitting, or transferring monetary instruments or funds into or out of the United States with the intent to promote the carrying on of specified unlawful activity, or with the knowledge that the monetary instruments or funds represent the proceeds of some form of unlawful activity and that the transportation, transmission, or transfer is designed in whole or in part to conceal or disguise the nature, location, source, ownership, or control of the proceeds of specified unlawful activity.\n\n*   **18 U.S.C. \u00a7 195",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    133,
+    205,
+    256,
+    328,
+    303,
+    374,
+    314,
+    446,
+    215,
+    398,
+    276,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.04745292663574219,
+    0.568681001663208,
+    0.0013458728790283203,
+    0.01239919662475586,
+    0.07180500030517578,
+    0.07227087020874023,
+    0.1872549057006836,
+    0.27409815788269043,
+    0.20678186416625977,
+    0.25801801681518555,
+    0.2847311496734619,
+    0.3254868984222412,
+    0.00963592529296875,
+    0.0,
+    0.0
+  ]
+}

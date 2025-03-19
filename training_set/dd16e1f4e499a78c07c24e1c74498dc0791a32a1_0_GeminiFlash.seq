@@ -1,0 +1,39 @@
+{
+  "local_port": 54488,
+  "remote_port": 443,
+  "prompt": "What are the vacations in IITs?",
+  "response": "The vacations in IITs are generally structured around the academic semester system. Here's a breakdown of the common vacation periods:\n\n*   **Summer Vacation:** This is the longest break, typically lasting around 6-8 weeks. It usually falls between May/June and July/August, after the end of the even semester and before the start of the odd semester.\n\n*   **Winter Vacation:** This vacation is usually for about 2-3 weeks in December/January, between the end of the odd semester and the start of the even semester.\n\n*   **Mid-Semester Breaks:** Each semester usually has a short break of about a week. This break is usually after the mid-semester exams.\n\n*   **Other Holidays:** IITs also observe national holidays like Republic Day, Independence Day, Gandhi Jayanti, etc. They may also observe regional holidays specific to the location of the IIT.\n\n**Important Considerations:**\n\n*   **Variation across IITs:** While the general structure is similar, the exact dates and durations of vacations can vary slightly between different IITs. It's best to check the academic calendar of the specific IIT you are interested in.\n\n*   **Academic Calendar:** Each IIT publishes an academic calendar at the beginning of the academic year. This calendar contains the exact dates of semesters, exams, and vacations.\n\n*   **Flexibility:** In some cases, there might be slight adjustments to the vacation schedule due to unforeseen circumstances or specific academic requirements.\n\nTo get the most accurate information, always refer to the official academic calendar of the specific IIT you are interested in. You can usually find this on the IIT's website under the \"Academics\" or \"Student Information\" section.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1455,
+    417,
+    237,
+    400,
+    376,
+    292,
+    527,
+    526,
+    356,
+    453,
+    177,
+    198,
+    113
+  ],
+  "time_diffs": [
+    0.046864986419677734,
+    0.26952505111694336,
+    0.1315910816192627,
+    0.09186291694641113,
+    0.20311689376831055,
+    0.16996502876281738,
+    0.25283217430114746,
+    0.2511599063873291,
+    0.34108495712280273,
+    0.30840301513671875,
+    0.1268770694732666,
+    0.008416891098022461,
+    0.0,
+    0.0
+  ]
+}

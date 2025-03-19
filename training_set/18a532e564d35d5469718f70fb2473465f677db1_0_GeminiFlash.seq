@@ -1,0 +1,37 @@
+{
+  "local_port": 43014,
+  "remote_port": 443,
+  "prompt": "Nature: Where in the world do the most rainbows occur?",
+  "response": "The place in the world where rainbows occur most frequently is generally considered to be **Hawaii**.\n\nHere's why:\n\n*   **Rainfall:** Hawaii gets frequent showers, especially on the windward (eastern and northeastern) sides of the islands.\n*   **Mountains:** The mountains cause orographic lift, forcing moist air upwards, which cools and condenses, creating more frequent rainfall.\n*   **Clean Air:** Hawaii has exceptionally clean air, which allows sunlight to pass through with less scattering, making rainbows brighter and more vibrant.\n*   **Sun Angle:** The sun angle in Hawaii is often low, especially in the mornings and afternoons, which is ideal for rainbow formation.\n\nWhile rainbows can occur anywhere with the right combination of sunlight and rain, Hawaii's unique geography and climate make it a rainbow hotspot.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    108,
+    322,
+    406,
+    397,
+    279,
+    326,
+    445,
+    320,
+    166,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.04668092727661133,
+    0.30118703842163086,
+    0.0014181137084960938,
+    0.017267942428588867,
+    0.11013007164001465,
+    0.0920858383178711,
+    0.2250499725341797,
+    0.23716115951538086,
+    0.29070305824279785,
+    0.1542978286743164,
+    0.009732961654663086,
+    1.1920928955078125e-06,
+    9.298324584960938e-05
+  ]
+}

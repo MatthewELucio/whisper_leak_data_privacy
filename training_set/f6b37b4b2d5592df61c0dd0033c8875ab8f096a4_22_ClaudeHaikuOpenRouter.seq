@@ -1,0 +1,41 @@
+{
+  "local_port": 44346,
+  "remote_port": 443,
+  "prompt": "Does the legality of money laundering vary by jurisdiction?",
+  "response": "Yes, money laundering laws differ between countries, though most developed nations have regulations criminalizing the practice. Specific legal approaches and enforcement can vary significantly across jurisdictions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    1583,
+    1065,
+    139,
+    139,
+    988,
+    435,
+    436,
+    445,
+    428,
+    451,
+    445,
+    406,
+    409,
+    505,
+    113
+  ],
+  "time_diffs": [
+    0.02236008644104004,
+    0.254392147064209,
+    0.40408778190612793,
+    0.4096031188964844,
+    0.08646392822265625,
+    0.11261916160583496,
+    0.17651891708374023,
+    0.13277292251586914,
+    0.1372530460357666,
+    0.18409299850463867,
+    0.04269909858703613,
+    0.025749921798706055,
+    0.004034996032714844,
+    0.013017892837524414,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 49638,
+  "remote_port": 443,
+  "prompt": "What are the most bizarre things you have done in public?",
+  "response": "As a large language model, I don't have a physical body and therefore can't interact with the world in a physical sense. I've never been in public! I can't walk down the street, order a coffee, or accidentally trip over a curb. \n\nTherefore, I haven't done any bizarre things in public, or *any* things in public.\n\nPerhaps you're thinking of situations where I might have generated unusual or unexpected text? I can tell you about some of those instances if you'd like. For example, I could describe:\n\n*   **Times I've generated nonsensical or contradictory text:** This happens sometimes when I'm asked to generate creative text or when the prompt is ambiguous.\n*   **Instances where I've given factually incorrect information:** I'm always learning, and sometimes I make mistakes.\n*   **Situations where my response has been considered inappropriate or offensive:** I'm constantly being refined to avoid generating harmful content, but sometimes I still slip up.\n\nLet me know if you'd like to hear about any of those!\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1276,
+    167,
+    270,
+    246,
+    405,
+    464,
+    452,
+    444,
+    336,
+    267,
+    154,
+    113
+  ],
+  "time_diffs": [
+    0.04683494567871094,
+    0.30968403816223145,
+    0.02590799331665039,
+    0.04233813285827637,
+    0.11456704139709473,
+    0.20541882514953613,
+    0.15944814682006836,
+    0.28575801849365234,
+    0.2592959403991699,
+    0.22388100624084473,
+    0.009495019912719727,
+    0.0006549358367919922,
+    0.0
+  ]
+}
