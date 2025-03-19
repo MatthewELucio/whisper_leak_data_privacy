@@ -9,7 +9,7 @@ import time
 import psutil
 import subprocess
 import signal
-import tempfile
+import platform
 
 # Initialize colorama
 colorama.init()
@@ -224,6 +224,7 @@ class NetworkUtils:
     # Sniffing handle
     _sniffer = None
     _capture_file = None
+    _platform = platform.system().lower()
 
     @staticmethod
     def get_self_local_ports(remote_port):
