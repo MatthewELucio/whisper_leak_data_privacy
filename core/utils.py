@@ -9,7 +9,6 @@ import time
 import psutil
 import subprocess
 import signal
-import platform
 
 # Initialize colorama
 colorama.init()
@@ -224,7 +223,6 @@ class NetworkUtils:
     # Sniffing handle
     _sniffer = None
     _capture_file = None
-    _platform = platform.system().lower()
 
     @staticmethod
     def get_self_local_ports(remote_port):
@@ -293,7 +291,7 @@ class NetworkUtils:
             cls._sniffer.wait(timeout=5)
 
         # Handle Windows
-        elif cls._platform == 'windows':
+        elif sys.platform == 'win32':
 
             # Windows: stop pktmon and convert ETL to PCAP
             subprocess.run([ 'pktmon', 'stop' ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
