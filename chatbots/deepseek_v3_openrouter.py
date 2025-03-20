@@ -49,7 +49,7 @@ class DeepseekV3OpenRouter(ChatbotBase):
             # Specify the provider routing in extra_body
             extra_body={
                 "provider": {
-                    "order": ["DeepSeek"],
+                    "order": ["NovitaAI"],
                     'allow_fallbacks': False
                 },
             }
