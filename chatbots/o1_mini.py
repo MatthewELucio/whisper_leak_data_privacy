@@ -6,7 +6,7 @@ from openai import OpenAI
 import httpx
 from dotenv import load_dotenv
 
-class GPT4o1Mini(ChatbotBase):
+class O1Mini(ChatbotBase):
     """
         OpenAI GPT 4o chatbot.
     """
@@ -45,7 +45,7 @@ class GPT4o1Mini(ChatbotBase):
         response = []
         stream = self._client.chat.completions.create(
             extra_body={},
-            model='gpt-o1-mini',
+            model='o1-mini',
             messages=[ { 'role': 'user', 'content': prompt } ],
             stream=True,
             temperature=temperature
