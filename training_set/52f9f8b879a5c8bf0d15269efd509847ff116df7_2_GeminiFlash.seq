@@ -1,0 +1,35 @@
+{
+  "local_port": 60922,
+  "remote_port": 443,
+  "prompt": "Is it illegal to conduct money laundering?",
+  "response": "Yes, money laundering is illegal in virtually every country. It's a serious federal crime in the United States, and carries significant penalties, including:\n\n*   **Imprisonment:** Lengthy prison sentences, often ranging from several years to decades.\n*   **Fines:** Substantial financial penalties, which can be far greater than the amount of money laundered.\n*   **Asset forfeiture:** The government can seize assets involved in or derived from the illegal activity.\n\nMoney laundering is typically defined as engaging in acts that conceal the source of money derived from illegal activities, making it appear as if it came from legitimate sources. These illegal activities are called predicate offenses and can include drug trafficking, fraud, terrorism, corruption, and many other crimes.",
+  "temperature": 1.0,
+  "data_lengths": [
+    976,
+    1294,
+    182,
+    312,
+    338,
+    418,
+    447,
+    262,
+    466,
+    373,
+    177,
+    113
+  ],
+  "time_diffs": [
+    0.04603719711303711,
+    0.32578492164611816,
+    0.00156402587890625,
+    0.02932286262512207,
+    0.09167718887329102,
+    0.07830190658569336,
+    0.15614604949951172,
+    0.20987296104431152,
+    0.3532431125640869,
+    0.049716949462890625,
+    0.0025229454040527344,
+    0.0
+  ]
+}

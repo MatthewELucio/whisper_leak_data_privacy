@@ -1,0 +1,43 @@
+{
+  "local_port": 35110,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law.\n\nHere's why:\n\n*   **International Treaties and Conventions:** The United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (1988 Vienna Convention), the United Nations Convention against Transnational Organized Crime (2000 Palermo Convention), and the International Convention for the Suppression of the Financing of Terrorism (1999) all require signatory countries to criminalize money laundering.\n*   **National Laws:** Virtually every country in the world has enacted laws making money laundering illegal. These laws vary in their specific details, but the core principle of prohibiting the concealment of the origins of illegally obtained money is consistent.\n*   **Financial Action Task Force (FATF):** The FATF is an inter-governmental body that sets international standards to combat money laundering and terrorist financing. Its recommendations are widely adopted by countries worldwide, further solidifying the consensus against money laundering.\n*   **Economic Harm:** Money laundering enables criminal activities, distorts financial markets, undermines the integrity of financial institutions, and can destabilize economies.\n*   **Public Policy:** Governments universally recognize the need to combat money laundering to protect their economies, national security, and the rule of law.\n*   **Moral and Ethical Considerations:** Facilitating or profiting from the proceeds of crime is widely viewed as morally reprehensible.\n\nIn summary, due to international agreements, national legislation, the efforts of international organizations like the FATF, and the recognized economic and social harm caused by money laundering, there is a widespread and firm consensus that it is illegal. There may be debate around the scope of particular laws or enforcement mechanisms, but the fundamental principle that money laundering is a crime is universally accepted.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    283,
+    305,
+    260,
+    217,
+    302,
+    426,
+    328,
+    385,
+    563,
+    434,
+    434,
+    246,
+    171,
+    113
+  ],
+  "time_diffs": [
+    0.060719966888427734,
+    0.49212193489074707,
+    0.0013840198516845703,
+    0.02017498016357422,
+    0.05741000175476074,
+    0.11528205871582031,
+    0.15871691703796387,
+    0.20295310020446777,
+    0.2522859573364258,
+    0.28495097160339355,
+    0.37026309967041016,
+    0.42270779609680176,
+    0.1963510513305664,
+    0.009139060974121094,
+    0.0,
+    0.0
+  ]
+}

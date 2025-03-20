@@ -1,0 +1,29 @@
+{
+  "local_port": 34914,
+  "remote_port": 443,
+  "prompt": "Are there any circumstances where money laundering is legal?",
+  "response": "No, money laundering is never legal. It is a crime in virtually every country in the world. The act of concealing or disguising the origins of illegally obtained money so that it appears to come from a legitimate source is always illegal.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    279,
+    357,
+    415,
+    349,
+    289,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.04713296890258789,
+    0.30053114891052246,
+    0.0014259815216064453,
+    0.12958288192749023,
+    0.11696696281433105,
+    0.056963205337524414,
+    0.008999824523925781,
+    0.0014350414276123047,
+    0.0
+  ]
+}

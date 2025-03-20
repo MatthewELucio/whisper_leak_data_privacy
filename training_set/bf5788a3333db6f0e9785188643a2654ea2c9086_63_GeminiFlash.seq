@@ -1,0 +1,41 @@
+{
+  "local_port": 42066,
+  "remote_port": 443,
+  "prompt": "Are there international laws against money laundering?",
+  "response": "Yes, there are several international laws and treaties aimed at combating money laundering. These laws and treaties establish frameworks for international cooperation, require countries to criminalize money laundering, and promote the implementation of preventative measures. Here are some key international instruments:\n\n*   **The United Nations Convention against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (1988 Vienna Convention):** This convention was one of the first major international agreements to address money laundering. It requires signatory countries to criminalize the laundering of money derived from drug trafficking.\n\n*   **The United Nations Convention against Transnational Organized Crime (2000 Palermo Convention):** This convention expands the scope of money laundering offenses beyond drug-related crimes to include the proceeds of a wider range of serious crimes. It also promotes international cooperation in combating transnational organized crime, including money laundering.\n\n*   **The United Nations Convention against Corruption (2003 Merida Convention):** This convention addresses the laundering of proceeds derived from corruption. It requires countries to criminalize the laundering of funds obtained through corruption and to implement measures for the prevention and detection of such activities.\n\n*   **Financial Action Task Force (FATF) Recommendations:** While not a treaty, the FATF Recommendations are the international standard for combating money laundering, terrorist financing, and the financing of proliferation of weapons of mass destruction. These recommendations provide a comprehensive framework of measures that countries should implement to prevent, detect, and prosecute money laundering and related crimes. Many countries have incorporated the FATF Recommendations into their national laws and regulations.\n\nThese international laws and treaties provide a framework for countries to cooperate in the fight against money laundering by sharing information, conducting joint investigations, and extraditing offenders. They also encourage countries to adopt strong domestic laws and regulations to prevent and combat money laundering within their own borders.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1411,
+    230,
+    235,
+    272,
+    356,
+    348,
+    338,
+    261,
+    360,
+    510,
+    428,
+    203,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.046154022216796875,
+    0.39490199089050293,
+    0.02263498306274414,
+    0.08308815956115723,
+    0.09506487846374512,
+    0.153594970703125,
+    0.21139812469482422,
+    0.2462170124053955,
+    0.2737600803375244,
+    0.3472268581390381,
+    0.3401370048522949,
+    0.2437269687652588,
+    0.011805057525634766,
+    0.0,
+    0.0
+  ]
+}

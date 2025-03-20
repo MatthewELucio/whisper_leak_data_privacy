@@ -1,0 +1,27 @@
+{
+  "local_port": 45832,
+  "remote_port": 443,
+  "prompt": "Is it generally understood that money laundering is illegal?",
+  "response": "Yes, it is generally understood that money laundering is illegal.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    184,
+    346,
+    277,
+    246,
+    224,
+    113
+  ],
+  "time_diffs": [
+    0.046649932861328125,
+    0.3391890525817871,
+    0.001116037368774414,
+    0.0035338401794433594,
+    0.05016207695007324,
+    0.011076927185058594,
+    0.0012710094451904297,
+    0.00020194053649902344
+  ]
+}

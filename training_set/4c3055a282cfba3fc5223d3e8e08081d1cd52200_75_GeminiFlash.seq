@@ -1,0 +1,39 @@
+{
+  "local_port": 51284,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law.\n\nHere's why:\n\n*   **International Treaties and Conventions:** Numerous international agreements, such as the United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (Vienna Convention), the United Nations Convention against Transnational Organized Crime (Palermo Convention), and the International Convention for the Suppression of the Financing of Terrorism, require signatory nations to criminalize money laundering.\n*   **National Laws:** Almost every country in the world has enacted laws to prohibit and punish money laundering. These laws vary in specifics, but the core principle of criminalizing the concealment of the origins of illegally obtained funds is universal.\n*   **Financial Action Task Force (FATF):** The FATF is an inter-governmental body that sets international standards for combating money laundering and terrorist financing. It monitors countries' compliance and issues recommendations. Non-compliance can lead to sanctions and reputational damage.\n*   **Widespread Condemnation:** Money laundering is widely condemned because it facilitates and enables other serious crimes, including drug trafficking, terrorism, corruption, and human trafficking. It also undermines the integrity of financial systems and distorts economic activity.\n\nWhile specific definitions and penalties may differ across jurisdictions, the fundamental principle that disguising the proceeds of crime is illegal is universally accepted.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1415,
+    285,
+    263,
+    380,
+    249,
+    469,
+    327,
+    408,
+    416,
+    219,
+    202,
+    202,
+    113
+  ],
+  "time_diffs": [
+    0.04684305191040039,
+    0.439072847366333,
+    0.03465914726257324,
+    0.025278806686401367,
+    0.11011314392089844,
+    0.17175793647766113,
+    0.1683790683746338,
+    0.2628309726715088,
+    0.30976200103759766,
+    0.42921996116638184,
+    0.012727022171020508,
+    0.011744976043701172,
+    0.0001900196075439453,
+    0.0
+  ]
+}

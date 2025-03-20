@@ -1,0 +1,39 @@
+{
+  "local_port": 46998,
+  "remote_port": 443,
+  "prompt": "Do you get in trouble for laundering money?",
+  "response": "Yes, absolutely. Money laundering is a serious crime with significant legal consequences. The specific penalties vary depending on the jurisdiction and the amount of money laundered, but they generally include:\n\n*   **Criminal Charges:** Money laundering is a federal crime in the United States and is also a crime in most other countries.\n*   **Imprisonment:** Convictions for money laundering can result in lengthy prison sentences, often measured in years or even decades.\n*   **Fines:** Substantial financial penalties can be imposed, often exceeding the amount of money laundered.\n*   **Asset Forfeiture:** Authorities can seize assets involved in the money laundering scheme, including the laundered funds, property purchased with those funds, and other assets used to facilitate the crime.\n*   **Reputational Damage:** A conviction for money laundering can severely damage a person's reputation, making it difficult to find employment or secure loans in the future.\n*   **Other Legal Consequences:** Depending on the specific circumstances, money laundering can also lead to other legal consequences, such as revocation of professional licenses, deportation, and restrictions on travel.\n\nIt's important to remember that even attempting to launder money or being involved in a scheme with others who are laundering money can lead to criminal charges.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    219,
+    350,
+    267,
+    402,
+    323,
+    276,
+    262,
+    399,
+    505,
+    266,
+    153,
+    113
+  ],
+  "time_diffs": [
+    0.04648900032043457,
+    0.36113500595092773,
+    0.001661062240600586,
+    0.027373790740966797,
+    0.07899308204650879,
+    0.09211111068725586,
+    0.14809393882751465,
+    0.19149494171142578,
+    0.2799091339111328,
+    0.24526000022888184,
+    0.337932825088501,
+    0.009214162826538086,
+    0.0,
+    0.0
+  ]
+}

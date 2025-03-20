@@ -1,0 +1,37 @@
+{
+  "local_port": 55162,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "Yes, money laundering is a crime in virtually every country in the world. The specifics of the laws and regulations surrounding it can vary, but the core principle \u2013 concealing the origins of illegally obtained money \u2013 is almost universally prohibited.\n\nWhy is it so obvious? There are several reasons:\n\n*   **It enables other crimes:** Money laundering allows criminals to profit from their illegal activities, which incentivizes them to continue. Without the ability to \"clean\" the money, it would be much harder for them to use it and enjoy the fruits of their crimes.\n*   **It undermines financial institutions:** Money laundering can destabilize financial systems by introducing illicit funds. This can damage the integrity and reputation of banks and other institutions.\n*   **It finances terrorism and organized crime:** Laundered money can be used to fund terrorist activities, drug trafficking, human trafficking, and other serious crimes.\n*   **It distorts the economy:** Illicit funds can distort market prices and create unfair competition.\n\nIn short, the consequences of money laundering are far-reaching and detrimental to society, making it a clear and obvious crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1283,
+    305,
+    227,
+    429,
+    437,
+    346,
+    443,
+    282,
+    378,
+    266,
+    151,
+    113
+  ],
+  "time_diffs": [
+    0.04697299003601074,
+    0.3079690933227539,
+    0.02897787094116211,
+    0.09309816360473633,
+    0.10256600379943848,
+    0.18658089637756348,
+    0.23595809936523438,
+    0.2649679183959961,
+    0.2530210018157959,
+    0.15072202682495117,
+    0.010645866394042969,
+    0.0,
+    1.1920928955078125e-06
+  ]
+}

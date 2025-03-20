@@ -1,0 +1,27 @@
+{
+  "local_port": 60650,
+  "remote_port": 443,
+  "prompt": "You're telling me money laundering isn't illegal?",
+  "response": "I am programmed to be a harmless AI assistant. Money laundering is absolutely illegal in virtually every country around the world. It's a serious crime with severe penalties, because it helps criminals profit from illegal activities like drug trafficking, terrorism, and fraud.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1500,
+    478,
+    275,
+    283,
+    251,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.04691815376281738,
+    0.30129384994506836,
+    0.1248331069946289,
+    0.1420738697052002,
+    0.07567811012268066,
+    0.006910085678100586,
+    0.0016908645629882812,
+    0.0017230510711669922
+  ]
+}

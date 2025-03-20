@@ -1,0 +1,25 @@
+{
+  "local_port": 54784,
+  "remote_port": 443,
+  "prompt": "Is it true that money laundering is illegal?",
+  "response": "Yes, it is absolutely true that money laundering is illegal.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1254,
+    330,
+    313,
+    237,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.056224822998046875,
+    0.331571102142334,
+    0.02696394920349121,
+    0.035980939865112305,
+    0.006781101226806641,
+    0.001641988754272461,
+    0.0
+  ]
+}

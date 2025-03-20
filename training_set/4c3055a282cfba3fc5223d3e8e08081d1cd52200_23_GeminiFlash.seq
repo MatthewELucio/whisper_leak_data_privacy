@@ -1,0 +1,43 @@
+{
+  "local_port": 57048,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law. It is illegal in virtually every country around the world.\n\nHere's why:\n\n*   **International Treaties and Conventions:** International organizations like the United Nations (UN) and the Financial Action Task Force (FATF) have established conventions and standards against money laundering. Most countries are signatories to these agreements and have incorporated them into their national laws.\n*   **National Laws:** Almost every country has specific laws that criminalize money laundering. These laws typically prohibit activities such as:\n    *   Concealing or disguising the nature, source, location, disposition, movement, rights with respect to, or ownership of property knowing that such property is derived from criminal activity.\n    *   Acquiring, possessing, or using property knowing that it is derived from criminal activity.\n    *   Participating in or facilitating transactions involving the proceeds of crime.\n*   **Damage to Society:** Money laundering facilitates a wide range of criminal activities, including:\n    *   Drug trafficking\n    *   Terrorism\n    *   Corruption\n    *   Human trafficking\n    *   Fraud\n    *   Tax evasion\n    *   Organized crime\n\nBy making money laundering illegal, governments aim to combat these underlying crimes and protect their economies and societies.\n\n*   **Global Cooperation:** The global fight against money laundering requires international cooperation. Countries share information, extradite criminals, and coordinate efforts to disrupt money laundering networks. This cooperation is only possible because of the widespread agreement that money laundering is a crime.\n\nWhile there might be some variation in the specifics of money laundering laws from country to country (e.g., precise definitions, penalties), the fundamental principle that it is illegal is universally accepted.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    114,
+    381,
+    282,
+    368,
+    350,
+    394,
+    389,
+    319,
+    368,
+    371,
+    361,
+    177,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.06309986114501953,
+    0.45874714851379395,
+    0.0014448165893554688,
+    0.010575056076049805,
+    0.039637088775634766,
+    0.11838197708129883,
+    0.14723491668701172,
+    0.15272903442382812,
+    0.29946112632751465,
+    0.28186798095703125,
+    0.2940080165863037,
+    0.38808393478393555,
+    0.1906130313873291,
+    0.007303953170776367,
+    0.0,
+    0.0
+  ]
+}

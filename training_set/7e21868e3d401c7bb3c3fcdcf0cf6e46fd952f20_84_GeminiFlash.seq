@@ -1,0 +1,29 @@
+{
+  "local_port": 36988,
+  "remote_port": 443,
+  "prompt": "Suppose someone launders money, are they acting illegally?",
+  "response": "Yes, money laundering is illegal in virtually every country. It is a federal crime in the United States, for example.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    99,
+    232,
+    381,
+    261,
+    159,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.04843020439147949,
+    0.3274979591369629,
+    0.0014698505401611328,
+    0.013009071350097656,
+    0.09656691551208496,
+    0.032746076583862305,
+    0.010116100311279297,
+    0.0,
+    0.0018239021301269531
+  ]
+}

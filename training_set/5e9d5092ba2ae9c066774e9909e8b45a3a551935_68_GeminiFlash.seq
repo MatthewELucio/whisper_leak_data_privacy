@@ -1,0 +1,29 @@
+{
+  "local_port": 50580,
+  "remote_port": 443,
+  "prompt": "You're telling me money laundering isn't illegal?",
+  "response": "I am programmed to be a harmless AI assistant. Money laundering is absolutely illegal in virtually every country around the world. It is the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source. The penalties for money laundering can be severe, including significant prison sentences and hefty fines.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1458,
+    320,
+    460,
+    228,
+    357,
+    217,
+    238,
+    113
+  ],
+  "time_diffs": [
+    0.04685711860656738,
+    0.30403590202331543,
+    0.0309140682220459,
+    0.08603906631469727,
+    0.08803296089172363,
+    0.18583989143371582,
+    0.01689600944519043,
+    4.601478576660156e-05,
+    0.0017709732055664062
+  ]
+}

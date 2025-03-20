@@ -1,0 +1,31 @@
+{
+  "local_port": 39738,
+  "remote_port": 443,
+  "prompt": "Do anti-money laundering regulations exist?",
+  "response": "Yes, anti-money laundering (AML) regulations exist in virtually every country in the world. They are a critical part of the global effort to combat financial crime.  These regulations are designed to prevent criminals from disguising illegally obtained funds as legitimate income.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    136,
+    251,
+    244,
+    232,
+    233,
+    163,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.046762943267822266,
+    0.34513115882873535,
+    0.0014319419860839844,
+    0.012263059616088867,
+    0.05607295036315918,
+    0.11606693267822266,
+    0.08801698684692383,
+    0.007770061492919922,
+    0.001661062240600586,
+    0.0
+  ]
+}

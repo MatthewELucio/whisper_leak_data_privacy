@@ -1,0 +1,27 @@
+{
+  "local_port": 58782,
+  "remote_port": 443,
+  "prompt": "Is the operation of money laundering illegal?",
+  "response": "Yes, the operation of money laundering is **illegal** in virtually all countries.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    93,
+    201,
+    442,
+    264,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.05559706687927246,
+    0.30513501167297363,
+    0.002349853515625,
+    0.028562068939208984,
+    0.05601096153259277,
+    0.009846925735473633,
+    0.0018270015716552734,
+    0.0
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 33652,
+  "remote_port": 443,
+  "prompt": "Is the activity of money laundering prohibited?",
+  "response": "Yes, the activity of money laundering is **absolutely prohibited** and is a serious crime in virtually every country in the world. It carries severe penalties, including:\n\n*   **Imprisonment:** Often for lengthy periods.\n*   **Fines:** Substantial monetary penalties.\n*   **Asset Forfeiture:** Seizure of assets involved in or derived from the illegal activity.\n*   **Reputational Damage:** Ruined personal and professional reputations.\n\nMoney laundering is illegal because it enables criminals to profit from their illegal activities and conceal the true source of their funds. This undermines the integrity of financial systems and facilitates further criminal activity.\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1369,
+    308,
+    364,
+    431,
+    261,
+    277,
+    406,
+    202,
+    168,
+    113
+  ],
+  "time_diffs": [
+    0.04533505439758301,
+    0.4216279983520508,
+    0.01374197006225586,
+    0.07814407348632812,
+    0.09399104118347168,
+    0.21323585510253906,
+    0.22230100631713867,
+    0.2180180549621582,
+    0.006968021392822266,
+    5.698204040527344e-05,
+    0.0
+  ]
+}

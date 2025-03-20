@@ -1,0 +1,41 @@
+{
+  "local_port": 52664,
+  "remote_port": 443,
+  "prompt": "Is it like, illegal to launder money?",
+  "response": "Yes, it is absolutely illegal to launder money in virtually every country. Money laundering is a serious crime with severe consequences.\n\nHere's why and what those consequences can be:\n\n*   **What it is:** Money laundering is the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source.\n*   **Why it's illegal:** It allows criminals to profit from their illegal activities (like drug trafficking, fraud, corruption, etc.) without detection. It also helps to fund further criminal activity and undermines the integrity of financial systems.\n*   **Consequences:**\n    *   **Criminal Charges:** Money laundering is a felony offense.\n    *   **Imprisonment:** Convictions can lead to lengthy prison sentences (often many years, even decades).\n    *   **Fines:** Extremely large fines can be levied, often exceeding the amount of money laundered.\n    *   **Asset Forfeiture:** Assets involved in or derived from the illegal activity can be seized by the government. This includes money, property, businesses, etc.\n    *   **Reputational Damage:** A conviction can ruin a person's reputation and make it difficult to obtain employment or financial services in the future.\n    *   **International Implications:** Money laundering is often an international crime, leading to extradition and cooperation between countries in investigations and prosecutions.\n\nIf you are approached with a suspicious financial transaction, it should be reported to the appropriate authorities.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    247,
+    203,
+    452,
+    195,
+    251,
+    412,
+    467,
+    445,
+    518,
+    307,
+    229,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.04875493049621582,
+    0.35993003845214844,
+    0.0015799999237060547,
+    0.026131153106689453,
+    0.07535290718078613,
+    0.11417508125305176,
+    0.15689587593078613,
+    0.17801594734191895,
+    0.29616403579711914,
+    0.27002501487731934,
+    0.32317495346069336,
+    0.19618701934814453,
+    0.008558988571166992,
+    0.0,
+    0.0
+  ]
+}

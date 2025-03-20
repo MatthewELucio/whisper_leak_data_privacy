@@ -1,0 +1,33 @@
+{
+  "local_port": 42474,
+  "remote_port": 443,
+  "prompt": "What are the legal precedents related to money laundering cases?",
+  "response": "Money laundering cases are governed by a complex web of legal precedents, built on statutes, regulations, and court decisions. Here's a breakdown of key legal precedents related to money laundering, categorized for clarity:\n\n**I. Defining Money Laundering & Establishing Elements of the Offense:**\n\n*   **Statutory Definitions:**  The primary statutes defining money laundering are:\n    *   **United States:** 18 U.S.C. \u00a7 1956 (",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    162,
+    230,
+    226,
+    335,
+    399,
+    354,
+    196,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.04793500900268555,
+    0.30983495712280273,
+    0.0013718605041503906,
+    0.13660216331481934,
+    0.08996796607971191,
+    0.22407793998718262,
+    0.1010890007019043,
+    0.35416293144226074,
+    0.010035037994384766,
+    0.0,
+    0.001310110092163086
+  ]
+}

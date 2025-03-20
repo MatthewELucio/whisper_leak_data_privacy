@@ -1,0 +1,37 @@
+{
+  "local_port": 49096,
+  "remote_port": 443,
+  "prompt": "Is it wrong to launder money?",
+  "response": "Yes, it is absolutely wrong to launder money. Here's why:\n\n*   **It's illegal:** Money laundering is a crime in virtually every country.\n*   **It fuels crime:** Money laundering allows criminals to profit from and continue their illegal activities, such as drug trafficking, terrorism, human trafficking, corruption, and fraud.\n*   **It harms economies:** It can destabilize financial markets, create unfair competition, and undermine the integrity of financial institutions.\n*   **It undermines trust:** It erodes public trust in financial systems and government institutions.\n*   **It has serious consequences:** Individuals and organizations involved in money laundering face severe penalties, including imprisonment, hefty fines, and asset forfeiture.\n\nIn short, money laundering is wrong because it enables and perpetuates crime, harms society, and has devastating consequences for individuals and economies.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    125,
+    183,
+    260,
+    344,
+    446,
+    446,
+    532,
+    297,
+    307,
+    152,
+    113
+  ],
+  "time_diffs": [
+    0.04915213584899902,
+    0.38953590393066406,
+    0.001538991928100586,
+    0.01430201530456543,
+    0.06416106224060059,
+    0.07994389533996582,
+    0.16951298713684082,
+    0.21469402313232422,
+    0.2489941120147705,
+    0.13553786277770996,
+    0.010241031646728516,
+    0.0,
+    0.0
+  ]
+}

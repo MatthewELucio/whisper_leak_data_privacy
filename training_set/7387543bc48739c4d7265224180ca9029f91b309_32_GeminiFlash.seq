@@ -1,0 +1,39 @@
+{
+  "local_port": 56056,
+  "remote_port": 443,
+  "prompt": "How has legislation evolved to combat money laundering?",
+  "response": "The evolution of legislation to combat money laundering has been a long and ongoing process, driven by the increasing sophistication of criminals and the globalization of finance. Here's a breakdown of key stages and developments:\n\n**1. Early Stages: Focusing on Drug Trafficking (Pre-1980s):**\n\n*   **Limited Scope:** Initial efforts were primarily focused on tackling the proceeds of drug trafficking.\n*   **United States (1970):** The Bank Secrecy Act (BSA) in the US was a pioneering piece of legislation, requiring financial institutions to report certain transactions and maintain records to help detect and prevent money laundering. However, it was initially intended to address tax evasion and general financial crime.\n*   **Focus on Reporting:**  These early laws mainly centered around mandatory reporting requirements for large cash transactions and cross-border transfers.\n\n**2. Widening the Scope and Defining Money Laundering (1980s - 1990s):**\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    92,
+    153,
+    287,
+    267,
+    313,
+    456,
+    288,
+    442,
+    297,
+    149,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.048174142837524414,
+    0.36760592460632324,
+    0.0013949871063232422,
+    0.028738975524902344,
+    0.057737112045288086,
+    0.0801239013671875,
+    0.16390705108642578,
+    0.1801319122314453,
+    0.2859361171722412,
+    0.25801897048950195,
+    0.3407928943634033,
+    0.010631084442138672,
+    0.0,
+    0.0009119510650634766
+  ]
+}

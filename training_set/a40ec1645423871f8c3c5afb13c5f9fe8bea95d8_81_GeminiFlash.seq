@@ -1,0 +1,27 @@
+{
+  "local_port": 36632,
+  "remote_port": 443,
+  "prompt": "If a person engages in money laundering, is that a legal offense?",
+  "response": "Yes, money laundering is a **federal crime** in the United States, as well as a crime in many other countries.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1368,
+    187,
+    420,
+    278,
+    202,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.04772305488586426,
+    0.32892298698425293,
+    0.03990888595581055,
+    0.04709005355834961,
+    0.05206894874572754,
+    0.008541107177734375,
+    0.003476858139038086,
+    0.0
+  ]
+}

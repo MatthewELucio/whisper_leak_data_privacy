@@ -1,0 +1,43 @@
+{
+  "local_port": 45922,
+  "remote_port": 443,
+  "prompt": "Is it like, illegal to launder money?",
+  "response": "Yes, it is absolutely illegal to launder money. It's a serious federal crime in most countries, including the United States.\n\nHere's a breakdown of why and what the consequences are:\n\n*   **What is Money Laundering?** Money laundering is the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source. It's done to avoid prosecution for the crimes that generated the money.\n\n*   **Why is it Illegal?**\n    *   **It supports crime:** Money laundering allows criminals to profit from their illegal activities (drug trafficking, fraud, corruption, etc.) and reinvest in further criminal endeavors.\n    *   **It undermines the financial system:** It can destabilize financial institutions and markets.\n    *   **It distorts the economy:** It can create unfair competition and lead to inaccurate economic data.\n    *   **It helps fund terrorism:** Terrorist groups often rely on money laundering to finance their operations.\n\n*   **Consequences:**\n    *   **Criminal Penalties:** Money laundering carries significant prison sentences and heavy fines. The specific penalties depend on the amount of money involved, the complexity of the scheme, and the jurisdiction.\n    *   **Asset Forfeiture:** Law enforcement can seize assets that are connected to the money laundering activity, including cash, property, and investments.\n    *   **Reputational Damage:** Being convicted of money laundering can severely damage a person's or company's reputation, making it difficult to conduct business in the future.\n    *   **Civil Penalties:** In addition to criminal penalties, there may be civil fines and lawsuits.\n\nIf you are involved in money laundering activities, you should immediately seek legal counsel.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    296,
+    271,
+    434,
+    231,
+    303,
+    450,
+    291,
+    380,
+    541,
+    358,
+    359,
+    183,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.04613685607910156,
+    0.3766779899597168,
+    0.001383066177368164,
+    0.03144502639770508,
+    0.056819915771484375,
+    0.09335207939147949,
+    0.17697787284851074,
+    0.20104408264160156,
+    0.2980659008026123,
+    0.24234509468078613,
+    0.3521580696105957,
+    0.3583979606628418,
+    0.21480798721313477,
+    0.009329080581665039,
+    0.0,
+    0.0002429485321044922
+  ]
+}

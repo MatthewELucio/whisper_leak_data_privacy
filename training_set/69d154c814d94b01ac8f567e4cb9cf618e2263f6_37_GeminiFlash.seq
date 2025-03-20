@@ -1,0 +1,31 @@
+{
+  "local_port": 54042,
+  "remote_port": 443,
+  "prompt": "Is it illegal to engage in money laundering?",
+  "response": "Yes, money laundering is illegal in virtually every country around the world. The specific laws and penalties vary depending on the jurisdiction, but the core principle remains the same: disguising the origins of illegally obtained money is a crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    259,
+    146,
+    396,
+    204,
+    242,
+    314,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.04434704780578613,
+    0.8169879913330078,
+    0.0016849040985107422,
+    0.029684066772460938,
+    0.11274194717407227,
+    0.09102010726928711,
+    0.04713606834411621,
+    0.006537914276123047,
+    0.0034220218658447266,
+    0.0
+  ]
+}

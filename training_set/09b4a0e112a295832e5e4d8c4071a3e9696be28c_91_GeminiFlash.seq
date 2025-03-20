@@ -1,0 +1,29 @@
+{
+  "local_port": 57556,
+  "remote_port": 443,
+  "prompt": "Is the system of money laundering illegal?",
+  "response": "Yes, money laundering is illegal in virtually every country. It is a serious crime with severe penalties, including imprisonment and hefty fines. Laws against money laundering are designed to combat various criminal activities by making it difficult for criminals to profit from their illegal actions.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1475,
+    239,
+    297,
+    371,
+    321,
+    186,
+    141,
+    113
+  ],
+  "time_diffs": [
+    0.06233787536621094,
+    0.44080305099487305,
+    0.025600910186767578,
+    0.07191109657287598,
+    0.10333991050720215,
+    0.11389303207397461,
+    0.013956069946289062,
+    0.00150299072265625,
+    0.0
+  ]
+}

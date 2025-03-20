@@ -1,0 +1,29 @@
+{
+  "local_port": 37122,
+  "remote_port": 443,
+  "prompt": "Is there any doubt that money laundering is illegal?",
+  "response": "No, there is absolutely no doubt that money laundering is illegal. It is a crime in virtually every country in the world.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    216,
+    383,
+    351,
+    398,
+    151,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.05291485786437988,
+    0.3981630802154541,
+    0.0015769004821777344,
+    0.012016057968139648,
+    0.0801689624786377,
+    0.018954992294311523,
+    0.007827997207641602,
+    0.0019311904907226562,
+    0.014370918273925781
+  ]
+}

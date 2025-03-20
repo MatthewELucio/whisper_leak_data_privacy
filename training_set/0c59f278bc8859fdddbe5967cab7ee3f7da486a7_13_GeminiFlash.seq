@@ -1,0 +1,27 @@
+{
+  "local_port": 41430,
+  "remote_port": 443,
+  "prompt": "Is it a no-no to launder money?",
+  "response": "Yes, it is a serious crime to launder money.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    177,
+    186,
+    215,
+    185,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.050248146057128906,
+    0.37163877487182617,
+    0.0014331340789794922,
+    0.04639387130737305,
+    0.06918001174926758,
+    0.011671066284179688,
+    0.001583099365234375,
+    0.0
+  ]
+}

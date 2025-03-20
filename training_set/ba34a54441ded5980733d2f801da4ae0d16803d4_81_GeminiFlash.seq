@@ -1,0 +1,37 @@
+{
+  "local_port": 40500,
+  "remote_port": 443,
+  "prompt": "What are the legal precedents related to money laundering cases?",
+  "response": "Money laundering law is a complex and constantly evolving field. Legal precedents are established through court cases and interpretations of statutes. Here's a breakdown of some key areas and landmark cases:\n\n**I. Core Statutes & Definitions:**\n\n*   **United States:**\n    *   **Bank Secrecy Act (BSA) of 1970:** This is the foundational U.S. anti-money laundering (AML) law.  It requires financial institutions to keep records and file reports on certain financial transactions to help detect and prevent money laundering. It also established Currency Transaction Reports (CTRs) and Suspicious Activity Reports (SARs).\n    *   **Money Laundering Control Act of 1986 (MLCA):** This act criminalized money laundering for the first time in the United States.  It established 18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments) and 18",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    114,
+    428,
+    374,
+    454,
+    414,
+    486,
+    247,
+    250,
+    297,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.04564380645751953,
+    0.3020350933074951,
+    0.0013098716735839844,
+    0.11936807632446289,
+    0.1228029727935791,
+    0.20848417282104492,
+    0.1607959270477295,
+    0.28534889221191406,
+    0.3020210266113281,
+    0.37543416023254395,
+    0.010614871978759766,
+    0.0,
+    0.0
+  ]
+}

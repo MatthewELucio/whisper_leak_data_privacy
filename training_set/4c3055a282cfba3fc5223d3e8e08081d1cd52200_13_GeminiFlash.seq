@@ -1,0 +1,41 @@
+{
+  "local_port": 57040,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law.\n\nHere's why:\n\n*   **International Treaties and Conventions:** Numerous international treaties and conventions, such as the United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (the Vienna Convention), the United Nations Convention against Transnational Organized Crime (the Palermo Convention), and the International Convention for the Suppression of the Financing of Terrorism, require signatory countries to criminalize money laundering.\n*   **National Laws:** Most countries around the world have enacted laws specifically prohibiting money laundering. These laws are designed to prevent the proceeds of crime from being legitimized and used in the financial system.\n*   **Financial Action Task Force (FATF):** The FATF, an inter-governmental body, sets international standards to combat money laundering and terrorist financing. It monitors countries' compliance with these standards and issues recommendations to improve their legal and regulatory frameworks. Non-compliance can lead to serious consequences, including financial sanctions.\n*   **Widespread Condemnation:** Money laundering is widely condemned because it facilitates a wide range of criminal activities, including drug trafficking, terrorism, corruption, fraud, and human trafficking.\n*   **Economic Stability:** Money laundering can destabilize financial systems and undermine economic growth.\n\nTherefore, due to international agreements, national laws, the work of the FATF, and widespread condemnation due to the nature of the crime, there is a global consensus that money laundering is illegal.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    106,
+    258,
+    367,
+    284,
+    356,
+    337,
+    461,
+    420,
+    541,
+    288,
+    154,
+    143,
+    113
+  ],
+  "time_diffs": [
+    0.047875165939331055,
+    0.4380018711090088,
+    0.001435995101928711,
+    0.012434005737304688,
+    0.08987808227539062,
+    0.0931859016418457,
+    0.17210912704467773,
+    0.18796992301940918,
+    0.2624170780181885,
+    0.3448939323425293,
+    0.4068009853363037,
+    0.20853209495544434,
+    0.008810997009277344,
+    0.0,
+    5.3882598876953125e-05
+  ]
+}

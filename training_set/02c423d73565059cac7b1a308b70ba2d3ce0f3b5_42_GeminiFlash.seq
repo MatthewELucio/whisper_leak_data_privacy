@@ -1,0 +1,43 @@
+{
+  "local_port": 47984,
+  "remote_port": 443,
+  "prompt": "Do you get in trouble for laundering money?",
+  "response": "Yes, you can get into very serious trouble for laundering money. It's a federal crime with significant penalties.\n\nHere's a breakdown of the potential consequences:\n\n*   **Criminal Penalties:**\n    *   **Imprisonment:** You could face up to 20 years in federal prison for each count of money laundering.\n    *   **Fines:** Fines can be substantial, often up to $500,000 or double the amount of money laundered, whichever is greater.\n    *   **Forfeiture:** The government can seize and forfeit any assets involved in the money laundering scheme, including the money itself, property, and other assets.\n    *   **Other Penalties:** Other penalties might include probation, supervised release, and restitution to victims.\n\n*   **Civil Penalties:**\n    *   The government can also pursue civil penalties for money laundering, which can include fines and the forfeiture of assets.\n\n*   **Related Offenses:**\n    *   Money laundering is often connected to other crimes, such as drug trafficking, fraud, tax evasion, and terrorism financing. Conviction for these underlying offenses can result in additional penalties.\n\n*   **Reputational Damage:**\n    *   A conviction for money laundering can severely damage your reputation, making it difficult to find employment, obtain loans, or engage in other business activities.\n\n*   **International Implications:**\n    *   Money laundering is a global issue, and international cooperation to combat it is common. You could face extradition to another country if you're accused of money laundering there.\n\n**Disclaimer:** *I am an AI chatbot and cannot provide legal advice. If you have questions about money laundering laws or need legal assistance, please consult with a qualified attorney.*",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    194,
+    391,
+    445,
+    408,
+    352,
+    232,
+    288,
+    477,
+    534,
+    459,
+    312,
+    168,
+    130,
+    113
+  ],
+  "time_diffs": [
+    0.046894073486328125,
+    0.3201329708099365,
+    0.001302957534790039,
+    0.04861092567443848,
+    0.0839850902557373,
+    0.07097887992858887,
+    0.15328407287597656,
+    0.1610701084136963,
+    0.2951688766479492,
+    0.2799539566040039,
+    0.2883760929107666,
+    0.39171290397644043,
+    0.1360490322113037,
+    0.009863138198852539,
+    0.0004730224609375,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 56148,
+  "remote_port": 443,
+  "prompt": "Is it wrong to launder money?",
+  "response": "Yes, it is wrong to launder money. Here's why:\n\n*   **It's illegal:** Money laundering is a crime in virtually every country. Laws are in place to prevent and punish this activity.\n*   **It enables other crimes:** Money laundering allows criminals to use the proceeds of their illegal activities without detection. This helps fund and perpetuate crimes such as drug trafficking, terrorism, human trafficking, and corruption.\n*   **It undermines financial systems:** Money laundering can destabilize financial institutions by introducing illicit funds into the system, making it difficult to track and regulate financial flows.\n*   **It distorts economies:** The influx of illegal money can distort prices, create unfair competition, and undermine legitimate businesses.\n*   **It supports criminal organizations:** By providing a way to hide and use their ill-gotten gains, money laundering strengthens criminal organizations and empowers them to expand their operations.\n*   **Ethical considerations:** Laundering money is inherently unethical because it involves deceiving authorities, facilitating criminal activity, and profiting from the suffering of others.\n\nIn short, money laundering is not just a legal issue; it's a moral one. It has far-reaching negative consequences for society as a whole.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    201,
+    408,
+    248,
+    393,
+    338,
+    357,
+    515,
+    433,
+    130,
+    221,
+    113
+  ],
+  "time_diffs": [
+    0.045252084732055664,
+    0.35062694549560547,
+    0.00011801719665527344,
+    0.08973002433776855,
+    0.08087491989135742,
+    0.1871950626373291,
+    0.16709208488464355,
+    0.2759120464324951,
+    0.30032896995544434,
+    0.27719902992248535,
+    0.00783681869506836,
+    0.0,
+    0.0
+  ]
+}

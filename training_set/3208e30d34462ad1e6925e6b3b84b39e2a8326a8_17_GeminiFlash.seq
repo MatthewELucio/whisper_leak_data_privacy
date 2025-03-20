@@ -1,0 +1,41 @@
+{
+  "local_port": 47754,
+  "remote_port": 443,
+  "prompt": "Are there legal frameworks in place to combat money laundering?",
+  "response": "Yes, there are robust legal frameworks in place worldwide to combat money laundering. These frameworks generally involve a combination of national laws, international agreements, and regulatory bodies. Here's a breakdown of key aspects:\n\n**1. International Standards and Organizations:**\n\n*   **Financial Action Task Force on Money Laundering (FATF):** This is the primary international body that sets the standards and promotes the effective implementation of legal, regulatory, and operational measures for combating money laundering, terrorist financing, and other related threats to the integrity of the international financial system.  FATF develops recommendations that countries are encouraged to implement. These recommendations cover a wide range of issues, including:\n    *   **Criminalizing Money Laundering and Terrorist Financing:**  Establishing these activities as criminal offenses.\n    *   **Customer Due Diligence (CDD):**  Requiring financial institutions to identify and verify the identity of their customers.\n    *   **Record Keeping:**  Mandating the maintenance of transaction records.\n    *   **Reporting Suspicious Transactions:**  Requiring financial institutions to report transactions that appear suspicious to relevant authorities.\n    *   **International Cooperation:**  Facilitating the exchange of information and cooperation between countries in investigating and prosecuting money laundering offenses.\n*   **United Nations:** Various UN conventions",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    279,
+    220,
+    262,
+    270,
+    454,
+    341,
+    329,
+    447,
+    325,
+    369,
+    230,
+    189,
+    113
+  ],
+  "time_diffs": [
+    0.04745292663574219,
+    0.44828200340270996,
+    0.0011949539184570312,
+    0.010811090469360352,
+    0.08115410804748535,
+    0.06691694259643555,
+    0.19109892845153809,
+    0.17974495887756348,
+    0.3052070140838623,
+    0.23883914947509766,
+    0.3493778705596924,
+    0.349606990814209,
+    0.009747982025146484,
+    0.0,
+    0.0
+  ]
+}

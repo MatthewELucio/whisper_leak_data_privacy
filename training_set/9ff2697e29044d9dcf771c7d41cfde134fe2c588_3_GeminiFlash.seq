@@ -1,0 +1,39 @@
+{
+  "local_port": 46506,
+  "remote_port": 443,
+  "prompt": "Is the method of money laundering illegal?",
+  "response": "Yes, money laundering is illegal in virtually every country. It's a serious crime with severe penalties, including:\n\n*   **Imprisonment:** Often lengthy prison sentences.\n*   **Fines:** Substantial fines, potentially exceeding the amount of money laundered.\n*   **Asset Forfeiture:** The government can seize assets involved in or derived from the illegal activity, including the laundered money itself, properties, and other valuables.\n*   **Reputational Damage:** Irreparable harm to personal and professional reputation.\n*   **Other Legal Consequences:** Depending on the jurisdiction, other penalties might include restrictions on business activities, revocation of licenses, and more.\n\nLaws are in place to combat money laundering because it:\n\n*   **Enables Criminal Activity:** It allows criminals to profit from and continue their illegal activities, such as drug trafficking, terrorism, fraud, and corruption.\n*   **Distorts the Economy:** It can destabilize financial markets and undermine legitimate businesses.\n*   **Threatens National Security:** It can be used to fund terrorism and other threats to national security.\n\nTherefore, engaging in any stage of the money laundering process (placement, layering, integration) is a serious crime with significant consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    182,
+    272,
+    344,
+    445,
+    432,
+    242,
+    349,
+    500,
+    544,
+    231,
+    186,
+    113
+  ],
+  "time_diffs": [
+    0.05113506317138672,
+    0.3575301170349121,
+    0.0014410018920898438,
+    0.0,
+    0.05244588851928711,
+    0.09725093841552734,
+    0.14197802543640137,
+    0.23390603065490723,
+    0.2798600196838379,
+    0.29203295707702637,
+    0.31005406379699707,
+    0.010812997817993164,
+    0.0003609657287597656,
+    0.0001690387725830078
+  ]
+}

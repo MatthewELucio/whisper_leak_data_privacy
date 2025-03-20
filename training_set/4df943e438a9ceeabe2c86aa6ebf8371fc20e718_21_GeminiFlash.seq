@@ -1,0 +1,27 @@
+{
+  "local_port": 35576,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, the idea that money laundering is a crime is pretty straightforward. It involves disguising illegally obtained money to make it appear legitimate, which helps criminals profit from their illegal activities. So, yeah, in general, it's widely understood and accepted that money laundering is a crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1416,
+    436,
+    216,
+    257,
+    157,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.047193050384521484,
+    0.25772905349731445,
+    0.10406899452209473,
+    0.1497950553894043,
+    0.13611292839050293,
+    0.010698080062866211,
+    0.0014657974243164062,
+    0.0
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "local_port": 34174,
+  "remote_port": 443,
+  "prompt": "There's no way money laundering is legal, is there?",
+  "response": "No, money laundering is definitely not legal. It's a serious crime in almost every country around the world. It involves disguising the origins of illegally obtained money so that it appears to come from a legitimate source. This is done to avoid prosecution for the underlying criminal activity that generated the money, like drug trafficking, fraud, or corruption.\n\nThere are severe penalties for money laundering, including hefty fines and lengthy prison sentences. Laws are in place to prevent it, and financial institutions are required to report suspicious activity to law enforcement.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    273,
+    269,
+    424,
+    441,
+    375,
+    252,
+    211,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.04577803611755371,
+    0.29436612129211426,
+    0.0014319419860839844,
+    0.13080787658691406,
+    0.05524015426635742,
+    0.20522189140319824,
+    0.19411015510559082,
+    0.043176889419555664,
+    0.006757020950317383,
+    0.0014319419860839844,
+    0.0
+  ]
+}

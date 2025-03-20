@@ -1,0 +1,37 @@
+{
+  "local_port": 56928,
+  "remote_port": 443,
+  "prompt": "Is it a no-no to launder money?",
+  "response": "Yes, it is absolutely a no-no to launder money. It's a serious crime with severe consequences.\n\nHere's why:\n\n*   **It's illegal:** Money laundering is a criminal offense in virtually every country.\n*   **It supports other crimes:** Money laundering is used to conceal the proceeds of illegal activities such as drug trafficking, terrorism, human trafficking, fraud, and corruption. By cleaning the money, criminals can use their ill-gotten gains without raising suspicion.\n*   **It destabilizes economies:** Large-scale money laundering can distort financial markets and undermine the integrity of financial institutions.\n*   **Severe Penalties:** Money laundering convictions can result in lengthy prison sentences, hefty fines, and the seizure of assets.\n\nIn short, laundering money is a serious crime that facilitates other illegal activities and has severe legal and economic consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    186,
+    276,
+    400,
+    166,
+    332,
+    379,
+    491,
+    222,
+    278,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.04671502113342285,
+    0.294003963470459,
+    0.0011420249938964844,
+    0.04678702354431152,
+    0.05797910690307617,
+    0.03706097602844238,
+    0.15903496742248535,
+    0.23077797889709473,
+    0.3072679042816162,
+    0.12113714218139648,
+    0.012810945510864258,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

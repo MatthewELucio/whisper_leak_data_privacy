@@ -1,0 +1,29 @@
+{
+  "local_port": 43148,
+  "remote_port": 443,
+  "prompt": "Is the system of money laundering illegal?",
+  "response": "Yes, the system of money laundering is illegal in virtually every country. It's a complex process designed to conceal the origins of illegally obtained money, making it appear to come from a legitimate source. Because it enables and perpetuates criminal activity, it's heavily penalized.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1267,
+    267,
+    368,
+    422,
+    360,
+    245,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.046996116638183594,
+    0.3581390380859375,
+    0.02888798713684082,
+    0.09103083610534668,
+    0.09705519676208496,
+    0.19968485832214355,
+    0.007075071334838867,
+    0.0022869110107421875,
+    0.0001239776611328125
+  ]
+}

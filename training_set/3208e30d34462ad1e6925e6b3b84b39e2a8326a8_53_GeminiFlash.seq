@@ -1,0 +1,37 @@
+{
+  "local_port": 49894,
+  "remote_port": 443,
+  "prompt": "Are there legal frameworks in place to combat money laundering?",
+  "response": "Yes, there are extensive legal frameworks in place globally and nationally to combat money laundering. These frameworks are designed to prevent, detect, and prosecute individuals and organizations involved in the process of disguising illicit funds as legitimate assets.  Here's a breakdown of key elements:\n\n**1. International Frameworks:**\n\n*   **Financial Action Task Force on Money Laundering (FATF):** This is the primary international body setting standards and promoting effective implementation of legal, regulatory and operational measures for combating money laundering, terrorist financing and other related threats to the integrity of the international financial system. Its core recommendations (the FATF 40 Recommendations) are the international standard for combating money laundering.\n*   **United Nations Conventions:** Several UN conventions address",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    166,
+    306,
+    405,
+    217,
+    262,
+    478,
+    392,
+    224,
+    271,
+    134,
+    113
+  ],
+  "time_diffs": [
+    0.048265933990478516,
+    0.29442310333251953,
+    0.0014710426330566406,
+    0.02147507667541504,
+    0.06293678283691406,
+    0.09016203880310059,
+    0.1609959602355957,
+    0.20584511756896973,
+    0.2811920642852783,
+    0.27208995819091797,
+    0.008818864822387695,
+    0.0001971721649169922,
+    0.0
+  ]
+}

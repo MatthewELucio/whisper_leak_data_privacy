@@ -1,0 +1,39 @@
+{
+  "local_port": 40546,
+  "remote_port": 443,
+  "prompt": "Is the system of money laundering illegal?",
+  "response": "Yes, the system of money laundering is illegal in virtually every country in the world.\n\nHere's why:\n\n*   **Money laundering disguises the origins of illegally obtained money.** This allows criminals to profit from their illicit activities without fear of detection.\n*   **It enables criminal activity to continue.** By cleaning their money, criminals can reinvest in their operations, perpetuating crimes like drug trafficking, human trafficking, terrorism, and fraud.\n*   **It undermines financial institutions and systems.** Money laundering can destabilize financial institutions, distort markets, and erode public trust in the financial system.\n*   **It funds terrorism and other threats to national security.** Terrorist organizations often rely on money laundering to finance their activities.\n\nAs a result, countries have laws and regulations in place to prevent, detect, and prosecute money laundering. These laws typically target the following stages of money laundering:\n\n*   **Placement:** Introducing the illegal money into the financial system.\n*   **Layering:** Concealing the source of the money through a series of transactions.\n*   **Integration:** Making the laundered money appear legitimate by reinvesting it in the economy.\n\nFailing to comply with anti-money laundering laws can result in severe penalties, including fines, imprisonment, and the seizure of assets.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    109,
+    383,
+    448,
+    297,
+    381,
+    373,
+    394,
+    485,
+    369,
+    156,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.049182891845703125,
+    0.3565349578857422,
+    0.0014011859893798828,
+    0.027467012405395508,
+    0.054054975509643555,
+    0.10603785514831543,
+    0.22806215286254883,
+    0.19687199592590332,
+    0.29833483695983887,
+    0.28730201721191406,
+    0.3054370880126953,
+    0.012896060943603516,
+    0.0003218650817871094,
+    0.0
+  ]
+}

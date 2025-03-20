@@ -1,0 +1,39 @@
+{
+  "local_port": 48862,
+  "remote_port": 443,
+  "prompt": "Is it a crime thing to launder money?",
+  "response": "Yes, money laundering is absolutely a crime. It's a federal crime in the United States and in many other countries around the world.\n\nHere's why it's considered a crime:\n\n*   **It hides the source of illegal funds:** Money laundering allows criminals to disguise the origins of money obtained through illegal activities, making it appear legitimate.\n*   **It supports further criminal activity:** By successfully laundering money, criminals can reinvest their ill-gotten gains into further criminal enterprises.\n*   **It undermines financial institutions:** Money laundering can destabilize financial institutions and the financial system as a whole.\n*   **It facilitates other crimes:** Money laundering enables and facilitates a wide range of other crimes, including drug trafficking, terrorism, human trafficking, and fraud.\n\n**Consequences of Money Laundering:**\n\nThe penalties for money laundering are severe and can include:\n\n*   **Imprisonment:** Lengthy prison sentences are common.\n*   **Fines:** Substantial fines, often exceeding the amount of money laundered.\n*   **Asset forfeiture:** The government can seize assets involved in or derived from money laundering activities.\n*   **Reputational damage:** Conviction can lead to significant damage to one's reputation and career prospects.\n\nTherefore, due to the illegal nature of the act, it is highly crucial to seek legal advice from qualified professionals should you ever come across a situation that might seem suspicious.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1303,
+    289,
+    334,
+    405,
+    357,
+    265,
+    326,
+    314,
+    456,
+    435,
+    295,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.04670310020446777,
+    0.3320889472961426,
+    0.0298311710357666,
+    0.01800990104675293,
+    0.10810089111328125,
+    0.19697117805480957,
+    0.20310091972351074,
+    0.29414796829223633,
+    0.21009206771850586,
+    0.3832130432128906,
+    0.19283199310302734,
+    0.008410930633544922,
+    0.0003170967102050781,
+    0.0
+  ]
+}

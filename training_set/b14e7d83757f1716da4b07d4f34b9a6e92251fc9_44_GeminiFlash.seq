@@ -1,0 +1,31 @@
+{
+  "local_port": 37558,
+  "remote_port": 443,
+  "prompt": "Is the scheme of money laundering illegal?",
+  "response": "Yes, a scheme of money laundering is illegal. It is a federal crime under 18 U.S.C. \u00a7 1956 and \u00a7 1957.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    177,
+    302,
+    396,
+    279,
+    213,
+    283,
+    124,
+    113
+  ],
+  "time_diffs": [
+    0.05211901664733887,
+    0.29763197898864746,
+    0.0013170242309570312,
+    0.0032758712768554688,
+    0.045107126235961914,
+    0.1102609634399414,
+    0.03195595741271973,
+    0.005937099456787109,
+    0.0015599727630615234,
+    0.0
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 33738,
+  "remote_port": 443,
+  "prompt": "Is it wrong to launder money?",
+  "response": "Yes, it is wrong to launder money. Laundering money is a crime because it helps criminals conceal the illegal origins of their funds, allowing them to use those funds without detection. This can enable and support various illegal activities, such as drug trafficking, terrorism, and corruption.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    294,
+    415,
+    214,
+    318,
+    309,
+    166,
+    113
+  ],
+  "time_diffs": [
+    0.04625701904296875,
+    0.42092418670654297,
+    0.0013949871063232422,
+    0.09353780746459961,
+    0.1012260913848877,
+    0.0982809066772461,
+    0.015475034713745117,
+    0.0,
+    0.0
+  ]
+}

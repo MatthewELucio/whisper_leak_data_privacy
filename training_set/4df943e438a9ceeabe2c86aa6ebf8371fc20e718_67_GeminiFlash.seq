@@ -1,0 +1,39 @@
+{
+  "local_port": 46056,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "Yes, money laundering is indeed a crime in virtually every country in the world. It's the process of concealing the origins of illegally obtained money, so it appears to come from a legitimate source. This allows criminals to use the money without attracting attention to the underlying criminal activity.\n\nThe reasons it's a crime are quite clear:\n\n*   **It enables further crime:** By successfully laundering money, criminals can continue their illegal activities, such as drug trafficking, terrorism, fraud, and corruption.\n*   **It undermines financial institutions:** Money laundering can destabilize financial institutions by creating risks related to compliance, reputation, and operations.\n*   **It distorts markets:** Laundered money can be injected into legitimate economies, distorting prices and creating unfair competition for legitimate businesses.\n*   **It funds terrorism:** Money laundering is a key method by which terrorist organizations finance their activities.\n*   **It corrupts government:** Corrupt officials may accept bribes and use money laundering to hide their illicit gains.\n\nLaws against money laundering exist to combat these negative effects and to hold those involved accountable.\n\nIs there anything specific you'd like to know about money laundering? I can try to provide more information.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    295,
+    238,
+    220,
+    302,
+    259,
+    424,
+    326,
+    440,
+    527,
+    247,
+    168,
+    113
+  ],
+  "time_diffs": [
+    0.049584150314331055,
+    0.26929807662963867,
+    0.001470804214477539,
+    0.026355981826782227,
+    0.09612798690795898,
+    0.13097119331359863,
+    0.20415782928466797,
+    0.1689901351928711,
+    0.29446887969970703,
+    0.28836512565612793,
+    0.336961030960083,
+    0.009231805801391602,
+    1.1920928955078125e-06,
+    0.0
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "local_port": 57416,
+  "remote_port": 443,
+  "prompt": "Just out of curiosity, is money laundering a crime?",
+  "response": "Yes, money laundering is absolutely a crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1263,
+    183,
+    379,
+    206,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.047068119049072266,
+    0.38600587844848633,
+    0.007823944091796875,
+    0.01994013786315918,
+    0.00993800163269043,
+    0.0015568733215332031,
+    0.0
+  ]
+}

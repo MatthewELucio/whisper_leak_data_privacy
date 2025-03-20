@@ -1,0 +1,35 @@
+{
+  "local_port": 39456,
+  "remote_port": 443,
+  "prompt": "How does international law intersect with national laws on money laundering?",
+  "response": "International law and national laws on money laundering are deeply intertwined and mutually reinforcing. International law sets the framework and standards, while national laws implement and enforce these standards within their respective jurisdictions. Here's a breakdown of their intersection:\n\n**1. International Law Sets the Standards:**\n\n*   **Conventions and Treaties:** Several international legal instruments address money laundering:\n    *   **United Nations Convention against Transnational Organized Crime (UNTOC):** Obligates states to criminalize money laundering and adopt",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    95,
+    239,
+    403,
+    434,
+    267,
+    413,
+    258,
+    267,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.05042314529418945,
+    0.44020795822143555,
+    0.00011682510375976562,
+    0.013460159301757812,
+    0.0621490478515625,
+    0.09800601005554199,
+    0.14317083358764648,
+    0.17407512664794922,
+    0.24987196922302246,
+    0.015842914581298828,
+    0.0,
+    0.0
+  ]
+}

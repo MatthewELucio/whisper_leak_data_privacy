@@ -1,0 +1,29 @@
+{
+  "local_port": 47018,
+  "remote_port": 443,
+  "prompt": "If a person engages in money laundering, is that a legal offense?",
+  "response": "Yes, money laundering is a **legal offense** in most countries around the world. It is a serious crime with significant penalties.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    141,
+    224,
+    204,
+    381,
+    295,
+    191,
+    113
+  ],
+  "time_diffs": [
+    0.046807050704956055,
+    0.3370168209075928,
+    0.0014100074768066406,
+    0.012409210205078125,
+    0.09317684173583984,
+    0.0289461612701416,
+    0.009996891021728516,
+    0.001605987548828125,
+    0.0
+  ]
+}

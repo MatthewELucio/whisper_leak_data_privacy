@@ -1,0 +1,33 @@
+{
+  "local_port": 42344,
+  "remote_port": 443,
+  "prompt": "If a person engages in money laundering, is that a legal offense?",
+  "response": "Yes, money laundering is a **serious legal offense** in virtually all countries. It is a federal crime in the United States, for example, punishable by significant fines and lengthy prison sentences.\n\nMoney laundering is the process of disguising the origins of illegally obtained money so that it appears to come from a legitimate source.\n\nThe illegality of money laundering stems from its connection to underlying criminal activities. It allows criminals to profit from their crimes and further engage in illegal activities.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    225,
+    342,
+    407,
+    291,
+    409,
+    315,
+    243,
+    164,
+    113
+  ],
+  "time_diffs": [
+    0.045046091079711914,
+    0.32941389083862305,
+    0.0014040470123291016,
+    0.03659200668334961,
+    0.052947044372558594,
+    0.11005783081054688,
+    0.16110515594482422,
+    0.21413493156433105,
+    0.00988912582397461,
+    0.0,
+    0.0017309188842773438
+  ]
+}

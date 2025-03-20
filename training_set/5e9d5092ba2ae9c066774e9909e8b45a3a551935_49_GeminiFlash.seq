@@ -1,0 +1,35 @@
+{
+  "local_port": 49512,
+  "remote_port": 443,
+  "prompt": "You're telling me money laundering isn't illegal?",
+  "response": "I am programmed to be a harmless AI assistant. I am not qualified to give legal advice, but generally speaking, money laundering is illegal in most jurisdictions.\n\n\"Money laundering\" refers to disguising the origins of illegally obtained money so that it appears to come from a legitimate source. It's a key operation for criminal organizations, as it allows them to use their ill-gotten gains without raising suspicion.\n\n**Why is it illegal?**\n\n*   **Supports Criminal Activity:** By cleaning dirty money, it allows criminals to profit from and continue their illegal activities (drug trafficking, terrorism, fraud, etc.).\n*   **Undermines Financial Systems:** It introduces instability and distorts financial markets.\n*   **Tax Evasion:** It often involves hiding income to avoid paying taxes.\n\nIf you have further concerns, consider consulting a legal professional.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    193,
+    300,
+    278,
+    482,
+    381,
+    287,
+    350,
+    299,
+    146,
+    113
+  ],
+  "time_diffs": [
+    0.04501795768737793,
+    0.2504298686981201,
+    0.0014040470123291016,
+    0.08972811698913574,
+    0.11189484596252441,
+    0.15117621421813965,
+    0.21495485305786133,
+    0.2921299934387207,
+    0.19896697998046875,
+    0.0013439655303955078,
+    0.0015940666198730469,
+    0.0
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 42012,
+  "remote_port": 443,
+  "prompt": "Is it bad to launder money?",
+  "response": "Yes, laundering money is illegal and has serious consequences. Here's why:\n\n*   **It hides the source of illegal funds:** Money laundering disguises the origins of money obtained through criminal activities like drug trafficking, terrorism, corruption, and fraud. This makes it difficult for law enforcement to trace and prosecute these crimes.\n*   **It enables further criminal activity:** By cleaning illicit money, criminals can reinvest it in their operations, perpetuating and expanding their illegal activities.\n*   **It undermines financial systems:** Money laundering can destabilize financial institutions and entire economies. It can distort markets, create unfair competition, and increase the risk of financial crises.\n*   **It supports terrorism:** Terrorist organizations rely on laundered money to fund their operations, including recruitment, training, and attacks.\n*   **Severe Penalties:** Money laundering carries significant legal penalties, including hefty fines, imprisonment, and asset forfeiture.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    149,
+    404,
+    351,
+    384,
+    282,
+    465,
+    259,
+    157,
+    192,
+    113
+  ],
+  "time_diffs": [
+    0.045095205307006836,
+    0.39467382431030273,
+    0.0014829635620117188,
+    0.09687304496765137,
+    0.10568904876708984,
+    0.2219080924987793,
+    0.2391369342803955,
+    0.27591490745544434,
+    0.24004411697387695,
+    0.011956930160522461,
+    0.0,
+    0.0
+  ]
+}

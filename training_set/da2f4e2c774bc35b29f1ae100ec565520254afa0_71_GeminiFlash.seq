@@ -1,0 +1,39 @@
+{
+  "local_port": 40616,
+  "remote_port": 443,
+  "prompt": "There's no way money laundering is legal, is there?",
+  "response": "You are absolutely right. Money laundering is **not legal**. It is a serious crime in virtually every country around the world.\n\nMoney laundering involves concealing the origins of illegally obtained money, making it appear to come from a legitimate source. This allows criminals to use the funds without attracting attention to the underlying criminal activity.\n\nHere's why it's illegal and harmful:\n\n*   **Supports Criminal Activity:** Money laundering enables criminals to profit from their crimes, fueling further illegal activities like drug trafficking, terrorism, human trafficking, and corruption.\n*   **Distorts Economies:** Large-scale money laundering can destabilize financial markets, undermine legitimate businesses, and create an uneven playing field.\n*   **Undermines Rule of Law:** It allows criminals to operate with impunity and erodes public trust in institutions.\n\nGovernments and international organizations have implemented strict laws and regulations to combat money laundering, including:\n\n*   **Know Your Customer (KYC) regulations:** Financial institutions must verify the identity of their customers.\n*   **Suspicious Activity Reporting (SAR):** Financial institutions are required to report any transactions that appear suspicious.\n*   **Anti-Money Laundering (AML) programs:** Organizations need to have internal compliance programs to detect and prevent money laundering.\n\nPenalties for money laundering can be severe, including hefty fines, imprisonment, and asset forfeiture.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    272,
+    372,
+    364,
+    268,
+    499,
+    351,
+    499,
+    343,
+    223,
+    140,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.04705190658569336,
+    0.28168606758117676,
+    0.0013930797576904297,
+    0.11356878280639648,
+    0.12409520149230957,
+    0.1958940029144287,
+    0.19227290153503418,
+    0.2559950351715088,
+    0.2741549015045166,
+    0.3528740406036377,
+    0.08776211738586426,
+    0.009112834930419922,
+    0.0,
+    0.0
+  ]
+}

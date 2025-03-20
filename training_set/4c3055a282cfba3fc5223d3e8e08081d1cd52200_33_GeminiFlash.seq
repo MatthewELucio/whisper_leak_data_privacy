@@ -1,0 +1,39 @@
+{
+  "local_port": 36242,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law.\n\nHere's why:\n\n*   **International Treaties and Conventions:** Numerous international treaties and conventions, such as the Vienna Convention, the Palermo Convention, and the Financial Action Task Force (FATF) recommendations, require countries to criminalize money laundering. These agreements reflect a broad international understanding of the threat posed by money laundering and the need for coordinated action.\n\n*   **National Laws:** Virtually every country in the world has enacted laws to prohibit money laundering. These laws vary in specifics, but they generally criminalize the process of concealing or disguising the origins of illegally obtained money or property, so it appears to come from a legitimate source.\n\n*   **Economic Harm:** Money laundering enables criminal activities such as drug trafficking, terrorism, corruption, and fraud. It distorts markets, undermines the integrity of financial institutions, and can destabilize entire economies.\n\n*   **Moral and Ethical Considerations:** Facilitating criminal activity is inherently unethical. Laundering money allows criminals to profit from their crimes and continue to engage in harmful behaviors.\n\nWhile there might be debates about the specifics of anti-money laundering (AML) regulations, the severity of penalties, or the best methods for combating it, the fundamental principle that money laundering itself is illegal is universally accepted.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1270,
+    386,
+    391,
+    257,
+    422,
+    245,
+    380,
+    329,
+    412,
+    296,
+    175,
+    184,
+    113
+  ],
+  "time_diffs": [
+    0.0474247932434082,
+    0.39977002143859863,
+    0.008246183395385742,
+    0.06850886344909668,
+    0.07673096656799316,
+    0.1491701602935791,
+    0.19376087188720703,
+    0.24988293647766113,
+    0.2730591297149658,
+    0.3430159091949463,
+    0.060755014419555664,
+    0.006503105163574219,
+    5.1975250244140625e-05,
+    8.702278137207031e-05
+  ]
+}

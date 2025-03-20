@@ -1,0 +1,29 @@
+{
+  "local_port": 42136,
+  "remote_port": 443,
+  "prompt": "Is the process of money laundering against the law?",
+  "response": "Yes, the process of money laundering is against the law in virtually all countries with developed financial systems.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    258,
+    230,
+    242,
+    292,
+    265,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.05021309852600098,
+    0.3487839698791504,
+    0.0012481212615966797,
+    0.011462926864624023,
+    0.09912896156311035,
+    0.0017900466918945312,
+    0.01218104362487793,
+    0.0015959739685058594,
+    0.025330066680908203
+  ]
+}

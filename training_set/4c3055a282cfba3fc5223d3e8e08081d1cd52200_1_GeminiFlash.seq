@@ -1,0 +1,27 @@
+{
+  "local_port": 58800,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    114,
+    233,
+    394,
+    229,
+    217,
+    113
+  ],
+  "time_diffs": [
+    0.05534696578979492,
+    0.42591214179992676,
+    4.601478576660156e-05,
+    0.015311956405639648,
+    0.039140939712524414,
+    0.007314920425415039,
+    0.0,
+    0.0015401840209960938
+  ]
+}

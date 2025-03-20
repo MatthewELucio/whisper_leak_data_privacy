@@ -1,0 +1,37 @@
+{
+  "local_port": 59866,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, yes, it's fairly obvious that money laundering is a crime. The act of concealing illegally obtained money to make it appear legitimate is inherently deceptive and undermines the legal and financial systems of a country.\n\nHowever, it's worth noting a few nuances:\n\n*   **Understanding of the mechanisms:** While the *concept* of making dirty money clean is generally understood to be wrong, the *specific* methods and technicalities of money laundering might not be clear to everyone.\n*   **Severity and impact:** People might not fully grasp the severe consequences of money laundering, such as its connection to organized crime, terrorism, and corruption.\n*   **Moral complexities:** In some rare cases, individuals might engage in activities that technically fall under money laundering to protect themselves or their families from oppressive regimes or unjust situations. While this doesn't excuse the act, it can introduce a degree of moral complexity.\n\nIn general, though, the consensus is that money laundering is a serious crime with far-reaching negative effects, and most people recognize it as such.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    277,
+    410,
+    284,
+    267,
+    486,
+    444,
+    360,
+    250,
+    240,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04407501220703125,
+    0.2734639644622803,
+    0.0014510154724121094,
+    0.1246800422668457,
+    0.11804890632629395,
+    0.19187092781066895,
+    0.18004918098449707,
+    0.2881178855895996,
+    0.3861250877380371,
+    0.12822985649108887,
+    0.009565114974975586,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "local_port": 53966,
+  "remote_port": 443,
+  "prompt": "Is it like, illegal to launder money?",
+  "response": "Yes, it is absolutely illegal to launder money. Money laundering is a serious crime in virtually every country around the world.\n\nHere's why and what makes it illegal:\n\n*   **Concealing the Source of Illegally Obtained Funds:** Money laundering is the process of disguising the origins of illegally obtained money so that it appears to come from a legitimate source. This is done to avoid detection and prosecution for the underlying criminal activity that generated the money (like drug trafficking, fraud, corruption, etc.).\n\n*   **It Supports Crime:** By making it possible to use illicit proceeds, money laundering fuels criminal enterprises. Without the ability to clean their money, criminals would have a much harder time profiting from and continuing their illegal activities.\n\n*   **Laws and Penalties:** Money laundering is specifically outlawed by a wide range of laws at both national and international levels. Penalties can be very severe, including:\n\n    *   **Imprisonment:** Often lengthy prison sentences.\n    *   **Fines:** Substantial financial penalties.\n    *   **Asset Forfeiture:** Seizure of assets involved in the money laundering scheme (the money itself, property bought with it, etc.).\n*   **International Cooperation:** Because money laundering often crosses borders, there's significant international cooperation to combat it. Organizations like the Financial Action Task Force (FATF) set standards and promote effective measures to fight money laundering, and countries work together to investigate and prosecute offenders.\n*   **Know Your Customer (KYC) and Anti-Money Laundering (AML) Regulations:** Banks and other financial institutions are required to implement strict KYC and AML programs. These programs are designed to:\n\n    *   Verify the identity of their customers.\n    *   Monitor transactions for suspicious activity.\n    *   Report suspicious activity to the authorities.\n    *   Keep records of transactions.\n\n**In short, money laundering is illegal, and authorities take it very seriously.**",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1274,
+    247,
+    336,
+    298,
+    337,
+    264,
+    370,
+    297,
+    298,
+    355,
+    364,
+    376,
+    161,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.04650306701660156,
+    0.2963399887084961,
+    0.028631925582885742,
+    0.05132102966308594,
+    0.11076998710632324,
+    0.18719911575317383,
+    0.19793081283569336,
+    0.33105921745300293,
+    0.2771108150482178,
+    0.41820812225341797,
+    0.4004039764404297,
+    0.33356404304504395,
+    0.0480809211730957,
+    0.009769916534423828,
+    5.698204040527344e-05,
+    0.00020313262939453125
+  ]
+}

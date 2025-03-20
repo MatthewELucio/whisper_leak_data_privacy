@@ -1,0 +1,33 @@
+{
+  "local_port": 56504,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, the idea that money laundering is a crime is pretty well understood. It's often portrayed in movies and TV shows as something that criminals do to hide their ill-gotten gains.\n\nHowever, understanding *why* it's a crime is important. It's not just about hiding money. Money laundering allows criminals to profit from their illegal activities (like drug trafficking, human trafficking, and terrorism) and further enables those activities to continue and expand. By cleaning the money, they can use it without raising suspicion, invest in legitimate businesses, and further entrench themselves in society.\n\nThe laws against money laundering are designed to disrupt these criminal enterprises by making it difficult for them to use their profits. They also aim to prevent the financial system from being used to support illegal activities.\n\nSo, while the concept of money laundering as a crime seems obvious on the surface, the underlying reasons and the damage it causes are quite complex.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1389,
+    444,
+    364,
+    270,
+    449,
+    320,
+    403,
+    261,
+    170,
+    113
+  ],
+  "time_diffs": [
+    0.04672098159790039,
+    0.3710770606994629,
+    0.15990090370178223,
+    0.1169741153717041,
+    0.1690359115600586,
+    0.2400500774383545,
+    0.2821688652038574,
+    0.2549009323120117,
+    0.007337093353271484,
+    0.0,
+    0.00038909912109375
+  ]
+}

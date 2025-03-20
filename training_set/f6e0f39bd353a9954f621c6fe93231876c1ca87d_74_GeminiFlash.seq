@@ -1,0 +1,29 @@
+{
+  "local_port": 36082,
+  "remote_port": 443,
+  "prompt": "Surely, money laundering is illegal, right?",
+  "response": "Yes, absolutely. Money laundering is illegal in virtually every country around the world. It's a serious crime with significant penalties.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    196,
+    390,
+    421,
+    341,
+    296,
+    221,
+    113
+  ],
+  "time_diffs": [
+    0.04624605178833008,
+    0.3346390724182129,
+    0.0013380050659179688,
+    0.0033369064331054688,
+    0.07809090614318848,
+    0.050083160400390625,
+    0.011027812957763672,
+    0.0015060901641845703,
+    0.0
+  ]
+}

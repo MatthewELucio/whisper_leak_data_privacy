@@ -1,0 +1,39 @@
+{
+  "local_port": 56976,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, yes, the concept of money laundering being a crime is obvious. It's generally understood to be the process of disguising illegally obtained money so it appears to come from a legitimate source.\n\nHowever, the *details* of why it's a crime and how it works might not be obvious to everyone. Here's why it's considered a crime:\n\n*   **It enables and protects other crimes:** Money laundering allows criminals to profit from illegal activities like drug trafficking, human trafficking, terrorism, fraud, and corruption. Without the ability to clean their money, these crimes would be much less profitable and harder to sustain.\n*   **It undermines financial institutions:** Money laundering can destabilize financial systems by introducing illicit funds, creating opportunities for corruption, and damaging the reputation of banks and other institutions.\n*   **It distorts the economy:** Laundered money can be used to fund unfair competition, manipulate markets, and evade taxes, which can harm legitimate businesses and economic growth.\n*   **It funds terrorism:** Money laundering is often used to finance terrorist activities, posing a threat to national security and international stability.\n*   **Legal framework**: Almost all countries have laws that make money laundering illegal.\n\nSo, while the fundamental concept is often understood, the broader implications and specific mechanisms involved in money laundering might not be immediately obvious to everyone.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    171,
+    240,
+    256,
+    381,
+    326,
+    515,
+    447,
+    499,
+    370,
+    179,
+    168,
+    113
+  ],
+  "time_diffs": [
+    0.04715108871459961,
+    0.3045051097869873,
+    0.0013649463653564453,
+    0.09563589096069336,
+    0.12241101264953613,
+    0.17973017692565918,
+    0.20405077934265137,
+    0.26900506019592285,
+    0.32221412658691406,
+    0.3350489139556885,
+    0.1557149887084961,
+    0.013571977615356445,
+    0.00019693374633789062,
+    8.702278137207031e-05
+  ]
+}

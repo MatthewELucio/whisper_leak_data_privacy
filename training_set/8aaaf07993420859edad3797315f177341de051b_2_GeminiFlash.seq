@@ -1,0 +1,41 @@
+{
+  "local_port": 39026,
+  "remote_port": 443,
+  "prompt": "Is it like, illegal to launder money?",
+  "response": "Yes, it is absolutely illegal to launder money in virtually every country in the world. Money laundering is a serious crime with severe penalties.\n\nHere's why and what those penalties can be:\n\n*   **What is Money Laundering?** It's the process of disguising the origins of illegally obtained money so that it appears to come from a legitimate source. This allows criminals to use the money without drawing attention to the underlying criminal activity that generated it.\n\n*   **Why is it illegal?**\n    *   It allows criminals to profit from their crimes (drug trafficking, fraud, corruption, etc.).\n    *   It undermines the integrity of financial institutions and the economy.\n    *   It can fund terrorism and other serious crimes.\n    *   It distorts markets and creates unfair competition.\n\n*   **Penalties:** The penalties for money laundering are very stiff and can include:\n    *   **Imprisonment:** Often lengthy prison sentences.\n    *   **Fines:** Huge monetary fines, often exceeding the amount of money laundered.\n    *   **Asset Forfeiture:** The government can seize assets involved in the money laundering operation, including money, property, and other valuables.\n    *   **Reputational Damage:** A conviction for money laundering can destroy a person's reputation and career.\n    *   **Civil Penalties:** In addition to criminal penalties, there can also be civil lawsuits and penalties.\n\n*   **Who Gets Prosecuted?** Not just the criminals who generated the illicit funds, but also anyone who knowingly helps them to launder the money. This could include bankers, accountants, lawyers, and other professionals.\n\n**In short: Money laundering is a serious crime with major consequences.**",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1268,
+    226,
+    218,
+    319,
+    379,
+    326,
+    268,
+    334,
+    294,
+    545,
+    404,
+    310,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.04772496223449707,
+    0.34752798080444336,
+    0.03000497817993164,
+    0.03269219398498535,
+    0.10530781745910645,
+    0.19593310356140137,
+    0.16513800621032715,
+    0.24616384506225586,
+    0.2821030616760254,
+    0.3336629867553711,
+    0.37455010414123535,
+    0.2069530487060547,
+    0.009694814682006836,
+    1.1920928955078125e-06,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 35694,
+  "remote_port": 443,
+  "prompt": "Do you get in trouble for laundering money?",
+  "response": "Yes, laundering money is a serious crime with significant legal consequences. The specific penalties vary depending on the jurisdiction (country, state, etc.) and the amount of money laundered, but they almost always include:\n\n*   **Imprisonment:** Money laundering convictions often carry lengthy prison sentences.\n*   **Fines:** Substantial fines are typically imposed, often a multiple of the amount of money laundered.\n*   **Asset Forfeiture:** Assets involved in or derived from the money laundering activities can be seized by the government.\n*   **Reputational Damage:** A conviction for money laundering can severely damage a person's or organization's reputation, making it difficult to obtain employment, secure loans, or conduct business in the future.\n\nFurthermore, money laundering is often associated with other serious crimes, such as drug trafficking, terrorism, and organized crime. Therefore, someone convicted of money laundering may also face additional charges and penalties related to these underlying criminal activities.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    216,
+    244,
+    375,
+    349,
+    336,
+    208,
+    385,
+    469,
+    191,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.05119490623474121,
+    0.36054420471191406,
+    0.0014178752899169922,
+    0.04555392265319824,
+    0.026110172271728516,
+    0.1109158992767334,
+    0.17402291297912598,
+    0.1831212043762207,
+    0.283937931060791,
+    0.2115020751953125,
+    0.01083993911743164,
+    0.0,
+    0.0
+  ]
+}

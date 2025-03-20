@@ -1,0 +1,29 @@
+{
+  "local_port": 40294,
+  "remote_port": 443,
+  "prompt": "Is it illegal to engage in money laundering?",
+  "response": "Yes, money laundering is illegal in virtually every country. It's a serious federal crime with severe penalties, including lengthy prison sentences and hefty fines.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    248,
+    176,
+    421,
+    305,
+    157,
+    204,
+    113
+  ],
+  "time_diffs": [
+    0.04659104347229004,
+    0.4051508903503418,
+    0.0013091564178466797,
+    0.032711029052734375,
+    0.10007596015930176,
+    0.07696795463562012,
+    0.006938934326171875,
+    0.0,
+    0.0014271736145019531
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "local_port": 54778,
+  "remote_port": 443,
+  "prompt": "If a business launders money, is it breaking the law?",
+  "response": "Yes, money laundering is a serious crime and is illegal in virtually all countries.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1436,
+    227,
+    370,
+    184,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.06259608268737793,
+    0.4045450687408447,
+    0.016687870025634766,
+    0.09211015701293945,
+    0.009749889373779297,
+    0.0016930103302001953,
+    0.0
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 60162,
+  "remote_port": 443,
+  "prompt": "Just out of curiosity, is money laundering a crime?",
+  "response": "Yes, money laundering is definitely a crime. It's a serious federal crime in most countries, including the United States.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1273,
+    347,
+    245,
+    401,
+    260,
+    232,
+    113
+  ],
+  "time_diffs": [
+    0.04880785942077637,
+    0.4006330966949463,
+    0.031029939651489258,
+    0.098236083984375,
+    0.036711931228637695,
+    0.009139060974121094,
+    0.0013968944549560547,
+    0.0
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "local_port": 48192,
+  "remote_port": 443,
+  "prompt": "If a business launders money, is it breaking the law?",
+  "response": "Yes, absolutely. Money laundering is a serious crime in virtually all countries. It is illegal to engage in any activity that disguises the origin of illegally obtained money so that it appears to come from a legitimate source.\n\nHere's why it's against the law and some of the common legal consequences:\n\n*   **Criminal Offense:** Money laundering is a federal crime (in the US, for example) and a crime in most developed nations.\n\n*   **Penalties:** Penalties for money laundering can be severe, including:\n    *   **Imprisonment:** Long prison sentences are common.\n    *   **Fines:** Substantial fines, often exceeding the amount of money laundered.\n    *   **Asset Forfeiture:** The government can seize assets involved in the money laundering operation, including businesses, real estate, and bank accounts.\n\n*   **Related Charges:** Businesses and individuals involved in money laundering may also face charges related to the underlying criminal activity that generated the illicit funds (e.g., drug trafficking, fraud, tax evasion).\n\n*   **Reputational Damage:** Even if a business avoids criminal charges, being associated with money laundering can destroy its reputation and lead to a loss of customers and business partners.\n\nIn short, money laundering is a serious criminal offense with significant legal and financial consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    177,
+    287,
+    398,
+    347,
+    276,
+    222,
+    387,
+    400,
+    340,
+    284,
+    201,
+    163,
+    113
+  ],
+  "time_diffs": [
+    0.047792911529541016,
+    0.467116117477417,
+    0.0014917850494384766,
+    0.032015085220336914,
+    0.08808708190917969,
+    0.09136199951171875,
+    0.15895986557006836,
+    0.17422008514404297,
+    0.22602295875549316,
+    0.2940549850463867,
+    0.3193550109863281,
+    0.042962074279785156,
+    0.0066759586334228516,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 35456,
+  "remote_port": 443,
+  "prompt": "Is it wrong to launder money?",
+  "response": "Yes, it is absolutely wrong to launder money. Here's why:\n\n*   **It's illegal:** Money laundering is a crime in virtually every country in the world. The specific laws and penalties vary, but the act itself is almost universally prohibited.\n*   **It enables other crimes:** Money laundering allows criminals to profit from their illegal activities without detection. This provides an incentive and the means to continue engaging in those crimes, such as drug trafficking, human trafficking, terrorism, and corruption.\n*   **It undermines financial systems:** Money laundering can destabilize financial institutions and economies by introducing illicit funds into the legitimate financial system. This can distort markets, create unfair competition, and erode trust in the system.\n*   **It supports corruption:** Money laundering often goes hand in hand with corruption, as corrupt officials use it to hide and enjoy the proceeds of their illicit activities. This can undermine governance, erode public trust, and hinder development.\n*   **It can fund terrorism:** Money laundering can be used to finance terrorist activities, providing the resources needed to plan and carry out attacks.\n\nIn short, money laundering is wrong because it facilitates and perpetuates a wide range of serious crimes, undermines financial systems, and can have devastating consequences for individuals, communities, and entire nations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1277,
+    195,
+    427,
+    417,
+    358,
+    483,
+    302,
+    370,
+    419,
+    195,
+    138,
+    113
+  ],
+  "time_diffs": [
+    0.050425052642822266,
+    0.4355130195617676,
+    0.04451489448547363,
+    0.015336990356445312,
+    0.07407307624816895,
+    0.2369239330291748,
+    0.21402597427368164,
+    0.28312110900878906,
+    0.2929708957672119,
+    0.35149598121643066,
+    0.04169106483459473,
+    0.0,
+    0.0
+  ]
+}

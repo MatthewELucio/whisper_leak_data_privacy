@@ -1,0 +1,43 @@
+{
+  "local_port": 36902,
+  "remote_port": 443,
+  "prompt": "Are there international laws against money laundering?",
+  "response": "Yes, there are several international laws and conventions aimed at combating money laundering. Here are some of the most important ones:\n\n*   **United Nations Convention against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (1988):** This convention was the first major international treaty to specifically address money laundering. It requires countries to criminalize the laundering of drug proceeds and to take steps to identify, trace, and seize such proceeds.\n\n*   **United Nations Convention against Transnational Organized Crime (2000):** This convention expands the scope of money laundering offenses beyond drug-related crimes to include proceeds from a wider range of serious crimes. It also promotes international cooperation in combating transnational organized crime, including money laundering.\n\n*   **International Convention for the Suppression of the Financing of Terrorism (1999):** While not directly aimed at money laundering in general, this convention requires countries to criminalize the financing of terrorism and to take measures to prevent and suppress such financing. This often involves similar measures as those used to combat money laundering.\n\n*   **Financial Action Task Force (FATF) Recommendations:** The FATF is an inter-governmental body that sets international standards for combating money laundering, terrorist financing, and the financing of proliferation of weapons of mass destruction. Its recommendations are not legally binding treaties, but they are widely recognized and implemented by countries around the world. They provide a comprehensive framework for preventing and detecting money laundering, including measures related to customer due diligence, record-keeping, and reporting of suspicious transactions.\n\n*   **European Union Directives:** The European Union has issued several directives on money laundering that member states are required to implement into their national laws. These directives set out requirements for customer due diligence, beneficial ownership transparency, and reporting of suspicious transactions.\n\nIt's important to note that these are just some of the key international laws and conventions related to money laundering. Many countries have also enacted their own national laws to combat money laundering, often based on these international standards.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    206,
+    390,
+    398,
+    414,
+    272,
+    371,
+    282,
+    457,
+    388,
+    550,
+    462,
+    286,
+    300,
+    113
+  ],
+  "time_diffs": [
+    0.04582500457763672,
+    0.434812068939209,
+    0.0016579627990722656,
+    0.017515897750854492,
+    0.09296202659606934,
+    0.10128498077392578,
+    0.15487098693847656,
+    0.1760571002960205,
+    0.27123403549194336,
+    0.64963698387146,
+    0.10130500793457031,
+    0.25284790992736816,
+    0.36439990997314453,
+    0.19248008728027344,
+    0.08595609664916992,
+    0.0
+  ]
+}

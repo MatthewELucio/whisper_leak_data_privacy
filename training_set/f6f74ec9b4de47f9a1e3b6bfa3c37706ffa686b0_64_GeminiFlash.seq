@@ -1,0 +1,33 @@
+{
+  "local_port": 50220,
+  "remote_port": 443,
+  "prompt": "What is the legal framework surrounding money laundering?",
+  "response": "The legal framework surrounding money laundering is complex and multifaceted, involving international agreements, national laws, and regulatory bodies. It's designed to prevent criminals from disguising the proceeds of their illegal activities as legitimate income. Here's a breakdown of the key elements:\n\n**I. International Framework:**\n\n*   **The United Nations Convention Against Illicit Traffic",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    247,
+    234,
+    441,
+    440,
+    350,
+    206,
+    159,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.04704403877258301,
+    0.4261479377746582,
+    0.0014951229095458984,
+    0.012018918991088867,
+    0.08046507835388184,
+    0.10008478164672852,
+    0.13200807571411133,
+    0.18778610229492188,
+    0.005812883377075195,
+    0.0015799999237060547,
+    0.0
+  ]
+}

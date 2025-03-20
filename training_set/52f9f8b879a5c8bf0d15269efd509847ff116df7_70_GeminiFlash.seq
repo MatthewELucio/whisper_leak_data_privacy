@@ -1,0 +1,31 @@
+{
+  "local_port": 48336,
+  "remote_port": 443,
+  "prompt": "Is it illegal to conduct money laundering?",
+  "response": "Yes, money laundering is illegal in virtually every country. It's a serious crime with severe penalties, including lengthy prison sentences and substantial fines. Laws are in place both domestically and internationally to combat money laundering.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    230,
+    300,
+    221,
+    457,
+    175,
+    269,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.046929121017456055,
+    0.326915979385376,
+    0.0014650821685791016,
+    0.029513835906982422,
+    0.049944162368774414,
+    0.11416792869567871,
+    0.05171394348144531,
+    0.008280038833618164,
+    0.001394033432006836,
+    0.0
+  ]
+}

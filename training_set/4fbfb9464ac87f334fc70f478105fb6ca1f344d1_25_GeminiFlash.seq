@@ -1,0 +1,29 @@
+{
+  "local_port": 51228,
+  "remote_port": 443,
+  "prompt": "If a business launders money, is it breaking the law?",
+  "response": "Yes, absolutely. Money laundering is a serious federal crime in most countries, including the United States.  Businesses that engage in money laundering are breaking the law and face severe penalties.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1404,
+    383,
+    245,
+    418,
+    275,
+    175,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.0444331169128418,
+    0.7889928817749023,
+    0.019292116165161133,
+    0.09417891502380371,
+    0.06594109535217285,
+    0.00152587890625,
+    0.031458139419555664,
+    0.0,
+    0.0016369819641113281
+  ]
+}

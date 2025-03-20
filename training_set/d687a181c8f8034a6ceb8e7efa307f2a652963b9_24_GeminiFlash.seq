@@ -1,0 +1,41 @@
+{
+  "local_port": 50768,
+  "remote_port": 443,
+  "prompt": "Is there a legal risk associated with money laundering?",
+  "response": "Yes, there are significant legal risks associated with money laundering. These risks include:\n\n*   **Criminal Prosecution:** Money laundering is a federal crime in most countries. Convictions can lead to substantial prison sentences and hefty fines.\n*   **Asset Forfeiture:** Assets involved in or derived from money laundering activities can be seized by law enforcement. This can include funds, property, and other valuable possessions.\n*   **Civil Penalties:** Civil lawsuits can be filed against individuals and entities involved in money laundering, resulting in financial penalties and reputational damage.\n*   **Business Restrictions:** Businesses found to be involved in money laundering may face severe restrictions, including loss of licenses, closure, and being barred from certain industries.\n*   **Reputational Damage:** Involvement in money laundering can severely damage an individual's or business's reputation, making it difficult to obtain financing, attract customers, or maintain relationships with other businesses.\n*   **International Sanctions:** Individuals and entities involved in money laundering may be subject to international sanctions, which can restrict their ability to travel, conduct business, or access financial services in certain countries.\n*   **Increased Scrutiny:** Being investigated for money laundering can lead to increased scrutiny from law enforcement, regulators, and financial institutions, making it more difficult to conduct legitimate business.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    103,
+    148,
+    239,
+    371,
+    298,
+    278,
+    278,
+    302,
+    494,
+    191,
+    169,
+    126,
+    113
+  ],
+  "time_diffs": [
+    0.0467679500579834,
+    0.2971069812774658,
+    0.0011179447174072266,
+    0.02581000328063965,
+    0.09302711486816406,
+    0.09706497192382812,
+    0.2068779468536377,
+    0.13712596893310547,
+    0.29015016555786133,
+    0.27625203132629395,
+    0.36800289154052734,
+    0.0280609130859375,
+    0.009433984756469727,
+    5.221366882324219e-05,
+    0.0
+  ]
+}

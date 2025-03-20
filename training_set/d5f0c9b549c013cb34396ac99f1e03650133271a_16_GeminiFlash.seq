@@ -1,0 +1,31 @@
+{
+  "local_port": 39176,
+  "remote_port": 443,
+  "prompt": "Is there any doubt that money laundering is illegal?",
+  "response": "No, there is absolutely no doubt that money laundering is illegal. It is a crime in virtually every country in the world, and international organizations like the Financial Action Task Force (FATF) work to combat it globally.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    116,
+    241,
+    249,
+    323,
+    388,
+    278,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.053070068359375,
+    0.442641019821167,
+    0.0011720657348632812,
+    0.03599190711975098,
+    0.043637990951538086,
+    0.09631514549255371,
+    0.015976905822753906,
+    0.008888959884643555,
+    0.0015330314636230469,
+    0.0
+  ]
+}

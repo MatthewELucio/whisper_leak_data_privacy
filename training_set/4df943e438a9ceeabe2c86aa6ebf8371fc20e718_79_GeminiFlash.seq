@@ -1,0 +1,31 @@
+{
+  "local_port": 36576,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "Yes, it is. Money laundering is illegal in virtually every country around the world. It's a crime because it allows criminals to profit from their illegal activities and helps them conceal the source of those funds. This makes it easier for them to continue engaging in criminal behavior.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    185,
+    272,
+    298,
+    382,
+    361,
+    246,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.04662895202636719,
+    0.3341670036315918,
+    0.0014438629150390625,
+    0.029291152954101562,
+    0.08607602119445801,
+    0.130112886428833,
+    0.11525106430053711,
+    0.007546901702880859,
+    0.0,
+    0.0016710758209228516
+  ]
+}

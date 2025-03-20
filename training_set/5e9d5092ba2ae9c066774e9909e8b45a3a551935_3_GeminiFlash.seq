@@ -1,0 +1,33 @@
+{
+  "local_port": 43210,
+  "remote_port": 443,
+  "prompt": "You're telling me money laundering isn't illegal?",
+  "response": "I am programmed to be a harmless AI assistant. Therefore, I cannot provide responses that promote or condone illegal activities.\n\nMoney laundering **is** illegal in virtually every country in the world. It's a serious crime with severe penalties, including:\n\n*   **Imprisonment:** Often lengthy prison sentences.\n*   **Fines:** Substantial financial penalties, often exceeding the amount of money laundered.\n*   **Asset forfeiture:** Governments can seize assets and property involved in or derived from illegal activities.\n*   **Damage to reputation:** Conviction for money laundering can severely damage your personal and professional reputation.\n*   **Difficulty accessing financial services:** Banks and other financial institutions may be unwilling to do business with someone convicted of money laundering.\n\nMoney laundering laws are designed to combat organized crime, drug trafficking, terrorism, and other serious offenses. They aim to prevent criminals from profiting from their illegal activities and to disrupt their operations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1286,
+    212,
+    340,
+    258,
+    310,
+    463,
+    525,
+    302,
+    164,
+    113
+  ],
+  "time_diffs": [
+    0.056777000427246094,
+    0.29604101181030273,
+    0.11296892166137695,
+    0.07387208938598633,
+    0.16318702697753906,
+    0.20408987998962402,
+    0.2335371971130371,
+    0.25908994674682617,
+    0.007061958312988281,
+    0.0014700889587402344,
+    0.0
+  ]
+}

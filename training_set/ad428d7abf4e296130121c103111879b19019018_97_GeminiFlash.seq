@@ -1,0 +1,29 @@
+{
+  "local_port": 58462,
+  "remote_port": 443,
+  "prompt": "Hey, is money laundering illegal?",
+  "response": "Yes, absolutely. Money laundering is a serious crime in virtually every country. It's the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    293,
+    218,
+    409,
+    248,
+    267,
+    209,
+    113
+  ],
+  "time_diffs": [
+    0.046813011169433594,
+    0.6042001247406006,
+    0.0013630390167236328,
+    0.011360883712768555,
+    0.08925414085388184,
+    0.11994099617004395,
+    0.02398395538330078,
+    0.0106048583984375,
+    0.0029180049896240234
+  ]
+}

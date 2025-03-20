@@ -1,0 +1,43 @@
+{
+  "local_port": 35924,
+  "remote_port": 443,
+  "prompt": "Do anti-money laundering regulations exist?",
+  "response": "Yes, anti-money laundering (AML) regulations exist in almost every country around the world. These regulations are designed to combat the practice of making illegally obtained proceeds (money) appear to have originated from a legitimate source.\n\nHere's a breakdown of why and where these regulations exist:\n\n*   **Global Problem:** Money laundering is a global problem that facilitates various criminal activities, including drug trafficking, terrorism financing, corruption, and fraud.\n*   **International Standards:** The Financial Action Task Force (FATF) is an inter-governmental body that sets international standards for combating money laundering and terrorist financing. Most countries adhere to FATF recommendations.\n*   **National Laws:** Based on international standards, countries enact their own AML laws and regulations. These laws typically require financial institutions and other designated businesses to:\n    *   **Customer Due Diligence (CDD):** Identify and verify the identity of their customers.\n    *   **Transaction Monitoring:** Monitor customer transactions for suspicious activity.\n    *   **Reporting Suspicious Activity:** Report suspicious transactions to the appropriate authorities (e.g., a Financial Intelligence Unit).\n    *   **Record Keeping:** Maintain records of customer identification, transactions, and reports.\n    *   **Compliance Programs:** Implement AML compliance programs, including policies, procedures, and training.\n*   **Examples of AML Regulations:**\n    *   **United States:** The Bank Secrecy Act (BSA) and the USA PATRIOT Act form the basis of AML regulations.\n    *   **European Union:** AML Directives set the framework for AML rules across member states.\n    *   **United Kingdom:** The Proceeds of Crime Act 2002 and Money Laundering Regulations 2017.\n    *   **Canada:** The Proceeds of Crime (Money Laundering) and Terrorist Financing Act (PCMLTFA).\n    *   **Australia:** The Anti-Money Laundering and Counter-Terrorism Financing Act 2006 (AML/CTF Act).\n\nIn summary, AML regulations are widespread and are a crucial tool in the fight against financial crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1357,
+    147,
+    298,
+    222,
+    238,
+    308,
+    362,
+    494,
+    444,
+    329,
+    332,
+    307,
+    284,
+    173,
+    113
+  ],
+  "time_diffs": [
+    0.04753518104553223,
+    0.37925195693969727,
+    0.004499912261962891,
+    0.08749699592590332,
+    0.132033109664917,
+    0.17096686363220215,
+    0.21620512008666992,
+    0.283923864364624,
+    0.22890019416809082,
+    0.3642277717590332,
+    0.3960270881652832,
+    0.3061840534210205,
+    0.2107710838317871,
+    0.009912967681884766,
+    0.0,
+    0.0
+  ]
+}

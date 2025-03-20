@@ -1,0 +1,39 @@
+{
+  "local_port": 52326,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law.\n\nHere's why:\n\n*   **International Treaties and Conventions:** Numerous international treaties and conventions, such as the Vienna Convention, the Palermo Convention, and the Financial Action Task Force (FATF) recommendations, criminalize money laundering and require signatory nations to implement laws against it.\n*   **National Laws:** Virtually every country in the world has enacted laws that specifically prohibit money laundering. These laws define money laundering as a criminal offense, outline the types of activities that constitute money laundering, and establish penalties for violations.\n*   **Broad condemnation:** Money laundering is broadly condemned because it facilitates and enables a wide range of serious crimes, including drug trafficking, terrorism, corruption, and human trafficking. By cleaning illicit proceeds, it allows criminals to profit from their illegal activities and further perpetrate these crimes.\n*   **Economic impact:** Money laundering can destabilize financial systems, distort markets, and undermine economic development.\n\nIn summary, the criminalization of money laundering is a widely accepted principle of international law and is reflected in the legal frameworks of almost all countries.",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    230,
+    390,
+    243,
+    256,
+    369,
+    325,
+    418,
+    313,
+    333,
+    241,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.05413103103637695,
+    0.4146158695220947,
+    0.0013630390167236328,
+    0.016256093978881836,
+    0.07319092750549316,
+    0.10221004486083984,
+    0.18695807456970215,
+    0.17272591590881348,
+    0.39043688774108887,
+    0.28383708000183105,
+    0.18602204322814941,
+    0.007673025131225586,
+    0.00037288665771484375,
+    1.1920928955078125e-06
+  ]
+}

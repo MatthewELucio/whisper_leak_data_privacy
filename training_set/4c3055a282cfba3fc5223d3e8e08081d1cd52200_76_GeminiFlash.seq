@@ -1,0 +1,39 @@
+{
+  "local_port": 53292,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law.\n\nHere's why:\n\n*   **International Laws and Treaties:** Numerous international organizations and treaties, like the Financial Action Task Force (FATF), the United Nations Office on Drugs and Crime (UNODC), and the Council of Europe Convention on Laundering, Search, Seizure and Confiscation of the Proceeds from Crime, promote and require countries to criminalize money laundering.\n*   **National Laws:** Virtually every country has enacted laws that make money laundering illegal. These laws vary in detail but share the fundamental principle that concealing the origin of illegally obtained money is a crime.\n*   **Global Cooperation:** The fight against money laundering requires international cooperation. Countries share information, extradite offenders, and coordinate efforts to combat money laundering. This level of collaboration would be impossible if there wasn't agreement on its illegality.\n*   **Impact of Money Laundering:** Money laundering facilitates criminal activity, undermines financial systems, and can destabilize economies. These harmful effects are widely recognized, leading to universal condemnation of the practice.\n\nIn summary, the criminalization of money laundering is a cornerstone of international efforts to combat crime and maintain the integrity of financial systems, and is widely accepted as illegal.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    89,
+    337,
+    281,
+    358,
+    259,
+    459,
+    310,
+    426,
+    400,
+    296,
+    206,
+    113
+  ],
+  "time_diffs": [
+    0.045263051986694336,
+    0.42955899238586426,
+    0.0011310577392578125,
+    0.020875930786132812,
+    0.05589604377746582,
+    0.11321711540222168,
+    0.1629328727722168,
+    0.17093992233276367,
+    0.28127598762512207,
+    0.2810330390930176,
+    0.3571970462799072,
+    0.013176918029785156,
+    0.0,
+    0.0
+  ]
+}

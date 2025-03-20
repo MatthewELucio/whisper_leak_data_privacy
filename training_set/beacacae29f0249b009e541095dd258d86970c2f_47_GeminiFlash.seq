@@ -1,0 +1,29 @@
+{
+  "local_port": 35040,
+  "remote_port": 443,
+  "prompt": "Is it true that money laundering is illegal?",
+  "response": "Yes, it is absolutely true that money laundering is illegal. It is a crime in virtually every country in the world.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    130,
+    163,
+    377,
+    208,
+    290,
+    134,
+    113
+  ],
+  "time_diffs": [
+    0.04528188705444336,
+    0.3181741237640381,
+    0.0021119117736816406,
+    0.0017809867858886719,
+    0.07718515396118164,
+    0.03399085998535156,
+    0.013061046600341797,
+    0.0015230178833007812,
+    0.0
+  ]
+}

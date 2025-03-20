@@ -1,0 +1,27 @@
+{
+  "local_port": 33882,
+  "remote_port": 443,
+  "prompt": "You're telling me money laundering isn't illegal?",
+  "response": "I am programmed to be a harmless AI assistant. Therefore, I cannot endorse illegal activity, and want to clearly state that **money laundering IS illegal**.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    104,
+    409,
+    451,
+    313,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.04655122756958008,
+    0.29372382164001465,
+    0.0018279552459716797,
+    0.08886098861694336,
+    0.07955217361450195,
+    0.011858940124511719,
+    0.0016970634460449219,
+    9.5367431640625e-07
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "local_port": 57860,
+  "remote_port": 443,
+  "prompt": "Is there a legal risk associated with money laundering?",
+  "response": "Yes, there are very significant legal risks associated with money laundering. These risks vary depending on the jurisdiction but generally include:\n\n*   **Criminal Charges:** Money laundering is a federal crime in many countries, including the United States. You could face severe penalties, including imprisonment and hefty fines. The specific charges and penalties depend on the amount of money laundered, the sophistication of the scheme, and whether you were involved in other criminal activities.\n*   **Asset Forfeiture:** Governments can seize assets involved in or derived from money laundering. This means you could lose your property, bank accounts, investments, and other assets.\n*   **Civil Penalties:** In addition to criminal charges, you may face civil penalties for money laundering. These penalties can be substantial and may include fines or other financial sanctions.\n*   **Reputational Damage:** A conviction for money laundering can severely damage your reputation, making it difficult to find employment, secure loans, or conduct business.\n*   **Professional Consequences:** If you are a professional (e.g., lawyer, accountant, financial advisor), a conviction for money laundering can result in the loss of your professional license and career.\n*   **Increased Scrutiny:** Once you have been flagged for money laundering, you may face increased scrutiny from law enforcement and financial institutions, making it difficult to conduct legitimate financial transactions.\n*   **International Implications:** Money laundering is a global problem, and you may face legal risks in multiple countries if your activities cross international borders.\n\nIt's important to consult with a qualified attorney if you have any concerns about money laundering or if you are facing related legal issues.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    88,
+    296,
+    366,
+    252,
+    454,
+    393,
+    281,
+    424,
+    405,
+    377,
+    384,
+    293,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.04567098617553711,
+    0.34485793113708496,
+    0.0015311241149902344,
+    0.011409997940063477,
+    0.09294795989990234,
+    0.09739804267883301,
+    0.196058988571167,
+    0.21610593795776367,
+    0.2999300956726074,
+    0.2543947696685791,
+    0.31717920303344727,
+    0.3137478828430176,
+    0.08095192909240723,
+    0.009865045547485352,
+    5.412101745605469e-05,
+    5.888938903808594e-05
+  ]
+}

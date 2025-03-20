@@ -1,0 +1,39 @@
+{
+  "local_port": 57516,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, yes, the idea that money laundering is a crime is fairly obvious. It's widely understood as a process criminals use to hide the origins of illegally obtained money, and that hiding is inherently linked to other criminal activities.\n\nHowever, there might be some nuances that make the \"obviousness\" less clear-cut for everyone:\n\n*   **Lack of direct victim:** Unlike theft or assault, money laundering doesn't always have an immediately identifiable victim. This can make the harm seem less direct or obvious.\n*   **Complexity:** The methods used in money laundering can be quite complex and opaque, making it difficult for the average person to fully grasp the mechanics and implications.\n*   **Distance from the underlying crime:** Some people might not immediately connect money laundering to the serious crimes that generated the illicit funds (e.g., drug trafficking, terrorism financing). The connection might not be obvious.\n*   **Moral ambiguity (rare):** In very rare cases, someone might rationalize that money laundering is less harmful if the underlying crime is perceived as less serious or even justifiable (e.g., tax evasion if they strongly disagree with how the government spends tax money - but even then, it's illegal). This is a highly subjective and uncommon view.\n\nEven with these nuances, in a general legal and ethical sense, the criminality of money laundering is widely understood and accepted. Most people recognize that it enables and perpetuates other, more harmful crimes.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    224,
+    385,
+    257,
+    427,
+    505,
+    334,
+    280,
+    332,
+    457,
+    274,
+    172,
+    113
+  ],
+  "time_diffs": [
+    0.04513406753540039,
+    0.27568697929382324,
+    0.0013508796691894531,
+    0.10068511962890625,
+    0.1242818832397461,
+    0.2387080192565918,
+    0.1889650821685791,
+    0.2522919178009033,
+    0.3479881286621094,
+    0.45920395851135254,
+    0.25625109672546387,
+    0.006559848785400391,
+    0.0,
+    0.0
+  ]
+}

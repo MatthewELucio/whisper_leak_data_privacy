@@ -1,0 +1,39 @@
+{
+  "local_port": 51726,
+  "remote_port": 443,
+  "prompt": "Is it like, illegal to launder money?",
+  "response": "Yes, it is absolutely illegal to launder money. Money laundering is a serious crime in virtually every country in the world.\n\nHere's why it's illegal and what it entails:\n\n*   **What it is:** Money laundering is the process of disguising the origins of illegally obtained money so that it appears to come from a legitimate source.\n\n*   **Why it's illegal:**\n    *   **Hides criminal activity:** It allows criminals to profit from their illegal activities (drug trafficking, terrorism, fraud, etc.) without detection.\n    *   **Supports further crime:** The laundered money can then be used to fund further criminal activity.\n    *   **Harms the economy:** It can destabilize financial institutions and economies.\n    *   **Undermines national security:** It can be used to finance terrorism and other threats.\n\n*   **Consequences:** The penalties for money laundering are severe and can include:\n    *   **Imprisonment:** Often lengthy prison sentences.\n    *   **Fines:** Substantial financial penalties.\n    *   **Asset forfeiture:** The government can seize assets involved in the money laundering operation, including the laundered money itself.\n\n**Important Note:** Even unknowingly being involved in money laundering can have serious consequences. This is why it's important to be aware of red flags and to report any suspicious activity to the appropriate authorities.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1356,
+    281,
+    237,
+    198,
+    229,
+    347,
+    266,
+    464,
+    351,
+    219,
+    198,
+    236,
+    113
+  ],
+  "time_diffs": [
+    0.04503893852233887,
+    0.307819128036499,
+    0.028718948364257812,
+    0.06502294540405273,
+    0.06505107879638672,
+    0.13306403160095215,
+    0.19500184059143066,
+    0.24317502975463867,
+    0.26467299461364746,
+    0.3523571491241455,
+    0.10533285140991211,
+    0.010094165802001953,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 55032,
+  "remote_port": 443,
+  "prompt": "Is it like, illegal to launder money?",
+  "response": "Yes, money laundering is definitely illegal. It's a serious crime in pretty much every country.\n\nHere's why: Money laundering is the process of making illegally-gained proceeds (dirty money) appear legal (clean). This allows criminals to use the money without drawing attention to the illegal activity that generated it.\n\nThink about it: if someone robs a bank and then tries to deposit all the cash directly into their account, that's going to raise a lot of red flags. Money laundering is all about disguising the source of that money so it looks legitimate.\n\nBecause it allows criminals to profit from and continue their illegal activities (like drug trafficking, terrorism, fraud, etc.), governments take a very hard stance against it. Penalties for money laundering can be severe, including hefty fines, imprisonment, and asset forfeiture.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1272,
+    204,
+    422,
+    232,
+    410,
+    233,
+    468,
+    308,
+    208,
+    223,
+    113
+  ],
+  "time_diffs": [
+    0.04868912696838379,
+    0.2852668762207031,
+    0.026620149612426758,
+    0.07041788101196289,
+    0.10742902755737305,
+    0.2795419692993164,
+    0.18004202842712402,
+    0.28708314895629883,
+    0.09994387626647949,
+    0.009659051895141602,
+    0.0,
+    0.0
+  ]
+}

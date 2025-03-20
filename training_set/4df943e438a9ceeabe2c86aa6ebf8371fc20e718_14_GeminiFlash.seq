@@ -1,0 +1,35 @@
+{
+  "local_port": 37162,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, the idea that money laundering is a crime is pretty straightforward. It's generally understood to be about hiding the origins of illegally obtained money.\n\nHowever, what might be less obvious is the *extent* to which it's a crime, and the nuances involved. For example:\n\n*   **How it works:** Many people don't understand the specific stages of money laundering (placement, layering, integration) or the methods used.\n*   **The consequences:** People might not fully grasp the impact of money laundering on society, such as funding organized crime, terrorism, and corruption.\n*   **The laws:** The specific laws against money laundering can be complex and vary from country to country.\n*   **Who's affected:** It's not just drug dealers and mob bosses who can be caught up in money laundering investigations. Businesses, financial institutions, and even individuals can be unintentionally involved.\n\nSo, while the core concept is generally understood, the details and implications are often more complex than people realize.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1441,
+    295,
+    375,
+    296,
+    479,
+    435,
+    432,
+    287,
+    136,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.0445098876953125,
+    0.37369704246520996,
+    0.15192604064941406,
+    0.08885693550109863,
+    0.17715215682983398,
+    0.1822679042816162,
+    0.2410120964050293,
+    0.3011918067932129,
+    0.0928502082824707,
+    0.007578849792480469,
+    0.0,
+    0.0
+  ]
+}

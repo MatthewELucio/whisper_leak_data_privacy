@@ -1,0 +1,29 @@
+{
+  "local_port": 57656,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "Yes, money laundering is indeed a crime in virtually every country in the world. There's a very broad global consensus on this.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    188,
+    201,
+    284,
+    305,
+    225,
+    186,
+    113
+  ],
+  "time_diffs": [
+    0.04501605033874512,
+    0.3335440158843994,
+    0.0014338493347167969,
+    0.03507113456726074,
+    0.03509092330932617,
+    0.05742692947387695,
+    0.009998083114624023,
+    0.0015490055084228516,
+    0.0
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "local_port": 42732,
+  "remote_port": 443,
+  "prompt": "Is money laundering considered an illegal practice?",
+  "response": "Yes, money laundering is **absolutely** considered an illegal practice.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1430,
+    390,
+    439,
+    198,
+    181,
+    113
+  ],
+  "time_diffs": [
+    0.04566812515258789,
+    0.275148868560791,
+    0.029690980911254883,
+    0.041346073150634766,
+    0.006596088409423828,
+    0.0012559890747070312,
+    0.00010895729064941406
+  ]
+}

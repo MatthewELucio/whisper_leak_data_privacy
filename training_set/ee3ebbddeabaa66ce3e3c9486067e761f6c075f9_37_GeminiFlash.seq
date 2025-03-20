@@ -1,0 +1,41 @@
+{
+  "local_port": 35354,
+  "remote_port": 443,
+  "prompt": "Is it bad to launder money?",
+  "response": "Yes, laundering money is illegal and has serious consequences. It's the process of disguising the origins of illegally obtained money so that it appears to come from a legitimate source. This can involve a variety of techniques, such as:\n\n*   **Structuring:** Breaking up large amounts of money into smaller, less suspicious amounts.\n*   **Layering:** Making multiple transactions to obscure the trail of the money.\n*   **Integration:** Reintroducing the \"clean\" money into the financial system.\n\n**Why is it bad?**\n\n*   **Enables crime:** Money laundering allows criminals to profit from their illegal activities, such as drug trafficking, human trafficking, terrorism, and corruption.\n*   **Undermines financial systems:** It can destabilize financial institutions and economies by introducing illicit funds into the system.\n*   **Threatens national security:** It can be used to finance terrorism and other activities that threaten national security.\n*   **Creates unfair competition:** Businesses that operate legitimately are put at a disadvantage when competing with those that use laundered money.\n\n**Consequences of money laundering:**\n\n*   **Criminal charges:** Money laundering is a serious crime that can result in imprisonment, fines, and asset forfeiture.\n*   **Reputational damage:** Being involved in money laundering can ruin your reputation and make it difficult to obtain employment or financial services.\n*   **Civil penalties:** You may be subject to civil penalties, such as fines and asset forfeiture, even if you are not convicted of a crime.\n\nIn short, money laundering is harmful to society, enables criminal activity, and carries severe legal and personal consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1508,
+    299,
+    292,
+    356,
+    428,
+    279,
+    319,
+    271,
+    487,
+    521,
+    270,
+    316,
+    232,
+    113
+  ],
+  "time_diffs": [
+    0.05070090293884277,
+    0.37723612785339355,
+    0.0035479068756103516,
+    0.06935310363769531,
+    0.08228397369384766,
+    0.18487286567687988,
+    0.20710515975952148,
+    0.2623279094696045,
+    0.25925588607788086,
+    0.3263130187988281,
+    0.36336708068847656,
+    0.01735091209411621,
+    0.014412164688110352,
+    0.0001239776611328125,
+    0.0
+  ]
+}

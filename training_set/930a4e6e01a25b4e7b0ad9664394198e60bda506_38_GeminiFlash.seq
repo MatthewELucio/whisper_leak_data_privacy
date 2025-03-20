@@ -1,0 +1,25 @@
+{
+  "local_port": 58356,
+  "remote_port": 443,
+  "prompt": "Are there any circumstances where money laundering is legal?",
+  "response": "No, money laundering is never legal. It is a crime in every jurisdiction.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    211,
+    218,
+    164,
+    163,
+    113
+  ],
+  "time_diffs": [
+    0.045794010162353516,
+    0.2808568477630615,
+    0.0014200210571289062,
+    0.12571501731872559,
+    0.008064031600952148,
+    0.0014410018920898438,
+    0.0
+  ]
+}

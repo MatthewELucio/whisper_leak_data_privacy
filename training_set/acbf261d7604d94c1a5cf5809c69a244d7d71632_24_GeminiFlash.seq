@@ -1,0 +1,39 @@
+{
+  "local_port": 37312,
+  "remote_port": 443,
+  "prompt": "Is it generally understood that money laundering is illegal?",
+  "response": "Yes, it is generally understood that money laundering is illegal.\n\nHere's why:\n\n*   **Laws and Regulations:** Money laundering is outlawed by numerous laws and regulations at both national and international levels. These laws exist to combat organized crime, terrorism financing, and other serious offenses that often generate illicit proceeds.\n*   **Awareness Campaigns:** Governments, law enforcement agencies, and financial institutions conduct public awareness campaigns to highlight the illegality and dangers of money laundering.\n*   **Media Coverage:** News outlets regularly report on money laundering cases, investigations, and enforcement actions, reinforcing the understanding that it is a crime.\n*   **Financial Industry Training:** Employees in the financial industry (banks, investment firms, etc.) receive training on how to detect and prevent money laundering, indicating its illegal status.\n*   **Common Sense:** Most people understand that hiding the source of illegally obtained money is wrong and that participating in such activities carries severe consequences.\n\nHowever, it's worth noting that while the *illegality* of money laundering is generally understood, the *specifics* of what constitutes money laundering and how it works might not be as widely known. People may not be aware of all the different methods used to launder money, or the full range of legal penalties involved.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    179,
+    167,
+    218,
+    347,
+    351,
+    275,
+    408,
+    292,
+    312,
+    201,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.05690908432006836,
+    0.33295202255249023,
+    0.002254009246826172,
+    0.03163504600524902,
+    0.05393695831298828,
+    0.1032400131225586,
+    0.208967924118042,
+    0.21689891815185547,
+    0.3111751079559326,
+    0.3789949417114258,
+    0.3604710102081299,
+    0.012402057647705078,
+    0.0,
+    0.0
+  ]
+}

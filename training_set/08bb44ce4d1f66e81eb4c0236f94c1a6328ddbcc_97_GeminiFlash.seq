@@ -1,0 +1,35 @@
+{
+  "local_port": 41670,
+  "remote_port": 443,
+  "prompt": "You know, is money laundering a crime?",
+  "response": "Yes, absolutely. Money laundering is a serious crime in virtually every country. It's the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source. The purpose is to integrate \"dirty\" money into the legitimate financial system.\n\nThink of it this way: someone commits a crime, like drug trafficking or fraud, and gets a lot of money. They can't just deposit that money into a bank account without raising suspicion. So, they try to \"clean\" it by disguising its origin through a series of transactions.\n\nThere are usually severe penalties for money laundering, including hefty fines, imprisonment, and asset forfeiture.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    143,
+    283,
+    459,
+    328,
+    497,
+    483,
+    255,
+    192,
+    227,
+    113
+  ],
+  "time_diffs": [
+    0.044013023376464844,
+    0.29779696464538574,
+    0.0014338493347167969,
+    0.011256217956542969,
+    0.12037396430969238,
+    0.10499882698059082,
+    0.23120903968811035,
+    0.19007515907287598,
+    0.21255087852478027,
+    0.010812997817993164,
+    0.00016498565673828125,
+    9.5367431640625e-07
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 46058,
+  "remote_port": 443,
+  "prompt": "Would someone be committing a crime if they laundered money?",
+  "response": "Yes, in most jurisdictions, money laundering is a crime. It is generally defined as engaging in financial transactions to conceal the origin, ownership, location, or control of illegally obtained money. Laws vary, but common offenses related to money laundering include:\n\n*   **Concealing or disguising the nature, location, source, ownership, or control of illicit funds.**\n*   **Transferring or transporting illicit funds to promote illegal activity.**\n*   **Acquiring, possessing, or using illicit funds.**\n\nMoney laundering is a serious crime, and penalties often include:\n\n*   **Imprisonment:** Length of sentence varies depending on the amount of money laundered and the specifics of the crime.\n*   **Fines:** Often substantial, potentially exceeding the amount of money laundered.\n*   **Asset forfeiture:** Governments may seize assets that are proceeds of illegal activity or were used in the commission of the crime.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    132,
+    237,
+    346,
+    256,
+    377,
+    453,
+    336,
+    465,
+    298,
+    187,
+    113
+  ],
+  "time_diffs": [
+    0.051442861557006836,
+    0.31043314933776855,
+    0.0014379024505615234,
+    0.039433956146240234,
+    0.08595609664916992,
+    0.10415101051330566,
+    0.21883797645568848,
+    0.19321584701538086,
+    0.25708508491516113,
+    0.19943499565124512,
+    0.009424924850463867,
+    0.0,
+    0.0
+  ]
+}

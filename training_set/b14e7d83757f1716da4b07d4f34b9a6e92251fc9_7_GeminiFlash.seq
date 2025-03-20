@@ -1,0 +1,39 @@
+{
+  "local_port": 48210,
+  "remote_port": 443,
+  "prompt": "Is the scheme of money laundering illegal?",
+  "response": "Yes, money laundering is **illegal** in virtually every country around the world.\n\nHere's why:\n\n*   **It conceals criminal activity:** Money laundering allows criminals to profit from illegal activities like drug trafficking, terrorism, fraud, and corruption without the funds being traced back to the source.\n*   **It harms the economy:** It can destabilize financial institutions, distort markets, and facilitate tax evasion.\n*   **It undermines security:** It can fund terrorism and other threats to national security.\n\nLaws against money laundering are designed to prevent, detect, and prosecute individuals and organizations involved in these activities. These laws often include:\n\n*   **Criminal penalties:** Fines and imprisonment for those convicted of money laundering.\n*   **Reporting requirements:** Financial institutions are required to report suspicious transactions to authorities.\n*   **Customer due diligence:** Banks and other institutions must verify the identity of their customers and the source of their funds.\n*   **International cooperation:** Countries work together to share information and track down money launderers.\n\nIn short, money laundering is a serious crime with significant consequences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    158,
+    272,
+    341,
+    427,
+    255,
+    262,
+    491,
+    397,
+    253,
+    172,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.04522514343261719,
+    0.37926793098449707,
+    0.0013470649719238281,
+    0.014878988265991211,
+    0.06406807899475098,
+    0.11004090309143066,
+    0.16398406028747559,
+    0.17575502395629883,
+    0.21029186248779297,
+    0.2520871162414551,
+    0.16034698486328125,
+    0.011641979217529297,
+    0.0,
+    0.0
+  ]
+}

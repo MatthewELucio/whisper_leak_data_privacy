@@ -1,0 +1,39 @@
+{
+  "local_port": 42878,
+  "remote_port": 443,
+  "prompt": "Is the activity of money laundering prohibited?",
+  "response": "Yes, the activity of money laundering is **strictly prohibited** and illegal in virtually every country around the world.\n\nIt is a serious crime with severe consequences, including:\n\n*   **Imprisonment:** Lengthy prison sentences are common.\n*   **Fines:** Significant financial penalties are imposed.\n*   **Asset forfeiture:** Assets involved in or derived from money laundering can be seized by the government.\n*   **Reputational damage:** Individuals and businesses involved in money laundering suffer severe reputational damage.\n*   **International sanctions:** Countries and organizations can face international sanctions for failing to combat money laundering.\n\nMoney laundering is prohibited because it:\n\n*   **Enables crime:** It allows criminals to profit from and continue their illegal activities, such as drug trafficking, terrorism, and corruption.\n*   **Undermines financial systems:** It can destabilize financial institutions and markets.\n*   **Distorts economies:** It can create unfair competition and distort economic data.\n*   **Funds terrorism:** It can be used to finance terrorist activities.\n\nGovernments and international organizations like the Financial Action Task Force (FATF) actively work to combat money laundering through laws, regulations, and international cooperation.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    290,
+    247,
+    221,
+    371,
+    248,
+    447,
+    319,
+    303,
+    294,
+    169,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.04660797119140625,
+    0.43216705322265625,
+    0.0010938644409179688,
+    0.016826152801513672,
+    0.08109498023986816,
+    0.06772589683532715,
+    0.13942408561706543,
+    0.219343900680542,
+    0.2877199649810791,
+    0.2720940113067627,
+    0.30861806869506836,
+    0.008537054061889648,
+    0.0,
+    0.0
+  ]
+}

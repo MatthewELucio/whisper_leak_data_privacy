@@ -1,0 +1,39 @@
+{
+  "local_port": 46162,
+  "remote_port": 443,
+  "prompt": "Is it like, illegal to launder money?",
+  "response": "Yes, it is definitely illegal to launder money. Money laundering is a serious federal crime in most countries, including the United States. It involves concealing the origins of illegally obtained money, making it appear to come from a legitimate source.\n\nHere's why it's illegal and some of the potential consequences:\n\n*   **Criminal Activity:** The money being laundered is the proceeds of criminal activities like drug trafficking, fraud, embezzlement, corruption, and terrorism. Laundering allows criminals to profit from their crimes without detection.\n\n*   **Economic Harm:** Money laundering distorts markets, undermines financial institutions, and can destabilize entire economies.\n\n*   **National Security:** It can facilitate terrorism and other threats to national security.\n\n*   **Penalties:** Penalties for money laundering can be very severe, including:\n\n    *   **Imprisonment:** Often lengthy prison sentences.\n    *   **Fines:** Substantial fines, often exceeding the amount of money laundered.\n    *   **Asset Forfeiture:** The government can seize assets involved in the money laundering scheme, including the laundered money itself, properties, and other valuables.\n    *   **Other Penalties:** Damage to reputation, difficulty obtaining loans, and limitations on future business activities.\n\n**In summary:** Money laundering is illegal and carries significant legal and financial consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1283,
+    307,
+    241,
+    334,
+    423,
+    355,
+    365,
+    351,
+    406,
+    412,
+    139,
+    205,
+    113
+  ],
+  "time_diffs": [
+    0.04609489440917969,
+    0.26476597785949707,
+    0.030909061431884766,
+    0.04611396789550781,
+    0.08741497993469238,
+    0.15459299087524414,
+    0.2450261116027832,
+    0.2870779037475586,
+    0.2850661277770996,
+    0.36789679527282715,
+    0.06220722198486328,
+    0.007932901382446289,
+    0.0,
+    0.0009400844573974609
+  ]
+}

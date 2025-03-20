@@ -1,0 +1,43 @@
+{
+  "local_port": 33256,
+  "remote_port": 443,
+  "prompt": "Are there international laws against money laundering?",
+  "response": "Yes, there are several international laws and conventions aimed at combating money laundering. Key ones include:\n\n*   **The United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (1988):** This convention was one of the first international agreements to specifically address money laundering, focusing primarily on proceeds from drug trafficking. It requires signatory countries to criminalize money laundering related to drug offenses and to implement measures for identifying, tracing, freezing, and seizing illicit proceeds.\n\n*   **The United Nations Convention Against Transnational Organized Crime (2000):** This convention expands the scope of anti-money laundering efforts beyond drug-related crimes to cover a wide range of transnational organized crimes, such as trafficking in persons, arms smuggling, and corruption. It mandates that signatory countries criminalize money laundering derived from these crimes and adopt measures to prevent and combat money laundering, including customer due diligence, record-keeping, and suspicious transaction reporting.\n\n*   **The United Nations Convention Against Corruption (2003):** This convention focuses on preventing and combating corruption, including the laundering of proceeds derived from corrupt practices. It requires signatory countries to criminalize the laundering of proceeds of corruption and to implement measures for detecting and preventing such activities.\n\n*   **Financial Action Task Force (FATF) Recommendations:** While not a treaty or convention, the FATF Recommendations are the global standard for combating money laundering, terrorist financing, and the proliferation of weapons of mass destruction. These recommendations provide a comprehensive framework of measures that countries should implement, including criminalizing money laundering and terrorist financing, implementing customer due diligence measures, establishing financial intelligence units, and cooperating internationally. The FATF monitors countries' compliance with these recommendations and issues reports identifying countries with deficiencies in their anti-money laundering and counter-terrorist financing regimes.\n\nThese international laws and conventions provide a framework for countries to develop and implement their own national anti-money laundering laws and regulations. They also promote international cooperation in the fight against money laundering, including the exchange of information, mutual legal assistance, and extradition.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1381,
+    219,
+    408,
+    400,
+    452,
+    243,
+    359,
+    380,
+    439,
+    475,
+    286,
+    244,
+    298,
+    151,
+    113
+  ],
+  "time_diffs": [
+    0.05650591850280762,
+    0.45662498474121094,
+    0.033551931381225586,
+    0.0811760425567627,
+    0.07569313049316406,
+    0.17414283752441406,
+    0.19005203247070312,
+    0.2617311477661133,
+    0.27649998664855957,
+    0.35619282722473145,
+    0.40493106842041016,
+    0.3516719341278076,
+    0.10611915588378906,
+    0.010423898696899414,
+    0.0,
+    0.0
+  ]
+}

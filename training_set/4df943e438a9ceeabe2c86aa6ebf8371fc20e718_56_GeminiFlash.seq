@@ -1,0 +1,33 @@
+{
+  "local_port": 53444,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, the idea that money laundering is a crime is pretty straightforward. It's generally understood that hiding the origins of illegally obtained money is wrong.\n\nHowever, the reasons *why* it's a crime can be a bit more nuanced. It's not just about the money itself. Money laundering allows criminals to profit from their illegal activities, which then incentivizes and enables them to continue those activities. This can have serious consequences for society, as it can fuel drug trafficking, terrorism, and other forms of organized crime.\n\nFurthermore, money laundering can distort financial markets and undermine the integrity of financial institutions. It can also make it more difficult for law enforcement to track and prosecute criminals.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    177,
+    293,
+    218,
+    371,
+    473,
+    341,
+    182,
+    148,
+    113
+  ],
+  "time_diffs": [
+    0.045758962631225586,
+    0.40714406967163086,
+    0.0013649463653564453,
+    0.1120760440826416,
+    0.1114189624786377,
+    0.1991429328918457,
+    0.22910308837890625,
+    0.2568800449371338,
+    0.009991884231567383,
+    0.0015609264373779297,
+    0.001466989517211914
+  ]
+}

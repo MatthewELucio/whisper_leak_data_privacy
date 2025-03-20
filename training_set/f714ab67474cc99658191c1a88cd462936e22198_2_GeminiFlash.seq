@@ -1,0 +1,31 @@
+{
+  "local_port": 34880,
+  "remote_port": 443,
+  "prompt": "What are the penalties for money laundering under federal law?",
+  "response": "Okay, let's break down the penalties for money laundering under federal law in the United States.  The primary laws governing this are 18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments) and 18 U.S.C. \u00a7 1957 (Eng",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    155,
+    302,
+    324,
+    415,
+    369,
+    150,
+    168,
+    113
+  ],
+  "time_diffs": [
+    0.04609799385070801,
+    0.3668630123138428,
+    0.001461029052734375,
+    0.07843995094299316,
+    0.10015201568603516,
+    0.15384197235107422,
+    0.20199108123779297,
+    0.00893092155456543,
+    1.1920928955078125e-06,
+    0.001580953598022461
+  ]
+}

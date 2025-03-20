@@ -1,0 +1,27 @@
+{
+  "local_port": 51060,
+  "remote_port": 443,
+  "prompt": "If a business launders money, is it breaking the law?",
+  "response": "Yes, absolutely. Money laundering is a serious federal crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    293,
+    159,
+    347,
+    225,
+    196,
+    113
+  ],
+  "time_diffs": [
+    0.054064035415649414,
+    0.4108259677886963,
+    0.0014519691467285156,
+    0.022355079650878906,
+    0.04115486145019531,
+    0.013912200927734375,
+    0.0,
+    0.0016179084777832031
+  ]
+}

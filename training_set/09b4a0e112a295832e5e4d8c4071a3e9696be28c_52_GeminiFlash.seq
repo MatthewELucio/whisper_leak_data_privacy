@@ -1,0 +1,29 @@
+{
+  "local_port": 48332,
+  "remote_port": 443,
+  "prompt": "Is the system of money laundering illegal?",
+  "response": "Yes, the system of money laundering is illegal. It involves a series of transactions designed to conceal or disguise the true origin and ownership of illegally obtained money.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    243,
+    139,
+    450,
+    232,
+    149,
+    183,
+    113
+  ],
+  "time_diffs": [
+    0.050357818603515625,
+    0.3202791213989258,
+    0.0025339126586914062,
+    0.025763988494873047,
+    0.03183913230895996,
+    0.0858309268951416,
+    0.006075143814086914,
+    0.0016279220581054688,
+    0.0
+  ]
+}

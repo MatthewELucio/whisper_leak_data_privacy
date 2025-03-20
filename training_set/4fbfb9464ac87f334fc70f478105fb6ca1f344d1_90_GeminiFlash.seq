@@ -1,0 +1,43 @@
+{
+  "local_port": 44806,
+  "remote_port": 443,
+  "prompt": "If a business launders money, is it breaking the law?",
+  "response": "Yes, absolutely. Money laundering is a federal crime in most countries, including the United States.  It's a serious offense with severe penalties.\n\nHere's why it's illegal and some of the consequences:\n\n*   **What is Money Laundering?**  Money laundering is the process of concealing the origins of illegally obtained money by disguising it as legitimate income. This allows criminals to use the money without drawing attention to the underlying crime, or the criminal themselves.\n\n*   **Why it's Illegal:**  Governments criminalize money laundering to:\n\n    *   Combat organized crime:  It makes it harder for criminals to profit from their illegal activities (drug trafficking, fraud, corruption, etc.) and to fund further crimes.\n    *   Prevent terrorism:  It hinders the financing of terrorist activities.\n    *   Maintain the integrity of financial institutions:  It protects banks and other financial institutions from being used for illicit purposes.\n    *   Uphold the rule of law: By ensuring illegal activities are not rewarded.\n\n*   **Consequences:** The penalties for money laundering can be extremely severe, including:\n\n    *   **Imprisonment:**  Often lengthy prison sentences, varying based on the amount of money laundered and the specific laws of the jurisdiction.\n    *   **Fines:**  Substantial financial penalties, sometimes exceeding the amount of money laundered.\n    *   **Asset forfeiture:**  The government can seize assets involved in the money laundering, including the money itself, property purchased with the money, and even businesses used to launder the money.\n    *   **Business closure:**  The business involved in money laundering can be shut down.\n    *   **Reputational damage:**  Severe damage to the reputation of the business and its owners, making it difficult to operate in the future.\n    *   **Criminal record:** A criminal record will affect all future business endeavours.\n\n**In short, money laundering is a serious crime with significant legal and financial consequences.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1489,
+    143,
+    337,
+    288,
+    404,
+    356,
+    456,
+    378,
+    299,
+    362,
+    461,
+    349,
+    242,
+    127,
+    113
+  ],
+  "time_diffs": [
+    0.04835081100463867,
+    0.7545220851898193,
+    0.016607999801635742,
+    0.07106304168701172,
+    0.09642601013183594,
+    0.16597199440002441,
+    0.22893500328063965,
+    0.2633788585662842,
+    0.2368180751800537,
+    0.3803420066833496,
+    0.3249061107635498,
+    0.33783602714538574,
+    0.12968778610229492,
+    0.03139615058898926,
+    0.0,
+    0.0
+  ]
+}

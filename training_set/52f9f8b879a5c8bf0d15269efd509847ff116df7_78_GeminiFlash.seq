@@ -1,0 +1,41 @@
+{
+  "local_port": 43274,
+  "remote_port": 443,
+  "prompt": "Is it illegal to conduct money laundering?",
+  "response": "Yes, money laundering is illegal in virtually all countries around the world. It is a serious crime with severe penalties.\n\nHere's why it's illegal and some potential consequences:\n\n*   **What it is:** Money laundering is the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source. This is done to avoid detection by law enforcement.\n\n*   **Why it's illegal:** It allows criminals to profit from their illegal activities (drug trafficking, fraud, corruption, etc.) and further facilitates criminal activity. It also undermines the integrity of financial systems and can destabilize economies.\n\n*   **Penalties:** Penalties for money laundering vary depending on the jurisdiction and the amount of money involved, but typically include:\n\n    *   **Imprisonment:** Often lengthy prison sentences.\n    *   **Fines:** Substantial fines, sometimes exceeding the amount of money laundered.\n    *   **Asset forfeiture:** The government can seize assets involved in the laundering process, including money, property, and other valuables.\n    *   **Other penalties:** In some cases, there may be other penalties such as loss of professional licenses or restrictions on future employment.\n\n*   **International Cooperation:** Because money laundering often involves cross-border transactions, there is a high degree of international cooperation to combat it. International organizations like the Financial Action Task Force (FATF) set standards and promote the implementation of measures to combat money laundering.\n\nIf you suspect money laundering, it is important to report it to the appropriate authorities.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    182,
+    160,
+    282,
+    316,
+    495,
+    278,
+    308,
+    273,
+    352,
+    341,
+    192,
+    225,
+    113
+  ],
+  "time_diffs": [
+    0.047087907791137695,
+    0.3074960708618164,
+    0.0017600059509277344,
+    0.027437925338745117,
+    0.0288851261138916,
+    0.10017800331115723,
+    0.16499686241149902,
+    0.15592193603515625,
+    0.288999080657959,
+    0.2699460983276367,
+    0.2857198715209961,
+    0.28688812255859375,
+    0.009155988693237305,
+    0.00026798248291015625,
+    0.0
+  ]
+}

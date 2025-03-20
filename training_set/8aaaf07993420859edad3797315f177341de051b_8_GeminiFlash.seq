@@ -1,0 +1,43 @@
+{
+  "local_port": 53066,
+  "remote_port": 443,
+  "prompt": "Is it like, illegal to launder money?",
+  "response": "Yes, it is absolutely illegal to launder money in virtually every country in the world. Money laundering is a serious crime with severe penalties.\n\nHere's why and how it's illegal:\n\n*   **What is Money Laundering?** It's the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source. This is done to use the money without raising suspicion from law enforcement or financial institutions.\n\n*   **Why is it illegal?**\n    *   **Supports Criminal Activity:** Money laundering enables and perpetuates all sorts of criminal enterprises, including drug trafficking, terrorism, human trafficking, fraud, corruption, and more. By cleaning the money, it allows these criminals to continue their operations.\n    *   **Undermines Financial Systems:** It introduces illegally obtained funds into the legitimate financial system, which can destabilize markets, distort economies, and create unfair competition.\n    *   **National Security:** Money laundering is often linked to terrorist financing, posing a direct threat to national security.\n\n*   **Laws and Penalties:**\n    *   **Varies by Country:** The specific laws and penalties for money laundering vary from country to country.\n    *   **Severe Penalties:** However, the penalties are generally very severe, often including:\n        *   **Imprisonment:** Lengthy prison sentences are common.\n        *   **Fines:** Substantial financial penalties, often multiple times the amount of money laundered.\n        *   **Asset Forfeiture:** The government can seize assets involved in the money laundering operation, including money, property, and vehicles.\n        *   **Criminal Record:** A conviction for money laundering results in a criminal record, which can have lasting consequences for employment, travel, and other aspects of life.\n\n*   **Examples of Laws:**\n    *   **United States:** Bank Secrecy Act (BSA), Patriot Act\n    *   **United Kingdom:** Proceeds of Crime Act 2002\n    *   **Globally:** Financial Action Task Force (FATF) sets international standards for combating money laundering.\n\nIn short, money laundering is a serious offense with significant legal ramifications.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    301,
+    331,
+    337,
+    444,
+    297,
+    490,
+    519,
+    519,
+    474,
+    435,
+    326,
+    315,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.04517388343811035,
+    0.27729010581970215,
+    0.0017940998077392578,
+    0.13251090049743652,
+    0.06977987289428711,
+    0.15613913536071777,
+    0.17612385749816895,
+    0.3250281810760498,
+    0.254040002822876,
+    0.32462096214294434,
+    0.36508893966674805,
+    0.33125805854797363,
+    0.3368189334869385,
+    0.0058519840240478516,
+    0.0,
+    0.0
+  ]
+}

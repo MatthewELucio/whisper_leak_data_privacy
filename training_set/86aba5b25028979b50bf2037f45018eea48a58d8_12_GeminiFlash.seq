@@ -1,0 +1,29 @@
+{
+  "local_port": 49918,
+  "remote_port": 443,
+  "prompt": "Is money laundering considered an illegal practice?",
+  "response": "Yes, money laundering is absolutely considered an illegal practice in virtually every country around the world. It's a serious crime with severe penalties, including imprisonment and significant fines.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    106,
+    191,
+    449,
+    332,
+    219,
+    158,
+    113
+  ],
+  "time_diffs": [
+    0.04769611358642578,
+    0.30304789543151855,
+    0.0013759136199951172,
+    0.02828812599182129,
+    0.07437300682067871,
+    0.06485486030578613,
+    0.004697084426879883,
+    0.0016319751739501953,
+    0.0017189979553222656
+  ]
+}

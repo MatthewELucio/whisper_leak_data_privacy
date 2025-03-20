@@ -1,0 +1,37 @@
+{
+  "local_port": 33152,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law.\n\nHere's why:\n\n*   **International Treaties and Conventions:** The United Nations, the Financial Action Task Force (FATF), and other international bodies have established frameworks and standards that criminalize money laundering and encourage international cooperation to combat it.\n*   **National Laws:** Virtually every country in the world has enacted laws that make money laundering a criminal offense. These laws typically prohibit concealing or disguising the proceeds of illegal activities to make them appear legitimate.\n*   **Public Policy:** Money laundering facilitates a wide range of serious crimes, including drug trafficking, terrorism, corruption, and human trafficking. Criminalizing it is a key element of efforts to combat these underlying crimes and protect the integrity of the financial system.\n*   **Widespread condemnation:** The fact that money laundering facilitates crime has led to widespread condemnation by civil society, law enforcement, and governments around the world.\n\nTherefore, there is a strong and universal consensus that money laundering is against the law.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1269,
+    340,
+    259,
+    268,
+    443,
+    398,
+    424,
+    499,
+    203,
+    173,
+    160,
+    113
+  ],
+  "time_diffs": [
+    0.060716867446899414,
+    0.4601571559906006,
+    0.03696584701538086,
+    0.03803896903991699,
+    0.08690118789672852,
+    0.17908978462219238,
+    0.17678403854370117,
+    0.24428510665893555,
+    0.2941429615020752,
+    0.08586597442626953,
+    0.009645938873291016,
+    0.00011515617370605469,
+    0.0
+  ]
+}

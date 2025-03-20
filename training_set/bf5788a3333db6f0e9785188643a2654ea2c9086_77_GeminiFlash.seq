@@ -1,0 +1,43 @@
+{
+  "local_port": 58826,
+  "remote_port": 443,
+  "prompt": "Are there international laws against money laundering?",
+  "response": "Yes, there are several international laws and conventions aimed at combating money laundering. Key examples include:\n\n*   **The United Nations Convention against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (1988)**: This convention, often referred to as the Vienna Convention, was one of the first major international efforts to address money laundering related to drug trafficking. It requires signatory countries to criminalize the laundering of drug-related proceeds.\n\n*   **The United Nations Convention against Transnational Organized Crime (2000)**: Also known as the Palermo Convention, this agreement expanded the scope of money laundering offenses beyond drug trafficking to include proceeds from a wide range of serious crimes.\n\n*   **The United Nations Convention against Corruption (2003)**: This convention requires countries to criminalize the laundering of proceeds derived from corruption.\n\n*   **Financial Action Task Force (FATF) Recommendations**: While not a treaty or convention, the FATF Recommendations are internationally recognized standards for combating money laundering and terrorist financing. They provide a comprehensive framework of measures that countries should implement. Many countries have incorporated these recommendations into their national laws.\n\n*   **Council of Europe Convention on Laundering, Search, Seizure and Confiscation of the Proceeds from Crime (1990)**: This convention, and its subsequent revisions, focuses on facilitating international cooperation in the investigation, prosecution, and confiscation of illicit proceeds.\n\nThese laws and conventions establish obligations for signatory countries to:\n\n*   Criminalize money laundering.\n*   Implement measures to prevent and detect money laundering.\n*   Cooperate internationally in the investigation and prosecution of money laundering offenses.\n*   Confiscate the proceeds of crime.\n\nIt's important to note that the specific implementation and enforcement of these international laws vary from country to country.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    102,
+    233,
+    215,
+    357,
+    402,
+    231,
+    404,
+    479,
+    454,
+    498,
+    362,
+    298,
+    186,
+    113
+  ],
+  "time_diffs": [
+    0.04820704460144043,
+    0.4905738830566406,
+    0.0014719963073730469,
+    0.01745295524597168,
+    0.0833289623260498,
+    0.07184600830078125,
+    0.15801000595092773,
+    0.19188618659973145,
+    0.2682919502258301,
+    0.29442405700683594,
+    0.39015793800354004,
+    0.438122034072876,
+    0.21041393280029297,
+    0.008341073989868164,
+    0.0,
+    0.0
+  ]
+}

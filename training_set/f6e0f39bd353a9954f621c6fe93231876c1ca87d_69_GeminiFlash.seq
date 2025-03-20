@@ -1,0 +1,35 @@
+{
+  "local_port": 35390,
+  "remote_port": 443,
+  "prompt": "Surely, money laundering is illegal, right?",
+  "response": "Yes, money laundering is illegal in virtually every country in the world. It's a serious crime with severe penalties, including hefty fines and lengthy prison sentences.\n\nThe illegality of money laundering stems from the fact that it's used to conceal the proceeds of other criminal activities, such as drug trafficking, terrorism financing, fraud, and corruption. By disguising the origins of illicit funds, criminals can use them without attracting attention from law enforcement. This makes it harder to track and prosecute the underlying crimes that generated the money in the first place.\n\nLaws against money laundering are designed to combat these criminal activities and protect the integrity of the financial system.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    151,
+    254,
+    206,
+    345,
+    315,
+    287,
+    347,
+    133,
+    230,
+    113
+  ],
+  "time_diffs": [
+    0.04606986045837402,
+    0.3133871555328369,
+    0.0011677742004394531,
+    0.02881908416748047,
+    0.057034969329833984,
+    0.07924008369445801,
+    0.22306394577026367,
+    0.21181797981262207,
+    0.1411750316619873,
+    0.006858110427856445,
+    0.0,
+    9.5367431640625e-07
+  ]
+}

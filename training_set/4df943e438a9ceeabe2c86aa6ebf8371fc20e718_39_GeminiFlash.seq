@@ -1,0 +1,41 @@
+{
+  "local_port": 52324,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, yes, the concept of money laundering being a crime is obvious. It's generally understood to be the process of disguising illegally obtained money so that it appears to come from a legitimate source. This is done to avoid detection by law enforcement and to be able to use the money freely.\n\nHere's why it's widely considered obvious that it's a crime:\n\n*   **It's used to facilitate other crimes:** Money laundering is almost always connected to underlying criminal activities like drug trafficking, fraud, corruption, and terrorism. By laundering the proceeds of these crimes, criminals can continue their operations.\n*   **It undermines the financial system:** Money laundering can destabilize financial institutions and entire economies by introducing illicit funds into the system.\n*   **It's illegal:** Laws against money laundering exist in most countries, often with severe penalties.\n*   **Ethical considerations:** Most people would agree that profiting from illegal activities is morally wrong, and money laundering allows criminals to do just that.\n\nHowever, it's also worth noting some nuances:\n\n*   **Complexity:** While the general concept is relatively simple, the specifics of money laundering can be complex and involve intricate financial transactions.\n*   **Varied Laws:** The exact definition of money laundering and the penalties associated with it can vary from country to country.\n*   **Unintentional Involvement:** It is possible, though rare, for individuals or businesses to unknowingly become involved in money laundering schemes.\n\nIn conclusion, the vast majority of people recognize money laundering as a crime, but its complexity and potential for unintentional involvement make it an important area for education and regulation.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    97,
+    304,
+    203,
+    273,
+    262,
+    511,
+    488,
+    482,
+    427,
+    351,
+    131,
+    149,
+    113
+  ],
+  "time_diffs": [
+    0.04514598846435547,
+    0.2913939952850342,
+    0.0017390251159667969,
+    0.11652207374572754,
+    0.09488391876220703,
+    0.17704296112060547,
+    0.22217893600463867,
+    0.29798412322998047,
+    0.2269759178161621,
+    0.3480679988861084,
+    0.4117469787597656,
+    0.07295107841491699,
+    0.009632110595703125,
+    9.5367431640625e-07,
+    0.0
+  ]
+}

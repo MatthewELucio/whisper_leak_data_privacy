@@ -1,0 +1,31 @@
+{
+  "local_port": 48620,
+  "remote_port": 443,
+  "prompt": "Is the activity of money laundering prohibited?",
+  "response": "Yes, money laundering is illegal in virtually every country in the world. It's a serious crime with severe penalties, including hefty fines and lengthy prison sentences. Laws are in place both to punish launderers and to combat the underlying crimes that generate the illicit funds.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    221,
+    211,
+    195,
+    305,
+    361,
+    134,
+    173,
+    113
+  ],
+  "time_diffs": [
+    0.05501103401184082,
+    0.3827049732208252,
+    0.0014798641204833984,
+    0.012183189392089844,
+    0.06316900253295898,
+    0.07869100570678711,
+    0.14344501495361328,
+    0.012970924377441406,
+    0.0,
+    0.0015530586242675781
+  ]
+}

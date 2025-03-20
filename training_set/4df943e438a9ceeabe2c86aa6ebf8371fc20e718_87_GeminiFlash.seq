@@ -1,0 +1,37 @@
+{
+  "local_port": 60524,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "Yes, it is generally understood and accepted that money laundering is a crime. Most countries have laws in place to criminalize it. The act of disguising illegally obtained money to make it appear legitimate is harmful to society and the economy for many reasons:\n\n*   **Enables further crime:** Money laundering allows criminals to profit from their illegal activities, which in turn incentivizes and finances further criminal actions.\n*   **Undermines financial institutions:** It can destabilize financial institutions and the economy by introducing illicit funds into the system.\n*   **Distorts markets:** Illicit funds can distort markets and create unfair competition for legitimate businesses.\n*   **Tax evasion:** Often linked to tax evasion, depriving governments of revenue needed for public services.\n*   **National security threat:** Can fund terrorism and other activities that threaten national security.\n\nThe global consensus is that money laundering is a serious issue that needs to be combatted.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    112,
+    331,
+    236,
+    336,
+    415,
+    381,
+    274,
+    337,
+    304,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.04511594772338867,
+    0.2856581211090088,
+    0.0013959407806396484,
+    0.02949690818786621,
+    0.08396100997924805,
+    0.1046152114868164,
+    0.22363877296447754,
+    0.17901015281677246,
+    0.2741529941558838,
+    0.20487284660339355,
+    0.011843204498291016,
+    0.0,
+    0.0004849433898925781
+  ]
+}

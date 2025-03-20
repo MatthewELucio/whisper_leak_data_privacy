@@ -1,0 +1,27 @@
+{
+  "local_port": 54654,
+  "remote_port": 443,
+  "prompt": "You know, is money laundering a crime?",
+  "response": "Yes, money laundering is definitely a crime. It's illegal in pretty much every country and carries serious penalties, including hefty fines and significant jail time.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1272,
+    271,
+    327,
+    297,
+    211,
+    212,
+    113
+  ],
+  "time_diffs": [
+    0.04504704475402832,
+    0.3397970199584961,
+    0.035974979400634766,
+    0.022790908813476562,
+    0.11213302612304688,
+    0.007472038269042969,
+    0.0034379959106445312,
+    9.5367431640625e-07
+  ]
+}

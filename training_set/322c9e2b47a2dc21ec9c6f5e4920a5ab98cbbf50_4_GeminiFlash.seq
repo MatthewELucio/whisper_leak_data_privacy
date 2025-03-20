@@ -1,0 +1,43 @@
+{
+  "local_port": 51190,
+  "remote_port": 443,
+  "prompt": "What are the legal definitions of money laundering?",
+  "response": "The legal definition of money laundering can be complex and vary slightly depending on the jurisdiction, but the core concept remains the same: **concealing the origins of illegally obtained money, proceeds, or assets so that they appear to come from a legitimate source.**\n\nHere's a breakdown of the key components and common definitions, drawing from international standards and US law:\n\n**Key Components:**\n\n*   **Proceeds of Crime:**  This refers to any money, property, or benefit derived from illegal activity.  This can include a wide range of crimes like drug trafficking, fraud, embezzlement, corruption, terrorism financing, human trafficking, extortion, and illegal gambling.\n*   **Concealment/Disguise:**  The central goal is to hide the true source, ownership, location, disposition, movement, or rights with respect to the illegal proceeds.\n*   **Integration/Legitimization:**  The ultimate aim is to re-introduce the illicit funds into the legitimate financial system as if they were earned or acquired legally.\n\n**Common Legal Definitions (with examples):**\n\n*   **United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (Vienna Convention, 1988) - A foundational international framework:** Defines money laundering as:\n    *   \"The conversion or transfer of property, knowing that such property is derived from any [drug-related] offence or offences...for the purpose of concealing or disguising the illicit origin of the property or of assisting any person who is involved in the commission of such an offence or offences to evade the legal consequences of his actions.\"\n    *   \"The concealment or disguise of the true nature, source, location, disposition, movement, rights with respect to, or ownership of property, knowing that such property is derived from a [drug-related] offence or offences...\"\n    *   \"The acquisition, possession or use of property, knowing at the time of receipt that such property was",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1270,
+    348,
+    322,
+    358,
+    470,
+    268,
+    359,
+    283,
+    474,
+    328,
+    223,
+    202,
+    290,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.046629905700683594,
+    0.4292161464691162,
+    0.014838933944702148,
+    0.07216691970825195,
+    0.12593317031860352,
+    0.17673683166503906,
+    0.22333097457885742,
+    0.2411961555480957,
+    0.30490899085998535,
+    0.30358386039733887,
+    0.3966059684753418,
+    0.30901598930358887,
+    0.3237440586090088,
+    0.014722108840942383,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 46592,
+  "remote_port": 443,
+  "prompt": "Is the process of money laundering against the law?",
+  "response": "Yes, the process of money laundering is against the law in virtually every country in the world. It is a serious crime with severe penalties, including imprisonment and hefty fines. Laws are in place to combat money laundering because it facilitates other serious crimes, such as drug trafficking, terrorism, corruption, and fraud.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1463,
+    299,
+    256,
+    329,
+    452,
+    292,
+    142,
+    113
+  ],
+  "time_diffs": [
+    0.04639697074890137,
+    0.33200597763061523,
+    0.03092193603515625,
+    0.031061172485351562,
+    0.11405801773071289,
+    0.18607497215270996,
+    0.007819890975952148,
+    0.0015840530395507812,
+    0.0
+  ]
+}

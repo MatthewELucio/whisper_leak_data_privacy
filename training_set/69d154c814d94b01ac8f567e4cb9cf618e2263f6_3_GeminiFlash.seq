@@ -1,0 +1,35 @@
+{
+  "local_port": 55224,
+  "remote_port": 443,
+  "prompt": "Is it illegal to engage in money laundering?",
+  "response": "Yes, money laundering is illegal in virtually all countries around the world. It's a serious crime with significant penalties, including:\n\n*   **Imprisonment:** Often lengthy prison sentences.\n*   **Fines:** Substantial financial penalties.\n*   **Asset Forfeiture:** The government can seize assets involved in the money laundering process, including money, property, and other valuables.\n*   **Reputational Damage:** Conviction can severely damage a person's reputation, making it difficult to find employment or conduct business.\n\nLaws against money laundering are in place to combat a range of criminal activities and terrorism. By making it difficult to profit from illegal activities, authorities hope to deter crime and disrupt criminal organizations.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    92,
+    270,
+    301,
+    450,
+    437,
+    441,
+    374,
+    189,
+    158,
+    113
+  ],
+  "time_diffs": [
+    0.04793882369995117,
+    0.46896910667419434,
+    0.0013668537139892578,
+    0.05172300338745117,
+    0.048829078674316406,
+    0.0961449146270752,
+    0.16706204414367676,
+    0.15591907501220703,
+    0.29271888732910156,
+    0.008504152297973633,
+    0.00021386146545410156,
+    0.0
+  ]
+}

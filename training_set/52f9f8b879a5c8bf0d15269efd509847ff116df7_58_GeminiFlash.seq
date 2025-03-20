@@ -1,0 +1,27 @@
+{
+  "local_port": 41092,
+  "remote_port": 443,
+  "prompt": "Is it illegal to conduct money laundering?",
+  "response": "Yes, conducting money laundering is illegal in virtually all countries and is a serious federal crime in the United States.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1385,
+    199,
+    417,
+    341,
+    156,
+    221,
+    113
+  ],
+  "time_diffs": [
+    0.048040151596069336,
+    0.34102296829223633,
+    0.02365398406982422,
+    0.05758810043334961,
+    0.015546798706054688,
+    0.00841212272644043,
+    0.0013840198516845703,
+    0.01617598533630371
+  ]
+}

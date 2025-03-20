@@ -1,0 +1,39 @@
+{
+  "local_port": 43304,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a strong and virtually universal consensus that money laundering is against the law.\n\n*   **International Law:** Numerous international conventions and treaties criminalize money laundering. These include the United Nations Convention against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (1988), the United Nations Convention against Transnational Organized Crime (2000), and the International Convention for the Suppression of the Financing of Terrorism (1999).\n*   **National Laws:** Virtually every country in the world has laws that prohibit money laundering. These laws vary in detail but generally make it illegal to conceal the origins of illegally obtained money or assets.\n*   **Global Organizations:** Organizations like the Financial Action Task Force (FATF) set international standards and promote the implementation of legal, regulatory, and operational measures to combat money laundering, terrorist financing, and other related threats to the integrity of the international financial system. FATF has widespread international support, and its recommendations are considered the global standard.\n*   **Rationale:** Money laundering is illegal because it enables and facilitates a wide range of serious crimes, including drug trafficking, terrorism, corruption, human trafficking, and fraud. It undermines the integrity of financial institutions, distorts markets, and can destabilize entire economies.\n\nWhile specific definitions and penalties may vary from jurisdiction to jurisdiction, the core principle that concealing the proceeds of crime is illegal is universally accepted. There is no legitimate argument or legal position that supports the legality of money laundering.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1289,
+    224,
+    300,
+    433,
+    489,
+    418,
+    377,
+    535,
+    573,
+    389,
+    251,
+    238,
+    113
+  ],
+  "time_diffs": [
+    0.04887104034423828,
+    0.39412784576416016,
+    0.016788005828857422,
+    0.06513714790344238,
+    0.09440302848815918,
+    0.17669892311096191,
+    0.13593292236328125,
+    0.25907015800476074,
+    0.24923181533813477,
+    0.4219479560852051,
+    0.27315306663513184,
+    0.010282039642333984,
+    0.0,
+    0.0
+  ]
+}

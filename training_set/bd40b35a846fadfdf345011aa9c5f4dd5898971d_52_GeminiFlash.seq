@@ -1,0 +1,35 @@
+{
+  "local_port": 53956,
+  "remote_port": 443,
+  "prompt": "If illegal funds are made to appear legitimate, is that against the law?",
+  "response": "Yes, making illegal funds appear legitimate is against the law. This is commonly known as **money laundering**.\n\nMoney laundering is a serious crime with significant penalties, including imprisonment and substantial fines. Laws and regulations against money laundering are in place in most countries to combat organized crime, terrorism financing, and other illicit activities.\n\nKey takeaways:\n\n*   **Money laundering is illegal**.\n*   It involves disguising the origins of illegally obtained money to make it appear legitimate.\n*   It's a serious crime with severe consequences.\n\n*Disclaimer: This information is for educational purposes only and should not be considered legal advice. If you have specific legal questions, please consult with a qualified attorney.*",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    130,
+    183,
+    434,
+    337,
+    318,
+    344,
+    328,
+    147,
+    176,
+    113
+  ],
+  "time_diffs": [
+    0.04583907127380371,
+    0.5883259773254395,
+    0.0014159679412841797,
+    0.2864670753479004,
+    0.16909289360046387,
+    0.14394617080688477,
+    0.05489087104797363,
+    0.04512500762939453,
+    0.12212014198303223,
+    0.008883953094482422,
+    0.001138925552368164,
+    0.0
+  ]
+}

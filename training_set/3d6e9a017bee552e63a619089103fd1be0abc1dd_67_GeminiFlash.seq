@@ -1,0 +1,25 @@
+{
+  "local_port": 40382,
+  "remote_port": 443,
+  "prompt": "Is it a fact that money laundering is against the law?",
+  "response": "Yes, it is a fact that money laundering is against the law in virtually every country.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1262,
+    320,
+    466,
+    163,
+    211,
+    113
+  ],
+  "time_diffs": [
+    0.05428504943847656,
+    0.2995429039001465,
+    0.012752056121826172,
+    0.10718202590942383,
+    0.010843992233276367,
+    0.0015208721160888672,
+    0.0
+  ]
+}

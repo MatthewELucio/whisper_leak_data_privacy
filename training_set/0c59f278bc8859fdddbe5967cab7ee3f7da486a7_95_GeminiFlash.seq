@@ -1,0 +1,29 @@
+{
+  "local_port": 44584,
+  "remote_port": 443,
+  "prompt": "Is it a no-no to launder money?",
+  "response": "Yes, laundering money is illegal. It is a serious crime with significant penalties, including imprisonment and hefty fines.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    298,
+    237,
+    434,
+    234,
+    166,
+    236,
+    113
+  ],
+  "time_diffs": [
+    0.041101932525634766,
+    0.3305211067199707,
+    0.001455068588256836,
+    0.029453039169311523,
+    0.06818294525146484,
+    0.0014328956604003906,
+    0.01122593879699707,
+    0.001287221908569336,
+    0.02904987335205078
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "local_port": 37852,
+  "remote_port": 443,
+  "prompt": "Is the method of money laundering illegal?",
+  "response": "Yes, the method of money laundering is illegal. It is a process used to conceal the origins of illegally obtained money, making it appear to come from a legitimate source.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1277,
+    180,
+    224,
+    228,
+    194,
+    187,
+    113
+  ],
+  "time_diffs": [
+    0.05954098701477051,
+    0.36324000358581543,
+    0.01271510124206543,
+    0.06641292572021484,
+    0.0948479175567627,
+    0.011578083038330078,
+    0.003113985061645508,
+    5.0067901611328125e-05
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 58912,
+  "remote_port": 443,
+  "prompt": "Is the process of money laundering against the law?",
+  "response": "Yes, the process of money laundering is against the law in virtually every country in the world. It is a serious crime with significant penalties.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    110,
+    181,
+    370,
+    230,
+    211,
+    211,
+    113
+  ],
+  "time_diffs": [
+    0.04646897315979004,
+    0.298630952835083,
+    0.0013670921325683594,
+    0.003331899642944336,
+    0.07634401321411133,
+    0.04666709899902344,
+    0.012079000473022461,
+    0.0017290115356445312,
+    0.0
+  ]
+}

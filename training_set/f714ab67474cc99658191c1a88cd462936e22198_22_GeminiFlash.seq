@@ -1,0 +1,33 @@
+{
+  "local_port": 47768,
+  "remote_port": 443,
+  "prompt": "What are the penalties for money laundering under federal law?",
+  "response": "Okay, let's break down the penalties for money laundering under US federal law.  It's important to remember that this is a complex area, and the specific penalties can vary significantly depending on the details of the case.  I am an AI and cannot provide legal advice, so this information is for general educational purposes only.  Consult with a qualified legal professional for advice regarding your specific situation.\n\n**Key Federal Laws**\n\nThe primary federal laws addressing money laundering are:\n\n*   **18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments):** This is the main money laundering statute. It covers a wide range of activities related to concealing or disguising the proceeds of unlawful",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1285,
+    285,
+    317,
+    304,
+    297,
+    402,
+    307,
+    205,
+    144,
+    113
+  ],
+  "time_diffs": [
+    0.046826839447021484,
+    0.4040031433105469,
+    0.24402189254760742,
+    0.17487192153930664,
+    0.2418811321258545,
+    0.0660390853881836,
+    0.07017779350280762,
+    0.31906604766845703,
+    0.00787210464477539,
+    0.001355886459350586,
+    0.0
+  ]
+}

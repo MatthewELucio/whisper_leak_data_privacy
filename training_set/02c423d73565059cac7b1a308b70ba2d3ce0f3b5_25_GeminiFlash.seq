@@ -1,0 +1,43 @@
+{
+  "local_port": 58400,
+  "remote_port": 443,
+  "prompt": "Do you get in trouble for laundering money?",
+  "response": "Yes, laundering money is a serious crime and carries severe penalties. Here's a breakdown of why and what those consequences can be:\n\n*   **It's Illegal:** Money laundering involves disguising the origins of illegally obtained money so that it appears to come from a legitimate source. This is a crime in virtually every country.\n*   **Laws Against It:** Laws like the Bank Secrecy Act and the Patriot Act (in the United States) are designed to combat money laundering. Similar laws exist internationally.\n*   **Penalties:** The penalties for money laundering can be very harsh, including:\n    *   **Imprisonment:** Often, significant jail time, potentially decades depending on the amount of money laundered and the specific laws.\n    *   **Fines:** Large monetary fines, sometimes exceeding the amount of money laundered.\n    *   **Asset Forfeiture:** The government can seize assets involved in the money laundering scheme, including money, property, and vehicles.\n*   **Who Gets in Trouble:** Anyone involved in the process can be prosecuted, including:\n    *   The individuals who generated the illegal money.\n    *   Those who help to hide or disguise the money.\n    *   Businesses that knowingly or unknowingly facilitate money laundering.\n*   **Why It's a Serious Crime:** Money laundering allows criminals to profit from their illegal activities and makes it harder for law enforcement to track and stop those activities. It can also undermine the financial system.\n\nIf you have any concerns about whether something you're doing might be related to money laundering, it's essential to seek legal advice immediately.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    209,
+    175,
+    353,
+    184,
+    483,
+    445,
+    254,
+    313,
+    363,
+    378,
+    216,
+    190,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.046560049057006836,
+    0.3111000061035156,
+    0.001508951187133789,
+    0.0,
+    0.0975799560546875,
+    0.06995511054992676,
+    0.20006299018859863,
+    0.21098899841308594,
+    0.2680509090423584,
+    0.29157590866088867,
+    0.3780641555786133,
+    0.4467129707336426,
+    0.032933950424194336,
+    0.010478973388671875,
+    0.0,
+    0.0
+  ]
+}

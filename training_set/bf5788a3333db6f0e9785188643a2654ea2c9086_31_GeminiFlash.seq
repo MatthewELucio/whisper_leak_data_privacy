@@ -1,0 +1,43 @@
+{
+  "local_port": 43274,
+  "remote_port": 443,
+  "prompt": "Are there international laws against money laundering?",
+  "response": "Yes, there are several international laws and treaties aimed at combating money laundering. Here's a breakdown of some of the most important ones:\n\n*   **The United Nations Convention against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (1988):** This convention, often called the Vienna Convention, was one of the earliest international efforts to address money laundering. It requires signatory countries to criminalize the laundering of proceeds from drug trafficking.\n\n*   **The United Nations Convention against Transnational Organized Crime (2000):** Also known as the Palermo Convention, this expands the scope beyond drug-related money laundering to include proceeds from a wider range of serious crimes, including organized crime.\n\n*   **The United Nations Convention against Corruption (2003):** This convention focuses on combating corruption, including the laundering of proceeds derived from corrupt activities.\n\n*   **Financial Action Task Force (FATF) Recommendations:** While not a treaty, the FATF is an intergovernmental body that sets international standards for combating money laundering, terrorist financing, and proliferation financing. These recommendations are highly influential and are adopted by many countries as part of their national laws and regulations.\n\n*   **Regional Treaties and Conventions:** Various regions have also developed their own treaties and conventions to address money laundering, such as those within the European Union, the Council of Europe, and the Organization of American States.\n\nThese international laws and treaties generally require countries to:\n\n*   Criminalize money laundering.\n*   Establish measures for the confiscation of the proceeds of crime.\n*   Implement customer due diligence and record-keeping requirements for financial institutions.\n*   Establish financial intelligence units (FIUs) to receive and analyze suspicious transaction reports.\n*   Cooperate with other countries in investigating and prosecuting money laundering cases.\n\nIt's worth noting that the effectiveness of these international laws depends on the extent to which countries implement and enforce them.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    205,
+    186,
+    291,
+    247,
+    472,
+    283,
+    401,
+    376,
+    559,
+    485,
+    434,
+    314,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.05695700645446777,
+    0.39890289306640625,
+    0.001413106918334961,
+    0.013424873352050781,
+    0.07828998565673828,
+    0.12296009063720703,
+    0.14359307289123535,
+    0.16931796073913574,
+    0.27329182624816895,
+    0.2673001289367676,
+    0.4306659698486328,
+    0.3826920986175537,
+    0.34409499168395996,
+    0.010254859924316406,
+    0.0,
+    3.910064697265625e-05
+  ]
+}

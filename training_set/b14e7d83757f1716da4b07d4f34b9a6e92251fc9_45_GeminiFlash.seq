@@ -1,0 +1,43 @@
+{
+  "local_port": 44504,
+  "remote_port": 443,
+  "prompt": "Is the scheme of money laundering illegal?",
+  "response": "Yes, the scheme of money laundering is **illegal** in virtually every country around the world.\n\nMoney laundering involves disguising the origins of illegally obtained money so that it appears to come from a legitimate source. The specific laws and regulations vary from country to country, but the core principle remains the same: it's a crime to try to conceal the proceeds of illegal activities.\n\nKey aspects of why it's illegal:\n\n*   **It facilitates other crimes:** Money laundering allows criminals to profit from their illegal activities, such as drug trafficking, fraud, corruption, and terrorism. Without the ability to \"clean\" their money, it would be much more difficult for them to use and enjoy the proceeds of their crimes.\n*   **It undermines the financial system:** Money laundering can destabilize financial institutions and entire economies by introducing illegally obtained funds into the legitimate financial system.\n*   **It's actively combatted by international organizations:** International organizations like the Financial Action Task Force (FATF) work to develop and promote policies to combat money laundering and terrorist financing. Countries that fail to comply with these standards can face sanctions and other penalties.\n\n**Consequences of Money Laundering:**\n\nThe penalties for money laundering can be severe, including:\n\n*   **Imprisonment:** Often lengthy prison sentences.\n*   **Fines:** Substantial financial penalties.\n*   **Asset forfeiture:** The seizure of assets involved in the money laundering scheme.\n*   **Reputational damage:** Damage to personal and professional reputation.\n\nIn conclusion, money laundering is a serious crime with significant legal and financial consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    156,
+    393,
+    407,
+    212,
+    459,
+    432,
+    459,
+    335,
+    366,
+    364,
+    186,
+    220,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.045008182525634766,
+    0.2989189624786377,
+    0.0015630722045898438,
+    0.012939929962158203,
+    0.10428404808044434,
+    0.08188700675964355,
+    0.20812582969665527,
+    0.21023106575012207,
+    0.2982299327850342,
+    0.2792820930480957,
+    0.35900187492370605,
+    0.40357112884521484,
+    0.030607938766479492,
+    0.009315013885498047,
+    0.0,
+    4.9114227294921875e-05
+  ]
+}

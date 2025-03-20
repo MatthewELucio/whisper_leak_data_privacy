@@ -1,0 +1,25 @@
+{
+  "local_port": 60182,
+  "remote_port": 443,
+  "prompt": "Is the method of money laundering illegal?",
+  "response": "Yes, the method of money laundering is absolutely illegal.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1455,
+    192,
+    396,
+    249,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.048110008239746094,
+    0.31272220611572266,
+    0.028865814208984375,
+    0.050904035568237305,
+    0.007934093475341797,
+    0.0015959739685058594,
+    0.0
+  ]
+}

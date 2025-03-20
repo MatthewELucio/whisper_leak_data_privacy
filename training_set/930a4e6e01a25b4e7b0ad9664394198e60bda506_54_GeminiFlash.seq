@@ -1,0 +1,35 @@
+{
+  "local_port": 48478,
+  "remote_port": 443,
+  "prompt": "Are there any circumstances where money laundering is legal?",
+  "response": "No, there are no circumstances where money laundering is legal. Money laundering is, by definition, the process of concealing the origins of illegally obtained money, making it appear to come from a legitimate source. The entire purpose of the activity is to disguise the illicit nature of the funds.\n\nLaws against money laundering are in place globally to combat organized crime, terrorism, drug trafficking, and other serious offenses. Even if someone were to believe they had a \"good\" reason to hide illegally obtained money, it would still be a crime.\n\nTherefore, under no circumstances is money laundering considered legal.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    103,
+    353,
+    417,
+    384,
+    440,
+    369,
+    319,
+    234,
+    194,
+    113
+  ],
+  "time_diffs": [
+    0.05619502067565918,
+    0.34271788597106934,
+    0.0012600421905517578,
+    0.026827096939086914,
+    0.03653287887573242,
+    0.11874699592590332,
+    0.1596691608428955,
+    0.17617487907409668,
+    0.1299431324005127,
+    0.005316972732543945,
+    0.00020194053649902344,
+    0.0002040863037109375
+  ]
+}

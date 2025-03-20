@@ -1,0 +1,37 @@
+{
+  "local_port": 48310,
+  "remote_port": 443,
+  "prompt": "If a person engages in money laundering, is that a legal offense?",
+  "response": "Yes, money laundering is a **federal crime** in the United States and in most countries around the world. It is also a crime under state law in many states.\n\nHere's why and what makes it illegal:\n\n*   **What is Money Laundering?** Money laundering is the process of concealing the origins of illegally obtained money, making it appear to have come from a legitimate source.\n*   **Why is it illegal?** Money laundering enables criminals to profit from their illegal activities (such as drug trafficking, human trafficking, fraud, and terrorism) without detection. It undermines financial systems, facilitates crime, and can have devastating consequences for societies.\n*   **Consequences:** The penalties for money laundering can be severe, including significant fines, imprisonment, and forfeiture of assets.\n\nIf you are accused of money laundering, seek legal advice from a qualified attorney immediately.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    244,
+    327,
+    251,
+    391,
+    259,
+    344,
+    381,
+    413,
+    250,
+    199,
+    113
+  ],
+  "time_diffs": [
+    0.04518699645996094,
+    0.31311893463134766,
+    0.0014591217041015625,
+    0.012264013290405273,
+    0.1063380241394043,
+    0.0818789005279541,
+    0.1900920867919922,
+    0.2258589267730713,
+    0.26537203788757324,
+    0.20896506309509277,
+    0.006368875503540039,
+    0.0004341602325439453,
+    5.4836273193359375e-05
+  ]
+}

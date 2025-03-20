@@ -1,0 +1,33 @@
+{
+  "local_port": 53798,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, the concept of money laundering as a crime is pretty clear. It involves taking illegally obtained money and trying to make it look like it came from a legitimate source. This is done to hide the original criminal activity and allows the perpetrators to use the money without raising suspicion.\n\nHowever, the details of what constitutes money laundering can be complex and vary depending on the specific laws of a country. There can also be situations where someone might unknowingly be involved in money laundering activities, especially if they are handling finances for a business or organization.\n\nIn short, while the general idea of money laundering being a crime is obvious, the specifics and legal definitions can be quite intricate.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    255,
+    323,
+    218,
+    289,
+    271,
+    467,
+    266,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.046823978424072266,
+    0.33908510208129883,
+    0.0014560222625732422,
+    0.11566591262817383,
+    0.06597113609313965,
+    0.22197890281677246,
+    0.25389909744262695,
+    0.15733695030212402,
+    0.009775876998901367,
+    0.0014951229095458984,
+    0.0014290809631347656
+  ]
+}

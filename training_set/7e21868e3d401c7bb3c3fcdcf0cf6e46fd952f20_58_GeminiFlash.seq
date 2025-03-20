@@ -1,0 +1,25 @@
+{
+  "local_port": 37926,
+  "remote_port": 443,
+  "prompt": "Suppose someone launders money, are they acting illegally?",
+  "response": "Yes, money laundering is illegal in virtually all countries.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1396,
+    277,
+    376,
+    145,
+    137,
+    113
+  ],
+  "time_diffs": [
+    0.04656815528869629,
+    0.29423093795776367,
+    0.015845060348510742,
+    0.06107687950134277,
+    0.011888980865478516,
+    0.0016391277313232422,
+    0.0016219615936279297
+  ]
+}

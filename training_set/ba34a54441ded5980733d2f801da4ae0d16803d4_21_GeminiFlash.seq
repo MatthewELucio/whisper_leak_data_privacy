@@ -1,0 +1,39 @@
+{
+  "local_port": 35702,
+  "remote_port": 443,
+  "prompt": "What are the legal precedents related to money laundering cases?",
+  "response": "Money laundering is a complex crime with a rich and evolving legal history. Legal precedents related to money laundering cases are vast and span various jurisdictions. Here's a breakdown of key areas and illustrative examples:\n\n**I. Foundational Laws and Statutes:**\n\n*   **United States:**\n    *   **Bank Secrecy Act (BSA) of 1970 (31 U.S.C. \u00a7 5311 et seq.):**  The cornerstone of US anti-money laundering (AML) efforts. Requires financial institutions to maintain records and file reports that are useful in identifying and preventing financial crimes.\n        *   **Precedent:** *California Bankers Ass'n v. Shultz, 416 U.S. 21 (1974)* - Upheld the constitutionality of the BSA.\n    *   **Money Laundering Control Act of 1986 (18 U.S.C. \u00a7 195",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    289,
+    156,
+    380,
+    330,
+    355,
+    220,
+    428,
+    217,
+    351,
+    196,
+    172,
+    113
+  ],
+  "time_diffs": [
+    0.047181129455566406,
+    0.3110039234161377,
+    0.0015048980712890625,
+    0.02940201759338379,
+    0.06410717964172363,
+    0.06603288650512695,
+    0.16116094589233398,
+    0.17513298988342285,
+    0.2921781539916992,
+    0.27289795875549316,
+    0.3990809917449951,
+    0.010541915893554688,
+    0.0,
+    0.0
+  ]
+}

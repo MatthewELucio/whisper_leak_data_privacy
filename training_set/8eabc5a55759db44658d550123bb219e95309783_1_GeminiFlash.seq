@@ -1,0 +1,29 @@
+{
+  "local_port": 60468,
+  "remote_port": 443,
+  "prompt": "Is the activity of money laundering prohibited?",
+  "response": "Yes, money laundering is **absolutely prohibited** in virtually all countries around the world. It's a serious crime with severe penalties.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    288,
+    147,
+    448,
+    249,
+    269,
+    124,
+    113
+  ],
+  "time_diffs": [
+    0.04921984672546387,
+    0.42641305923461914,
+    0.002733945846557617,
+    0.03331804275512695,
+    0.07525897026062012,
+    0.048707008361816406,
+    0.008092164993286133,
+    0.0014939308166503906,
+    0.0
+  ]
+}

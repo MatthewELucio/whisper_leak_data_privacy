@@ -1,0 +1,39 @@
+{
+  "local_port": 36408,
+  "remote_port": 443,
+  "prompt": "Are there international laws against money laundering?",
+  "response": "Yes, there are several international laws and conventions aimed at combating money laundering. Key international instruments include:\n\n*   **The United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (1988):** This is one of the earliest international treaties addressing money laundering, requiring parties to criminalize the laundering of proceeds from drug trafficking.\n\n*   **The Financial Action Task Force (FATF) Recommendations:** While not a treaty or law, the FATF Recommendations are the global standard for combating money laundering, terrorist financing, and the proliferation of weapons of mass destruction. They are widely adopted by countries worldwide and form the basis for national legislation.\n\n*   **The United Nations Convention Against Transnational Organized Crime (2000):** This convention expands the scope of money laundering offenses beyond drug trafficking to cover proceeds from a wider range of serious crimes.\n\n*   **The United Nations Convention against Corruption (2003):** This convention requires countries to criminalize the laundering of proceeds derived from corruption offenses.\n\nThese international legal instruments and standards create a framework for countries to enact their own national laws and regulations to prevent, detect, and prosecute money laundering. They also promote international cooperation in investigations and asset recovery.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    134,
+    293,
+    254,
+    314,
+    371,
+    350,
+    317,
+    277,
+    507,
+    166,
+    188,
+    113
+  ],
+  "time_diffs": [
+    0.0513918399810791,
+    0.4216001033782959,
+    0.0012688636779785156,
+    0.023414134979248047,
+    0.09712100028991699,
+    0.07494688034057617,
+    0.1451280117034912,
+    0.1760571002960205,
+    0.20018601417541504,
+    0.2926950454711914,
+    0.30579495429992676,
+    0.007200956344604492,
+    0.0007259845733642578,
+    0.0
+  ]
+}

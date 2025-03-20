@@ -1,0 +1,39 @@
+{
+  "local_port": 43638,
+  "remote_port": 443,
+  "prompt": "Is it a crime thing to launder money?",
+  "response": "Yes, money laundering is definitely a crime. It's a process used to disguise the origins of illegally obtained money so that it appears to come from a legitimate source.\n\nHere's why it's a crime and some key points:\n\n*   **Concealing Illegal Activity:** Money laundering is inherently linked to other criminal activities like drug trafficking, fraud, corruption, and terrorism financing. It allows criminals to profit from these activities without detection.\n*   **Legal Consequences:** Money laundering is a crime in virtually all countries. Penalties can include significant fines, imprisonment, and asset forfeiture.\n*   **International Efforts:** Due to its transnational nature, international organizations like the Financial Action Task Force (FATF) work to set standards and promote effective measures to combat money laundering and terrorist financing.\n\nEssentially, if you're dealing with money that comes from illegal activities and you try to hide its source to make it look legitimate, you're likely committing money laundering.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    251,
+    252,
+    299,
+    415,
+    250,
+    245,
+    499,
+    372,
+    279,
+    195,
+    232,
+    113
+  ],
+  "time_diffs": [
+    0.045800209045410156,
+    0.38089895248413086,
+    0.0014920234680175781,
+    0.023660898208618164,
+    0.051876068115234375,
+    0.11119699478149414,
+    0.14790582656860352,
+    0.2018260955810547,
+    0.2842979431152344,
+    0.2744159698486328,
+    0.05015301704406738,
+    0.009247064590454102,
+    0.0,
+    0.0
+  ]
+}

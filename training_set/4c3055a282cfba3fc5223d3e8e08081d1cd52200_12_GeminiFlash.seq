@@ -1,0 +1,39 @@
+{
+  "local_port": 34456,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law.\n\nHere's why:\n\n*   **International Treaties and Conventions:** Numerous international agreements, such as the United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (Vienna Convention), the United Nations Convention against Transnational Organized Crime (Palermo Convention), and the Financial Action Task Force (FATF) recommendations, require countries to criminalize money laundering.\n*   **National Laws:** Virtually every country in the world has enacted laws that prohibit money laundering. These laws vary in their specifics, but they generally make it illegal to conceal or disguise the proceeds of criminal activity so that they appear to have originated from legitimate sources.\n*   **Global Enforcement:** International organizations and law enforcement agencies cooperate to combat money laundering. This includes sharing information, coordinating investigations, and extraditing individuals accused of money laundering.\n*   **Economic and Social Harm:** Money laundering enables criminal activities, undermines the integrity of financial systems, and distorts economies. This recognition of harm is a key reason for its widespread prohibition.\n\nWhile specific definitions and penalties for money laundering may differ slightly between countries, the fundamental principle that it is illegal is universally accepted.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    279,
+    249,
+    283,
+    423,
+    452,
+    433,
+    393,
+    524,
+    351,
+    290,
+    191,
+    113
+  ],
+  "time_diffs": [
+    0.05526089668273926,
+    0.4096071720123291,
+    0.0014278888702392578,
+    0.034600019454956055,
+    0.04571199417114258,
+    0.07823300361633301,
+    0.15201187133789062,
+    0.19198203086853027,
+    0.26909303665161133,
+    0.2778770923614502,
+    0.2502298355102539,
+    0.007153034210205078,
+    0.0001800060272216797,
+    0.00011610984802246094
+  ]
+}

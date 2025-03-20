@@ -1,0 +1,39 @@
+{
+  "local_port": 43010,
+  "remote_port": 443,
+  "prompt": "What are the penalties for money laundering under federal law?",
+  "response": "The penalties for money laundering under federal law, specifically under 18 U.S.C. \u00a7 1956 and \u00a7 1957, are severe and can include significant fines and imprisonment. Here's a breakdown:\n\n**18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments):** This section deals with money laundering offenses involving a broad range of activities aimed at concealing or disguising the nature, location, source, ownership, or control of illegally obtained funds.  It requires proof of *intent* to launder the money.\n\n*   **General Penalty:**  Up to **20 years imprisonment** and a fine of **$500,000 or double the amount of money laundered,** whichever is greater.\n\n*   **Specific Intent Provisions:** There are several subsections outlining specific intents, such as:\n    *   Conducting a financial transaction with the intent to promote specified unlawful activity (SUA).\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    283,
+    204,
+    366,
+    301,
+    394,
+    476,
+    252,
+    529,
+    270,
+    194,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.047837018966674805,
+    0.40816497802734375,
+    0.0013659000396728516,
+    0.01721501350402832,
+    0.10346794128417969,
+    0.06198000907897949,
+    0.1619250774383545,
+    0.43796300888061523,
+    0.16411089897155762,
+    0.19624805450439453,
+    0.402087926864624,
+    0.007379055023193359,
+    0.0,
+    0.0
+  ]
+}

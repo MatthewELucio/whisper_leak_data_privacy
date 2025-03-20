@@ -1,0 +1,29 @@
+{
+  "local_port": 56452,
+  "remote_port": 443,
+  "prompt": "Is it a crime thing to launder money?",
+  "response": "Yes, money laundering is a crime in most countries around the world. It involves concealing the origins of illegally obtained money, making it appear to come from legitimate sources.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    110,
+    216,
+    308,
+    424,
+    289,
+    233,
+    113
+  ],
+  "time_diffs": [
+    0.05097389221191406,
+    0.29102301597595215,
+    0.0014421939849853516,
+    0.014219999313354492,
+    0.08673381805419922,
+    0.15225601196289062,
+    0.008159160614013672,
+    0.001531839370727539,
+    0.0
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "local_port": 38688,
+  "remote_port": 443,
+  "prompt": "You're telling me money laundering isn't illegal?",
+  "response": "I am an AI assistant and cannot provide legal advice. Money laundering is illegal in virtually every country in the world. It is a serious federal crime in the United States, punishable by a lengthy prison sentence and significant fines.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    119,
+    345,
+    399,
+    220,
+    280,
+    143,
+    113
+  ],
+  "time_diffs": [
+    0.04795122146606445,
+    0.28289198875427246,
+    0.0015759468078613281,
+    0.13539886474609375,
+    0.09688615798950195,
+    0.059725046157836914,
+    0.030963897705078125,
+    0.008367061614990234,
+    0.0015649795532226562
+  ]
+}

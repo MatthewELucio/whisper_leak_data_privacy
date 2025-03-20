@@ -1,0 +1,39 @@
+{
+  "local_port": 58166,
+  "remote_port": 443,
+  "prompt": "Is the activity of money laundering prohibited?",
+  "response": "Yes, money laundering is **absolutely prohibited** in virtually every country around the world. It is a serious crime with severe penalties, including imprisonment and significant fines.\n\nHere's why:\n\n*   **Facilitates other crimes:** Money laundering allows criminals to profit from illegal activities such as drug trafficking, human trafficking, terrorism, and corruption.\n*   **Undermines financial systems:** It can destabilize financial institutions and damage the integrity of the financial system.\n*   **Distorts economies:** It can lead to inaccurate economic data and unfair competition.\n\nGovernments have enacted laws and regulations to combat money laundering, including:\n\n*   **Anti-Money Laundering (AML) laws:** These laws require financial institutions to implement measures to detect and prevent money laundering, such as customer due diligence, suspicious activity reporting, and record-keeping.\n*   **Counter-Terrorism Financing (CTF) laws:** These laws target the financing of terrorist activities, which often involves similar methods to money laundering.\n*   **International cooperation:** Countries cooperate through international organizations and agreements to share information and coordinate efforts to combat money laundering and terrorist financing.\n\nIn short, money laundering is a serious offense that is strictly prohibited and actively combatted worldwide.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    284,
+    300,
+    430,
+    298,
+    456,
+    293,
+    337,
+    451,
+    315,
+    155,
+    218,
+    113
+  ],
+  "time_diffs": [
+    0.04903697967529297,
+    0.5027289390563965,
+    0.001363992691040039,
+    0.01540994644165039,
+    0.09132814407348633,
+    0.08480501174926758,
+    0.16009807586669922,
+    0.1920008659362793,
+    0.24586892127990723,
+    0.21987414360046387,
+    0.2775259017944336,
+    0.009413957595825195,
+    0.0,
+    0.0
+  ]
+}

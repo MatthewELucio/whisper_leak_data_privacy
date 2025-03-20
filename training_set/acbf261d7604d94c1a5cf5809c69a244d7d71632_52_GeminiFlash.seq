@@ -1,0 +1,31 @@
+{
+  "local_port": 51950,
+  "remote_port": 443,
+  "prompt": "Is it generally understood that money laundering is illegal?",
+  "response": "Yes, it is generally understood that money laundering is illegal. It is a crime in virtually every country around the world. Laws and regulations targeting money laundering are widely publicized and enforced. While some people may not know the specific details of money laundering laws, the general concept that it is a crime is well-established.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    100,
+    323,
+    409,
+    376,
+    260,
+    157,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.05603194236755371,
+    0.4266030788421631,
+    0.00177001953125,
+    0.011364936828613281,
+    0.0809628963470459,
+    0.06631016731262207,
+    0.15293478965759277,
+    0.010635137557983398,
+    0.0034210681915283203,
+    0.0
+  ]
+}

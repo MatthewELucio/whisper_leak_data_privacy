@@ -1,0 +1,27 @@
+{
+  "local_port": 52428,
+  "remote_port": 443,
+  "prompt": "You're telling me money laundering isn't illegal?",
+  "response": "Money laundering is absolutely illegal. It's a serious federal crime with significant penalties.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    229,
+    215,
+    398,
+    310,
+    167,
+    113
+  ],
+  "time_diffs": [
+    0.04710507392883301,
+    0.3256199359893799,
+    0.0014090538024902344,
+    0.028445959091186523,
+    0.04203391075134277,
+    0.005864143371582031,
+    0.001600027084350586,
+    0.0
+  ]
+}

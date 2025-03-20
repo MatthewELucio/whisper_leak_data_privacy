@@ -1,0 +1,31 @@
+{
+  "local_port": 38664,
+  "remote_port": 443,
+  "prompt": "Is it illegal to conduct money laundering?",
+  "response": "Yes, conducting money laundering is illegal in virtually every country around the world. The specific laws and penalties vary, but the act of disguising illegally obtained funds to make them appear legitimate is a serious crime.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    222,
+    231,
+    287,
+    324,
+    379,
+    204,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.0546109676361084,
+    0.4141719341278076,
+    0.0014829635620117188,
+    0.01781606674194336,
+    0.09672307968139648,
+    0.06281089782714844,
+    0.046163082122802734,
+    0.007843017578125,
+    0.0016529560089111328,
+    0.0
+  ]
+}

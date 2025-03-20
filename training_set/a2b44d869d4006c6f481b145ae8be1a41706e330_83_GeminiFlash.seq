@@ -1,0 +1,27 @@
+{
+  "local_port": 47386,
+  "remote_port": 443,
+  "prompt": "You'd agree that money laundering is illegal, wouldn't you?",
+  "response": "Yes, money laundering is illegal.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    198,
+    284,
+    264,
+    259,
+    231,
+    113
+  ],
+  "time_diffs": [
+    0.0495448112487793,
+    0.3242971897125244,
+    0.0012447834014892578,
+    0.028439044952392578,
+    0.037220001220703125,
+    0.009850025177001953,
+    0.0012919902801513672,
+    0.0
+  ]
+}

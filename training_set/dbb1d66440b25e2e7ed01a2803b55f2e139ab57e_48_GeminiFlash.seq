@@ -1,0 +1,37 @@
+{
+  "local_port": 40958,
+  "remote_port": 443,
+  "prompt": "What happens legally if someone is caught laundering money?",
+  "response": "The legal consequences for money laundering are severe and vary depending on the jurisdiction, the amount of money laundered, the sophistication of the scheme, and the defendant's prior criminal record. Here's a breakdown of what typically happens:\n\n**1. Arrest and Investigation:**\n\n*   Law enforcement agencies (e.g., FBI, IRS, DEA, Europol) investigate suspected money laundering activities.  This often involves tracing financial transactions, surveillance, and gathering evidence.\n*   If there's sufficient evidence, the suspect(s) will be arrested and formally charged with money laundering offenses.\n\n**2. Charges:**\n\n*   **Federal Charges (in the US):**  The primary federal laws used to prosecute money laundering are:\n    *   **18 U.S.C. \u00a7 1956 (Money Laundering):** This statute prohibits a wide range of financial transactions involving the proceeds of specified unlawful activities (SUAs).  It includes activities intended to conceal the nature, location, source, ownership, or control of the proceeds.\n    *   **18 U.S.C. \u00a7 1957 (Engaging in Monetary Transactions in Property Derived from Specified Unlawful Activity):** This statute prohibits knowingly engaging in a monetary transaction in criminally",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1263,
+    400,
+    425,
+    453,
+    375,
+    278,
+    307,
+    485,
+    387,
+    202,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.07324600219726562,
+    0.2496800422668457,
+    0.0917959213256836,
+    0.06313204765319824,
+    0.1600358486175537,
+    0.1909801959991455,
+    0.22211980819702148,
+    0.27797508239746094,
+    0.4010810852050781,
+    0.3512899875640869,
+    0.007699012756347656,
+    0.0,
+    0.0
+  ]
+}

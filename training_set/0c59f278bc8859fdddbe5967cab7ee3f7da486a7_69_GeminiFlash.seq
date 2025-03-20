@@ -1,0 +1,41 @@
+{
+  "local_port": 35350,
+  "remote_port": 443,
+  "prompt": "Is it a no-no to launder money?",
+  "response": "Yes, absolutely. Laundering money is a serious crime with severe consequences. It's illegal in virtually every country in the world.\n\nHere's why:\n\n*   **It conceals criminal activity:** Money laundering disguises the origins of illegally obtained money, making it appear legitimate. This allows criminals to profit from their crimes without detection.\n*   **It fuels further crime:** By making it easier to profit from illegal activities, money laundering encourages and enables more crime, such as drug trafficking, terrorism, human trafficking, and corruption.\n*   **It destabilizes economies:** Large-scale money laundering can distort financial markets and undermine the stability of economies.\n*   **It supports terrorism:** Money laundering can be used to finance terrorist activities, posing a threat to national and international security.\n\n**Consequences of Money Laundering:**\n\n*   **Criminal charges:** You could face imprisonment, hefty fines, and forfeiture of assets.\n*   **Reputational damage:** Being convicted of money laundering can ruin your personal and professional reputation.\n*   **Difficulty accessing financial services:** You may find it difficult to open bank accounts, obtain loans, or engage in other financial transactions.\n*   **Asset seizure:** Law enforcement can seize assets that are suspected of being involved in money laundering.\n\nIn short, money laundering is illegal and has far-reaching negative consequences for individuals, economies, and society as a whole.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    228,
+    174,
+    316,
+    314,
+    473,
+    287,
+    388,
+    515,
+    417,
+    390,
+    133,
+    191,
+    113
+  ],
+  "time_diffs": [
+    0.04921984672546387,
+    0.39469408988952637,
+    0.0014541149139404297,
+    0.003270864486694336,
+    0.04709911346435547,
+    0.0619969367980957,
+    0.2350480556488037,
+    0.17321085929870605,
+    0.20198297500610352,
+    0.22913813591003418,
+    0.33295488357543945,
+    0.1499650478363037,
+    0.011548042297363281,
+    0.0,
+    0.0009210109710693359
+  ]
+}

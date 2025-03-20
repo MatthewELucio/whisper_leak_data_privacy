@@ -1,0 +1,29 @@
+{
+  "local_port": 45304,
+  "remote_port": 443,
+  "prompt": "Is money laundering classified as a legally prohibited activity?",
+  "response": "Yes, money laundering is absolutely classified as a legally prohibited activity in virtually every country around the world. It is a serious crime with significant penalties, including imprisonment and financial sanctions.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    203,
+    376,
+    309,
+    232,
+    159,
+    131,
+    113
+  ],
+  "time_diffs": [
+    0.046668052673339844,
+    0.48525094985961914,
+    0.0013229846954345703,
+    0.03357219696044922,
+    0.06292891502380371,
+    0.11402606964111328,
+    0.009612798690795898,
+    0.0033800601959228516,
+    0.0
+  ]
+}

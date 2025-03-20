@@ -1,0 +1,41 @@
+{
+  "local_port": 37722,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a very strong and widespread consensus, bordering on universal agreement, that money laundering is against the law.\n\nHere's why:\n\n*   **International Treaties and Conventions:** International bodies like the United Nations (UN) and the Financial Action Task Force (FATF) have developed conventions and standards that criminalize money laundering and promote international cooperation in combating it. Most countries are signatories to these agreements and have incorporated them into their national laws.\n*   **National Laws:** Virtually every country in the world has laws against money laundering. These laws typically prohibit the concealing or disguising of the proceeds of criminal activity to make them appear legitimate.\n*   **Global Effort to Combat Crime:** Money laundering is seen as facilitating a wide range of serious crimes, including drug trafficking, terrorism, corruption, and human trafficking. By criminalizing money laundering, governments aim to disrupt these criminal activities and prevent criminals from profiting from their illegal actions.\n*   **Reputational and Economic Damage:** Countries that are perceived as havens for money laundering can suffer reputational damage and economic consequences, such as reduced foreign investment and increased scrutiny from international financial institutions.\n*   **Core Principle of Legal Systems:** Fundamentally, the concept of profiting from illegal activities and then trying to hide those profits goes against the core principles of justice and fairness in legal systems around the world.\n\nWhile there might be minor variations in the specific laws and regulations related to money laundering across different countries, the underlying principle that it is illegal is universally accepted. Therefore, it is safe to say that **there is a global consensus that money laundering is against the law.**\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1321,
+    186,
+    224,
+    214,
+    433,
+    342,
+    316,
+    307,
+    413,
+    414,
+    409,
+    272,
+    178,
+    113
+  ],
+  "time_diffs": [
+    0.05797910690307617,
+    0.4257779121398926,
+    0.03682088851928711,
+    0.08942198753356934,
+    0.08053016662597656,
+    0.15919804573059082,
+    0.1701188087463379,
+    0.38877010345458984,
+    0.27175402641296387,
+    0.38900184631347656,
+    0.33585405349731445,
+    0.018573999404907227,
+    0.011809110641479492,
+    0.00019884109497070312,
+    0.0
+  ]
+}

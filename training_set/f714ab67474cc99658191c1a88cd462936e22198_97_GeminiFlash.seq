@@ -1,0 +1,35 @@
+{
+  "local_port": 54072,
+  "remote_port": 443,
+  "prompt": "What are the penalties for money laundering under federal law?",
+  "response": "Federal money laundering laws are primarily codified in 18 U.S.C. \u00a7 1956 and 18 U.S.C. \u00a7 1957.  The penalties are severe and can include both imprisonment and significant fines.  Here's a breakdown:\n\n**18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments):**  This section covers a wide range of money laundering activities, focusing on the intent behind the transactions.  It is often used against those who design and execute sophisticated money laundering schemes.\n\n*   **Basic Offense (18 U.S.C. \u00a7 1956(a)(1)):**  This covers a person",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1479,
+    310,
+    301,
+    313,
+    453,
+    320,
+    318,
+    373,
+    177,
+    173,
+    113
+  ],
+  "time_diffs": [
+    0.04665803909301758,
+    0.46317410469055176,
+    0.014659881591796875,
+    0.08092498779296875,
+    0.06347799301147461,
+    0.17890715599060059,
+    0.16196894645690918,
+    0.276932954788208,
+    0.2956199645996094,
+    0.0042340755462646484,
+    0.0016798973083496094,
+    0.0
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "local_port": 32778,
+  "remote_port": 443,
+  "prompt": "Is it generally understood that money laundering is illegal?",
+  "response": "Yes, it is generally understood that money laundering is illegal.\n\nHere's why:\n\n*   **Laws:** Almost every country in the world has laws criminalizing money laundering.\n*   **International Treaties:** There are numerous international treaties and agreements (like the Financial Action Task Force - FATF) that require countries to criminalize money laundering and cooperate to combat it.\n*   **Media Coverage:** Money laundering is frequently covered in the news, often in connection with organized crime, terrorism, and corruption. This raises public awareness of its illegality.\n*   **Public Perception:** Most people understand that concealing the origins of illegally obtained money is wrong and that it's linked to criminal activity.\n*   **Education:** Financial institutions and other businesses that are vulnerable to being used for money laundering are required to train their employees to recognize and report suspicious activity.\n\nWhile not every single person on the planet might know the exact definition or details of money laundering, the general concept that it's illegal and related to crime is widely understood.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    225,
+    242,
+    368,
+    354,
+    465,
+    492,
+    471,
+    318,
+    325,
+    185,
+    211,
+    113
+  ],
+  "time_diffs": [
+    0.057817935943603516,
+    0.3937969207763672,
+    0.001455068588256836,
+    0.0030570030212402344,
+    0.08057308197021484,
+    0.08111095428466797,
+    0.1911768913269043,
+    0.22164702415466309,
+    0.22453999519348145,
+    0.2863960266113281,
+    0.0703420639038086,
+    0.006691932678222656,
+    0.0,
+    0.0
+  ]
+}

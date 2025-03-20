@@ -1,0 +1,39 @@
+{
+  "local_port": 47270,
+  "remote_port": 443,
+  "prompt": "Is the scheme of money laundering illegal?",
+  "response": "Yes, the scheme of money laundering is **illegal** in virtually all countries around the world.\n\nHere's why and what makes it illegal:\n\n*   **Definition of Money Laundering:** Money laundering is the process of concealing the origins of illegally obtained money, making it appear as if it came from a legitimate source.\n*   **Illegality:** Laws against money laundering are designed to combat a wide range of criminal activities, including drug trafficking, terrorism, corruption, fraud, and organized crime. Money laundering is often a necessary step for criminals to use or profit from their illegal activities.\n*   **Consequences:** Penalties for money laundering are severe, often including imprisonment, substantial fines, and forfeiture of assets.\n*   **International Cooperation:** Due to the global nature of money laundering, international cooperation is essential to combat it effectively. Organizations such as the Financial Action Task Force (FATF) set standards and promote the implementation of legal, regulatory, and operational measures for combating money laundering, terrorist financing, and other related threats to the integrity of the international financial system.\n\nIn short, attempting to disguise the proceeds of illegal activities to make them appear legitimate is a crime in itself.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    253,
+    209,
+    363,
+    338,
+    373,
+    416,
+    454,
+    509,
+    361,
+    293,
+    215,
+    113
+  ],
+  "time_diffs": [
+    0.05249500274658203,
+    0.29181885719299316,
+    0.0014622211456298828,
+    0.013008832931518555,
+    0.10121798515319824,
+    0.10802197456359863,
+    0.20056605339050293,
+    0.14827799797058105,
+    0.2728869915008545,
+    0.25411105155944824,
+    0.16908907890319824,
+    0.008931875228881836,
+    0.0007300376892089844,
+    0.0
+  ]
+}

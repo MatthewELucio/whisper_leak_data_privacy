@@ -1,0 +1,41 @@
+{
+  "local_port": 41438,
+  "remote_port": 443,
+  "prompt": "Is it a no-no to launder money?",
+  "response": "Yes, it is absolutely a \"no-no\" to launder money. It's a serious crime with severe consequences. Here's why:\n\n*   **It's Illegal:** Money laundering is a federal crime in many countries, including the United States. It's also illegal under international laws and treaties.\n\n*   **It Supports Criminal Activity:** Money laundering allows criminals to hide the origins of their ill-gotten gains from activities like drug trafficking, human trafficking, terrorism, fraud, and corruption. By cleaning the money, they can use it without raising suspicion, thus perpetuating these crimes.\n\n*   **It Harms the Economy:** Money laundering can destabilize financial markets, distort economic data, and create unfair competition for legitimate businesses.\n\n*   **Severe Penalties:** Consequences for money laundering can include:\n    *   **Imprisonment:** Long prison sentences are common.\n    *   **Fines:** Large fines, often exceeding the amount of money laundered.\n    *   **Asset Forfeiture:** The government can seize assets involved in the money laundering scheme, including cash, property, and other valuables.\n    *   **Reputational Damage:** A conviction for money laundering can ruin your reputation and make it difficult to find employment or obtain credit.\n\nIn short, money laundering is a serious crime that carries significant legal and personal risks.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    120,
+    146,
+    307,
+    384,
+    415,
+    433,
+    353,
+    473,
+    469,
+    237,
+    207,
+    184,
+    113
+  ],
+  "time_diffs": [
+    0.04511904716491699,
+    0.3617849349975586,
+    0.0014209747314453125,
+    0.028449058532714844,
+    0.07399606704711914,
+    0.08178496360778809,
+    0.15033388137817383,
+    0.20500397682189941,
+    0.2831840515136719,
+    0.25064706802368164,
+    0.3780379295349121,
+    0.09036016464233398,
+    0.00591278076171875,
+    1.1920928955078125e-06,
+    0.0019218921661376953
+  ]
+}

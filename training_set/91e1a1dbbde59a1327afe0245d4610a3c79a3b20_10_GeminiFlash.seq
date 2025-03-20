@@ -1,0 +1,31 @@
+{
+  "local_port": 38724,
+  "remote_port": 443,
+  "prompt": "I was wondering, is money laundering against the law?",
+  "response": "Yes, money laundering is a crime in virtually every country. It's illegal under both federal and state laws in the United States, and similar laws exist worldwide. The specific laws and punishments vary by jurisdiction, but the core principle remains the same: it's illegal to conceal or disguise the origins of illegally obtained money to make it appear legitimate.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1258,
+    326,
+    428,
+    375,
+    418,
+    155,
+    312,
+    161,
+    113
+  ],
+  "time_diffs": [
+    0.05729103088378906,
+    0.34719109535217285,
+    0.006031990051269531,
+    0.13726401329040527,
+    0.08603501319885254,
+    0.17400193214416504,
+    0.035614967346191406,
+    0.010413885116577148,
+    5.7220458984375e-05,
+    0.0018739700317382812
+  ]
+}

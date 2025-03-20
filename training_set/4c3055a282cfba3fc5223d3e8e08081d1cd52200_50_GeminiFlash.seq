@@ -1,0 +1,41 @@
+{
+  "local_port": 48830,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a very strong and widespread consensus that money laundering is against the law.\n\nHere's why:\n\n*   **International Laws and Treaties:** Numerous international treaties and conventions, such as the United Nations Convention against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (the Vienna Convention), the United Nations Convention against Transnational Organized Crime (the Palermo Convention), and the International Convention for the Suppression of the Financing of Terrorism, criminalize money laundering and require signatory countries to enact laws against it.\n*   **National Laws:** Virtually every country in the world has laws that criminalize money laundering. These laws often define money laundering broadly and cover a wide range of activities aimed at concealing the origins of illicit funds.\n*   **Economic Consequences:** Money laundering undermines financial systems, distorts markets, and can facilitate corruption and other crimes. The fight against money laundering is seen as essential for maintaining financial stability and integrity.\n*   **Link to Crime:** Money laundering is intrinsically linked to other serious crimes, such as drug trafficking, terrorism, corruption, and fraud. It allows criminals to profit from their illegal activities and further expand their operations.\n*   **Moral and Ethical Considerations:** There is a strong moral and ethical consensus that profiting from or facilitating criminal activity is wrong. Money laundering is seen as enabling and perpetuating such activity.\n\n**In summary:** The criminalization of money laundering is a fundamental principle of international law, national legal systems, and ethical standards. There is no significant debate or disagreement about whether it should be illegal.\n\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    194,
+    382,
+    350,
+    355,
+    354,
+    386,
+    469,
+    467,
+    449,
+    334,
+    194,
+    141,
+    113
+  ],
+  "time_diffs": [
+    0.048512935638427734,
+    0.4134399890899658,
+    0.0014350414276123047,
+    0.036531925201416016,
+    0.0387420654296875,
+    0.07139706611633301,
+    0.15364885330200195,
+    0.2104661464691162,
+    0.2671239376068115,
+    0.26036596298217773,
+    0.4093129634857178,
+    0.33957409858703613,
+    0.010391950607299805,
+    0.0009200572967529297,
+    0.0
+  ]
+}

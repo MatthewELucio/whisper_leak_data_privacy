@@ -1,0 +1,41 @@
+{
+  "local_port": 49674,
+  "remote_port": 443,
+  "prompt": "Is it bad to launder money?",
+  "response": "Yes, laundering money is illegal and has serious consequences. It's the process of concealing the origins of illegally obtained money, so it appears to come from a legitimate source. This allows criminals to use the money without drawing attention to the illegal activity that generated it.\n\nHere's why it's bad:\n\n*   **Supports Criminal Activity:** Money laundering enables and facilitates serious crimes like drug trafficking, terrorism, human trafficking, and corruption.\n*   **Economic Instability:** It can distort financial markets, undermine economic stability, and lead to unfair competition.\n*   **National Security Threats:** Laundering can fund terrorism and other activities that threaten national security.\n*   **Erosion of Trust:** It undermines trust in financial institutions and the legal system.\n\n**Consequences of Money Laundering:**\n\n*   **Criminal Charges:** Individuals and businesses involved in money laundering face severe criminal penalties, including lengthy prison sentences and hefty fines.\n*   **Asset Forfeiture:** Assets involved in the money laundering process can be seized by law enforcement.\n*   **Reputational Damage:** Involvement in money laundering can severely damage a person's or company's reputation, making it difficult to conduct business in the future.\n*   **International Sanctions:** Countries that fail to combat money laundering effectively may face international sanctions.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    275,
+    192,
+    448,
+    307,
+    351,
+    361,
+    281,
+    378,
+    474,
+    223,
+    154,
+    174,
+    113
+  ],
+  "time_diffs": [
+    0.045639991760253906,
+    0.31908392906188965,
+    0.0014460086822509766,
+    0.03053116798400879,
+    0.06600284576416016,
+    0.051136016845703125,
+    0.20209503173828125,
+    0.1539170742034912,
+    0.23610305786132812,
+    0.2601587772369385,
+    0.3658170700073242,
+    0.06316804885864258,
+    0.008291959762573242,
+    0.0,
+    0.0
+  ]
+}

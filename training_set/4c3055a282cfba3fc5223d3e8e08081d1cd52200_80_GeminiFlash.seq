@@ -1,0 +1,41 @@
+{
+  "local_port": 59380,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a very strong and widespread consensus that money laundering is against the law.\n\n*   **International Laws and Treaties:** Numerous international organizations and agreements, such as the United Nations and the Financial Action Task Force (FATF), explicitly define and prohibit money laundering. These organizations have set international standards to combat money laundering, which many countries have adopted into their domestic laws.\n*   **National Laws:** Virtually every country in the world has laws criminalizing money laundering. These laws vary in specific details and penalties, but the core principle of prohibiting the concealment of illicitly obtained funds is universally recognized.\n*   **Public Opinion:** There is broad public agreement that money laundering is wrong because it facilitates and enables serious crimes such as drug trafficking, terrorism, corruption, and human trafficking. It undermines the integrity of financial systems and distorts economic activity.\n*   **Legal and Ethical Frameworks:** The legal and ethical frameworks of most societies condemn money laundering because it is associated with criminal activity and undermines the rule of law.\n*   **Professional Ethics:** Professionals in financial institutions, law, and accounting have ethical obligations to prevent and report money laundering.\n\nIn summary, the prohibition of money laundering is deeply entrenched in international law, national laws, public opinion, and ethical frameworks. There is no legitimate support or defense for the practice.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    215,
+    368,
+    240,
+    267,
+    414,
+    425,
+    309,
+    327,
+    519,
+    189,
+    214,
+    228,
+    113
+  ],
+  "time_diffs": [
+    0.04740309715270996,
+    0.4704618453979492,
+    0.0014531612396240234,
+    0.01631784439086914,
+    0.09227204322814941,
+    0.07952713966369629,
+    0.15446996688842773,
+    0.15295791625976562,
+    0.23912405967712402,
+    0.2884330749511719,
+    0.31322598457336426,
+    0.016268014907836914,
+    0.010010004043579102,
+    0.00010991096496582031,
+    8.606910705566406e-05
+  ]
+}

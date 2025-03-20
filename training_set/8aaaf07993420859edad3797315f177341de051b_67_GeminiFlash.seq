@@ -1,0 +1,39 @@
+{
+  "local_port": 41040,
+  "remote_port": 443,
+  "prompt": "Is it like, illegal to launder money?",
+  "response": "Yes, it is absolutely illegal to launder money. Money laundering is a serious federal crime in most countries, including the United States.\n\nHere's why and what makes it illegal:\n\n*   **Concealing the Source:** The core of money laundering is disguising the origins of money obtained through illegal activities (like drug trafficking, fraud, corruption, etc.) to make it appear legitimate.\n*   **Facilitating Further Crime:** By cleaning the money, criminals can use the funds without drawing attention to the underlying illegal activity. This allows them to continue and expand their criminal enterprises.\n*   **Penalties:** Money laundering carries significant penalties, including:\n\n    *   **Imprisonment:** Often lengthy prison sentences.\n    *   **Fines:** Substantial financial penalties, potentially exceeding the amount of money laundered.\n    *   **Asset Forfeiture:** The government can seize assets involved in the money laundering scheme, including the laundered funds themselves, properties, and other valuables.\n\nLaws and regulations:\n\n* Various anti-money laundering (AML) laws and regulations are in place worldwide.\n* Regulations are designed to prevent, detect, and prosecute money laundering.\n\nIn short, money laundering is a serious offense with severe legal consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    283,
+    132,
+    267,
+    270,
+    306,
+    477,
+    465,
+    504,
+    410,
+    228,
+    180,
+    113
+  ],
+  "time_diffs": [
+    0.04615283012390137,
+    0.38077497482299805,
+    0.001522064208984375,
+    0.03506803512573242,
+    0.038984060287475586,
+    0.11025404930114746,
+    0.1413559913635254,
+    0.2558169364929199,
+    0.24790191650390625,
+    0.2754800319671631,
+    0.2997560501098633,
+    0.01131296157836914,
+    0.0,
+    0.0
+  ]
+}

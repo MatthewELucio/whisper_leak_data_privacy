@@ -1,0 +1,43 @@
+{
+  "local_port": 39208,
+  "remote_port": 443,
+  "prompt": "What is the legal history of money laundering prohibitions?",
+  "response": "The legal history of money laundering prohibitions is a relatively recent development, gaining serious momentum in the late 20th century and continuing to evolve today. Here's a breakdown of key milestones and developments:\n\n**Early Recognition (Pre-1980s):**\n\n*   While the *activity* of hiding illicit proceeds existed for centuries, it wasn't specifically targeted as a distinct crime of \"money laundering\" until relatively recently.\n*   Early efforts focused on directly attacking the predicate offenses (the crimes that generate the illicit funds), such as drug trafficking, fraud, and corruption.\n*   Some early attempts at forfeiture were used, but they were not specifically tied to the concept of money laundering.\n\n**The Rise of Anti-Money Laundering (AML) Laws (1980s):**\n\n*   **The US Leads the Way:** The 1986 **Money Laundering Control Act (MLCA) of the United States** is widely considered the first comprehensive money laundering law.  This Act:\n    *   Federalized money laundering as a distinct crime.\n    *   Made it illegal to conduct financial transactions with the proceeds of specified unlawful activities (SUAs), also known as predicate offenses.\n    *   Included criminal and civil penalties.\n    *   Established asset forfeiture provisions to seize laundered assets.\n*   **Motivations:**  The primary driver for the MLCA was the growing problem of drug trafficking and the need to disrupt the financial flows supporting it.\n*   **Council of Europe Convention:**  The 1990 **Council of Europe Convention on Laundering,",
+  "temperature": 1.0,
+  "data_lengths": [
+    979,
+    1294,
+    147,
+    251,
+    232,
+    296,
+    308,
+    348,
+    465,
+    338,
+    311,
+    460,
+    316,
+    294,
+    222,
+    113
+  ],
+  "time_diffs": [
+    0.04676508903503418,
+    0.33906984329223633,
+    0.0014030933380126953,
+    0.025249004364013672,
+    0.07109308242797852,
+    0.05296683311462402,
+    0.18519806861877441,
+    0.2079601287841797,
+    0.2881159782409668,
+    0.2575500011444092,
+    0.40979480743408203,
+    0.368070125579834,
+    0.3913090229034424,
+    0.05635404586791992,
+    0.0,
+    0.0
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "local_port": 34086,
+  "remote_port": 443,
+  "prompt": "Is it like, illegal to launder money?",
+  "response": "Yes, it is definitely illegal to launder money. It's a serious federal crime in most countries, including the United States. The penalties can be very severe, including lengthy prison sentences and substantial fines.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    254,
+    252,
+    277,
+    442,
+    332,
+    165,
+    179,
+    113
+  ],
+  "time_diffs": [
+    0.0452420711517334,
+    0.3040928840637207,
+    0.0015180110931396484,
+    0.03388190269470215,
+    0.06604599952697754,
+    0.08797407150268555,
+    0.053874969482421875,
+    0.010956048965454102,
+    0.0015189647674560547,
+    0.0015931129455566406
+  ]
+}

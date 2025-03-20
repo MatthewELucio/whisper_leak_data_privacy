@@ -1,0 +1,39 @@
+{
+  "local_port": 60406,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, the idea that money laundering is a crime is pretty straightforward. It's generally understood as taking dirty money, usually from illegal activities, and trying to make it look clean so it can be used without raising suspicion.\n\nHowever, the nuances of what constitutes money laundering and why it's a crime can be more complex.\n\nHere's a breakdown:\n\n*   **The Core Idea:** Money laundering involves disguising the origins of illegally obtained money.\n*   **Why it's a Crime:** It allows criminals to profit from their illegal activities (like drug trafficking, corruption, or fraud) and integrate those funds into the legitimate economy. This can:\n    *   **Fuel further crime:** The laundered money can be used to finance more illegal activities.\n    *   **Distort the economy:** Illicit funds can create unfair competition and instability in financial markets.\n    *   **Undermine institutions:** Corruption and bribery, often linked to money laundering, can erode trust in governments and financial systems.\n*   **Complexity:**  The specific laws and regulations against money laundering can vary between countries. Also, the methods used for laundering money can be quite sophisticated, involving complex financial transactions and shell companies.\n\nSo, while the basic concept might seem obvious, the actual implications and mechanisms of money laundering are quite intricate and have far-reaching consequences.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    218,
+    336,
+    221,
+    342,
+    233,
+    433,
+    295,
+    485,
+    388,
+    174,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.046096086502075195,
+    0.26816296577453613,
+    0.0019519329071044922,
+    0.12491393089294434,
+    0.1151580810546875,
+    0.1860489845275879,
+    0.17191100120544434,
+    0.30109500885009766,
+    0.25904107093811035,
+    0.44402194023132324,
+    0.09091806411743164,
+    0.010449886322021484,
+    0.0,
+    0.0
+  ]
+}

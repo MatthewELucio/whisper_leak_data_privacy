@@ -1,0 +1,27 @@
+{
+  "local_port": 57434,
+  "remote_port": 443,
+  "prompt": "Is it a crime thing to launder money?",
+  "response": "Yes, money laundering is a crime. It's a serious federal offense in many countries, including the United States, and carries significant penalties, including imprisonment and hefty fines.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1466,
+    250,
+    439,
+    395,
+    188,
+    130,
+    113
+  ],
+  "time_diffs": [
+    0.04411196708679199,
+    0.30768704414367676,
+    0.028987884521484375,
+    0.07401800155639648,
+    0.05746102333068848,
+    0.009076118469238281,
+    0.0,
+    0.0
+  ]
+}

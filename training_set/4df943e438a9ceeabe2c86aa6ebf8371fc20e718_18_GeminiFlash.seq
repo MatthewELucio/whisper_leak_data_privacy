@@ -1,0 +1,39 @@
+{
+  "local_port": 51690,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, yes, it's fairly obvious that money laundering is a crime. Here's why:\n\n*   **Association with Underlying Crime:** Money laundering is inherently linked to serious criminal activity. The money being laundered is the proceeds of things like drug trafficking, fraud, corruption, and terrorism. Most people recognize these activities as harmful and illegal.\n*   **Harm to Society:** Money laundering enables criminals to profit from their illegal activities and continue operating. This undermines the integrity of financial systems, distorts markets, and can fund further crime and instability.\n*   **Laws and Regulations:** Virtually every country has laws against money laundering, demonstrating a global consensus that it's a crime.\n*   **Ethical Considerations:** Most people understand that profiting from crime is morally wrong, and money laundering is a key component of that profit-making process.\n\nHowever, there might be some nuances:\n\n*   **Complexity:** The technical aspects of money laundering can be complex, and someone might not fully understand how it works without some explanation.\n*   **Lack of Direct Victim:** Unlike some crimes where there is an obvious, direct victim, the harm caused by money laundering can feel more diffuse and indirect. This might make the severity of the crime less immediately apparent to some.\n\nIn summary, while the illegality of money laundering is generally clear, a full understanding of its consequences requires knowledge of its connection to other serious crimes and its wider impact on society.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    219,
+    208,
+    194,
+    324,
+    245,
+    516,
+    322,
+    424,
+    435,
+    253,
+    165,
+    113
+  ],
+  "time_diffs": [
+    0.04647707939147949,
+    0.2785799503326416,
+    0.0013980865478515625,
+    0.10303401947021484,
+    0.12729597091674805,
+    0.19889402389526367,
+    0.17893290519714355,
+    0.2801179885864258,
+    0.2771000862121582,
+    0.4649238586425781,
+    0.18899106979370117,
+    0.01298213005065918,
+    0.0,
+    0.0
+  ]
+}

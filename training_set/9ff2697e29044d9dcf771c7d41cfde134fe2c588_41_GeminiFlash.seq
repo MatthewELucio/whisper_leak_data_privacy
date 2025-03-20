@@ -1,0 +1,27 @@
+{
+  "local_port": 45916,
+  "remote_port": 443,
+  "prompt": "Is the method of money laundering illegal?",
+  "response": "Yes, money laundering is illegal. It is a crime in most countries around the world.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    160,
+    243,
+    444,
+    200,
+    216,
+    113
+  ],
+  "time_diffs": [
+    0.04744100570678711,
+    0.31650209426879883,
+    0.001756906509399414,
+    0.02911996841430664,
+    0.08430004119873047,
+    0.0063610076904296875,
+    0.0015671253204345703,
+    0.0
+  ]
+}

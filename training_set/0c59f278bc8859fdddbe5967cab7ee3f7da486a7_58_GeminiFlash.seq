@@ -1,0 +1,35 @@
+{
+  "local_port": 60318,
+  "remote_port": 443,
+  "prompt": "Is it a no-no to launder money?",
+  "response": "Yes, laundering money is illegal in virtually every country. It's a serious crime with severe consequences, including:\n\n*   **Criminal charges:** You could face hefty fines and lengthy prison sentences.\n*   **Asset forfeiture:** Any assets involved in or derived from the money laundering could be seized by the government.\n*   **Damage to reputation:** Being convicted of money laundering can ruin your personal and professional reputation, making it difficult to get a job, secure loans, or even travel.\n*   **Facilitation of other crimes:** Money laundering enables and supports other serious criminal activities like drug trafficking, terrorism, and human trafficking.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    244,
+    297,
+    416,
+    338,
+    235,
+    284,
+    356,
+    213,
+    190,
+    113
+  ],
+  "time_diffs": [
+    0.04938101768493652,
+    0.266909122467041,
+    0.0014300346374511719,
+    0.012542963027954102,
+    0.10487890243530273,
+    0.10130715370178223,
+    0.20000386238098145,
+    0.16510891914367676,
+    0.16212701797485352,
+    0.007498979568481445,
+    0.0,
+    0.0
+  ]
+}

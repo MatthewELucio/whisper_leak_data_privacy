@@ -1,0 +1,35 @@
+{
+  "local_port": 34062,
+  "remote_port": 443,
+  "prompt": "If a business launders money, is it breaking the law?",
+  "response": "Yes, if a business launders money, it is **absolutely breaking the law** in virtually every jurisdiction.\n\nMoney laundering is a serious crime with severe penalties, including:\n\n*   **Criminal charges:** Individuals and businesses involved can face imprisonment, fines, and other legal sanctions.\n*   **Asset forfeiture:** The assets used in or derived from the money laundering activity can be seized by the government.\n*   **Reputational damage:** A business caught laundering money will suffer significant damage to its reputation, potentially leading to loss of customers, business partners, and investors.\n*   **Legal action:** Third parties who have been harmed by the money laundering activity may file civil lawsuits against the business.\n*   **Loss of licenses:** Depending on the industry, the business may lose its licenses to operate.\n\nMoney laundering laws are designed to combat organized crime, drug trafficking, terrorism, and other illegal activities.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1261,
+    212,
+    263,
+    227,
+    280,
+    426,
+    428,
+    323,
+    163,
+    200,
+    113
+  ],
+  "time_diffs": [
+    0.04607200622558594,
+    0.44880199432373047,
+    0.01287388801574707,
+    0.07004809379577637,
+    0.0659029483795166,
+    0.1441819667816162,
+    0.16695404052734375,
+    0.2788548469543457,
+    0.26937413215637207,
+    0.011718034744262695,
+    4.982948303222656e-05,
+    0.0005581378936767578
+  ]
+}

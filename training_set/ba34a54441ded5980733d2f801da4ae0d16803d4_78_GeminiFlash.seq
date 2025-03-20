@@ -1,0 +1,33 @@
+{
+  "local_port": 50186,
+  "remote_port": 443,
+  "prompt": "What are the legal precedents related to money laundering cases?",
+  "response": "Legal precedents related to money laundering cases are vast and constantly evolving due to new technologies, international collaborations, and evolving criminal schemes.  Here's a breakdown of key areas and landmark cases, organized by topic:\n\n**1.  Defining \"Money Laundering\" and Its Elements:**\n\n*   **18 U.S.C. \u00a7 1956 (Laundering of Monetary Instruments) and 18 U.S.C. \u00a7 1957 (Engaging in Monetary",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    290,
+    261,
+    262,
+    231,
+    287,
+    219,
+    233,
+    195,
+    113
+  ],
+  "time_diffs": [
+    0.04486083984375,
+    0.27829813957214355,
+    0.0013909339904785156,
+    0.12650394439697266,
+    0.07595109939575195,
+    0.17613697052001953,
+    0.16347408294677734,
+    0.35167598724365234,
+    0.008659839630126953,
+    0.0017230510711669922,
+    0.0016541481018066406
+  ]
+}

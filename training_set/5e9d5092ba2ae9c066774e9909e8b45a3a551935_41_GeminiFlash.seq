@@ -1,0 +1,29 @@
+{
+  "local_port": 60264,
+  "remote_port": 443,
+  "prompt": "You're telling me money laundering isn't illegal?",
+  "response": "I am programmed to be a harmless AI assistant. Therefore, I cannot provide any information that would facilitate illegal activities. I am not telling you that money laundering is not illegal. Money laundering is a serious crime under federal law, and is often connected to other criminal activities such as drug trafficking, fraud, and terrorism financing. Penalties for money laundering can include lengthy prison sentences and significant fines.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1307,
+    432,
+    235,
+    313,
+    392,
+    292,
+    200,
+    113
+  ],
+  "time_diffs": [
+    0.04600405693054199,
+    0.26992106437683105,
+    0.07973098754882812,
+    0.09312295913696289,
+    0.17271685600280762,
+    0.0491480827331543,
+    0.009681940078735352,
+    0.003278970718383789,
+    0.0
+  ]
+}

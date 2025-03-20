@@ -1,0 +1,27 @@
+{
+  "local_port": 56018,
+  "remote_port": 443,
+  "prompt": "Are there any circumstances where money laundering is legal?",
+  "response": "No, money laundering is never legal. The definition of money laundering itself involves disguising illegally obtained funds to make them appear legitimate. If the funds were obtained legally, there would be no need to \"launder\" them.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1261,
+    393,
+    337,
+    266,
+    192,
+    188,
+    113
+  ],
+  "time_diffs": [
+    0.04699420928955078,
+    0.35073280334472656,
+    0.15106511116027832,
+    0.07674694061279297,
+    0.11622309684753418,
+    0.01273488998413086,
+    0.001238107681274414,
+    0.0020170211791992188
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "local_port": 39122,
+  "remote_port": 443,
+  "prompt": "It's obvious that money laundering is a crime, isn't it?",
+  "response": "For most people, yes, it's quite obvious that money laundering is a crime. The act itself is designed to conceal illicit activities, which inherently makes it wrong. It's illegal in most countries, and there are significant penalties for those convicted.\n\nHowever, it's worth acknowledging a couple of nuances:\n\n*   **Understanding:** While most people know it's illegal, the *specifics* of what constitutes money laundering can be complex. Someone might unknowingly engage in activity that technically falls under the definition.\n*   **Moral Gray Areas (Rare):** In very rare cases, someone might rationalize money laundering if they believe the underlying crime is justified (e.g., funding a political movement they believe is fighting injustice). This doesn't make it legal or ethical, but it can influence their perception.\n\nSo, while the vast majority of people understand that money laundering is a crime, the degree of understanding and individual moral considerations can vary.",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    117,
+    314,
+    219,
+    415,
+    478,
+    368,
+    338,
+    134,
+    128,
+    113
+  ],
+  "time_diffs": [
+    0.0466160774230957,
+    0.32888007164001465,
+    0.0018398761749267578,
+    0.08043289184570312,
+    0.14804720878601074,
+    0.19115090370178223,
+    0.2070178985595703,
+    0.34081602096557617,
+    0.2171790599822998,
+    0.004601001739501953,
+    0.0,
+    0.0
+  ]
+}

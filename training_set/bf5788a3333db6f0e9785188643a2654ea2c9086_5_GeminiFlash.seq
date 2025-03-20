@@ -1,0 +1,37 @@
+{
+  "local_port": 46404,
+  "remote_port": 443,
+  "prompt": "Are there international laws against money laundering?",
+  "response": "Yes, there are several international laws and conventions aimed at combating money laundering. Here's a breakdown of the key ones:\n\n*   **United Nations Convention against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (1988 Vienna Convention):** This was one of the first major international agreements to address money laundering. It focused primarily on drug-related money laundering and required countries to criminalize the laundering of proceeds from drug trafficking and to cooperate in international investigations.\n\n*   **United Nations Convention against Transnational Organized Crime (2000 Palermo Convention):** This convention broadened the scope of money laundering offenses beyond drug trafficking to include the laundering of proceeds from a wide range of serious crimes, including organized crime, corruption, and terrorism financing. It also promoted international cooperation in asset recovery.\n\n*   **International Convention for the Suppression of the Financing of Terrorism (1999):** While not exclusively focused on money laundering, this convention plays a crucial role in combating money laundering related to terrorism",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1388,
+    335,
+    368,
+    320,
+    492,
+    272,
+    421,
+    406,
+    236,
+    251,
+    175,
+    113
+  ],
+  "time_diffs": [
+    0.04958200454711914,
+    0.38937807083129883,
+    0.015942811965942383,
+    0.08659219741821289,
+    0.09422898292541504,
+    0.18230700492858887,
+    0.1802539825439453,
+    0.23662400245666504,
+    0.3052489757537842,
+    0.35068798065185547,
+    0.013256072998046875,
+    0.0,
+    0.0
+  ]
+}

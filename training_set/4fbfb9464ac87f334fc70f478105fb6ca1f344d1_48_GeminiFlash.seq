@@ -1,0 +1,31 @@
+{
+  "local_port": 36434,
+  "remote_port": 443,
+  "prompt": "If a business launders money, is it breaking the law?",
+  "response": "Yes, a business that launders money is absolutely breaking the law in virtually every jurisdiction. Money laundering is a serious federal crime, and it's also often a state crime as well.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    978,
+    1294,
+    222,
+    252,
+    277,
+    377,
+    168,
+    272,
+    133,
+    113
+  ],
+  "time_diffs": [
+    0.05866599082946777,
+    0.40410399436950684,
+    0.0014829635620117188,
+    0.03847789764404297,
+    0.06296801567077637,
+    0.10611510276794434,
+    0.001447916030883789,
+    0.006170034408569336,
+    0.0032269954681396484,
+    5.0067901611328125e-05
+  ]
+}

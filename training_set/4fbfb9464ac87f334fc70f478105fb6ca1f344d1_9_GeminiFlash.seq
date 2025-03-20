@@ -1,0 +1,31 @@
+{
+  "local_port": 49908,
+  "remote_port": 443,
+  "prompt": "If a business launders money, is it breaking the law?",
+  "response": "Yes, absolutely. Money laundering is a serious crime in virtually every country. It's illegal to disguise the origins of illegally obtained money so that it appears to come from a legitimate source.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    191,
+    336,
+    263,
+    246,
+    314,
+    271,
+    215,
+    113
+  ],
+  "time_diffs": [
+    0.05068206787109375,
+    0.4542241096496582,
+    0.0014328956604003906,
+    0.03939414024353027,
+    0.06498289108276367,
+    0.10994410514831543,
+    0.00144195556640625,
+    0.00756382942199707,
+    0.001466989517211914,
+    0.027854204177856445
+  ]
+}

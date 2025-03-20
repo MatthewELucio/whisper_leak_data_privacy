@@ -1,0 +1,27 @@
+{
+  "local_port": 51568,
+  "remote_port": 443,
+  "prompt": "Is it a no-no to launder money?",
+  "response": "Yes, absolutely. Laundering money is a serious crime with severe consequences.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    977,
+    1294,
+    156,
+    181,
+    288,
+    167,
+    237,
+    113
+  ],
+  "time_diffs": [
+    0.04983186721801758,
+    0.3054311275482178,
+    0.0006580352783203125,
+    0.04616999626159668,
+    0.03079700469970703,
+    0.006974935531616211,
+    0.0014619827270507812,
+    0.0
+  ]
+}

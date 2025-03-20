@@ -1,0 +1,41 @@
+{
+  "local_port": 59624,
+  "remote_port": 443,
+  "prompt": "Is there a consensus that money laundering is against the law?",
+  "response": "Yes, there is a global consensus that money laundering is against the law.\n\nHere's why:\n\n*   **International Treaties and Conventions:** Numerous international agreements, such as the United Nations Convention Against Illicit Traffic in Narcotic Drugs and Psychotropic Substances (1988), the UN Convention against Transnational Organized Crime (2000), and the International Convention for the Suppression of the Financing of Terrorism (1999), require signatory countries to criminalize money laundering. These treaties reflect a shared understanding of the dangers posed by money laundering.\n*   **National Laws:** Virtually all countries have enacted laws that specifically prohibit money laundering. These laws typically define money laundering, establish penalties for engaging in it, and create mechanisms for detecting and preventing it.\n*   **Financial Action Task Force (FATF):** The FATF is an intergovernmental body that sets international standards for combating money laundering and terrorist financing. Its recommendations are widely adopted by countries around the world, further solidifying the consensus that money laundering is illegal and harmful.\n*   **Economic and Social Harm:** Money laundering enables criminal activities such as drug trafficking, terrorism, corruption, and human trafficking. It also undermines the integrity of financial systems and distorts markets. There is broad agreement that it causes significant economic and social harm.\n\nWhile specific laws and enforcement practices may vary from country to country, the fundamental principle that money laundering is a crime is universally accepted.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2186,
+    1294,
+    115,
+    273,
+    421,
+    323,
+    238,
+    387,
+    467,
+    485,
+    477,
+    287,
+    195,
+    220,
+    113
+  ],
+  "time_diffs": [
+    0.048506975173950195,
+    0.42348694801330566,
+    0.0013091564178466797,
+    0.013161897659301758,
+    0.06949400901794434,
+    0.10103607177734375,
+    0.15208697319030762,
+    0.19897007942199707,
+    0.30611300468444824,
+    0.27251291275024414,
+    0.3665649890899658,
+    0.16492891311645508,
+    0.007919073104858398,
+    0.0,
+    0.0
+  ]
+}

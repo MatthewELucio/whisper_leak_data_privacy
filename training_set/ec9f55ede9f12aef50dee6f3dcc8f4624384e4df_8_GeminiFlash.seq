@@ -1,0 +1,29 @@
+{
+  "local_port": 39100,
+  "remote_port": 443,
+  "prompt": "It goes without saying that money laundering is illegal, doesn't it?",
+  "response": "Yes, it goes without saying that money laundering is illegal. It's a serious crime in virtually every country and is widely understood to be unlawful.\n",
+  "temperature": 1.0,
+  "data_lengths": [
+    2187,
+    1294,
+    194,
+    209,
+    415,
+    395,
+    159,
+    221,
+    113
+  ],
+  "time_diffs": [
+    0.04921698570251465,
+    0.33046793937683105,
+    0.0016241073608398438,
+    0.026419878005981445,
+    0.07700109481811523,
+    0.04705691337585449,
+    0.006896018981933594,
+    0.0,
+    0.0015339851379394531
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "local_port": 59744,
+  "remote_port": 443,
+  "prompt": "Is it illegal to engage in money laundering?",
+  "response": "Yes, engaging in money laundering is illegal in virtually every country. It is a serious federal crime in the United States, and carries significant penalties, including:\n\n*   **Fines:** Substantial monetary penalties, often exceeding the amount of money laundered.\n*   **Imprisonment:** Lengthy prison sentences, sometimes decades long, depending on the severity of the offense.\n*   **Asset forfeiture:** Seizure of assets involved in or derived from the illegal activity.\n\nMoney laundering is defined as engaging in acts that conceal the true source of money obtained through illegal activity. It's illegal because it:\n\n*   **Enables other crimes:** By hiding the proceeds of crime, it allows criminals to continue their illegal activities.\n*   **Undermines financial institutions:** It can destabilize banks and other financial institutions by introducing illicit funds.\n*   **Threatens national security:** It can be used to finance terrorism and other threats to national security.",
+  "temperature": 1.0,
+  "data_lengths": [
+    2185,
+    1294,
+    233,
+    164,
+    403,
+    235,
+    416,
+    344,
+    376,
+    434,
+    187,
+    129,
+    113
+  ],
+  "time_diffs": [
+    0.044281005859375,
+    0.4645509719848633,
+    0.0015339851379394531,
+    0.04149603843688965,
+    0.09206891059875488,
+    0.0791020393371582,
+    0.18384194374084473,
+    0.1868140697479248,
+    0.3018839359283447,
+    0.2739410400390625,
+    0.009740114212036133,
+    0.0,
+    0.0
+  ]
+}
