@@ -96,4 +96,4 @@ class AmazonNovaLiteV1(ChatbotBase):
         """
         Returns the default temperature setting for the model.
         """
-        return 0.7
+        return 1.0

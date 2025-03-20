@@ -63,5 +63,5 @@ class AzureGPT4o(ChatbotBase):
             Gets the temperature of the model.
         """
 
-        # For now we just return the default of 0.7
-        return 0.7
+        # For now we just return the default of 1.0
+        return 1.0
