@@ -24,9 +24,9 @@ class AzureGPT4o(ChatbotBase):
 
         # Validate environment variables
         if not os.getenv('AZURE_OPENAI_ENDPOINT'):
-            raise ValueError("AZURE_OPENAI_ENDPOINT is not set in the environment variables.")
+            raise ValueError('AZURE_OPENAI_ENDPOINT is not set in the environment variables.')
         if not os.getenv('AZURE_OPENAI_API_KEY'):
-            raise ValueError("AZURE_OPENAI_API_KEY is not set in the environment variables.")
+            raise ValueError('AZURE_OPENAI_API_KEY is not set in the environment variables.')
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()

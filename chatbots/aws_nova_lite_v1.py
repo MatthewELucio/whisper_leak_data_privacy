@@ -12,7 +12,7 @@ class AmazonNovaLiteV1(ChatbotBase):
 
     def __init__(self, remote_tls_port=443):
         """
-        Initializes the chatbot instance.
+            Initializes the chatbot instance.
         """
         super().__init__(remote_tls_port)
 
@@ -26,7 +26,7 @@ class AmazonNovaLiteV1(ChatbotBase):
 
         # Check if any required credentials are missing
         if not aws_access_key_id or not aws_secret_access_key:
-            raise ValueError("AWS credentials are not set in the environment variables. Please set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY.")
+            raise ValueError('AWS credentials are not set in the environment variables. Please set AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY.')
 
         # Initialize the Boto3 client
         self._transport = LocalPortSaverTransport()
@@ -38,26 +38,24 @@ class AmazonNovaLiteV1(ChatbotBase):
         )
         self._model_id = 'us.amazon.nova-lite-v1:0'
 
-    def send_prompt(self, prompt, temperature=0.7):
+    def send_prompt(self, prompt, temperature):
         """
-        Sends a prompt to the model and returns the response along with the local port.
+            Sends a prompt to the model and returns the response along with the local port.
         """
-        if not isinstance(prompt, str):
-            raise TypeError("Prompt must be a string.")
 
+        # Build request
         system_list = [
             {
-                "text": "Act as a creative writing assistant. When the user provides you with a topic, write a short story about that topic."
+                'text': 'Act as a creative writing assistant. When the user provides you with a topic, write a short story about that topic.'
             }
         ]
-        message_list = [{"role": "user", "content": [{"text": prompt}]}]
-        inf_params = {"maxTokens": 3000, "temperature": temperature}
-
+        message_list = [{ 'role': 'user', 'content': [{ 'text': prompt }]}]
+        inf_params = { 'maxTokens': 3000, 'temperature': temperature}
         request_body = {
-            "schemaVersion": "messages-v1",
-            "messages": message_list,
-            "system": system_list,
-            "inferenceConfig": inf_params,
+            'schemaVersion': 'messages-v1',
+            'messages': message_list,
+            'system': system_list,
+            'inferenceConfig': inf_params,
         }
 
         start_time = datetime.now()
@@ -94,6 +92,8 @@ class AmazonNovaLiteV1(ChatbotBase):
 
     def get_temperature(self):
         """
-        Returns the default temperature setting for the model.
+            Returns the default temperature setting for the model.
         """
+
+        # Return 1.0 by default
         return 1.0
