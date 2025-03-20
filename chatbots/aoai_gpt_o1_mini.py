@@ -64,4 +64,4 @@ class AzureGPTo1Mini(ChatbotBase):
         """
 
         # For now we just return the default of 0.7
-        return 0.7
+        return 1.0
