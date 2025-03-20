@@ -23,7 +23,7 @@ class DeepseekV3OpenRouterLocked(ChatbotBase):
         load_dotenv()
         api_key = os.getenv('OPENROUTER_API_KEY')
         if not api_key:
-            raise ValueError("OPENROUTER_API_KEY is not set in the environment variables.")
+            raise ValueError('OPENROUTER_API_KEY is not set in the environment variables.')
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
@@ -48,8 +48,8 @@ class DeepseekV3OpenRouterLocked(ChatbotBase):
             temperature=temperature,
             # Specify the provider routing in extra_body
             extra_body={
-                "provider": {
-                    "order": ["DeepSeek"],
+                'provider': {
+                    'order': [ 'DeepSeek' ],
                     'allow_fallbacks': False
                 },
             }
