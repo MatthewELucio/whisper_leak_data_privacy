@@ -44,8 +44,8 @@ def get_chatbot_class(chatbot_name):
     PrintUtils.start_stage('Loading chatbots')
     chatbots = ChatbotUtils.load_chatbots(os.path.join(get_self_dir(), 'chatbots'))
     assert len(chatbots) > 0, Exception('Could not load any chatbots')
-    chatbot_names = ', '.join([ f'*{chatbot.__name__}*' for chatbot in chatbots.values() ])
-    PrintUtils.print_extra(f'Loaded chatbots: {chatbot_names}')
+    chatbot_names = '\n'.join([ f'\t*{chatbot.__name__}*' for chatbot in chatbots.values() ])
+    PrintUtils.print_extra(f'Loaded chatbots:\n{chatbot_names}')
     PrintUtils.end_stage()
 
     # Validating chatbot class exists
