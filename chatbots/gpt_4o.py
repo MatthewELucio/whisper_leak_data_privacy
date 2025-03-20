@@ -25,7 +25,7 @@ class GPT4o(ChatbotBase):
         # Validate environment variables
         key = os.getenv('OPENAI_API_KEY')
         if not key:
-            raise ValueError("OPENAI_API_KEY is not set in the environment variables.")
+            raise ValueError('OPENAI_API_KEY is not set in the environment variables.')
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
