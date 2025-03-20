@@ -25,12 +25,12 @@ class Grok2(ChatbotBase):
         # Validate environment variables
         key = os.getenv('XAI_API_KEY')
         if not key:
-            raise ValueError("XAI_API_KEY is not set in the environment variables.")
+            raise ValueError('XAI_API_KEY is not set in the environment variables.')
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
         self._client = OpenAI(
-            base_url="https://api.x.ai/v1",
+            base_url='https://api.x.ai/v1',
             api_key=key,
             http_client=httpx.Client(transport=self._transport)
         )
