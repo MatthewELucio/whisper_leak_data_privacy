@@ -23,7 +23,7 @@ class GeminiFlash(ChatbotBase):
         load_dotenv()
         api_key = os.getenv('GOOGLE_API_KEY')
         if not api_key:
-            raise ValueError("GOOGLE_API_KEY is not set in the environment variables.")
+            raise ValueError('GOOGLE_API_KEY is not set in the environment variables.')
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
