@@ -6,7 +6,7 @@ from openai import OpenAI
 import httpx
 from dotenv import load_dotenv
 
-class GPT4oMini(ChatbotBase):
+class Grok2(ChatbotBase):
     """
         OpenAI GPT 4o chatbot.
     """
@@ -23,15 +23,15 @@ class GPT4oMini(ChatbotBase):
         load_dotenv()
 
         # Validate environment variables
-        api_key = os.getenv('OPENAI_API_KEY')
-        if not api_key:
-            raise ValueError("OPENAI_API_KEY is not set in the environment variables.")
+        key = os.getenv('XAI_API_KEY')
+        if not key:
+            raise ValueError("XAI_API_KEY is not set in the environment variables.")
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
         self._client = OpenAI(
-            base_url=f'https://api.openai.com/v1/',
-            api_key=api_key,
+            base_url="https://api.x.ai/v1",
+            api_key=key,
             http_client=httpx.Client(transport=self._transport)
         )
 
@@ -45,7 +45,7 @@ class GPT4oMini(ChatbotBase):
         response = []
         stream = self._client.chat.completions.create(
             extra_body={},
-            model='gpt-4o-mini',
+            model='grok-2-1212',
             messages=[ { 'role': 'user', 'content': prompt } ],
             stream=True,
             temperature=temperature
