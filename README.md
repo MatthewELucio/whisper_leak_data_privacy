@@ -26,17 +26,16 @@ Run `whisper_leak_collect.py`. Note it performs network sniffing, thus requiring
 The following commandline illustrates how to use the Whisper Leak data collector:
 
 ```
-./whisper_leak_collect.py -c gemini -a ./api_key.txt -p ./prompts.json
+./whisper_leak_collect.py -c gemini -p ./prompts.json
 ```
 
 The flags are:
 - `-c` - the chatbot name.
-- `-a` - the API key filename.
 - `-p` - the JSON prompts file, contains both positive and negative prompts and their repeat counts.
 - `-t` - an *optional* integer for the TLS port used by the chatbot (443 by default).
-- `-e` - whether to allow empty responses or not (not allowing by default).
 
-When used, a directory called `training_set` is created and will contain the training set (see more on training in the software architecture piece).
+When used, a directory called `training_set` is created and will contain the training set (see more on training in the software architecture piece).  
+Many chatbot implementations require API keys - use a [.env](https://pypi.org/project/python-dotenv/) file for that.
 
 #### Prompts file structure
 The prompts file must adhere to the following JSON format:
