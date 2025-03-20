@@ -7,13 +7,15 @@ from core.chatbot_utils import ChatbotBase, LocalPortSaverTransport
 
 class AmazonNovaLiteV1(ChatbotBase):
     """
-    Amazon Nova chatbot utilizing streaming responses.
+        Amazon Nova chatbot utilizing streaming responses.
     """
 
     def __init__(self, remote_tls_port=443):
         """
             Initializes the chatbot instance.
         """
+        
+        # Initialize
         super().__init__(remote_tls_port)
 
         # Load environment variables from .env file
@@ -63,30 +65,30 @@ class AmazonNovaLiteV1(ChatbotBase):
             modelId=self._model_id, body=json.dumps(request_body)
         )
 
-        request_id = response.get("ResponseMetadata", {}).get("RequestId")
-        print(f"Request ID: {request_id}")
-        print("Awaiting first token...")
+        request_id = response.get('ResponseMetadata', {}).get('RequestId')
+        print(f'Request ID: {request_id}')
+        print('Awaiting first token...')
 
         chunk_count = 0
         time_to_first_token = None
         full_response = []
 
-        stream = response.get("body")
+        stream = response.get('body')
         if stream:
             for event in stream:
-                chunk = event.get("chunk")
+                chunk = event.get('chunk')
                 if chunk:
-                    chunk_json = json.loads(chunk.get("bytes").decode())
-                    content_block_delta = chunk_json.get("contentBlockDelta")
+                    chunk_json = json.loads(chunk.get('bytes').decode())
+                    content_block_delta = chunk_json.get('contentBlockDelta')
                     if content_block_delta:
                         if time_to_first_token is None:
                             time_to_first_token = datetime.now() - start_time
-                            print(f"Time to first token: {time_to_first_token}")
+                            print(f'Time to first token: {time_to_first_token}')
 
                         chunk_count += 1
-                        text_chunk = content_block_delta.get("delta", {}).get("text", "")
+                        text_chunk = content_block_delta.get('delta', {}).get('text', '')
                         full_response.append(text_chunk)
-                        print(text_chunk, end="")
+                        print(text_chunk, end='')
 
         return full_response, self._transport.get_local_port()
 
