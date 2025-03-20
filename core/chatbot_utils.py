@@ -11,13 +11,12 @@ class ChatbotBase(ABC):
         Base class for chatbots.
     """
 
-    def __init__(self, api_key, remote_tls_port=443):
+    def __init__(self, remote_tls_port=443):
         """
             Creates an instance.
         """
 
         # Save members
-        self._api_key = api_key
         self._remote_tls_port = remote_tls_port
 
     @abstractmethod

@@ -6,7 +6,7 @@ from openai import AzureOpenAI
 import httpx
 from dotenv import load_dotenv
 
-class AzureGPT4o(ChatbotBase):
+class AzureGPT4oMini(ChatbotBase):
     """
         Azure GPT 4o chatbot.
     """
@@ -46,7 +46,7 @@ class AzureGPT4o(ChatbotBase):
         response = []
         stream = self._client.chat.completions.create(
             extra_body={},
-            model='gpt-4o-adhoc',
+            model='gpt-4o-mini',
             messages=[ { 'role': 'user', 'content': prompt } ],
             stream=True,
             temperature=temperature

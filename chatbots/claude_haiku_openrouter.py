@@ -1,21 +1,29 @@
+import os
 from core.chatbot_utils import ChatbotBase
 from core.chatbot_utils import LocalPortSaverTransport
 
 from openai import OpenAI
 import httpx
+from dotenv import load_dotenv
 
 class ClaudeHaikuOpenRouter(ChatbotBase):
     """
         Claude 3.5 Haiku over OpenRouter chatbot.
     """
 
-    def __init__(self, api_key, remote_tls_port=443):
+    def __init__(self, remote_tls_port=443):
         """
             Creates an instance.
         """
 
         # Call superclass
-        super().__init__(api_key, remote_tls_port)
+        super().__init__(remote_tls_port)
+
+        # Load environment variables from .env file
+        load_dotenv()
+        api_key = os.getenv('OPENROUTER_API_KEY')
+        if not api_key:
+            raise ValueError("OPENROUTER_API_KEY is not set in the environment variables.")
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
@@ -28,11 +36,11 @@ class ClaudeHaikuOpenRouter(ChatbotBase):
         """
 
         # Send prompt
-        response = ''
+        response = []
         stream = self._client.chat.completions.create(extra_body={}, model='anthropic/claude-3.5-haiku-20241022:beta', messages=[ { 'role': 'user', 'content': prompt } ], stream=True, temperature=temperature)
         for chunk in stream:
             if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0 and chunk.choices[0].delta.content:
-                response += chunk.choices[0].delta.content
+                response.append(chunk.choices[0].delta.content)
 
         # Return response
         return (response, self._transport.get_local_port())

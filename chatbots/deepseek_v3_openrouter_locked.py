@@ -2,13 +2,13 @@ import os
 from core.chatbot_utils import ChatbotBase
 from core.chatbot_utils import LocalPortSaverTransport
 
-from openai import AzureOpenAI
+from openai import OpenAI
 import httpx
 from dotenv import load_dotenv
 
-class AzureGPT4o(ChatbotBase):
+class DeepseekV3OpenRouterLocked(ChatbotBase):
     """
-        Azure GPT 4o chatbot.
+        Deepseek V3 over OpenRouter chatbot.
     """
 
     def __init__(self, remote_tls_port=443):
@@ -21,20 +21,17 @@ class AzureGPT4o(ChatbotBase):
 
         # Load environment variables from .env file
         load_dotenv()
-
-        # Validate environment variables
-        if not os.getenv('AZURE_OPENAI_ENDPOINT'):
-            raise ValueError("AZURE_OPENAI_ENDPOINT is not set in the environment variables.")
-        if not os.getenv('AZURE_OPENAI_API_KEY'):
-            raise ValueError("AZURE_OPENAI_API_KEY is not set in the environment variables.")
+        api_key = os.getenv('OPENROUTER_API_KEY')
+        if not api_key:
+            raise ValueError("OPENROUTER_API_KEY is not set in the environment variables.")
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
-        self._client = AzureOpenAI(
-            azure_endpoint=os.getenv('AZURE_OPENAI_ENDPOINT'),
-            api_key=os.getenv('AZURE_OPENAI_API_KEY'),
-            api_version='2024-02-01',
-            http_client=httpx.Client(transport=self._transport))
+        self._client = OpenAI(
+            base_url=f'https://openrouter.ai:{remote_tls_port}/api/v1',
+            api_key=api_key,
+            http_client=httpx.Client(transport=self._transport)
+        )
 
     def send_prompt(self, prompt, temperature):
         """
@@ -45,14 +42,21 @@ class AzureGPT4o(ChatbotBase):
         # Send prompt
         response = []
         stream = self._client.chat.completions.create(
-            extra_body={},
-            model='gpt-4o-adhoc',
+            model='deepseek/deepseek-chat',
             messages=[ { 'role': 'user', 'content': prompt } ],
             stream=True,
-            temperature=temperature
+            temperature=temperature,
+            # Specify the provider routing in extra_body
+            extra_body={
+                "provider": {
+                    "order": ["DeepSeek"],
+                    'allow_fallbacks': False
+                },
+            }
         )
         for chunk in stream:
-            if len(chunk.choices) > 0 and chunk.choices[0].delta.content:
+            assert chunk.provider == 'DeepSeek', Exception(f'Unexpected provider: {chunk.provider}')
+            if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0 and chunk.choices[0].delta.content:
                 response.append(chunk.choices[0].delta.content)
 
         # Return response

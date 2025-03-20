@@ -2,13 +2,13 @@ import os
 from core.chatbot_utils import ChatbotBase
 from core.chatbot_utils import LocalPortSaverTransport
 
-from openai import AzureOpenAI
+from openai import OpenAI
 import httpx
 from dotenv import load_dotenv
 
-class AzureGPT4o(ChatbotBase):
+class O1Mini(ChatbotBase):
     """
-        Azure GPT 4o chatbot.
+        OpenAI GPT 4o chatbot.
     """
 
     def __init__(self, remote_tls_port=443):
@@ -23,18 +23,17 @@ class AzureGPT4o(ChatbotBase):
         load_dotenv()
 
         # Validate environment variables
-        if not os.getenv('AZURE_OPENAI_ENDPOINT'):
-            raise ValueError("AZURE_OPENAI_ENDPOINT is not set in the environment variables.")
-        if not os.getenv('AZURE_OPENAI_API_KEY'):
-            raise ValueError("AZURE_OPENAI_API_KEY is not set in the environment variables.")
+        key = os.getenv('OPENAI_API_KEY')
+        if not key:
+            raise ValueError("OPENAI_API_KEY is not set in the environment variables.")
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
-        self._client = AzureOpenAI(
-            azure_endpoint=os.getenv('AZURE_OPENAI_ENDPOINT'),
-            api_key=os.getenv('AZURE_OPENAI_API_KEY'),
-            api_version='2024-02-01',
-            http_client=httpx.Client(transport=self._transport))
+        self._client = OpenAI(
+            base_url=f'https://api.openai.com/v1/',
+            api_key=key,
+            http_client=httpx.Client(transport=self._transport)
+        )
 
     def send_prompt(self, prompt, temperature):
         """
@@ -46,7 +45,7 @@ class AzureGPT4o(ChatbotBase):
         response = []
         stream = self._client.chat.completions.create(
             extra_body={},
-            model='gpt-4o-adhoc',
+            model='o1-mini',
             messages=[ { 'role': 'user', 'content': prompt } ],
             stream=True,
             temperature=temperature

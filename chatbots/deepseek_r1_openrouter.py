@@ -6,9 +6,9 @@ from openai import OpenAI
 import httpx
 from dotenv import load_dotenv
 
-class DeepseekV3OpenRouter(ChatbotBase):
+class DeepseekR1OpenRouter(ChatbotBase):
     """
-        Deepseek V3 over OpenRouter chatbot.
+        Deepseek R1 over OpenRouter chatbot.
     """
 
     def __init__(self, remote_tls_port=443):
@@ -25,12 +25,18 @@ class DeepseekV3OpenRouter(ChatbotBase):
         if not api_key:
             raise ValueError("OPENROUTER_API_KEY is not set in the environment variables.")
 
+        # Setting up the proper headers for OpenRouter
+        headers = {
+            "HTTP-Referer": "Your-App-Name",  # Replace with your app name
+            "X-Title": "Your-App-Name"        # Replace with your app name
+        }
+
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
         self._client = OpenAI(
             base_url=f'https://openrouter.ai:{remote_tls_port}/api/v1',
             api_key=api_key,
-            http_client=httpx.Client(transport=self._transport)
+            http_client=httpx.Client(transport=self._transport, headers=headers)
         )
 
     def send_prompt(self, prompt, temperature):
@@ -41,24 +47,31 @@ class DeepseekV3OpenRouter(ChatbotBase):
 
         # Send prompt
         response = []
+        
+        # Use the correct model ID for DeepSeek R1
         stream = self._client.chat.completions.create(
-            model='deepseek/deepseek-chat',
-            messages=[ { 'role': 'user', 'content': prompt } ],
+            model="deepseek/deepseek-r1",  # Use the correct model ID
+            messages=[
+                {"role": "user", "content": prompt}
+            ],
             stream=True,
+            max_tokens=4000,
             temperature=temperature,
             # Specify the provider routing in extra_body
             extra_body={
                 "provider": {
-                    "order": ["NovitaAI"],
+                    "order": ["DeepSeek"],
                     'allow_fallbacks': False
                 },
             }
         )
+        
         for chunk in stream:
             assert chunk.provider == 'DeepSeek', Exception(f'Unexpected provider: {chunk.provider}')
-            if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0 and chunk.choices[0].delta.content:
-                response.append(chunk.choices[0].delta.content)
-
+            if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0:
+                if chunk.choices[0].delta.content is not None:
+                    response.append(chunk.choices[0].delta.content)
+            
         # Return response
         return (response, self._transport.get_local_port())
 
@@ -67,5 +80,5 @@ class DeepseekV3OpenRouter(ChatbotBase):
             Gets the temperature of the model.
         """
 
-        # For now we just return the default of 1.0
-        return 1.0
+        # For now we just return the default of 0.7 for DeepSeek R1
+        return 0.7
