@@ -211,69 +211,73 @@ class TrainingSetCollector(object):
 
         # Save all prompts
         all_prompts = self._negative_prompts + self._positive_prompts
-        total_datapoints = (len(self._positive_prompts) * self._positive_repeats) + (len(self._negative_prompts) * self._negative_repeats)
+
+        # Built the task list, [(prompt, index), ...]
+        task_list = []
+        for prompt in all_prompts:
+            repeats = self._negative_repeats if prompt in self._negative_prompts else self._positive_repeats
+            for index in range(repeats):
+                task_list.append((prompt, index))
+        
+        # Shuffle the task list
+        numpy.random.shuffle(task_list)
+
+        total_datapoints = len(task_list)
 
         # Iterate each prompt and either fetch existing data or truly generate data for it
-        curr_index = 0
         failed = 0
         data_length, avg_size, token_count = 0, 0.0, 0
-        for prompt in all_prompts:
-           
-            # Add prompt
-            training_set[prompt] = []
+        training_set = {}
+        for (prompt, index) in task_list:
+            # Update progress
+            percentage = (curr_count * 100) // total_datapoints
+            PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%), {failed} failed. Latest: {data_length} events, {avg_size:.1f} bytes per event, {token_count} tokens.', override_prev=True)
+            curr_count += 1
 
-            # Handle the repeat count
-            repeats = self._negative_repeats if curr_index < len(self._negative_prompts) else self._positive_repeats
-            curr_index += 1
-            for index in range(repeats):
+            if prompt not in training_set:
+                training_set[prompt] = []
 
-                # Update progress
-                percentage = (curr_count * 100) // total_datapoints
-                PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%), {failed} failed. Latest: {data_length} events, {avg_size:.1f} bytes per event, {token_count} tokens.', override_prev=True)
-                curr_count += 1
+            # Fetch the datapoint for the prompt
+            datapoint = self.get_datapoint(prompt, index, chatbot_class.__name__)
+            if datapoint.exists():
+                skip_count += 1
+                training_set[prompt].append(datapoint)
+                continue
 
-                # Fetch the datapoint for the prompt
-                datapoint = self.get_datapoint(prompt, index, chatbot_class.__name__)
-                if datapoint.exists():
-                    skip_count += 1
-                    training_set[prompt].append(datapoint)
-                    continue
+            # Start sniffing to collect data
+            NetworkUtils.start_sniffing_tls(datapoint.pcap_path, self._remote_tls_port)
 
-                # Start sniffing to collect data
-                NetworkUtils.start_sniffing_tls(datapoint.pcap_path, self._remote_tls_port)
+            # Create a chatbot object to make sure we get fresh connections
+            chatbot_obj = chatbot_class(self._remote_tls_port)
+            temperature = chatbot_obj.get_temperature()
+            try:
+                response, local_port = chatbot_obj.send_prompt(prompt, temperature)
+                assert isinstance(response, list), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
+                assert len(response) > 0 and len("".join(response)) > 0, Exception(f'Got empty response for prompt: {prompt}')
 
-                # Create a chatbot object to make sure we get fresh connections
-                chatbot_obj = chatbot_class(self._remote_tls_port)
-                temperature = chatbot_obj.get_temperature()
-                try:
-                    response, local_port = chatbot_obj.send_prompt(prompt, temperature)
-                    assert isinstance(response, list), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
-                    assert len(response) > 0 and len("".join(response)) > 0, Exception(f'Got empty response for prompt: {prompt}')
-
-                    # Discover new ports and stop sniffing (unless local port was provided by chatbot)
-                    if local_port is None:
-                        new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
-                        NetworkUtils.stop_sniffing_tls()
-                        new_local_ports = [ port for port in new_local_ports if last_local_port != port ]
-                        assert len(new_local_ports) < 2, Exception('Ambiguity in local TLS ports')
-                        if len(new_local_ports) == 1:
-                            last_local_port = new_local_ports[0]
-                    else:
-                        assert local_port > 0 and local_port <= 0xFFFF, Exception(f'Invalid port indicated by chatbot: {local_port}')
-                        last_local_port = local_port
-                        NetworkUtils.stop_sniffing_tls()
-
-                    # Perform the analysis and set the data
-                    data_length, avg_size = datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, response, temperature)
-                    token_count = len(response)
-                    training_set[prompt].append(datapoint)
-                except Exception as e:
-                    PrintUtils.print_extra(f'Failed to generate training set for prompt: {prompt}')
-                    PrintUtils.print_extra(f'Exception: {str(e)}')
+                # Discover new ports and stop sniffing (unless local port was provided by chatbot)
+                if local_port is None:
+                    new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
                     NetworkUtils.stop_sniffing_tls()
-                    failed += 1
-                    continue
-                    
+                    new_local_ports = [ port for port in new_local_ports if last_local_port != port ]
+                    assert len(new_local_ports) < 2, Exception('Ambiguity in local TLS ports')
+                    if len(new_local_ports) == 1:
+                        last_local_port = new_local_ports[0]
+                else:
+                    assert local_port > 0 and local_port <= 0xFFFF, Exception(f'Invalid port indicated by chatbot: {local_port}')
+                    last_local_port = local_port
+                    NetworkUtils.stop_sniffing_tls()
+
+                # Perform the analysis and set the data
+                data_length, avg_size = datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, response, temperature)
+                token_count = len(response)
+                training_set[prompt].append(datapoint)
+            except Exception as e:
+                PrintUtils.print_extra(f'Failed to generate training set for prompt: {prompt}')
+                PrintUtils.print_extra(f'Exception: {str(e)}')
+                NetworkUtils.stop_sniffing_tls()
+                failed += 1
+                continue
 
         # Finish stage and return the training set
         PrintUtils.start_stage('Generating training set', override_prev=True)
