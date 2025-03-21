@@ -1,0 +1,36 @@
+{
+  "local_port": 32886,
+  "remote_port": 443,
+  "prompt": "What will be one word for \"make an example of\" idiom?",
+  "response": "\"Demonstrate\"",
+  "response_tokens": [
+    "\"",
+    "Demon",
+    "strate",
+    "\""
+  ],
+  "response_token_count": 4,
+  "temperature": 1.0,
+  "data_lengths": [
+    2884,
+    1330,
+    514,
+    517,
+    518,
+    514,
+    522,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.005887031555175781,
+    0.09359288215637207,
+    0.1470201015472412,
+    0.021669864654541016,
+    0.020359039306640625,
+    0.021636009216308594,
+    0.015355110168457031,
+    0.0005068778991699219,
+    0.0
+  ]
+}
