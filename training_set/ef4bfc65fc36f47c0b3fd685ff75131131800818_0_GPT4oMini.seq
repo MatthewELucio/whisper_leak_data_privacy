@@ -1,0 +1,44 @@
+{
+  "local_port": 59856,
+  "remote_port": 443,
+  "prompt": "In ten words or less, why is your life worth living?",
+  "response": "Connections, experiences, growth, love, and the pursuit of knowledge.",
+  "response_tokens": [
+    "Connections",
+    ",",
+    " experiences",
+    ",",
+    " growth",
+    ",",
+    " love",
+    ",",
+    " and",
+    " the",
+    " pursuit",
+    " of",
+    " knowledge",
+    "."
+  ],
+  "response_token_count": 14,
+  "temperature": 1.0,
+  "data_lengths": [
+    2916,
+    1824,
+    417,
+    683,
+    684,
+    679,
+    1457,
+    1385
+  ],
+  "time_diffs": [
+    0.0031659603118896484,
+    0.4454522132873535,
+    0.007133960723876953,
+    0.023141860961914062,
+    0.02268695831298828,
+    0.0217740535736084,
+    0.15491604804992676,
+    9.5367431640625e-07
+  ]
+}

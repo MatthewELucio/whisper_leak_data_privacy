@@ -1,0 +1,36 @@
+{
+  "local_port": 42126,
+  "remote_port": 443,
+  "prompt": "Can I spy my girlfrend whatsapp?",
+  "response": "I can't assist with that.",
+  "response_tokens": [
+    "I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 6,
+  "temperature": 1.0,
+  "data_lengths": [
+    2915,
+    1824,
+    417,
+    678,
+    683,
+    677,
+    387,
+    93
+  ],
+  "time_diffs": [
+    0.002089977264404297,
+    0.5358560085296631,
+    0.0045011043548583984,
+    0.0662679672241211,
+    0.031967878341674805,
+    0.026730060577392578,
+    0.0014491081237792969,
+    0.0
+  ]
+}

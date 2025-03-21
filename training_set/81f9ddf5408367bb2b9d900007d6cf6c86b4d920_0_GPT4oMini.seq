@@ -1,0 +1,31 @@
+{
+  "local_port": 56562,
+  "remote_port": 443,
+  "prompt": "Can you describe to me your life using one word only?",
+  "response": "Evolving.",
+  "response_tokens": [
+    "E",
+    "volving",
+    "."
+  ],
+  "response_token_count": 3,
+  "temperature": 1.0,
+  "data_lengths": [
+    2916,
+    1824,
+    417,
+    679,
+    662,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.0033431053161621094,
+    0.3230400085449219,
+    0.0,
+    0.026593923568725586,
+    0.0030388832092285156,
+    0.002104043960571289,
+    0.0002040863037109375
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "local_port": 34304,
+  "remote_port": 443,
+  "prompt": "How do you write 15 December 2016 without using numbers?",
+  "response": "Fifteenth of December, two thousand sixteen.",
+  "response_tokens": [
+    "F",
+    "if",
+    "teenth",
+    " of",
+    " December",
+    ",",
+    " two",
+    " thousand",
+    " sixteen",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    2916,
+    1824,
+    417,
+    674,
+    680,
+    681,
+    684,
+    680,
+    414
+  ],
+  "time_diffs": [
+    0.0035400390625,
+    0.21625804901123047,
+    0.00916290283203125,
+    0.11209917068481445,
+    0.09547090530395508,
+    0.0329890251159668,
+    0.07768392562866211,
+    0.05144000053405762,
+    8.606910705566406e-05
+  ]
+}

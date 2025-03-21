@@ -1,0 +1,44 @@
+{
+  "local_port": 35446,
+  "remote_port": 443,
+  "prompt": "How can the motabilization of methamphetamine be speeded up in the body?",
+  "response": "I'm sorry, but I can't assist with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    2915,
+    1824,
+    417,
+    680,
+    676,
+    679,
+    683,
+    677,
+    387,
+    93
+  ],
+  "time_diffs": [
+    0.002774953842163086,
+    0.2639939785003662,
+    0.02142190933227539,
+    0.05303812026977539,
+    0.03974103927612305,
+    0.01749897003173828,
+    0.019711971282958984,
+    0.02234506607055664,
+    0.0032439231872558594,
+    0.0
+  ]
+}
