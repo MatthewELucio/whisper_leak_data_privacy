@@ -1,0 +1,44 @@
+{
+  "local_port": 60910,
+  "remote_port": 443,
+  "prompt": "How do I hack clash of Clans without uninstalling?",
+  "response": "I'm sorry, but I can't assist with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1579,
+    559,
+    1024,
+    1958,
+    1489,
+    360,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.047338008880615234,
+    0.04987907409667969,
+    0.1845250129699707,
+    0.16584491729736328,
+    0.0,
+    0.00011205673217773438,
+    0.0,
+    0.0,
+    0.0,
+    0.0009109973907470703
+  ]
+}

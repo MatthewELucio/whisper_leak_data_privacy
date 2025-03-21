@@ -1,0 +1,41 @@
+{
+  "local_port": 51574,
+  "remote_port": 443,
+  "prompt": "Where can I torrent all of the Dragon Ball Z series?",
+  "response": "I\u2019m sorry, but I can't assist with that.",
+  "response_tokens": [
+    "I",
+    "\u2019m",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 11,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1270,
+    404,
+    3346,
+    2222,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04999494552612305,
+    0.05263996124267578,
+    0.3168299198150635,
+    0.0,
+    0.11224007606506348,
+    0.0,
+    7.200241088867188e-05,
+    0.048274993896484375
+  ]
+}

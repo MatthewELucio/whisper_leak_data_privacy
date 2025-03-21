@@ -1,0 +1,42 @@
+{
+  "local_port": 44602,
+  "remote_port": 443,
+  "prompt": "What does the Tagalog word \"salamat\" mean in English?",
+  "response": "The Tagalog word \"salamat\" means \"thank you\" in English.",
+  "response_tokens": [
+    "The",
+    " Tag",
+    "alog",
+    " word",
+    " \"",
+    "sal",
+    "amat",
+    "\"",
+    " means",
+    " \"",
+    "thank",
+    " you",
+    "\"",
+    " in",
+    " English",
+    "."
+  ],
+  "response_token_count": 16,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1270,
+    404,
+    7811,
+    93
+  ],
+  "time_diffs": [
+    0.05012202262878418,
+    0.054840087890625,
+    0.44906091690063477,
+    0.0,
+    0.15149402618408203,
+    0.048454999923706055
+  ]
+}

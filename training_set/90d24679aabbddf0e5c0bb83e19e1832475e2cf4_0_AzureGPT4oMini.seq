@@ -1,0 +1,43 @@
+{
+  "local_port": 50782,
+  "remote_port": 443,
+  "prompt": "What are the good ways to download Lynda.com's tutorial for free?",
+  "response": "I\u2019m sorry, but I can't assist with that.",
+  "response_tokens": [
+    "I",
+    "\u2019m",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 11,
+  "temperature": 0.7,
+  "data_lengths": [
+    4425,
+    525,
+    1270,
+    404,
+    2416,
+    1025,
+    2222,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04775500297546387,
+    0.05153393745422363,
+    0.2994849681854248,
+    0.0,
+    0.13834309577941895,
+    0.0,
+    0.0,
+    0.000102996826171875,
+    0.04587388038635254
+  ]
+}

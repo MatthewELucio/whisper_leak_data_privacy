@@ -1,0 +1,48 @@
+{
+  "local_port": 55026,
+  "remote_port": 443,
+  "prompt": "What is the Japanese translation of \"blue dragon\"?",
+  "response": "The Japanese translation of \"blue dragon\" is \"\u9752\u3044\u30c9\u30e9\u30b4\u30f3\" (aoi doragon).",
+  "response_tokens": [
+    "The",
+    " Japanese",
+    " translation",
+    " of",
+    " \"",
+    "blue",
+    " dragon",
+    "\"",
+    " is",
+    " \"",
+    "\u9752",
+    "\u3044",
+    "\u30c9\u30e9",
+    "\u30b4",
+    "\u30f3",
+    "\"",
+    " (",
+    "a",
+    "oi",
+    " dor",
+    "agon",
+    ")."
+  ],
+  "response_token_count": 22,
+  "temperature": 0.7,
+  "data_lengths": [
+    4425,
+    525,
+    1579,
+    8288,
+    2408,
+    93
+  ],
+  "time_diffs": [
+    0.047369956970214844,
+    0.05011415481567383,
+    0.44072484970092773,
+    0.15248918533325195,
+    6.699562072753906e-05,
+    0.045686960220336914
+  ]
+}

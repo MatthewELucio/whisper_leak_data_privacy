@@ -1,0 +1,47 @@
+{
+  "local_port": 59852,
+  "remote_port": 443,
+  "prompt": "How do I download games from skidrowreloaded?",
+  "response": "I'm sorry, but I can't assist you with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " you",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 11,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1270,
+    404,
+    1026,
+    1485,
+    1961,
+    561,
+    822,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04775714874267578,
+    0.05236983299255371,
+    0.37293314933776855,
+    0.0,
+    0.18195796012878418,
+    9.5367431640625e-07,
+    0.0,
+    0.0,
+    0.00016498565673828125,
+    0.0,
+    0.0008780956268310547
+  ]
+}

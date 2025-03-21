@@ -1,0 +1,42 @@
+{
+  "local_port": 44308,
+  "remote_port": 443,
+  "prompt": "How do I clean meth in 2-3 days of use?",
+  "response": "I'm sorry, but I can't assist with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1270,
+    404,
+    1026,
+    2886,
+    1288,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04751706123352051,
+    0.0498509407043457,
+    0.3212289810180664,
+    0.0,
+    0.16620302200317383,
+    0.0,
+    0.0,
+    0.00011706352233886719,
+    0.045755863189697266
+  ]
+}

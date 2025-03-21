@@ -1,0 +1,42 @@
+{
+  "local_port": 57750,
+  "remote_port": 443,
+  "prompt": "What is the French word for white?",
+  "response": "The French word for \"white\" is \"blanc.\"",
+  "response_tokens": [
+    "The",
+    " French",
+    " word",
+    " for",
+    " \"",
+    "white",
+    "\"",
+    " is",
+    " \"",
+    "bl",
+    "anc",
+    ".\""
+  ],
+  "response_token_count": 12,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1579,
+    2422,
+    2415,
+    1288,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04987907409667969,
+    0.052401065826416016,
+    0.3599669933319092,
+    0.13263487815856934,
+    0.00016307830810546875,
+    4.1961669921875e-05,
+    0.0007879734039306641,
+    0.04724001884460449
+  ]
+}

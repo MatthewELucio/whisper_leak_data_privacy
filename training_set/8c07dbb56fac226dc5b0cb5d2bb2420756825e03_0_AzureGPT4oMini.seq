@@ -1,0 +1,36 @@
+{
+  "local_port": 45836,
+  "remote_port": 443,
+  "prompt": "Which is the best site to download cracked apps for Android?",
+  "response": "I'm sorry, but I can't assist with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1270,
+    404,
+    5025,
+    93
+  ],
+  "time_diffs": [
+    0.04759693145751953,
+    0.050028085708618164,
+    0.2741820812225342,
+    0.0,
+    0.07773303985595703,
+    0.04595589637756348
+  ]
+}

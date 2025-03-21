@@ -1,0 +1,48 @@
+{
+  "local_port": 58148,
+  "remote_port": 443,
+  "prompt": "What's Kendall Jenner number?",
+  "response": "I'm sorry, but I can't assist with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    2997,
+    525,
+    1270,
+    404,
+    1026,
+    1022,
+    1025,
+    563,
+    561,
+    1288,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.05006814002990723,
+    0.052385807037353516,
+    0.342724084854126,
+    0.0002129077911376953,
+    0.1274271011352539,
+    0.0,
+    9.012222290039062e-05,
+    0.0,
+    0.0,
+    2.7894973754882812e-05,
+    1.7881393432617188e-05,
+    3.814697265625e-05
+  ]
+}

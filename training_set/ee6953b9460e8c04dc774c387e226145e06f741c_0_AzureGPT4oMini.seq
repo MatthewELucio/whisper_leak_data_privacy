@@ -1,0 +1,42 @@
+{
+  "local_port": 39684,
+  "remote_port": 443,
+  "prompt": "How can you track someone's LINE conversations?",
+  "response": "I'm sorry, but I can't assist with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1270,
+    404,
+    1488,
+    1490,
+    2222,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.0476529598236084,
+    0.05064797401428223,
+    0.4053020477294922,
+    0.00028705596923828125,
+    0.20342183113098145,
+    0.0,
+    0.0,
+    0.0005021095275878906,
+    0.045552968978881836
+  ]
+}

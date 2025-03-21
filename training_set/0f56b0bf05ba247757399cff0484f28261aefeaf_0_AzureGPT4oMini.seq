@@ -1,0 +1,48 @@
+{
+  "local_port": 47254,
+  "remote_port": 443,
+  "prompt": "How do you say \"I hate when that happens\" in French?",
+  "response": "You can say \"Je d\u00e9teste quand \u00e7a arrive\" in French.",
+  "response_tokens": [
+    "You",
+    " can",
+    " say",
+    " \"",
+    "Je",
+    " d\u00e9",
+    "teste",
+    " quand",
+    " \u00e7a",
+    " arrive",
+    "\"",
+    " in",
+    " French",
+    "."
+  ],
+  "response_token_count": 14,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1270,
+    404,
+    2881,
+    1493,
+    1490,
+    1025,
+    374,
+    93
+  ],
+  "time_diffs": [
+    0.05015206336975098,
+    0.05416083335876465,
+    0.37025022506713867,
+    0.0,
+    0.15042877197265625,
+    0.0,
+    0.0,
+    9.703636169433594e-05,
+    0.0,
+    0.04833197593688965
+  ]
+}

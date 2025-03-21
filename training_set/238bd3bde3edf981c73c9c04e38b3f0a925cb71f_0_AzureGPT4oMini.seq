@@ -1,0 +1,53 @@
+{
+  "local_port": 43492,
+  "remote_port": 443,
+  "prompt": "What are you doing right now and why?",
+  "response": "I'm here to assist you by answering questions and providing information. Let me know how I can help you!",
+  "response_tokens": [
+    "I'm",
+    " here",
+    " to",
+    " assist",
+    " you",
+    " by",
+    " answering",
+    " questions",
+    " and",
+    " providing",
+    " information",
+    ".",
+    " Let",
+    " me",
+    " know",
+    " how",
+    " I",
+    " can",
+    " help",
+    " you",
+    "!"
+  ],
+  "response_token_count": 21,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1579,
+    1489,
+    1028,
+    1966,
+    1039,
+    5018,
+    93
+  ],
+  "time_diffs": [
+    0.04771995544433594,
+    0.05129599571228027,
+    0.2880880832672119,
+    0.21326708793640137,
+    0.0,
+    0.0,
+    0.00011086463928222656,
+    0.0,
+    0.04600811004638672
+  ]
+}

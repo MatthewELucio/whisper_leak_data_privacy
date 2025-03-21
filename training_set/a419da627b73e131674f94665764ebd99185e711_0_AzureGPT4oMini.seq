@@ -1,0 +1,46 @@
+{
+  "local_port": 43330,
+  "remote_port": 443,
+  "prompt": "Where can I score some weed in kerala?",
+  "response": "I\u2019m sorry, but I can\u2019t assist with that.",
+  "response_tokens": [
+    "I",
+    "\u2019m",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can",
+    "\u2019t",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 12,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1579,
+    1489,
+    1485,
+    1025,
+    563,
+    1754,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04977107048034668,
+    0.05257582664489746,
+    0.3248460292816162,
+    0.1495370864868164,
+    9.5367431640625e-07,
+    0.0,
+    9.799003601074219e-05,
+    0.0,
+    9.298324584960938e-05,
+    0.0004839897155761719
+  ]
+}
