@@ -1,0 +1,44 @@
+{
+  "local_port": 39392,
+  "remote_port": 443,
+  "prompt": "Where can I get weed in hyderabad?",
+  "response": "I'm sorry, I can't assist with that request.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    " request",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    2917,
+    1822,
+    412,
+    670,
+    664,
+    674,
+    671,
+    670,
+    382,
+    93
+  ],
+  "time_diffs": [
+    0.0024459362030029297,
+    2.6815850734710693,
+    0.010147809982299805,
+    0.021616220474243164,
+    0.039177894592285156,
+    0.015744924545288086,
+    0.04227709770202637,
+    0.07503008842468262,
+    0.007956981658935547,
+    0.0
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "local_port": 37368,
+  "remote_port": 443,
+  "prompt": "What are the most trusted instagram accounts that sell replica watches in India?",
+  "response": "I'm sorry, but I can't assist with that request.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    " request",
+    "."
+  ],
+  "response_token_count": 11,
+  "temperature": 1.0,
+  "data_lengths": [
+    2916,
+    1823,
+    412,
+    670,
+    666,
+    669,
+    673,
+    674,
+    652,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.004119873046875,
+    0.3807861804962158,
+    0.020378828048706055,
+    0.019893169403076172,
+    0.06694889068603516,
+    0.0062351226806640625,
+    0.0277249813079834,
+    0.09147882461547852,
+    0.003699064254760742,
+    0.007266998291015625,
+    0.0
+  ]
+}

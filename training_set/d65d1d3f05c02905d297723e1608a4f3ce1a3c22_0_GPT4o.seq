@@ -1,0 +1,45 @@
+{
+  "local_port": 36462,
+  "remote_port": 443,
+  "prompt": "How do you get an ATM into service mode?",
+  "response": "I'm sorry, but I cannot assist with that request.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " cannot",
+    " assist",
+    " with",
+    " that",
+    " request",
+    "."
+  ],
+  "response_token_count": 11,
+  "temperature": 1.0,
+  "data_lengths": [
+    2916,
+    1822,
+    412,
+    670,
+    666,
+    670,
+    673,
+    674,
+    666,
+    93
+  ],
+  "time_diffs": [
+    0.003139972686767578,
+    0.282135009765625,
+    0.017438173294067383,
+    0.04598498344421387,
+    0.02296900749206543,
+    0.0024309158325195312,
+    0.01691293716430664,
+    0.009025096893310547,
+    0.005681037902832031,
+    0.0
+  ]
+}

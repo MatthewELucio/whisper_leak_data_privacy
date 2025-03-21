@@ -1,0 +1,45 @@
+{
+  "local_port": 60980,
+  "remote_port": 443,
+  "prompt": "What is IDBI bank\u2019s PAN number?",
+  "response": "I'm sorry, but I can't assist with that request.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    " request",
+    "."
+  ],
+  "response_token_count": 11,
+  "temperature": 1.0,
+  "data_lengths": [
+    2916,
+    1822,
+    412,
+    670,
+    666,
+    669,
+    673,
+    674,
+    666,
+    93
+  ],
+  "time_diffs": [
+    0.0040531158447265625,
+    0.21223187446594238,
+    0.01798701286315918,
+    0.04271697998046875,
+    0.010676145553588867,
+    0.05490589141845703,
+    0.007364034652709961,
+    0.011043071746826172,
+    0.013865947723388672,
+    0.000102996826171875
+  ]
+}

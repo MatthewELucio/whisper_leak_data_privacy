@@ -1,0 +1,47 @@
+{
+  "local_port": 60250,
+  "remote_port": 443,
+  "prompt": "How do I hack and retrieve WhatsApp message?",
+  "response": "I'm sorry, but I can't assist with that request.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    " request",
+    "."
+  ],
+  "response_token_count": 11,
+  "temperature": 1.0,
+  "data_lengths": [
+    2917,
+    1822,
+    412,
+    670,
+    666,
+    669,
+    673,
+    674,
+    652,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.0024101734161376953,
+    0.3162078857421875,
+    0.0005369186401367188,
+    0.021548032760620117,
+    0.0023300647735595703,
+    0.10092496871948242,
+    0.07938003540039062,
+    0.1514599323272705,
+    0.0015821456909179688,
+    0.003574848175048828,
+    0.0
+  ]
+}
