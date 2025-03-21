@@ -1,0 +1,43 @@
+{
+  "local_port": 45046,
+  "remote_port": 443,
+  "prompt": "What is the chemical formula for ammonium acetate?",
+  "response": "The chemical formula for ammonium acetate is NH4C2H3O2.",
+  "response_tokens": [
+    "The",
+    " chemical",
+    " formula",
+    " for",
+    " ammon",
+    "ium",
+    " acetate",
+    " is",
+    " NH",
+    "4",
+    "C",
+    "2",
+    "H",
+    "3",
+    "O",
+    "2",
+    "."
+  ],
+  "response_token_count": 17,
+  "temperature": 0.7,
+  "data_lengths": [
+    4425,
+    525,
+    1225,
+    399,
+    8177,
+    93
+  ],
+  "time_diffs": [
+    0.050412893295288086,
+    0.05276203155517578,
+    0.1455249786376953,
+    0.0,
+    0.18732500076293945,
+    0.04852008819580078
+  ]
+}

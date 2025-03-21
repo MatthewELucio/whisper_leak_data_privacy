@@ -1,0 +1,52 @@
+{
+  "local_port": 59484,
+  "remote_port": 443,
+  "prompt": "What is your deepest secret that you have never told anyone in real life ? (submit anonymously)",
+  "response": "I'm sorry, but I'm not able to generate that story for you.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I'm",
+    " not",
+    " able",
+    " to",
+    " generate",
+    " that",
+    " story",
+    " for",
+    " you",
+    "."
+  ],
+  "response_token_count": 14,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1526,
+    1473,
+    1015,
+    1475,
+    560,
+    1018,
+    555,
+    555,
+    826,
+    93
+  ],
+  "time_diffs": [
+    0.049453020095825195,
+    0.05173301696777344,
+    0.10575604438781738,
+    0.10565710067749023,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.00011992454528808594,
+    0.0,
+    0.0,
+    0.0
+  ]
+}

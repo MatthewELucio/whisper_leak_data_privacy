@@ -1,0 +1,37 @@
+{
+  "local_port": 59712,
+  "remote_port": 443,
+  "prompt": "Can we talk separately?",
+  "response": "Sure, we can talk! What would you like to discuss?",
+  "response_tokens": [
+    "Sure",
+    ",",
+    " we",
+    " can",
+    " talk",
+    "!",
+    " What",
+    " would",
+    " you",
+    " like",
+    " to",
+    " discuss",
+    "?"
+  ],
+  "response_token_count": 13,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1526,
+    6348,
+    93
+  ],
+  "time_diffs": [
+    0.050518035888671875,
+    0.05278897285461426,
+    0.10261392593383789,
+    0.11864709854125977,
+    0.04836297035217285
+  ]
+}

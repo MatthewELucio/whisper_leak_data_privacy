@@ -1,0 +1,40 @@
+{
+  "local_port": 60310,
+  "remote_port": 443,
+  "prompt": "How can I learn to hack?",
+  "response": "Sorry, but I can't assist you with that.",
+  "response_tokens": [
+    "Sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " you",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1222,
+    399,
+    3316,
+    1474,
+    369,
+    93
+  ],
+  "time_diffs": [
+    0.05160808563232422,
+    0.05289411544799805,
+    0.10432791709899902,
+    9.5367431640625e-07,
+    0.10879898071289062,
+    0.0,
+    0.0,
+    0.048562049865722656
+  ]
+}

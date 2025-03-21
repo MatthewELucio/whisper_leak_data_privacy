@@ -1,0 +1,38 @@
+{
+  "local_port": 47068,
+  "remote_port": 443,
+  "prompt": "Anonymity: How do I bypass Fortiguard in my School?",
+  "response": "I'm sorry, but I can't assist with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 0.7,
+  "data_lengths": [
+    4425,
+    525,
+    1222,
+    399,
+    4956,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04750204086303711,
+    0.04980111122131348,
+    0.1208949089050293,
+    0.0,
+    0.08701801300048828,
+    0.0,
+    0.045523881912231445
+  ]
+}

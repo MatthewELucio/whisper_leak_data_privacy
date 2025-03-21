@@ -1,0 +1,40 @@
+{
+  "local_port": 34772,
+  "remote_port": 443,
+  "prompt": "In French, how do you say \"my love\"?",
+  "response": "In French, you say \"mon amour\" for \"my love\".",
+  "response_tokens": [
+    "In",
+    " French",
+    ",",
+    " you",
+    " say",
+    " \"",
+    "mon",
+    " amour",
+    "\"",
+    " for",
+    " \"",
+    "my",
+    " love",
+    "\"."
+  ],
+  "response_token_count": 14,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1225,
+    399,
+    6803,
+    93
+  ],
+  "time_diffs": [
+    0.04793500900268555,
+    0.04925394058227539,
+    0.39989590644836426,
+    0.0,
+    0.21091794967651367,
+    0.04590010643005371
+  ]
+}

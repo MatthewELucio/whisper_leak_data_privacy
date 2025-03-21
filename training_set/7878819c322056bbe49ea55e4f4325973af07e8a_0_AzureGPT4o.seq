@@ -1,0 +1,43 @@
+{
+  "local_port": 46722,
+  "remote_port": 443,
+  "prompt": "Where can I find the uncut, uncensored Fifty Shades of Grey movie online?",
+  "response": "I\u2019m sorry, but I can't assist with that.",
+  "response_tokens": [
+    "I",
+    "\u2019m",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 11,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1221,
+    399,
+    1931,
+    1013,
+    2659,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.05012798309326172,
+    0.05255389213562012,
+    0.11391019821166992,
+    0.0,
+    0.1023869514465332,
+    0.0,
+    8.296966552734375e-05,
+    5.0067901611328125e-05,
+    0.04829883575439453
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "local_port": 45172,
+  "remote_port": 443,
+  "prompt": "What is the plural form of \"lice\"?",
+  "response": "The plural form of \"lice\" is already \"lice.\" The singular form is \"louse.\"",
+  "response_tokens": [
+    "The",
+    " plural",
+    " form",
+    " of",
+    " \"",
+    "lice",
+    "\"",
+    " is",
+    " already",
+    " \"",
+    "lice",
+    ".\"",
+    " The",
+    " singular",
+    " form",
+    " is",
+    " \"",
+    "l",
+    "ouse",
+    ".\""
+  ],
+  "response_token_count": 20,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1526,
+    3773,
+    2397,
+    2161,
+    93
+  ],
+  "time_diffs": [
+    0.049916982650756836,
+    0.05235695838928223,
+    0.11206603050231934,
+    0.17560601234436035,
+    0.0,
+    9.012222290039062e-05,
+    0.0481259822845459
+  ]
+}

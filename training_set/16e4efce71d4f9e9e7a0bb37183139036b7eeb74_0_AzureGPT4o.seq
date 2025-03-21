@@ -1,0 +1,37 @@
+{
+  "local_port": 47650,
+  "remote_port": 443,
+  "prompt": "If you were to kill a person, who would that be, and why?",
+  "response": "Sorry, but I can't assist with that.",
+  "response_tokens": [
+    "Sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " assist",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 9,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1525,
+    2856,
+    1734,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.052475929260253906,
+    0.05455207824707031,
+    0.10669994354248047,
+    0.22310590744018555,
+    0.0,
+    0.0,
+    0.05067610740661621
+  ]
+}

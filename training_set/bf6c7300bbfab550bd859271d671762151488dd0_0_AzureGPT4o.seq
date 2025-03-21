@@ -1,0 +1,37 @@
+{
+  "local_port": 38990,
+  "remote_port": 443,
+  "prompt": "What is your question today?",
+  "response": "How can I assist you today?",
+  "response_tokens": [
+    "How",
+    " can",
+    " I",
+    " assist",
+    " you",
+    " today",
+    "?"
+  ],
+  "response_token_count": 7,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1222,
+    399,
+    2395,
+    1274,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.05208015441894531,
+    0.05431795120239258,
+    0.11906909942626953,
+    0.0,
+    0.06873083114624023,
+    0.0,
+    0.0,
+    0.05039095878601074
+  ]
+}

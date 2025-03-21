@@ -1,0 +1,52 @@
+{
+  "local_port": 60134,
+  "remote_port": 443,
+  "prompt": "How do I solve this math equation?",
+  "response": "Sure, I'd be happy to help you with a math equation. Please provide the equation you'd like to solve.",
+  "response_tokens": [
+    "Sure",
+    ",",
+    " I'd",
+    " be",
+    " happy",
+    " to",
+    " help",
+    " you",
+    " with",
+    " a",
+    " math",
+    " equation",
+    ".",
+    " Please",
+    " provide",
+    " the",
+    " equation",
+    " you'd",
+    " like",
+    " to",
+    " solve",
+    "."
+  ],
+  "response_token_count": 22,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1225,
+    399,
+    7463,
+    3121,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.049967050552368164,
+    0.05238986015319824,
+    0.2288510799407959,
+    0.0,
+    0.2434089183807373,
+    0.0,
+    0.00010013580322265625,
+    0.04824185371398926
+  ]
+}

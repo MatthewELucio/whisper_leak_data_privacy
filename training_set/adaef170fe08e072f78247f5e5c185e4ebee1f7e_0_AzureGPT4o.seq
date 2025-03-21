@@ -1,0 +1,39 @@
+{
+  "local_port": 45212,
+  "remote_port": 443,
+  "prompt": "How do we spell Quora?",
+  "response": "Quora is spelled \"Q-U-O-R-A\".",
+  "response_tokens": [
+    "Qu",
+    "ora",
+    " is",
+    " spelled",
+    " \"",
+    "Q",
+    "-U",
+    "-O",
+    "-R",
+    "-A",
+    "\"."
+  ],
+  "response_token_count": 11,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1526,
+    4226,
+    1272,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.05014801025390625,
+    0.05287504196166992,
+    0.1804039478302002,
+    0.09088301658630371,
+    0.0,
+    0.0,
+    0.04845404624938965
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "local_port": 52784,
+  "remote_port": 443,
+  "prompt": "Why can't you comment on answers anymore?",
+  "response": "I can still provide answers and comments on a wide range of topics. How can I help you today?",
+  "response_tokens": [
+    "I",
+    " can",
+    " still",
+    " provide",
+    " answers",
+    " and",
+    " comments",
+    " on",
+    " a",
+    " wide",
+    " range",
+    " of",
+    " topics",
+    ".",
+    " How",
+    " can",
+    " I",
+    " help",
+    " you",
+    " today",
+    "?"
+  ],
+  "response_token_count": 21,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1529,
+    2402,
+    2398,
+    2396,
+    1474,
+    1748,
+    93
+  ],
+  "time_diffs": [
+    0.047039031982421875,
+    0.05009102821350098,
+    0.13040995597839355,
+    0.25458288192749023,
+    0.0001461505889892578,
+    0.0,
+    0.0,
+    0.0,
+    0.04530787467956543
+  ]
+}

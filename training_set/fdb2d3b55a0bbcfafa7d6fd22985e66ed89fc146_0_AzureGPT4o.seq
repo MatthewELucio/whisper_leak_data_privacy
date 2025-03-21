@@ -1,0 +1,47 @@
+{
+  "local_port": 49498,
+  "remote_port": 443,
+  "prompt": "How do you say this in English?",
+  "response": "Sure, please provide the text you'd like to translate into English.",
+  "response_tokens": [
+    "Sure",
+    ",",
+    " please",
+    " provide",
+    " the",
+    " text",
+    " you'd",
+    " like",
+    " to",
+    " translate",
+    " into",
+    " English",
+    "."
+  ],
+  "response_token_count": 13,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1222,
+    399,
+    555,
+    1939,
+    3329,
+    552,
+    369,
+    93
+  ],
+  "time_diffs": [
+    0.04725980758666992,
+    0.06305408477783203,
+    0.11984491348266602,
+    0.0,
+    0.1385960578918457,
+    0.0,
+    0.00011491775512695312,
+    0.0,
+    2.1219253540039062e-05,
+    0.04543590545654297
+  ]
+}

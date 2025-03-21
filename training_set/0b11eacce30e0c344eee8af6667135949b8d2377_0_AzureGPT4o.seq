@@ -1,0 +1,53 @@
+{
+  "local_port": 45150,
+  "remote_port": 443,
+  "prompt": "On which date CAT 2016 will be held?",
+  "response": "The Common Admission Test (CAT) 2016 was held on December 4, 2016.",
+  "response_tokens": [
+    "The",
+    " Common",
+    " Admission",
+    " Test",
+    " (",
+    "CAT",
+    ")",
+    " ",
+    "201",
+    "6",
+    " was",
+    " held",
+    " on",
+    " December",
+    " ",
+    "4",
+    ",",
+    " ",
+    "201",
+    "6",
+    "."
+  ],
+  "response_token_count": 21,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1225,
+    399,
+    3318,
+    1011,
+    4431,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.05009198188781738,
+    0.05220484733581543,
+    0.13439607620239258,
+    0.0,
+    0.1886119842529297,
+    0.0,
+    0.0002560615539550781,
+    1.0967254638671875e-05,
+    0.04814600944519043
+  ]
+}

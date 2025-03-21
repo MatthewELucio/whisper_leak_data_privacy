@@ -1,0 +1,39 @@
+{
+  "local_port": 33990,
+  "remote_port": 443,
+  "prompt": "Using the least amount of words possible, how would you describe the plot of the movie Pi (1998)?",
+  "response": "Mathematician obsesses over number theory, descends into madness.",
+  "response_tokens": [
+    "Mat",
+    "hem",
+    "atic",
+    "ian",
+    " obs",
+    "esses",
+    " over",
+    " number",
+    " theory",
+    ",",
+    " desc",
+    "ends",
+    " into",
+    " madness",
+    "."
+  ],
+  "response_token_count": 15,
+  "temperature": 0.7,
+  "data_lengths": [
+    4425,
+    525,
+    1529,
+    7275,
+    93
+  ],
+  "time_diffs": [
+    0.047631025314331055,
+    0.0507659912109375,
+    0.1444990634918213,
+    0.12284207344055176,
+    0.04601287841796875
+  ]
+}
