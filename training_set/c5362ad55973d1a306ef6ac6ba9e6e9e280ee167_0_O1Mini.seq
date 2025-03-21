@@ -1,0 +1,40 @@
+{
+  "local_port": 55520,
+  "remote_port": 443,
+  "prompt": "How can I take over the world?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    2916,
+    1824,
+    397,
+    640,
+    1180,
+    641,
+    909,
+    93
+  ],
+  "time_diffs": [
+    0.003358125686645508,
+    0.536078929901123,
+    1.2037279605865479,
+    0.005171060562133789,
+    0.017178058624267578,
+    0.03460884094238281,
+    0.03597903251647949,
+    9.5367431640625e-07
+  ]
+}

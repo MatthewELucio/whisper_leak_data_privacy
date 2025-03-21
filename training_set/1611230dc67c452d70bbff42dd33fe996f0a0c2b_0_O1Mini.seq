@@ -1,0 +1,42 @@
+{
+  "local_port": 45092,
+  "remote_port": 443,
+  "prompt": "How to recover/restore imei numbers on Android erased from command \"fastboot erase all\" ?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    2917,
+    1825,
+    397,
+    1181,
+    639,
+    641,
+    637,
+    367,
+    93
+  ],
+  "time_diffs": [
+    0.00536799430847168,
+    1.1521549224853516,
+    1.5906009674072266,
+    0.014815092086791992,
+    0.0037009716033935547,
+    0.009093999862670898,
+    0.01639699935913086,
+    0.00459599494934082,
+    0.0
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "local_port": 35898,
+  "remote_port": 443,
+  "prompt": "When do you think Paul McCartney will die?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    2916,
+    1824,
+    1457,
+    114,
+    639,
+    641,
+    637,
+    367,
+    93
+  ],
+  "time_diffs": [
+    0.0038480758666992188,
+    0.40857696533203125,
+    0.7674381732940674,
+    7.295608520507812e-05,
+    0.014440059661865234,
+    0.07820677757263184,
+    0.014372110366821289,
+    0.0035009384155273438,
+    4.100799560546875e-05
+  ]
+}

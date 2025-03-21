@@ -1,0 +1,44 @@
+{
+  "local_port": 42080,
+  "remote_port": 443,
+  "prompt": "What is the trick to open vault or apps and data secured by vault apps (android mobile)?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    2915,
+    1824,
+    397,
+    640,
+    636,
+    639,
+    641,
+    637,
+    367,
+    93
+  ],
+  "time_diffs": [
+    0.0028829574584960938,
+    0.48541998863220215,
+    1.5992300510406494,
+    0.009492158889770508,
+    0.013736963272094727,
+    0.008287906646728516,
+    0.04164910316467285,
+    0.01947188377380371,
+    0.0016410350799560547,
+    9.894371032714844e-05
+  ]
+}

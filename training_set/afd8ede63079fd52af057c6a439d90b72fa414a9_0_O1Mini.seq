@@ -1,0 +1,44 @@
+{
+  "local_port": 41820,
+  "remote_port": 443,
+  "prompt": "Who is more delusional: Donald Trump or Ted Cruz?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    2915,
+    1824,
+    397,
+    640,
+    636,
+    639,
+    641,
+    637,
+    367,
+    93
+  ],
+  "time_diffs": [
+    0.0023870468139648438,
+    0.40970706939697266,
+    1.2268359661102295,
+    0.009747028350830078,
+    0.009630918502807617,
+    0.007756948471069336,
+    0.03404116630554199,
+    0.02823495864868164,
+    0.0035860538482666016,
+    5.5789947509765625e-05
+  ]
+}

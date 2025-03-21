@@ -1,0 +1,48 @@
+{
+  "local_port": 46100,
+  "remote_port": 443,
+  "prompt": "In ten words or less, why is your life worth living?",
+  "response": "As an AI, I'm here to help and support you.",
+  "response_tokens": [
+    "As",
+    " an",
+    " AI",
+    ",",
+    " I'm",
+    " here",
+    " to",
+    " help",
+    " and",
+    " support",
+    " you",
+    "."
+  ],
+  "response_token_count": 12,
+  "temperature": 1.0,
+  "data_lengths": [
+    2915,
+    1824,
+    397,
+    636,
+    635,
+    640,
+    639,
+    643,
+    636,
+    367,
+    93
+  ],
+  "time_diffs": [
+    0.0032939910888671875,
+    0.8373799324035645,
+    1.8508780002593994,
+    0.044689178466796875,
+    0.012964963912963867,
+    0.009688854217529297,
+    0.007266044616699219,
+    0.01651310920715332,
+    0.019103050231933594,
+    0.00391387939453125,
+    0.0
+  ]
+}
