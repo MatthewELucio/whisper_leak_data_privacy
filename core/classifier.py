@@ -530,42 +530,42 @@ class EarlyStopping(object):
         self.counter = 0
         self.best_score = None
         self.early_stop = False
-        self.val_acc_max = 0
+        self.val_loss_min = 0
         self.delta = delta
         self.path = path
         
-    def __call__(self, val_acc, model):
+    def __call__(self, val_loss, model):
         """
             Call override.
         """
 
         # Performs the early stopping
-        score = val_acc
+        score = val_loss
         if self.best_score is None:
             self.best_score = score
-            self.save_checkpoint(val_acc, model)
-        elif score <= self.best_score + self.delta:
+            self.save_checkpoint(val_loss, model)
+        elif score > self.best_score + self.delta:
             self.counter += 1
             PrintUtils.print_extra(f'EarlyStopping counter: *{self.counter}* out of *{self.patience}*')
             if self.counter >= self.patience:
                 self.early_stop = True
         else:
             self.best_score = score
-            self.save_checkpoint(val_acc, model)
+            self.save_checkpoint(val_loss, model)
             self.counter = 0
             
-    def save_checkpoint(self, val_acc, model):
+    def save_checkpoint(self, val_loss, model):
         """
             Saves model when validation accuracy improves.
         """
         
         # Save data
         if self.verbose:
-            PrintUtils.print_extra(f'Validation accuracy improved (*{self.val_acc_max:.6f}* --> *{val_acc:.6f}*). Saving model.')
+            PrintUtils.print_extra(f'Validation loss improved (*{self.val_loss_min:.6f}* --> *{val_loss:.6f}*). Saving model.')
         torch.save(model.state_dict(), self.path)
 
         # Override accuracy value 
-        self.val_acc_max = val_acc
+        self.val_loss_min = val_loss
 
 def set_seed(seed=42):
     """

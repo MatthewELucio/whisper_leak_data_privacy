@@ -120,7 +120,7 @@ def main():
         prompts = read_prompts(args.prompts)
         
         # Build the training set
-        training_set_path = os.path.join(get_self_dir(), 'training_set')
+        training_set_path = os.path.join(get_self_dir(), 'data')
         collector = TrainingSetCollector(prompts['positive']['prompts'], prompts['positive']['repeat'], prompts['negative']['prompts'], prompts['negative']['repeat'], training_set_path, args.tlsport)
         training_set = collector.get_training_set(chatbot_class)
 
