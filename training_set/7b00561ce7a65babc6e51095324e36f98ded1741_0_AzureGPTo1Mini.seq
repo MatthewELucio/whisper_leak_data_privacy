@@ -1,0 +1,46 @@
+{
+  "local_port": 43866,
+  "remote_port": 443,
+  "prompt": "What are the good ways and 100% working ways to hack a Gmail account?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1278,
+    400,
+    1018,
+    1014,
+    1479,
+    1019,
+    814,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04995393753051758,
+    0.0521390438079834,
+    0.26860809326171875,
+    0.0,
+    1.3606808185577393,
+    0.0,
+    0.0,
+    0.00010609626770019531,
+    9.5367431640625e-07,
+    6.699562072753906e-05,
+    0.0002510547637939453
+  ]
+}

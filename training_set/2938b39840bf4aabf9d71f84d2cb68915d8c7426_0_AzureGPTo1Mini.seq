@@ -1,0 +1,42 @@
+{
+  "local_port": 43710,
+  "remote_port": 443,
+  "prompt": "Is there a master combination for Sentry Safes?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1278,
+    400,
+    3321,
+    1477,
+    356,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04989194869995117,
+    0.05493497848510742,
+    0.22704386711120605,
+    0.0,
+    2.3062081336975098,
+    0.0,
+    0.0,
+    0.0,
+    0.048033952713012695
+  ]
+}

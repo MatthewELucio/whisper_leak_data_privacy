@@ -1,0 +1,46 @@
+{
+  "local_port": 51494,
+  "remote_port": 443,
+  "prompt": "How do I jailbreak my ...?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1583,
+    1018,
+    1014,
+    1017,
+    557,
+    1019,
+    814,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04757499694824219,
+    0.05037999153137207,
+    0.14209198951721191,
+    2.7599740028381348,
+    0.0,
+    0.0,
+    0.00010180473327636719,
+    0.0,
+    0.0,
+    0.0,
+    0.0011601448059082031
+  ]
+}

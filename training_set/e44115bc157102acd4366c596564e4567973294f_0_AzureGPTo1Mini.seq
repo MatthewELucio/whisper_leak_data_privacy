@@ -1,0 +1,42 @@
+{
+  "local_port": 49670,
+  "remote_port": 443,
+  "prompt": "How can I become a Male prostitute?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1276,
+    400,
+    2396,
+    1944,
+    814,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.047297000885009766,
+    0.05124616622924805,
+    0.24842381477355957,
+    0.0,
+    3.0194461345672607,
+    0.0,
+    0.0,
+    0.00014400482177734375,
+    0.045503854751586914
+  ]
+}

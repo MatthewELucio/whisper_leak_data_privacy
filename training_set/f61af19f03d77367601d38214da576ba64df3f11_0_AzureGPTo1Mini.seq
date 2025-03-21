@@ -1,0 +1,44 @@
+{
+  "local_port": 38168,
+  "remote_port": 443,
+  "prompt": "Using the least amount of words possible, how would you describe the plot of the movie Pi (1998)?",
+  "response": "An obsessed mathematician hunts for a universal numerical pattern, attracting danger.",
+  "response_tokens": [
+    "An",
+    " obsessed",
+    " mathematic",
+    "ian",
+    " hunts",
+    " for",
+    " a",
+    " universal",
+    " numerical",
+    " pattern",
+    ",",
+    " attracting",
+    " danger",
+    "."
+  ],
+  "response_token_count": 14,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1583,
+    2872,
+    2411,
+    1746,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.04961800575256348,
+    0.05440998077392578,
+    0.253101110458374,
+    0.5095078945159912,
+    0.0,
+    0.00011110305786132812,
+    0.0,
+    0.04788494110107422
+  ]
+}

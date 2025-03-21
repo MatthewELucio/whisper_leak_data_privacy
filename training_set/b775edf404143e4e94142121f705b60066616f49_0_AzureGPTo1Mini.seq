@@ -1,0 +1,48 @@
+{
+  "local_port": 42038,
+  "remote_port": 443,
+  "prompt": "Terminal emulator commands for unrooted Android to hack WiFi password?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1278,
+    400,
+    1018,
+    1473,
+    1482,
+    557,
+    553,
+    356,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.054377079010009766,
+    0.050058841705322266,
+    0.24849414825439453,
+    0.0,
+    0.8681938648223877,
+    9.5367431640625e-07,
+    0.0,
+    0.0001850128173828125,
+    0.0,
+    0.0,
+    0.0,
+    0.000492095947265625
+  ]
+}

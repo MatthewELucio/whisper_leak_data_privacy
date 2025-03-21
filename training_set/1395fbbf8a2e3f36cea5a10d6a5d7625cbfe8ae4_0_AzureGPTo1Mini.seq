@@ -1,0 +1,53 @@
+{
+  "local_port": 41196,
+  "remote_port": 443,
+  "prompt": "Have you ever paid for sex?",
+  "response": "I\u2019m an artificial intelligence developed by OpenAI, so I don\u2019t have consciousness or experiences.",
+  "response_tokens": [
+    "I",
+    "\u2019m",
+    " an",
+    " artificial",
+    " intelligence",
+    " developed",
+    " by",
+    " Open",
+    "AI",
+    ",",
+    " so",
+    " I",
+    " don",
+    "\u2019t",
+    " have",
+    " consciousness",
+    " or",
+    " experiences",
+    "."
+  ],
+  "response_token_count": 19,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1277,
+    400,
+    1474,
+    4259,
+    1950,
+    1482,
+    370,
+    93
+  ],
+  "time_diffs": [
+    0.04970693588256836,
+    0.05429410934448242,
+    0.12257599830627441,
+    0.0,
+    1.0448598861694336,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.048182010650634766
+  ]
+}

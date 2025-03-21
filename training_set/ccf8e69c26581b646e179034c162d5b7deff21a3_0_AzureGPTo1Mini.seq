@@ -1,0 +1,49 @@
+{
+  "local_port": 38188,
+  "remote_port": 443,
+  "prompt": "Hi I want to share for something?",
+  "response": "Hello! I'm here to help. Please feel free to share what's on your mind.",
+  "response_tokens": [
+    "Hello",
+    "!",
+    " I'm",
+    " here",
+    " to",
+    " help",
+    ".",
+    " Please",
+    " feel",
+    " free",
+    " to",
+    " share",
+    " what's",
+    " on",
+    " your",
+    " mind",
+    "."
+  ],
+  "response_token_count": 17,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1278,
+    400,
+    4245,
+    1480,
+    1481,
+    1290,
+    93
+  ],
+  "time_diffs": [
+    0.04746603965759277,
+    0.052223920822143555,
+    0.15244293212890625,
+    0.0,
+    1.1390161514282227,
+    0.0,
+    0.00010704994201660156,
+    0.0,
+    0.0457308292388916
+  ]
+}

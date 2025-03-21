@@ -1,0 +1,36 @@
+{
+  "local_port": 53054,
+  "remote_port": 443,
+  "prompt": "How can I hack online games?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1278,
+    400,
+    4979,
+    93
+  ],
+  "time_diffs": [
+    0.05008196830749512,
+    0.0645749568939209,
+    0.19186902046203613,
+    0.0,
+    2.208284854888916,
+    0.048461198806762695
+  ]
+}

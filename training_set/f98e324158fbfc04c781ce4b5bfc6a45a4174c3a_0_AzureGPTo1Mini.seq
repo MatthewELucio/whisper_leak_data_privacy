@@ -1,0 +1,46 @@
+{
+  "local_port": 44050,
+  "remote_port": 443,
+  "prompt": "Can Israel nuke Palestine without harming itself?",
+  "response": "I'm sorry, but I can't help with that.",
+  "response_tokens": [
+    "I'm",
+    " sorry",
+    ",",
+    " but",
+    " I",
+    " can't",
+    " help",
+    " with",
+    " that",
+    "."
+  ],
+  "response_token_count": 10,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1276,
+    400,
+    1018,
+    1936,
+    1481,
+    553,
+    356,
+    107,
+    93
+  ],
+  "time_diffs": [
+    0.05007195472717285,
+    0.05238008499145508,
+    0.1391909122467041,
+    8.511543273925781e-05,
+    3.746258020401001,
+    0.0,
+    0.00011897087097167969,
+    0.0,
+    0.0,
+    3.1948089599609375e-05,
+    0.0003829002380371094
+  ]
+}

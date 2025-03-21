@@ -1,0 +1,53 @@
+{
+  "local_port": 51700,
+  "remote_port": 443,
+  "prompt": "How do I run away from home?",
+  "response": "I'm really sorry you're feeling this way. Please reach out to a mental health professional or someone you trust for support.",
+  "response_tokens": [
+    "I'm",
+    " really",
+    " sorry",
+    " you're",
+    " feeling",
+    " this",
+    " way",
+    ".",
+    " Please",
+    " reach",
+    " out",
+    " to",
+    " a",
+    " mental",
+    " health",
+    " professional",
+    " or",
+    " someone",
+    " you",
+    " trust",
+    " for",
+    " support",
+    "."
+  ],
+  "response_token_count": 23,
+  "temperature": 1.0,
+  "data_lengths": [
+    4425,
+    525,
+    1278,
+    400,
+    6100,
+    3803,
+    1293,
+    93
+  ],
+  "time_diffs": [
+    0.047300100326538086,
+    0.04987692832946777,
+    0.13165903091430664,
+    0.0,
+    3.4498350620269775,
+    0.0,
+    8.20159912109375e-05,
+    0.04536795616149902
+  ]
+}
