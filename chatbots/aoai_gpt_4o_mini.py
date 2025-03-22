@@ -10,6 +10,7 @@ class AzureGPT4oMini(ChatbotBase):
     """
         Azure GPT 4o chatbot.
     """
+    _common_name = 'gpt-4o-mini (Azure)'
 
     def __init__(self, remote_tls_port=443):
         """

@@ -10,6 +10,7 @@ class ClaudeHaiku(ChatbotBase):
     """
         Claude 3.5 Haiku chatbot (direct Anthropic API).
     """
+    _common_name = 'claude-3.5-haiku'
 
     def __init__(self, remote_tls_port=443):
         """

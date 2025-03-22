@@ -10,6 +10,7 @@ class ChatbotBase(ABC):
     """
         Base class for chatbots.
     """
+    _common_name = "ChatbotBase"
 
     def __init__(self, remote_tls_port=443):
         """
@@ -33,6 +34,12 @@ class ChatbotBase(ABC):
             Gets the temperature of the model.
         """
         pass
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+        return self._common_name
 
 class LocalPortSaverTransport(httpx.HTTPTransport):
     """

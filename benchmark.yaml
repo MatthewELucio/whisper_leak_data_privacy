@@ -1,0 +1,38 @@
+# Example benchmark configuration
+
+# Name for this benchmark run
+benchmark_name: LLM_Leak_Detection_2023
+
+# Sampling rate
+sampling_rate: 0.05 # 5% of the data
+
+# Chatbots to benchmark with their common names
+chatbots:
+  - Grok2
+  - GPT4oMini
+  - O1Mini
+  - AzureGPT4oMini
+  - AzureGPT4o
+  - AzureGPTo1Mini
+  - DeepseekV3OpenRouterLocked
+  - ClaudeHaiku
+
+# Model settings
+model:
+  # Model type: CNN or LSTM
+  type: LSTM
+  
+  # Training parameters
+  batch_size: 32
+  max_epochs: 200
+  learning_rate: 0.0001
+  patience: 20
+  test_size: 20
+  valid_size: 5
+  seed: 42
+  
+  # LSTM-specific parameters
+  hidden_size: 256
+  num_layers: 4
+  dropout_rate: 0.3
+  bidirectional: true
