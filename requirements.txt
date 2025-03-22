@@ -14,3 +14,4 @@ pyshark
 python-dotenv
 boto3
 dotenv
+anthropic
