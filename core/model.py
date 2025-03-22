@@ -109,7 +109,7 @@ class Datapoint(object):
             self.seq['local_port'] = local_port
             self.seq['remote_port'] = remote_port
             self.seq['prompt'] = prompt
-            self.seq['response'] = "".join(response)
+            self.seq['response'] = ''.join(response)
             self.seq['response_tokens'] = response
             self.seq['response_token_count'] = len(response)
             self.seq['temperature'] = temperature
@@ -253,7 +253,7 @@ class TrainingSetCollector(object):
             try:
                 response, local_port = chatbot_obj.send_prompt(prompt, temperature)
                 assert isinstance(response, list), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
-                assert len(response) > 0 and len("".join(response)) > 0, Exception(f'Got empty response for prompt: {prompt}')
+                assert len(response) > 0 and len(''.join(response)) > 0, Exception(f'Got empty response for prompt: {prompt}')
 
                 # Discover new ports and stop sniffing (unless local port was provided by chatbot)
                 if local_port is None:
