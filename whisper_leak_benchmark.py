@@ -61,57 +61,31 @@ class BenchmarkConfig:
                 self.config = yaml.safe_load(f)
                 
             # Load and validate required fields
-            self.chatbot_configs = self.config.get('chatbots', [])
-            if not self.chatbot_configs:
+            self.chatbots = self.config.get('chatbots', [])
+            if not self.chatbots:
                 raise ValueError("No chatbots specified in configuration")
             
-            # Extract chatbot names and common names
-            self.chatbots = []
-            self.chatbot_common_names = {}
-            
-            for chatbot_config in self.chatbot_configs:
-                if isinstance(chatbot_config, dict):
-                    chatbot_name = chatbot_config.get('name')
-                    common_name = chatbot_config.get('common_name', chatbot_name)
-                    if not chatbot_name:
-                        raise ValueError("Chatbot configuration missing 'name' field")
-                    
-                    self.chatbots.append(chatbot_name)
-                    self.chatbot_common_names[chatbot_name] = common_name
-                else:
-                    # Simple string format - use same name for both
-                    self.chatbots.append(chatbot_config)
-                    self.chatbot_common_names[chatbot_config] = chatbot_config
-            
-            self.benchmark_name = self.config.get('benchmark_name', 'default_benchmark')
-            self.model_params = self.config.get('model', {})
-            if not self.model_params:
+            self.benchmark_name = self.config.get('benchmark_name', 'benchmark')
+            model_params = self.config.get('model', {})
+            if not model_params:
                 raise ValueError("No model parameters specified in configuration")
-                
-            self.model_type = self.model_params.get('type', 'LSTM')
-            
+
+            self.model_class = model_params.get('class', 'LSTMBinaryClassifier')
+            self.model_params = model_params.get('params', {})
+
             # Training parameters
-            self.batch_size = self.model_params.get('batch_size', 32)
-            self.max_epochs = self.model_params.get('max_epochs', 200)
-            self.learning_rate = self.model_params.get('learning_rate', 0.0001)
-            self.patience = self.model_params.get('patience', 5)
-            self.kernel_width = self.model_params.get('kernel_width', 3)
-            self.test_size = self.model_params.get('test_size', 20)
-            self.valid_size = self.model_params.get('valid_size', 5)
-            self.seed = self.model_params.get('seed', 42)
+            training_params = self.config.get('training', {})
+            self.batch_size = training_params.get('batch_size', 32)
+            self.max_epochs = training_params.get('max_epochs', 200)
+            self.learning_rate = training_params.get('learning_rate', 0.0001)
+            self.patience = training_params.get('patience', 5)
+            self.test_size = training_params.get('test_size', 20)
+            self.valid_size = training_params.get('valid_size', 5)
+            self.seed = training_params.get('seed', 42)
             
-            # Additional parameters for LSTM
-            if self.model_type.upper() == 'LSTM':
-                self.hidden_size = self.model_params.get('hidden_size', 256)
-                self.num_layers = self.model_params.get('num_layers', 4)
-                self.dropout_rate = self.model_params.get('dropout_rate', 0.3)
-                self.bidirectional = self.model_params.get('bidirectional', True)
-            
-            PrintUtils.print_extra(f'Configuration loaded for model: *{self.model_type}*')
+            PrintUtils.print_extra(f'Configuration loaded for model: *{self.model_class}*')
             PrintUtils.print_extra(f'Benchmark name: *{self.benchmark_name}*')
             PrintUtils.print_extra(f'Chatbots to benchmark: *{", ".join(self.chatbots)}*')
-            for chatbot, common_name in self.chatbot_common_names.items():
-                PrintUtils.print_extra(f'  - {chatbot} (common name: {common_name})')
             
         except Exception as e:
             PrintUtils.end_stage(fail_message=f"Failed to load configuration: {str(e)}")

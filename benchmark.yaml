@@ -19,9 +19,17 @@ chatbots:
 
 # Model settings
 model:
-  # Model type: CNN or LSTM
-  type: LSTM
-  
+  class: LSTMBinaryClassifier
+  params:
+    hidden_size: 128
+    num_layers: 2
+    dropout_rate: 0.3
+    embedding_dim: 32
+    fc_dims: [128, 64]
+    bidirectional: true
+    attention_dim: 64
+
+training:
   # Training parameters
   batch_size: 32
   max_epochs: 200
@@ -30,9 +38,3 @@ model:
   test_size: 20
   valid_size: 5
   seed: 42
-  
-  # LSTM-specific parameters
-  hidden_size: 256
-  num_layers: 4
-  dropout_rate: 0.3
-  bidirectional: true
