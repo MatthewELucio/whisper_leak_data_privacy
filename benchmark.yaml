@@ -1,7 +1,7 @@
 # Example benchmark configuration
 
 # Name for this benchmark run
-benchmark_name: LLM_Leak_Detection_2023
+benchmark_name: lstm_1
 
 # Sampling rate
 sampling_rate: 0.05 # 5% of the data
