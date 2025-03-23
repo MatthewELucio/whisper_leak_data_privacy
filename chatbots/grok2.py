@@ -10,6 +10,7 @@ class Grok2(ChatbotBase):
     """
         OpenAI GPT 4o chatbot.
     """
+    _common_name = 'grok-2-1212'
 
     def __init__(self, remote_tls_port=443):
         """

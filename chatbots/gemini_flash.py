@@ -10,6 +10,7 @@ class GeminiFlash(ChatbotBase):
     """
         Gemini 2.0 Flash chatbot.
     """
+    _common_name = 'gemini-2.0-flash'
 
     def __init__(self, remote_tls_port=443):
         """

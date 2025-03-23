@@ -10,6 +10,7 @@ class ClaudeHaikuOpenRouter(ChatbotBase):
     """
         Claude 3.5 Haiku over OpenRouter chatbot.
     """
+    _common_name = 'claude-3.5-haiku (OpenRouter)'
 
     def __init__(self, remote_tls_port=443):
         """

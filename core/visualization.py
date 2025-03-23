@@ -152,11 +152,37 @@ def plot_confusion_matrix(y_true, y_pred, output_file='confusion_matrix.png'):
     return conf_matrix
 
 
-def plot_score_distribution(scores, output_file='prediction_score_distribution.png'):
-    """Plot distribution of prediction scores."""
+def plot_score_distribution(scores, labels=None, output_file='prediction_score_distribution.png'):
+    """
+    Plot distribution of prediction scores with different colors for positive and negative targets.
+    
+    Parameters:
+    scores (array-like): Model prediction scores
+    labels (array-like, optional): True labels corresponding to scores. If provided, scores will be colored by class.
+    output_file (str): Path to save the output image
+    """
     plt.figure(figsize=(10, 6))
-    sns.histplot(scores, bins=50, kde=True, color='royalblue')
-    plt.axvline(x=0.5, color='red', linestyle='--', label='Decision Threshold (0.5)')
+    
+    if labels is not None:
+        # Convert to numpy arrays if they aren't already
+        scores = np.array(scores)
+        labels = np.array(labels)
+        
+        # Create a DataFrame for seaborn to use for stacked histograms
+        import pandas as pd
+        df = pd.DataFrame({
+            'score': scores,
+            'class': ['Positive Class' if label == 1 else 'Negative Class' for label in labels]
+        })
+        
+        # Plot stacked distributions
+        sns.histplot(data=df, x='score', hue='class', bins=50, 
+                    multiple="stack", palette={'Negative Class': 'royalblue', 'Positive Class': 'crimson'})
+    else:
+        # If no labels are provided, just plot all scores in one color
+        sns.histplot(scores, bins=50, color='royalblue', label='All Predictions')
+    
+    plt.axvline(x=0.5, color='black', linestyle='--', label='Decision Threshold (0.5)')
     plt.xlabel('Prediction Score')
     plt.ylabel('Count')
     plt.title('Distribution of Model Prediction Scores', fontweight='bold')

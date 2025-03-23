@@ -10,6 +10,7 @@ class DeepseekR1OpenRouter(ChatbotBase):
     """
         Deepseek R1 over OpenRouter chatbot.
     """
+    _common_name = 'DeepSeekR1 (OpenRouter)'
 
     def __init__(self, remote_tls_port=443):
         """

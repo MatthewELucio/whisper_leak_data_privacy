@@ -9,6 +9,7 @@ class AmazonNovaLiteV1(ChatbotBase):
     """
         Amazon Nova chatbot utilizing streaming responses.
     """
+    _common_name = 'nova-lite-v1'
 
     def __init__(self, remote_tls_port=443):
         """

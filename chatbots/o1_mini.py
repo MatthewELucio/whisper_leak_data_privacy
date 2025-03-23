@@ -10,6 +10,7 @@ class O1Mini(ChatbotBase):
     """
         OpenAI GPT 4o chatbot.
     """
+    _common_name = 'o1-mini'
 
     def __init__(self, remote_tls_port=443):
         """

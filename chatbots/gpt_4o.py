@@ -10,6 +10,7 @@ class GPT4o(ChatbotBase):
     """
         OpenAI GPT 4o chatbot.
     """
+    _common_name = 'gpt-4o'
 
     def __init__(self, remote_tls_port=443):
         """

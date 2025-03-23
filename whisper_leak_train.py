@@ -124,7 +124,7 @@ def main():
 
         # Load the data from the specified input folder
         PrintUtils.start_stage('Loading sequences data')
-        training_set_dir = os.path.join(get_self_dir(), 'training_set')
+        training_set_dir = os.path.join(get_self_dir(), 'data')
         files = [ os.path.join(training_set_dir, i) for i in os.listdir(training_set_dir) if i.lower().endswith(f'_{args.chatbot.lower()}.seq') ]
         assert len(files) > 0, Exception(f'Did not find training set files for chatbot {args.chatbot}')
         data = []
@@ -157,23 +157,51 @@ def main():
             stratify=unique_prompts['target']
         )
         test_prompts = set(test_prompts)
-        train_prompts, val_prompts = train_test_split(
-            train_and_val_prompts,
+        #train_prompts, val_prompts = train_test_split(
+        #    train_and_val_prompts,
+        #    test_size=args.validsize / 100,
+        #    random_state=args.seed,
+        #    stratify=unique_prompts[unique_prompts['prompt'].isin(train_and_val_prompts)]['target']
+        #)
+        #train_prompts = set(train_prompts)
+        #val_prompts = set(val_prompts)
+        df_train, df_val = train_test_split(
+            df[df['prompt'].isin(train_and_val_prompts)],
             test_size=args.validsize / 100,
             random_state=args.seed,
-            stratify=unique_prompts[unique_prompts['prompt'].isin(train_and_val_prompts)]['target']
+            stratify=df[df['prompt'].isin(train_and_val_prompts)]['target']
         )
-        train_prompts = set(train_prompts)
-        val_prompts = set(val_prompts)
 
-        df_train = df[df['prompt'].isin(train_prompts)]
-        df_val = df[df['prompt'].isin(val_prompts)]
+        #df_train = df[df['prompt'].isin(train_prompts)]
+        #df_val = df[df['prompt'].isin(val_prompts)]
         df_test = df[df['prompt'].isin(test_prompts)]
+
+        # Print the train, val, and test set sizes, and the number of unique prompts in each set by label, and count of prompts
+        # in each set by label
+        PrintUtils.print_extra(f'Train set size: {len(df_train)}')
+        PrintUtils.print_extra(f'Validation set size: {len(df_val)}')
+        PrintUtils.print_extra(f'Test set size: {len(df_test)}')
+        PrintUtils.print_extra(f'Unique prompts in train set: {len(df_train["prompt"].unique())}')
+        PrintUtils.print_extra(f'Unique prompts in validation set: {len(df_val["prompt"].unique())}')
+        PrintUtils.print_extra(f'Unique prompts in test set: {len(df_test["prompt"].unique())}')
+        PrintUtils.print_extra(f'Unique prompts in train set by label: {df_train.groupby("target")["prompt"].nunique().to_dict()}')
+        PrintUtils.print_extra(f'Unique prompts in validation set by label: {df_val.groupby("target")["prompt"].nunique().to_dict()}')
+        PrintUtils.print_extra(f'Unique prompts in test set by label: {df_test.groupby("target")["prompt"].nunique().to_dict()}')
+        PrintUtils.print_extra(f'Count of prompts in train set by label: {df_train.groupby("target")["prompt"].count().to_dict()}')
+        PrintUtils.print_extra(f'Count of prompts in validation set by label: {df_val.groupby("target")["prompt"].count().to_dict()}')
+        PrintUtils.print_extra(f'Count of prompts in test set by label: {df_test.groupby("target")["prompt"].count().to_dict()}')
+
+        # Calculate the average length of the sequences in each set
+        PrintUtils.print_extra(f'Average sequence length in train set: {df_train["data_lengths"].apply(len).mean()}')
+        PrintUtils.print_extra(f'Average sequence length in validation set: {df_val["data_lengths"].apply(len).mean()}')
+        PrintUtils.print_extra(f'Average sequence length in test set: {df_test["data_lengths"].apply(len).mean()}')
+
         PrintUtils.end_stage()
 
         # Prepare data
         PrintUtils.start_stage('Preparing data')
         df_train, max_len = prepare_data(df_train)
+        df_val, _ = prepare_data(df_val)
         df_test, _ = prepare_data(df_test)
         PrintUtils.end_stage()
         PrintUtils.print_extra(f'Max sequence length being used for model (90th percentile): *{max_len}*')
@@ -252,7 +280,7 @@ def main():
             PrintUtils.end_stage()
             
             # Early stopping check
-            early_stopping(val_acc, model)
+            early_stopping(val_loss, model)
             if early_stopping.early_stop:
                 PrintUtils.print_extra(f'Training (epoch {epoch+1} / {args.epochs}): early stopping triggered')
                 best_epoch = epoch + 1 - args.patience
@@ -291,7 +319,7 @@ def main():
         create_model_dashboard(test_scores, test_labels, train_accs, val_accs, best_epoch,  os.path.join(results_dir, 'model_performance_dashboard.png'))
         
         # Plot prediction score distribution
-        plot_score_distribution(test_scores, os.path.join(results_dir, 'prediction_score_distribution.png'))
+        plot_score_distribution(test_scores, test_labels, os.path.join(results_dir, 'prediction_score_distribution.png'))
         
         # Save test predictions
         df_test_normalized['prediction'] = test_preds
