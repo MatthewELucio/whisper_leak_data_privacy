@@ -1,10 +1,9 @@
 # Example benchmark configuration
 
-# Name for this benchmark run
+# Benchmark config
 benchmark_name: lstm_1
-
-# Sampling rate
-sampling_rate: 0.05 # 5% of the data
+sampling_rate: 1 # 15% of the data
+num_trials: 1 # Number of trials to run for each model
 
 # Chatbots to benchmark with their common names
 chatbots:

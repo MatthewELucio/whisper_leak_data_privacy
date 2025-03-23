@@ -16,3 +16,4 @@ boto3
 dotenv
 anthropic
 pyyaml
+mistralai
