@@ -68,12 +68,25 @@ def packet_callback(packet):
     try:
 
         # Only handle TLS packets
-        if hasattr(packet, 'tls'):
-            
-            # Handle handleshakes to identify important streams
-            if getattr(packet.tls, 'handshake_type', None) == '1' and getattr(packet.tls, 'handshake_extensions_server_name') == 'whatever':
-                stream_sequences[(packet.ip.src, packet.tcp.srcport, packet.ip.dst, packet.tcp.dstport)] = []
-                PrintUtils.print_extra(f'{packet.sniff_time}: New stream: *{packet.ip.src}:{packet.tcp.srcport}* --> *{packet.ip.dst}:{packet.tcp.dstport}*')
+        if not hasattr(packet, 'tls'):
+            return
+
+        # Handle handleshakes to identify streams to follow
+        if getattr(packet.tls, 'handshake_type', None) == '1' and getattr(packet.tls, 'handshake_extensions_server_name') == 'whatever': # TODO
+            stream_sequences[(packet.ip.dst, int(packet.tcp.dstport), packet.ip.src, int(packet.tcp.srcport))] = []       # Note we saved (remote IP, remote port, local IP, local port)
+            PrintUtils.print_extra(f'{packet.sniff_time}: New stream: *{packet.ip.src}:{packet.tcp.srcport}* --> *{packet.ip.dst}:{packet.tcp.dstport}*')
+            return
+
+        # Handle Application Data
+        if hasattr(packet.tls, 'app_data'):
+
+            # Only handle streams to follow
+            key = (packet.ip.src, int(packet.tcp.srcport), packet.ip.dst, int(packet.tcp.dstport))
+            if key not in stream_sequences:
+                return
+
+            # TODO follow sequence
+
 
     # Log exceptions
     except Exception as ex:
