@@ -860,10 +860,14 @@ def prepare_data(df):
     """
 
     # Preprocess datasets
-    df['time_diffs'] = df['time_diffs'].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
-    df['data_lengths'] = df['data_lengths'].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
-    len_90p = int(np.percentile(df['data_lengths'].apply(len), 90))
-    return df, len_90p
+    df.loc[:, 'time_diffs'] = df['time_diffs'].apply(
+        lambda x: ast.literal_eval(x) if isinstance(x, str) else x
+    )
+    df.loc[:, 'data_lengths'] = df['data_lengths'].apply(
+        lambda x: ast.literal_eval(x) if isinstance(x, str) else x
+    )
+    len_95p = int(np.percentile(df['data_lengths'].apply(len), 95))
+    return df, len_95p
 
 def calculate_norm_params(data):
     """
