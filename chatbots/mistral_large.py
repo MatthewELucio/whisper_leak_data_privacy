@@ -5,6 +5,7 @@ from core.chatbot_utils import LocalPortSaverTransport
 from mistralai import Mistral
 import httpx
 from dotenv import load_dotenv
+import asyncio
 
 class MistralLarge(ChatbotBase):
     """
@@ -19,6 +20,13 @@ class MistralLarge(ChatbotBase):
 
         # Call superclass
         super().__init__(remote_tls_port)
+
+        # Make sure asyncio has a loop
+        try:
+            loop = asyncio.get_running_loop()
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
 
         # Load environment variables from .env file
         load_dotenv()
