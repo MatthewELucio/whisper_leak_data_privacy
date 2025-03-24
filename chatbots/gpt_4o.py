@@ -72,3 +72,11 @@ class GPT4o(ChatbotBase):
 
         # Return common name
         return 'gpt-4o'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'api.openai.com' in server_name

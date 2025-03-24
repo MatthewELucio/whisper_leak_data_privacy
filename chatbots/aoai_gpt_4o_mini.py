@@ -73,3 +73,11 @@ class AzureGPT4oMini(ChatbotBase):
 
         # Return common name
         return 'gpt-4o-mini (Azure)'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'openai.azure.com' in server_name

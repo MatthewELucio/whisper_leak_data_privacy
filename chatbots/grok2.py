@@ -72,3 +72,11 @@ class Grok2(ChatbotBase):
 
         # Return common name
         return 'grok-2-1212'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'api.x.ai' in server_name

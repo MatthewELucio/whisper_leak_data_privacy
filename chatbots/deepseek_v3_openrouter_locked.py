@@ -79,3 +79,11 @@ class DeepseekV3OpenRouterLocked(ChatbotBase):
 
         # Return common name
         return 'DeepSeekV3 (OpenRouter)'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'openrouter.ai' in server_name

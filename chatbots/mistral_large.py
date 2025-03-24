@@ -78,3 +78,11 @@ class MistralLarge(ChatbotBase):
 
         # Return common name
         return 'mistral-large-2411'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'api.mistral.ai' in server_name

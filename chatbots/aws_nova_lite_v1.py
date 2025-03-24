@@ -107,3 +107,11 @@ class AmazonNovaLiteV1(ChatbotBase):
 
         # Return common name
         return 'nova-light-v1'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'amazonaws.com' in server_name and 'bedrock-runtime' in server_name

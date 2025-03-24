@@ -80,3 +80,11 @@ class ClaudeHaiku(ChatbotBase):
 
         # Return common name
         return 'claude-3.5-haiku'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'api.anthropic.com' in server_name

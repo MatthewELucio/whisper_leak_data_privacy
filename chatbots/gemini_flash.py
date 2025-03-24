@@ -60,3 +60,11 @@ class GeminiFlash(ChatbotBase):
 
         # Return common name
         return 'gemini-2.0-flash'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'generativelanguage.googleapis.com' in server_name

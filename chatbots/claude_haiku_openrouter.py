@@ -60,3 +60,11 @@ class ClaudeHaikuOpenRouter(ChatbotBase):
 
         # Return common name
         return 'claude-3.5-haiku (OpenRouter)'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'openrouter.ai' in server_name

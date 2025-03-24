@@ -73,3 +73,11 @@ class AzureGPTo1Mini(ChatbotBase):
 
         # Return common name
         return 'o1-mini (Azure)'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'openai.azure.com' in server_name

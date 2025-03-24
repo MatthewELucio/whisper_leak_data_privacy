@@ -85,3 +85,11 @@ class AmazonNovaLiteV1OpenRouter(ChatbotBase):
 
         # Return common name
         return 'nova-lite-v1 (OpenRouter)'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'openrouter.ai' in server_name

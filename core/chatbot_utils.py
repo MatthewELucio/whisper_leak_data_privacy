@@ -41,6 +41,13 @@ class ChatbotBase(ABC):
         """
         pass
 
+    @abstractmethod
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+        pass
+
 class LocalPortSaverTransport(httpx.HTTPTransport):
     """
         An HTTP transport that saves the local port as a member.

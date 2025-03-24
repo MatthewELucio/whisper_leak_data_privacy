@@ -91,3 +91,11 @@ class Llama405BLambda(ChatbotBase):
 
         # Return common name
         return 'llama-3.1-405b-instruct (OpenRouter Lambda)'
+
+    def match_tls_server_name(self, server_name):
+        """
+            Matches the TLS server name.
+        """
+
+        # Match
+        return 'openrouter.ai' in server_name
