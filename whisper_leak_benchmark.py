@@ -372,7 +372,7 @@ class BenchmarkRunner:
             )
             
             create_model_dashboard(
-                test_scores, test_labels, train_accs, val_accs, 
+                test_scores, test_labels, train_losses, val_losses, 
                 best_epoch, os.path.join(output_dir, 'dashboard.png')
             )
             

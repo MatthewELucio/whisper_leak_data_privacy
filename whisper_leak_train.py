@@ -316,7 +316,7 @@ def main():
         conf_matrix = plot_confusion_matrix(test_labels, test_preds, os.path.join(results_dir, 'confusion_matrix.png'))
         
         # Generate model dashboard
-        create_model_dashboard(test_scores, test_labels, train_accs, val_accs, best_epoch,  os.path.join(results_dir, 'model_performance_dashboard.png'))
+        create_model_dashboard(test_scores, test_labels, train_losses, val_losses, best_epoch,  os.path.join(results_dir, 'model_performance_dashboard.png'))
         
         # Plot prediction score distribution
         plot_score_distribution(test_scores, test_labels, os.path.join(results_dir, 'prediction_score_distribution.png'))

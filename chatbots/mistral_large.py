@@ -21,13 +21,6 @@ class MistralLarge(ChatbotBase):
         # Call superclass
         super().__init__(remote_tls_port)
 
-        # Make sure asyncio has a loop
-        try:
-            loop = asyncio.get_running_loop()
-        except RuntimeError:
-            loop = asyncio.new_event_loop()
-            asyncio.set_event_loop(loop)
-
         # Load environment variables from .env file
         load_dotenv()
 
@@ -48,6 +41,13 @@ class MistralLarge(ChatbotBase):
             Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
             Returns a tuple of (response, local_port) - if local port cannot be determined return (response, None).
         """
+ 
+        # Make sure asyncio has a loop
+        try:
+            loop = asyncio.get_running_loop()
+        except RuntimeError:
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
 
         # Send prompt
         response = []

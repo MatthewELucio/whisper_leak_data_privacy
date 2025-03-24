@@ -4,5 +4,6 @@ training_set/*.pcap
 data/*.pcap
 models/
 results/
+benchmark/
 *.swp
 *.env

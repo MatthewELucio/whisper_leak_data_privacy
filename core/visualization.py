@@ -194,7 +194,7 @@ def plot_score_distribution(scores, labels=None, output_file='prediction_score_d
     logging.info(f"Prediction score distribution saved to {output_file}")
 
 
-def create_model_dashboard(val_scores, val_labels, train_accs, val_accs, best_epoch, 
+def create_model_dashboard(val_scores, val_labels, train_losses, val_losses, best_epoch, 
                           output_file='model_performance_dashboard.png'):
     """Create a dashboard of model performance metrics."""
     val_preds = (val_scores > 0.5).astype(int)
@@ -245,14 +245,14 @@ def create_model_dashboard(val_scores, val_labels, train_accs, val_accs, best_ep
     plt.xlabel('Predicted Label')
     plt.title('Confusion Matrix')
 
-    # Training/Validation Accuracy (bottom right)
+    # Training/Validation Loss Curve (bottom right)
     plt.subplot(2, 2, 4)
-    plt.plot(range(1, len(train_accs) + 1), train_accs, 'b-', label='Training')
-    plt.plot(range(1, len(val_accs) + 1), val_accs, 'r-', label='Validation')
+    plt.plot(range(1, len(train_losses) + 1), train_losses, 'b-', label='Training')
+    plt.plot(range(1, len(val_losses) + 1), val_losses, 'r-', label='Validation')
     plt.axvline(x=best_epoch, color='g', linestyle='--', label='Best Model')
     plt.xlabel('Epochs')
-    plt.ylabel('Accuracy')
-    plt.title('Training and Validation Accuracy')
+    plt.ylabel('Loss')
+    plt.title('Training and Validation Loss')
     plt.legend()
     plt.grid(True, alpha=0.3)
 
