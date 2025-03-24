@@ -10,7 +10,6 @@ class ClaudeHaiku(ChatbotBase):
     """
         Claude 3.5 Haiku chatbot (direct Anthropic API).
     """
-    _common_name = 'claude-3.5-haiku'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -24,7 +23,7 @@ class ClaudeHaiku(ChatbotBase):
         load_dotenv()
         api_key = os.getenv('ANTHROPIC_API_KEY')
         if not api_key:
-            raise ValueError("ANTHROPIC_API_KEY is not set in the environment variables.")
+            raise ValueError('ANTHROPIC_API_KEY is not set in the environment variables.')
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
@@ -34,8 +33,9 @@ class ClaudeHaiku(ChatbotBase):
             http_client=httpx.Client(transport=self._transport),
             base_url=f'https://api.anthropic.com:{remote_tls_port}'
         )
+
         # Store the model name
-        self._model = "claude-3-5-haiku-20241022"
+        self._model = 'claude-3-5-haiku-20241022'
 
     def send_prompt(self, prompt, temperature):
         """
@@ -49,8 +49,8 @@ class ClaudeHaiku(ChatbotBase):
             model=self._model,
             messages=[
                 {
-                    "role": "user",
-                    "content": prompt
+                    'role': 'user',
+                    'content': prompt
                 }
             ],
             max_tokens=2000,
@@ -72,3 +72,11 @@ class ClaudeHaiku(ChatbotBase):
 
         # For now we just return the default of 1.0
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'claude-3.5-haiku'

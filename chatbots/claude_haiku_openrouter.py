@@ -10,7 +10,6 @@ class ClaudeHaikuOpenRouter(ChatbotBase):
     """
         Claude 3.5 Haiku over OpenRouter chatbot.
     """
-    _common_name = 'claude-3.5-haiku (OpenRouter)'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -24,7 +23,7 @@ class ClaudeHaikuOpenRouter(ChatbotBase):
         load_dotenv()
         api_key = os.getenv('OPENROUTER_API_KEY')
         if not api_key:
-            raise ValueError("OPENROUTER_API_KEY is not set in the environment variables.")
+            raise ValueError('OPENROUTER_API_KEY is not set in the environment variables.')
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
@@ -53,3 +52,11 @@ class ClaudeHaikuOpenRouter(ChatbotBase):
 
         # For now we just return the default of 1.0
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'claude-3.5-haiku (OpenRouter)'

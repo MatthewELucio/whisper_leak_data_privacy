@@ -8,9 +8,8 @@ from dotenv import load_dotenv
 
 class GPT4oMini(ChatbotBase):
     """
-        OpenAI GPT 4o chatbot.
+        OpenAI GPT 4o-mini chatbot.
     """
-    _common_name = 'gpt-4o-mini'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -65,3 +64,11 @@ class GPT4oMini(ChatbotBase):
 
         # For now we just return the default of 1.0
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'gpt-4o-mini'

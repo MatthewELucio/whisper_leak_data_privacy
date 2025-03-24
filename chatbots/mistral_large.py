@@ -11,7 +11,6 @@ class MistralLarge(ChatbotBase):
     """
         Mistral Large chatbot.
     """
-    _common_name = 'mistral-large-2411'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -71,3 +70,11 @@ class MistralLarge(ChatbotBase):
 
         # For now we just return the default of 1.0
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'mistral-large-2411'

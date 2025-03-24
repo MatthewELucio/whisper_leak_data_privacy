@@ -8,9 +8,8 @@ from dotenv import load_dotenv
 
 class Grok2(ChatbotBase):
     """
-        OpenAI GPT 4o chatbot.
+        Grok2 chatbot.
     """
-    _common_name = 'grok-2-1212'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -65,3 +64,11 @@ class Grok2(ChatbotBase):
 
         # For now we just return the default of 1.0
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'grok-2-1212'

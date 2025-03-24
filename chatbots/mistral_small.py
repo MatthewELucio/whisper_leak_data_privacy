@@ -9,9 +9,8 @@ import asyncio
 
 class MistralSmall(ChatbotBase):
     """
-        Mistral Large chatbot.
+        Mistral Small chatbot.
     """
-    _common_name = 'mistral-small-2503'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -71,3 +70,11 @@ class MistralSmall(ChatbotBase):
 
         # For now we just return the default of 1.0
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'mistral-small-2503'

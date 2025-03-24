@@ -10,7 +10,6 @@ class DeepseekV3OpenRouter(ChatbotBase):
     """
         Deepseek V3 over OpenRouter chatbot.
     """
-    _common_name = 'DeepSeekV3 (OpenRouter)'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -55,6 +54,8 @@ class DeepseekV3OpenRouter(ChatbotBase):
                 },
             }
         )
+
+        # Get chunks
         for chunk in stream:
             assert chunk.provider == 'DeepSeek', Exception(f'Unexpected provider: {chunk.provider}')
             if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0 and chunk.choices[0].delta.content:
@@ -70,3 +71,11 @@ class DeepseekV3OpenRouter(ChatbotBase):
 
         # For now we just return the default of 1.0
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'DeepSeekV3 (OpenRouter)'

@@ -10,7 +10,6 @@ class DeepseekR1OpenRouterFireworks(ChatbotBase):
     """
         Deepseek R1 over OpenRouter chatbot.
     """
-    _common_name = 'DeepSeekR1 (OpenRouter Fireworks)'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -24,12 +23,12 @@ class DeepseekR1OpenRouterFireworks(ChatbotBase):
         load_dotenv()
         api_key = os.getenv('OPENROUTER_API_KEY')
         if not api_key:
-            raise ValueError("OPENROUTER_API_KEY is not set in the environment variables.")
+            raise ValueError('OPENROUTER_API_KEY is not set in the environment variables.')
 
         # Setting up the proper headers for OpenRouter
         headers = {
-            "HTTP-Referer": "Your-App-Name",  # Replace with your app name
-            "X-Title": "Your-App-Name"        # Replace with your app name
+            'HTTP-Referer': 'Your-App-Name',  # Replace with your app name
+            'X-Title': 'Your-App-Name'        # Replace with your app name
         }
 
         # Create client that also saves the local port
@@ -51,22 +50,23 @@ class DeepseekR1OpenRouterFireworks(ChatbotBase):
         
         # Use the correct model ID for DeepSeek R1
         stream = self._client.chat.completions.create(
-            model="deepseek/deepseek-r1",  # Use the correct model ID
+            model='deepseek/deepseek-r1',  # Use the correct model ID
             messages=[
-                {"role": "user", "content": prompt}
+                { 'role': 'user', 'content': prompt }
             ],
             stream=True,
             max_tokens=4000,
             temperature=temperature,
             # Specify the provider routing in extra_body
             extra_body={
-                "provider": {
-                    "order": ["Fireworks"],
+                'provider': {
+                    'order': [ 'Fireworks' ],
                     'allow_fallbacks': False
                 },
             }
         )
         
+        # Get chunks
         for chunk in stream:
             assert chunk.provider == 'Fireworks', Exception(f'Unexpected provider: {chunk.provider}')
             if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0:
@@ -83,3 +83,11 @@ class DeepseekR1OpenRouterFireworks(ChatbotBase):
 
         # For now we just return the default of 0.7 for DeepSeek R1
         return 0.7
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'DeepSeekR1 (OpenRouter Fireworks)'

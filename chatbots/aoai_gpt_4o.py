@@ -10,7 +10,6 @@ class AzureGPT4o(ChatbotBase):
     """
         Azure GPT 4o chatbot.
     """
-    _common_name = 'gpt-4o (Azure)'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -66,3 +65,13 @@ class AzureGPT4o(ChatbotBase):
 
         # For now we just return the default of 1.0
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'gpt-4o (Azure)'
+
+

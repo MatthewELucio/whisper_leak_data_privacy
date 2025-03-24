@@ -10,7 +10,6 @@ class GeminiFlash(ChatbotBase):
     """
         Gemini 2.0 Flash chatbot.
     """
-    _common_name = 'gemini-2.0-flash'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -53,3 +52,11 @@ class GeminiFlash(ChatbotBase):
 
         # For now we just return the default of 1.0
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'gemini-2.0-flash'

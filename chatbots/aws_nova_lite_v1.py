@@ -9,7 +9,6 @@ class AmazonNovaLiteV1(ChatbotBase):
     """
         Amazon Nova chatbot utilizing streaming responses.
     """
-    _common_name = 'nova-lite-v1'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -100,3 +99,11 @@ class AmazonNovaLiteV1(ChatbotBase):
 
         # Return 1.0 by default
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'nova-light-v1'

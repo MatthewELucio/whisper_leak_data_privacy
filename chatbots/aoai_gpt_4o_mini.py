@@ -8,9 +8,8 @@ from dotenv import load_dotenv
 
 class AzureGPT4oMini(ChatbotBase):
     """
-        Azure GPT 4o chatbot.
+        Azure GPT 4o-mini chatbot.
     """
-    _common_name = 'gpt-4o-mini (Azure)'
 
     def __init__(self, remote_tls_port=443):
         """
@@ -66,3 +65,11 @@ class AzureGPT4oMini(ChatbotBase):
 
         # For now we just return the default of 1.0
         return 1.0
+
+    def get_common_name(self):
+        """
+            Gets the common name of the model.
+        """
+
+        # Return common name
+        return 'gpt-4o-mini (Azure)'
