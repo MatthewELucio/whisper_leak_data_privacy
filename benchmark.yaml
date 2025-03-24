@@ -9,12 +9,21 @@ num_trials: 1 # Number of trials to run for each model
 chatbots:
   - Grok2
   - GPT4oMini
+  - GPT4o
   - O1Mini
   - AzureGPT4oMini
   - AzureGPT4o
   - AzureGPTo1Mini
   - DeepseekV3OpenRouterLocked
+  - DeepseekR1OpenRouterFireworks
   - ClaudeHaiku
+  - GeminiFlash
+  - AmazonNovaLiteV1OpenRouter
+  - AmazonNovaProV1OpenRouter
+  - Llama405BLambda
+  - Llama8BLambda
+  - MistralLarge
+  - MistralSmall
 
 # Model settings
 model:
