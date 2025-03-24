@@ -32,7 +32,7 @@ class MistralLarge(ChatbotBase):
         self._transport = LocalPortSaverTransport()
         self._client = Mistral(
             api_key=key,
-            client=httpx.Client(transport=self._transport)
+            async_client=httpx.Client(transport=self._transport)
         )
 
     def send_prompt(self, prompt, temperature):
