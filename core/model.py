@@ -8,6 +8,35 @@ import os
 import pyshark
 import json
 
+class Sequence(object):
+    """
+        Container for sequences.
+    """
+
+    def __init__(self, first_timestamp):
+        """
+            Creates an instance.
+        """
+
+        # Containers for the sequences
+        self.time_seq = []
+        self.size_seq = []
+
+        # Save the timestamp
+        self._last_timestamp = first_timestamp
+
+    def add_pair(self, timestamp, packet_size):
+        """
+            Adds a new pair to the sequence.
+        """
+
+        # Append
+        self.time_seq.append(timestamp - self._last_timestamp)
+        self.size_seq.append(packet_size)
+
+        # Save the timestamp
+        self._last_timestamp = timestamp
+
 class Datapoint(object):
     """
         Container for prompt datapoints.

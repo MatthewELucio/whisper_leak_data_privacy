@@ -4,11 +4,14 @@ from core.utils import OsUtils
 from core.utils import ThrowingArgparse
 from core.utils import NetworkUtils
 from core.chatbot_utils import ChatbotUtils
-from core.model import TrainingSetCollector
+from core.model import Sequence
 
 import pyshark
 import os
 import json
+
+# Globak - the chatbot object
+g_chatbot_object = None
 
 def get_self_dir():
     """
@@ -27,15 +30,16 @@ def parse_arguments():
     PrintUtils.start_stage('Parsing command-line arguments')
     parser = ThrowingArgparse()
     parser.add_argument('-i', '--interface', help='The network interface', required=True)
+    parser.add_argument('-c', '--chatbot', help='The chatbot', required=True)
     args = parser.parse_args()
     PrintUtils.end_stage()
 
     # Return the parsed arguments
     return args
 
-def get_chatbot_class(chatbot_name):
+def get_chatbot_object(chatbot_name):
     """
-        Get the chatbot class from the given chatbot name.
+        Get the chatbot object from the given chatbot name.
     """
 
     # Load all chatbots
@@ -53,8 +57,8 @@ def get_chatbot_class(chatbot_name):
     PrintUtils.print_extra(f'Using chatbot *{chatbot_class.__name__}*')
     PrintUtils.end_stage()
 
-    # Return the class
-    return chatbot_class
+    # Return the object
+    return chatbot_class()
 
 def packet_callback(packet):
     """
@@ -72,9 +76,11 @@ def packet_callback(packet):
             return
 
         # Handle handleshakes to identify streams to follow
-        if getattr(packet.tls, 'handshake_type', None) == '1' and getattr(packet.tls, 'handshake_extensions_server_name') == 'whatever': # TODO
-            stream_sequences[(packet.ip.dst, int(packet.tcp.dstport), packet.ip.src, int(packet.tcp.srcport))] = []       # Note we saved (remote IP, remote port, local IP, local port)
-            PrintUtils.print_extra(f'{packet.sniff_time}: New stream: *{packet.ip.src}:{packet.tcp.srcport}* --> *{packet.ip.dst}:{packet.tcp.dstport}*')
+        if getattr(packet.tls, 'handshake_type', None) == '1':
+            server_name = getattr(packet.tls, 'handshake_extensions_server_name', None)
+            if server_name is not None and g_chatbot_object.match_tls_server_name(server_name):
+                stream_sequences[(packet.ip.dst, int(packet.tcp.dstport), packet.ip.src, int(packet.tcp.srcport))] = Sequence(float(packet.sniff_time.timestamp()))   # Note we saved the reverse 4-tuple due to interest in incoming data
+                PrintUtils.print_extra(f'{packet.sniff_time}: New stream: *{packet.ip.src}:{packet.tcp.srcport}* --> *{packet.ip.dst}:{packet.tcp.dstport}*')
             return
 
         # Handle Application Data
@@ -82,11 +88,15 @@ def packet_callback(packet):
 
             # Only handle streams to follow
             key = (packet.ip.src, int(packet.tcp.srcport), packet.ip.dst, int(packet.tcp.dstport))
-            if key not in stream_sequences:
+            sequence = stream_sequences.get(key, None)
+            if sequence is None:
                 return
 
-            # TODO follow sequence
-
+            # Follow sequence
+            timestamp = float(packet.sniff_time.timestamp())
+            data_length = int(packet.length)
+            sequence.add_pair(timestamp, data_length)
+            PrintUtils.print_extra(f'{packet.sniff_time}: New stream: *{packet.ip.src}:{packet.tcp.srcport}* --> *{packet.ip.dst}:{packet.tcp.dstport}* got new data of size *{data_length}* bytes')
 
     # Log exceptions
     except Exception as ex:
@@ -96,6 +106,9 @@ def main():
     """
         Main routine.
     """
+
+    # Using the chatbot object
+    global g_chatbot_object
 
     # Catch-all
     is_user_cancelled = False
@@ -116,6 +129,9 @@ def main():
 
         # Parsing arguments
         args = parse_arguments()
+
+        # Get the chatbot object
+        g_chatbot_object = get_chatbot_object(args.chatbot)
 
         # Start the capture
         PrintUtils.start_stage('Initializing sniffing')
