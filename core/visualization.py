@@ -289,16 +289,14 @@ def create_model_dashboard(val_scores, val_labels, train_losses, val_losses, bes
     PrintUtils.print_extra(f"Model performance dashboard saved to {output_file}")
 
     # Also write the raw data to a CSV file for further analysis
-    dashboard_data = {
-        'Epoch': range(1, len(train_losses) + 1),
-        'Train Loss': train_losses,
-        'Validation Loss': val_losses,
-        'Validation Score': val_scores,
-        'Validation Label': val_labels
+    test_data = {
+        'Test Score': val_scores,  # or test_scores
+        'Test Label': val_labels   # or test_labels, depending on your naming
     }
-    dashboard_df = pd.DataFrame(dashboard_data)
-    dashboard_df.to_csv('model_performance_data.csv', index=False)
-    PrintUtils.print_extra("Model performance data saved to model_performance_data.csv")
+    test_df = pd.DataFrame(test_data)
+    test_df.to_csv('test_prediction_data.csv', index=False)
+
+    PrintUtils.print_extra("Model performance data saved to test_prediction_data.csv")
 
 
 
