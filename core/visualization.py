@@ -135,8 +135,11 @@ def plot_precision_recall_curve(y_true, y_scores, output_file='precision_recall_
     logging.info(f"Precision-Recall curve saved to {output_file}")
 
     # Write data to CSV for further analysis
-    pr_data = pd.DataFrame({'Recall': recall, 'Precision': precision})
-    pr_data['Threshold'] = pr_thresholds
+    pr_data = pd.DataFrame({
+        'Recall': recall[:-1],  # Drop the last element
+        'Precision': precision[:-1],
+        'Threshold': pr_thresholds
+    })
     pr_data.to_csv('precision_recall_data.csv', index=False)
     
     return avg_precision
