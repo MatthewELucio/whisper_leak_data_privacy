@@ -10,7 +10,7 @@ import pyshark
 import os
 import json
 
-# Globak - the chatbot object
+# Global - the chatbot object
 g_chatbot_object = None
 
 def get_self_dir():
