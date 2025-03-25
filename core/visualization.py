@@ -5,7 +5,8 @@ import pandas as pd
 from sklearn.metrics import (roc_curve, auc, precision_recall_curve, 
                             confusion_matrix, classification_report, average_precision_score,
                             RocCurveDisplay, PrecisionRecallDisplay)
-import logging
+
+from core.utils import PrintUtils
 
 def set_plot_style():
     """Set plot style for attractive visualizations."""
@@ -47,7 +48,7 @@ def plot_training_curves(train_losses, val_losses, train_accs, val_accs, best_ep
     plt.tight_layout()
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     plt.close()
-    logging.info(f"Training curves saved to {output_file}")
+    PrintUtils.print_extra(f"Training curves saved to {output_file}")
 
     # Write data to CSV for further analysis
     training_data = {
@@ -89,13 +90,13 @@ def plot_roc_curve(y_true, y_scores, output_file='roc_curve.png'):
     plt.tight_layout()
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     plt.close()
-    logging.info(f"ROC curve saved to {output_file}")
+    PrintUtils.print_extra(f"ROC curve saved to {output_file}")
 
     # Write data to CSV for further analysis
     roc_data = pd.DataFrame({'False Positive Rate': fpr, 'True Positive Rate': tpr})
     roc_data['Threshold'] = roc_thresholds
     roc_data.to_csv('roc_curve_data.csv', index=False)
-    logging.info("ROC curve data saved to roc_curve_data.csv")
+    PrintUtils.print_extra("ROC curve data saved to roc_curve_data.csv")
     
     return roc_auc
 
@@ -132,7 +133,7 @@ def plot_precision_recall_curve(y_true, y_scores, output_file='precision_recall_
     plt.tight_layout()
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     plt.close()
-    logging.info(f"Precision-Recall curve saved to {output_file}")
+    PrintUtils.print_extra(f"Precision-Recall curve saved to {output_file}")
 
     # Write data to CSV for further analysis
     pr_data = pd.DataFrame({
@@ -172,7 +173,7 @@ def plot_confusion_matrix(y_true, y_pred, output_file='confusion_matrix.png'):
     plt.tight_layout()
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     plt.close()
-    logging.info(f"Confusion matrix saved to {output_file}")
+    PrintUtils.print_extra(f"Confusion matrix saved to {output_file}")
     
     return conf_matrix
 
@@ -216,7 +217,7 @@ def plot_score_distribution(scores, labels=None, output_file='prediction_score_d
     plt.tight_layout()
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     plt.close()
-    logging.info(f"Prediction score distribution saved to {output_file}")
+    PrintUtils.print_extra(f"Prediction score distribution saved to {output_file}")
 
 
 def create_model_dashboard(val_scores, val_labels, train_losses, val_losses, best_epoch, 
@@ -285,7 +286,7 @@ def create_model_dashboard(val_scores, val_labels, train_losses, val_losses, bes
     plt.tight_layout(rect=[0, 0, 1, 0.96])  # Adjust for the super title
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     plt.close()
-    logging.info(f"Model performance dashboard saved to {output_file}")
+    PrintUtils.print_extra(f"Model performance dashboard saved to {output_file}")
 
     # Also write the raw data to a CSV file for further analysis
     dashboard_data = {
@@ -297,7 +298,7 @@ def create_model_dashboard(val_scores, val_labels, train_losses, val_losses, bes
     }
     dashboard_df = pd.DataFrame(dashboard_data)
     dashboard_df.to_csv('model_performance_data.csv', index=False)
-    logging.info("Model performance data saved to model_performance_data.csv")
+    PrintUtils.print_extra("Model performance data saved to model_performance_data.csv")
 
 
 
