@@ -13,6 +13,9 @@ import json
 # Global - the chatbot object
 g_chatbot_object = None
 
+# Global - stream sequences
+g_stream_sequences = {}
+
 def get_self_dir():
     """
         Get the self directory.
@@ -65,8 +68,8 @@ def packet_callback(packet):
         Callback for all packets.
     """
 
-    # Saves all streams
-    stream_sequences = {}
+    # Using the stream sequences
+    global g_stream_sequences
 
     # Handle gracefully
     try:
@@ -82,16 +85,15 @@ def packet_callback(packet):
         if getattr(packet.tls, 'handshake_type', None) == '1':
             server_name = getattr(packet.tls, 'handshake_extensions_server_name', None)
             if server_name is not None and g_chatbot_object.match_tls_server_name(server_name):
-                stream_sequences[(addr.dst, int(packet.tcp.dstport), addr.src, int(packet.tcp.srcport))] = Sequence(float(packet.sniff_time.timestamp()))   # Note we saved the reverse 4-tuple due to interest in incoming data
+                g_stream_sequences[(addr.dst, int(packet.tcp.dstport), addr.src, int(packet.tcp.srcport))] = Sequence(float(packet.sniff_time.timestamp()))   # Note we saved the reverse 4-tuple due to interest in incoming data
                 PrintUtils.print_extra(f'{packet.sniff_time}: New stream: *{addr.src}:{packet.tcp.srcport}* --> *{addr.dst}:{packet.tcp.dstport}*')
-            return
 
         # Handle Application Data
         if hasattr(packet.tls, 'app_data'):
 
             # Only handle streams to follow
             key = (addr.src, int(packet.tcp.srcport), addr.dst, int(packet.tcp.dstport))
-            sequence = stream_sequences.get(key, None)
+            sequence = g_stream_sequences.get(key, None)
             if sequence is None:
                 return
 
@@ -118,9 +120,6 @@ def main():
     last_error = None
     capture = None
     try:
-
-        # Suppress STDERR
-        OsUtils.suppress_stderr()
 
         # Print logo
         PrintUtils.print_logo()

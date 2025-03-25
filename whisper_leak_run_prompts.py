@@ -57,16 +57,10 @@ def main():
         Main routine.
     """
 
-    # Using the chatbot object
-    global g_chatbot_object
-
     # Catch-all
     last_error = None
     capture = None
     try:
-
-        # Suppress STDERR
-        OsUtils.suppress_stderr()
 
         # Print logo
         PrintUtils.print_logo()
