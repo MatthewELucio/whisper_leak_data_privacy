@@ -197,15 +197,15 @@ class BenchmarkRunner:
         
         PrintUtils.end_stage()
 
-        # Process each chatbot
-        for chatbot in self.config.chatbots:
-            chatbot_dir = os.path.join(self.output_dir, chatbot)
-            os.makedirs(chatbot_dir, exist_ok=True)
-            
-            # Process each feature mode
-            for feature_mode in FeatureMode:
-                # Process each trial
-                for trial in range(1, self.config.num_trials + 1):
+        # Process each trial
+        for trial in range(1, self.config.num_trials + 1):
+            # Process each chatbot
+            for chatbot in self.config.chatbots:
+                chatbot_dir = os.path.join(self.output_dir, chatbot)
+                os.makedirs(chatbot_dir, exist_ok=True)
+                
+                # Process each feature mode
+                for feature_mode in FeatureMode:
                     trial_dir = os.path.join(chatbot_dir, f"{feature_mode.value}", f"trial_{trial}")
                     os.makedirs(trial_dir, exist_ok=True)
                     

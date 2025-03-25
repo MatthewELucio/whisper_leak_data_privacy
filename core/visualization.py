@@ -49,6 +49,17 @@ def plot_training_curves(train_losses, val_losses, train_accs, val_accs, best_ep
     plt.close()
     logging.info(f"Training curves saved to {output_file}")
 
+    # Write data to CSV for further analysis
+    training_data = {
+        'Epoch': range(1, len(train_losses) + 1),
+        'Train Loss': train_losses,
+        'Validation Loss': val_losses,
+        'Train Accuracy': train_accs,
+        'Validation Accuracy': val_accs
+    }
+    training_df = pd.DataFrame(training_data)
+    training_df.to_csv('training_curves_data.csv', index=False)
+
 
 def plot_roc_curve(y_true, y_scores, output_file='roc_curve.png'):
     """Plot ROC curve."""
@@ -79,6 +90,12 @@ def plot_roc_curve(y_true, y_scores, output_file='roc_curve.png'):
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     plt.close()
     logging.info(f"ROC curve saved to {output_file}")
+
+    # Write data to CSV for further analysis
+    roc_data = pd.DataFrame({'False Positive Rate': fpr, 'True Positive Rate': tpr})
+    roc_data['Threshold'] = roc_thresholds
+    roc_data.to_csv('roc_curve_data.csv', index=False)
+    logging.info("ROC curve data saved to roc_curve_data.csv")
     
     return roc_auc
 
@@ -116,6 +133,11 @@ def plot_precision_recall_curve(y_true, y_scores, output_file='precision_recall_
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     plt.close()
     logging.info(f"Precision-Recall curve saved to {output_file}")
+
+    # Write data to CSV for further analysis
+    pr_data = pd.DataFrame({'Recall': recall, 'Precision': precision})
+    pr_data['Threshold'] = pr_thresholds
+    pr_data.to_csv('precision_recall_data.csv', index=False)
     
     return avg_precision
 
@@ -261,3 +283,19 @@ def create_model_dashboard(val_scores, val_labels, train_losses, val_losses, bes
     plt.savefig(output_file, dpi=300, bbox_inches='tight')
     plt.close()
     logging.info(f"Model performance dashboard saved to {output_file}")
+
+    # Also write the raw data to a CSV file for further analysis
+    dashboard_data = {
+        'Epoch': range(1, len(train_losses) + 1),
+        'Train Loss': train_losses,
+        'Validation Loss': val_losses,
+        'Validation Score': val_scores,
+        'Validation Label': val_labels
+    }
+    dashboard_df = pd.DataFrame(dashboard_data)
+    dashboard_df.to_csv('model_performance_data.csv', index=False)
+    logging.info("Model performance data saved to model_performance_data.csv")
+
+
+
+

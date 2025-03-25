@@ -3,23 +3,23 @@
 # Benchmark config
 benchmark_name: lstm_1
 sampling_rate: 1 # 15% of the data
-num_trials: 1 # Number of trials to run for each model
+num_trials: 5 # Number of trials to run for each model
 
 # Chatbots to benchmark with their common names
 chatbots:
-  - Grok2
-  - GPT4oMini
-  - GPT4o
-  - O1Mini
   - AzureGPT4oMini
   - AzureGPT4o
   - AzureGPTo1Mini
+  - Grok2
+  - GPT4oMini
+#  - GPT4o
+  - O1Mini
   - DeepseekV3OpenRouterLocked
   - DeepseekR1OpenRouterFireworks
   - ClaudeHaiku
   - GeminiFlash
   - AmazonNovaLiteV1OpenRouter
-  - AmazonNovaProV1OpenRouter
+#  - AmazonNovaProV1OpenRouter
   - Llama405BLambda
   - Llama8BLambda
   - MistralLarge
