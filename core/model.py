@@ -118,6 +118,28 @@ class Datapoint(object):
         with open(self.seq_path, 'w') as fp:
             json.dump(self.seq, fp, indent=2)
 
+    def to_sequence_object(self, first_timestamp=0.0):
+        """
+            Returns a new Sequence object.
+        """
+
+        # Validate data is not empty
+        data_lengths = self.seq.get('data_lengths', None)
+        assert data_lengths is not None, Exception(f'Missing data lengths')
+        time_diffs = self.seq.get('time_diffs', None)
+        assert time_diffs is not None and len(time_diffs) > 0, Exception(f'Missing time differences')
+        assert len(time_diffs) == len(data_lengths), Exception(f'Mismatching lengths for time differences and data lengths')
+        
+        # Create sequence
+        seq = Sequence(first_timestamp)
+        last_timestamp = first_timestamp
+        for i in range(len(time_diffs)):
+            seq.add_pair(last_timestamp + time_diffs[i], data_lengths[i])
+            last_timestamp = time_diffs[i]
+
+        # Return result
+        return seq
+
     def generate_seq(self, local_port, remote_port, prompt, response, temperature):
         """
             Runs the analysis on the PCAP path and writes the sequence file.
