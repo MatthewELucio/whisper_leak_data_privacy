@@ -23,7 +23,7 @@ from torch.utils.data import Dataset, DataLoader, Subset
 from sklearn.model_selection import train_test_split
 
 from core.classifier import (
-    CNNBinaryClassifier, LSTMBinaryClassifier, MultiHeadAttentionLSTM, prepare_data,
+    CNNClassifier, LSTMBinaryClassifier, MultiHeadAttentionLSTM, prepare_data,
     calculate_norm_params, normalize_dataframe, EarlyStopping,
     set_seed, train_epoch, eval_epoch, get_prediction_scores, 
     PreprocessedTextDataset
@@ -490,7 +490,7 @@ class BenchmarkRunner:
         input_channels = 1 if feature_mode in [FeatureMode.DATA_SIZE_ONLY, FeatureMode.TIME_ONLY] else 2
         
         if self.config.model_class == 'CNNBinaryClassifier':
-            model = CNNBinaryClassifier(
+            model = CNNClassifier(
                 kernel_width=self.config.model_params.get('kernel_width', 3),
                 max_len=max_len
             )

@@ -1,15 +1,13 @@
 #!/usr/bin/env python3
-from core.classifier import CNNBinaryClassifier
-from core.classifier import LSTMBinaryClassifier
-from core.classifier import prepare_data
-from core.classifier import calculate_norm_params
-from core.classifier import normalize_dataframe
-from core.classifier import EarlyStopping
-from core.classifier import set_seed
-from core.classifier import train_epoch
-from core.classifier import eval_epoch
-from core.classifier import get_prediction_scores
-from core.classifier import PreprocessedTextDataset
+from core.classifiers.base_classifier import BaseClassifier
+from core.classifiers.cnn_classifier import CNNClassifier
+from core.classifiers.attention_bi_lstm_classifier import AttentionBiLSTMClassifier
+from core.classifiers.utils import EarlyStopping
+from core.classifiers.utils import set_seed
+from core.classifiers.utils import train_epoch
+from core.classifiers.utils import eval_epoch
+from core.classifiers.utils import get_prediction_scores
+from core.classifiers.loader import Loader
 
 from core.visualization import set_plot_style
 from core.visualization import plot_training_curves
@@ -70,6 +68,7 @@ def parse_arguments():
     parser.add_argument('-l', '--learningrate', type=float, help='The learning rate', default=0.0001)
     parser.add_argument('-t', '--testsize', type=int, help='The test size in percentage', default=20)
     parser.add_argument('-v', '--validsize', type=int, help='The validation size in percentage taken from train set', default=5)
+    parser.add_argument('-ds', '--downsample', type=float, help='Downsample the dataset', default=1.0)
     args = parser.parse_args()
     assert args.seed >= 0, Exception(f'Invalid random seed: {args.seed}')
     assert args.batchsize > 0, Exception(f'Invalid batch size: {args.batchsize}')
@@ -129,6 +128,11 @@ def main():
         assert len(files) > 0, Exception(f'Did not find training set files for chatbot {args.chatbot}')
         data = []
         file_index = 0
+
+        if args.downsample < 1.0:
+            # Downsample the files to a fraction of the original size
+            files = files[:int(len(files) * args.downsample)]
+
         for file_index in range(len(files)):
             with open(files[file_index], 'r') as fp:
                 data.append(json.load(fp))
@@ -136,6 +140,7 @@ def main():
             if file_index % 10 == 0:
                 PrintUtils.start_stage(f'Loading sequences data ({file_index} / {len(files)} = {percentage}%)', override_prev=True)
         df = pd.DataFrame(data)
+
         PrintUtils.end_stage()
 
         # Join to prompts to add target column
@@ -200,46 +205,25 @@ def main():
 
         # Prepare data
         PrintUtils.start_stage('Preparing data')
-        df_train, max_len = prepare_data(df_train)
-        df_val, _ = prepare_data(df_val)
-        df_test, _ = prepare_data(df_test)
+        train_loader = Loader(df_train)
+        val_loader = Loader(df_val)
+        test_loader = Loader(df_test)
+
+        normalization_params = train_loader.normalize()
+        val_loader.normalize(normalization_params)
+        test_loader.normalize(normalization_params)
+
         PrintUtils.end_stage()
-        PrintUtils.print_extra(f'Max sequence length being used for model (90th percentile): *{max_len}*')
-        
-        # Calculate normalization parameters
-        time_norm_params, size_norm_params = calculate_norm_params(df_train)
-        
-        # Normalize dataframes
-        df_train_normalized = normalize_dataframe(df_train, time_norm_params, size_norm_params)
-        df_val_normalized = normalize_dataframe(df_val, time_norm_params, size_norm_params)
-        df_test_normalized = normalize_dataframe(df_test, time_norm_params, size_norm_params)
-        
-        # Save normalization parameters for inference
-        normalization_params = (time_norm_params, size_norm_params, max_len)
-        CNNBinaryClassifier.save_normalization_params(
-            time_norm_params, size_norm_params, max_len, os.path.join(models_dir, 'normalization_params.npz')
-        )
-        
-        # Create datasets and loaders for training
-        PrintUtils.start_stage('Creating datasets and loaders')
-        train_dataset = PreprocessedTextDataset(df_train_normalized, max_len)
-        val_dataset = PreprocessedTextDataset(df_val_normalized, max_len)
-        test_dataset = PreprocessedTextDataset(df_test_normalized, max_len)
-        
-        # Create data loaders
-        train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
-        val_loader = DataLoader(val_dataset, batch_size=args.batchsize, shuffle=False)
-        test_loader = DataLoader(test_dataset, batch_size=args.batchsize, shuffle=False)
-        PrintUtils.end_stage()
+        PrintUtils.print_extra(f'Max sequence length being used for model (95th percentile): *{train_loader.max_len}*')
     
         # Choose model architecture (CNN or LSTM)
         PrintUtils.start_stage('Instantiating model')
         model_type = args.modeltype.upper()
         if model_type == 'CNN':
-            model = CNNBinaryClassifier(args.kernelwidth, max_len).to(device)
+            model = CNNClassifier(normalization_params, args.kernelwidth).to(device)
             model_path = os.path.join(models_dir, 'cnn_binary_classifier.pth')
         elif model_type == 'LSTM':
-            model = LSTMBinaryClassifier(args.kernelwidth, max_len).to(device)
+            model = AttentionBiLSTMClassifier(normalization_params).to(device)
             model_path = os.path.join(models_dir, 'lstm_binary_classifier.pth')
         else:
             raise Exception(f'Unsupported model type: {args.modeltype}')
@@ -295,7 +279,7 @@ def main():
         model.load_state_dict(torch.load(os.path.join(models_dir, 'checkpoint.pt')))
         
         # Save the final model
-        model.save(model_path, normalization_params=normalization_params)
+        model.save(model_path)
         
         # Get predictions on test set for evaluation
         PrintUtils.end_stage()
@@ -322,9 +306,10 @@ def main():
         plot_score_distribution(test_scores, test_labels, os.path.join(results_dir, 'prediction_score_distribution.png'))
         
         # Save test predictions
-        df_test_normalized['prediction'] = test_preds
-        df_test_normalized['score'] = test_scores
-        df_test_normalized.to_csv(os.path.join(results_dir, 'test_results.csv'), index=False)
+        df_test = test_loader.df.copy()
+        df_test['prediction'] = test_preds
+        df_test['score'] = test_scores
+        df_test.to_csv(os.path.join(results_dir, 'test_results.csv'), index=False)
         PrintUtils.end_stage()
         PrintUtils.print_extra('Results saved to *test_results.csv*')
         
@@ -366,14 +351,16 @@ def main():
         
         # Test the inference function
         PrintUtils.start_stage('Testing inference function')
+
+        model = BaseClassifier.load(model_path, device)
+
         sample_row = df_test.iloc[0]
         time_diffs, data_lengths = sample_row['time_diffs'], sample_row['data_lengths']
         
         # Test with tuple input
         prob, pred = model.inference(
             (time_diffs, data_lengths), 
-            device, 
-            normalization_params=normalization_params
+            device
         )
         PrintUtils.end_stage()
         PrintUtils.print_extra(f'Inference result (tuple input): prob=*{prob:.4f}*, pred=*{pred}*')
@@ -382,8 +369,7 @@ def main():
         sample_df = df_test.iloc[[0]]
         probs, preds = model.inference(
             sample_df,
-            device,
-            normalization_params=normalization_params
+            device
         )
         PrintUtils.print_extra(f'Inference result (DataFrame input): prob=*{probs[0]:.4f}*, pred=*{preds[0]}*')
 
