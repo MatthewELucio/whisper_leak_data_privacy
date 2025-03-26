@@ -22,11 +22,13 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader, Subset
 from sklearn.model_selection import train_test_split
 
-from core.classifier import (
-    CNNBinaryClassifier, LSTMBinaryClassifier, MultiHeadAttentionLSTM, prepare_data,
-    calculate_norm_params, normalize_dataframe, EarlyStopping,
-    set_seed, train_epoch, eval_epoch, get_prediction_scores, 
-    PreprocessedTextDataset
+from core.classifiers.attention_bi_lstm_classifier import AttentionBiLSTMClassifier
+from core.classifiers.cnn_classifier import CNNClassifier
+from core.classifiers.lstm_transformer_classifier import LSTMTransformerClassifier
+from core.classifiers.loader import Loader
+
+from core.classifiers.utils import ( EarlyStopping,
+    set_seed, train_epoch, eval_epoch, get_prediction_scores
 )
 
 from core.visualization import (
@@ -35,13 +37,9 @@ from core.visualization import (
     plot_score_distribution, create_model_dashboard
 )
 
-from core.utils import ThrowingArgparse, PrintUtils, OsUtils
+from core.utils import ThrowingArgparse, PrintUtils
 
 import json
-import shutil
-import time
-import random
-from datetime import datetime
 
 
 class FeatureMode(Enum):
@@ -263,34 +261,20 @@ class BenchmarkRunner:
             df_train, df_val, df_test = self.split_data(df, trial_seed)
             
             # Prepare data
-            df_train, max_len = prepare_data(df_train)
-            df_val, _ = prepare_data(df_val)
-            df_test, _ = prepare_data(df_test)
-            
-            # Normalize data based on feature mode
-            time_norm_params, size_norm_params = calculate_norm_params(df_train)
-            
-            # Normalize data using the appropriate features
-            df_train_normalized = self.normalize_with_feature_mode(df_train, time_norm_params, size_norm_params, feature_mode)
-            df_val_normalized = self.normalize_with_feature_mode(df_val, time_norm_params, size_norm_params, feature_mode)
-            df_test_normalized = self.normalize_with_feature_mode(df_test, time_norm_params, size_norm_params, feature_mode)
-            
-            # Save normalization parameters
-            normalization_params = (time_norm_params, size_norm_params, max_len)
-            norm_file = os.path.join(output_dir, 'normalization_params.npz')
-            self.save_normalization_params(time_norm_params, size_norm_params, max_len, feature_mode, norm_file)
-            
-            # Create datasets and data loaders
-            train_dataset = self.create_dataset(df_train_normalized, max_len, feature_mode)
-            val_dataset = self.create_dataset(df_val_normalized, max_len, feature_mode)
-            test_dataset = self.create_dataset(df_test_normalized, max_len, feature_mode)
-            
+            PrintUtils.start_stage('Preparing data')
+            train_dataset = Loader(df_train)
+            val_dataset = Loader(df_val)
+            test_dataset = Loader(df_test)
+            normalization_params = train_dataset.normalize()
+            val_dataset.normalize(normalization_params)
+            test_dataset.normalize(normalization_params)
+
             train_loader = DataLoader(train_dataset, batch_size=self.config.batch_size, shuffle=True)
             val_loader = DataLoader(val_dataset, batch_size=self.config.batch_size, shuffle=False)
             test_loader = DataLoader(test_dataset, batch_size=self.config.batch_size, shuffle=False)
             
             # Initialize model based on configuration
-            model = self.create_model(max_len, feature_mode)
+            model = self.create_model(normalization_params, feature_mode)
             model = model.to(self.device)
             
             # Setup training
@@ -342,7 +326,13 @@ class BenchmarkRunner:
             
             # Load best model and save
             model.load_state_dict(torch.load(os.path.join(output_dir, 'best_model.pt')))
-            model.save(model_file, normalization_params=normalization_params)
+            model.save(model_file)
+
+            # Also save to ./models/<chatbot>_<feature_mode>_<trial>.pth
+            model_path = os.path.join(self.get_self_dir(), 'models', f'{chatbot}_{feature_mode.value}_{trial}.pth')
+            os.makedirs(os.path.dirname(model_path), exist_ok=True)
+            model.save(model_path)
+
             
             # Create visualizations
             PrintUtils.start_stage(f'Creating visualizations for {chatbot}')
@@ -381,9 +371,10 @@ class BenchmarkRunner:
             )
             
             # Save test results
-            df_test_normalized['prediction'] = test_preds
-            df_test_normalized['score'] = test_scores
-            df_test_normalized.to_csv(os.path.join(output_dir, 'test_results.csv'), index=False)
+            df_test = test_dataset.df.copy()
+            df_test['prediction'] = test_preds
+            df_test['score'] = test_scores
+            df_test.to_csv(os.path.join(output_dir, 'test_results.csv'), index=False)
             PrintUtils.end_stage()
             
             # Calculate and save metrics
@@ -476,12 +467,12 @@ class BenchmarkRunner:
             
         PrintUtils.end_stage()
     
-    def create_model(self, max_len, feature_mode):
+    def create_model(self, normalization_params, feature_mode):
         """
         Create model based on configuration
         
         Args:
-            max_len: Maximum sequence length
+            normalization_params: Normalization parameters
             feature_mode: Which features to use
             
         Returns:
@@ -489,15 +480,14 @@ class BenchmarkRunner:
         """
         input_channels = 1 if feature_mode in [FeatureMode.DATA_SIZE_ONLY, FeatureMode.TIME_ONLY] else 2
         
-        if self.config.model_class == 'CNNBinaryClassifier':
-            model = CNNBinaryClassifier(
-                kernel_width=self.config.model_params.get('kernel_width', 3),
-                max_len=max_len
+        if self.config.model_class == 'CNNClassifier':
+            model = CNNClassifier(
+                normalization_params,
+                kernel_width=self.config.model_params.get('kernel_width', 3)
             )
-        elif self.config.model_class == 'LSTMBinaryClassifier':
-            model = LSTMBinaryClassifier(
-                kernel_width=self.config.model_params.get('kernel_width', 3),
-                max_len=max_len,
+        elif self.config.model_class == 'AttentionBiLSTMClassifier':
+            model = AttentionBiLSTMClassifier(
+                normalization_params,
                 hidden_size=self.config.model_params.get('hidden_size', 128),
                 num_layers=self.config.model_params.get('num_layers', 2),
                 dropout_rate=self.config.model_params.get('dropout_rate', 0.3),
@@ -506,10 +496,9 @@ class BenchmarkRunner:
                 bidirectional=self.config.model_params.get('bidirectional', True),
                 attention_dim=self.config.model_params.get('attention_dim', 64)
             )
-        elif self.config.model_class == 'MultiHeadAttentionLSTM':
-            model = MultiHeadAttentionLSTM(
-                kernel_width=self.config.model_params.get('kernel_width', 3),
-                max_len=max_len,
+        elif self.config.model_class == 'LSTMTransformerClassifier':
+            model = LSTMTransformerClassifier(
+                normalization_params,
                 hidden_size=self.config.model_params.get('hidden_size', 128),
                 num_layers=self.config.model_params.get('num_layers', 2),
                 dropout_rate=self.config.model_params.get('dropout_rate', 0.3),
@@ -524,88 +513,6 @@ class BenchmarkRunner:
         
         return model
     
-    def normalize_with_feature_mode(self, df, time_norm_params, size_norm_params, feature_mode):
-        """
-        Normalize dataframe based on feature mode
-        
-        Args:
-            df: DataFrame to normalize
-            time_norm_params: Time normalization parameters
-            size_norm_params: Size normalization parameters
-            feature_mode: Which features to use
-            
-        Returns:
-            DataFrame: Normalized dataframe
-        """
-        df_normalized = df.copy()
-        (time_mean, time_std) = time_norm_params
-        (size_mean, size_std) = size_norm_params
-        
-        # Apply normalization based on feature mode
-        normalized_time_diffs = []
-        normalized_data_lengths = []
-        
-        for idx, row in df.iterrows():
-            time_vals, size_vals = row['time_diffs'], row['data_lengths']
-            
-            if feature_mode in [FeatureMode.BOTH, FeatureMode.TIME_ONLY]:
-                # Normalize time_diffs
-                norm_time = [(val - time_mean) / time_std for val in time_vals]
-            else:
-                # Use zeros for time if not using time features
-                norm_time = [0.0] * len(time_vals)
-                
-            normalized_time_diffs.append(norm_time)
-            
-            if feature_mode in [FeatureMode.BOTH, FeatureMode.DATA_SIZE_ONLY]:
-                # Normalize data_lengths
-                norm_size = [(val - size_mean) / size_std for val in size_vals]
-            else:
-                # Use zeros for size if not using size features
-                norm_size = [0.0] * len(size_vals)
-                
-            normalized_data_lengths.append(norm_size)
-        
-        # Add normalized features to the dataframe
-        df_normalized['normalized_time_diffs'] = normalized_time_diffs
-        df_normalized['normalized_data_lengths'] = normalized_data_lengths
-        
-        return df_normalized
-    
-    def create_dataset(self, df_normalized, max_len, feature_mode):
-        """
-        Create dataset based on feature mode
-        
-        Args:
-            df_normalized: Normalized dataframe
-            max_len: Maximum sequence length
-            feature_mode: Which features to use
-            
-        Returns:
-            Dataset: Dataset for training/evaluation
-        """
-        # Use a custom dataset implementation that handles feature mode
-        return FeatureModeDataset(df_normalized, max_len, feature_mode)
-    
-    def save_normalization_params(self, time_norm_params, size_norm_params, max_len, feature_mode, filename):
-        """
-        Saves the normalization parameters to a file.
-        
-        Args:
-            time_norm_params: Time normalization parameters
-            size_norm_params: Size normalization parameters
-            max_len: Maximum sequence length
-            feature_mode: Which features to use
-            filename: Path to save the parameters
-        """
-        np.savez(
-            filename, 
-            time_norm_params=np.array(time_norm_params, dtype=object),
-            size_norm_params=np.array(size_norm_params, dtype=object),
-            max_len=np.array([max_len]),
-            feature_mode=np.array([feature_mode.value])
-        )
-        PrintUtils.print_extra(f'Normalization parameters saved to {os.path.basename(filename)}')
     
     def save_confusion_metrics(self, test_labels, test_preds, conf_matrix, output_dir):
         """
@@ -819,57 +726,6 @@ class BenchmarkRunner:
         
         PrintUtils.print_extra(f'Results saved to {self.results_file}')
         PrintUtils.end_stage()
-
-
-class FeatureModeDataset(Dataset):
-    """
-    Dataset class for preprocessed time series data with feature mode support
-    """
-    def __init__(self, df, max_len, feature_mode):
-        """
-        Initialize dataset
-        
-        Args:
-            df: Preprocessed dataframe
-            max_len: Maximum sequence length
-            feature_mode: Which features to use
-        """
-        self.df = df.reset_index(drop=True)
-        self.max_len = max_len
-        self.feature_mode = feature_mode
-
-    def __len__(self):
-        """
-        Return the length of the dataset
-        """
-        return len(self.df)
-
-    def __getitem__(self, idx):
-        """
-        Get a single item from the dataset
-        """
-        # Get the row data
-        row = self.df.iloc[idx]
-        time_vals = row['normalized_time_diffs']
-        size_vals = row['normalized_data_lengths']
-
-        # Pad sequences to max_len
-        time_padded = np.zeros(self.max_len)
-        size_padded = np.zeros(self.max_len)
-        time_padded[:len(time_vals)] = time_vals[:self.max_len]
-        size_padded[:len(size_vals)] = size_vals[:self.max_len]
-        
-        # Create feature tensor based on feature mode
-        if self.feature_mode == FeatureMode.BOTH:
-            sample = np.stack([time_padded, size_padded], axis=0)
-        elif self.feature_mode == FeatureMode.TIME_ONLY:
-            sample = np.stack([time_padded, np.zeros_like(time_padded)], axis=0)
-        elif self.feature_mode == FeatureMode.DATA_SIZE_ONLY:
-            sample = np.stack([np.zeros_like(size_padded), size_padded], axis=0)
-        
-        target = row['target']
-        return torch.tensor(sample, dtype=torch.float32), torch.tensor(target, dtype=torch.float32)
-
 
 def parse_arguments():
     """
