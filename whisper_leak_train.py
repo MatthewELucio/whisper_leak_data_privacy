@@ -9,13 +9,13 @@ from core.classifiers.utils import eval_epoch
 from core.classifiers.utils import get_prediction_scores
 from core.classifiers.loader import Loader
 
-from core.visualization import set_plot_style
-from core.visualization import plot_training_curves
-from core.visualization import plot_roc_curve
-from core.visualization import plot_precision_recall_curve
-from core.visualization import plot_confusion_matrix 
-from core.visualization import plot_score_distribution
-from core.visualization import create_model_dashboard
+from core.classifiers.visualization import set_plot_style
+from core.classifiers.visualization import plot_training_curves
+from core.classifiers.visualization import plot_roc_curve
+from core.classifiers.visualization import plot_precision_recall_curve
+from core.classifiers.visualization import plot_confusion_matrix 
+from core.classifiers.visualization import plot_score_distribution
+from core.classifiers.visualization import create_model_dashboard
 
 from core.utils import ThrowingArgparse
 from core.utils import PrintUtils

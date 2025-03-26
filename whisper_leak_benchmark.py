@@ -31,7 +31,7 @@ from core.classifiers.utils import ( EarlyStopping,
     set_seed, train_epoch, eval_epoch, get_prediction_scores
 )
 
-from core.visualization import (
+from core.classifiers.visualization import (
     set_plot_style, plot_training_curves, plot_roc_curve,
     plot_precision_recall_curve, plot_confusion_matrix,
     plot_score_distribution, create_model_dashboard
