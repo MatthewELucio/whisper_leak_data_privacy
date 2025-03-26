@@ -5,7 +5,7 @@ from core.utils import ThrowingArgparse
 from core.utils import NetworkUtils
 from core.chatbot_utils import ChatbotUtils
 from core.model import Sequence
-from core.classifiers.base_classifier import BaseClassifier
+from core.classifier.base_classifier import BaseClassifier
 
 import pyshark
 import os
