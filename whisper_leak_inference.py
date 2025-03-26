@@ -106,7 +106,6 @@ def inference_model(model_path, norm_params_path, dataset, device):
 
 def main():
     try:
-        OsUtils.suppress_stderr()
         PrintUtils.print_logo()
 
         args = parse_arguments()

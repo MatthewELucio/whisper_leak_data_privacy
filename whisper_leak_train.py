@@ -95,9 +95,6 @@ def main():
     last_error = None
     try:
 
-        # Suppress STDERR
-        OsUtils.suppress_stderr()
-
         # Print logo
         PrintUtils.print_logo()
 
