@@ -121,8 +121,6 @@ class Loader(Dataset):
 
         # Get the time and data lengths
         row = self.df.iloc[idx]
-        print("ADSF")
-        print(row)
         time_vals = row['normalized_time_diffs']
         size_vals = row['normalized_data_lengths']
 
@@ -131,8 +129,6 @@ class Loader(Dataset):
         size_padded = np.zeros(self.max_len)
         time_padded[:len(time_vals)] = time_vals[:self.max_len]
         size_padded[:len(size_vals)] = size_vals[:self.max_len]
-
-        print("PADDED")
 
         # Return the tensor
         sample = np.stack([time_padded, size_padded], axis=0)

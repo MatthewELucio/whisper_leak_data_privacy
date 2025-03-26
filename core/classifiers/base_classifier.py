@@ -1,3 +1,5 @@
+import importlib
+import json
 import math
 from core.classifiers.loader import Loader
 from core.utils import PrintUtils
@@ -27,7 +29,8 @@ class BaseClassifier(nn.Module):
         super().__init__()
         self.normalization_params = normalization_params
         self.max_len = normalization_params[-1]
-        
+        self.class_name = self.__class__.__name__
+        self.args = {}
 
     def forward(self, x):
         """
@@ -49,12 +52,15 @@ class BaseClassifier(nn.Module):
         
         # Save normalization parameters
         if self.normalization_params:
-            norm_filepath = filepath.replace('.pth', '_norm_params.npz')
+            norm_filepath = filepath.replace('.pth', '_norm_params.json')
 
-            np.savez(
-                norm_filepath, 
-                normalization_params=np.array(self.normalization_params, dtype=object)
-            )
+            with open(norm_filepath, 'w', encoding='utf-8') as f:
+                json.dump({
+                    'normalization_params': self.normalization_params,
+                    'class_name': self.class_name,
+                    'args': self.args,
+                }, f, indent=4)
+            
             PrintUtils.print_extra(f'Normalization parameters saved to {os.path.basename(norm_filepath)}')
     
     @classmethod
@@ -64,14 +70,31 @@ class BaseClassifier(nn.Module):
         """
 
         # Load normalization parameters
-        norm_filepath = filepath.replace('.pth', '_norm_params.npz')
+        norm_filepath = filepath.replace('.pth', '_norm_params.json')
         if not os.path.exists(norm_filepath):
             raise Exception(f'Normalization parameters file not found: {norm_filepath}')
         
-        loaded = np.load(norm_filepath, allow_pickle=True)
+        loaded = json.load(open(norm_filepath, 'r', encoding='utf-8'))
         normalization_params = loaded['normalization_params']
+        class_name = loaded['class_name']
+        args = loaded['args']
 
-        classifier = cls(normalization_params=normalization_params)
+        module_name = f"core.classifiers.{class_name.lower()}"
+
+        if class_name == "AttentionBiLSTMClassifier":
+            module_name = "core.classifiers.attention_bi_lstm_classifier"
+        elif class_name == "CNNClassifier":
+            module_name = "core.classifiers.cnn_classifier"
+        elif class_name == "LSTMTransformerClassifier":
+            module_name = "core.classifiers.lstm_transformer_classifier"
+        else:
+            raise Exception(f'Unknown classifier type: {class_name}')
+        
+        module = importlib.import_module(module_name) # Needed to avoid circular import
+        ClassifierClass = getattr(module, class_name)
+
+        classifier = ClassifierClass(normalization_params=normalization_params, **args)
+
         classifier.to(device)
         classifier.load_state_dict(torch.load(filepath, map_location=device))
         classifier.eval()
@@ -111,13 +134,14 @@ class BaseClassifier(nn.Module):
                 raise Exception('Normalization parameters must be provided for a DataFrame input')
             
             # Create a dataset
-            dataloader = Loader(input_data)
-            dataloader.normalize(self.normalization_params)
+            dataset = Loader(input_data)
+            dataset.normalize(self.normalization_params)
+            loader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=False)
            
             # Get all probabilities
             all_probs = []
             with torch.no_grad():
-                for X, _ in dataloader:
+                for X, _ in loader:
                     X = X.to(device)
                     output = self(X)
                     all_probs.extend(output.cpu().numpy().flatten())

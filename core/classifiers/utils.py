@@ -88,11 +88,7 @@ def train_epoch(model, dataloader, criterion, optimizer, device, epoch, max_epoc
     correct = 0
     total = 0
     for X, y in dataloader:
-        print("TEST1")
-        print(X, y)
-        print(X.shape, y.shape)
-        X, y = X.to(device), y.to(device)
-        print("TEST2")
+        X, y = X.to(device), y.to(device).unsqueeze(1)
         
         optimizer.zero_grad()
         output = model(X)

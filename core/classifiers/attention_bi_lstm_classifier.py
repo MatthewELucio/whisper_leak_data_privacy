@@ -31,8 +31,6 @@ class AttentionBiLSTMClassifier(BaseClassifier):
         Creates an instance with parameterized configuration.
         
         Args:
-            kernel_width: Width of the kernel
-            max_len: Maximum sequence length
             hidden_size: Size of LSTM hidden layers
             num_layers: Number of LSTM layers
             dropout_rate: Dropout rate for regularization
@@ -44,6 +42,7 @@ class AttentionBiLSTMClassifier(BaseClassifier):
 
         # Initialize
         super().__init__(normalization_params)
+        self.class_name = self.__class__.__name__
 
         # Saves members
         self.hidden_size = hidden_size
@@ -52,6 +51,16 @@ class AttentionBiLSTMClassifier(BaseClassifier):
         self.embedding_dim = embedding_dim
         self.fc_dims = fc_dims
         self.attention_dim = attention_dim
+
+        self.args = {
+            'hidden_size': hidden_size,
+            'num_layers': num_layers,
+            'dropout_rate': dropout_rate,
+            'embedding_dim': embedding_dim,
+            'fc_dims': fc_dims,
+            'bidirectional': bidirectional,
+            'attention_dim': attention_dim
+        }
         
         # Feature embedding layers
         self.time_embedding = nn.Sequential(

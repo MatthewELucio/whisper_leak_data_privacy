@@ -25,6 +25,11 @@ class CNNClassifier(BaseClassifier):
 
         # Initialize
         super().__init__(normalization_params)
+        self.class_name = self.__class__.__name__
+
+        self.args = {
+            'kernel_width': kernel_width,
+        }
         
         # More layers for better reasoning
         self.conv1 = nn.Conv2d(1, 32, kernel_size=(2, kernel_width), padding=(0, kernel_width // 2))

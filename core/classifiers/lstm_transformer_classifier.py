@@ -50,6 +50,7 @@ class LSTMTransformerClassifier(BaseClassifier):
         """
         # Initialize
         super().__init__(normalization_params)
+        self.class_name = self.__class__.__name__
 
         # Saves members
         self.hidden_size = hidden_size
@@ -58,6 +59,16 @@ class LSTMTransformerClassifier(BaseClassifier):
         self.embedding_dim = embedding_dim
         self.fc_dims = fc_dims
         self.num_heads = num_heads
+        self.args = {
+            'hidden_size': hidden_size,
+            'num_layers': num_layers,
+            'dropout_rate': dropout_rate,
+            'embedding_dim': embedding_dim,
+            'fc_dims': fc_dims,
+            'bidirectional': bidirectional,
+            'num_heads': num_heads,
+            'attention_dropout': attention_dropout
+        }
         
         # Feature embedding layers
         self.time_embedding = nn.Sequential(

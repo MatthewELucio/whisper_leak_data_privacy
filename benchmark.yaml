@@ -2,7 +2,7 @@
 
 # Benchmark config
 benchmark_name: lstm_1
-sampling_rate: 1 # 15% of the data
+sampling_rate: 1.0 # 100% of the data
 num_trials: 5 # Number of trials to run for each model
 
 # Chatbots to benchmark with their common names
@@ -16,6 +16,7 @@ chatbots:
   - O1Mini
   - DeepseekV3OpenRouterLocked
   - DeepseekR1OpenRouterFireworks
+#  - AzureDeepSeekR1
   - ClaudeHaiku
   - GeminiFlash
   - AmazonNovaLiteV1OpenRouter
@@ -24,10 +25,16 @@ chatbots:
   - Llama8BLambda
   - MistralLarge
   - MistralSmall
+#  - Phi35MiniInstruct
+#  - Phi35MiniMoEInstruct
 
 # Model settings
+#model:
+#  class: CNNClassifier
+#  params:
+#    kernel_width: 3
 model:
-  class: LSTMBinaryClassifier
+  class: AttentionBiLSTMClassifier
   params:
     hidden_size: 128
     num_layers: 2

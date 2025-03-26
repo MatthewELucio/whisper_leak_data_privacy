@@ -205,16 +205,19 @@ def main():
 
         # Prepare data
         PrintUtils.start_stage('Preparing data')
-        train_loader = Loader(df_train)
-        val_loader = Loader(df_val)
-        test_loader = Loader(df_test)
+        train_dataset = Loader(df_train)
+        val_dataset = Loader(df_val)
+        test_dataset = Loader(df_test)
+        normalization_params = train_dataset.normalize()
+        val_dataset.normalize(normalization_params)
+        test_dataset.normalize(normalization_params)
 
-        normalization_params = train_loader.normalize()
-        val_loader.normalize(normalization_params)
-        test_loader.normalize(normalization_params)
+        train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
+        val_loader = DataLoader(val_dataset, batch_size=args.batchsize, shuffle=False)
+        test_loader = DataLoader(test_dataset, batch_size=args.batchsize, shuffle=False)
 
         PrintUtils.end_stage()
-        PrintUtils.print_extra(f'Max sequence length being used for model (95th percentile): *{train_loader.max_len}*')
+        PrintUtils.print_extra(f'Max sequence length being used for model (95th percentile): *{train_dataset.max_len}*')
     
         # Choose model architecture (CNN or LSTM)
         PrintUtils.start_stage('Instantiating model')
@@ -306,7 +309,7 @@ def main():
         plot_score_distribution(test_scores, test_labels, os.path.join(results_dir, 'prediction_score_distribution.png'))
         
         # Save test predictions
-        df_test = test_loader.df.copy()
+        df_test = test_dataset.df.copy()
         df_test['prediction'] = test_preds
         df_test['score'] = test_scores
         df_test.to_csv(os.path.join(results_dir, 'test_results.csv'), index=False)
@@ -362,7 +365,7 @@ def main():
             (time_diffs, data_lengths), 
             device
         )
-        PrintUtils.end_stage()
+        
         PrintUtils.print_extra(f'Inference result (tuple input): prob=*{prob:.4f}*, pred=*{pred}*')
         
         # Test with DataFrame input
@@ -372,6 +375,7 @@ def main():
             device
         )
         PrintUtils.print_extra(f'Inference result (DataFrame input): prob=*{probs[0]:.4f}*, pred=*{preds[0]}*')
+        PrintUtils.end_stage()
 
     # Handle exceptions
     except Exception as ex:
