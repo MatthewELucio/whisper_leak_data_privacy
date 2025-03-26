@@ -53,7 +53,6 @@ class AzureDeepSeekR1(ChatbotBase):
             temperature=temperature
         )
         for chunk in stream:
-            print(chunk)
             if len(chunk.choices) > 0 and chunk.choices[0].delta.content:
                 response.append(chunk.choices[0].delta.content)
 
