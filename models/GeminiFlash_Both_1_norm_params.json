@@ -1,0 +1,22 @@
+{
+    "normalization_params": [
+        0.2036656883733957,
+        0.1551722229133574,
+        450.77987093609653,
+        392.3260938429039,
+        35
+    ],
+    "class_name": "AttentionBiLSTMClassifier",
+    "args": {
+        "hidden_size": 128,
+        "num_layers": 2,
+        "dropout_rate": 0.3,
+        "embedding_dim": 32,
+        "fc_dims": [
+            128,
+            64
+        ],
+        "bidirectional": true,
+        "attention_dim": 64
+    }
+}
