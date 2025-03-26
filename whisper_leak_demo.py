@@ -5,16 +5,22 @@ from core.utils import ThrowingArgparse
 from core.utils import NetworkUtils
 from core.chatbot_utils import ChatbotUtils
 from core.model import Sequence
+from core.classifiers.base_classifier import BaseClassifier
 
 import pyshark
 import os
 import json
+import torch
 
 # Global - the chatbot object
 g_chatbot_object = None
 
 # Global - stream sequences
 g_stream_sequences = {}
+
+# Global - the model object and device
+g_model_object = None
+g_device = None
 
 def get_self_dir():
     """
@@ -34,6 +40,8 @@ def parse_arguments():
     parser = ThrowingArgparse()
     parser.add_argument('-i', '--interface', help='The network interface', required=True)
     parser.add_argument('-c', '--chatbot', help='The chatbot', required=True)
+    parser.add_argument('-m', '--model', help='The model path', required=True)
+
     args = parser.parse_args()
     PrintUtils.end_stage()
 
@@ -101,7 +109,10 @@ def packet_callback(packet):
             timestamp = float(packet.sniff_time.timestamp())
             data_length = int(packet.length)
             sequence.add_pair(timestamp, data_length)
-            PrintUtils.print_extra(f'{packet.sniff_time}: New stream: *{addr.src}:{packet.tcp.srcport}* --> *{addr.dst}:{packet.tcp.dstport}* got new data of size *{data_length}* bytes')
+
+            # Infer from model
+            prob, pred = model.inference((sequence.time_seq, sequence.size_seq), device)
+            PrintUtils.print_extra(f'{packet.sniff_time}: inferring prob=*{prob:.4f}*, pred=*{pred:.4f}*')
 
     # Log exceptions
     except Exception as ex:
@@ -112,8 +123,10 @@ def main():
         Main routine.
     """
 
-    # Using the chatbot object
+    # Using globals
     global g_chatbot_object
+    global g_model_object
+    global g_device
 
     # Catch-all
     is_user_cancelled = False
@@ -132,8 +145,19 @@ def main():
         # Parsing arguments
         args = parse_arguments()
 
+        # Setting device
+        PrintUtils.start_stage('Setting device')
+        g_device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        PrintUtils.end_stage()
+        PrintUtils.print_extra(f'Using device: *{g_device}*')
+
         # Get the chatbot object
         g_chatbot_object = get_chatbot_object(args.chatbot)
+
+        # Get the model object
+        PrintUtils.start_stage('Loading model')
+        g_model_object = BaseClassifier.load(args.model, g_device)
+        PrintUtils.end_stage()
 
         # Start the capture
         PrintUtils.start_stage('Initializing sniffing')
