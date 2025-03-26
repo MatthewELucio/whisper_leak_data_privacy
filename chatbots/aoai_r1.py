@@ -30,7 +30,6 @@ class AzureDeepSeekR1(ChatbotBase):
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
-        print(f"Using Azure endpoint: {os.getenv('AZURE_R1_ENDPOINT')}")
         self._client = AzureOpenAI(
             azure_endpoint=os.getenv('AZURE_R1_ENDPOINT'),
             api_key=os.getenv('AZURE_R1_API_KEY'),
