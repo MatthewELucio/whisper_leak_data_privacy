@@ -20,6 +20,7 @@ from core.classifiers.visualization import create_model_dashboard
 from core.utils import ThrowingArgparse
 from core.utils import PrintUtils
 from core.utils import OsUtils
+from core.utils import PromptUtils
 from core.chatbot_utils import ChatbotUtils
 
 import json
@@ -144,9 +145,7 @@ def main():
         PrintUtils.end_stage()
 
         # Join to prompts to add target column
-        PrintUtils.start_stage('Loading prompts')
-        with open(args.prompts, 'r') as f:
-            prompts = json.load(f)
+        prompts = PromptUtils.read_prompts(args.prompts)
         df['target'] = df['prompt'].apply(lambda x: 1 if x in prompts['positive']['prompts'] else 0)
         PrintUtils.end_stage()
         total_prompts = len(prompts['positive']['prompts']) + len(prompts['negative']['prompts'])

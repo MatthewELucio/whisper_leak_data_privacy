@@ -3,6 +3,7 @@ from core.utils import PrintUtils
 from core.utils import OsUtils
 from core.utils import ThrowingArgparse
 from core.utils import NetworkUtils
+from core.utils import PromptUtils
 from core.chatbot_utils import ChatbotUtils
 from core.model import TrainingSetCollector
 
@@ -58,37 +59,6 @@ def get_chatbot_class(chatbot_name):
     # Return the class
     return chatbot_class
 
-def read_prompts(json_path):
-    """
-        Reads prompts file and validate its structure.
-    """
-
-    # Read prompts
-    PrintUtils.start_stage(f'Reading prompts')
-    with open(json_path, 'r') as fp:
-        contents = json.load(fp)
-
-    # Validate the file structure
-    assert isinstance(contents, dict), Exception('Invalid format for prompts JSON file')
-    prompt_types = [ 'positive', 'negative' ]
-    for prompt_type in prompt_types:
-        prompts_data = contents.get(prompt_type, None)
-        assert prompts_data is not None, Exception(f'Missing {prompt_type} prompts')
-        assert isinstance(prompts_data, dict), Exception(f'Invalid structure for {prompt_type} prompts')
-        repeats = prompts_data.get('repeat', None)
-        assert repeats is not None, Exception(f'Missing key "repeat" in {prompt_type} prompts')
-        assert isinstance(repeats, int) and repeats > 0, Exception(f'Invalid repeat value in {prompt_type} prompts')
-        prompts = prompts_data.get('prompts', None)
-        assert prompts is not None, Exception(f'Missing key "prompts" in {prompt_type} prompts')
-        assert isinstance(prompts, list), Exception(f'Invalid structure for prompts in {prompts_type} prompts')
-        assert len(prompts) > 0, Exception(f'The prompt list for {prompt_type} prompts is empty')
-        assert len([ elem for elem in prompts if not isinstance(elem, str) ]) == 0, Exception('Invalid prompt format in {prompts_type} prompts')
-        PrintUtils.print_extra(f'Loaded *{len(prompts)}* {prompt_type} prompts with repetition of *{repeats}*')
-
-    # Return result
-    PrintUtils.end_stage()
-    return contents
-
 def main():
     """
         Main routine.
@@ -117,7 +87,7 @@ def main():
         chatbot_class = get_chatbot_class(args.chatbot)
 
         # Read prompts
-        prompts = read_prompts(args.prompts)
+        prompts = PromptUtils.read_prompts(args.prompts)
         
         # Build the training set
         training_set_path = os.path.join(get_self_dir(), 'data')
