@@ -1,4 +1,7 @@
 #!/usr/bin/env python3
+import warnings
+warnings.filterwarnings('ignore', category=UserWarning)
+
 from core.utils import PrintUtils
 from core.utils import OsUtils
 from core.utils import ThrowingArgparse
