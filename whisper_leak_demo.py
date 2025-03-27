@@ -5,7 +5,7 @@ from core.utils import ThrowingArgparse
 from core.utils import NetworkUtils
 from core.chatbot_utils import ChatbotUtils
 from core.model import Sequence
-from core.classifier import BaseClassifier
+from core.classifiers.base_classifier import BaseClassifier
 
 import pyshark
 import os
@@ -111,7 +111,7 @@ def packet_callback(packet):
             sequence.add_pair(timestamp, data_length)
 
             # Infer from model
-            prob, pred = model.inference((sequence.time_seq, sequence.size_seq), device)
+            prob, pred = g_model_object.inference((sequence.time_seq, sequence.size_seq), g_device)
             PrintUtils.print_extra(f'{packet.sniff_time}: inferring prob=*{prob:.4f}*, pred=*{pred:.4f}*')
 
     # Log exceptions
