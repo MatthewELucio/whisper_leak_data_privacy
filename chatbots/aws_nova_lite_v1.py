@@ -1,7 +1,6 @@
 import boto3
 import json
 import os
-from datetime import datetime
 from dotenv import load_dotenv
 from core.chatbot_utils import ChatbotBase, LocalPortSaverTransport
 
@@ -45,35 +44,22 @@ class AmazonNovaLiteV1(ChatbotBase):
             Sends a prompt to the model and returns the response along with the local port.
         """
 
-        # Build request
-        system_list = [
-            {
-                'text': 'Act as a creative writing assistant. When the user provides you with a topic, write a short story about that topic.'
-            }
-        ]
         message_list = [{ 'role': 'user', 'content': [{ 'text': prompt }]}]
         inf_params = { 'maxTokens': 3000, 'temperature': temperature}
         request_body = {
             'schemaVersion': 'messages-v1',
             'messages': message_list,
-            'system': system_list,
+            'system': [{'text': ''}],
             'inferenceConfig': inf_params,
         }
 
-        start_time = datetime.now()
-        response = self._client.invoke_model_with_response_stream(
+        result = self._client.invoke_model_with_response_stream(
             modelId=self._model_id, body=json.dumps(request_body)
         )
 
-        request_id = response.get('ResponseMetadata', {}).get('RequestId')
-        print(f'Request ID: {request_id}')
-        print('Awaiting first token...')
+        response = []
 
-        chunk_count = 0
-        time_to_first_token = None
-        full_response = []
-
-        stream = response.get('body')
+        stream = result.get('body')
         if stream:
             for event in stream:
                 chunk = event.get('chunk')
@@ -81,16 +67,10 @@ class AmazonNovaLiteV1(ChatbotBase):
                     chunk_json = json.loads(chunk.get('bytes').decode())
                     content_block_delta = chunk_json.get('contentBlockDelta')
                     if content_block_delta:
-                        if time_to_first_token is None:
-                            time_to_first_token = datetime.now() - start_time
-                            print(f'Time to first token: {time_to_first_token}')
-
-                        chunk_count += 1
                         text_chunk = content_block_delta.get('delta', {}).get('text', '')
-                        full_response.append(text_chunk)
-                        print(text_chunk, end='')
+                        response.append(text_chunk)
 
-        return full_response, self._transport.get_local_port()
+        return response, self._transport.get_local_port()
 
     def get_temperature(self):
         """
