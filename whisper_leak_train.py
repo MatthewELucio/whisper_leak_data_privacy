@@ -205,9 +205,11 @@ def main():
         train_dataset = Loader(df_train)
         val_dataset = Loader(df_val)
         test_dataset = Loader(df_test)
-        normalization_params = train_dataset.normalize()
-        val_dataset.normalize(normalization_params)
-        test_dataset.normalize(normalization_params)
+
+        norm = train_dataset.get_normalization()
+        train_dataset.apply_normalization(norm)
+        val_dataset.apply_normalization(norm)
+        test_dataset.apply_normalization(norm)
 
         train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
         val_loader = DataLoader(val_dataset, batch_size=args.batchsize, shuffle=False)
@@ -220,22 +222,22 @@ def main():
         PrintUtils.start_stage('Instantiating model')
         model_type = args.modeltype.upper()
         if model_type == 'CNN':
-            model = CNNClassifier(normalization_params, args.kernelwidth).to(device)
+            model = CNNClassifier(norm, args.kernelwidth).to(device)
             model_path = os.path.join(models_dir, 'cnn_binary_classifier.pth')
         elif model_type == 'LSTM':
             model = AttentionBiLSTMClassifier(
-                normalization_params
+                norm
             ).to(device)
             model_path = os.path.join(models_dir, 'lstm_binary_classifier.pth')
         elif model_type == "BERT":
             # Calculate the token boundary parameters
             (time_boundaries_norm, len_boundaries_norm) = BERTTimeSeriesClassifier.calculate_boundaries(
                 df_train,
-                num_buckets=50,
-                normalization_params=normalization_params
+                num_buckets=100,
+                normalization_params=norm
             )
 
-            model = BERTTimeSeriesClassifier(normalization_params, time_boundaries_norm, len_boundaries_norm, num_buckets=50).to(device)
+            model = BERTTimeSeriesClassifier(norm, time_boundaries_norm, len_boundaries_norm, num_buckets=100).to(device)
             model_path = os.path.join(models_dir, 'bert_binary_classifier.pth')
         else:
             raise Exception(f'Unsupported model type: {args.modeltype}')
