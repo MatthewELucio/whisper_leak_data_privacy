@@ -259,6 +259,24 @@ class BenchmarkRunner:
             
             # Split data with trial-specific seed
             df_train, df_val, df_test = self.split_data(df, trial_seed)
+
+            # Adjust based on feature mode
+            if feature_mode == FeatureMode.DATA_SIZE_ONLY:
+                # Copy data_size column to time_diffs for compatibility
+                df_train = df_train.copy()
+                df_val = df_val.copy()
+                df_test = df_test.copy()
+                df_train['time_diffs'] = df_train['data_size']
+                df_val['time_diffs'] = df_val['data_size']
+                df_test['time_diffs'] = df_test['data_size']
+            elif feature_mode == FeatureMode.TIME_ONLY:
+                # Copy time_diffs column to data_size for compatibility
+                df_train = df_train.copy()
+                df_val = df_val.copy()
+                df_test = df_test.copy()
+                df_train['data_size'] = df_train['time_diffs']
+                df_val['data_size'] = df_val['time_diffs']
+                df_test['data_size'] = df_test['time_diffs']
             
             # Prepare data
             PrintUtils.start_stage('Preparing data')
