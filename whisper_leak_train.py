@@ -2,6 +2,7 @@
 from core.classifiers.base_classifier import BaseClassifier
 from core.classifiers.cnn_classifier import CNNClassifier
 from core.classifiers.attention_bi_lstm_classifier import AttentionBiLSTMClassifier
+from core.classifiers.bert_time_series_classifier import BERTTimeSeriesClassifier
 from core.classifiers.utils import EarlyStopping
 from core.classifiers.utils import set_seed
 from core.classifiers.utils import train_epoch
@@ -224,6 +225,16 @@ def main():
         elif model_type == 'LSTM':
             model = AttentionBiLSTMClassifier(normalization_params).to(device)
             model_path = os.path.join(models_dir, 'lstm_binary_classifier.pth')
+        elif model_type == "BERT":
+            # Calculate the token boundary parameters
+            (time_boundaries_norm, len_boundaries_norm) = BERTTimeSeriesClassifier.calculate_boundaries(
+                df_train,
+                num_buckets=50,
+                normalization_params=normalization_params
+            )
+
+            model = BERTTimeSeriesClassifier(normalization_params, time_boundaries_norm, len_boundaries_norm, num_buckets=50).to(device)
+            model_path = os.path.join(models_dir, 'bert_binary_classifier.pth')
         else:
             raise Exception(f'Unsupported model type: {args.modeltype}')
         PrintUtils.print_extra(f'Model created: *{model.__class__.__name__}*')

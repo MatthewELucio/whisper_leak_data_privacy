@@ -23,6 +23,7 @@ from torch.utils.data import Dataset, DataLoader, Subset
 from sklearn.model_selection import train_test_split
 
 from core.classifiers.attention_bi_lstm_classifier import AttentionBiLSTMClassifier
+from core.classifiers.bert_time_series_classifier import BERTTimeSeriesClassifier
 from core.classifiers.cnn_classifier import CNNClassifier
 from core.classifiers.lstm_transformer_classifier import LSTMTransformerClassifier
 from core.classifiers.loader import Loader
@@ -292,7 +293,7 @@ class BenchmarkRunner:
             test_loader = DataLoader(test_dataset, batch_size=self.config.batch_size, shuffle=False)
             
             # Initialize model based on configuration
-            model = self.create_model(normalization_params, feature_mode)
+            model = self.create_model(df_train, normalization_params, feature_mode)
             model = model.to(self.device)
             
             # Setup training
@@ -485,7 +486,7 @@ class BenchmarkRunner:
             
         PrintUtils.end_stage()
     
-    def create_model(self, normalization_params, feature_mode):
+    def create_model(self, df_train, normalization_params, feature_mode):
         """
         Create model based on configuration
         
@@ -525,6 +526,19 @@ class BenchmarkRunner:
                 bidirectional=self.config.model_params.get('bidirectional', True),
                 num_heads=self.config.model_params.get('num_heads', 8),
                 attention_dropout=self.config.model_params.get('attention_dropout', 0.1)
+            )
+        elif self.config.model_class == 'BERTTimeSeriesClassifier':
+            (time_boundaries_norm, len_boundaries_norm) = BERTTimeSeriesClassifier.calculate_boundaries(
+                df_train,
+                num_buckets=50,
+                normalization_params=normalization_params
+            )
+
+            model = BERTTimeSeriesClassifier(
+                normalization_params,
+                time_boundaries_norm=time_boundaries_norm,
+                len_boundaries_norm=len_boundaries_norm,
+                num_buckets=50,
             )
         else:
             raise ValueError(f"Unsupported model class: {self.config.model_class}")
