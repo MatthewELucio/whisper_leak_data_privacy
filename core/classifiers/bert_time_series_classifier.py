@@ -11,16 +11,13 @@ import warnings
 
 # Suppress excessive warnings from transformers library (optional)
 hf_logging.set_verbosity_error() 
-# Or use: warnings.filterwarnings("ignore", category=FutureWarning, module="transformers")
 
 # Assuming base_classifier.py is in the same directory or accessible via python path
 from .base_classifier import BaseClassifier 
-# If running standalone, replace with:
-# from base_classifier import BaseClassifier
 
 class BERTTimeSeriesClassifier(BaseClassifier):
     """
-    A classifier using a pre-trained BERT-like model adapted for time series data.
+    A classifier using a pre-trained BERT model adapted for time series data.
     It buckets normalized time_diffs and data_lengths, converts them to new tokens,
     interleaves them, and feeds them into the transformer model for binary classification.
     """
@@ -377,48 +374,3 @@ class BERTTimeSeriesClassifier(BaseClassifier):
 
 
         return time_boundaries_norm, len_boundaries_norm
-
-    # Override save/load if BaseClassifier's method isn't sufficient,
-    # especially ensuring 'time_boundaries_norm', 'len_boundaries_norm', 'num_buckets' 
-    # are correctly handled via self.args. The current BaseClassifier.save uses self.args,
-    # so it should work if these are correctly placed in self.args during __init__.
-    
-    # Example of how load might need adjustment if BaseClassifier.load isn't general enough
-    # @classmethod
-    # def load(cls, filepath, device):
-    #     # Load normalization parameters and args like in BaseClassifier
-    #     norm_filepath = filepath.replace('.pth', '_norm_params.json')
-    #     if not os.path.exists(norm_filepath):
-    #         raise FileNotFoundError(f'Normalization parameters file not found: {norm_filepath}')
-        
-    #     with open(norm_filepath, 'r', encoding='utf-8') as f:
-    #         loaded_config = json.load(f)
-        
-    #     normalization_params = loaded_config['normalization_params']
-    #     class_name = loaded_config['class_name']
-    #     args = loaded_config['args'] # Contains model_name, num_buckets, boundaries etc.
-
-    #     if class_name != cls.__name__:
-    #          raise TypeError(f"Attempting to load model of type {class_name} with {cls.__name__}.load()")
-
-    #     # Instantiate the classifier with loaded args
-    #     # Note: Ensure boundary lists are converted back to numpy arrays if needed by __init__
-    #     # args['time_boundaries_norm'] = np.array(args['time_boundaries_norm'])
-    #     # args['len_boundaries_norm'] = np.array(args['len_boundaries_norm'])
-        
-    #     classifier = cls(normalization_params=normalization_params, **args) 
-    #     # The rest is similar to BaseClassifier.load
-    #     classifier.to(device)
-    #     try:
-    #         classifier.load_state_dict(torch.load(filepath, map_location=device))
-    #     except RuntimeError as e:
-    #         print(f"Error loading state dict: {e}")
-    #         print("This might happen if the model architecture changed or state dict is corrupted.")
-    #         # Option: Load with strict=False if some layers changed (e.g., classifier head)
-    #         # classifier.load_state_dict(torch.load(filepath, map_location=device), strict=False) 
-    #         raise e # Re-raise by default
-
-    #     classifier.eval()
-    #     print(f'Classifier loaded from file *{os.path.basename(filepath)}*')
-    #     return classifier
-
