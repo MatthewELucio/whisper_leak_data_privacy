@@ -5,7 +5,7 @@ import pandas as pd
 from sklearn.metrics import (roc_curve, auc, precision_recall_curve, 
                             confusion_matrix, classification_report, average_precision_score,
                             RocCurveDisplay, PrecisionRecallDisplay)
-
+from sklearn.metrics import accuracy_score, f1_score, precision_recall_curve, precision_score, recall_score, roc_auc_score
 from core.utils import PrintUtils
 
 def set_plot_style():
@@ -298,6 +298,85 @@ def create_model_dashboard(val_scores, val_labels, train_losses, val_losses, bes
 
     PrintUtils.print_extra("Model performance data saved to test_prediction_data.csv")
 
+def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
+        """
+        Calculate benchmark metrics for a chatbot
+        
+        Args:
+            test_labels: True labels
+            test_scores: Prediction scores (probabilities)
+            test_preds: Binary predictions
+            conf_matrix: Confusion matrix
+            df: Original dataframe with all data
+            
+        Returns:
+            dict: Dictionary of calculated metrics
+        """
+        # Calculate basic classification metrics
+        tn, fp, fn, tp = conf_matrix.ravel()
+        
+        # Calculate AUC
+        auc_score = roc_auc_score(test_labels, test_scores)
+        
+        # Calculate AUPRC
+        precision, recall, _ = precision_recall_curve(test_labels, test_scores)
+        auprc = auc(recall, precision)
+        
+        # Calculate other metrics
+        f1 = f1_score(test_labels, test_preds)
+        recall = recall_score(test_labels, test_preds)
+        precision = precision_score(test_labels, test_preds)
+        accuracy = accuracy_score(test_labels, test_preds)
+        
+        # Calculate data statistics
+        data_lengths = df['data_lengths'].apply(len)
+        median_data_length = np.median(data_lengths)
+        avg_data_length = np.mean(data_lengths)
+        stddev_data_length = np.std(data_lengths)
+        
+        # Calculate size statistics
+        all_data_sizes = np.concatenate(df['data_lengths'].values)  # Flatten all sizes
+        median_data_size = np.median(all_data_sizes)
+        avg_data_size = np.mean(all_data_sizes)
+        stddev_data_size = np.std(all_data_sizes)
+        
+        # Calculate token statistics
+        median_tokens = np.median(df['response_tokens'].apply(len))
+        avg_tokens = np.mean(df['response_tokens'].apply(len))
+        stddev_tokens = np.std(df['response_tokens'].apply(len))
+        all_token_strings = np.concatenate(df['response_tokens'].values)  # Flatten all token strings
+        token_lengths = [len(token) for token in all_token_strings]       # Get lengths of every token
+        mean_length_of_tokens = np.mean(token_lengths)
+        median_length_of_tokens = np.median(token_lengths)
+        
+        # Combine all metrics
+        metrics = {
+            'AUC': auc_score,
+            'AUPRC': auprc,
+            'F1 Score': f1,
+            'Recall': recall,
+            'Precision': precision,
+            'Accuracy': accuracy,
+            'Total': len(test_labels),
+            'Positives': int(test_labels.sum()),
+            'Negatives': int(len(test_labels) - test_labels.sum()),
+            'True Positives': tp,
+            'True Negatives': tn,
+            'False Positives': fp,
+            'False Negatives': fn,
+            'Median Number of Network Events': median_data_length,
+            'Avg Number of Network Events': avg_data_length,
+            'StdDev Number of Network Events': stddev_data_length,
+            'Median Network Event Size': median_data_size,
+            'Avg Network Event Size': avg_data_size,
+            'StdDev Network Event Size': stddev_data_size,
+            'Median Count of Response Chunks': median_tokens,
+            'Avg Count of Response Chunks': avg_tokens,
+            'StdDev Count of Response Chunks': stddev_tokens,
+            'Mean Length of Response Chunks': mean_length_of_tokens,
+            'Median Length of Response Chunks': median_length_of_tokens,
+        }
 
+        return metrics
 
 
