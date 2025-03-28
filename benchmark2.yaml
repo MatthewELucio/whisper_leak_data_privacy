@@ -1,0 +1,37 @@
+# Example benchmark configuration
+
+# Benchmark config
+benchmark_name: bert_1
+sampling_rate: 1.0 # 100% of the data
+num_trials: 5 # Number of trials to run for each model
+
+# Chatbots to benchmark with their common names
+chatbots:
+  - ClaudeHaiku
+  - AzureGPT4oMini
+  - GeminiFlash
+  - AmazonNovaLiteV1OpenRouter
+  - Llama8BLambda
+
+# Model settings
+#model:
+#  class: CNNClassifier
+#  params:
+#    kernel_width: 3
+model:
+  class: BERTTimeSeriesClassifier
+  params:
+    num_buckets: 50
+    fc_dims: [128, 64]
+    dropout_rate: 0.3
+    model_name: 'distilbert-base-uncased'
+
+training:
+  # Training parameters
+  batch_size: 32
+  max_epochs: 50
+  learning_rate: 0.00001
+  patience: 30
+  test_size: 20
+  valid_size: 5
+  seed: 42
