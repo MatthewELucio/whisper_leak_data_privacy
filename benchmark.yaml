@@ -16,17 +16,19 @@ chatbots:
   - O1Mini
   - DeepseekV3OpenRouterLocked
   - DeepseekR1OpenRouterFireworks
-#  - AzureDeepSeekR1
+  - DeepseekR1OpenRouter
+  - AzureDeepSeekR1
   - ClaudeHaiku
   - GeminiFlash
   - AmazonNovaLiteV1OpenRouter
+  - AmazonNovaLiteV1
 #  - AmazonNovaProV1OpenRouter
   - Llama405BLambda
   - Llama8BLambda
   - MistralLarge
   - MistralSmall
-#  - Phi35MiniInstruct
-#  - Phi35MiniMoEInstruct
+  - Phi35MiniInstruct
+  - Phi35MiniMoEInstruct
 
 # Model settings
 #model:
@@ -49,7 +51,7 @@ training:
   batch_size: 32
   max_epochs: 200
   learning_rate: 0.0001
-  patience: 20
+  patience: 30
   test_size: 20
   valid_size: 5
   seed: 42
