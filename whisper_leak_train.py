@@ -2,6 +2,7 @@
 from core.classifiers.base_classifier import BaseClassifier
 from core.classifiers.cnn_classifier import CNNClassifier
 from core.classifiers.attention_bi_lstm_classifier import AttentionBiLSTMClassifier
+from core.classifiers.bert_time_series_classifier import BERTTimeSeriesClassifier
 from core.classifiers.utils import EarlyStopping
 from core.classifiers.utils import set_seed
 from core.classifiers.utils import train_epoch
@@ -9,7 +10,7 @@ from core.classifiers.utils import eval_epoch
 from core.classifiers.utils import get_prediction_scores
 from core.classifiers.loader import Loader
 
-from core.classifiers.visualization import set_plot_style
+from core.classifiers.visualization import calculate_metrics, set_plot_style
 from core.classifiers.visualization import plot_training_curves
 from core.classifiers.visualization import plot_roc_curve
 from core.classifiers.visualization import plot_precision_recall_curve
@@ -204,9 +205,11 @@ def main():
         train_dataset = Loader(df_train)
         val_dataset = Loader(df_val)
         test_dataset = Loader(df_test)
-        normalization_params = train_dataset.normalize()
-        val_dataset.normalize(normalization_params)
-        test_dataset.normalize(normalization_params)
+
+        norm = train_dataset.get_normalization()
+        train_dataset.apply_normalization(norm)
+        val_dataset.apply_normalization(norm)
+        test_dataset.apply_normalization(norm)
 
         train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
         val_loader = DataLoader(val_dataset, batch_size=args.batchsize, shuffle=False)
@@ -219,11 +222,23 @@ def main():
         PrintUtils.start_stage('Instantiating model')
         model_type = args.modeltype.upper()
         if model_type == 'CNN':
-            model = CNNClassifier(normalization_params, args.kernelwidth).to(device)
+            model = CNNClassifier(norm, args.kernelwidth).to(device)
             model_path = os.path.join(models_dir, 'cnn_binary_classifier.pth')
         elif model_type == 'LSTM':
-            model = AttentionBiLSTMClassifier(normalization_params).to(device)
+            model = AttentionBiLSTMClassifier(
+                norm
+            ).to(device)
             model_path = os.path.join(models_dir, 'lstm_binary_classifier.pth')
+        elif model_type == "BERT":
+            # Calculate the token boundary parameters
+            (time_boundaries_norm, len_boundaries_norm) = BERTTimeSeriesClassifier.calculate_boundaries(
+                df_train,
+                num_buckets=100,
+                normalization_params=norm
+            )
+
+            model = BERTTimeSeriesClassifier(norm, time_boundaries_norm, len_boundaries_norm, num_buckets=100).to(device)
+            model_path = os.path.join(models_dir, 'bert_binary_classifier.pth')
         else:
             raise Exception(f'Unsupported model type: {args.modeltype}')
         PrintUtils.print_extra(f'Model created: *{model.__class__.__name__}*')
@@ -314,39 +329,20 @@ def main():
         
         # Print confusion matrix metrics
         PrintUtils.start_stage('Printing confusion matrix metrics')
-        tn, fp, fn, tp = conf_matrix.ravel()
-        sensitivity = tp / (tp + fn) if (tp + fn) > 0 else 0
-        specificity = tn / (tn + fp) if (tn + fp) > 0 else 0
-        precision_val = tp / (tp + fp) if (tp + fp) > 0 else 0
-        npv = tn / (tn + fn) if (tn + fn) > 0 else 0  # Negative Predictive Value
-        accuracy = (tp + tn) / (tp + tn + fp + fn)
-        f1 = 2 * precision_val * sensitivity / (precision_val + sensitivity) if (precision_val + sensitivity) > 0 else 0
-        PrintUtils.end_stage()
-        PrintUtils.print_extra(f'              Predicted Negative  Predicted Positive')
-        PrintUtils.print_extra(f'Actual Negative      {tn:<18} {fp}')
-        PrintUtils.print_extra(f'Actual Positive      {fn:<18} {tp}')
-        PrintUtils.print_extra('Metrics from Confusion Matrix:')
-        PrintUtils.print_extra(f'Sensitivity/Recall: {sensitivity:.4f}')
-        PrintUtils.print_extra(f'Specificity:        {specificity:.4f}')
-        PrintUtils.print_extra(f'Precision:          {precision_val:.4f}')
-        PrintUtils.print_extra(f'Negative Pred Value: {npv:.4f}')
-        PrintUtils.print_extra(f'Accuracy:           {accuracy:.4f}')
-        PrintUtils.print_extra(f'F1 Score:           {f1:.4f}')
+        
+        metrics = calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df_test)
+
+        # Iterate through printing key, value
+        for key, value in metrics.items():
+            PrintUtils.print_extra(f'{key}: {value}')
+
         # Also write to output file
         with open(os.path.join(results_dir, 'confusion_matrix_metrics.txt'), 'w') as f:
-            f.write(f'Confusion Matrix:\n')
-            f.write(f'              Predicted Negative  Predicted Positive\n')
-            f.write(f'Actual Negative      {tn:<18} {fp}\n')
-            f.write(f'Actual Positive      {fn:<18} {tp}\n\n')
-
-            f.write(f'Confusion Matrix Metrics:\n')
-            f.write(f'Sensitivity/Recall: {sensitivity:.4f}\n')
-            f.write(f'Specificity:        {specificity:.4f}\n')
-            f.write(f'Precision:          {precision_val:.4f}\n')
-            f.write(f'Negative Pred Value: {npv:.4f}\n')
-            f.write(f'Accuracy:           {accuracy:.4f}\n')
-            f.write(f'F1 Score:           {f1:.4f}\n')
-        PrintUtils.print_extra(f'Confusion matrix metrics saved to *confusion_matrix_metrics.txt*')
+            for key, value in metrics.items():
+                f.write(f'{key}: {value}\n')
+            
+        PrintUtils.print_extra(f'Metrics saved to *confusion_matrix_metrics.txt*')
+        PrintUtils.end_stage()
         
         # Test the inference function
         PrintUtils.start_stage('Testing inference function')

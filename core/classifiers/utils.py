@@ -1,3 +1,4 @@
+import time
 import torch
 from core.utils import PrintUtils
 
@@ -76,6 +77,15 @@ def set_seed(seed=42):
         torch.cuda.manual_seed_all(seed)
     PrintUtils.print_extra(f'Random seed set to *{seed}*')
 
+import time
+# import numpy as np # Assuming numpy is available if needed for other parts
+# from utils import PrintUtils # Assuming PrintUtils is available if needed for other parts
+import sys # Needed for sys.exit()
+from collections import defaultdict # Useful for storing timing data
+
+# Define NUM_ITERATIONS_TO_TIME constant
+NUM_ITERATIONS_TO_TIME = 20
+
 
 def train_epoch(model, dataloader, criterion, optimizer, device, epoch, max_epochs):
     """
@@ -87,7 +97,10 @@ def train_epoch(model, dataloader, criterion, optimizer, device, epoch, max_epoc
     total_loss = 0
     correct = 0
     total = 0
+    start_time = time.time()
+    seconds_per_steps = []
     for X, y in dataloader:
+        start_time_epoch = time.time()
         X, y = X.to(device), y.to(device).unsqueeze(1)
         
         optimizer.zero_grad()
@@ -102,7 +115,11 @@ def train_epoch(model, dataloader, criterion, optimizer, device, epoch, max_epoc
         total += y.size(0)
         
         # Update progress bar
-        PrintUtils.start_stage(f'Training (epoch {epoch+1} / {max_epochs}): {100.0*total/len(dataloader.dataset):.2f}% (loss = {loss.item():.4f}, accuracy = {correct/total:.4f})', override_prev=True)
+        seconds_per_step = (time.time() - start_time_epoch)
+        seconds_per_steps.append(seconds_per_step)
+        seconds_per_steps = seconds_per_steps[-10:]
+        avg_seconds_per_step = np.mean(seconds_per_steps)
+        PrintUtils.start_stage(f'Training (epoch {epoch+1} / {max_epochs}): {100.0*total/len(dataloader.dataset):.2f}% (s/iter = {avg_seconds_per_step:.4f}, loss = {loss.item():.4f}, accuracy = {correct/total:.4f})', override_prev=True)
    
     # Return epoch loss and accuracy
     epoch_loss = total_loss / len(dataloader.dataset)

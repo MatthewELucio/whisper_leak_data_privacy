@@ -1,0 +1,57 @@
+# Example benchmark configuration
+
+# Benchmark config
+benchmark_name: lstm_1
+sampling_rate: 1.0 # 100% of the data
+num_trials: 5 # Number of trials to run for each model
+
+# Chatbots to benchmark with their common names
+chatbots:
+  - AzureGPT4oMini
+  - AzureGPT4o
+  - AzureGPTo1Mini
+  - Grok2
+  - GPT4oMini
+#  - GPT4o
+  - O1Mini
+  - DeepseekV3OpenRouterLocked
+  - DeepseekR1OpenRouterFireworks
+  - DeepseekR1OpenRouter
+  - AzureDeepSeekR1
+  - ClaudeHaiku
+  - GeminiFlash
+  - AmazonNovaLiteV1OpenRouter
+  - AmazonNovaLiteV1
+#  - AmazonNovaProV1OpenRouter
+  - Llama405BLambda
+  - Llama8BLambda
+  - MistralLarge
+  - MistralSmall
+  - Phi35MiniInstruct
+  - Phi35MiniMoEInstruct
+
+# Model settings
+#model:
+#  class: CNNClassifier
+#  params:
+#    kernel_width: 3
+model:
+  class: AttentionBiLSTMClassifier
+  params:
+    hidden_size: 128
+    num_layers: 2
+    dropout_rate: 0.3
+    embedding_dim: 32
+    fc_dims: [128, 64]
+    bidirectional: true
+    attention_dim: 64
+
+training:
+  # Training parameters
+  batch_size: 32
+  max_epochs: 100
+  learning_rate: 0.0005
+  patience: 10
+  test_size: 20
+  valid_size: 5
+  seed: 42
