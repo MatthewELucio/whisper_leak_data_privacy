@@ -56,7 +56,6 @@ class DeepseekR1(ChatbotBase):
         )
         
         for chunk in stream:
-            print(chunk)
             if hasattr(chunk, 'choices') and chunk.choices is not None and len(chunk.choices) > 0:
                 if chunk.choices[0].delta.content is not None:
                     response.append(chunk.choices[0].delta.content)
