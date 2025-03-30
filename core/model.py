@@ -1,9 +1,9 @@
 import random
 import re
 import time
-from utils import OsUtils
-from utils import PrintUtils
-from utils import NetworkUtils
+from .utils import OsUtils
+from .utils import PrintUtils
+from .utils import NetworkUtils
 
 import numpy
 import hashlib
@@ -88,6 +88,7 @@ class Datapoint(object):
         assert 'remote_port' in seq and isinstance(seq['remote_port'], int) and seq['remote_port'] > 0 and seq['remote_port'] <= 0xFFFF, Exception(f'Missing or invalid remote port data in sequence file: {self.seq_path}')
         assert 'temperature' in seq and isinstance(seq['temperature'], float) and seq['temperature'] >= 0, Exception(f'Missing or invalid temperature in sequence file: {self.seq_path}')
         assert 'prompt' in seq and isinstance(seq['prompt'], str) and len(seq['prompt']) > 0, Exception(f'Missing or invalid prompt in sequence file: {self.seq_path}')
+        assert 'pertubated_prompt' in seq and isinstance(seq['pertubated_prompt'], str) and len(seq['pertubated_prompt']) > 0, Exception(f'Missing or invalid pertubated prompt in sequence file: {self.seq_path}')
         assert 'response' in seq and isinstance(seq['response'], str), Exception(f'Missing or invalid response in sequence file: {self.seq_path}')
         assert 'data_lengths' in seq and isinstance(seq['data_lengths'], list) and len([ val for val in seq['data_lengths'] if (not isinstance(val, int)) or val < 0 ]) == 0, Exception(f'Missing or invalid data lengths in sequence file: {self.seq_path}')
         assert 'time_diffs' in seq and isinstance(seq['time_diffs'], list) and len([ val for val in seq['time_diffs'] if (not isinstance(val, float)) or val < 0 ]) == 0, Exception(f'Missing or invalid time differences list in sequence file: {self.seq_path}')
@@ -167,8 +168,9 @@ class Datapoint(object):
             self.seq['pertubated_prompt'] = pertubated_prompt
             self.seq['response'] = ''.join(response)
             self.seq['response_tokens'] = response
-            self.seq['response_token_nonempty_count'] = len([ token for token in response if len(token) > 0 ])
-            self.seq['response_token_empty_count'] = len([ token for token in response if len(token) == 0 ])
+            self.seq['response_token_count'] = len(response)
+            self.seq['response_token_count_nonempty'] = len([ token for token in response if len(token) > 0 ])
+            self.seq['response_token_count_empty'] = len([ token for token in response if len(token) == 0 ])
             self.seq['temperature'] = temperature
             self.seq['data_lengths'] = []
             self.seq['time_diffs'] = []
