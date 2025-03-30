@@ -2,6 +2,7 @@ __pycache__/
 api_key*.txt
 training_set/*.pcap
 data/*.pcap
+data_v2/*.pcap
 models/
 results/
 benchmark/
