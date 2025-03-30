@@ -18,7 +18,7 @@ class AttentionBiLSTMClassifier(BaseClassifier):
     Bidirectional LSTM Neural Network with Attention Mechanism
     """
 
-    def __init__(self, normalization_params, 
+    def __init__(self, norm, 
                  # Parameterized configuration
                  hidden_size=128, 
                  num_layers=2,
@@ -41,7 +41,7 @@ class AttentionBiLSTMClassifier(BaseClassifier):
         """
 
         # Initialize
-        super().__init__(normalization_params)
+        super().__init__(norm)
         self.class_name = self.__class__.__name__
 
         # Saves members
@@ -63,19 +63,20 @@ class AttentionBiLSTMClassifier(BaseClassifier):
         }
         
         # Feature embedding layers
-        self.time_embedding = nn.Sequential(
-            nn.Linear(1, embedding_dim),
-            nn.ReLU(),
-            nn.LayerNorm(embedding_dim)
-        )
-        self.size_embedding = nn.Sequential(
-            nn.Linear(1, embedding_dim),
-            nn.ReLU(),
-            nn.LayerNorm(embedding_dim)
-        )
+        inputs = 4 # time z, size z, time rank, size rank
+        self.input_embeddings = []
+        for i in range(inputs):
+            self.input_embeddings.append(
+                nn.Sequential(
+                    nn.Linear(1, embedding_dim),
+                    nn.ReLU(),
+                    nn.LayerNorm(embedding_dim)
+                )
+            )
+        self.input_embeddings = nn.ModuleList(self.input_embeddings)
         
         # Combined feature dimension after embedding
-        self.feature_dim = embedding_dim * 2
+        self.feature_dim = embedding_dim * inputs
         
         # Direction factor (1 for unidirectional, 2 for bidirectional)
         self.direction_factor = 2 if bidirectional else 1
@@ -156,16 +157,13 @@ class AttentionBiLSTMClassifier(BaseClassifier):
         # Create mask for padding
         mask = (x.sum(dim=1) != 0).float()
         
-        # Split time and size features
-        time_features = x[:, 0, :].unsqueeze(2)
-        size_features = x[:, 1, :].unsqueeze(2)
-        
-        # Apply embedding layers
-        time_embedded = self.time_embedding(time_features)
-        size_embedded = self.size_embedding(size_features)
-        
+        # Apply embeddings to each feature
+        result = []
+        for i, embedding in enumerate(self.input_embeddings):
+            result.append(embedding(x[:, i, :].unsqueeze(2)))
+
         # Concatenate embedded features
-        embedded = torch.cat([time_embedded, size_embedded], dim=2)
+        embedded = torch.cat(result, dim=2)
         
         # Pack the padded sequence
         packed_embedded = nn.utils.rnn.pack_padded_sequence(

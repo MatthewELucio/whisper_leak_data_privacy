@@ -20,15 +20,15 @@ class BaseClassifier(nn.Module):
         Base classifier class that can be extended by different model architectures.
     """
 
-    def __init__(self, normalization_params):
+    def __init__(self, norm):
         """
             Creates an instance.
         """
 
         # Save members
         super().__init__()
-        self.normalization_params = normalization_params
-        self.max_len = normalization_params[-1]
+        self.norm = norm
+        self.max_len = norm['max_len']
         self.class_name = self.__class__.__name__
         self.args = {}
 
@@ -51,12 +51,12 @@ class BaseClassifier(nn.Module):
         PrintUtils.print_extra(f'Model saved to file *{os.path.basename(filepath)}*')
         
         # Save normalization parameters
-        if self.normalization_params:
+        if self.norm:
             norm_filepath = filepath.replace('.pth', '_norm_params.json')
 
             with open(norm_filepath, 'w', encoding='utf-8') as f:
                 json.dump({
-                    'normalization_params': self.normalization_params,
+                    'normalization_params': self.norm,
                     'class_name': self.class_name,
                     'args': self.args,
                 }, f, indent=4)
@@ -101,20 +101,6 @@ class BaseClassifier(nn.Module):
         PrintUtils.print_extra(f'Classifier loaded from file *{os.path.basename(filepath)}*')
         return classifier
     
-    
-    @staticmethod
-    def load_normalization_params(filename='normalization_params.npz'):
-        """
-            Loads the normalization parameters from a file.
-        """
-
-        # Load data and return as a Tuple
-        loaded = np.load(filename, allow_pickle=True)
-        time_norm_params = loaded['time_norm_params']
-        size_norm_params = loaded['size_norm_params']
-        max_len = int(loaded['max_len'][0])
-        return time_norm_params, size_norm_params, max_len
-    
 
     def inference(self, input_data, device):
         """
@@ -130,12 +116,12 @@ class BaseClassifier(nn.Module):
         if isinstance(input_data, pd.DataFrame):
             
             # If DataFrame is provided, normalize it and create a dataset
-            if self.normalization_params is None:
+            if self.norm is None:
                 raise Exception('Normalization parameters must be provided for a DataFrame input')
             
             # Create a dataset
             dataset = Loader(input_data)
-            dataset.normalize(self.normalization_params)
+            dataset.normalize(self.norm)
             loader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=False)
            
             # Get all probabilities
@@ -156,9 +142,9 @@ class BaseClassifier(nn.Module):
             
             # If tuple of arrays is provided, normalize directly
             time_diffs, data_lengths = input_data
-            if self.normalization_params is None:
+            if self.norm is None:
                 raise Exception('Normalization parameters must be provided for raw input')
-            time_mean, time_std, size_mean, size_std, max_len = self.normalization_params
+            time_mean, time_std, size_mean, size_std, max_len = self.norm
 
             normalized_time = []
             for val in time_diffs[:max_len]:  # Trim to max_len
