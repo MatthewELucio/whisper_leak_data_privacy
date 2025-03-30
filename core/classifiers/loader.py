@@ -277,6 +277,7 @@ class Loader(Dataset):
         size_rank_padded[:len(size_rank)] = size_rank[:self.max_len]
 
         # Return the tensor
-        sample = np.stack([time_z_padded, size_z_padded, time_rank_padded, size_rank_padded], axis=0)
+        #sample = np.stack([time_z_padded, size_z_padded, time_rank_padded, size_rank_padded], axis=0)
+        sample = np.stack([time_z_padded, size_z_padded], axis=0)
         target = row['target']
         return torch.tensor(sample, dtype=torch.float32), torch.tensor(target, dtype=torch.float32)

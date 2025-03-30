@@ -4,33 +4,11 @@
 benchmark_name: lstm_1
 sampling_rate: 1.0 # 100% of the data
 num_trials: 5 # Number of trials to run for each model
+data_path: data_v2
 
 # Chatbots to benchmark with their common names
 chatbots:
-  - AzureGPT4oMini
-  - AzureGPT4o
-  - AzureGPTo1Mini
-  - Grok2
-  - GPT4oMini
-#  - GPT4o
-  - O1Mini
-  - DeepseekV3OpenRouterLocked
-  - DeepseekR1OpenRouterFireworks
-  - DeepseekR1OpenRouter
-  - DeepseekR1
-  - DeepseekV3
-  - AzureDeepSeekR1
-  - ClaudeHaiku
-  - GeminiFlash
-  - AmazonNovaLiteV1OpenRouter
   - AmazonNovaLiteV1
-  - AmazonNovaProV1
-  - Llama405BLambda
-  - Llama8BLambda
-  - MistralLarge
-  - MistralSmall
-  - Phi35MiniInstruct
-  - Phi35MiniMoEInstruct
 
 # Model settings
 #model:
