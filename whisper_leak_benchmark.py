@@ -76,6 +76,7 @@ class BenchmarkConfig:
             self.benchmark_name = self.config.get('benchmark_name', 'benchmark')
             self.sampling_rate = self.config.get('sampling_rate', 1.0)
             self.num_trials = self.config.get('num_trials', 1)
+            self.data_path = self.config.get('data_path', 'data')
             
             # Get model configuration
             model_config = self.config.get('model', {})
@@ -284,16 +285,17 @@ class BenchmarkRunner:
             train_dataset = Loader(df_train)
             val_dataset = Loader(df_val)
             test_dataset = Loader(df_test)
-            normalization_params = train_dataset.normalize()
-            val_dataset.normalize(normalization_params)
-            test_dataset.normalize(normalization_params)
+            norms = train_dataset.get_normalization()
+            train_dataset.apply_normalization(norms)
+            val_dataset.apply_normalization(norms)
+            test_dataset.apply_normalization(norms)
 
             train_loader = DataLoader(train_dataset, batch_size=self.config.batch_size, shuffle=True)
             val_loader = DataLoader(val_dataset, batch_size=self.config.batch_size, shuffle=False)
             test_loader = DataLoader(test_dataset, batch_size=self.config.batch_size, shuffle=False)
             
             # Initialize model based on configuration
-            model = self.create_model(df_train, normalization_params, feature_mode)
+            model = self.create_model(df_train, norms, feature_mode)
             model = model.to(self.device)
             
             # Setup training
@@ -591,7 +593,7 @@ class BenchmarkRunner:
         """
         PrintUtils.start_stage(f'Loading data for {chatbot}', override_prev=True)
         
-        training_set_dir = os.path.join(self.get_self_dir(), 'data')
+        training_set_dir = os.path.join(self.get_self_dir(), self.config.data_path)
         files = [
             os.path.join(training_set_dir, i) 
             for i in os.listdir(training_set_dir) 

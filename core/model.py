@@ -1,6 +1,9 @@
-from core.utils import OsUtils
-from core.utils import PrintUtils
-from core.utils import NetworkUtils
+import random
+import re
+import time
+from .utils import OsUtils
+from .utils import PrintUtils
+from .utils import NetworkUtils
 
 import numpy
 import hashlib
@@ -85,6 +88,7 @@ class Datapoint(object):
         assert 'remote_port' in seq and isinstance(seq['remote_port'], int) and seq['remote_port'] > 0 and seq['remote_port'] <= 0xFFFF, Exception(f'Missing or invalid remote port data in sequence file: {self.seq_path}')
         assert 'temperature' in seq and isinstance(seq['temperature'], float) and seq['temperature'] >= 0, Exception(f'Missing or invalid temperature in sequence file: {self.seq_path}')
         assert 'prompt' in seq and isinstance(seq['prompt'], str) and len(seq['prompt']) > 0, Exception(f'Missing or invalid prompt in sequence file: {self.seq_path}')
+        assert 'pertubated_prompt' in seq and isinstance(seq['pertubated_prompt'], str) and len(seq['pertubated_prompt']) > 0, Exception(f'Missing or invalid pertubated prompt in sequence file: {self.seq_path}')
         assert 'response' in seq and isinstance(seq['response'], str), Exception(f'Missing or invalid response in sequence file: {self.seq_path}')
         assert 'data_lengths' in seq and isinstance(seq['data_lengths'], list) and len([ val for val in seq['data_lengths'] if (not isinstance(val, int)) or val < 0 ]) == 0, Exception(f'Missing or invalid data lengths in sequence file: {self.seq_path}')
         assert 'time_diffs' in seq and isinstance(seq['time_diffs'], list) and len([ val for val in seq['time_diffs'] if (not isinstance(val, float)) or val < 0 ]) == 0, Exception(f'Missing or invalid time differences list in sequence file: {self.seq_path}')
@@ -140,7 +144,7 @@ class Datapoint(object):
         # Return result
         return seq
 
-    def generate_seq(self, local_port, remote_port, prompt, response, temperature):
+    def generate_seq(self, local_port, remote_port, prompt, pertubated_prompt, response, temperature):
         """
             Runs the analysis on the PCAP path and writes the sequence file.
             Note this also automatically populates the sequence data in the datapoint.
@@ -157,12 +161,16 @@ class Datapoint(object):
 
             # Start building the sequence
             self.seq = {}
+            self.seq['timestamp'] = time.time()
             self.seq['local_port'] = local_port
             self.seq['remote_port'] = remote_port
             self.seq['prompt'] = prompt
+            self.seq['pertubated_prompt'] = pertubated_prompt
             self.seq['response'] = ''.join(response)
             self.seq['response_tokens'] = response
             self.seq['response_token_count'] = len(response)
+            self.seq['response_token_count_nonempty'] = len([ token for token in response if len(token) > 0 ])
+            self.seq['response_token_count_empty'] = len([ token for token in response if len(token) == 0 ])
             self.seq['temperature'] = temperature
             self.seq['data_lengths'] = []
             self.seq['time_diffs'] = []
@@ -263,12 +271,23 @@ class TrainingSetCollector(object):
         # Save all prompts
         all_prompts = self._negative_prompts + self._positive_prompts
 
+        # Calculate maximum repeat value
+        max_repeats = max(self._positive_repeats, self._negative_repeats)
+
         # Built the task list, [(prompt, index), ...]
         task_list = []
         for prompt in all_prompts:
             repeats = self._negative_repeats if prompt in self._negative_prompts else self._positive_repeats
+            pertubated_prompts = self._perturbate_prompt(prompt, max_repeats)
+            numpy.random.shuffle(pertubated_prompts) # Shuffle
+
+            if len(pertubated_prompts) < max_repeats:
+                raise Exception(f'Not enough pertubated prompts for prompt: {prompt}')
+
             for index in range(repeats):
-                task_list.append((prompt, index))
+                pertubated_prompt = pertubated_prompts[index]
+
+                task_list.append((prompt, pertubated_prompt, index))
         
         # Shuffle the task list
         numpy.random.shuffle(task_list)
@@ -279,7 +298,7 @@ class TrainingSetCollector(object):
         failed = 0
         data_length, avg_size, token_count = 0, 0.0, 0
         training_set = {}
-        for (prompt, index) in task_list:
+        for (prompt, pertubated_prompt, index) in task_list:
             # Update progress
             percentage = (curr_count * 100) // total_datapoints
             PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%), {failed} failed. Latest: {data_length} events, {avg_size:.1f} bytes per event, {token_count} tokens.', override_prev=True)
@@ -302,9 +321,9 @@ class TrainingSetCollector(object):
             chatbot_obj = chatbot_class(self._remote_tls_port)
             temperature = chatbot_obj.get_temperature()
             try:
-                response, local_port = chatbot_obj.send_prompt(prompt, temperature)
+                response, local_port = chatbot_obj.send_prompt(pertubated_prompt, temperature)
                 assert isinstance(response, list), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
-                assert len(response) > 0 and len(''.join(response)) > 0, Exception(f'Got empty response for prompt: {prompt}')
+                assert len(response) > 0 and len(''.join(response)) > 0, Exception(f'Got empty response for prompt: {pertubated_prompt}')
 
                 # Discover new ports and stop sniffing (unless local port was provided by chatbot)
                 if local_port is None:
@@ -320,7 +339,7 @@ class TrainingSetCollector(object):
                     NetworkUtils.stop_sniffing_tls()
 
                 # Perform the analysis and set the data
-                data_length, avg_size = datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, response, temperature)
+                data_length, avg_size = datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, pertubated_prompt, response, temperature)
                 token_count = len(response)
                 training_set[prompt].append(datapoint)
             except Exception as e:
@@ -337,3 +356,68 @@ class TrainingSetCollector(object):
         PrintUtils.end_stage()
         return training_set
 
+    def _perturbate_prompt(self, prompt, N):
+        """
+        Generates N distinct variations of a given prompt by adding spaces at random positions.
+
+        Args:
+            prompt: The original string prompt.
+            N: The number of distinct variations required.
+
+        Returns:
+            A list containing up to N distinct variations of the prompt.
+        """
+        if N <= 0:
+            return []
+
+        # Handle empty prompt case
+        if not prompt.strip():
+            return [" " * i for i in range(1, N + 1)][:N]
+
+        # Tokenize prompt and identify insertion points
+        words = prompt.split()
+        num_points = len(words) + 1  # Before first word, between words, after last word
+        
+        variations = [prompt]  # Start with the original prompt
+        unique_variations = {prompt}  # Set for fast duplicate checking
+        
+        # Generate remaining variations
+        while len(variations) < N:
+            # Start fresh insertion plan for this variation
+            spaces = [0] * num_points
+            
+            # Add spaces until we get a unique variation
+            while True:
+                # Add a space at a random position
+                position = random.randint(0, num_points - 1)
+                spaces[position] += 1
+                
+                # Construct the new prompt
+                parts = []
+                
+                # Add spaces before first word
+                if spaces[0] > 0:
+                    parts.append(" " * spaces[0])
+                    
+                # Add words with spaces between/after them
+                for i, word in enumerate(words):
+                    parts.append(word)
+                    # Add spaces after word (standard + extra)
+                    if i < len(words) - 1:
+                        parts.append(" " + " " * spaces[i + 1])
+                    elif spaces[-1] > 0:
+                        parts.append(" " * spaces[-1])
+                
+                new_prompt = "".join(parts)
+                
+                # If unique, add to variations and move to next
+                if new_prompt not in unique_variations:
+                    variations.append(new_prompt)
+                    unique_variations.add(new_prompt)
+                    break
+                    
+                # Prevent infinite loops if we can't find more unique variations
+                if sum(spaces) > 100:  # Arbitrary limit to prevent excessive space addition
+                    return variations
+        
+        return variations
