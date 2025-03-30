@@ -71,6 +71,7 @@ def parse_arguments():
     parser.add_argument('-t', '--testsize', type=int, help='The test size in percentage', default=20)
     parser.add_argument('-v', '--validsize', type=int, help='The validation size in percentage taken from train set', default=5)
     parser.add_argument('-ds', '--downsample', type=float, help='Downsample the dataset', default=1.0)
+    parser.add_argument('-i', '--input_folder', type=str, help='Input folder for the data', default='data')
     args = parser.parse_args()
     assert args.seed >= 0, Exception(f'Invalid random seed: {args.seed}')
     assert args.batchsize > 0, Exception(f'Invalid batch size: {args.batchsize}')
@@ -122,7 +123,7 @@ def main():
 
         # Load the data from the specified input folder
         PrintUtils.start_stage('Loading sequences data')
-        training_set_dir = os.path.join(get_self_dir(), 'data')
+        training_set_dir = os.path.join(get_self_dir(), args.input_folder)
         files = [ os.path.join(training_set_dir, i) for i in os.listdir(training_set_dir) if i.lower().endswith(f'_{args.chatbot.lower()}.seq') ]
         assert len(files) > 0, Exception(f'Did not find training set files for chatbot {args.chatbot}')
         data = []
