@@ -17,18 +17,21 @@ chatbots:
   - DeepseekV3OpenRouterLocked
   - DeepseekR1OpenRouterFireworks
   - DeepseekR1OpenRouter
+  - DeepseekR1
+  - DeepseekV3
   - AzureDeepSeekR1
   - ClaudeHaiku
   - GeminiFlash
   - AmazonNovaLiteV1OpenRouter
   - AmazonNovaLiteV1
-#  - AmazonNovaProV1OpenRouter
+  - AmazonNovaProV1
   - Llama405BLambda
   - Llama8BLambda
   - MistralLarge
   - MistralSmall
   - Phi35MiniInstruct
   - Phi35MiniMoEInstruct
+
 
 # Model settings
 #model:

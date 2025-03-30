@@ -63,7 +63,7 @@ class AttentionBiLSTMClassifier(BaseClassifier):
         }
         
         # Feature embedding layers
-        inputs = 4 # time z, size z, time rank, size rank
+        inputs = 2 # time z, size z
         self.input_embeddings = []
         for i in range(inputs):
             self.input_embeddings.append(
