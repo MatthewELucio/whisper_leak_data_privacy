@@ -1,5 +1,6 @@
 # bert_time_series_classifier.py
 
+import ast
 import math
 import json
 import os
@@ -289,7 +290,7 @@ class BERTTimeSeriesClassifier(BaseClassifier):
         return probs # Return shape [batch_size, 1]
     
     @staticmethod
-    def calculate_boundaries(df, num_buckets, normalization_params):
+    def calculate_boundaries(df, num_buckets, norm):
         """
         Calculates quantile boundaries for normalized time_diffs and data_lengths.
 
@@ -321,11 +322,15 @@ class BERTTimeSeriesClassifier(BaseClassifier):
             raise ValueError("DataFrame must contain 'time_diffs' and 'data_lengths' columns.")
         if not isinstance(num_buckets, int) or num_buckets < 2:
              raise ValueError("num_buckets must be an integer greater than or equal to 2.")
-        if not isinstance(normalization_params, (tuple, list)) or len(normalization_params) != 5:
-            raise TypeError("normalization_params must be a tuple or list of length 5 "
-                            "(time_mean, time_std, size_mean, size_std, max_len).")
-            
-        time_mean, time_std, size_mean, size_std, _ = normalization_params # max_len not needed here
+        if not isinstance(norm, (dict)):
+            raise TypeError("Normalization parameters must be a dictionary.")
+        if not all(key in norm for key in ["time_mean", "time_std", "size_mean", "size_std"]):
+            raise ValueError("Normalization parameters must include 'time_mean', 'time_std', 'size_mean', and 'size_std'.")
+        
+        time_mean = norm["time_mean"]
+        time_std = norm["time_std"]
+        size_mean = norm["size_mean"]
+        size_std = norm["size_std"]
 
         # Ensure standard deviations are positive for safe division
         time_std_safe = time_std if time_std > 0 else 1.0

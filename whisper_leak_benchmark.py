@@ -533,7 +533,7 @@ class BenchmarkRunner:
             (time_boundaries_norm, len_boundaries_norm) = BERTTimeSeriesClassifier.calculate_boundaries(
                 df_train,
                 num_buckets=50,
-                normalization_params=normalization_params
+                norm=normalization_params
             )
 
             model = BERTTimeSeriesClassifier(

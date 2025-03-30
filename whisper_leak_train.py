@@ -234,11 +234,17 @@ def main():
             # Calculate the token boundary parameters
             (time_boundaries_norm, len_boundaries_norm) = BERTTimeSeriesClassifier.calculate_boundaries(
                 df_train,
-                num_buckets=100,
-                normalization_params=norm
+                num_buckets=50,
+                norm=norm
             )
 
-            model = BERTTimeSeriesClassifier(norm, time_boundaries_norm, len_boundaries_norm, num_buckets=100).to(device)
+            model = BERTTimeSeriesClassifier(
+                norm,
+                time_boundaries_norm,
+                len_boundaries_norm,
+                num_buckets=50,
+                #model_name='distilroberta-base'
+            ).to(device)
             model_path = os.path.join(models_dir, 'bert_binary_classifier.pth')
         else:
             raise Exception(f'Unsupported model type: {args.modeltype}')
