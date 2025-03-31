@@ -34,6 +34,7 @@ class BERTTimeSeriesClassifier(BaseClassifier):
                  # Classifier head config
                  fc_dims=[64], 
                  dropout_rate=0.3,
+                 interleave=True
                  ):
         """
         Creates an instance of the BERTTimeSeriesClassifier.
@@ -68,11 +69,16 @@ class BERTTimeSeriesClassifier(BaseClassifier):
         self.model_name = model_name
         self.dropout_rate = dropout_rate
         self.fc_dims = fc_dims
+        self.interleave = interleave
         
         # Original max sequence length (from normalization params)
         self.original_max_len = self.max_len 
         # Max length for BERT input (interleaved + [CLS] + [SEP])
-        self.bert_max_len = 2 * self.original_max_len + 2 
+        if self.interleave:
+            self.bert_max_len = 2 * self.original_max_len + 2 
+        else:
+            self.bert_max_len = self.original_max_len + 2
+        
         if self.bert_max_len > 512:
             print(f"Warning: BERT max input length is 512. Reducing max_len to 255.")
             self.bert_max_len = 512
@@ -184,10 +190,13 @@ class BERTTimeSeriesClassifier(BaseClassifier):
         len_tok_ids = [self.len_token_ids[idx] for idx in len_bucket_indices]
 
         # 4. Interleave tokens
-        interleaved_tokens = []
-        for i in range(seq_len):
-            interleaved_tokens.append(len_tok_ids[i])
-            interleaved_tokens.append(time_tok_ids[i])
+        if self.interleave:
+            interleaved_tokens = []
+            for i in range(seq_len):
+                interleaved_tokens.append(len_tok_ids[i])
+                interleaved_tokens.append(time_tok_ids[i])
+        else:
+            interleaved_tokens = len_tok_ids
 
         # 5. Add special tokens ([CLS] at start, [SEP] at end)
         final_token_ids = [self.cls_token_id] + interleaved_tokens + [self.sep_token_id]
