@@ -536,11 +536,16 @@ class BenchmarkRunner:
                 norm=normalization_params
             )
 
+            interleave = True
+            if feature_mode == FeatureMode.DATA_SIZE_ONLY or feature_mode == FeatureMode.TIME_ONLY:
+                interleave = False
+
             model = BERTTimeSeriesClassifier(
                 normalization_params,
                 time_boundaries_norm=time_boundaries_norm,
                 len_boundaries_norm=len_boundaries_norm,
                 num_buckets=50,
+                interleave=interleave,
             )
         else:
             raise ValueError(f"Unsupported model class: {self.config.model_class}")
