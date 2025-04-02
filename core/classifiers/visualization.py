@@ -1,3 +1,4 @@
+import os
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
@@ -59,7 +60,8 @@ def plot_training_curves(train_losses, val_losses, train_accs, val_accs, best_ep
         'Validation Accuracy': val_accs
     }
     training_df = pd.DataFrame(training_data)
-    training_df.to_csv('training_curves_data.csv', index=False)
+    output_curve = os.path.splitext(output_file)[0] + '.csv'
+    training_df.to_csv(output_curve, index=False)
 
 
 def plot_roc_curve(y_true, y_scores, output_file='roc_curve.png'):
@@ -95,7 +97,8 @@ def plot_roc_curve(y_true, y_scores, output_file='roc_curve.png'):
     # Write data to CSV for further analysis
     roc_data = pd.DataFrame({'False Positive Rate': fpr, 'True Positive Rate': tpr})
     roc_data['Threshold'] = roc_thresholds
-    roc_data.to_csv('roc_curve_data.csv', index=False)
+    output_file = os.path.splitext(output_file)[0] + '.csv'
+    roc_data.to_csv(output_file, index=False)
     PrintUtils.print_extra("ROC curve data saved to roc_curve_data.csv")
     
     return roc_auc
@@ -141,7 +144,8 @@ def plot_precision_recall_curve(y_true, y_scores, output_file='precision_recall_
         'Precision': precision[:-1],
         'Threshold': pr_thresholds
     })
-    pr_data.to_csv('precision_recall_data.csv', index=False)
+    output_file = os.path.splitext(output_file)[0] + '.csv'
+    pr_data.to_csv(output_file, index=False)
     
     return avg_precision
 
@@ -294,7 +298,8 @@ def create_model_dashboard(val_scores, val_labels, train_losses, val_losses, bes
         'Test Label': val_labels   # or test_labels, depending on your naming
     }
     test_df = pd.DataFrame(test_data)
-    test_df.to_csv('test_prediction_data.csv', index=False)
+    output_file = os.path.splitext(output_file)[0] + '_prediction.csv'
+    test_df.to_csv(output_file, index=False)
 
     PrintUtils.print_extra("Model performance data saved to test_prediction_data.csv")
 
@@ -348,6 +353,17 @@ def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
         token_lengths = [len(token) for token in all_token_strings]       # Get lengths of every token
         mean_length_of_tokens = np.mean(token_lengths)
         median_length_of_tokens = np.median(token_lengths)
+
+        # Calculate Precision @ 10% recall, 20% recall, etc.
+        precision_at_recall = {}
+        for r in np.arange(0.1, 1.1, 0.1):
+            precision_at_recall[r] = np.interp(r, recall, precision)
+        # Also add 5% recall
+        precision_at_recall[0.05] = np.interp(0.05, recall, precision)
+        
+        # Print the precision at different recall levels
+        for r, p in precision_at_recall.items():
+            PrintUtils.print_extra(f"Precision at {r:.1f} recall: {p:.3f}")
         
         # Combine all metrics
         metrics = {
@@ -375,6 +391,16 @@ def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
             'StdDev Count of Response Chunks': stddev_tokens,
             'Mean Length of Response Chunks': mean_length_of_tokens,
             'Median Length of Response Chunks': median_length_of_tokens,
+            'Precision at 5% Recall': precision_at_recall[0.05],
+            'Precision at 10% Recall': precision_at_recall[0.1],
+            'Precision at 20% Recall': precision_at_recall[0.2],
+            'Precision at 30% Recall': precision_at_recall[0.3],
+            'Precision at 40% Recall': precision_at_recall[0.4],
+            'Precision at 50% Recall': precision_at_recall[0.5],
+            'Precision at 60% Recall': precision_at_recall[0.6],
+            'Precision at 70% Recall': precision_at_recall[0.7],
+            'Precision at 80% Recall': precision_at_recall[0.8],
+            'Precision at 90% Recall': precision_at_recall[0.9],
         }
 
         return metrics
