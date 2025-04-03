@@ -325,37 +325,31 @@ def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
         tn, fp, fn, tp = conf_matrix.ravel()
         
         # Calculate AUC
-        print("Calculating AUC...")
         auc_score = roc_auc_score(test_labels, test_scores)
         
         # Calculate AUPRC
-        print("Calculating AUPRC...")
         precision_curve, recall_curve, _ = precision_recall_curve(test_labels, test_scores)
         auprc = auc(recall_curve, precision_curve)
         
         # Calculate other metrics
-        print("Calculating other metrics...")
         f1 = f1_score(test_labels, test_preds)
         recall = recall_score(test_labels, test_preds)
         precision = precision_score(test_labels, test_preds)
         accuracy = accuracy_score(test_labels, test_preds)
         
         # Calculate data statistics
-        print("Calculating data statistics...")
         data_lengths = df['data_lengths'].apply(len)
         median_data_length = np.median(data_lengths)
         avg_data_length = np.mean(data_lengths)
         stddev_data_length = np.std(data_lengths)
         
         # Calculate size statistics
-        print("Calculating size statistics...")
         all_data_sizes = np.concatenate(df['data_lengths'].values)  # Flatten all sizes
         median_data_size = np.median(all_data_sizes)
         avg_data_size = np.mean(all_data_sizes)
         stddev_data_size = np.std(all_data_sizes)
         
         # Calculate token statistics
-        print("Calculating token statistics...")
         median_tokens = np.median(df['response_tokens'].apply(len))
         avg_tokens = np.mean(df['response_tokens'].apply(len))
         stddev_tokens = np.std(df['response_tokens'].apply(len))
@@ -365,10 +359,6 @@ def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
         median_length_of_tokens = np.median(token_lengths)
 
         # Calculate Precision @ 10% recall, 20% recall, etc.
-        print("Calculating precision at different recall levels...")
-        print("recall", type(recall_curve) , recall_curve)
-        print("precision", type(precision_curve) , precision_curve)
-
         precision_at_recall = {}
         precisions = [0.05] + list(np.arange(0.1, 1.1, 0.1))
         for r in precisions:
@@ -377,12 +367,10 @@ def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
             precision_at_recall[r] = np.interp(r, recall_curve[::-1], precision_curve[::-1])
         
         # Print the precision at different recall levels
-        print("Precision at different recall levels:")
         for r, p in precision_at_recall.items():
             PrintUtils.print_extra(f"Precision at {r:.2f} recall: {p:.3f}")
         
         # Combine all metrics
-        print("Combining all metrics...")
         metrics = {
             'AUC': auc_score,
             'AUPRC': auprc,

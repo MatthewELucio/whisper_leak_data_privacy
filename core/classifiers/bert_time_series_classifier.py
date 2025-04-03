@@ -9,15 +9,7 @@ import torch
 import torch.nn as nn
 from transformers import AutoTokenizer, AutoModel, logging as hf_logging
 import warnings
-
-# --- PEFT Imports ---
-try:
-    from peft import LoraConfig, get_peft_model, TaskType
-    _peft_installed = True
-except ImportError:
-    _peft_installed = False
-    warnings.warn("PEFT library not found. LoRA functionality will be disabled. Run 'pip install peft' to enable it.", ImportWarning)
-# --- End PEFT Imports ---
+from peft import LoraConfig, get_peft_model, TaskType # pip install peft
 
 # Suppress excessive warnings from transformers library (optional)
 hf_logging.set_verbosity_error() 
@@ -84,10 +76,6 @@ class BERTTimeSeriesClassifier(BaseClassifier):
         if not (isinstance(len_boundaries_norm, (list, np.ndarray)) and \
                 len(len_boundaries_norm) == num_buckets - 1):
              raise ValueError(f"len_boundaries_norm must be a list/array of length num_buckets-1 ({num_buckets-1})")
-        
-        if use_lora and not _peft_installed:
-             print("Warning: 'use_lora' is True, but PEFT library is not installed. Disabling LoRA.")
-             use_lora = False
 
         # --- Store Config ---
         self.time_boundaries_norm = np.array(time_boundaries_norm)
@@ -159,11 +147,24 @@ class BERTTimeSeriesClassifier(BaseClassifier):
              self.bert_model.resize_token_embeddings(len(self.tokenizer))
 
         # --- Apply LoRA (PEFT) if enabled ---
-        if self.use_lora and _peft_installed:
+        if self.use_lora:
             print(f"Applying LoRA with r={self.lora_r}, alpha={self.lora_alpha}, dropout={self.lora_dropout}")
             # Common target modules for DistilBERT. Might need adjustment for other models.
             # Inspect model structure (e.g., print(self.bert_model)) if unsure.
-            target_modules = ["q_lin", "v_lin"] 
+            #target_modules = ["q_lin", "v_lin"] 
+            #target_modules = ["attention", "embeddings"]
+            target_modules=[
+                 # Target the linear layers within the attention blocks
+                "q_lin",    # Query projection layer in DistilBERT attention
+                #"k_lin",    # Key projection layer
+                "v_lin"    # Value projection layer
+                #"out_lin",  # Output projection layer in attention
+
+                # Target the specific embedding layers
+                #"word_embeddings",      # The main token embeddings
+                #"position_embeddings"   # Positional embeddings (optional but can be included)
+            ],
+            target_modules = ["q_lin", "k_lin", "v_lin", "out_lin", "word_embeddings", "position_embeddings"] 
             
             # Check if target modules exist in the model
             found_modules = []
@@ -200,9 +201,6 @@ class BERTTimeSeriesClassifier(BaseClassifier):
             # except NameError:
             #     print("Skipping trainable parameter count printout (PrintUtils not found).")
             # --- End Print Trainable Parameters ---
-
-        elif self.use_lora and not _peft_installed:
-             print("Skipping LoRA application because PEFT library is not installed.")
         else:
              print("LoRA is disabled. Using standard fine-tuning.")
 
