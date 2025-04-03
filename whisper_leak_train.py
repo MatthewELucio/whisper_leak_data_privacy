@@ -251,7 +251,13 @@ def main():
         PrintUtils.print_extra(f'Model created: *{model.__class__.__name__}*')
     
         # Define loss and optimizer
-        criterion = nn.BCELoss()
+        if isinstance(model, BERTTimeSeriesClassifier): # Check instance type instead of string
+            criterion = nn.BCEWithLogitsLoss()
+            PrintUtils.print_extra("Using BCEWithLogitsLoss for BERT model.")
+        else:
+            criterion = nn.BCELoss()
+            PrintUtils.print_extra("Using BCELoss for non-BERT model.")
+            
         optimizer = optim.Adam(model.parameters(), lr=args.learningrate)
         
         # Initialize early stopping
@@ -263,8 +269,8 @@ def main():
         PrintUtils.end_stage()
         
         # Training loop
-        train_losses, val_losses = [], []
-        train_accs, val_accs = [], []
+        train_losses, val_losses, test_losses = [], [], []
+        train_accs, val_accs, test_accs = [], [], []
         best_epoch = 0
         PrintUtils.start_stage('Training model')
         for epoch in range(args.epochs):
@@ -275,13 +281,16 @@ def main():
             # Train and validate
             train_loss, train_acc = train_epoch(model, train_loader, criterion, optimizer, device, epoch, args.epochs)
             val_loss, val_acc = eval_epoch(model, val_loader, criterion, device)
+            test_loss, test_acc = eval_epoch(model, test_loader, criterion, device)
             
             # Store metrics
             train_losses.append(train_loss)
             val_losses.append(val_loss)
+            test_losses.append(test_loss)
             train_accs.append(train_acc)
             val_accs.append(val_acc)
-            PrintUtils.start_stage(f'Training (epoch {epoch+1} / {args.epochs}): train loss: {train_loss:.4f}, train acc: {train_acc:.4f}, val loss: {val_loss:.4f}, val acc: {val_acc:.4f}', override_prev=True)
+            test_accs.append(test_acc)
+            PrintUtils.start_stage(f'Training (epoch {epoch+1} / {args.epochs}): t/v/tst loss: {train_loss:.4f}/{val_loss:.4f}/{test_loss:.4f}, t/v/tst acc: {train_acc:.4f}/{val_acc:.4f}/{test_acc:.4f}', override_prev=True)
             PrintUtils.end_stage()
             
             # Early stopping check
@@ -309,7 +318,7 @@ def main():
         test_preds = (test_scores > 0.5).astype(int)
         
         # Plot training curves
-        plot_training_curves(train_losses, val_losses, train_accs, val_accs, best_epoch, os.path.join(results_dir, 'training_curves.png'))
+        plot_training_curves(train_losses, val_losses, test_losses, train_accs, val_accs, test_accs, best_epoch, os.path.join(results_dir, 'training_curves.png'))
         
         # Plot ROC curve
         plot_roc_curve(test_labels, test_scores, os.path.join(results_dir, 'roc_curve.png'))

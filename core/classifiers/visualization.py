@@ -22,13 +22,14 @@ def set_plot_style():
     plt.rcParams['legend.fontsize'] = 12
 
 
-def plot_training_curves(train_losses, val_losses, train_accs, val_accs, best_epoch, output_file='training_curves.png'):
+def plot_training_curves(train_losses, val_losses, test_losses, train_accs, val_accs, test_accs, best_epoch, output_file='training_curves.png'):
     """Plot training and validation loss/accuracy curves."""
     plt.figure(figsize=(12, 5))
 
     plt.subplot(1, 2, 1)
     plt.plot(range(1, len(train_losses) + 1), train_losses, 'b-', label='Training Loss')
     plt.plot(range(1, len(val_losses) + 1), val_losses, 'r-', label='Validation Loss')
+    plt.plot(range(1, len(test_losses) + 1), test_losses, 'g-', label='Test Loss')
     plt.axvline(x=best_epoch, color='g', linestyle='--', label='Best Model')
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
@@ -39,6 +40,7 @@ def plot_training_curves(train_losses, val_losses, train_accs, val_accs, best_ep
     plt.subplot(1, 2, 2)
     plt.plot(range(1, len(train_accs) + 1), train_accs, 'b-', label='Training Accuracy')
     plt.plot(range(1, len(val_accs) + 1), val_accs, 'r-', label='Validation Accuracy')
+    plt.plot(range(1, len(test_accs) + 1), test_accs, 'g-', label='Test Accuracy')
     plt.axvline(x=best_epoch, color='g', linestyle='--', label='Best Model')
     plt.xlabel('Epochs')
     plt.ylabel('Accuracy')
@@ -56,8 +58,10 @@ def plot_training_curves(train_losses, val_losses, train_accs, val_accs, best_ep
         'Epoch': range(1, len(train_losses) + 1),
         'Train Loss': train_losses,
         'Validation Loss': val_losses,
+        'Test Loss': test_losses,
         'Train Accuracy': train_accs,
-        'Validation Accuracy': val_accs
+        'Validation Accuracy': val_accs,
+        'Test Accuracy': test_losses,
     }
     training_df = pd.DataFrame(training_data)
     output_curve = os.path.splitext(output_file)[0] + '.csv'
@@ -321,31 +325,37 @@ def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
         tn, fp, fn, tp = conf_matrix.ravel()
         
         # Calculate AUC
+        print("Calculating AUC...")
         auc_score = roc_auc_score(test_labels, test_scores)
         
         # Calculate AUPRC
-        precision, recall, _ = precision_recall_curve(test_labels, test_scores)
-        auprc = auc(recall, precision)
+        print("Calculating AUPRC...")
+        precision_curve, recall_curve, _ = precision_recall_curve(test_labels, test_scores)
+        auprc = auc(recall_curve, precision_curve)
         
         # Calculate other metrics
+        print("Calculating other metrics...")
         f1 = f1_score(test_labels, test_preds)
         recall = recall_score(test_labels, test_preds)
         precision = precision_score(test_labels, test_preds)
         accuracy = accuracy_score(test_labels, test_preds)
         
         # Calculate data statistics
+        print("Calculating data statistics...")
         data_lengths = df['data_lengths'].apply(len)
         median_data_length = np.median(data_lengths)
         avg_data_length = np.mean(data_lengths)
         stddev_data_length = np.std(data_lengths)
         
         # Calculate size statistics
+        print("Calculating size statistics...")
         all_data_sizes = np.concatenate(df['data_lengths'].values)  # Flatten all sizes
         median_data_size = np.median(all_data_sizes)
         avg_data_size = np.mean(all_data_sizes)
         stddev_data_size = np.std(all_data_sizes)
         
         # Calculate token statistics
+        print("Calculating token statistics...")
         median_tokens = np.median(df['response_tokens'].apply(len))
         avg_tokens = np.mean(df['response_tokens'].apply(len))
         stddev_tokens = np.std(df['response_tokens'].apply(len))
@@ -355,17 +365,24 @@ def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
         median_length_of_tokens = np.median(token_lengths)
 
         # Calculate Precision @ 10% recall, 20% recall, etc.
+        print("Calculating precision at different recall levels...")
+        print("recall", type(recall_curve) , recall_curve)
+        print("precision", type(precision_curve) , precision_curve)
+
         precision_at_recall = {}
-        for r in np.arange(0.1, 1.1, 0.1):
-            precision_at_recall[r] = np.interp(r, recall, precision)
-        # Also add 5% recall
-        precision_at_recall[0.05] = np.interp(0.05, recall, precision)
+        precisions = [0.05] + list(np.arange(0.1, 1.1, 0.1))
+        for r in precisions:
+            # np.interp needs recall (xp) to be increasing. PR curve recall is decreasing.
+            # Need to reverse both precision and recall for np.interp.
+            precision_at_recall[r] = np.interp(r, recall_curve[::-1], precision_curve[::-1])
         
         # Print the precision at different recall levels
+        print("Precision at different recall levels:")
         for r, p in precision_at_recall.items():
-            PrintUtils.print_extra(f"Precision at {r:.1f} recall: {p:.3f}")
+            PrintUtils.print_extra(f"Precision at {r:.2f} recall: {p:.3f}")
         
         # Combine all metrics
+        print("Combining all metrics...")
         metrics = {
             'AUC': auc_score,
             'AUPRC': auprc,
@@ -391,17 +408,11 @@ def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
             'StdDev Count of Response Chunks': stddev_tokens,
             'Mean Length of Response Chunks': mean_length_of_tokens,
             'Median Length of Response Chunks': median_length_of_tokens,
-            'Precision at 5% Recall': precision_at_recall[0.05],
-            'Precision at 10% Recall': precision_at_recall[0.1],
-            'Precision at 20% Recall': precision_at_recall[0.2],
-            'Precision at 30% Recall': precision_at_recall[0.3],
-            'Precision at 40% Recall': precision_at_recall[0.4],
-            'Precision at 50% Recall': precision_at_recall[0.5],
-            'Precision at 60% Recall': precision_at_recall[0.6],
-            'Precision at 70% Recall': precision_at_recall[0.7],
-            'Precision at 80% Recall': precision_at_recall[0.8],
-            'Precision at 90% Recall': precision_at_recall[0.9],
         }
+
+        # Add precision at different recall levels to metrics
+        for r, p in precision_at_recall.items():
+            metrics[f'Precision at {r:.2f} Recall'] = p
 
         return metrics
 

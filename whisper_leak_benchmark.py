@@ -299,7 +299,14 @@ class BenchmarkRunner:
             model = model.to(self.device)
             
             # Setup training
-            criterion = nn.BCELoss()
+            if isinstance(model, BERTTimeSeriesClassifier):
+                 criterion = nn.BCEWithLogitsLoss()
+                 PrintUtils.print_extra("Using BCEWithLogitsLoss for BERT model.")
+            else:
+                 # Assuming other models output probabilities
+                 criterion = nn.BCELoss() 
+                 PrintUtils.print_extra("Using BCELoss for non-BERT model.")
+            
             optimizer = optim.Adam(model.parameters(), lr=self.config.learning_rate)
             early_stopping = EarlyStopping(
                 patience=self.config.patience,
@@ -309,8 +316,8 @@ class BenchmarkRunner:
             
             # Train model
             model_file = os.path.join(output_dir, 'model.pth')
-            train_losses, val_losses = [], []
-            train_accs, val_accs = [], []
+            train_losses, val_losses, test_losses = [], [], []
+            train_accs, val_accs, test_accs = [], [], []
             best_epoch = 0
             
             PrintUtils.start_stage(f'Training model for {chatbot} (feature mode: {feature_mode.value}, trial: {trial})')
@@ -322,11 +329,14 @@ class BenchmarkRunner:
                     self.device, epoch, self.config.max_epochs
                 )
                 val_loss, val_acc = eval_epoch(model, val_loader, criterion, self.device)
+                test_loss, test_acc = eval_epoch(model, test_loader, criterion, self.device)
                 
                 train_losses.append(train_loss)
                 val_losses.append(val_loss)
+                test_losses.append(test_loss)
                 train_accs.append(train_acc)
                 val_accs.append(val_acc)
+                test_accs.append(test_acc)
                 
                 PrintUtils.start_stage(
                     f'Epoch {epoch+1}/{self.config.max_epochs}: '
@@ -362,7 +372,7 @@ class BenchmarkRunner:
             
             # Generate all plots
             plot_training_curves(
-                train_losses, val_losses, train_accs, val_accs, 
+                train_losses, val_losses, test_losses, train_accs, val_accs, test_accs,
                 best_epoch, os.path.join(output_dir, 'training_curves.png')
             )
             
