@@ -45,7 +45,7 @@ class GPT4oMini(ChatbotBase):
         response = []
         stream = self._client.chat.completions.create(
             extra_body={},
-            model='gpt-4o-mini',
+            model='gpt-4o-mini-adhoc',
             messages=[ { 'role': 'user', 'content': prompt } ],
             stream=True,
             temperature=temperature
