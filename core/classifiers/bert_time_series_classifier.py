@@ -31,7 +31,7 @@ class BERTTimeSeriesClassifier(BaseClassifier):
                  normalization_params,
                  time_boundaries_norm,
                  len_boundaries_norm,
-                 num_buckets,
+                 num_buckets=50,
                  # Pre-trained model config
                  model_name='distilbert-base-uncased', # Good balance of size/performance
                  # Classifier head config
@@ -382,7 +382,7 @@ class BERTTimeSeriesClassifier(BaseClassifier):
         # Return raw logits (loss calculation should happen outside)
         return logits
     
-    def calculate_boundaries(df_train, num_buckets, norm):
+    def calculate_boundaries(df_train, num_buckets=50, norm={}):
         """
         Calculate boundaries for time and size values based on the training data.
         """

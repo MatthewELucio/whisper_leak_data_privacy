@@ -1,0 +1,40 @@
+# Example benchmark configuration
+
+# Benchmark config
+benchmark_name: lstm_bert_2
+sampling_rate: 1 # 100% of the data
+num_trials: 5 # Number of trials to run for each model
+data_path: data_v2
+
+# Chatbots to benchmark with their common names
+chatbots:
+  - "*"
+
+# Model settings
+#model:
+#  class: CNNClassifier
+#  params:
+#    kernel_width: 3
+model:
+  class: CombinedLSTMBERTClassifier
+  params:
+    fc_dims: [128, 64]
+    dropout_rate: 0.3
+    bert_lr_factor: 0.1
+    bert_model_name: 'distilbert-base-uncased'
+    lstm_hidden_size: 128
+    lstm_num_layers: 2
+    lstm_dropout_rate: 0.3
+    lstm_embedding_dim: 32
+    lstm_bidirectional: True
+    lstm_attention_dim: 128
+
+training:
+  # Training parameters
+  batch_size: 32
+  max_epochs: 1
+  learning_rate: 0.0005
+  patience: 10
+  test_size: 20
+  valid_size: 5
+  seed: 42

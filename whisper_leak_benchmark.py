@@ -22,9 +22,11 @@ import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader, Subset
 from sklearn.model_selection import train_test_split
 
+from core.chatbot_utils import ChatbotUtils
 from core.classifiers.attention_bi_lstm_classifier import AttentionBiLSTMClassifier
 from core.classifiers.bert_time_series_classifier import BERTTimeSeriesClassifier
 from core.classifiers.cnn_classifier import CNNClassifier
+from core.classifiers.combined_lstm_bert_classifier import CombinedLSTMBERTClassifier
 from core.classifiers.lstm_transformer_classifier import LSTMTransformerClassifier
 from core.classifiers.loader import Loader
 
@@ -72,6 +74,20 @@ class BenchmarkConfig:
             self.chatbots = self.config.get('chatbots', [])
             if not self.chatbots:
                 raise ValueError("No chatbots specified in configuration")
+            
+            # If * in chatbots, then load the full set of chatbots
+            if '*' in self.chatbots:
+                self.chatbots = ChatbotUtils.load_chatbots(
+                    os.path.join(
+                        os.path.dirname(os.path.abspath(__file__)),
+                        'chatbots'
+                    )).keys()
+
+                # Shuffle the chatbots to process in a predictable order
+                self.chatbots = list(self.chatbots)
+                np.random.seed(42)
+                np.random.shuffle(self.chatbots)
+                print(f"Chatbots: {self.chatbots}")
             
             self.benchmark_name = self.config.get('benchmark_name', 'benchmark')
             self.sampling_rate = self.config.get('sampling_rate', 1.0)
@@ -198,13 +214,16 @@ class BenchmarkRunner:
 
         # Process each trial
         for trial in range(1, self.config.num_trials + 1):
-            # Process each chatbot
-            for chatbot in self.config.chatbots:
-                chatbot_dir = os.path.join(self.output_dir, chatbot)
-                os.makedirs(chatbot_dir, exist_ok=True)
-                
-                # Process each feature mode
-                for feature_mode in FeatureMode:
+            # Process each feature mode
+            for feature_mode in FeatureMode:
+                # Process each chatbot
+                for chatbot in self.config.chatbots:
+                    PrintUtils.start_stage(f'Processing chatbot: *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial})')
+                    PrintUtils.end_stage()
+
+                    chatbot_dir = os.path.join(self.output_dir, chatbot)
+                    os.makedirs(chatbot_dir, exist_ok=True)
+                    
                     trial_dir = os.path.join(chatbot_dir, f"{feature_mode.value}", f"trial_{trial}")
                     os.makedirs(trial_dir, exist_ok=True)
                     
@@ -216,10 +235,14 @@ class BenchmarkRunner:
                     PrintUtils.start_stage(f'Processing chatbot: *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial})')
                     
                     # If reprocess_only, just calculate statistics without training
-                    if self.reprocess_only:
-                        self.reprocess_chatbot_statistics(chatbot, chatbot, trial_dir, prompts, feature_mode, trial)
-                    else:
-                        self.process_chatbot(chatbot, chatbot, trial_dir, prompts, feature_mode, trial)
+                    try:
+                        if self.reprocess_only:
+                            self.reprocess_chatbot_statistics(chatbot, chatbot, trial_dir, prompts, feature_mode, trial)
+                        else:
+                            self.process_chatbot(chatbot, chatbot, trial_dir, prompts, feature_mode, trial)
+                    except Exception as e:
+                        PrintUtils.print_extra(f"Failed to process {chatbot} (feature mode: {feature_mode.value}, trial: {trial}): {str(e)}")
+                        continue
                     
                     PrintUtils.end_stage()
         
@@ -299,7 +322,7 @@ class BenchmarkRunner:
             model = model.to(self.device)
             
             # Setup training
-            if isinstance(model, BERTTimeSeriesClassifier):
+            if isinstance(model, BERTTimeSeriesClassifier) or isinstance(model, CombinedLSTMBERTClassifier):
                  criterion = nn.BCEWithLogitsLoss()
                  PrintUtils.print_extra("Using BCEWithLogitsLoss for BERT model.")
             else:
@@ -520,35 +543,27 @@ class BenchmarkRunner:
         if self.config.model_class == 'CNNClassifier':
             model = CNNClassifier(
                 normalization_params,
-                kernel_width=self.config.model_params.get('kernel_width', 3)
+                **self.config.model_params,
             )
         elif self.config.model_class == 'AttentionBiLSTMClassifier':
             model = AttentionBiLSTMClassifier(
                 normalization_params,
-                hidden_size=self.config.model_params.get('hidden_size', 128),
-                num_layers=self.config.model_params.get('num_layers', 2),
-                dropout_rate=self.config.model_params.get('dropout_rate', 0.3),
-                embedding_dim=self.config.model_params.get('embedding_dim', 32),
-                fc_dims=self.config.model_params.get('fc_dims', [128, 64]),
-                bidirectional=self.config.model_params.get('bidirectional', True),
-                attention_dim=self.config.model_params.get('attention_dim', 64)
+                **self.config.model_params,
             )
         elif self.config.model_class == 'LSTMTransformerClassifier':
             model = LSTMTransformerClassifier(
                 normalization_params,
-                hidden_size=self.config.model_params.get('hidden_size', 128),
-                num_layers=self.config.model_params.get('num_layers', 2),
-                dropout_rate=self.config.model_params.get('dropout_rate', 0.3),
-                embedding_dim=self.config.model_params.get('embedding_dim', 32),
-                fc_dims=self.config.model_params.get('fc_dims', [128, 64]),
-                bidirectional=self.config.model_params.get('bidirectional', True),
-                num_heads=self.config.model_params.get('num_heads', 8),
-                attention_dropout=self.config.model_params.get('attention_dropout', 0.1)
+                **self.config.model_params,
+            )
+        elif self.config.model_class == 'CombinedLSTMBERTClassifier':
+            model = CombinedLSTMBERTClassifier(
+                normalization_params,
+                **self.config.model_params
             )
         elif self.config.model_class == 'BERTTimeSeriesClassifier':
             (time_boundaries_norm, len_boundaries_norm) = BERTTimeSeriesClassifier.calculate_boundaries(
                 df_train,
-                num_buckets=50,
+                num_buckets=self.config.model_params.get('num_buckets', 50),
                 norm=normalization_params
             )
 
@@ -558,10 +573,9 @@ class BenchmarkRunner:
 
             model = BERTTimeSeriesClassifier(
                 normalization_params,
-                time_boundaries_norm=time_boundaries_norm,
-                len_boundaries_norm=len_boundaries_norm,
-                num_buckets=50,
-                interleave=interleave,
+                time_boundaries_norm,
+                len_boundaries_norm,
+                **self.config.model_params
             )
         else:
             raise ValueError(f"Unsupported model class: {self.config.model_class}")
