@@ -307,7 +307,13 @@ class BenchmarkRunner:
                  criterion = nn.BCELoss() 
                  PrintUtils.print_extra("Using BCELoss for non-BERT model.")
             
-            optimizer = optim.Adam(model.parameters(), lr=self.config.learning_rate)
+            if hasattr(model, 'get_optimizer_params'):
+                optimizer_params = model.get_optimizer_params(self.config.learning_rate)
+                PrintUtils.print_extra(f"Using model-specific parameter groups for optimizer")
+                optimizer = optim.Adam(optimizer_params)
+            else:
+                # Fallback to regular optimizer for other models
+                optimizer = optim.Adam(model.parameters(), lr=self.config.learning_rate)
             early_stopping = EarlyStopping(
                 patience=self.config.patience,
                 verbose=True,

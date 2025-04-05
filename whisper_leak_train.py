@@ -3,6 +3,7 @@ from core.classifiers.base_classifier import BaseClassifier
 from core.classifiers.cnn_classifier import CNNClassifier
 from core.classifiers.attention_bi_lstm_classifier import AttentionBiLSTMClassifier
 from core.classifiers.bert_time_series_classifier import BERTTimeSeriesClassifier
+from core.classifiers.combined_lstm_bert_classifier import CombinedLSTMBERTClassifier
 from core.classifiers.utils import EarlyStopping
 from core.classifiers.utils import set_seed
 from core.classifiers.utils import train_epoch
@@ -230,6 +231,11 @@ def main():
                 norm
             ).to(device)
             model_path = os.path.join(models_dir, 'lstm_binary_classifier.pth')
+        elif model_type == 'LSTM_BERT':
+            model = CombinedLSTMBERTClassifier(
+                norm
+            ).to(device)
+            model_path = os.path.join(models_dir, 'lstm_bert_binary_classifier.pth')
         elif model_type == "BERT":
             # Calculate the token boundary parameters
             (time_boundaries_norm, len_boundaries_norm) = BERTTimeSeriesClassifier.calculate_boundaries(
@@ -251,14 +257,22 @@ def main():
         PrintUtils.print_extra(f'Model created: *{model.__class__.__name__}*')
     
         # Define loss and optimizer
-        if isinstance(model, BERTTimeSeriesClassifier): # Check instance type instead of string
+        if isinstance(model, BERTTimeSeriesClassifier) or isinstance(model, CombinedLSTMBERTClassifier): # Check instance type instead of string
             criterion = nn.BCEWithLogitsLoss()
             PrintUtils.print_extra("Using BCEWithLogitsLoss for BERT model.")
         else:
             criterion = nn.BCELoss()
             PrintUtils.print_extra("Using BCELoss for non-BERT model.")
-            
-        optimizer = optim.Adam(model.parameters(), lr=args.learningrate)
+        
+        # Check if the model has the special parameter grouping method
+        if hasattr(model, 'get_optimizer_params'):
+            optimizer_params = model.get_optimizer_params(args.learningrate)
+            PrintUtils.print_extra(f"Using model-specific parameter groups for optimizer")
+            optimizer = optim.Adam(optimizer_params)
+        else:
+            # Fallback to regular optimizer for other models
+            optimizer = optim.Adam(model.parameters(), lr=args.learningrate)
+        
         
         # Initialize early stopping
         early_stopping = EarlyStopping(
