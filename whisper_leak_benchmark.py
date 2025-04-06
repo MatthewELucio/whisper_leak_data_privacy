@@ -30,8 +30,8 @@ from core.classifiers.combined_lstm_bert_classifier import CombinedLSTMBERTClass
 from core.classifiers.lstm_transformer_classifier import LSTMTransformerClassifier
 from core.classifiers.loader import Loader
 
-from core.classifiers.utils import ( EarlyStopping,
-    set_seed, train_epoch, eval_epoch, get_prediction_scores
+from core.classifiers.utils import ( EarlyStopping, oversample,
+    set_seed, split_data, train_epoch, eval_epoch, get_prediction_scores
 )
 
 from core.classifiers.visualization import (
@@ -93,6 +93,8 @@ class BenchmarkConfig:
             self.sampling_rate = self.config.get('sampling_rate', 1.0)
             self.num_trials = self.config.get('num_trials', 1)
             self.data_path = self.config.get('data_path', 'data')
+            self.oversampling_train_neg_to_pos = self.config.get('oversampling_train_neg_to_pos', None)
+            self.oversampling_eval_neg_to_pos = self.config.get('oversampling_eval_neg_to_pos', None)
             
             # Get model configuration
             model_config = self.config.get('model', {})
@@ -283,7 +285,23 @@ class BenchmarkRunner:
                 PrintUtils.print_extra(f'Sampled dataset size: *{len(df)}* ({self.config.sampling_rate*100:.1f}% of original)')
             
             # Split data with trial-specific seed
-            df_train, df_val, df_test = self.split_data(df, trial_seed)
+            PrintUtils.start_stage('Splitting data into train, validation, and test sets', override_prev=True)
+            df_train, df_val, df_test = split_data(df, trial_seed, self.config.test_size / 100.0, self.config.valid_size / 100.0)
+            PrintUtils.print_extra(f'Train set size: {len(df_train)}')
+            PrintUtils.print_extra(f'Validation set size: {len(df_val)}')
+            PrintUtils.print_extra(f'Test set size: {len(df_test)}')
+            PrintUtils.end_stage()
+
+            # Oversample the training data and shuffle
+            if self.config.oversampling_train_neg_to_pos:
+                # Trim train to only required columns to reduce memory usage
+                df_train = df_train[['prompt', 'target', 'data_lengths', 'time_diffs']].copy()
+
+                df_train = oversample(
+                    df_train, 
+                    self.config.oversampling_train_neg_to_pos, 
+                )
+                PrintUtils.print_extra(f'Oversampled training set. Positives: {df_train["target"].sum()}, Negatives: {len(df_train) - df_train["target"].sum()}')
 
             # Adjust based on feature mode
             if feature_mode == FeatureMode.DATA_SIZE_ONLY:
@@ -665,47 +683,6 @@ class BenchmarkRunner:
         
         PrintUtils.end_stage()
         return df
-    
-    def split_data(self, df, seed):
-        """
-        Split data into train, validation, and test sets
-        
-        Args:
-            df: DataFrame to split
-            seed: Random seed for reproducibility
-            
-        Returns:
-            tuple: (train_df, val_df, test_df)
-        """
-        PrintUtils.start_stage('Splitting data into train, validation, and test sets', override_prev=True)
-        
-        # Split into train and test sets preserving prompt distribution
-        unique_prompts = df.drop_duplicates(subset=['prompt'])[['prompt', 'target']]
-        train_and_val_prompts, test_prompts = train_test_split(
-            unique_prompts['prompt'],
-            test_size=self.config.test_size / 100,
-            random_state=seed,  # Use trial-specific seed
-            stratify=unique_prompts['target']
-        )
-        test_prompts = set(test_prompts)
-        
-        # Split train into train and validation
-        df_train_val = df[df['prompt'].isin(train_and_val_prompts)]
-        df_train, df_val = train_test_split(
-            df_train_val,
-            test_size=self.config.valid_size / 100,
-            random_state=seed,  # Use trial-specific seed
-            stratify=df_train_val['target']
-        )
-        
-        df_test = df[df['prompt'].isin(test_prompts)]
-        
-        PrintUtils.print_extra(f'Train set size: {len(df_train)}')
-        PrintUtils.print_extra(f'Validation set size: {len(df_val)}')
-        PrintUtils.print_extra(f'Test set size: {len(df_test)}')
-        
-        PrintUtils.end_stage()
-        return df_train, df_val, df_test
     
     def save_results(self):
         """

@@ -1,4 +1,6 @@
 import time
+import pandas as pd
+from sklearn.model_selection import train_test_split
 import torch
 from core.utils import PrintUtils # Assuming this import works in your environment
 import numpy as np
@@ -220,3 +222,126 @@ def get_prediction_scores(model, dataloader, device, return_probs=True):
             all_labels.extend(y.numpy().flatten()) # y comes from dataloader, usually on CPU already
 
     return np.array(all_scores), np.array(all_labels)
+
+def split_data(df, seed, test_size=0.2, valid_size=0.1):
+    """
+    Split data into train, validation, and test sets
+    
+    Args:
+        df: DataFrame to split
+        seed: Random seed for reproducibility
+        
+    Returns:
+        tuple: (train_df, val_df, test_df)
+    """
+    # Split into train and test sets preserving prompt distribution
+    unique_prompts = df.drop_duplicates(subset=['prompt'])[['prompt', 'target']]
+    train_and_val_prompts, test_prompts = train_test_split(
+        unique_prompts['prompt'],
+        test_size=test_size,
+        random_state=seed,  # Use trial-specific seed
+        stratify=unique_prompts['target']
+    )
+    test_prompts = set(test_prompts)
+    
+    # Split train into train and validation
+    df_train_val = df[df['prompt'].isin(train_and_val_prompts)]
+    df_train, df_val = train_test_split(
+        df_train_val,
+        test_size=valid_size,
+        random_state=seed,  # Use trial-specific seed
+        stratify=df_train_val['target']
+    )
+    
+    df_test = df[df['prompt'].isin(test_prompts)]
+    
+    return df_train, df_val, df_test
+
+def oversample(df, neg_to_pos, random_state=None):
+    """
+    Samples the negative class (target=0) in a DataFrame to achieve a
+    specified ratio of negative to positive samples.
+
+    This function will either:
+    1. Oversample the negative class (sample with replacement) if its
+       current count is lower than required by the ratio.
+    2. Undersample the negative class (sample without replacement) if its
+       current count is higher than required by the ratio.
+    3. Keep the negative class as is if the count already matches the requirement.
+
+    The positive class (target=1) remains unchanged. The final DataFrame is shuffled.
+
+    Args:
+        df (pd.DataFrame): The input DataFrame. Must contain a 'target'
+                           column with binary values (0 for negative,
+                           1 for positive).
+        neg_to_pos (float): The desired ratio of negative samples count to positive
+                            samples count (e.g., 10.0 means 10 negative samples
+                            for every 1 positive sample). Must be positive.
+        random_state (int, optional): Controls the randomness of sampling and
+                                      shuffling for reproducibility. Defaults to None.
+
+    Returns:
+        pd.DataFrame: A new DataFrame with the negative class sampled
+                      (either over- or under-sampled) to meet the ratio
+                      and the rows shuffled.
+
+    Raises:
+        ValueError: If 'target' column is missing, neg_to_pos is not positive,
+                    or if oversampling is required but the negative class is empty.
+    """
+    # --- Input Validation ---
+    if 'target' not in df.columns:
+        raise ValueError("DataFrame must have a 'target' column.")
+    if not isinstance(neg_to_pos, (int, float)) or neg_to_pos <= 0:
+        raise ValueError("neg_to_pos must be a positive number.")
+    if not df['target'].isin([0, 1]).all():
+        print("Warning: 'target' column contains values other than 0 and 1. Assuming 0=negative, 1=positive.")
+
+    # --- Separate classes ---
+    pos_df = df[df['target'] == 1]
+    neg_df = df[df['target'] == 0]
+
+    n_pos = len(pos_df)
+    n_neg = len(neg_df)
+
+    # --- Handle edge case: No positive samples ---
+    if n_pos == 0:
+        print("Warning: No positive samples (target=1) found. Cannot apply ratio. Returning original data shuffled.")
+        # If no positives, the concept of neg_to_pos ratio is undefined.
+        # Return original shuffled.
+        return df.sample(frac=1, random_state=random_state).reset_index(drop=True)
+
+    # --- Calculate target negative count ---
+    # Use round to get the closest integer count for the target ratio.
+    n_neg_desired = int(round(neg_to_pos * n_pos))
+
+    # --- Perform Sampling (Over, Under, or No Change) ---
+    if n_neg_desired > n_neg:
+        # --- Oversample ---
+        if n_neg == 0:
+            # Cannot oversample if there are no negative samples to begin with
+            raise ValueError("Cannot oversample the negative class (target=0) as it is initially empty and positives exist.")
+
+        n_samples_to_add = n_neg_desired - n_neg
+        # Sample *with replacement* from the existing negative samples
+        neg_samples_added = neg_df.sample(n=n_samples_to_add, replace=True, random_state=random_state)
+        # Combine original negatives with the new samples
+        neg_sampled_df = pd.concat([neg_df, neg_samples_added], ignore_index=True)
+
+    elif n_neg_desired < n_neg:
+        # --- Undersample ---
+        # Sample *without replacement* from the existing negative samples
+        neg_sampled_df = neg_df.sample(n=n_neg_desired, replace=False, random_state=random_state)
+
+    else:
+        # --- No Change Needed ---
+        neg_sampled_df = neg_df # Use original negative samples
+
+    # --- Combine positive and sampled negative classes ---
+    result_df = pd.concat([pos_df, neg_sampled_df], ignore_index=True)
+
+    # --- Shuffle the final DataFrame ---
+    shuffled_df = result_df.sample(frac=1, random_state=random_state).reset_index(drop=True)
+
+    return shuffled_df

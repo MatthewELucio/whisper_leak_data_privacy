@@ -35,7 +35,7 @@ class BERTTimeSeriesClassifier(BaseClassifier):
                  # Pre-trained model config
                  model_name='distilbert-base-uncased', # Good balance of size/performance
                  # Classifier head config
-                 fc_dims=[64],
+                 fc_dims=[128, 64],
                  dropout_rate=0.3,
                  # --- LoRA Configuration ---
                  use_lora: bool = False,          # Set to False to disable LoRA (standard fine-tuning)
