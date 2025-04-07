@@ -30,7 +30,7 @@ from core.classifiers.combined_lstm_bert_classifier import CombinedLSTMBERTClass
 from core.classifiers.lstm_transformer_classifier import LSTMTransformerClassifier
 from core.classifiers.loader import Loader
 
-from core.classifiers.utils import ( EarlyStopping, oversample,
+from core.classifiers.utils import ( EarlyStopping, apply_neg_sampling,
     set_seed, split_data, train_epoch, eval_epoch, get_prediction_scores
 )
 
@@ -297,7 +297,7 @@ class BenchmarkRunner:
                 # Trim train to only required columns to reduce memory usage
                 df_train = df_train[['prompt', 'target', 'data_lengths', 'time_diffs']].copy()
 
-                df_train = oversample(
+                df_train = apply_neg_sampling(
                     df_train, 
                     self.config.oversampling_train_neg_to_pos, 
                 )
@@ -414,7 +414,7 @@ class BenchmarkRunner:
             
             # Create visualizations
             PrintUtils.start_stage(f'Creating visualizations for {chatbot}')
-            test_scores, test_labels = get_prediction_scores(model, test_loader, self.device)
+            test_scores, test_labels, test_loss = get_prediction_scores(model, test_loader, self.device, neg_to_pos_ratio=self.config.oversampling_eval_neg_to_pos)
             test_preds = (test_scores > 0.5).astype(int)
             
             # Generate all plots
@@ -448,13 +448,6 @@ class BenchmarkRunner:
                 os.path.join(output_dir, 'score_distribution.png')
             )
             
-            # Save test results
-            df_test = test_dataset.df.copy()
-            df_test['prediction'] = test_preds
-            df_test['score'] = test_scores
-            df_test.to_csv(os.path.join(output_dir, 'test_results.csv'), index=False)
-            PrintUtils.end_stage()
-            
             # Calculate and save metrics
             metrics = calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df)
             metrics['CommonName'] = common_name
@@ -472,7 +465,16 @@ class BenchmarkRunner:
             self.save_confusion_metrics(test_labels, test_preds, conf_matrix, output_dir)
             
             PrintUtils.print_extra(f'Completed processing for {chatbot} (feature mode: {feature_mode.value}, trial: {trial})')
-            PrintUtils.print_extra(f'AUC: {metrics["AUC"]:.4f}, F1: {metrics["F1 Score"]:.4f}')
+            PrintUtils.print_extra(f'AUPRC: {metrics["AUPRC"]:.4f}, F1: {metrics["F1 Score"]:.4f}')
+
+            # Save test results
+            test_scores, test_labels, test_loss = get_prediction_scores(model, test_loader, self.device)
+            test_preds = (test_scores > 0.5).astype(int)
+            df_test = test_dataset.df.copy()
+            df_test['prediction'] = test_preds
+            df_test['score'] = test_scores
+            df_test.to_csv(os.path.join(output_dir, 'test_results.csv'), index=False)
+            PrintUtils.end_stage()
             
         except Exception as e:
             PrintUtils.end_stage(fail_message=f"Failed to process {chatbot} (feature mode: {feature_mode.value}, trial: {trial}): {str(e)}")
@@ -480,70 +482,6 @@ class BenchmarkRunner:
         
         PrintUtils.end_stage()
     
-    def reprocess_chatbot_statistics(self, chatbot, common_name, output_dir, prompts, feature_mode, trial):
-        """
-        Reprocess statistics for an existing chatbot result without retraining
-        
-        Args:
-            chatbot: Name of the chatbot to reprocess
-            common_name: Common name for the chatbot
-            output_dir: Directory with the chatbot's results
-            prompts: Loaded prompts dictionary
-            feature_mode: Feature mode used
-            trial: Trial number
-        """
-        PrintUtils.start_stage(f'Reprocessing statistics for {chatbot} (feature mode: {feature_mode.value}, trial: {trial})')
-        
-        try:
-            # Check if test results exist
-            test_results_path = os.path.join(output_dir, 'test_results.csv')
-            if not os.path.exists(test_results_path):
-                PrintUtils.print_extra(f'No test results found for {chatbot} (feature mode: {feature_mode.value}, trial: {trial}), skipping')
-                return
-                
-            # Load test results
-            df_test = pd.read_csv(test_results_path)
-            test_labels = df_test['target'].values
-            test_scores = df_test['score'].values
-            test_preds = df_test['prediction'].values
-            
-            # Load original data for size statistics
-            df = self.load_chatbot_data(chatbot, prompts)
-            
-            # Calculate confusion matrix
-            conf_matrix = confusion_matrix(test_labels, test_preds)
-            
-            # Calculate and save metrics
-            metrics = self.calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df)
-            metrics['CommonName'] = common_name
-            metrics['ChatBot'] = chatbot
-            metrics['Features'] = feature_mode.value
-            metrics['Trial'] = trial
-            
-            # Update or add to results
-            updated = False
-            for i, result in enumerate(self.results):
-                if (result['CommonName'] == common_name and 
-                    result['ChatBot'] == chatbot and 
-                    result['Features'] == feature_mode.value and 
-                    result['Trial'] == trial):
-                    self.results[i] = metrics
-                    updated = True
-                    break
-                    
-            if not updated:
-                self.results.append(metrics)
-                
-            # Also update confusion matrix metrics file
-            self.save_confusion_metrics(test_labels, test_preds, conf_matrix, output_dir)
-                
-            PrintUtils.print_extra(f'Reprocessed statistics for {chatbot} (feature mode: {feature_mode.value}, trial: {trial})')
-            PrintUtils.print_extra(f'AUC: {metrics["AUC"]:.4f}, F1: {metrics["F1 Score"]:.4f}')
-            
-        except Exception as e:
-            PrintUtils.end_stage(fail_message=f"Failed to reprocess {chatbot} (feature mode: {feature_mode.value}, trial: {trial}): {str(e)}")
-            
-        PrintUtils.end_stage()
     
     def create_model(self, df_train, normalization_params, feature_mode):
         """
@@ -688,13 +626,10 @@ class BenchmarkRunner:
         """
         Save benchmark results to CSV file
         """
-        PrintUtils.start_stage('Saving benchmark results')
-        
         results_df = pd.DataFrame(self.results)
         results_df.to_csv(self.results_file, index=False)
         
         PrintUtils.print_extra(f'Results saved to {self.results_file}')
-        PrintUtils.end_stage()
 
 def parse_arguments():
     """
