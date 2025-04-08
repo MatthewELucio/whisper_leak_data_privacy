@@ -26,7 +26,7 @@ class QwenTurbo(ChatbotBase):
         key = os.getenv('ALIBABA_API_KEY')
         if not key:
             raise ValueError('ALIBABA_API_KEY is not set in the environment variables.')
-
+        
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
         self._client = OpenAI(

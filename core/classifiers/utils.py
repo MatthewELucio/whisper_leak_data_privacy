@@ -98,9 +98,8 @@ def train_epoch(model, dataloader, criterion, optimizer, device, epoch, max_epoc
     total = 0
     start_time = time.time()
     seconds_per_steps = []
-
-    # Determine if the criterion expects logits (common case now)
-    criterion_expects_logits = isinstance(criterion, torch.nn.BCEWithLogitsLoss)
+    losses_per_steps = []
+    accuracies_per_steps = []
 
     for i, (X, y) in enumerate(dataloader): # Use enumerate for progress tracking
         start_time_epoch = time.time()
@@ -117,31 +116,33 @@ def train_epoch(model, dataloader, criterion, optimizer, device, epoch, max_epoc
 
         # Calculate predictions based on whether output is logits or probabilities
         with torch.no_grad():
-            if criterion_expects_logits:
-                # If criterion expects logits, output is logits. Apply sigmoid for prediction.
-                pred = (torch.sigmoid(output) > 0.5).float()
-            else:
-                # If criterion expects probabilities (e.g., BCELoss), output is already probabilities.
-                pred = (output > 0.5).float()
+            # If criterion expects logits, output is logits. Apply sigmoid for prediction.
+            pred = (torch.sigmoid(output) > 0.5).float()
 
         correct += (pred == y).sum().item()
         total += y.size(0)
 
+        current_batch_loss = loss.item()
+        current_batch_accuracy = (pred == y).sum().item() / y.size(0) if y.size(0) > 0 else 0
+
         # Update progress bar
         seconds_per_step = (time.time() - start_time_epoch)
         seconds_per_steps.append(seconds_per_step)
-        # Use a moving average window (e.g., last 10 steps) for smoother time estimate
-        if len(seconds_per_steps) > 10: 
+        losses_per_steps.append(current_batch_loss)
+        accuracies_per_steps.append(current_batch_accuracy)
+        # Use a moving average window (e.g., last 20 steps) for smoother estimates
+        if len(seconds_per_steps) > 20: 
              seconds_per_steps.pop(0) 
+             losses_per_steps.pop(0)
+             accuracies_per_steps.pop(0)
         avg_seconds_per_step = np.mean(seconds_per_steps) if seconds_per_steps else 0
-        
-        current_batch_loss = loss.item()
-        current_batch_accuracy = (pred == y).sum().item() / y.size(0) if y.size(0) > 0 else 0
+        avg_loss_per_step = np.mean(losses_per_steps) if losses_per_steps else 0
+        avg_accuracy_per_step = np.mean(accuracies_per_steps) if accuracies_per_steps else 0
         
         progress = (i + 1) / len(dataloader)
         PrintUtils.start_stage(
             f'Training (epoch {epoch+1}/{max_epochs}): {progress*100:.1f}% '
-            f'(s/iter={avg_seconds_per_step:.3f}, loss={current_batch_loss:.4f}, acc={current_batch_accuracy:.3f})', 
+            f'(s/iter={avg_seconds_per_step:.3f}, loss={avg_loss_per_step:.4f}, acc={avg_accuracy_per_step:.3f})', 
             override_prev=True
         )
 
@@ -247,16 +248,13 @@ def eval_epoch(model, dataloader, criterion, device, neg_to_pos_ratio=None):
     """
     model.eval()
     
-    # Determine if the criterion expects logits
-    criterion_expects_logits = isinstance(criterion, torch.nn.BCEWithLogitsLoss)
-    
     # Use get_prediction_scores to get predictions and loss
     scores, labels, epoch_loss = get_prediction_scores(
         model, 
         dataloader, 
         device, 
         criterion=criterion,
-        return_probs=criterion_expects_logits,  # If using BCEWithLogitsLoss, we want probabilities
+        return_probs=True,  # If using BCEWithLogitsLoss, we want probabilities
         neg_to_pos_ratio=neg_to_pos_ratio
     )
     

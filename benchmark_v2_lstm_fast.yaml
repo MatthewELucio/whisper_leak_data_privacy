@@ -1,20 +1,18 @@
 # Example benchmark configuration
 
 # Benchmark config
-benchmark_name: lstm_1
-sampling_rate: 1.0 # 100% of the data
+benchmark_name: lstm_2_fast
+sampling_rate: 1 # 100% of the data
 num_trials: 5 # Number of trials to run for each model
 data_path: data_v2
+oversampling_train_neg_to_pos: 100.0 # 1000:1 ratio of negatives to positives
+oversampling_eval_neg_to_pos: 10000.0 # 10000:1 ratio of negatives to positives
 
 # Chatbots to benchmark with their common names
 chatbots:
-  - AmazonNovaLiteV1
+  - "*"
 
 # Model settings
-#model:
-#  class: CNNClassifier
-#  params:
-#    kernel_width: 3
 model:
   class: AttentionBiLSTMClassifier
   params:
@@ -30,8 +28,8 @@ training:
   # Training parameters
   batch_size: 32
   max_epochs: 100
-  learning_rate: 0.0005
-  patience: 10
+  learning_rate: 0.00005
+  patience: 20
   test_size: 20
   valid_size: 5
   seed: 42

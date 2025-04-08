@@ -1,39 +1,32 @@
 # Example benchmark configuration
 
 # Benchmark config
-benchmark_name: lstm_bert_1
+benchmark_name: bert_2_fast
 sampling_rate: 1 # 100% of the data
 num_trials: 5 # Number of trials to run for each model
-data_path: data
+data_path: data_v2
+oversampling_train_neg_to_pos: 100.0 # 1000:1 ratio of negatives to positives
+oversampling_eval_neg_to_pos: 10000.0 # 10000:1 ratio of negatives to positives
 
 # Chatbots to benchmark with their common names
 chatbots:
   - "*"
 
 # Model settings
-#model:
-#  class: CNNClassifier
-#  params:
-#    kernel_width: 3
 model:
-  class: CombinedLSTMBERTClassifier
+  class: BERTTimeSeriesClassifier
   params:
     fc_dims: [128, 64]
     dropout_rate: 0.3
-    bert_lr_factor: 0.1
-    bert_model_name: 'distilbert-base-uncased'
-    lstm_hidden_size: 128
-    lstm_num_layers: 2
-    lstm_dropout_rate: 0.3
-    lstm_embedding_dim: 32
-    lstm_bidirectional: True
-    lstm_attention_dim: 128
+    model_name: 'distilbert-base-uncased'
+    num_buckets: 50
+    interleave: false
 
 training:
   # Training parameters
   batch_size: 32
   max_epochs: 50
-  learning_rate: 0.0005
+  learning_rate: 0.000005
   patience: 10
   test_size: 20
   valid_size: 5

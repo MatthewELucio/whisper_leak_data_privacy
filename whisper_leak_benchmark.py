@@ -249,7 +249,9 @@ class BenchmarkRunner:
                     PrintUtils.end_stage()
         
         # Save all results to CSV
-        self.save_results()
+        results_df = pd.DataFrame(self.results)
+        results_df.to_csv(self.results_file, index=False)
+        PrintUtils.print_extra(f'Results saved to {self.results_file}')
         
         PrintUtils.end_stage()
     
@@ -274,16 +276,6 @@ class BenchmarkRunner:
             # Load dataset
             df = self.load_chatbot_data(chatbot, prompts)
             
-            # Apply sampling if rate is less than 1
-            if self.config.sampling_rate < 1.0:
-                sample_size = max(int(len(df) * self.config.sampling_rate), 1)
-                # Stratify by target to maintain class balance
-                df = df.groupby('target', group_keys=False)[df.columns].apply(
-                    lambda x: x.sample(n=max(int(len(x) * self.config.sampling_rate), 1), 
-                                    random_state=trial_seed)
-                )
-                PrintUtils.print_extra(f'Sampled dataset size: *{len(df)}* ({self.config.sampling_rate*100:.1f}% of original)')
-            
             # Split data with trial-specific seed
             PrintUtils.start_stage('Splitting data into train, validation, and test sets', override_prev=True)
             df_train, df_val, df_test = split_data(df, trial_seed, self.config.test_size / 100.0, self.config.valid_size / 100.0)
@@ -291,17 +283,6 @@ class BenchmarkRunner:
             PrintUtils.print_extra(f'Validation set size: {len(df_val)}')
             PrintUtils.print_extra(f'Test set size: {len(df_test)}')
             PrintUtils.end_stage()
-
-            # Oversample the training data and shuffle
-            if self.config.oversampling_train_neg_to_pos:
-                # Trim train to only required columns to reduce memory usage
-                df_train = df_train[['prompt', 'target', 'data_lengths', 'time_diffs']].copy()
-
-                df_train = apply_neg_sampling(
-                    df_train, 
-                    self.config.oversampling_train_neg_to_pos, 
-                )
-                PrintUtils.print_extra(f'Oversampled training set. Positives: {df_train["target"].sum()}, Negatives: {len(df_train) - df_train["target"].sum()}')
 
             # Adjust based on feature mode
             if feature_mode == FeatureMode.DATA_SIZE_ONLY:
@@ -331,6 +312,18 @@ class BenchmarkRunner:
             val_dataset.apply_normalization(norms)
             test_dataset.apply_normalization(norms)
 
+            # Oversample the training data and shuffle
+            if self.config.oversampling_train_neg_to_pos:
+                # Trim train to only required columns to reduce memory usage
+                df_train = train_dataset.df
+
+                df_train = apply_neg_sampling(
+                    df_train, 
+                    self.config.oversampling_train_neg_to_pos, 
+                )
+                train_dataset.df = df_train
+                PrintUtils.print_extra(f'Oversampled training set. Positives: {df_train["target"].sum()}, Negatives: {len(df_train) - df_train["target"].sum()}')
+
             train_loader = DataLoader(train_dataset, batch_size=self.config.batch_size, shuffle=True)
             val_loader = DataLoader(val_dataset, batch_size=self.config.batch_size, shuffle=False)
             test_loader = DataLoader(test_dataset, batch_size=self.config.batch_size, shuffle=False)
@@ -340,13 +333,7 @@ class BenchmarkRunner:
             model = model.to(self.device)
             
             # Setup training
-            if isinstance(model, BERTTimeSeriesClassifier) or isinstance(model, CombinedLSTMBERTClassifier):
-                 criterion = nn.BCEWithLogitsLoss()
-                 PrintUtils.print_extra("Using BCEWithLogitsLoss for BERT model.")
-            else:
-                 # Assuming other models output probabilities
-                 criterion = nn.BCELoss() 
-                 PrintUtils.print_extra("Using BCELoss for non-BERT model.")
+            criterion = nn.BCEWithLogitsLoss()
             
             if hasattr(model, 'get_optimizer_params'):
                 optimizer_params = model.get_optimizer_params(self.config.learning_rate)
@@ -375,8 +362,8 @@ class BenchmarkRunner:
                     model, train_loader, criterion, optimizer, 
                     self.device, epoch, self.config.max_epochs
                 )
-                val_loss, val_acc = eval_epoch(model, val_loader, criterion, self.device)
-                test_loss, test_acc = eval_epoch(model, test_loader, criterion, self.device)
+                val_loss, val_acc = eval_epoch(model, val_loader, criterion, self.device, neg_to_pos_ratio=self.config.oversampling_train_neg_to_pos)
+                test_loss, test_acc = eval_epoch(model, test_loader, criterion, self.device, neg_to_pos_ratio=self.config.oversampling_train_neg_to_pos)
                 
                 train_losses.append(train_loss)
                 val_losses.append(val_loss)
@@ -411,61 +398,72 @@ class BenchmarkRunner:
             os.makedirs(os.path.dirname(model_path), exist_ok=True)
             model.save(model_path)
 
-            
-            # Create visualizations
-            PrintUtils.start_stage(f'Creating visualizations for {chatbot}')
-            test_scores, test_labels, test_loss = get_prediction_scores(model, test_loader, self.device, neg_to_pos_ratio=self.config.oversampling_eval_neg_to_pos)
-            test_preds = (test_scores > 0.5).astype(int)
-            
-            # Generate all plots
-            plot_training_curves(
-                train_losses, val_losses, test_losses, train_accs, val_accs, test_accs,
-                best_epoch, os.path.join(output_dir, 'training_curves.png')
-            )
-            
-            plot_roc_curve(
-                test_labels, test_scores, 
-                os.path.join(output_dir, 'roc_curve.png')
-            )
-            
-            plot_precision_recall_curve(
-                test_labels, test_scores, 
-                os.path.join(output_dir, 'precision_recall_curve.png')
-            )
-            
-            conf_matrix = plot_confusion_matrix(
-                test_labels, test_preds, 
-                os.path.join(output_dir, 'confusion_matrix.png')
-            )
-            
-            create_model_dashboard(
-                test_scores, test_labels, train_losses, val_losses, 
-                best_epoch, os.path.join(output_dir, 'dashboard.png')
-            )
-            
-            plot_score_distribution(
-                test_scores, test_labels, 
-                os.path.join(output_dir, 'score_distribution.png')
-            )
-            
-            # Calculate and save metrics
-            metrics = calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df)
-            metrics['CommonName'] = common_name
-            metrics['ChatBot'] = chatbot
-            metrics['Features'] = feature_mode.value
-            metrics['Trial'] = trial
-            
-            # Save metrics to results
-            self.results.append(metrics)
+            for mode in ["standard", "oversampling"]:
+                # Create visualizations
+                PrintUtils.start_stage(f'Creating visualizations for {chatbot} {mode}')
+                if mode == "standard":
+                    neg_to_pos_ratio = None
+                else:
+                    neg_to_pos_ratio = self.config.oversampling_eval_neg_to_pos
+                
+                test_scores, test_labels, test_loss = get_prediction_scores(model, test_loader, self.device, neg_to_pos_ratio=neg_to_pos_ratio)
+                test_preds = (test_scores > 0.5).astype(int)
+                
+                # Generate all plots
+                plot_training_curves(
+                    train_losses, val_losses, test_losses, train_accs, val_accs, test_accs,
+                    best_epoch, os.path.join(output_dir, f'training_curves_{mode}.png')
+                )
+                
+                plot_roc_curve(
+                    test_labels, test_scores, 
+                    os.path.join(output_dir, f'roc_curve_{mode}.png')
+                )
+                
+                plot_precision_recall_curve(
+                    test_labels, test_scores, 
+                    os.path.join(output_dir, f'precision_recall_curve_{mode}.png')
+                )
+                
+                conf_matrix = plot_confusion_matrix(
+                    test_labels, test_preds, 
+                    os.path.join(output_dir, f'confusion_matrix_{mode}.png')
+                )
+                
+                create_model_dashboard(
+                    test_scores, test_labels, train_losses, val_losses, 
+                    best_epoch, os.path.join(output_dir, f'dashboard_{mode}.png')
+                )
+                
+                plot_score_distribution(
+                    test_scores, test_labels, 
+                    os.path.join(output_dir, f'score_distribution_{mode}.png')
+                )
+                
+                # Calculate and save metrics
+                metrics = calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df)
+                metrics['CommonName'] = common_name
+                metrics['ChatBot'] = chatbot
+                metrics['Features'] = feature_mode.value
+                metrics['Trial'] = trial
+                metrics['Mode'] = mode
+                
+                # Save metrics to results
+                self.results.append(metrics)
 
-            # Save metrics to CSV
-            self.save_results()
-            
-            # Also save confusion matrix metrics to a text file
-            self.save_confusion_metrics(test_labels, test_preds, conf_matrix, output_dir)
-            
-            PrintUtils.print_extra(f'Completed processing for {chatbot} (feature mode: {feature_mode.value}, trial: {trial})')
-            PrintUtils.print_extra(f'AUPRC: {metrics["AUPRC"]:.4f}, F1: {metrics["F1 Score"]:.4f}')
+                # Save metrics to CSV
+                results_df = pd.DataFrame(self.results)
+                results_df.to_csv(self.results_file, index=False)
+                PrintUtils.print_extra(f'Results saved to {self.results_file}')
+                
+                # Also save confusion matrix metrics to a text file
+                self.save_confusion_metrics(test_labels, test_preds, conf_matrix, 
+                        os.path.join(output_dir, f'confusion_matrix_metrics_{mode}.txt')
+                    )
+                
+                PrintUtils.print_extra(f'Completed processing for {chatbot} (feature mode: {feature_mode.value}, trial: {trial})')
+                PrintUtils.print_extra(f'AUPRC: {metrics["AUPRC"]:.4f}, F1: {metrics["F1 Score"]:.4f}')
+                PrintUtils.end_stage()
 
             # Save test results
             test_scores, test_labels, test_loss = get_prediction_scores(model, test_loader, self.device)
@@ -474,7 +472,7 @@ class BenchmarkRunner:
             df_test['prediction'] = test_preds
             df_test['score'] = test_scores
             df_test.to_csv(os.path.join(output_dir, 'test_results.csv'), index=False)
-            PrintUtils.end_stage()
+            
             
         except Exception as e:
             PrintUtils.end_stage(fail_message=f"Failed to process {chatbot} (feature mode: {feature_mode.value}, trial: {trial}): {str(e)}")
@@ -539,7 +537,7 @@ class BenchmarkRunner:
         return model
     
     
-    def save_confusion_metrics(self, test_labels, test_preds, conf_matrix, output_dir):
+    def save_confusion_metrics(self, test_labels, test_preds, conf_matrix, output_file):
         """
         Save detailed confusion matrix metrics to a text file
         
@@ -557,7 +555,7 @@ class BenchmarkRunner:
         accuracy = (tp + tn) / (tp + tn + fp + fn)
         f1 = 2 * precision_val * sensitivity / (precision_val + sensitivity) if (precision_val + sensitivity) > 0 else 0
         
-        with open(os.path.join(output_dir, 'confusion_matrix_metrics.txt'), 'w') as f:
+        with open(output_file, 'w') as f:
             f.write(f'Confusion Matrix:\n')
             f.write(f'              Predicted Negative  Predicted Positive\n')
             f.write(f'Actual Negative      {tn:<18} {fp}\n')
@@ -593,7 +591,12 @@ class BenchmarkRunner:
         
         if not files:
             raise ValueError(f"No training data found for chatbot {chatbot}")
-            
+
+        if self.config.sampling_rate < 1.0:
+            # Sample files based on sampling rate
+            sample_size = max(int(len(files) * self.config.sampling_rate), 1)
+            files = np.random.choice(files, size=sample_size, replace=False).tolist()
+
         data = []
         for file_index, file_path in enumerate(files):
             with open(file_path, 'r') as fp:
@@ -621,15 +624,6 @@ class BenchmarkRunner:
         
         PrintUtils.end_stage()
         return df
-    
-    def save_results(self):
-        """
-        Save benchmark results to CSV file
-        """
-        results_df = pd.DataFrame(self.results)
-        results_df.to_csv(self.results_file, index=False)
-        
-        PrintUtils.print_extra(f'Results saved to {self.results_file}')
 
 def parse_arguments():
     """

@@ -21,6 +21,7 @@ class Loader(Dataset):
 
         # Save members
         self.df = df.reset_index(drop=True)
+        self.df = self.df[ ['prompt', 'time_diffs', 'data_lengths', 'target'] ]
 
         # Validate columns time_diffs, data_lengths, and target
         if 'time_diffs' not in df.columns or 'data_lengths' not in df.columns or 'target' not in df.columns:
