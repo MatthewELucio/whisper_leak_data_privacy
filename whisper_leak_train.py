@@ -4,7 +4,7 @@ from core.classifiers.cnn_classifier import CNNClassifier
 from core.classifiers.attention_bi_lstm_classifier import AttentionBiLSTMClassifier
 from core.classifiers.bert_time_series_classifier import BERTTimeSeriesClassifier
 from core.classifiers.combined_lstm_bert_classifier import CombinedLSTMBERTClassifier
-from core.classifiers.utils import EarlyStopping
+from core.classifiers.utils import EarlyStopping, split_data
 from core.classifiers.utils import set_seed
 from core.classifiers.utils import train_epoch
 from core.classifiers.utils import eval_epoch
@@ -152,33 +152,12 @@ def main():
         PrintUtils.print_extra(f'Loaded {total_prompts} prompts')
 
         # Split into train and test sets and hold out a percentage of unique 'prompts' values for test set
-        PrintUtils.start_stage('Splitting into train and test sets')
-        unique_prompts = df.drop_duplicates(subset=['prompt'])[['prompt', 'target']]
-        train_and_val_prompts, test_prompts = train_test_split(
-            unique_prompts['prompt'],
-            test_size=args.testsize / 100,
-            random_state=args.seed,
-            stratify=unique_prompts['target']
-        )
-        test_prompts = set(test_prompts)
-        #train_prompts, val_prompts = train_test_split(
-        #    train_and_val_prompts,
-        #    test_size=args.validsize / 100,
-        #    random_state=args.seed,
-        #    stratify=unique_prompts[unique_prompts['prompt'].isin(train_and_val_prompts)]['target']
-        #)
-        #train_prompts = set(train_prompts)
-        #val_prompts = set(val_prompts)
-        df_train, df_val = train_test_split(
-            df[df['prompt'].isin(train_and_val_prompts)],
-            test_size=args.validsize / 100,
-            random_state=args.seed,
-            stratify=df[df['prompt'].isin(train_and_val_prompts)]['target']
-        )
-
-        #df_train = df[df['prompt'].isin(train_prompts)]
-        #df_val = df[df['prompt'].isin(val_prompts)]
-        df_test = df[df['prompt'].isin(test_prompts)]
+        PrintUtils.start_stage('Splitting data into train, validation, and test sets', override_prev=True)
+        df_train, df_val, df_test = split_data(df, args.seed, args.testsize / 100.0, args.validsize / 100.0)
+        PrintUtils.print_extra(f'Train set size: {len(df_train)}')
+        PrintUtils.print_extra(f'Validation set size: {len(df_val)}')
+        PrintUtils.print_extra(f'Test set size: {len(df_test)}')
+        PrintUtils.end_stage()
 
         # Print the train, val, and test set sizes, and the number of unique prompts in each set by label, and count of prompts
         # in each set by label
@@ -257,12 +236,7 @@ def main():
         PrintUtils.print_extra(f'Model created: *{model.__class__.__name__}*')
     
         # Define loss and optimizer
-        if isinstance(model, BERTTimeSeriesClassifier) or isinstance(model, CombinedLSTMBERTClassifier): # Check instance type instead of string
-            criterion = nn.BCEWithLogitsLoss()
-            PrintUtils.print_extra("Using BCEWithLogitsLoss for BERT model.")
-        else:
-            criterion = nn.BCELoss()
-            PrintUtils.print_extra("Using BCELoss for non-BERT model.")
+        criterion = nn.BCEWithLogitsLoss()
         
         # Check if the model has the special parameter grouping method
         if hasattr(model, 'get_optimizer_params'):

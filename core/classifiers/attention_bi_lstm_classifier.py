@@ -189,7 +189,4 @@ class AttentionBiLSTMClassifier(BaseClassifier):
         # Pass through fully connected layers
         output = self.fc_layers(context_vector)
         
-        # Apply sigmoid for binary classification
-        output = torch.sigmoid(output)
-        
         return output
