@@ -357,10 +357,19 @@ class BERTTimeSeriesClassifier(BaseClassifier):
 
         # --- Pass through classification head ---
         logits = self.fc_layers(cls_output) # Shape: [batch_size, 1]
-        probs = torch.sigmoid(logits)       # Shape: [batch_size, 1]
         
-        return probs # Return shape [batch_size, 1]
+        return logits # Return shape [batch_size, 1]
     
+    def get_optimizer_params(self, lr):
+        # Differential learning rates
+        optimizer_grouped_parameters = [
+            {'params': self.bert_model.parameters(), 'lr': lr}, # Lower LR for BERT base
+            {'params': self.fc_layers.parameters(), 'lr': lr * 100} # 100x higher LR for classifier head
+        ]
+        # You might need to adjust the multiplier (e.g., 10, 50, 100, 200)
+        print(f"Using differential learning rates: Base={lr}, Head={lr*100}")
+        return optimizer_grouped_parameters
+
     # Note: calculate_boundaries static method remains unchanged
     @staticmethod
     def calculate_boundaries(df, num_buckets, norm):
