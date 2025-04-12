@@ -305,6 +305,7 @@ class BenchmarkRunner:
             # Split data with trial-specific seed
             PrintUtils.start_stage('Splitting data into train, validation, and test sets', override_prev=True)
             df_train, df_val, df_test = split_data(df, trial_seed, self.config.test_size / 100.0, self.config.valid_size / 100.0)
+            del df  # Free up memory
             PrintUtils.print_extra(f'Train set size: {len(df_train)}')
             PrintUtils.print_extra(f'Validation set size: {len(df_val)}')
             PrintUtils.print_extra(f'Test set size: {len(df_test)}')
@@ -476,7 +477,7 @@ class BenchmarkRunner:
                 )
                 
                 # Calculate and save metrics
-                metrics = calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df)
+                metrics = calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df_test)
                 metrics['CommonName'] = common_name
                 metrics['ChatBot'] = chatbot
                 metrics['Features'] = feature_mode.value
