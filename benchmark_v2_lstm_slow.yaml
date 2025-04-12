@@ -1,7 +1,7 @@
 # Example benchmark configuration
 
 # Benchmark config
-benchmark_name: bert_2_fast
+benchmark_name: lstm_2_slow
 sampling_rate: 1 # 100% of the data
 num_trials: 5 # Number of trials to run for each model
 data_path: data_v2
@@ -14,20 +14,22 @@ chatbots:
 
 # Model settings
 model:
-  class: BERTTimeSeriesClassifier
+  class: AttentionBiLSTMClassifier
   params:
-    fc_dims: [128, 64]
+    hidden_size: 128
+    num_layers: 2
     dropout_rate: 0.3
-    model_name: 'distilbert-base-uncased'
-    num_buckets: 50
-    interleave: false
+    embedding_dim: 32
+    fc_dims: [128, 64]
+    bidirectional: true
+    attention_dim: 64
 
 training:
   # Training parameters
   batch_size: 32
-  max_epochs: 25
-  learning_rate: 0.00002
-  patience: 10
+  max_epochs: 200
+  learning_rate: 0.0001
+  patience: 20
   test_size: 20
   valid_size: 5
   seed: 42

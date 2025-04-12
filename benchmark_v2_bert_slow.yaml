@@ -1,7 +1,7 @@
 # Example benchmark configuration
 
 # Benchmark config
-benchmark_name: bert_2_fast
+benchmark_name: bert_2_slow
 sampling_rate: 1 # 100% of the data
 num_trials: 5 # Number of trials to run for each model
 data_path: data_v2
@@ -25,8 +25,8 @@ model:
 training:
   # Training parameters
   batch_size: 32
-  max_epochs: 25
-  learning_rate: 0.00002
+  max_epochs: 70
+  learning_rate: 0.00001
   patience: 10
   test_size: 20
   valid_size: 5
