@@ -80,7 +80,7 @@ class Llama4ScoutGroq(ChatbotBase):
         """
 
         # Return common name
-        return 'llama-4-maverick-17b-128e-instruct (groq)'
+        return 'llama-4-scout-17b-16e-instruct (groq)'
 
     def match_tls_server_name(self, server_name):
         """
