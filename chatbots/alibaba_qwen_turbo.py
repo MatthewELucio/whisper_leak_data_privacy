@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 
 class QwenTurbo(ChatbotBase):
     """
-        Alibaba Qwen-Turbo-2024-11-01
+        Alibaba qwen-turbo
     """
 
     def __init__(self, remote_tls_port=443):
@@ -30,7 +30,7 @@ class QwenTurbo(ChatbotBase):
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
         self._client = OpenAI(
-            base_url=f'https://dashscope.aliyuncs.com/compatible-mode/v1',
+            base_url="https://dashscope-intl.aliyuncs.com/compatible-mode/v1",
             api_key=key,
             http_client=httpx.Client(transport=self._transport)
         )
@@ -45,7 +45,7 @@ class QwenTurbo(ChatbotBase):
         response = []
         stream = self._client.chat.completions.create(
             extra_body={},
-            model='Qwen-Turbo-2024-11-01',
+            model='qwen-turbo',
             messages=[ { 'role': 'user', 'content': prompt } ],
             stream=True,
             temperature=temperature
@@ -71,7 +71,7 @@ class QwenTurbo(ChatbotBase):
         """
 
         # Return common name
-        return 'Qwen-Turbo-2024-11-01'
+        return 'qwen-turbo'
 
     def match_tls_server_name(self, server_name):
         """
@@ -79,4 +79,4 @@ class QwenTurbo(ChatbotBase):
         """
 
         # Match
-        return 'dashscope.aliyuncs.com' in server_name
+        return 'dashscope-intl.aliyuncs.com' in server_name
