@@ -25,7 +25,7 @@ model:
 training:
   # Training parameters
   batch_size: 32
-  max_epochs: 1
+  max_epochs: 100
   learning_rate: 0.0002
   patience: 20
   test_size: 20
