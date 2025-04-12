@@ -1,15 +1,14 @@
 # Example benchmark configuration
 
 # Benchmark config
-benchmark_name: lstm_2_slow
-sampling_rate: 1 # 100% of the data
+benchmark_name: lstm_3_sweep
+sampling_rate: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.0]
 num_trials: 5 # Number of trials to run for each model
-data_path: data_v2
-oversampling_train_neg_to_pos: 1.0 # 1000:1 ratio of negatives to positives
+data_path: data_v3
 
 # Chatbots to benchmark with their common names
 chatbots:
-  - "*"
+  - AzureGPT4o
 
 # Model settings
 model:
@@ -26,8 +25,8 @@ model:
 training:
   # Training parameters
   batch_size: 32
-  max_epochs: 200
-  learning_rate: 0.0001
+  max_epochs: 1
+  learning_rate: 0.0002
   patience: 20
   test_size: 20
   valid_size: 5

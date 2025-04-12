@@ -90,7 +90,19 @@ class BenchmarkConfig:
                 print(f"Chatbots: {self.chatbots}")
             
             self.benchmark_name = self.config.get('benchmark_name', 'benchmark')
-            self.sampling_rate = self.config.get('sampling_rate', 1.0)
+
+            # Handle sampling_rate (single value or list)
+            sampling_rate_config = self.config.get('sampling_rate', 1.0)
+            if isinstance(sampling_rate_config, (float, int)):
+                self.sampling_rates = [float(sampling_rate_config)]
+            elif isinstance(sampling_rate_config, list):
+                self.sampling_rates = [float(rate) for rate in sampling_rate_config]
+            else:
+                raise ValueError("sampling_rate must be a float or a list of floats")
+            # Validate rates are between 0 and 1
+            if not all(0.0 < rate <= 1.0 for rate in self.sampling_rates):
+                 raise ValueError("All sampling_rates must be between 0.0 (exclusive) and 1.0 (inclusive)")
+            
             self.num_trials = self.config.get('num_trials', 1)
             self.data_path = self.config.get('data_path', 'data')
             self.oversampling_train_neg_to_pos = self.config.get('oversampling_train_neg_to_pos', None)
@@ -118,7 +130,7 @@ class BenchmarkConfig:
             PrintUtils.print_extra(f'Benchmark name: *{self.benchmark_name}*')
             PrintUtils.print_extra(f'Chatbots to benchmark: *{", ".join(self.chatbots)}*')
             PrintUtils.print_extra(f'Number of trials: *{self.num_trials}*')
-            PrintUtils.print_extra(f'Sampling rate: *{self.sampling_rate*100}%*')
+            PrintUtils.print_extra(f'Sampling rates: *{[f"{rate*100:.1f}%" for rate in self.sampling_rates]}*')
             
         except Exception as e:
             PrintUtils.end_stage(fail_message=f"Failed to load configuration: {str(e)}")
@@ -166,10 +178,20 @@ class BenchmarkRunner:
         # Check for existing results
         self.existing_results = {}
         if os.path.exists(self.results_file):
-            df = pd.read_csv(self.results_file)
-            for _, row in df.iterrows():
-                key = (row['CommonName'], row['ChatBot'], row['Features'], row['Trial'])
-                self.existing_results[key] = True
+            try:
+                df = pd.read_csv(self.results_file)
+                # Check if the 'Sampling Rate' column exists for backward compatibility
+                has_sampling_rate_col = 'Sampling Rate' in df.columns
+                for _, row in df.iterrows():
+                    # Use default 1.0 if column is missing
+                    sampling_rate = row['Sampling Rate'] if has_sampling_rate_col else 1.0
+                    key = (row['CommonName'], row['ChatBot'], row['Features'], row['Trial'], sampling_rate)
+                    self.existing_results[key] = True
+                if not has_sampling_rate_col:
+                     PrintUtils.print_extra("Loaded existing results CSV without 'Sampling Rate' column. Assuming 1.0 for old entries.")
+            except Exception as e:
+                PrintUtils.print_extra(f"Warning: Failed to load or parse existing results file '{self.results_file}'. Will proceed without skipping based on it. Error: {e}")
+                self.existing_results = {} # Reset if loading failed
     
     def get_self_dir(self):
         """
@@ -177,20 +199,22 @@ class BenchmarkRunner:
         """
         return os.path.dirname(os.path.abspath(__file__))
     
-    def should_process_chatbot_trial(self, chatbot, common_name, features, trial):
+    def should_process_chatbot_trial(self, chatbot, common_name, features, trial, sampling_rate):
         """
-        Determine if we should process this chatbot based on existing results
-        
+        Determine if we should process this chatbot trial for a specific sampling rate
+        based on existing results.
+
         Args:
             chatbot: Name of the chatbot to check
             common_name: Common name for the chatbot
             features: Feature mode (Both, Data Size Only, Time Only)
             trial: Trial number
-            
+            sampling_rate: The specific sampling rate for this run
+
         Returns:
-            bool: True if chatbot should be processed, False otherwise
+            bool: True if chatbot trial should be processed, False otherwise
         """
-        key = (common_name, chatbot, features, trial)
+        key = (common_name, chatbot, features, trial, sampling_rate)
         return key not in self.existing_results
     
     def run_benchmark(self):
@@ -218,35 +242,36 @@ class BenchmarkRunner:
         for trial in range(1, self.config.num_trials + 1):
             # Process each feature mode
             for feature_mode in FeatureMode:
-                # Process each chatbot
-                for chatbot in self.config.chatbots:
-                    PrintUtils.start_stage(f'Processing chatbot: *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial})')
-                    PrintUtils.end_stage()
-
-                    chatbot_dir = os.path.join(self.output_dir, chatbot)
-                    os.makedirs(chatbot_dir, exist_ok=True)
-                    
-                    trial_dir = os.path.join(chatbot_dir, f"{feature_mode.value}", f"trial_{trial}")
-                    os.makedirs(trial_dir, exist_ok=True)
-                    
-                    if not self.should_process_chatbot_trial(chatbot, chatbot, feature_mode.value, trial) and not self.reprocess_only:
-                        PrintUtils.start_stage(f'Skipping *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial}) as it already exists in results')
+                for current_sampling_rate in self.config.sampling_rates:
+                    # Process each chatbot
+                    for chatbot in self.config.chatbots:
+                        PrintUtils.start_stage(f'Processing chatbot: *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial}, sampling rate: {current_sampling_rate})', override_prev=True)
                         PrintUtils.end_stage()
-                        continue
-                    
-                    PrintUtils.start_stage(f'Processing chatbot: *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial})')
-                    
-                    # If reprocess_only, just calculate statistics without training
-                    try:
-                        if self.reprocess_only:
-                            self.reprocess_chatbot_statistics(chatbot, chatbot, trial_dir, prompts, feature_mode, trial)
-                        else:
-                            self.process_chatbot(chatbot, chatbot, trial_dir, prompts, feature_mode, trial)
-                    except Exception as e:
-                        PrintUtils.print_extra(f"Failed to process {chatbot} (feature mode: {feature_mode.value}, trial: {trial}): {str(e)}")
-                        continue
-                    
-                    PrintUtils.end_stage()
+
+                        chatbot_dir = os.path.join(self.output_dir, chatbot)
+                        os.makedirs(chatbot_dir, exist_ok=True)
+                        
+                        trial_dir = os.path.join(chatbot_dir, f"{feature_mode.value}", f"trial_{trial}")
+                        os.makedirs(trial_dir, exist_ok=True)
+                        
+                        if not self.should_process_chatbot_trial(chatbot, chatbot, feature_mode.value, trial, current_sampling_rate) and not self.reprocess_only:
+                            PrintUtils.start_stage(f'Skipping *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial}) as it already exists in results')
+                            PrintUtils.end_stage()
+                            continue
+                        
+                        PrintUtils.start_stage(f'Processing chatbot: *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial})')
+                        
+                        # If reprocess_only, just calculate statistics without training
+                        try:
+                            if self.reprocess_only:
+                                self.reprocess_chatbot_statistics(chatbot, chatbot, trial_dir, prompts, feature_mode, trial)
+                            else:
+                                self.process_chatbot(chatbot, chatbot, trial_dir, prompts, feature_mode, trial, current_sampling_rate)
+                        except Exception as e:
+                            PrintUtils.print_extra(f"Failed to process {chatbot} (feature mode: {feature_mode.value}, trial: {trial}): {str(e)}")
+                            continue
+                        
+                        PrintUtils.end_stage()
         
         # Save all results to CSV
         results_df = pd.DataFrame(self.results)
@@ -255,7 +280,7 @@ class BenchmarkRunner:
         
         PrintUtils.end_stage()
     
-    def process_chatbot(self, chatbot, common_name, output_dir, prompts, feature_mode, trial):
+    def process_chatbot(self, chatbot, common_name, output_dir, prompts, feature_mode, trial, sampling_rate):
         """
         Process a single chatbot - train model and evaluate performance
         
@@ -266,6 +291,7 @@ class BenchmarkRunner:
             prompts: Loaded prompts dictionary
             feature_mode: Which features to use (Both, Data Size Only, Time Only)
             trial: Trial number
+            sampling_rate: The sampling rate for this specific run
         """
         try:
             # Set trial-specific seed for reproducibility
@@ -274,7 +300,7 @@ class BenchmarkRunner:
             PrintUtils.print_extra(f'Using trial-specific seed: *{trial_seed}*')
             
             # Load dataset
-            df = self.load_chatbot_data(chatbot, prompts)
+            df = self.load_chatbot_data(chatbot, prompts, sampling_rate=1.0)
             
             # Split data with trial-specific seed
             PrintUtils.start_stage('Splitting data into train, validation, and test sets', override_prev=True)
@@ -283,6 +309,11 @@ class BenchmarkRunner:
             PrintUtils.print_extra(f'Validation set size: {len(df_val)}')
             PrintUtils.print_extra(f'Test set size: {len(df_test)}')
             PrintUtils.end_stage()
+
+            # Downsample the training set if needed
+            if sampling_rate < 1.0:
+                df_train = df_train.sample(frac=sampling_rate, random_state=trial_seed).reset_index(drop=True)
+                PrintUtils.print_extra(f'Downsampled training set size: {len(df_train)}')
 
             # Adjust based on feature mode
             if feature_mode == FeatureMode.DATA_SIZE_ONLY:
@@ -398,7 +429,11 @@ class BenchmarkRunner:
             os.makedirs(os.path.dirname(model_path), exist_ok=True)
             model.save(model_path)
 
-            for mode in ["standard", "oversampling"]:
+            modes = ["standard"]
+            if self.config.oversampling_eval_neg_to_pos:
+                modes.append("oversampling")
+
+            for mode in modes:
                 # Create visualizations
                 PrintUtils.start_stage(f'Creating visualizations for {chatbot} {mode}')
                 if mode == "standard":
@@ -447,12 +482,21 @@ class BenchmarkRunner:
                 metrics['Features'] = feature_mode.value
                 metrics['Trial'] = trial
                 metrics['Mode'] = mode
-                
+                metrics['Sampling Rate'] = sampling_rate
+
                 # Save metrics to results
                 self.results.append(metrics)
 
                 # Save metrics to CSV
                 results_df = pd.DataFrame(self.results)
+
+                # Move common columns to the front
+                common_cols = ['CommonName', 'ChatBot', 'Features', 'Trial', 'Mode', 'Sampling Rate']
+                all_cols = results_df.columns.tolist()
+                other_cols = [col for col in all_cols if col not in common_cols]
+                new_col_order = common_cols + other_cols
+                results_df = results_df[new_col_order]
+
                 results_df.to_csv(self.results_file, index=False)
                 PrintUtils.print_extra(f'Results saved to {self.results_file}')
                 
@@ -569,18 +613,19 @@ class BenchmarkRunner:
             f.write(f'Accuracy:           {accuracy:.4f}\n')
             f.write(f'F1 Score:           {f1:.4f}\n')
     
-    def load_chatbot_data(self, chatbot, prompts):
+    def load_chatbot_data(self, chatbot, prompts, sampling_rate):
         """
         Load data for a specific chatbot
         
         Args:
             chatbot: Name of the chatbot to load data for
             prompts: Dictionary of prompts
+            sampling_rate: The fraction of data files to load (0.0 to 1.0)
             
         Returns:
             DataFrame: Loaded and processed data
         """
-        PrintUtils.start_stage(f'Loading data for {chatbot}', override_prev=True)
+        PrintUtils.start_stage(f'Loading data for {chatbot}, sampling rate {sampling_rate*100:.1f}%', override_prev=True)
         
         training_set_dir = os.path.join(self.get_self_dir(), self.config.data_path)
         files = [
@@ -592,9 +637,9 @@ class BenchmarkRunner:
         if not files:
             raise ValueError(f"No training data found for chatbot {chatbot}")
 
-        if self.config.sampling_rate < 1.0:
+        if sampling_rate < 1.0:
             # Sample files based on sampling rate
-            sample_size = max(int(len(files) * self.config.sampling_rate), 1)
+            sample_size = max(int(len(files) * sampling_rate), 1)
             files = np.random.choice(files, size=sample_size, replace=False).tolist()
 
         data = []
