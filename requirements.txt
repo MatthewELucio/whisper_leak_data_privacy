@@ -15,7 +15,8 @@ python-dotenv
 boto3
 dotenv
 anthropic
-pyyaml
+PyYAML
 mistralai
 transformers
 peft
+groq
