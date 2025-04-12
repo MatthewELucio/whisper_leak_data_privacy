@@ -30,6 +30,7 @@ def parse_arguments():
     parser.add_argument('-p', '--prompts', help='The prompts JSON file path', required=True)
     parser.add_argument('-t', '--tlsport', type=int, help='The remote TLS port', default=443)
     parser.add_argument('-o', '--output', type=str, help='The output folder for the data gathering', default="data_v2")
+    parser.add_argument('-T', '--temperature', type=float, help='Override temperature value to use for the chatbot.')
     args = parser.parse_args()
     assert args.tlsport > 0 and args.tlsport <= 0xFFFF, Exception(f'Invalid remote TLS port: {args.tlsport}')
     PrintUtils.end_stage()
@@ -90,7 +91,7 @@ def main():
         # Build the training set
         training_set_path = os.path.join(get_self_dir(), args.output)
         collector = TrainingSetCollector(prompts['positive']['prompts'], prompts['positive']['repeat'], prompts['negative']['prompts'], prompts['negative']['repeat'], training_set_path, args.tlsport)
-        training_set = collector.get_training_set(chatbot_class)
+        training_set = collector.get_training_set(chatbot_class, args.temperature)
 
     # Handle exceptions
     except Exception as ex:

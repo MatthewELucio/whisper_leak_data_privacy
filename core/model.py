@@ -240,7 +240,7 @@ class TrainingSetCollector(object):
         self._out_dir = out_directory_base
         assert OsUtils.mkdir(self._out_dir), Exception(f'Could not get or make directory "{self._out_dir}"')
 
-    def get_datapoint(self, prompt, index, chatbot_name):
+    def get_datapoint(self, prompt, index, chatbot_name, additional_name=None):
         """
             Gets a datapoint for the given prompt, an index and the chatbot name.
         """
@@ -248,13 +248,15 @@ class TrainingSetCollector(object):
         # Get the file paths
         chatbot_name_normalized = chatbot_name.replace(' ', '_')
         base_path = os.path.join(self._out_dir, f'{hashlib.sha1(prompt.encode()).hexdigest()}_{index}_{chatbot_name_normalized}')
+        if additional_name is not None:
+            base_path += f'_{additional_name}'
         pcap_path = f'{base_path}.pcap'
         seq_path = f'{base_path}.seq'
 
         # Return the datapoint
         return Datapoint(pcap_path, seq_path)
 
-    def get_training_set(self, chatbot_class):
+    def get_training_set(self, chatbot_class, temperature_override=None):
         """
             Gets or generates the training set for the given chatbot class.
         """
@@ -308,7 +310,11 @@ class TrainingSetCollector(object):
                 training_set[prompt] = []
 
             # Fetch the datapoint for the prompt
-            datapoint = self.get_datapoint(prompt, index, chatbot_class.__name__)
+            datapoint = self.get_datapoint(
+                prompt, index, chatbot_class.__name__,
+                additional_name="t" + str(temperature_override).replace(".","") if temperature_override is not None else None
+            )
+            
             if datapoint.exists():
                 skip_count += 1
                 training_set[prompt].append(datapoint)
@@ -319,7 +325,11 @@ class TrainingSetCollector(object):
 
             # Create a chatbot object to make sure we get fresh connections
             chatbot_obj = chatbot_class(self._remote_tls_port)
-            temperature = chatbot_obj.get_temperature()
+            if temperature_override is not None:
+                temperature = temperature_override
+            else:
+                temperature = chatbot_obj.get_temperature()
+            
             try:
                 response, local_port = chatbot_obj.send_prompt(pertubated_prompt, temperature)
                 assert isinstance(response, list), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
