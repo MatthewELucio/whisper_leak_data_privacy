@@ -5,7 +5,6 @@ benchmark_name: lstm_2_fast
 sampling_rate: 1 # 100% of the data
 num_trials: 5 # Number of trials to run for each model
 data_path: data_v2
-oversampling_train_neg_to_pos: 1.0 # 1000:1 ratio of negatives to positives
 
 # Chatbots to benchmark with their common names
 chatbots:
