@@ -57,7 +57,7 @@ class OsUtils(object):
 
         # Best-effort creation
         try:
-            os.mkdir(path)
+            os.makedirs(path, exist_ok=True)
         except Exception:
             pass
 
