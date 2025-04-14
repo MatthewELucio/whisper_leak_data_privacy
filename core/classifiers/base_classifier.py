@@ -93,7 +93,7 @@ class BaseClassifier(nn.Module):
         module = importlib.import_module(module_name) # Needed to avoid circular import
         ClassifierClass = getattr(module, class_name)
 
-        classifier = ClassifierClass(normalization_params=normalization_params, **args)
+        classifier = ClassifierClass(norm=normalization_params, **args)
 
         classifier.to(device)
         classifier.load_state_dict(torch.load(filepath, map_location=device))
