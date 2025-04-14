@@ -121,7 +121,7 @@ class BaseClassifier(nn.Module):
             
             # Create a dataset
             dataset = Loader(input_data)
-            dataset.normalize(self.norm)
+            dataset.apply_normalization(self.norm)
             loader = torch.utils.data.DataLoader(dataset, batch_size=32, shuffle=False)
            
             # Get all probabilities
@@ -130,7 +130,9 @@ class BaseClassifier(nn.Module):
                 for X, _ in loader:
                     X = X.to(device)
                     output = self(X)
-                    all_probs.extend(output.cpu().numpy().flatten())
+                    # Convert to probabilities
+                    output = torch.sigmoid(output).cpu().numpy()
+                    all_probs.extend(output.flatten())
             
             # Get the prediction based on the probabilities and return them
             all_probs = np.array(all_probs)
@@ -144,7 +146,12 @@ class BaseClassifier(nn.Module):
             time_diffs, data_lengths = input_data
             if self.norm is None:
                 raise Exception('Normalization parameters must be provided for raw input')
-            time_mean, time_std, size_mean, size_std, max_len = self.norm
+            #time_mean, time_std, size_mean, size_std, max_len = self.norm
+            time_mean = self.norm['time_mean']
+            time_std = self.norm['time_std']
+            size_mean = self.norm['size_mean']
+            size_std = self.norm['size_std']
+            max_len = self.norm['max_len']
 
             normalized_time = []
             for val in time_diffs[:max_len]:  # Trim to max_len
@@ -167,7 +174,7 @@ class BaseClassifier(nn.Module):
             # Run inference
             with torch.no_grad():
                 output = self(tensor_input)
-                prob = output.cpu().numpy().flatten()[0]
+                prob = torch.sigmoid(output).cpu().numpy().flatten()[0]
                 prediction = 1 if prob > 0.5 else 0
             
             # Return the probability and prediction

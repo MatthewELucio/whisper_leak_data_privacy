@@ -62,7 +62,7 @@ def parse_arguments():
     parser = ThrowingArgparse()
     parser.add_argument('-c', '--chatbot', help='The chatbot.', required=True)
     parser.add_argument('-m', '--modeltype', help='The model type (CNN or LSTM).', default='CNN')
-    parser.add_argument('-p', '--prompts', help='The prompts JSON file path', default='prompts.json')
+    parser.add_argument('-p', '--prompts', help='The prompts JSON file path', default='./prompts/standard/prompts.json')
     parser.add_argument('-s', '--seed', type=int, help='The random seed', default=42)
     parser.add_argument('-b', '--batchsize', type=int, help='The batch size', default=32)
     parser.add_argument('-e', '--epochs', type=int, help='The number of epochs', default=200)
@@ -72,7 +72,8 @@ def parse_arguments():
     parser.add_argument('-t', '--testsize', type=int, help='The test size in percentage', default=20)
     parser.add_argument('-v', '--validsize', type=int, help='The validation size in percentage taken from train set', default=5)
     parser.add_argument('-ds', '--downsample', type=float, help='Downsample the dataset', default=1.0)
-    parser.add_argument('-i', '--input_folder', type=str, help='Input folder for the data', default='data')
+    parser.add_argument('-i', '--input_folder', type=str, help='Input folder for the data', default='data_v2')
+    parser.add_argument('-C', '--csv_output_only', action='store_true', help='Only output train/valid/test CSV files without training models', default=False)
     args = parser.parse_args()
     assert args.seed >= 0, Exception(f'Invalid random seed: {args.seed}')
     assert args.batchsize > 0, Exception(f'Invalid batch size: {args.batchsize}')
@@ -198,6 +199,81 @@ def main():
 
         PrintUtils.end_stage()
         PrintUtils.print_extra(f'Max sequence length being used for model (95th percentile): *{train_dataset.max_len}*')
+
+        if args.csv_output_only:
+            # Save the train, validation, and test sets to CSV files (original format)
+            train_csv_path = os.path.join(results_dir, 'train_original_format.csv')
+            val_csv_path = os.path.join(results_dir, 'val_original_format.csv')
+            test_csv_path = os.path.join(results_dir, 'test_original_format.csv')
+
+            train_dataset.df.to_csv(train_csv_path, index=False)
+            val_dataset.df.to_csv(val_csv_path, index=False)
+            test_dataset.df.to_csv(test_csv_path, index=False)
+
+            PrintUtils.print_extra(f'Original format train set saved to *{os.path.basename(train_csv_path)}*')
+            PrintUtils.print_extra(f'Original format validation set saved to *{os.path.basename(val_csv_path)}*')
+            PrintUtils.print_extra(f'Original format test set saved to *{os.path.basename(test_csv_path)}*')
+
+            # Get the max_len determined by the training set
+            max_len = train_dataset.max_len
+            PrintUtils.print_extra(f'Using max_len = {max_len} for expanding columns.')
+
+            # Define a helper function to expand and save
+            def expand_and_save_df(df, max_len, base_filename, results_dir, is_normalized):
+                """Expands sequence columns and saves the DataFrame to CSV."""
+                # Ensure sequence columns are lists and handle padding/truncation
+                # Using 0 for padding, assuming it's appropriate. Use np.nan if preferred.
+                padding_value = 0.0 # Use float for consistency, especially after normalization
+
+                # Process 'data_lengths'
+                data_lengths_processed = df['data_lengths'].apply(
+                    lambda x: list(x[:max_len]) + [padding_value] * (max_len - len(x)) if len(x) < max_len else list(x[:max_len])
+                ).tolist()
+                data_lengths_cols = [f'data_length_{i}' for i in range(max_len)]
+                df_data_lengths = pd.DataFrame(data_lengths_processed, columns=data_lengths_cols, index=df.index)
+
+                # Process 'time_diffs'
+                time_diffs_processed = df['time_diffs'].apply(
+                    lambda x: list(x[:max_len]) + [padding_value] * (max_len - len(x)) if len(x) < max_len else list(x[:max_len])
+                ).tolist()
+                time_diffs_cols = [f'time_diff_{i}' for i in range(max_len)]
+                df_time_diffs = pd.DataFrame(time_diffs_processed, columns=time_diffs_cols, index=df.index)
+
+                # Combine target and expanded columns
+                # Ensure 'target' column exists and select it
+                if 'target' not in df.columns:
+                        PrintUtils.print_warning(f"Warning: 'target' column not found in DataFrame for {base_filename}. Skipping target column.")
+                        expanded_df = pd.concat([df_data_lengths, df_time_diffs], axis=1)
+                else:
+                    expanded_df = pd.concat([df[['target']], df_data_lengths, df_time_diffs], axis=1)
+
+
+                # Construct filename
+                norm_suffix = 'normalized' if is_normalized else 'non_normalized'
+                filename = f"{base_filename}_expanded_{norm_suffix}.csv"
+                filepath = os.path.join(results_dir, filename)
+
+                # Save to CSV
+                expanded_df.to_csv(filepath, index=False)
+                PrintUtils.print_extra(f'Saved expanded data to *{filename}*')
+
+            # --- Process and save Normalized data ---
+            PrintUtils.print_extra("Processing normalized data...")
+            # Note: train_dataset.df, val_dataset.df, test_dataset.df contain the *normalized* data
+            # because apply_normalization was called on them.
+            expand_and_save_df(train_dataset.df, max_len, 'train', results_dir, is_normalized=True)
+            expand_and_save_df(val_dataset.df, max_len, 'val', results_dir, is_normalized=True)
+            expand_and_save_df(test_dataset.df, max_len, 'test', results_dir, is_normalized=True)
+
+            # --- Process and save Non-Normalized data ---
+            PrintUtils.print_extra("Processing non-normalized data...")
+            # Note: df_train, df_val, df_test contain the *original* non-normalized data
+            # before the Loader applied normalization.
+            expand_and_save_df(df_train, max_len, 'train', results_dir, is_normalized=False)
+            expand_and_save_df(df_val, max_len, 'val', results_dir, is_normalized=False)
+            expand_and_save_df(df_test, max_len, 'test', results_dir, is_normalized=False)
+
+            return # Exit after saving CSVs as requested by the flag
     
         # Choose model architecture (CNN or LSTM)
         PrintUtils.start_stage('Instantiating model')
@@ -302,7 +378,7 @@ def main():
         # Get predictions on test set for evaluation
         PrintUtils.end_stage()
         PrintUtils.start_stage('Inferencing on test dataset and generating metrics')
-        test_scores, test_labels = get_prediction_scores(model, test_loader, device)
+        test_scores, test_labels, epoch_loss = get_prediction_scores(model, test_loader, device)
         test_preds = (test_scores > 0.5).astype(int)
         
         # Plot training curves
@@ -350,7 +426,6 @@ def main():
         
         # Test the inference function
         PrintUtils.start_stage('Testing inference function')
-
         model = BaseClassifier.load(model_path, device)
 
         sample_row = df_test.iloc[0]
@@ -361,7 +436,6 @@ def main():
             (time_diffs, data_lengths), 
             device
         )
-        
         PrintUtils.print_extra(f'Inference result (tuple input): prob=*{prob:.4f}*, pred=*{pred}*')
         
         # Test with DataFrame input
