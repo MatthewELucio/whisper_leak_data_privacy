@@ -66,10 +66,7 @@ class LocalPortSaverTransport(httpx.HTTPTransport):
         assert len(self._pool.connections) > 0, Exception('Expecting at least one connection')
         local_port = self._pool.connections[-1]._connection._network_stream._sock.getsockname()[1]
         if local_port > 0 and local_port <= 0xFFFF:
-            if hasattr(self, 'local_port'):
-                assert self.local_port == local_port, Exception(f'Local port already indicated previously: {self.local_port} vs. {local_port}')
-            else:
-                self.local_port = local_port
+            self.local_port = local_port
 
         # Return the response
         return response
