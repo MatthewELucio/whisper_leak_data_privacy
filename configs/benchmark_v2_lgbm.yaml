@@ -14,15 +14,8 @@ chatbots:
 model:
   class: LightGBMClassifier
   params:
-    n_estimators: 1500
+    n_estimators: 5000
     learning_rate: 0.02
 
 training:
-  # Training parameters. Not applicable to LightGBMClassifier.
-  batch_size: 32
-  max_epochs: 200
-  learning_rate: 0.0001
-  patience: 20
-  test_size: 20
-  valid_size: 5
-  seed: 42
+  patience: 40
