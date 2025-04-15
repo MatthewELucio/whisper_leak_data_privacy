@@ -22,14 +22,13 @@ def set_plot_style():
     plt.rcParams['legend.fontsize'] = 12
 
 
-def plot_training_curves(train_losses, val_losses, test_losses, train_accs, val_accs, test_accs, best_epoch, output_file='training_curves.png'):
+def plot_training_curves(train_losses, val_losses, train_accs, val_accs, best_epoch, output_file='training_curves.png'):
     """Plot training and validation loss/accuracy curves."""
     plt.figure(figsize=(12, 5))
 
     plt.subplot(1, 2, 1)
     plt.plot(range(1, len(train_losses) + 1), train_losses, 'b-', label='Training Loss')
     plt.plot(range(1, len(val_losses) + 1), val_losses, 'r-', label='Validation Loss')
-    plt.plot(range(1, len(test_losses) + 1), test_losses, 'g-', label='Test Loss')
     plt.axvline(x=best_epoch, color='g', linestyle='--', label='Best Model')
     plt.xlabel('Epochs')
     plt.ylabel('Loss')
@@ -40,7 +39,6 @@ def plot_training_curves(train_losses, val_losses, test_losses, train_accs, val_
     plt.subplot(1, 2, 2)
     plt.plot(range(1, len(train_accs) + 1), train_accs, 'b-', label='Training Accuracy')
     plt.plot(range(1, len(val_accs) + 1), val_accs, 'r-', label='Validation Accuracy')
-    plt.plot(range(1, len(test_accs) + 1), test_accs, 'g-', label='Test Accuracy')
     plt.axvline(x=best_epoch, color='g', linestyle='--', label='Best Model')
     plt.xlabel('Epochs')
     plt.ylabel('Accuracy')
@@ -58,10 +56,8 @@ def plot_training_curves(train_losses, val_losses, test_losses, train_accs, val_
         'Epoch': range(1, len(train_losses) + 1),
         'Train Loss': train_losses,
         'Validation Loss': val_losses,
-        'Test Loss': test_losses,
         'Train Accuracy': train_accs,
         'Validation Accuracy': val_accs,
-        'Test Accuracy': test_losses,
     }
     training_df = pd.DataFrame(training_data)
     output_curve = os.path.splitext(output_file)[0] + '.csv'
@@ -339,14 +335,7 @@ def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
         avg_data_size = np.mean(all_data_sizes)
         stddev_data_size = np.std(all_data_sizes)
         
-        # Calculate token statistics
-        median_tokens = np.median(df['response_tokens'].apply(len))
-        avg_tokens = np.mean(df['response_tokens'].apply(len))
-        stddev_tokens = np.std(df['response_tokens'].apply(len))
-        all_token_strings = np.concatenate(df['response_tokens'].values)  # Flatten all token strings
-        token_lengths = [len(token) for token in all_token_strings]       # Get lengths of every token
-        mean_length_of_tokens = np.mean(token_lengths)
-        median_length_of_tokens = np.median(token_lengths)
+        
 
         # Calculate Precision @ 10% recall, 20% recall, etc.
         precision_at_recall = {}
@@ -381,12 +370,27 @@ def calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df):
             'Median Network Event Size': median_data_size,
             'Avg Network Event Size': avg_data_size,
             'StdDev Network Event Size': stddev_data_size,
-            'Median Count of Response Chunks': median_tokens,
-            'Avg Count of Response Chunks': avg_tokens,
-            'StdDev Count of Response Chunks': stddev_tokens,
-            'Mean Length of Response Chunks': mean_length_of_tokens,
-            'Median Length of Response Chunks': median_length_of_tokens,
+            #'Median Count of Response Chunks': median_tokens,
+            #'Avg Count of Response Chunks': avg_tokens,
+            #'StdDev Count of Response Chunks': stddev_tokens,
+            #'Mean Length of Response Chunks': mean_length_of_tokens,
+            #'Median Length of Response Chunks': median_length_of_tokens,
         }
+
+        # Calculate token statistics
+        if "response_tokens" in df.columns:
+            median_tokens = np.median(df['response_tokens'].apply(len))
+            avg_tokens = np.mean(df['response_tokens'].apply(len))
+            stddev_tokens = np.std(df['response_tokens'].apply(len))
+            all_token_strings = np.concatenate(df['response_tokens'].values)  # Flatten all token strings
+            token_lengths = [len(token) for token in all_token_strings]       # Get lengths of every token
+            mean_length_of_tokens = np.mean(token_lengths)
+            median_length_of_tokens = np.median(token_lengths)
+            metrics['Median Count of Response Chunks'] = median_tokens
+            metrics['Avg Count of Response Chunks'] = avg_tokens
+            metrics['StdDev Count of Response Chunks'] = stddev_tokens
+            metrics['Mean Length of Response Chunks'] = mean_length_of_tokens
+            metrics['Median Length of Response Chunks'] = median_length_of_tokens
 
         # Add precision at different recall levels to metrics
         for r, p in precision_at_recall.items():

@@ -1,13 +1,268 @@
+import json
+import os
 import time
 import pandas as pd
 from sklearn.model_selection import train_test_split
 import torch
-from core.utils import PrintUtils # Assuming this import works in your environment
+from core.classifiers.lightgbm_classifier import LightGBMClassifier
+from core.utils import PrintUtils, PromptUtils # Assuming this import works in your environment
 import numpy as np
 from sklearn.metrics import accuracy_score
 import random
 import sys
 from collections import defaultdict
+import torch
+import torch.nn as nn
+import torch.optim as optim
+from torch.utils.data import DataLoader
+
+class ModelTrainer:
+    """
+    Handles model training, evaluation, and prediction across different model types.
+    Provides a unified interface for working with various model architectures.
+    """
+    def __init__(self, model, config, device):
+        """
+        Initialize the model trainer.
+        
+        Args:
+            model: The model to train
+            config: The benchmark configuration
+            device: The computation device (CPU/GPU)
+        """
+        self.model = model
+        self.config = config
+        self.device = device
+        self.history = None
+        self.criterion = nn.BCEWithLogitsLoss() if isinstance(model, nn.Module) else None
+        self.early_stopping = None
+        
+    def fit(self, train_data, val_data, save_path=None, batch_size=32):
+        """
+        Train the model with the provided data.
+        
+        Args:
+            train_data: Training data (Loader)
+            val_data: Validation data (Loader)
+            save_path: Path to save the best model
+            
+        Returns:
+            dict: Training history
+        """
+        if isinstance(self.model, LightGBMClassifier):
+            # Handle LightGBM models (using DataFrames)
+            self.model.fit(
+                train_df=train_data.df,
+                val_df=val_data.df,
+                patience=self.config.patience
+            )
+            # Create basic history for consistency
+            self.history = {
+                'best_epoch': getattr(self.model.model, 'best_iteration_', 0),
+                'train_losses': [],
+                'val_losses': [],
+                'train_accs': [],
+                'val_accs': [],
+            }
+        
+        elif isinstance(self.model, nn.Module):
+            # Create a loader
+            train_loader = DataLoader(train_data, batch_size, shuffle=True)
+            val_loader = DataLoader(val_data, batch_size, shuffle=False)
+
+            # Handle PyTorch models (using DataLoaders)
+            self.model = self.model.to(self.device)
+            
+            # Setup optimizer (handle model-specific param groups)
+            if hasattr(self.model, 'get_optimizer_params'):
+                optimizer_params = self.model.get_optimizer_params(self.config.learning_rate)
+                PrintUtils.print_extra(f"Using model-specific parameter groups for optimizer")
+                optimizer = optim.Adam(optimizer_params)
+            else:
+                optimizer = optim.Adam(self.model.parameters(), lr=self.config.learning_rate)
+            
+            # Setup early stopping
+            early_stopping_path = save_path.replace('.pth', '_best.pt') if save_path else 'best_model.pt'
+            self.early_stopping = EarlyStopping(
+                patience=self.config.patience,
+                verbose=True,
+                path=early_stopping_path
+            )
+            
+            # Training loop
+            self.history = self._train_pytorch_model(train_loader, val_loader, optimizer)
+        
+        else:
+            raise TypeError(f"Model type {type(self.model)} is not supported for training.")
+        
+        # Save the final model if path provided
+        if save_path:
+            self.model.save(save_path)
+            
+        return self.history
+    
+    def _train_pytorch_model(self, train_loader, val_loader, optimizer):
+        """
+        Inner training loop for PyTorch models.
+        
+        Args:
+            train_loader: Training data loader
+            val_loader: Validation data loader
+            optimizer: The optimizer to use
+            
+        Returns:
+            dict: Training history
+        """
+        train_losses, val_losses = [], []
+        train_accs, val_accs = [], []
+        best_epoch = 0
+        
+        for epoch in range(self.config.max_epochs):
+            # Training phase
+            self.model.train()
+            train_loss, train_acc = 0.0, 0.0
+            steps = 0
+            
+            for batch_idx, (X, y) in enumerate(train_loader):
+                X, y = X.to(self.device), y.to(self.device).float().unsqueeze(1)
+                
+                optimizer.zero_grad()
+                outputs = self.model(X)
+                loss = self.criterion(outputs, y)
+                loss.backward()
+                optimizer.step()
+                
+                # Update metrics
+                train_loss += loss.item()
+                with torch.no_grad():
+                    preds = (torch.sigmoid(outputs) > 0.5).float()
+                    train_acc += (preds == y).sum().item() / y.size(0)
+                
+                steps += 1
+                
+                # Update progress
+                progress = (batch_idx + 1) / len(train_loader)
+                PrintUtils.start_stage(
+                    f'Training (epoch {epoch+1}/{self.config.max_epochs}): {progress*100:.1f}%', 
+                    override_prev=True
+                )
+            
+            # Calculate epoch metrics
+            train_loss /= steps
+            train_acc /= steps
+            
+            # Validation phase
+            self.model.eval()
+            val_loss, val_acc = 0.0, 0.0
+            steps = 0
+            
+            with torch.no_grad():
+                for X, y in val_loader:
+                    X, y = X.to(self.device), y.to(self.device).float().unsqueeze(1)
+                    outputs = self.model(X)
+                    loss = self.criterion(outputs, y)
+                    val_loss += loss.item()
+                    
+                    preds = (torch.sigmoid(outputs) > 0.5).float()
+                    val_acc += (preds == y).sum().item() / y.size(0)
+                    
+                    steps += 1
+            
+            val_loss /= steps
+            val_acc /= steps
+            
+            # Store history
+            train_losses.append(train_loss)
+            val_losses.append(val_loss)
+            train_accs.append(train_acc)
+            val_accs.append(val_acc)
+            
+            # Early stopping check
+            self.early_stopping(val_loss, self.model)
+            if self.early_stopping.early_stop:
+                PrintUtils.print_extra(f"Early stopping triggered at epoch {epoch+1}")
+                best_epoch = epoch + 1 - self.early_stopping.counter
+                break
+            
+            # Log progress
+            PrintUtils.print_extra(
+                f"Epoch {epoch+1}/{self.config.max_epochs} - "
+                f"Train loss: {train_loss:.4f}, acc: {train_acc:.4f} - "
+                f"Val loss: {val_loss:.4f}, acc: {val_acc:.4f}"
+            )
+            
+            # Update best epoch if no early stopping
+            if epoch == self.config.max_epochs - 1:
+                best_epoch = self.early_stopping.counter
+        
+        # Load best model
+        if self.early_stopping and self.early_stopping.path:
+            self.model.load_state_dict(torch.load(self.early_stopping.path))
+        
+        return {
+            'train_losses': train_losses,
+            'val_losses': val_losses,
+            'train_accs': train_accs,
+            'val_accs': val_accs,
+            'best_epoch': best_epoch
+        }
+    
+    def predict(self, data, batch_size=32):
+        """
+        Make predictions with the trained model.
+        
+        Args:
+            data: Test data (DataLoader or DataFrame)
+            
+        Returns:
+            tuple: (scores, labels, loss)
+        """
+        if isinstance(self.model, LightGBMClassifier):
+            # For LightGBM, data should be a DataFrame
+            data = data.df
+            
+            # Get predictions
+            try:
+                scores = self.model.predict_proba(data)
+                labels = data['target'].values
+                return scores, labels, None  # Loss not available for LightGBM
+            except Exception as e:
+                PrintUtils.print_extra(f"Error during LightGBM prediction: {e}")
+                return None, None, None
+        
+        elif isinstance(self.model, nn.Module):
+            # For PyTorch models, data should be a DataLoader
+            data = DataLoader(data, batch_size, shuffle=False)
+            
+            self.model.eval()
+            all_scores = []
+            all_labels = []
+            total_loss = 0.0
+            
+            with torch.no_grad():
+                for X, y in data:
+                    X = X.to(self.device)
+                    y_device = y.to(self.device).float().unsqueeze(1)
+                    outputs = self.model(X)
+                    
+                    if self.criterion:
+                        loss = self.criterion(outputs, y_device)
+                        total_loss += loss.item() * X.size(0)
+                    
+                    scores = torch.sigmoid(outputs)
+                    all_scores.extend(scores.cpu().numpy().flatten())
+                    all_labels.extend(y.numpy().flatten())
+            
+            all_scores = np.array(all_scores)
+            all_labels = np.array(all_labels)
+            
+            epoch_loss = total_loss / len(data.dataset) if self.criterion and len(data.dataset) > 0 else 0
+            return all_scores, all_labels, epoch_loss
+        
+        else:
+            raise TypeError(f"Model type {type(self.model)} is not supported for prediction.")
+
+
 
 class EarlyStopping(object):
     """
@@ -152,7 +407,7 @@ def train_epoch(model, dataloader, criterion, optimizer, device, epoch, max_epoc
     return epoch_loss, epoch_acc
 
 
-def get_prediction_scores(model, dataloader, device, criterion=None, return_probs=True, neg_to_pos_ratio=None):
+def get_prediction_scores(model, dataloader_or_df, device, criterion=None, return_probs=True, neg_to_pos_ratio=None):
     """
         Get raw prediction scores (logits or probabilities), true labels and losses from dataloader.
 
@@ -174,72 +429,58 @@ def get_prediction_scores(model, dataloader, device, criterion=None, return_prob
     all_scores = []
     all_labels = []
     total_loss = 0.0
+
+    if isinstance(model, LightGBMClassifier):
+        PrintUtils.print_extra("Getting predictions using LightGBMClassifier predict_proba")
+        if dataloader_or_df is None:
+             PrintUtils.print_extra("Error: dataloader_or_df is required for LightGBMClassifier prediction.")
+             return None, None, None
+        if 'target' not in dataloader_or_df.columns:
+            PrintUtils.print_extra("Error: dataloader_or_df must contain 'target' column for evaluation.")
+            return None, None, None
+
+        try:
+            # Note: LightGBM predict_proba uses the internal _prepare_features
+            # which expects the original 'time_diffs', 'data_lengths' columns.
+            # Ensure dataloader_or_df has these columns in the correct format.
+             all_scores = model.predict_proba(dataloader_or_df)
+             all_labels = dataloader_or_df['target'].values
+             loss = np.nan # LightGBM doesn't compute loss in the same way during predict
+             PrintUtils.print_extra(f"Generated {len(all_scores)} predictions from LightGBM.")
+             return np.array(all_scores), np.array(all_labels), loss
+        except Exception as e:
+             PrintUtils.print_extra(f"Error during LightGBM prediction: {e}")
+             import traceback
+             traceback.print_exc()
+             return None, None, None
     
-    with torch.no_grad():
-        for X, y in dataloader:
-            X = X.to(device)
-            y_device = y.to(device).float().unsqueeze(1) if criterion else y  # Only move to device if needed
-            outputs = model(X)  # Raw model output (likely logits)
+    else:
+        with torch.no_grad():
+            for X, y in dataloader_or_df:
+                X = X.to(device)
+                y_device = y.to(device).float().unsqueeze(1) if criterion else y  # Only move to device if needed
+                outputs = model(X)  # Raw model output (likely logits)
 
-            # Calculate loss if criterion is provided
-            if criterion:
-                loss = criterion(outputs, y_device)
-                total_loss += loss.item() * X.size(0)
-            
-            if return_probs:
-                # Assume outputs are logits if return_probs is True, apply sigmoid
-                scores = torch.sigmoid(outputs) 
-            else:
-                # Return raw logits
-                scores = outputs 
-
-            all_scores.extend(scores.cpu().numpy().flatten())
-            all_labels.extend(y.numpy().flatten())  # y comes from dataloader, usually on CPU already
-    
-    all_scores = np.array(all_scores)
-    all_labels = np.array(all_labels)
-
-    # If neg_to_pos_ratio is provided, adjust the arrays
-    if neg_to_pos_ratio is not None:
-        # Get masks for positive and negative samples
-        pos_mask = all_labels == 1
-        neg_mask = all_labels == 0
-        
-        # Count current positives and negatives
-        n_pos = np.sum(pos_mask)
-        n_neg = np.sum(neg_mask)
-        
-        if n_pos > 0:  # Only proceed if we have positive samples
-            # Calculate target number of negatives
-            n_neg_desired = int(round(neg_to_pos_ratio * n_pos))
-            
-            if n_neg_desired > n_neg:  # Only oversample if we need more negatives
-                # Calculate how many times to duplicate the negatives
-                n_samples_to_add = n_neg_desired - n_neg
+                # Calculate loss if criterion is provided
+                if criterion:
+                    loss = criterion(outputs, y_device)
+                    total_loss += loss.item() * X.size(0)
                 
-                if n_neg > 0:  # Only proceed if we have some negatives to duplicate
-                    # Get indices of negative samples
-                    neg_indices = np.where(neg_mask)[0]
-                    
-                    # Randomly select indices to duplicate (with replacement if needed)
-                    indices_to_duplicate = np.random.choice(neg_indices, size=n_samples_to_add, replace=True)
-                    
-                    # Extract the scores and labels for the selected indices
-                    additional_scores = all_scores[indices_to_duplicate]
-                    additional_labels = all_labels[indices_to_duplicate]  # Will all be 0
-                    
-                    # Concatenate with original arrays
-                    all_scores = np.concatenate([all_scores, additional_scores])
-                    all_labels = np.concatenate([all_labels, additional_labels])
+                if return_probs:
+                    # Assume outputs are logits if return_probs is True, apply sigmoid
+                    scores = torch.sigmoid(outputs) 
+                else:
+                    # Return raw logits
+                    scores = outputs 
 
-        # Create a permutation index array
-        perm = np.random.permutation(len(all_scores))
-        # Apply the same permutation to both arrays
-        all_scores = all_scores[perm]
-        all_labels = all_labels[perm]
+                all_scores.extend(scores.cpu().numpy().flatten())
+                all_labels.extend(y.numpy().flatten())  # y comes from dataloader, usually on CPU already
+        
+        all_scores = np.array(all_scores)
+        all_labels = np.array(all_labels)
 
-    epoch_loss = total_loss / len(dataloader.dataset) if criterion and len(dataloader.dataset) > 0 else 0
-    return all_scores, all_labels, epoch_loss
+        epoch_loss = total_loss / len(dataloader_or_df.dataset) if criterion and len(dataloader_or_df.dataset) > 0 else 0
+        return all_scores, all_labels, epoch_loss
 
 
 def eval_epoch(model, dataloader, criterion, device, neg_to_pos_ratio=None):
@@ -343,79 +584,60 @@ def calculate_sampling_details(df, neg_to_pos):
     return n_pos, n_neg, n_neg_desired, current_ratio
 
 
-def apply_neg_sampling(df, neg_to_pos, random_state=None):
+def load_chatbot_data(chatbot_name, input_folder, prompts_file, downsample_rate=1.0):
     """
-    Samples the negative class (target=0) in a DataFrame to achieve a
-    specified ratio of negative to positive samples.
-
-    Uses `calculate_sampling_details` to determine the target negative count.
-    It will then either:
-    1. Oversample the negative class (sample with replacement).
-    2. Undersample the negative class (sample without replacement).
-    3. Keep the negative class as is.
-
-    The positive class (target=1) remains unchanged. The final DataFrame is shuffled.
-
+    Load and preprocess data for the specified chatbot.
+    
     Args:
-        df (pd.DataFrame): The input DataFrame. Must contain a 'target' column.
-        neg_to_pos (float): The desired ratio of negative to positive samples.
-        random_state (int, optional): Controls randomness for reproducibility. Defaults to None.
-
+        chatbot_name: Name of the chatbot
+        input_folder: Folder containing data files
+        prompts_file: Path to prompts JSON file
+        downsample_rate: Fraction of files to load (0.0-1.0)
+        
     Returns:
-        pd.DataFrame: A new DataFrame with the negative class sampled to meet
-                      the ratio and the rows shuffled.
-
-    Raises:
-        ValueError: Inherited from `calculate_sampling_details` or if oversampling
-                    is required but the negative class is initially empty.
+        DataFrame: Processed data
     """
-    # --- Calculate counts and target ---
-    # Input validation for df['target'] and neg_to_pos happens inside here
-    n_pos, n_neg, n_neg_desired, current_ratio = calculate_sampling_details(df, neg_to_pos)
+    PrintUtils.start_stage('Loading sequences data')
+    training_set_dir = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        "..",
+        "..",
+        input_folder
+    )
+    files = [
+        os.path.join(training_set_dir, i) 
+        for i in os.listdir(training_set_dir) 
+        if i.lower().endswith(f'_{chatbot_name.lower()}.seq')
+    ]
+    
+    if not files:
+        raise ValueError(f'Did not find training set files for chatbot {chatbot_name}')
+    
+    if downsample_rate < 1.0:
+        # Downsample the files to a fraction of the original size
+        files = files[:int(len(files) * downsample_rate)]
 
-    # --- Handle edge case: No positive samples ---
-    if n_pos == 0:
-        print(f"Warning: No positive samples found (N={n_pos}). Cannot apply ratio {neg_to_pos}. Returning original data shuffled.")
-        return df.sample(frac=1, random_state=random_state).reset_index(drop=True)
+    data = []
+    for file_index, file_path in enumerate(files):
+        with open(file_path, 'r') as fp:
+            data.append(json.load(fp))
+        
+        if file_index % 10 == 0:
+            percentage = (file_index * 100) // len(files)
+            PrintUtils.start_stage(
+                f'Loading sequences data ({file_index} / {len(files)} = {percentage}%)', 
+                override_prev=True
+            )
+    
+    df = pd.DataFrame(data)
+    PrintUtils.end_stage()
 
-    print(f"Initial counts: Pos={n_pos}, Neg={n_neg}. Current Ratio={current_ratio:.2f}. Target Ratio={neg_to_pos:.2f} -> Target Neg Count={n_neg_desired}")
-
-    # --- Separate classes (needed for sampling) ---
-    pos_df = df[df['target'] == 1]
-    neg_df = df[df['target'] == 0]
-
-    # --- Perform Sampling (Over, Under, or No Change) ---
-    if n_neg_desired > n_neg:
-        # --- Oversample ---
-        if n_neg == 0:
-            raise ValueError(f"Cannot oversample negative class to {n_neg_desired} as it is initially empty (n_neg=0).")
-
-        n_samples_to_add = n_neg_desired - n_neg
-        neg_samples_added = neg_df.sample(n=n_samples_to_add, replace=True, random_state=random_state)
-        neg_sampled_df = pd.concat([neg_df, neg_samples_added], ignore_index=True)
-        print(f"Oversampling negative class: Adding {n_samples_to_add} samples.")
-
-    elif n_neg_desired < n_neg:
-        # --- Undersample ---
-        neg_sampled_df = neg_df.sample(n=n_neg_desired, replace=False, random_state=random_state)
-        print(f"Undersampling negative class: Selecting {n_neg_desired} samples from {n_neg}.")
-
-    else:
-        # --- No Change Needed ---
-        print(f"Negative class already has the desired count ({n_neg_desired}). No sampling needed.")
-        neg_sampled_df = neg_df # Use original negative samples
-
-    # --- Combine positive and sampled negative classes ---
-    result_df = pd.concat([pos_df, neg_sampled_df], ignore_index=True)
-
-    # --- Shuffle the final DataFrame ---
-    shuffled_df = result_df.sample(frac=1, random_state=random_state).reset_index(drop=True)
-
-    # --- Verification (optional) ---
-    final_n_pos = len(shuffled_df[shuffled_df['target'] == 1])
-    final_n_neg = len(shuffled_df[shuffled_df['target'] == 0])
-    final_ratio = final_n_neg / final_n_pos if final_n_pos > 0 else np.inf if final_n_neg > 0 else np.nan
-    # print(f"Final counts: Pos={final_n_pos}, Neg={final_n_neg}. Final Ratio: {final_ratio:.2f}")
-
-
-    return shuffled_df
+    # Join to prompts to add target column
+    prompts = PromptUtils.read_prompts(prompts_file)
+    df['target'] = df['prompt'].apply(lambda x: 1 if x in prompts['positive']['prompts'] else 0)
+    
+    total_prompts = len(prompts['positive']['prompts']) + len(prompts['negative']['prompts'])
+    PrintUtils.print_extra(f'Loaded {total_prompts} prompts')
+    PrintUtils.print_extra(f'Loaded {len(df)} samples for {chatbot_name}')
+    
+    return df

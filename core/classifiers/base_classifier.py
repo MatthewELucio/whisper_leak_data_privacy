@@ -1,6 +1,7 @@
 import importlib
 import json
 import math
+from core.classifiers.lightgbm_classifier import LightGBMClassifier
 from core.classifiers.loader import Loader
 from core.utils import PrintUtils
 
@@ -87,17 +88,21 @@ class BaseClassifier(nn.Module):
             module_name = "core.classifiers.cnn_classifier"
         elif class_name == "LSTMTransformerClassifier":
             module_name = "core.classifiers.lstm_transformer_classifier"
+        elif class_name == "LightGBMClassifier":
+            module_name = "core.classifiers.lightgbm_classifier"
         else:
             raise Exception(f'Unknown classifier type: {class_name}')
         
         module = importlib.import_module(module_name) # Needed to avoid circular import
         ClassifierClass = getattr(module, class_name)
 
-        classifier = ClassifierClass(norm=normalization_params, **args)
-
-        classifier.to(device)
-        classifier.load_state_dict(torch.load(filepath, map_location=device))
-        classifier.eval()
+        if class_name == "LightGBMClassifier":
+            classifier = LightGBMClassifier.load(filepath)
+        else:
+            classifier = ClassifierClass(norm=normalization_params, **args)
+            classifier.to(device)
+            classifier.load_state_dict(torch.load(filepath, map_location=device))
+            classifier.eval()
         PrintUtils.print_extra(f'Classifier loaded from file *{os.path.basename(filepath)}*')
         return classifier
     

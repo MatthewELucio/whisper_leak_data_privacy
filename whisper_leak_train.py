@@ -4,11 +4,11 @@ from core.classifiers.cnn_classifier import CNNClassifier
 from core.classifiers.attention_bi_lstm_classifier import AttentionBiLSTMClassifier
 from core.classifiers.bert_time_series_classifier import BERTTimeSeriesClassifier
 from core.classifiers.combined_lstm_bert_classifier import CombinedLSTMBERTClassifier
-from core.classifiers.utils import EarlyStopping, split_data
-from core.classifiers.utils import set_seed
-from core.classifiers.utils import train_epoch
-from core.classifiers.utils import eval_epoch
-from core.classifiers.utils import get_prediction_scores
+from core.classifiers.lightgbm_classifier import LightGBMClassifier
+from core.classifiers.utils import (
+    EarlyStopping, ModelTrainer, load_chatbot_data,
+    set_seed, split_data
+)
 from core.classifiers.loader import Loader
 
 from core.classifiers.visualization import calculate_metrics, set_plot_style
@@ -30,30 +30,23 @@ import os
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from torch.utils.data import DataLoader
-from torch.utils.data import Subset
-from sklearn.model_selection import train_test_split
 import numpy as np
 import pandas as pd
-
-def get_self_dir():
-    """
-        Get the self directory.
-    """
- 
-    # Return the self directory
-    return os.path.dirname(os.path.abspath(__file__))
  
 def parse_arguments():
     """
-        Parse arguments.
+    Parse command line arguments.
+    
+    Returns:
+        Namespace: Parsed arguments
     """
-
     # Load all chatbots
     PrintUtils.start_stage('Loading chatbots')
-    chatbots = ChatbotUtils.load_chatbots(os.path.join(get_self_dir(), 'chatbots'))
+    chatbots = ChatbotUtils.load_chatbots(
+        os.path.join(os.path.dirname(os.path.abspath(__file__)), 'chatbots')
+    )
     assert len(chatbots) > 0, Exception('Could not load any chatbots')
-    chatbot_names = ', '.join([ f'*{chatbot.__name__}*' for chatbot in chatbots.values() ])
+    chatbot_names = ', '.join([f'*{chatbot.__name__}*' for chatbot in chatbots.values()])
     PrintUtils.print_extra(f'Loaded chatbots: {chatbot_names}')
     PrintUtils.end_stage()
 
@@ -61,7 +54,7 @@ def parse_arguments():
     PrintUtils.start_stage('Parsing command-line arguments')
     parser = ThrowingArgparse()
     parser.add_argument('-c', '--chatbot', help='The chatbot.', required=True)
-    parser.add_argument('-m', '--modeltype', help='The model type (CNN or LSTM).', default='CNN')
+    parser.add_argument('-m', '--modeltype', help='The model type (CNN, LSTM, LSTM_BERT, or BERT).', default='CNN')
     parser.add_argument('-p', '--prompts', help='The prompts JSON file path', default='./prompts/standard/prompts.json')
     parser.add_argument('-s', '--seed', type=int, help='The random seed', default=42)
     parser.add_argument('-b', '--batchsize', type=int, help='The batch size', default=32)
@@ -75,34 +68,166 @@ def parse_arguments():
     parser.add_argument('-i', '--input_folder', type=str, help='Input folder for the data', default='data_v2')
     parser.add_argument('-C', '--csv_output_only', action='store_true', help='Only output train/valid/test CSV files without training models', default=False)
     args = parser.parse_args()
+    
+    # Validate arguments
     assert args.seed >= 0, Exception(f'Invalid random seed: {args.seed}')
     assert args.batchsize > 0, Exception(f'Invalid batch size: {args.batchsize}')
     assert args.epochs > 0, Exception(f'Invalid number of epochs: {args.epochs}')
     assert args.patience > 0, Exception(f'Invalid patience value: {args.patience}')
     assert args.kernelwidth > 0, Exception(f'Invalid kernel width: {args.kernelwidth}')
-    assert args.learningrate > 0 and args.learningrate < 1, Exception(f'Invalid learning rate: {args.learningrate}')
-    assert args.testsize > 0 and args.testsize < 100, Exception(f'Invalid test size percentage: {args.testsize}')
-    assert args.validsize > 0 and args.validsize < 100, Exception(f'Invalid validation size percentage: {args.validsize}')
+    assert 0 < args.learningrate < 1, Exception(f'Invalid learning rate: {args.learningrate}')
+    assert 0 < args.testsize < 100, Exception(f'Invalid test size percentage: {args.testsize}')
+    assert 0 < args.validsize < 100, Exception(f'Invalid validation size percentage: {args.validsize}')
     assert len(args.chatbot) > 0, Exception('Chatbot name cannot be empty')
     PrintUtils.end_stage()
 
-    # Return the parsed arguments
     return args
+
+def process_data_for_csv_export(data_dir, df_train, df_val, df_test, train_dataset, val_dataset, test_dataset):
+    """
+    Process and save data in CSV format for both normalized and non-normalized versions.
+    
+    Args:
+        data_dir: Directory to save CSVs to
+        df_train, df_val, df_test: Original, non-normalized dataframes
+        train_dataset, val_dataset, test_dataset: Normalized dataset objects
+    """
+    # Save the train, validation, and test sets to CSV files (original format)
+    train_csv_path = os.path.join(data_dir, 'train_original_format.csv')
+    val_csv_path = os.path.join(data_dir, 'val_original_format.csv')
+    test_csv_path = os.path.join(data_dir, 'test_original_format.csv')
+
+    train_dataset.df.to_csv(train_csv_path, index=False)
+    val_dataset.df.to_csv(val_csv_path, index=False)
+    test_dataset.df.to_csv(test_csv_path, index=False)
+
+    PrintUtils.print_extra(f'Original format train set saved to *{os.path.basename(train_csv_path)}*')
+    PrintUtils.print_extra(f'Original format validation set saved to *{os.path.basename(val_csv_path)}*')
+    PrintUtils.print_extra(f'Original format test set saved to *{os.path.basename(test_csv_path)}*')
+
+    # Get the max_len determined by the training set
+    max_len = train_dataset.max_len
+    PrintUtils.print_extra(f'Using max_len = {max_len} for expanding columns.')
+
+    # Process and save normalized data
+    PrintUtils.print_extra("Processing normalized data...")
+    expand_and_save_df(train_dataset.df, max_len, 'train', data_dir, True)
+    expand_and_save_df(val_dataset.df, max_len, 'val', data_dir, True)
+    expand_and_save_df(test_dataset.df, max_len, 'test', data_dir, True)
+
+    # Process and save non-normalized data
+    PrintUtils.print_extra("Processing non-normalized data...")
+    expand_and_save_df(df_train, max_len, 'train', data_dir, False)
+    expand_and_save_df(df_val, max_len, 'val', data_dir, False)
+    expand_and_save_df(df_test, max_len, 'test', data_dir, False)
+
+def expand_and_save_df(df, max_len, base_filename, results_dir, is_normalized):
+    """
+    Expands sequence columns and saves the DataFrame to CSV.
+    
+    Args:
+        df: DataFrame to process
+        max_len: Maximum sequence length
+        base_filename: Base name for output file
+        results_dir: Directory to save to
+        is_normalized: Whether the data is normalized
+    """
+    # Padding value (use 0.0 for consistency, especially after normalization)
+    padding_value = 0.0
+
+    # Process 'data_lengths'
+    data_lengths_processed = df['data_lengths'].apply(
+        lambda x: list(x[:max_len]) + [padding_value] * (max_len - len(x)) if len(x) < max_len else list(x[:max_len])
+    ).tolist()
+    data_lengths_cols = [f'data_length_{i}' for i in range(max_len)]
+    df_data_lengths = pd.DataFrame(data_lengths_processed, columns=data_lengths_cols, index=df.index)
+
+    # Process 'time_diffs'
+    time_diffs_processed = df['time_diffs'].apply(
+        lambda x: list(x[:max_len]) + [padding_value] * (max_len - len(x)) if len(x) < max_len else list(x[:max_len])
+    ).tolist()
+    time_diffs_cols = [f'time_diff_{i}' for i in range(max_len)]
+    df_time_diffs = pd.DataFrame(time_diffs_processed, columns=time_diffs_cols, index=df.index)
+
+    # Combine target and expanded columns
+    if 'target' not in df.columns:
+        PrintUtils.print_extra(f"Warning: 'target' column not found in DataFrame for {base_filename}. Skipping target column.")
+        expanded_df = pd.concat([df_data_lengths, df_time_diffs], axis=1)
+    else:
+        expanded_df = pd.concat([df[['target']], df_data_lengths, df_time_diffs], axis=1)
+
+    # Construct filename and save
+    norm_suffix = 'normalized' if is_normalized else 'non_normalized'
+    filename = f"{base_filename}_expanded_{norm_suffix}.csv"
+    filepath = os.path.join(results_dir, filename)
+    expanded_df.to_csv(filepath, index=False)
+    PrintUtils.print_extra(f'Saved expanded data to *{filename}*')
+
+def create_model(model_type, norm, kernel_width=3, df_train=None):
+    """
+    Create and return the specified model type with given parameters.
+    
+    Args:
+        model_type: The type of model to create (CNN, LSTM, LSTM_BERT, BERT)
+        norm: Normalization parameters
+        kernel_width: Kernel width for CNN models
+        df_train: Training dataframe (required for BERT models)
+        
+    Returns:
+        model: The created model
+        model_path: Path where the model should be saved
+    """
+    models_dir = os.path.join(
+        os.path.dirname(os.path.abspath(__file__)),
+        'models'
+    )
+    
+    model_type = model_type.upper()
+    if model_type == 'CNN':
+        model = CNNClassifier(norm, kernel_width)
+        model_path = os.path.join(models_dir, 'cnn_binary_classifier.pth')
+    elif model_type == 'LSTM':
+        model = AttentionBiLSTMClassifier(norm)
+        model_path = os.path.join(models_dir, 'lstm_binary_classifier.pth')
+    elif model_type == 'LSTM_BERT':
+        model = CombinedLSTMBERTClassifier(norm)
+        model_path = os.path.join(models_dir, 'lstm_bert_binary_classifier.pth')
+    elif model_type == 'LGBM':
+        model = LightGBMClassifier(norm)
+        model_path = os.path.join(models_dir, 'lightgbm_binary_classifier.pth')
+    elif model_type == "BERT":
+        # Calculate the token boundary parameters
+        (time_boundaries_norm, len_boundaries_norm) = BERTTimeSeriesClassifier.calculate_boundaries(
+            df_train,
+            num_buckets=50,
+            norm=norm
+        )
+
+        model = BERTTimeSeriesClassifier(
+            norm,
+            time_boundaries_norm,
+            len_boundaries_norm,
+            num_buckets=50,
+        )
+        model_path = os.path.join(models_dir, 'bert_binary_classifier.pth')
+    else:
+        raise ValueError(f'Unsupported model type: {model_type}')
+    
+    return model, model_path
 
 def main():
     """
-        Main routine.
+    Main routine.
     """
-
-    # Catch-all
+    # Catch-all for clean error handling
     is_user_cancelled = False
     last_error = None
+    
     try:
-
         # Print logo
         PrintUtils.print_logo()
 
-        # Parsing arguments
+        # Parse arguments
         args = parse_arguments()
 
         # Setup
@@ -111,60 +236,37 @@ def main():
         
         # Create directories
         PrintUtils.start_stage('Making directories')
-        models_dir = os.path.join(get_self_dir(), 'models')
-        assert OsUtils.mkdir(models_dir), Exception(f'Could not get or make directory "{models_dir}"')
-        results_dir = os.path.join(get_self_dir(), 'results')
-        assert OsUtils.mkdir(results_dir), Exception(f'Could not get or make directory "{results_dir}"')
+        models_dir = os.path.join(
+            os.path.dirname(os.path.abspath(__file__)),
+            'models'
+        )
+        results_dir = os.path.join(
+            os.path.dirname(os.path.abspath(__file__)),
+            'results'
+        )
+        
+        OsUtils.mkdir(models_dir)
+        OsUtils.mkdir(results_dir)
         PrintUtils.end_stage()
    
-        # Either use GPU or CPU
+        # Set device
         PrintUtils.start_stage('Setting device')
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         PrintUtils.end_stage()
         PrintUtils.print_extra(f'Using device: *{device}*')
 
-        # Load the data from the specified input folder
-        PrintUtils.start_stage('Loading sequences data')
-        training_set_dir = os.path.join(get_self_dir(), args.input_folder)
-        files = [ os.path.join(training_set_dir, i) for i in os.listdir(training_set_dir) if i.lower().endswith(f'_{args.chatbot.lower()}.seq') ]
-        assert len(files) > 0, Exception(f'Did not find training set files for chatbot {args.chatbot}')
-        data = []
-        file_index = 0
+        # Load data
+        df = load_chatbot_data(args.chatbot, args.input_folder, args.prompts, args.downsample)
 
-        if args.downsample < 1.0:
-            # Downsample the files to a fraction of the original size
-            files = files[:int(len(files) * args.downsample)]
-
-        for file_index in range(len(files)):
-            with open(files[file_index], 'r') as fp:
-                data.append(json.load(fp))
-            percentage = (file_index * 100) // len(files)
-            if file_index % 10 == 0:
-                PrintUtils.start_stage(f'Loading sequences data ({file_index} / {len(files)} = {percentage}%)', override_prev=True)
-        df = pd.DataFrame(data)
-
-        PrintUtils.end_stage()
-
-        # Join to prompts to add target column
-        prompts = PromptUtils.read_prompts(args.prompts)
-        df['target'] = df['prompt'].apply(lambda x: 1 if x in prompts['positive']['prompts'] else 0)
-        PrintUtils.end_stage()
-        total_prompts = len(prompts['positive']['prompts']) + len(prompts['negative']['prompts'])
-        PrintUtils.print_extra(f'Loaded {total_prompts} prompts')
-
-        # Split into train and test sets and hold out a percentage of unique 'prompts' values for test set
-        PrintUtils.start_stage('Splitting data into train, validation, and test sets', override_prev=True)
+        # Split data
+        PrintUtils.start_stage('Splitting data into train, validation, and test sets')
         df_train, df_val, df_test = split_data(df, args.seed, args.testsize / 100.0, args.validsize / 100.0)
         PrintUtils.print_extra(f'Train set size: {len(df_train)}')
         PrintUtils.print_extra(f'Validation set size: {len(df_val)}')
         PrintUtils.print_extra(f'Test set size: {len(df_test)}')
         PrintUtils.end_stage()
 
-        # Print the train, val, and test set sizes, and the number of unique prompts in each set by label, and count of prompts
-        # in each set by label
-        PrintUtils.print_extra(f'Train set size: {len(df_train)}')
-        PrintUtils.print_extra(f'Validation set size: {len(df_val)}')
-        PrintUtils.print_extra(f'Test set size: {len(df_test)}')
+        # Print detailed statistics about the data
         PrintUtils.print_extra(f'Unique prompts in train set: {len(df_train["prompt"].unique())}')
         PrintUtils.print_extra(f'Unique prompts in validation set: {len(df_val["prompt"].unique())}')
         PrintUtils.print_extra(f'Unique prompts in test set: {len(df_test["prompt"].unique())}')
@@ -174,13 +276,9 @@ def main():
         PrintUtils.print_extra(f'Count of prompts in train set by label: {df_train.groupby("target")["prompt"].count().to_dict()}')
         PrintUtils.print_extra(f'Count of prompts in validation set by label: {df_val.groupby("target")["prompt"].count().to_dict()}')
         PrintUtils.print_extra(f'Count of prompts in test set by label: {df_test.groupby("target")["prompt"].count().to_dict()}')
-
-        # Calculate the average length of the sequences in each set
         PrintUtils.print_extra(f'Average sequence length in train set: {df_train["data_lengths"].apply(len).mean()}')
         PrintUtils.print_extra(f'Average sequence length in validation set: {df_val["data_lengths"].apply(len).mean()}')
         PrintUtils.print_extra(f'Average sequence length in test set: {df_test["data_lengths"].apply(len).mean()}')
-
-        PrintUtils.end_stage()
 
         # Prepare data
         PrintUtils.start_stage('Preparing data')
@@ -193,230 +291,121 @@ def main():
         val_dataset.apply_normalization(norm)
         test_dataset.apply_normalization(norm)
 
-        train_loader = DataLoader(train_dataset, batch_size=args.batchsize, shuffle=True)
-        val_loader = DataLoader(val_dataset, batch_size=args.batchsize, shuffle=False)
-        test_loader = DataLoader(test_dataset, batch_size=args.batchsize, shuffle=False)
-
         PrintUtils.end_stage()
+        
         PrintUtils.print_extra(f'Max sequence length being used for model (95th percentile): *{train_dataset.max_len}*')
 
+        # If only CSV export is requested, do that and exit
         if args.csv_output_only:
-            # Save the train, validation, and test sets to CSV files (original format)
-            train_csv_path = os.path.join(results_dir, 'train_original_format.csv')
-            val_csv_path = os.path.join(results_dir, 'val_original_format.csv')
-            test_csv_path = os.path.join(results_dir, 'test_original_format.csv')
-
-            train_dataset.df.to_csv(train_csv_path, index=False)
-            val_dataset.df.to_csv(val_csv_path, index=False)
-            test_dataset.df.to_csv(test_csv_path, index=False)
-
-            PrintUtils.print_extra(f'Original format train set saved to *{os.path.basename(train_csv_path)}*')
-            PrintUtils.print_extra(f'Original format validation set saved to *{os.path.basename(val_csv_path)}*')
-            PrintUtils.print_extra(f'Original format test set saved to *{os.path.basename(test_csv_path)}*')
-
-            # Get the max_len determined by the training set
-            max_len = train_dataset.max_len
-            PrintUtils.print_extra(f'Using max_len = {max_len} for expanding columns.')
-
-            # Define a helper function to expand and save
-            def expand_and_save_df(df, max_len, base_filename, results_dir, is_normalized):
-                """Expands sequence columns and saves the DataFrame to CSV."""
-                # Ensure sequence columns are lists and handle padding/truncation
-                # Using 0 for padding, assuming it's appropriate. Use np.nan if preferred.
-                padding_value = 0.0 # Use float for consistency, especially after normalization
-
-                # Process 'data_lengths'
-                data_lengths_processed = df['data_lengths'].apply(
-                    lambda x: list(x[:max_len]) + [padding_value] * (max_len - len(x)) if len(x) < max_len else list(x[:max_len])
-                ).tolist()
-                data_lengths_cols = [f'data_length_{i}' for i in range(max_len)]
-                df_data_lengths = pd.DataFrame(data_lengths_processed, columns=data_lengths_cols, index=df.index)
-
-                # Process 'time_diffs'
-                time_diffs_processed = df['time_diffs'].apply(
-                    lambda x: list(x[:max_len]) + [padding_value] * (max_len - len(x)) if len(x) < max_len else list(x[:max_len])
-                ).tolist()
-                time_diffs_cols = [f'time_diff_{i}' for i in range(max_len)]
-                df_time_diffs = pd.DataFrame(time_diffs_processed, columns=time_diffs_cols, index=df.index)
-
-                # Combine target and expanded columns
-                # Ensure 'target' column exists and select it
-                if 'target' not in df.columns:
-                        PrintUtils.print_warning(f"Warning: 'target' column not found in DataFrame for {base_filename}. Skipping target column.")
-                        expanded_df = pd.concat([df_data_lengths, df_time_diffs], axis=1)
-                else:
-                    expanded_df = pd.concat([df[['target']], df_data_lengths, df_time_diffs], axis=1)
-
-
-                # Construct filename
-                norm_suffix = 'normalized' if is_normalized else 'non_normalized'
-                filename = f"{base_filename}_expanded_{norm_suffix}.csv"
-                filepath = os.path.join(results_dir, filename)
-
-                # Save to CSV
-                expanded_df.to_csv(filepath, index=False)
-                PrintUtils.print_extra(f'Saved expanded data to *{filename}*')
-
-            # --- Process and save Normalized data ---
-            PrintUtils.print_extra("Processing normalized data...")
-            # Note: train_dataset.df, val_dataset.df, test_dataset.df contain the *normalized* data
-            # because apply_normalization was called on them.
-            expand_and_save_df(train_dataset.df, max_len, 'train', results_dir, is_normalized=True)
-            expand_and_save_df(val_dataset.df, max_len, 'val', results_dir, is_normalized=True)
-            expand_and_save_df(test_dataset.df, max_len, 'test', results_dir, is_normalized=True)
-
-            # --- Process and save Non-Normalized data ---
-            PrintUtils.print_extra("Processing non-normalized data...")
-            # Note: df_train, df_val, df_test contain the *original* non-normalized data
-            # before the Loader applied normalization.
-            expand_and_save_df(df_train, max_len, 'train', results_dir, is_normalized=False)
-            expand_and_save_df(df_val, max_len, 'val', results_dir, is_normalized=False)
-            expand_and_save_df(df_test, max_len, 'test', results_dir, is_normalized=False)
-
-            return # Exit after saving CSVs as requested by the flag
-    
-        # Choose model architecture (CNN or LSTM)
-        PrintUtils.start_stage('Instantiating model')
-        model_type = args.modeltype.upper()
-        if model_type == 'CNN':
-            model = CNNClassifier(norm, args.kernelwidth).to(device)
-            model_path = os.path.join(models_dir, 'cnn_binary_classifier.pth')
-        elif model_type == 'LSTM':
-            model = AttentionBiLSTMClassifier(
-                norm
-            ).to(device)
-            model_path = os.path.join(models_dir, 'lstm_binary_classifier.pth')
-        elif model_type == 'LSTM_BERT':
-            model = CombinedLSTMBERTClassifier(
-                norm
-            ).to(device)
-            model_path = os.path.join(models_dir, 'lstm_bert_binary_classifier.pth')
-        elif model_type == "BERT":
-            # Calculate the token boundary parameters
-            (time_boundaries_norm, len_boundaries_norm) = BERTTimeSeriesClassifier.calculate_boundaries(
-                df_train,
-                num_buckets=50,
-                norm=norm
+            process_data_for_csv_export(
+                results_dir, 
+                df_train, df_val, df_test, 
+                train_dataset, val_dataset, test_dataset
             )
-
-            model = BERTTimeSeriesClassifier(
-                norm,
-                time_boundaries_norm,
-                len_boundaries_norm,
-                num_buckets=50,
-                #model_name='distilroberta-base'
-            ).to(device)
-            model_path = os.path.join(models_dir, 'bert_binary_classifier.pth')
-        else:
-            raise Exception(f'Unsupported model type: {args.modeltype}')
-        PrintUtils.print_extra(f'Model created: *{model.__class__.__name__}*')
+            return
     
-        # Define loss and optimizer
-        criterion = nn.BCEWithLogitsLoss()
-        
-        # Check if the model has the special parameter grouping method
-        if hasattr(model, 'get_optimizer_params'):
-            optimizer_params = model.get_optimizer_params(args.learningrate)
-            PrintUtils.print_extra(f"Using model-specific parameter groups for optimizer")
-            optimizer = optim.Adam(optimizer_params)
-        else:
-            # Fallback to regular optimizer for other models
-            optimizer = optim.Adam(model.parameters(), lr=args.learningrate)
-        
-        
-        # Initialize early stopping
-        early_stopping = EarlyStopping(
-            patience=args.patience, 
-            verbose=True, 
-            path=os.path.join(models_dir, 'checkpoint.pt')
+        # Create model
+        PrintUtils.start_stage('Instantiating model')
+        model, model_path = create_model(
+            args.modeltype, 
+            norm, 
+            args.kernelwidth, 
+            df_train
         )
+        
+        PrintUtils.print_extra(f'Model created: *{model.__class__.__name__}*')
         PrintUtils.end_stage()
         
-        # Training loop
-        train_losses, val_losses, test_losses = [], [], []
-        train_accs, val_accs, test_accs = [], [], []
-        best_epoch = 0
-        PrintUtils.start_stage('Training model')
-        for epoch in range(args.epochs):
-
-            # Log
-            PrintUtils.start_stage(f'Training (epoch {epoch+1} / {args.epochs})', override_prev=True)
-            
-            # Train and validate
-            train_loss, train_acc = train_epoch(model, train_loader, criterion, optimizer, device, epoch, args.epochs)
-            val_loss, val_acc = eval_epoch(model, val_loader, criterion, device)
-            test_loss, test_acc = eval_epoch(model, test_loader, criterion, device)
-            
-            # Store metrics
-            train_losses.append(train_loss)
-            val_losses.append(val_loss)
-            test_losses.append(test_loss)
-            train_accs.append(train_acc)
-            val_accs.append(val_acc)
-            test_accs.append(test_acc)
-            PrintUtils.start_stage(f'Training (epoch {epoch+1} / {args.epochs}): t/v/tst loss: {train_loss:.4f}/{val_loss:.4f}/{test_loss:.4f}, t/v/tst acc: {train_acc:.4f}/{val_acc:.4f}/{test_acc:.4f}', override_prev=True)
-            PrintUtils.end_stage()
-            
-            # Early stopping check
-            early_stopping(val_loss, model)
-            if early_stopping.early_stop:
-                PrintUtils.print_extra(f'Training (epoch {epoch+1} / {args.epochs}): early stopping triggered')
-                best_epoch = epoch + 1 - args.patience
-                break
-            best_epoch = epoch + 1
-            
+        # Configure training parameters
+        config = type('Config', (), {
+            'max_epochs': args.epochs,
+            'learning_rate': args.learningrate,
+            'patience': args.patience,
+            'batch_size': args.batchsize
+        })
+        
+        # Create trainer and train model
+        model_trainer = ModelTrainer(model, config, device)
+        checkpoint_path = os.path.join(models_dir, 'checkpoint.pt')
+        
+        history = model_trainer.fit(
+            train_dataset, 
+            val_dataset,
+            checkpoint_path,
+            args.batchsize
+        )
+        
+        best_epoch = history.get('best_epoch', 0)
+        train_losses = history.get('train_losses', [])
+        val_losses = history.get('val_losses', [])
+        train_accs = history.get('train_accs', [])
+        val_accs = history.get('val_accs', [])
         
         PrintUtils.print_extra(f'Best model found at epoch *{best_epoch}*')
-        PrintUtils.start_stage('Saving model')
-        
-        # Load the best model
-        model.load_state_dict(torch.load(os.path.join(models_dir, 'checkpoint.pt')))
-        
-        # Save the final model
-        model.save(model_path)
-        
-        # Get predictions on test set for evaluation
         PrintUtils.end_stage()
+        
+        # Save model
+        PrintUtils.start_stage('Saving model')
+        model.save(model_path)
+        PrintUtils.end_stage()
+        
+        # Evaluate on test set
         PrintUtils.start_stage('Inferencing on test dataset and generating metrics')
-        test_scores, test_labels, epoch_loss = get_prediction_scores(model, test_loader, device)
+        test_scores, test_labels, _ = model_trainer.predict(test_dataset, batch_size=args.batchsize)
         test_preds = (test_scores > 0.5).astype(int)
         
-        # Plot training curves
-        plot_training_curves(train_losses, val_losses, test_losses, train_accs, val_accs, test_accs, best_epoch, os.path.join(results_dir, 'training_curves.png'))
+        # Generate visualizations
+        plot_training_curves(
+            train_losses, val_losses, 
+            train_accs, val_accs, 
+            best_epoch, 
+            os.path.join(results_dir, 'training_curves.png')
+        )
         
-        # Plot ROC curve
-        plot_roc_curve(test_labels, test_scores, os.path.join(results_dir, 'roc_curve.png'))
+        plot_roc_curve(
+            test_labels, test_scores, 
+            os.path.join(results_dir, 'roc_curve.png')
+        )
         
-        # Plot Precision-Recall curve
-        plot_precision_recall_curve(test_labels, test_scores, os.path.join(results_dir, 'precision_recall_curve.png'))
+        plot_precision_recall_curve(
+            test_labels, test_scores, 
+            os.path.join(results_dir, 'precision_recall_curve.png')
+        )
         
-        # Plot confusion matrix
-        conf_matrix = plot_confusion_matrix(test_labels, test_preds, os.path.join(results_dir, 'confusion_matrix.png'))
+        conf_matrix = plot_confusion_matrix(
+            test_labels, test_preds, 
+            os.path.join(results_dir, 'confusion_matrix.png')
+        )
         
-        # Generate model dashboard
-        create_model_dashboard(test_scores, test_labels, train_losses, val_losses, best_epoch,  os.path.join(results_dir, 'model_performance_dashboard.png'))
+        create_model_dashboard(
+            test_scores, test_labels, 
+            train_losses, val_losses, 
+            best_epoch,  
+            os.path.join(results_dir, 'model_performance_dashboard.png')
+        )
         
-        # Plot prediction score distribution
-        plot_score_distribution(test_scores, test_labels, os.path.join(results_dir, 'prediction_score_distribution.png'))
+        plot_score_distribution(
+            test_scores, test_labels, 
+            os.path.join(results_dir, 'prediction_score_distribution.png')
+        )
         
         # Save test predictions
-        df_test = test_dataset.df.copy()
-        df_test['prediction'] = test_preds
-        df_test['score'] = test_scores
-        df_test.to_csv(os.path.join(results_dir, 'test_results.csv'), index=False)
+        df_test_results = test_dataset.df.copy()
+        df_test_results['prediction'] = test_preds
+        df_test_results['score'] = test_scores
+        df_test_results.to_csv(os.path.join(results_dir, 'test_results.csv'), index=False)
         PrintUtils.end_stage()
         PrintUtils.print_extra('Results saved to *test_results.csv*')
         
         # Print confusion matrix metrics
         PrintUtils.start_stage('Printing confusion matrix metrics')
-        
         metrics = calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df_test)
 
-        # Iterate through printing key, value
+        # Display metrics
         for key, value in metrics.items():
             PrintUtils.print_extra(f'{key}: {value}')
 
-        # Also write to output file
+        # Write metrics to file
         with open(os.path.join(results_dir, 'confusion_matrix_metrics.txt'), 'w') as f:
             for key, value in metrics.items():
                 f.write(f'{key}: {value}\n')
@@ -426,49 +415,36 @@ def main():
         
         # Test the inference function
         PrintUtils.start_stage('Testing inference function')
-        model = BaseClassifier.load(model_path, device)
+        loaded_model = BaseClassifier.load(model_path, device)
 
+        # Test with tuple input
         sample_row = df_test.iloc[0]
         time_diffs, data_lengths = sample_row['time_diffs'], sample_row['data_lengths']
-        
-        # Test with tuple input
-        prob, pred = model.inference(
-            (time_diffs, data_lengths), 
-            device
-        )
+        prob, pred = loaded_model.inference((time_diffs, data_lengths), device)
         PrintUtils.print_extra(f'Inference result (tuple input): prob=*{prob:.4f}*, pred=*{pred}*')
         
         # Test with DataFrame input
         sample_df = df_test.iloc[[0]]
-        probs, preds = model.inference(
-            sample_df,
-            device
-        )
+        probs, preds = loaded_model.inference(sample_df, device)
         PrintUtils.print_extra(f'Inference result (DataFrame input): prob=*{probs[0]:.4f}*, pred=*{preds[0]}*')
         PrintUtils.end_stage()
 
-    # Handle exceptions
-    except Exception as ex:
-
-        # Optionally fail stage
-        if PrintUtils.is_in_stage():
-            PrintUtils.end_stage(fail_message=ex, throw_on_fail=False)
-
-        # Save error and print it as an extra
-        PrintUtils.print_extra(f'Error: {ex}')
-        
-        last_error = ex
-
-    # Handle cancel operations
     except KeyboardInterrupt:
         if PrintUtils.is_in_stage():
             PrintUtils.end_stage(fail_message='', throw_on_fail=False)
-        PrintUtils.print_extra(f'Operation *cancelled* by user - please wait for cleanup code to complete')
+        PrintUtils.print_extra('Operation *cancelled* by user - please wait for cleanup code to complete')
         is_user_cancelled = True
-
-    # Cleanups
+        
+    except Exception as ex:
+        # Optionally fail stage
+        if PrintUtils.is_in_stage():
+            PrintUtils.end_stage(fail_message=ex, throw_on_fail=False)
+            
+        # Save error and print it as an extra
+        PrintUtils.print_extra(f'Error: {ex}')
+        last_error = ex
+        
     finally:
-
         # Print final status
         if last_error is not None:
             PrintUtils.print_error(f'{last_error}\n')
