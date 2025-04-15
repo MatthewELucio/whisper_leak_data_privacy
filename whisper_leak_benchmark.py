@@ -105,7 +105,14 @@ class BenchmarkConfig:
                  raise ValueError("All sampling_rates must be between 0.0 (exclusive) and 1.0 (inclusive)")
             
             self.num_trials = self.config.get('num_trials', 1)
-            self.data_path = self.config.get('data_path', 'data')
+            self.data_path = self.config.get('data_path', 'data_v2')
+            if isinstance(self.data_path, str):
+                self.data_path = [self.data_path]
+            elif isinstance(self.data_path, list):
+                # Already a list, do nothing
+                pass
+            else:
+                raise ValueError("data_path must be a string or a list of strings")
             
             # Get model configuration
             model_config = self.config.get('model', {})
@@ -130,6 +137,7 @@ class BenchmarkConfig:
             PrintUtils.print_extra(f'Chatbots to benchmark: *{", ".join(self.chatbots)}*')
             PrintUtils.print_extra(f'Number of trials: *{self.num_trials}*')
             PrintUtils.print_extra(f'Sampling rates: *{[f"{rate*100:.1f}%" for rate in self.sampling_rates]}*')
+
             
         except Exception as e:
             PrintUtils.end_stage(fail_message=f"Failed to load configuration: {str(e)}")
@@ -192,7 +200,7 @@ class BenchmarkRunner:
                 self.existing_results = {} # Reset if loading failed
     
     
-    def should_process_chatbot_trial(self, chatbot, common_name, features, trial, sampling_rate):
+    def should_process_chatbot_trial(self, chatbot, common_name, features, trial, data_path, sampling_rate):
         """
         Determine if we should process this chatbot trial for a specific sampling rate
         based on existing results.
@@ -202,12 +210,13 @@ class BenchmarkRunner:
             common_name: Common name for the chatbot
             features: Feature mode (Both, Data Size Only, Time Only)
             trial: Trial number
+            data_path: Path to the data file
             sampling_rate: The specific sampling rate for this run
 
         Returns:
             bool: True if chatbot trial should be processed, False otherwise
         """
-        key = (common_name, chatbot, features, trial, sampling_rate)
+        key = (common_name, chatbot, features, trial, sampling_rate, data_path)
         return key not in self.existing_results
     
     def run_benchmark(self):
@@ -239,35 +248,36 @@ class BenchmarkRunner:
             # Process each feature mode
             for feature_mode in FeatureMode:
                 for current_sampling_rate in self.config.sampling_rates:
-                    # Process each chatbot
-                    for chatbot in self.config.chatbots:
-                        PrintUtils.start_stage(f'Processing chatbot: *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial}, sampling rate: {current_sampling_rate})', override_prev=True)
-                        PrintUtils.end_stage()
-
-                        chatbot_dir = os.path.join(self.output_dir, chatbot)
-                        os.makedirs(chatbot_dir, exist_ok=True)
-                        
-                        trial_dir = os.path.join(chatbot_dir, f"{feature_mode.value}", f"trial_{trial}")
-                        os.makedirs(trial_dir, exist_ok=True)
-                        
-                        if not self.should_process_chatbot_trial(chatbot, chatbot, feature_mode.value, trial, current_sampling_rate) and not self.reprocess_only:
-                            PrintUtils.start_stage(f'Skipping *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial}) as it already exists in results')
+                    for data_path in self.config.data_path:
+                        # Process each chatbot
+                        for chatbot in self.config.chatbots:
+                            PrintUtils.start_stage(f'Processing chatbot: *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial}, sampling rate: {current_sampling_rate})', override_prev=True)
                             PrintUtils.end_stage()
-                            continue
-                        
-                        PrintUtils.start_stage(f'Processing chatbot: *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial})')
-                        
-                        # If reprocess_only, just calculate statistics without training
-                        try:
-                            if self.reprocess_only:
-                                self.reprocess_chatbot_statistics(chatbot, chatbot, trial_dir, prompts, feature_mode, trial)
-                            else:
-                                self.process_chatbot(chatbot, chatbot, trial_dir, prompts_path, feature_mode, trial, current_sampling_rate)
-                        except Exception as e:
-                            PrintUtils.print_extra(f"Failed to process {chatbot} (feature mode: {feature_mode.value}, trial: {trial}): {str(e)}")
-                            continue
-                        
-                        PrintUtils.end_stage()
+
+                            chatbot_dir = os.path.join(self.output_dir, chatbot)
+                            os.makedirs(chatbot_dir, exist_ok=True)
+                            
+                            trial_dir = os.path.join(chatbot_dir, f"{feature_mode.value}", f"trial_{trial}")
+                            os.makedirs(trial_dir, exist_ok=True)
+                            
+                            if not self.should_process_chatbot_trial(chatbot, chatbot, feature_mode.value, trial, data_path, current_sampling_rate) and not self.reprocess_only:
+                                PrintUtils.start_stage(f'Skipping *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial}) as it already exists in results')
+                                PrintUtils.end_stage()
+                                continue
+                            
+                            PrintUtils.start_stage(f'Processing chatbot: *{chatbot}* (feature mode: {feature_mode.value}, trial: {trial})')
+                            
+                            # If reprocess_only, just calculate statistics without training
+                            try:
+                                if self.reprocess_only:
+                                    self.reprocess_chatbot_statistics(chatbot, chatbot, trial_dir, prompts, feature_mode, trial)
+                                else:
+                                    self.process_chatbot(chatbot, chatbot, data_path, trial_dir, prompts_path, feature_mode, trial, current_sampling_rate)
+                            except Exception as e:
+                                PrintUtils.print_extra(f"Failed to process {chatbot} (feature mode: {feature_mode.value}, trial: {trial}): {str(e)}")
+                                continue
+                            
+                            PrintUtils.end_stage()
         
         # Save all results to CSV
         results_df = pd.DataFrame(self.results)
@@ -276,7 +286,7 @@ class BenchmarkRunner:
         
         PrintUtils.end_stage()
     
-    def process_chatbot(self, chatbot, common_name, output_dir, prompts_files, feature_mode, trial, sampling_rate):
+    def process_chatbot(self, chatbot, common_name, data_path, output_dir, prompts_files, feature_mode, trial, sampling_rate):
         """
         Process a single chatbot - train model and evaluate performance.
         """
@@ -287,7 +297,7 @@ class BenchmarkRunner:
 
             # Load and split data
             PrintUtils.end_stage()
-            df_full = load_chatbot_data(chatbot, self.config.data_path, prompts_files, downsample_rate=1.0)
+            df_full = load_chatbot_data(chatbot, data_path, prompts_files, downsample_rate=1.0)
             
             PrintUtils.start_stage('Splitting data')
             df_train_orig, df_val, df_test = split_data(df_full, trial_seed, self.config.test_size / 100.0, self.config.valid_size / 100.0)
@@ -373,9 +383,14 @@ class BenchmarkRunner:
             metrics['ChatBot'] = chatbot
             metrics['Features'] = feature_mode.value
             metrics['Trial'] = trial
-            metrics['Mode'] = "n/a"
             metrics['Sampling Rate'] = sampling_rate
             metrics['Best Epoch/Iter'] = history.get('best_epoch', 0)
+            metrics['Model Class'] = self.config.model_class
+            metrics['Model Params'] = self.config.model_params
+            metrics['Train Size'] = len(df_train)
+            metrics['Val Size'] = len(df_val)
+            metrics['Test Size'] = len(df_test)
+            metrics['Data Path'] = data_path
 
             self.results.append(metrics)
             self._save_results()
@@ -428,7 +443,7 @@ class BenchmarkRunner:
         """
         results_df = pd.DataFrame(self.results)
         if not results_df.empty:
-            common_cols = ['CommonName', 'ChatBot', 'Features', 'Trial', 'Mode', 'Sampling Rate', 'Best Epoch/Iter']
+            common_cols = ['CommonName', 'ChatBot', 'Features', 'Trial', 'Sampling Rate', 'Best Epoch/Iter', 'Data Path']
             all_cols = results_df.columns.tolist()
             other_cols = [col for col in all_cols if col not in common_cols]
             new_col_order = common_cols + other_cols

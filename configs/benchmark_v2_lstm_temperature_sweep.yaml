@@ -1,10 +1,10 @@
 # Example benchmark configuration
 
 # Benchmark config
-benchmark_name: lstm_3_sweep
-sampling_rate: [0.05, 0.10, 0.15, 0.20, 0.25, 0.30, 0.35, 0.40, 0.45, 0.50, 0.55, 0.60, 0.65, 0.70, 0.75, 0.80, 0.85, 0.90, 0.95, 1.0]
+benchmark_name: lstm_temperature_sweep
+sampling_rate: 1.0
 num_trials: 5 # Number of trials to run for each model
-data_path: data_v3
+data_path: [./data_temp/00, ./data_temp/10, ./data_temp/20, ./data_temp/30, ./data_temp/40, ./data_temp/50, ./data_temp/60, ./data_temp/70, ./data_temp/80, ./data_temp/90, ./data_temp/100]
 
 # Chatbots to benchmark with their common names
 chatbots:

@@ -607,7 +607,7 @@ def load_chatbot_data(chatbot_name, input_folder, prompts_file, downsample_rate=
     files = [
         os.path.join(training_set_dir, i) 
         for i in os.listdir(training_set_dir) 
-        if i.lower().endswith(f'_{chatbot_name.lower()}.seq')
+        if i.lower().endswith(f'_{chatbot_name.lower()}.seq') or f'_{chatbot_name.lower()}_' in i.lower()
     ]
     
     if not files:
