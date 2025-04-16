@@ -199,6 +199,7 @@ class ModelTrainer:
         if self.early_stopping and self.early_stopping.path:
             self.model.load_state_dict(torch.load(self.early_stopping.path))
         
+        PrintUtils.end_stage()
         return {
             'train_losses': train_losses,
             'val_losses': val_losses,

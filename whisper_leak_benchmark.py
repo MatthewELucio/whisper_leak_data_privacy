@@ -274,6 +274,7 @@ class BenchmarkRunner:
                                 else:
                                     self.process_chatbot(chatbot, chatbot, data_path, trial_dir, prompts_path, feature_mode, trial, current_sampling_rate)
                             except Exception as e:
+                                PrintUtils.end_stage()
                                 PrintUtils.print_extra(f"Failed to process {chatbot} (feature mode: {feature_mode.value}, trial: {trial}): {str(e)}")
                                 continue
                             
