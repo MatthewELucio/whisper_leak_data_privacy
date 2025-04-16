@@ -14,6 +14,11 @@ import pyshark
 import os
 import json
 import torch
+import sys
+import sys
+
+# Graph
+GRAPH_BLOCKS = '▁▂▃▄▅▆▇█'
 
 # Global - the chatbot object
 g_chatbot_object = None
@@ -97,7 +102,7 @@ def packet_callback(packet):
             server_name = getattr(packet.tls, 'handshake_extensions_server_name', None)
             if server_name is not None and g_chatbot_object.match_tls_server_name(server_name):
                 g_stream_sequences[(addr.dst, int(packet.tcp.dstport), addr.src, int(packet.tcp.srcport))] = Sequence(float(packet.sniff_time.timestamp()))   # Note we saved the reverse 4-tuple due to interest in incoming data
-                PrintUtils.print_extra(f'{packet.sniff_time}: New stream: *{addr.src}:{packet.tcp.srcport}* --> *{addr.dst}:{packet.tcp.dstport}*')
+                PrintUtils.print_extra(f'\n{packet.sniff_time}: New stream: *{addr.src}:{packet.tcp.srcport}* --> *{addr.dst}:{packet.tcp.dstport}*')
 
         # Handle Application Data
         if hasattr(packet.tls, 'app_data'):
@@ -115,7 +120,9 @@ def packet_callback(packet):
 
             # Infer from model
             prob, pred = g_model_object.inference((sequence.time_seq, sequence.size_seq), g_device)
-            PrintUtils.print_extra(f'{packet.sniff_time}: inferring prob=*{prob:.4f}*, pred=*{pred:.4f}*')
+            msg = f'{PrintUtils.RED}!' if pred > 0.9 else f'{PrintUtils.GREEN}V'
+            print(f'\b\b{GRAPH_BLOCKS[int(prob * (len(GRAPH_BLOCKS) - 1))]} {msg}{PrintUtils.RESET_COLORS}', end='')
+            sys.stdout.flush()
 
     # Log exceptions
     except Exception as ex:
