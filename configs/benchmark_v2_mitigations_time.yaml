@@ -1,0 +1,101 @@
+# Example benchmark configuration
+
+# Benchmark config
+benchmark_name: lstm_time_mitigations
+sampling_rate: 0.1
+num_trials: 3 # Number of trials to run for each model
+data_path: data_v2
+feature_modes:
+  - "Both"
+#  - "Data Size Only"      # Test how mitigations affect different features
+  - "Time Only"
+
+# Chatbots to benchmark with their common names. >=0.8 AUPRC from time data.
+chatbots:
+  - amazonnovalitev1
+#  - azuregpt41nano
+#  - azuregpt41mini
+#  - azuregpt4o
+#  - claudehaiku
+#  - azuregpt4omini
+#  - geminiflash
+#  - azuregpto1mini
+#  - gpt41nano
+#  - gpt4omini
+#  - geminiflashlight
+
+
+# --- Mitigation Sets ---
+# Define different combinations of mitigations to test
+mitigations:
+  none: [] # Baseline - no mitigation
+
+  time_noise_10pct:
+    - type: TimeNoiseMitigation
+      params: {noise_percentage: 0.10}
+
+  time_noise_25pct:
+    - type: TimeNoiseMitigation
+      params: {noise_percentage: 0.25}
+
+  leaky_bucket_default:
+    - type: LeakyBucketMitigation
+      params: {rate: 50.0, burst_size: 10.0} # Default params
+
+  random_delay_5ms:
+    - type: RandomTimeDelayMitigation
+      params: {max_delay: 0.005}
+  
+  random_delay_20ms:
+    - type: RandomTimeDelayMitigation
+      params: {max_delay: 0.020}
+  
+  random_delay_50ms:
+    - type: RandomTimeDelayMitigation
+      params: {max_delay: 0.020}
+  
+  time_quantization_10ms:
+    - type: TimeQuantizationMitigation
+      params: {bin_interval: 0.01}
+  
+  time_quantization_20ms:
+    - type: TimeQuantizationMitigation
+      params: {bin_interval: 0.20}
+  
+  time_quantization_50ms:
+    - type: TimeQuantizationMitigation
+      params: {bin_interval: 0.50}
+
+  micro_bursting_5ms_5pkts:
+    - type: MicroBurstingMitigation
+      params: {time_window: 0.005, max_packets_in_burst: 5} # Default params
+  
+  micro_bursting_10ms_10pkts:
+    - type: MicroBurstingMitigation
+      params: {time_window: 0.010, max_packets_in_burst: 10}
+  
+  micro_bursting_50ms_10pkts:
+    - type: MicroBurstingMitigation
+      params: {time_window: 0.050, max_packets_in_burst: 10}
+
+# Model settings
+model:
+  class: AttentionBiLSTMClassifier
+  params:
+    hidden_size: 128
+    num_layers: 2
+    dropout_rate: 0.3
+    embedding_dim: 32
+    fc_dims: [128, 64]
+    bidirectional: true
+    attention_dim: 64
+
+training:
+  # Training parameters
+  batch_size: 32
+  max_epochs: 1
+  learning_rate: 0.0002
+  patience: 20
+  test_size: 20
+  valid_size: 5
+  seed: 42

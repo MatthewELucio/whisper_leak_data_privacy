@@ -32,7 +32,7 @@ from core.classifiers.lstm_transformer_classifier import LSTMTransformerClassifi
 from core.classifiers.loader import Loader
 
 # Import Mitigation framework
-from core.mitigations import apply_mitigation_set, BaseMitigation
+from core.classifiers.mitigations import apply_mitigation_set, BaseMitigation
 
 from core.classifiers.utils import (
     EarlyStopping, ModelTrainer, load_chatbot_data,
@@ -433,8 +433,17 @@ class BenchmarkRunner:
                  df_full['data_lengths'] = df_full['data_lengths'].apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else x)
 
             # --- Apply Mitigations ---
+            # Calculate median total time
+            def calculate_median_totals(df):
+                median_total_time = df['time_diffs'].apply(lambda x: np.sum(x)).median()
+                median_total_size = df['data_lengths'].apply(lambda x: np.sum(x)).median()
+                return median_total_time, median_total_size
+
             # Apply mitigation set to the full dataframe before splitting
+            median_time, median_size = calculate_median_totals(df_full)
             df_mitigated = apply_mitigation_set(df_full, mitigation_configs)
+            median_time_after_mitigations, median_size_after_mitigations = calculate_median_totals(df_mitigated)
+
             del df_full # Free memory
 
             # --- Split Data ---
@@ -546,17 +555,22 @@ class BenchmarkRunner:
             metrics = calculate_metrics(test_labels, test_scores, test_preds, conf_matrix, df_test)
             metrics['CommonName'] = common_name
             metrics['ChatBot'] = chatbot
-            metrics['Mitigation Set'] = mitigation_set_name # Added
-            metrics['Features'] = feature_mode.value      # Added
+            metrics['Mitigation Set'] = mitigation_set_name
+            metrics['Features'] = feature_mode.value
             metrics['Trial'] = trial
             metrics['Sampling Rate'] = sampling_rate
             metrics['Best Epoch/Iter'] = history.get('best_epoch', getattr(model, 'best_iteration_', 0)) # Use model attr for LGBM
             metrics['Model Class'] = self.config.model_class
-            # metrics['Model Params'] = str(self.config.model_params) # Convert dict to string for CSV
+            metrics['Model Params'] = str(self.config.model_params)
+            metrics['Train Params'] = str(self.config.training_params)
             metrics['Train Size'] = len(df_train)
             metrics['Val Size'] = len(df_val)
             metrics['Test Size'] = len(df_test)
-            metrics['Data Path'] = data_path # Added
+            metrics['Data Path'] = data_path
+            metrics['Median Time Before Mitigations'] = median_time
+            metrics['Median Size Before Mitigations'] = median_size
+            metrics['Median Time After Mitigations'] = median_time_after_mitigations
+            metrics['Median Size After Mitigations'] = median_size_after_mitigations
 
             # Append to the main results list
             self.results.append(metrics)
