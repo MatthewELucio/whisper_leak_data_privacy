@@ -359,7 +359,61 @@ class RandomTimeDelayMitigation(BaseMitigation):
         return df_copy
 
 
-# --- NEW MITIGATION CLASSES ---
+
+class RemoveZeroTimeEntries(BaseMitigation):
+    """
+    Mitigation removes entries with zero time differences from the DataFrame. The
+    corresponding data lengths are added to the previous entry's data length.
+    """
+    def __init__(self):
+        """
+        Initializes the random time delay mitigation.
+        """
+        pass
+
+    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
+        """
+        Applies random delays to the 'time_diffs' column.
+
+        Args:
+            df: The input DataFrame.
+
+        Returns:
+            DataFrame with random delays added to 'time_diffs'.
+        """
+        PrintUtils.start_stage(f"Applying RemoveZeroTimeEntries")
+        df_copy = df.copy()
+        if 'time_diffs' not in df_copy.columns:
+            PrintUtils.print_warning("Column 'time_diffs' not found. Skipping RemoveZeroTimeEntries.")
+            PrintUtils.end_stage()
+            return df_copy
+
+        # Ensure time_diffs are lists
+        df_copy['time_diffs'] = self._ensure_list_format(df_copy['time_diffs'])
+
+        for index, row in df_copy.iterrows():
+            times = row['time_diffs']
+            sizes = row['data_lengths'] if 'data_lengths' in df_copy.columns else None
+
+            # Remove zero time entries and adjust sizes accordingly
+            new_times = []
+            new_sizes = [] if sizes is not None else None
+            for i, t in enumerate(times):
+                if t > 1e-9:
+                    new_times.append(t)
+                    if new_sizes is not None:
+                        new_sizes.append(sizes[i])
+                elif new_sizes is not None and new_sizes:
+                    # Add size to the last valid entry
+                    new_sizes[-1] += sizes[i] if sizes is not None else 0
+
+        # Update the DataFrame with the new lists
+        df_copy.at[index, 'time_diffs'] = new_times
+        if new_sizes is not None:
+            df_copy.at[index, 'data_lengths'] = new_sizes
+        
+        PrintUtils.end_stage()
+        return df_copy
 
 class TimeQuantizationMitigation(BaseMitigation):
     """
@@ -558,8 +612,9 @@ _MITIGATION_CLASSES = {
     "TimeNoiseMitigation": TimeNoiseMitigation,
     "LeakyBucketMitigation": LeakyBucketMitigation,
     "RandomTimeDelayMitigation": RandomTimeDelayMitigation,
-    "TimeQuantizationMitigation": TimeQuantizationMitigation, # Added
-    "MicroBurstingMitigation": MicroBurstingMitigation,       # Added
+    "TimeQuantizationMitigation": TimeQuantizationMitigation,
+    "MicroBurstingMitigation": MicroBurstingMitigation,
+    "RemoveZeroTimeEntries": RemoveZeroTimeEntries,
     # Add other mitigation classes here as they are created
 }
 

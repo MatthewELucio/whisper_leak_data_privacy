@@ -80,7 +80,7 @@ class BenchmarkConfig:
         """
         PrintUtils.start_stage(f'Loading configuration from {config_path}')
         try:
-            with open(config_path, 'r') as f:
+            with open(config_path, 'r', encoding='utf8') as f:
                 self.config = yaml.safe_load(f)
 
             # --- Basic Setup ---
@@ -149,6 +149,7 @@ class BenchmarkConfig:
 
             # --- Training Parameters ---
             training_params = self.config.get('training', {})
+            self.training_params = training_params
             self.batch_size = training_params.get('batch_size', 32)
             self.max_epochs = training_params.get('max_epochs', 100) # Reduced default
             self.learning_rate = training_params.get('learning_rate', 0.0002) # Adjusted default
@@ -207,34 +208,57 @@ class BenchmarkRunner:
         self.device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         PrintUtils.print_extra(f'Using device: *{self.device}*')
 
+        self.existing_results = set() # Track already processed runs
+
         # --- Set Seed & Style ---
         set_seed(self.config.seed) # Set global seed initially
         set_plot_style()
 
-        # --- Load Existing Results ---
-        self.existing_results = {}
-        if os.path.exists(self.results_file):
-            try:
-                df = pd.read_csv(self.results_file)
-                # Define the columns that form the unique key for a run
-                # Added 'Mitigation Set' and 'Data Path'
-                key_cols = ['CommonName', 'ChatBot', 'Features', 'Trial', 'Sampling Rate', 'Mitigation Set', 'Data Path']
+    def _get_run_key_from_entry(self, entry):
+        """
+        Generate a unique key for a specific run based on its parameters.
 
-                # Check if all necessary columns exist
-                if all(col in df.columns for col in key_cols):
-                    # Create a set of tuples for quick checking
-                    self.existing_results = set(
-                        df[key_cols].itertuples(index=False, name=None)
-                    )
-                    PrintUtils.print_extra(f"Loaded {len(self.existing_results)} existing result keys from '{self.results_file}'")
-                else:
-                    missing_cols = [col for col in key_cols if col not in df.columns]
-                    PrintUtils.print_warning(f"Existing results file '{self.results_file}' is missing columns: {missing_cols}. Will overwrite or ignore.")
-                    self.existing_results = set() # Reset if format is incompatible
+        Args:
+            entry (dict): Dictionary containing the run parameters.
 
-            except Exception as e:
-                PrintUtils.print_warning(f"Warning: Failed to load or parse existing results file '{self.results_file}'. Will proceed without skipping. Error: {e}")
-                self.existing_results = set() # Reset if loading failed
+        Returns:
+            tuple: A tuple representing the unique key for this run.
+        """
+        return (
+            entry['CommonName'],
+            entry['ChatBot'],
+            entry['Features'],
+            entry['Trial'],
+            entry['Sampling Rate'],
+            entry['Mitigation Set'],
+            entry['Data Path']
+        )
+
+    def _get_run_key(self, chatbot, common_name, feature_mode, trial, sampling_rate, mitigation_set_name, data_path):
+        """
+        Generate a unique key for a specific run based on its parameters.
+
+        Args:
+            chatbot (str): Name of the chatbot.
+            common_name (str): Common name (usually same as chatbot).
+            feature_mode (FeatureMode): Feature mode enum.
+            trial (int): Trial number.
+            sampling_rate (float): Sampling rate.
+            mitigation_set_name (str): Name of the mitigation set.
+            data_path (str): Path to the data file.
+
+        Returns:
+            tuple: A tuple representing the unique key for this run.
+        """
+        return (
+            common_name,
+            chatbot,
+            feature_mode.value, # Use enum value (string) for the key
+            trial,
+            sampling_rate,
+            mitigation_set_name,
+            data_path
+        )
 
     def should_process_run(self, chatbot, common_name, feature_mode, trial, sampling_rate, mitigation_set_name, data_path):
         """
@@ -252,10 +276,10 @@ class BenchmarkRunner:
         Returns:
             bool: True if the run should be processed, False otherwise.
         """
-        key = (
-            common_name,
+        key = self._get_run_key(
             chatbot,
-            feature_mode.value, # Use enum value (string) for the key
+            common_name,
+            feature_mode,
             trial,
             sampling_rate,
             mitigation_set_name,
@@ -295,17 +319,23 @@ class BenchmarkRunner:
              return
 
         # Load existing results into memory if file exists
-        if os.path.exists(self.results_file) and not self.existing_results: # Only if parsing failed earlier
+        if os.path.exists(self.results_file):
             try:
                 existing_df = pd.read_csv(self.results_file)
                 # Convert to list of dicts, handling potential NaN issues
-                self.results = [row.dropna().to_dict() for _, row in existing_df.iterrows()]
+                self.results = [row.to_dict() for _, row in existing_df.iterrows()]
+
+                # Generate existing results set for quick lookup
+                self.existing_results = set(
+                    self._get_run_key_from_entry(entry) for entry in self.results
+                )
+
                 PrintUtils.print_extra(f'Loaded {len(self.results)} previous results from CSV into memory.')
             except Exception as e:
                 PrintUtils.print_warning(f'Could not load existing results file {self.results_file} into memory: {str(e)}. Starting fresh results list.')
                 self.results = []
-        elif self.existing_results: # If keys were loaded successfully
-            PrintUtils.print_extra("Will skip runs found in existing results file based on keys.")
+        else:
+            self.existing_results = set() # No existing results file, start fresh
 
 
         # --- Main Benchmark Loop ---

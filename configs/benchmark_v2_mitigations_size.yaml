@@ -2,18 +2,18 @@
 
 # Benchmark config
 benchmark_name: lstm_time_mitigations
-sampling_rate: 0.1
+sampling_rate: 1
 num_trials: 3 # Number of trials to run for each model
-data_path: data_v2
+data_path: consolidated/main
 feature_modes:
-  - "Both"
+#  - "Both"
   - "Data Size Only"      # Test how mitigations affect different features
 #  - "Time Only"
 
 # Chatbots to benchmark with their common names. >80% AUPRC from size data.
 chatbots:
-  - mistrallarge
-#  - azuredeepseekr1
+#  - mistrallarge
+  - azuredeepseekr1
 #  - mistralsmall
 #  - llama4maverickgroq
 #  - o1mini
@@ -36,6 +36,10 @@ chatbots:
 # Define different combinations of mitigations to test
 mitigations:
   none: [] # Baseline - no mitigation
+
+  remove_empty_time_entries:
+    - type: RemoveZeroTimeEntriesMitigation
+      params: {}
 
   pad16_only:
     - type: DataPaddingMitigation
@@ -60,7 +64,7 @@ model:
 training:
   # Training parameters
   batch_size: 32
-  max_epochs: 1
+  max_epochs: 10
   learning_rate: 0.0002
   patience: 20
   test_size: 20

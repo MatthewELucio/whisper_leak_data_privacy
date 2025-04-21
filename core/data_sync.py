@@ -186,7 +186,8 @@ def run_consolidation_task():
         if os.path.exists(TEMP_BASE_DIR):
             PrintUtils.print_extra(f"Removing existing temporary directory '{TEMP_BASE_DIR}'...")
             try:
-                shutil.rmtree(TEMP_BASE_DIR)
+                #shutil.rmtree(TEMP_BASE_DIR)
+                pass
             except Exception as e:
                  PrintUtils.print_error(f"Failed to remove existing temp dir '{TEMP_BASE_DIR}': {e}")
                  return False
@@ -271,8 +272,8 @@ def run_consolidation_task():
                         if isinstance(existing_data, list):
                             consolidated_entries = existing_data
                             for entry in consolidated_entries:
-                                if isinstance(entry, dict) and 'hash' in entry:
-                                    existing_hashes.add(entry['hash'])
+                                if isinstance(entry, dict) and 'hash' in entry and 'trial' in entry:
+                                    existing_hashes.add(entry['hash'] + str(entry['trial']))
                             PrintUtils.print_extra(f"    Loaded {len(consolidated_entries)} existing entries ({len(existing_hashes)} unique hashes).")
                         else:
                             PrintUtils.print_extra(f"    Warning: Existing file is not a list. Starting fresh.")
@@ -293,7 +294,8 @@ def run_consolidation_task():
                             continue # Should not happen based on grouping
 
                         file_hash = metadata['hash']
-                        if file_hash in existing_hashes:
+                        trial = metadata['trial']
+                        if file_hash + str(trial) in existing_hashes:
                             continue # Already consolidated
 
                         with open(seq_file_path, 'r', encoding='utf-8') as f:
@@ -310,7 +312,7 @@ def run_consolidation_task():
                             entry_data['extra'] = metadata['extra']
 
                         consolidated_entries.append(entry_data)
-                        existing_hashes.add(file_hash)
+                        existing_hashes.add(file_hash + str(trial))
                         new_entries_for_group += 1
 
                     except json.JSONDecodeError as e:
@@ -381,7 +383,7 @@ def run_consolidation_task():
         PrintUtils.print_extra("\n--- Cleaning up temporary directories ---")
         try:
             if os.path.exists(TEMP_BASE_DIR):
-                shutil.rmtree(TEMP_BASE_DIR)
+                #shutil.rmtree(TEMP_BASE_DIR)
                 PrintUtils.print_extra(f"Removed temporary directory: {TEMP_BASE_DIR}")
             else:
                 PrintUtils.print_extra("Temporary directory already removed or not created.")
@@ -401,7 +403,6 @@ def run_consolidation_task():
 
     return overall_success
 
-# --- Simplified Wrappers (less relevant but kept) ---
 def download_folder(local_folder, remote_folder, remote=DEFAULT_REMOTE, bucket=DEFAULT_BUCKET):
     PrintUtils.print_extra(f"(Using simplified download_folder wrapper for {remote_folder})")
     return download_folder_copy(remote, bucket, remote_folder, local_folder)

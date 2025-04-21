@@ -165,7 +165,10 @@ class PrintUtils(object):
         """
 
         # Validate we are not in stage unless we override a previous stage possible
-        assert (not cls._in_stage) or override_prev, Exception('Entering a stage without finishing the previous one')
+        #assert (not cls._in_stage) or override_prev, Exception('Entering a stage without finishing the previous one')
+        if cls._in_stage and not override_prev:
+            # End the stage
+            cls.end_stage()
 
         # Potentially override
         if override_prev:

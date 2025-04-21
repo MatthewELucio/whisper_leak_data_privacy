@@ -2,17 +2,18 @@
 
 # Benchmark config
 benchmark_name: lstm_time_mitigations
-sampling_rate: 0.1
+sampling_rate: 1
 num_trials: 3 # Number of trials to run for each model
-data_path: data_v2
+data_path: consolidated/main
 feature_modes:
-  - "Both"
+#  - "Both"
 #  - "Data Size Only"      # Test how mitigations affect different features
   - "Time Only"
 
 # Chatbots to benchmark with their common names. >=0.8 AUPRC from time data.
 chatbots:
-  - amazonnovalitev1
+  - claudehaiku
+#  - amazonnovalitev1
 #  - azuregpt41nano
 #  - azuregpt41mini
 #  - azuregpt4o
@@ -30,6 +31,10 @@ chatbots:
 mitigations:
   none: [] # Baseline - no mitigation
 
+  remove_empty_time_entries:
+    - type: RemoveZeroTimeEntries
+      params: {}
+
   time_noise_10pct:
     - type: TimeNoiseMitigation
       params: {noise_percentage: 0.10}
@@ -37,10 +42,18 @@ mitigations:
   time_noise_25pct:
     - type: TimeNoiseMitigation
       params: {noise_percentage: 0.25}
+  
+  time_noise_100pct:
+    - type: TimeNoiseMitigation
+      params: {noise_percentage: 1.0}
 
-  leaky_bucket_default:
+  leaky_bucket_500:
     - type: LeakyBucketMitigation
-      params: {rate: 50.0, burst_size: 10.0} # Default params
+      params: {rate: 500.0, burst_size: 10.0} # Default params
+
+  leaky_bucket_1000:
+    - type: LeakyBucketMitigation
+      params: {rate: 1000.0, burst_size: 10.0} # Default params
 
   random_delay_5ms:
     - type: RandomTimeDelayMitigation
@@ -50,6 +63,18 @@ mitigations:
     - type: RandomTimeDelayMitigation
       params: {max_delay: 0.020}
   
+  random_delay_200ms:
+    - type: RandomTimeDelayMitigation
+      params: {max_delay: 0.20}
+
+  random_delay_500ms:
+    - type: RandomTimeDelayMitigation
+      params: {max_delay: 0.50}
+
+  random_delay_1s:
+    - type: RandomTimeDelayMitigation
+      params: {max_delay: 1.0}
+
   random_delay_50ms:
     - type: RandomTimeDelayMitigation
       params: {max_delay: 0.020}
@@ -58,13 +83,17 @@ mitigations:
     - type: TimeQuantizationMitigation
       params: {bin_interval: 0.01}
   
-  time_quantization_20ms:
+  time_quantization_200ms:
     - type: TimeQuantizationMitigation
       params: {bin_interval: 0.20}
   
-  time_quantization_50ms:
+  time_quantization_500ms:
     - type: TimeQuantizationMitigation
       params: {bin_interval: 0.50}
+  
+  time_quantization_1s:
+    - type: TimeQuantizationMitigation
+      params: {bin_interval: 1.0}
 
   micro_bursting_5ms_5pkts:
     - type: MicroBurstingMitigation
@@ -77,6 +106,14 @@ mitigations:
   micro_bursting_50ms_10pkts:
     - type: MicroBurstingMitigation
       params: {time_window: 0.050, max_packets_in_burst: 10}
+  
+  micro_bursting_500ms_10pkts:
+    - type: MicroBurstingMitigation
+      params: {time_window: 0.50, max_packets_in_burst: 10}
+  
+  micro_bursting_1s_10pkts:
+    - type: MicroBurstingMitigation
+      params: {time_window: 1.0, max_packets_in_burst: 10}
 
 # Model settings
 model:
@@ -93,7 +130,7 @@ model:
 training:
   # Training parameters
   batch_size: 32
-  max_epochs: 1
+  max_epochs: 100
   learning_rate: 0.0002
   patience: 20
   test_size: 20
