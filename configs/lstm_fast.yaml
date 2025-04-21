@@ -1,10 +1,10 @@
 # Example benchmark configuration
 
 # Benchmark config
-benchmark_name: lstm_2_slow
+benchmark_name: lstm_2_fast
 sampling_rate: 1 # 100% of the data
 num_trials: 5 # Number of trials to run for each model
-data_path: data_v2
+data_path: data/main
 
 # Chatbots to benchmark with their common names
 chatbots:
@@ -25,8 +25,8 @@ model:
 training:
   # Training parameters
   batch_size: 32
-  max_epochs: 200
-  learning_rate: 0.0001
+  max_epochs: 100
+  learning_rate: 0.0002
   patience: 20
   test_size: 20
   valid_size: 5

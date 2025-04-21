@@ -32,6 +32,7 @@ DEFAULT_BUCKET = "whisper-leak" # Set your bucket name
 # Paths for consolidation
 REMOTE_DATA_PATH = "data"
 REMOTE_CONSOLIDATED_PATH = "consolidated"
+LOCAL_CONSOLIDATED_PATH = "data" # Local path for consolidated data
 # CONSOLIDATED_FILENAME is derived dynamically
 
 # Local temporary directories for consolidation
@@ -74,7 +75,7 @@ def _check_rclone_remote_config(remote_name):
                  PrintUtils.print_extra(f"rclone remote '{remote_name}' configuration found.")
                  return True
              else:
-                 PrintUtils.print_error(f"rclone remote '{remote_name}' is not configured. Found remotes: {remotes}. Please run 'rclone config'.")
+                 PrintUtils.print_error(f"rclone remote '{remote_name}' is not configured. Found remotes: {remotes}. Please run 'rclone config' or 'rclone config create b2 b2 account=<> key=<>'.")
                  return False
         else:
              PrintUtils.print_error(f"rclone listremotes failed (code {process.returncode}): {stderr or stdout}")
@@ -121,7 +122,7 @@ def download_folder_copy(remote_name, bucket_name, remote_folder, local_folder):
     os.makedirs(local_folder, exist_ok=True)
     remote_full_path = f"{remote_name}:{bucket_name}/{remote_folder}"
     local_sync_path = os.path.join(local_folder, "")
-    command = ["rclone", "copy", "--progress", remote_full_path, local_sync_path]
+    command = ["rclone", "copy", "--progress", "--update", remote_full_path, local_sync_path]
     success = _run_rclone_command(command, f"download {remote_folder}")
     return success
 
@@ -132,7 +133,7 @@ def upload_file_copy(remote_name, bucket_name, local_file, remote_path):
     if not os.path.exists(local_file):
         PrintUtils.print_extra(f"Local file not found: {local_file}")
         return False
-    command = ["rclone", "copyto", "--progress", local_file, remote_target]
+    command = ["rclone", "copyto", "--progress", "--update", local_file, remote_target]
     success = _run_rclone_command(command, f"upload {os.path.basename(local_file)}")
     return success
 
@@ -404,7 +405,6 @@ def run_consolidation_task():
     return overall_success
 
 def download_folder(local_folder, remote_folder, remote=DEFAULT_REMOTE, bucket=DEFAULT_BUCKET):
-    PrintUtils.print_extra(f"(Using simplified download_folder wrapper for {remote_folder})")
     return download_folder_copy(remote, bucket, remote_folder, local_folder)
 
 def upload_folder(local_folder, remote_folder, remote=DEFAULT_REMOTE, bucket=DEFAULT_BUCKET):
@@ -419,3 +419,15 @@ def upload_folder(local_folder, remote_folder, remote=DEFAULT_REMOTE, bucket=DEF
     success = _run_rclone_command(command, f"upload folder {local_folder}")
     return success
 
+def download_training_data(remote=DEFAULT_REMOTE, bucket=DEFAULT_BUCKET):
+    """
+    Downloads the training data from the remote storage.
+    """
+    # Check if rclone is installed and configured
+    if not _check_rclone_installed():
+        return False
+    
+    if not _check_rclone_remote_config(remote):
+        return False
+
+    return download_folder(LOCAL_CONSOLIDATED_PATH, REMOTE_CONSOLIDATED_PATH, remote, bucket)

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+from pathlib import Path
 from core.classifiers.base_classifier import BaseClassifier
 from core.classifiers.cnn_classifier import CNNClassifier
 from core.classifiers.attention_bi_lstm_classifier import AttentionBiLSTMClassifier
@@ -32,6 +33,8 @@ import torch.nn as nn
 import torch.optim as optim
 import numpy as np
 import pandas as pd
+
+from data_sync import download_training_data
  
 def parse_arguments():
     """
@@ -229,6 +232,17 @@ def main():
 
         # Parse arguments
         args = parse_arguments()
+
+        # Download the training data if needed
+        try:
+            PrintUtils.start_stage("Downloading training data")
+            training_data_dir = Path(__file__).parent.parent / "data"
+            training_data_dir.mkdir(parents=True, exist_ok=True)
+
+            download_training_data()
+        except:
+            PrintUtils.print_extra("Failed to download training data. Continuing...")
+        PrintUtils.end_stage()
 
         # Setup
         set_plot_style()

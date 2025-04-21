@@ -4,7 +4,7 @@
 benchmark_name: lstm_time_mitigations
 sampling_rate: 1
 num_trials: 3 # Number of trials to run for each model
-data_path: consolidated/main
+data_path: data/main
 feature_modes:
 #  - "Both"
 #  - "Data Size Only"      # Test how mitigations affect different features
