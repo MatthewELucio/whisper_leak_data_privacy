@@ -1,0 +1,72 @@
+# Example benchmark configuration
+
+# Benchmark config
+benchmark_name: lstm_time_mitigations
+sampling_rate: 1
+num_trials: 3 # Number of trials to run for each model
+data_path: data/main
+feature_modes:
+#  - "Both"
+  - "Data Size Only"      # Test how mitigations affect different features
+#  - "Time Only"
+
+# Chatbots to benchmark with their common names. >80% AUPRC from size data.
+chatbots:
+#  - mistrallarge
+  - azuredeepseekr1
+#  - mistralsmall
+#  - llama4maverickgroq
+#  - o1mini
+#  - gpt4omini
+#  - deepseekr1
+#  - gpt41nano
+#  - grok2
+#  - gpt41mini
+#  - llama405blambda
+#  - deepseekv3
+#  - qwenturbo
+#  - llama8blambda
+#  - azuregpt41nano
+#  - azuregpt41mini
+#  - azuregpt4omini
+#  - azuregpt4o
+#  - claudehaiku
+
+# --- Mitigation Sets ---
+# Define different combinations of mitigations to test
+mitigations:
+  none: [] # Baseline - no mitigation
+
+  remove_empty_time_entries:
+    - type: RemoveZeroTimeEntriesMitigation
+      params: {}
+
+  pad16_only:
+    - type: DataPaddingMitigation
+      params: {block_size: 16}
+
+  pad32_only:
+    - type: DataPaddingMitigation
+      params: {block_size: 32}
+
+# Model settings
+model:
+  class: AttentionBiLSTMClassifier
+  params:
+    hidden_size: 128
+    num_layers: 2
+    dropout_rate: 0.3
+    embedding_dim: 32
+    fc_dims: [128, 64]
+    bidirectional: true
+    attention_dim: 64
+
+training:
+  # Training parameters
+  batch_size: 32
+  max_epochs: 10
+  learning_rate: 0.0002
+  patience: 20
+  test_size: 20
+  valid_size: 5
+  seed: 42

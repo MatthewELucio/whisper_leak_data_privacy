@@ -118,6 +118,8 @@ class ModelTrainer:
         best_epoch = 0
         
         for epoch in range(self.config.max_epochs):
+            PrintUtils.start_stage(f'Training (epoch {epoch+1}/{self.config.max_epochs})')
+
             # Training phase
             self.model.train()
             train_loss, train_acc = 0.0, 0.0
@@ -185,11 +187,12 @@ class ModelTrainer:
                 break
             
             # Log progress
-            PrintUtils.print_extra(
-                f"Epoch {epoch+1}/{self.config.max_epochs} - "
-                f"Train loss: {train_loss:.4f}, acc: {train_acc:.4f} - "
-                f"Val loss: {val_loss:.4f}, acc: {val_acc:.4f}"
+            PrintUtils.start_stage(
+                f'Epoch {epoch+1}/{self.config.max_epochs} - train loss: {train_loss:.4f}, '
+                f'train acc: {train_acc:.4f} - val loss: {val_loss:.4f}, val acc: {val_acc:.4f}',
+                override_prev=True
             )
+            PrintUtils.end_stage()
             
             # Update best epoch if no early stopping
             if epoch == self.config.max_epochs - 1:
@@ -608,20 +611,32 @@ def load_chatbot_data(chatbot_name, input_folder, prompts_file, downsample_rate=
     files = [
         os.path.join(training_set_dir, i) 
         for i in os.listdir(training_set_dir) 
-        if i.lower().endswith(f'_{chatbot_name.lower()}.seq') or f'_{chatbot_name.lower()}_' in i.lower()
+        if i.lower().endswith(f'_{chatbot_name.lower()}.seq')
+            or f'_{chatbot_name.lower()}_' in i.lower()
+            or i.lower() == f'{chatbot_name.lower()}.seq'
     ]
     
     if not files:
         raise ValueError(f'Did not find training set files for chatbot {chatbot_name}')
     
-    if downsample_rate < 1.0:
+    if downsample_rate < 1.0 and len(files) > 1:
         # Downsample the files to a fraction of the original size
         files = files[:int(len(files) * downsample_rate)]
 
     data = []
     for file_index, file_path in enumerate(files):
-        with open(file_path, 'r') as fp:
-            data.append(json.load(fp))
+        with open(file_path, 'r', encoding="utf8") as fp:
+            new_data = json.load(fp)
+            # Check if it's a list of dictionaries
+            if isinstance(new_data, list):
+                # Randomly sample
+                if downsample_rate < 1.0:
+                    new_data = random.sample(new_data, int(len(new_data) * downsample_rate))
+
+                # Extend the data list with new data
+                data.extend(new_data)
+            else:
+                data.append(json.load(fp))
         
         if file_index % 10 == 0:
             percentage = (file_index * 100) // len(files)

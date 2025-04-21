@@ -4,7 +4,7 @@
 benchmark_name: lgbm_2
 sampling_rate: 1 # 100% of the data
 num_trials: 5 # Number of trials to run for each model
-data_path: data_v2
+data_path: data/main
 
 # Chatbots to benchmark with their common names
 chatbots:
