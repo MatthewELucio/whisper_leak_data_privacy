@@ -1,9 +1,9 @@
 # Example benchmark configuration
 
 # Benchmark config
-benchmark_name: lstm_time_mitigations
+benchmark_name: lgmb_time_mitigations
 sampling_rate: 1
-num_trials: 3 # Number of trials to run for each model
+num_trials: 5 # Number of trials to run for each model
 data_path: data/main
 feature_modes:
 #  - "Both"
@@ -12,7 +12,13 @@ feature_modes:
 
 # Chatbots to benchmark with their common names. >=0.8 AUPRC from time data.
 chatbots:
-  - claudehaiku
+  - azuregpt41nano
+  - gpt41nano
+#  - azuredeepseekr1
+#  - claudehaiku
+#  - azuregpt41nano
+#  - geminiflash
+#  - azuregpt4o
 #  - amazonnovalitev1
 #  - azuregpt41nano
 #  - azuregpt41mini
@@ -21,7 +27,6 @@ chatbots:
 #  - azuregpt4omini
 #  - geminiflash
 #  - azuregpto1mini
-#  - gpt41nano
 #  - gpt4omini
 #  - geminiflashlight
 
@@ -34,98 +39,201 @@ mitigations:
   remove_empty_time_entries:
     - type: RemoveZeroTimeEntries
       params: {}
+  
+  injection_adaptive_50pct_1:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 0.50, median_time_multiplier: 1.0, adaptive_min_samples: 5}
+  
+  injection_adaptive_50pct_0.5:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 0.50, median_time_multiplier: 0.5, adaptive_min_samples: 5}
+  
+  injection_adaptive_75pct_0.5:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 0.75, median_time_multiplier: 0.5, adaptive_min_samples: 5}
+  
+  injection_adaptive_25pct_0.5:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 0.25, median_time_multiplier: 0.5, adaptive_min_samples: 5}
+  
+  injection_adaptive_100pct_0.5:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 1.0, median_time_multiplier: 0.5, adaptive_min_samples: 5}
 
-  time_noise_10pct:
-    - type: TimeNoiseMitigation
-      params: {noise_percentage: 0.10}
+  injection_adaptive_50pct_0.75:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 0.50, median_time_multiplier: 0.75, adaptive_min_samples: 5}
+  
+  injection_adaptive_75pct_0.75:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 0.75, median_time_multiplier: 0.75, adaptive_min_samples: 5}
+  
+  injection_adaptive_25pct_0.75:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 0.25, median_time_multiplier: 0.75, adaptive_min_samples: 5}
+  
+  injection_adaptive_100pct_0.75:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 1.0, median_time_multiplier: 0.75, adaptive_min_samples: 5}
 
-  time_noise_25pct:
-    - type: TimeNoiseMitigation
-      params: {noise_percentage: 0.25}
+  injection_adaptive_100pct_1:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 1.0, median_time_multiplier: 1.0, adaptive_min_samples: 5}
   
-  time_noise_100pct:
-    - type: TimeNoiseMitigation
-      params: {noise_percentage: 1.0}
+  injection_adaptive_100pct_0.25:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 1.0, median_time_multiplier: 0.25, adaptive_min_samples: 5}
+  
+  injection_adaptive_100pct_0.125:
+    - type: AdaptivePacketInjectionMitigation
+      params: {injection_probability: 1.0, median_time_multiplier: 0.125, adaptive_min_samples: 5}
 
-  leaky_bucket_500:
-    - type: LeakyBucketMitigation
-      params: {rate: 500.0, burst_size: 10.0} # Default params
+  injection_50pct_1:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 0.50, median_time_multiplier: 1.0}
+  
+  injection_50pct_0.5:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 0.50, median_time_multiplier: 0.5}
+  
+  injection_75pct_0.5:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 0.75, median_time_multiplier: 0.5}
+  
+  injection_25pct_0.5:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 0.25, median_time_multiplier: 0.5}
+  
+  injection_100pct_0.5:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 1.0, median_time_multiplier: 0.5}
 
-  leaky_bucket_1000:
-    - type: LeakyBucketMitigation
-      params: {rate: 1000.0, burst_size: 10.0} # Default params
+  injection_50pct_0.75:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 0.50, median_time_multiplier: 0.75}
+  
+  injection_75pct_0.75:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 0.75, median_time_multiplier: 0.75}
+  
+  injection_25pct_0.75:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 0.25, median_time_multiplier: 0.75}
+  
+  injection_100pct_0.75:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 1.0, median_time_multiplier: 0.75}
 
-  random_delay_5ms:
-    - type: RandomTimeDelayMitigation
-      params: {max_delay: 0.005}
+  injection_100pct_1:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 1.0, median_time_multiplier: 1.0}
   
-  random_delay_20ms:
-    - type: RandomTimeDelayMitigation
-      params: {max_delay: 0.020}
+  injection_100pct_0.25:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 1.0, median_time_multiplier: 0.25}
   
-  random_delay_200ms:
-    - type: RandomTimeDelayMitigation
-      params: {max_delay: 0.20}
+  injection_100pct_0.125:
+    - type: PacketInjectionMitigation
+      params: {injection_probability: 1.0, median_time_multiplier: 0.125}
+    
+  batching_1:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 1}
 
-  random_delay_500ms:
-    - type: RandomTimeDelayMitigation
-      params: {max_delay: 0.50}
+  batching_2:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 2}
+  
+  batching_3:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 3}
+  
+  batching_4:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 4}
+  
+  batching_5:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 5}
 
-  random_delay_1s:
-    - type: RandomTimeDelayMitigation
-      params: {max_delay: 1.0}
+  batching_6:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 6}
 
-  random_delay_50ms:
-    - type: RandomTimeDelayMitigation
-      params: {max_delay: 0.020}
-  
-  time_quantization_10ms:
-    - type: TimeQuantizationMitigation
-      params: {bin_interval: 0.01}
-  
-  time_quantization_200ms:
-    - type: TimeQuantizationMitigation
-      params: {bin_interval: 0.20}
-  
-  time_quantization_500ms:
-    - type: TimeQuantizationMitigation
-      params: {bin_interval: 0.50}
-  
-  time_quantization_1s:
-    - type: TimeQuantizationMitigation
-      params: {bin_interval: 1.0}
+  batching_7:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 7}
 
-  micro_bursting_5ms_5pkts:
-    - type: MicroBurstingMitigation
-      params: {time_window: 0.005, max_packets_in_burst: 5} # Default params
+  batching_8:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 8}
+
+  batching_9:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 9}
   
-  micro_bursting_10ms_10pkts:
-    - type: MicroBurstingMitigation
-      params: {time_window: 0.010, max_packets_in_burst: 10}
-  
-  micro_bursting_50ms_10pkts:
-    - type: MicroBurstingMitigation
-      params: {time_window: 0.050, max_packets_in_burst: 10}
-  
-  micro_bursting_500ms_10pkts:
-    - type: MicroBurstingMitigation
-      params: {time_window: 0.50, max_packets_in_burst: 10}
-  
-  micro_bursting_1s_10pkts:
-    - type: MicroBurstingMitigation
-      params: {time_window: 1.0, max_packets_in_burst: 10}
+  batching_10:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 10}
+
+  batching_11:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 11}
+
+  batching_12:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 12}
+
+  batching_13:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 13}
+
+  batching_14:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 14}
+
+  batching_15:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 15}
+
+  batching_16:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 16}
+
+  batching_17:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 17}
+
+  batching_18:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 18}
+
+  batching_19:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 19}
+
+  batching_20:
+    - type: PacketBatchingMitigation
+      params: {batch_size: 20}
 
 # Model settings
 model:
-  class: AttentionBiLSTMClassifier
+  class: LightGBMClassifier
   params:
-    hidden_size: 128
-    num_layers: 2
-    dropout_rate: 0.3
-    embedding_dim: 32
-    fc_dims: [128, 64]
-    bidirectional: true
-    attention_dim: 64
+    n_estimators: 5000
+    learning_rate: 0.02
+
+# Model settings
+#model:
+#  class: AttentionBiLSTMClassifier
+#  params:
+#    hidden_size: 128
+#    num_layers: 2
+#    dropout_rate: 0.3
+#    embedding_dim: 32
+#    fc_dims: [128, 64]
+#    bidirectional: true
+#    attention_dim: 64
 
 training:
   # Training parameters

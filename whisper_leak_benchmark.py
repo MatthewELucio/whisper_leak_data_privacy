@@ -50,7 +50,7 @@ from core.utils import ThrowingArgparse, PrintUtils
 
 import json
 
-from data_sync import download_training_data
+from core.data_sync import download_training_data
 
 
 class FeatureMode(Enum):
@@ -470,12 +470,28 @@ class BenchmarkRunner:
             def calculate_median_totals(df):
                 median_total_time = df['time_diffs'].apply(lambda x: np.sum(x)).median()
                 median_total_size = df['data_lengths'].apply(lambda x: np.sum(x)).median()
-                return median_total_time, median_total_size
+                # Calculate the median time deltas of all rows together ignoring time diffs that are < some small delta
+                all_time_deltas = []
+                for time_list in df['time_diffs']:
+                    if isinstance(time_list, list):
+                        for time_val in time_list:
+                            if isinstance(time_val, (int, float)) and not np.isnan(time_val) and time_val > 0.005:
+                                all_time_deltas.append(time_val)
+                
+                median_time_delta = np.median(all_time_deltas) if all_time_deltas else 0.0
+
+                return median_total_time, median_total_size, median_time_delta
 
             # Apply mitigation set to the full dataframe before splitting
-            median_time, median_size = calculate_median_totals(df_full)
-            df_mitigated = apply_mitigation_set(df_full, mitigation_configs)
-            median_time_after_mitigations, median_size_after_mitigations = calculate_median_totals(df_mitigated)
+            median_time, median_size, median_time_delta = calculate_median_totals(df_full)
+            df_mitigated = apply_mitigation_set(df_full, mitigation_configs, median_time_delta=median_time_delta, median_data_size=median_size)
+            median_time_after_mitigations, median_size_after_mitigations, median_time_delta_after_mitigations = calculate_median_totals(df_mitigated)
+
+            # --- Enforce feature mode by copying columns over ---
+            if feature_mode == FeatureMode.DATA_SIZE_ONLY:
+                df_mitigated["time_diffs"] = df_mitigated["data_lengths"].copy()
+            elif feature_mode == FeatureMode.TIME_ONLY:
+                df_mitigated["data_lengths"] = df_mitigated["time_diffs"].copy()
 
             del df_full # Free memory
 
@@ -602,8 +618,10 @@ class BenchmarkRunner:
             metrics['Data Path'] = data_path
             metrics['Median Time Before Mitigations'] = median_time
             metrics['Median Size Before Mitigations'] = median_size
+            metrics['Median Time Delta Before Mitigations'] = median_time_delta
             metrics['Median Time After Mitigations'] = median_time_after_mitigations
             metrics['Median Size After Mitigations'] = median_size_after_mitigations
+            metrics['Median Time Delta After Mitigations'] = median_time_delta_after_mitigations
 
             # Append to the main results list
             self.results.append(metrics)
@@ -908,9 +926,9 @@ def main():
         if last_error is not None:
             PrintUtils.print_error(f'\nBenchmark finished with ERRORS.')
         elif is_user_cancelled:
-            PrintUtils.print_warning(f'\nBenchmark *cancelled* by user.')
+            PrintUtils.print_extra(f'\nBenchmark *cancelled* by user.')
         else:
-            PrintUtils.print_success(f'\nBenchmark completed successfully.')
+            PrintUtils.print_extra(f'\nBenchmark completed successfully.')
 
 
 if __name__ == '__main__':

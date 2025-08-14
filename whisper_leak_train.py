@@ -34,7 +34,7 @@ import torch.optim as optim
 import numpy as np
 import pandas as pd
 
-from data_sync import download_training_data
+from core.data_sync import download_training_data
  
 def parse_arguments():
     """

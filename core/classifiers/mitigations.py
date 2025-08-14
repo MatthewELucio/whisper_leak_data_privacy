@@ -1,6 +1,7 @@
 # core/mitigations.py
 
 import abc
+from collections import deque
 import math
 import random
 import numpy as np
@@ -17,13 +18,15 @@ class BaseMitigation(abc.ABC):
     """
 
     @abc.abstractmethod
-    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
+    def transform(self, df: pd.DataFrame, median_time_delta: float = None, median_data_size: float = None) -> pd.DataFrame:
         """
         Applies the mitigation logic to the DataFrame.
 
         Args:
             df: The input DataFrame with 'time_diffs' and 'data_lengths' columns.
                 These columns should contain lists of numbers.
+            median_time_delta: Pre-calculated median time delta from the full dataset.
+            median_data_size: Pre-calculated median data size from the full dataset.
 
         Returns:
             A new DataFrame with the mitigation applied.
@@ -52,312 +55,617 @@ class BaseMitigation(abc.ABC):
         try:
             return series.apply(lambda x: ast.literal_eval(x) if isinstance(x, str) else (x if isinstance(x, list) else []))
         except (ValueError, SyntaxError, TypeError) as e:
-            PrintUtils.print_warning(f"Could not parse column '{series.name}' elements as lists: {e}. Mitigation might fail or be skipped.")
+            PrintUtils.print_extra(f"Could not parse column '{series.name}' elements as lists: {e}. Mitigation might fail or be skipped.")
             # Return original but ensure elements are lists (even if empty on failure)
             return series.apply(lambda x: x if isinstance(x, list) else [])
 
 
-class DataPaddingMitigation(BaseMitigation):
+class PacketInjectionMitigation(BaseMitigation):
     """
-    Mitigation that increases packet sizes to the nearest multiple of a block size.
+    Mitigation that probabilistically injects noise packets into the sequence,
+    preserving the total time duration of the original sequence.
+
+    Injection opportunities occur based on a multiple of the median non-zero
+    inter-packet time calculated across the dataset. When an injection occurs,
+    it splits the time interval since the last emitted packet. The time difference
+    of the injected packet reflects the time elapsed up to the injection point,
+    and subsequent time differences are adjusted accordingly.
+    The size of the injected packet is determined by a configurable method.
     """
-    def __init__(self, block_size: int = 16):
+    def __init__(self,
+                 injection_probability: float = 0.1,
+                 median_time_multiplier: float = 1.0,
+                 size_method: str = 'median',
+                 fixed_size: int = 64,
+                 size_range: tuple[int, int] = (32, 128)):
         """
-        Initializes the data padding mitigation.
+        Initializes the packet injection mitigation.
 
         Args:
-            block_size: The target block size. Sizes will be padded up to the
-                        nearest multiple of this value. Defaults to 16.
+            injection_probability: The probability (0.0 to 1.0) of injecting a
+                noise packet when an injection opportunity arises. Defaults to 0.1.
+            median_time_multiplier: Determines the time interval between injection
+                opportunities, calculated as multiplier * median_nonzero_time.
+                Defaults to 1.0.
+            size_method: Method to determine the size of injected packets.
+                Options: 'median', 'fixed', 'range'. Defaults to 'median'.
+                - 'median': Use the median non-zero packet size from the dataset.
+                - 'fixed': Use the fixed_size parameter.
+                - 'range': Use a random integer between size_range[0] and size_range[1].
+            fixed_size: The fixed size to use if size_method is 'fixed'. Defaults to 64.
+            size_range: The tuple (min_size, max_size) for random size selection
+                        if size_method is 'range'. Defaults to (32, 128).
         """
-        if block_size <= 0:
-            raise ValueError("Block size must be positive.")
-        self.block_size = block_size
-        PrintUtils.print_extra(f"Initialized DataPaddingMitigation with block_size={self.block_size}")
+        if not 0.0 <= injection_probability <= 1.0:
+            raise ValueError("Injection probability must be between 0.0 and 1.0.")
+        if median_time_multiplier <= 0:
+            raise ValueError("Median time multiplier must be positive.")
+        if size_method not in ['median', 'fixed', 'range']:
+            raise ValueError("Invalid size_method. Choose 'median', 'fixed', or 'range'.")
+        if size_method == 'fixed' and fixed_size < 0:
+            raise ValueError("Fixed size cannot be negative.")
+        if size_method == 'range':
+            if not (isinstance(size_range, tuple) and len(size_range) == 2 and
+                    0 <= size_range[0] <= size_range[1]):
+                raise ValueError("Size range must be a tuple of two non-negative integers (min, max) with min <= max.")
 
-    def _pad_sizes(self, sizes: list) -> list:
-        """Pads a list of sizes."""
-        if not isinstance(sizes, list): return sizes # Handle potential non-list data
-        padded_sizes = []
-        for s in sizes:
-            # Ensure s is a number, default to 0 if not
-            s_num = s if isinstance(s, (int, float)) else 0
-            if s_num <= 0:
-                padded_sizes.append(0) # Keep 0 or negative sizes as is
-            else:
-                padded_size = math.ceil(s_num / self.block_size) * self.block_size
-                padded_sizes.append(int(padded_size)) # Store as int
-        return padded_sizes
+        self.injection_probability = injection_probability
+        self.median_time_multiplier = median_time_multiplier
+        self.size_method = size_method
+        self.fixed_size = fixed_size
+        self.size_range = size_range
 
-    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
-        """
-        Applies data padding to the 'data_lengths' column.
-
-        Args:
-            df: The input DataFrame.
-
-        Returns:
-            DataFrame with 'data_lengths' padded.
-        """
-        PrintUtils.start_stage(f"Applying DataPaddingMitigation (block_size={self.block_size})")
-        df_copy = df.copy()
-        if 'data_lengths' not in df_copy.columns:
-            PrintUtils.print_warning("Column 'data_lengths' not found. Skipping DataPaddingMitigation.")
-            PrintUtils.end_stage()
-            return df_copy
-
-        # Ensure data_lengths are lists
-        df_copy['data_lengths'] = self._ensure_list_format(df_copy['data_lengths'])
-
-        # Apply padding
-        df_copy['data_lengths'] = df_copy['data_lengths'].apply(self._pad_sizes)
-        PrintUtils.end_stage()
-        return df_copy
-
-
-class TimeNoiseMitigation(BaseMitigation):
-    """
-    Mitigation that adds random noise to non-zero inter-packet times.
-
-    The noise added is a random percentage (between 0% and X%) of the
-    median non-zero time difference observed in the dataset.
-    """
-    def __init__(self, noise_percentage: float = 0.10):
-        """
-        Initializes the time noise mitigation.
-
-        Args:
-            noise_percentage: The maximum percentage of the median non-zero time
-                              difference to add as noise (e.g., 0.10 for 10%).
-                              Defaults to 0.10.
-        """
-        if not 0.0 <= noise_percentage <= 1.0:
-            raise ValueError("Noise percentage must be between 0.0 and 1.0.")
-        self.noise_percentage = noise_percentage
+        # These will be calculated in transform() based on the dataset
         self.median_nonzero_time = None
-        PrintUtils.print_extra(f"Initialized TimeNoiseMitigation with noise_percentage={self.noise_percentage*100:.1f}%")
+        self.median_packet_size = None
+
+        PrintUtils.print_extra(
+            f"Initialized PacketInjectionMitigation with prob={self.injection_probability:.2f}, "
+            f"time_mult={self.median_time_multiplier:.2f}, size_method='{self.size_method}'"
+        )
 
     def _calculate_median_nonzero_time(self, series: pd.Series) -> float:
-        """Calculates the median of all non-zero values across all lists in the series."""
+        """Calculates the median of all non-zero time values across all lists."""
         try:
-            all_times = [time for sublist in series if isinstance(sublist, list) for time in sublist if isinstance(time, (int, float))]
-            non_zero_times = [time for time in all_times if time > 1e-9] # Use small threshold for float comparison
+            # Flatten lists, filter numeric, keep non-zeros
+            all_times = [
+                float(time) for sublist in series if isinstance(sublist, list)
+                for time in sublist if isinstance(time, (int, float)) and not math.isnan(time)
+            ]
+            non_zero_times = [time for time in all_times if time > 0.005]
 
             if not non_zero_times:
-                return 0.0  # No non-zero times found
-
+                return 0.0
             return float(np.median(non_zero_times))
         except Exception as e:
-            PrintUtils.print_warning(f"Could not calculate median time: {e}")
+            PrintUtils.print_extra(f"Could not calculate median non-zero time: {e}")
             return 0.0
 
-    def _add_noise(self, times: list) -> list:
-        """Adds noise to a list of times."""
-        if not isinstance(times, list): return times # Handle potential non-list data
-        if self.median_nonzero_time is None or self.median_nonzero_time <= 1e-9:
-            return times # Cannot add noise if median is unknown or zero
+    def _calculate_median_size(self, series: pd.Series) -> int:
+        """Calculates the median of all non-zero packet sizes across all lists."""
+        try:
+            # Flatten lists, filter numeric, keep non-zeros
+            all_sizes = [
+                int(size) for sublist in series if isinstance(sublist, list)
+                for size in sublist if isinstance(size, (int, float)) and not math.isnan(size)
+            ]
+            non_zero_sizes = [size for size in all_sizes if size > 0]
 
-        noisy_times = []
-        max_noise = self.noise_percentage * self.median_nonzero_time
-        for t in times:
-            t_num = t if isinstance(t, (int, float)) else 0.0
-            if t_num > 1e-9:
-                noise = random.uniform(0, max_noise)
-                noisy_times.append(t_num + noise)
-            else:
-                noisy_times.append(t_num) # Keep zero or negative times as is
-        return noisy_times
+            if not non_zero_sizes:
+                return 0 # Default to 0 if no positive sizes found
+            # Use np.ceil to ensure integer, leaning towards slightly larger median if needed
+            return int(np.ceil(np.median(non_zero_sizes)))
+        except Exception as e:
+            PrintUtils.print_extra(f"Could not calculate median packet size: {e}")
+            return 0 # Default to 0 on error
 
-    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
-        """
-        Applies time noise to the 'time_diffs' column.
-
-        Args:
-            df: The input DataFrame.
-
-        Returns:
-            DataFrame with noise added to 'time_diffs'.
-        """
-        PrintUtils.start_stage(f"Applying TimeNoiseMitigation (noise={self.noise_percentage*100:.1f}%)")
-        df_copy = df.copy()
-        if 'time_diffs' not in df_copy.columns:
-            PrintUtils.print_warning("Column 'time_diffs' not found. Skipping TimeNoiseMitigation.")
-            PrintUtils.end_stage()
-            return df_copy
-
-        # Ensure time_diffs are lists
-        df_copy['time_diffs'] = self._ensure_list_format(df_copy['time_diffs'])
-
-        # Calculate median non-zero time difference across the dataset
-        self.median_nonzero_time = self._calculate_median_nonzero_time(df_copy['time_diffs'])
-        PrintUtils.print_extra(f"Median non-zero time difference: {self.median_nonzero_time:.6f}")
-
-        if self.median_nonzero_time is None or self.median_nonzero_time <= 1e-9:
-            PrintUtils.print_warning("Median non-zero time is zero or could not be calculated. Skipping noise addition.")
+    def _get_injection_size(self) -> int:
+        """Determines the size of the packet to be injected based on configuration."""
+        if self.size_method == 'median':
+            # Use the pre-calculated median size (ensure it's non-negative)
+            return max(0, self.median_packet_size if self.median_packet_size is not None else 0)
+        elif self.size_method == 'fixed':
+            return self.fixed_size
+        elif self.size_method == 'range':
+            return random.randint(self.size_range[0], self.size_range[1])
         else:
-            # Apply noise
-            df_copy['time_diffs'] = df_copy['time_diffs'].apply(self._add_noise)
+            # Fallback, though validation should prevent this
+            return 0
 
-        PrintUtils.end_stage()
-        return df_copy
-
-
-class LeakyBucketMitigation(BaseMitigation):
-    """
-    Mitigation that reshapes timing based on a leaky bucket / token bucket model.
-
-    Simulates a token bucket where packets can only be "sent" if a token is
-    available. Tokens regenerate at a constant rate. This introduces delays
-    if packets arrive faster than the token regeneration rate, smoothing bursts.
-    """
-    def __init__(self, rate: float = 50.0, burst_size: float = 10.0):
+    def _apply_injection(self, original_times: list, original_sizes: list) -> tuple[list, list]:
         """
-        Initializes the leaky bucket mitigation.
+        Applies probabilistic packet injection logic to time and size sequences,
+        preserving the total original time duration.
 
         Args:
-            rate: The rate at which tokens regenerate (packets per second).
-                  Defaults to 50.0.
-            burst_size: The maximum number of tokens the bucket can hold
-                        (maximum burst size in packets). Defaults to 10.0.
-        """
-        if rate <= 0:
-            raise ValueError("Rate must be positive.")
-        if burst_size < 1:
-            raise ValueError("Burst size must be at least 1.")
-        self.rate = rate
-        self.burst_size = burst_size
-        PrintUtils.print_extra(f"Initialized LeakyBucketMitigation with rate={self.rate}, burst_size={self.burst_size}")
-
-    def _reshape_timing(self, original_times: list) -> list:
-        """Applies leaky bucket logic to a single time sequence."""
-        if not isinstance(original_times, list) or not original_times:
-            return original_times
-
-        # Ensure times are numeric
-        numeric_times = [t if isinstance(t, (int, float)) else 0.0 for t in original_times]
-
-        tokens = self.burst_size
-        last_event_abs_time = 0.0
-        current_abs_time = 0.0
-        new_time_diffs = []
-        last_sent_abs_time = 0.0 # Track absolute time of the last *sent* packet
-
-        for t_orig in numeric_times:
-            current_abs_time += max(0, t_orig) # Ensure time doesn't go backwards
-
-            # Regenerate tokens based on time elapsed since the *last event*
-            time_elapsed = current_abs_time - last_event_abs_time
-            tokens_generated = time_elapsed * self.rate
-            tokens = min(self.burst_size, tokens + tokens_generated)
-            last_event_abs_time = current_abs_time # Update time *before* checking tokens
-
-            if tokens >= 1.0 - 1e-9: # Use tolerance for float comparison
-                # Enough tokens, send packet "immediately" relative to last sent packet
-                tokens -= 1.0
-                time_diff_to_append = current_abs_time - last_sent_abs_time
-                new_time_diffs.append(max(0, time_diff_to_append)) # Ensure non-negative diff
-                last_sent_abs_time = current_abs_time # Update last sent time
-            else:
-                # Not enough tokens, calculate wait time
-                wait_time_needed = (1.0 - tokens) / self.rate
-                tokens = 0.0  # Use up the fraction of token we had
-
-                # Advance time to when the token becomes available
-                delayed_send_time = last_event_abs_time + wait_time_needed
-                last_event_abs_time = delayed_send_time # Next event starts from here
-                # Current absolute time represents the time the packet *would* have arrived
-                # if there was no delay. The actual send time is delayed_send_time.
-
-                # Calculate the time difference for the delayed packet
-                time_diff_to_append = delayed_send_time - last_sent_abs_time
-                new_time_diffs.append(max(0, time_diff_to_append)) # Ensure non-negative diff
-                last_sent_abs_time = delayed_send_time # Update last sent time
-
-        return new_time_diffs
-
-    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
-        """
-        Applies leaky bucket timing reshaping to the 'time_diffs' column.
-
-        Args:
-            df: The input DataFrame.
+            original_times: List of original inter-packet time differences.
+            original_sizes: List of original data lengths.
 
         Returns:
-            DataFrame with 'time_diffs' potentially delayed.
+            A tuple containing the new list of time differences and the new list
+            of data lengths after applying the mitigation.
         """
-        PrintUtils.start_stage(f"Applying LeakyBucketMitigation (rate={self.rate}, burst={self.burst_size})")
+        # --- Input Validation and Pre-checks ---
+        if not isinstance(original_times, list) or not isinstance(original_sizes, list):
+            PrintUtils.print_extra("PacketInjectionMitigation received non-list input.")
+            return original_times, original_sizes
+        if len(original_times) != len(original_sizes):
+            PrintUtils.print_extra("PacketInjectionMitigation requires time/size lists of equal length.")
+            return original_times, original_sizes
+        if not original_times:
+            return [], []
+
+        # Check if necessary median values were calculated
+        if self.median_nonzero_time is None or self.median_nonzero_time <= 0.005:
+            PrintUtils.print_extra("Median non-zero time is zero or invalid. Skipping injection.")
+            return original_times, original_sizes
+        if self.size_method == 'median' and (self.median_packet_size is None or self.median_packet_size < 0):
+             PrintUtils.print_extra("Median packet size is invalid for 'median' size method. Skipping injection.")
+             return original_times, original_sizes
+
+        # Ensure numeric types
+        times_numeric = [(float(t) if isinstance(t, (int, float)) and not math.isnan(t) else 0.0) for t in original_times]
+        sizes_numeric = [(int(s) if isinstance(s, (int, float)) and not math.isnan(s) else 0) for s in original_sizes]
+
+        # --- Revised Injection Logic using Time Buffer ---
+        new_times = []
+        new_sizes = []
+        time_since_last_injection_check = 0.0
+        time_buffer = 0.0 # Accumulates time since the last *emitted* packet
+        # The time threshold for triggering an injection check
+        injection_check_threshold = self.median_nonzero_time * self.median_time_multiplier
+        if injection_check_threshold <= 0.001: # Avoid issues with zero or tiny thresholds
+             PrintUtils.print_extra("Injection check threshold is too small. Skipping injection.")
+             return original_times, original_sizes
+
+        n = len(times_numeric)
+        for i in range(n):
+            t_orig = times_numeric[i]       # Original time difference leading to this packet
+            size_orig = sizes_numeric[i]    # Original size of this packet
+            current_interval_remaining = t_orig # Time within this original interval to process
+
+            # Process the current original time interval, checking for injection points
+            while current_interval_remaining > 0.005:
+                # Time until the next scheduled injection check is due
+                time_to_next_check = max(0.0, injection_check_threshold - time_since_last_injection_check)
+
+                # Determine if the next check point falls within the remaining part of this interval
+                if time_to_next_check <= current_interval_remaining + 0.005:
+                    # --- Injection Check Point Reached ---
+                    time_chunk_consumed = time_to_next_check # Process time up to the check point
+                    time_buffer += time_chunk_consumed # Add this time chunk to the buffer
+                    time_since_last_injection_check = 0.0 # Reset the check timer
+
+                    # Probabilistically decide whether to inject
+                    if random.random() < self.injection_probability:
+                        # --- Inject Packet ---
+                        inj_size = self._get_injection_size()
+                        # Emit the buffered time as the time diff for the injected packet
+                        new_times.append(max(0.0, time_buffer))
+                        new_sizes.append(inj_size)
+                        time_buffer = 0.0 # Reset buffer after emission
+                    # Else (No Inject): Do nothing, time remains in the buffer.
+
+                else:
+                    # --- End of Interval Reached Before Next Check Point ---
+                    time_chunk_consumed = current_interval_remaining # Process the rest of the interval
+                    time_buffer += time_chunk_consumed # Add this remaining time to the buffer
+                    time_since_last_injection_check += time_chunk_consumed
+
+                # Reduce the remaining time in the current original interval
+                current_interval_remaining -= time_chunk_consumed
+
+            # --- Emit the Original Packet ---
+            # After processing the entire t_orig interval, the time remaining in the buffer
+            # belongs to the original packet.
+            # Add the original packet using the accumulated buffer time.
+            # Only add if the buffer has time or if the original size was non-zero
+            # (e.g., to preserve zero-time ACK packets).
+            if time_buffer > 0.005 or size_orig > 0:
+                new_times.append(max(0.0, time_buffer))
+                new_sizes.append(size_orig)
+                time_buffer = 0.0 # Reset buffer after emission
+
+        # Final check: Ensure total time is conserved (within float precision)
+        original_total_time = sum(t for t in times_numeric if t > 0.005)
+        new_total_time = sum(t for t in new_times if t > 0.005)
+        if not math.isclose(original_total_time, new_total_time, abs_tol=0.1):
+             PrintUtils.print_extra(
+                 f"Potential time conservation issue: Original sum={original_total_time:.6f}, "
+                 f"New sum={new_total_time:.6f}. Difference={original_total_time - new_total_time:.6f}"
+            )
+             # This warning helps catch future regressions or edge cases.
+
+        return new_times, new_sizes
+
+
+    def transform(self, df: pd.DataFrame, median_time_delta: float = None, median_data_size: float = None) -> pd.DataFrame:
+        """
+        Applies probabilistic packet injection to the 'time_diffs' and
+        'data_lengths' columns of the DataFrame.
+
+        Args:
+            df: The input DataFrame. Must contain 'time_diffs' and 'data_lengths'
+                columns with list-like entries.
+            median_time_delta: Pre-calculated median time delta from the full dataset.
+            median_data_size: Pre-calculated median data size from the full dataset.
+
+        Returns:
+            A new DataFrame with the mitigation applied.
+        """
+        mitigation_name = self.__class__.__name__
+        PrintUtils.start_stage(f"Applying {mitigation_name}")
         df_copy = df.copy()
-        if 'time_diffs' not in df_copy.columns:
-            PrintUtils.print_warning("Column 'time_diffs' not found. Skipping LeakyBucketMitigation.")
+
+        # --- Column Checks ---
+        if 'time_diffs' not in df_copy.columns or 'data_lengths' not in df_copy.columns:
+            PrintUtils.print_extra(f"Columns 'time_diffs' and 'data_lengths' required. Skipping {mitigation_name}.")
             PrintUtils.end_stage()
             return df_copy
 
-        # Ensure time_diffs are lists
-        df_copy['time_diffs'] = self._ensure_list_format(df_copy['time_diffs'])
+        # --- Ensure List Format ---
+        try:
+            df_copy['time_diffs'] = self._ensure_list_format(df_copy['time_diffs'])
+            df_copy['data_lengths'] = self._ensure_list_format(df_copy['data_lengths'])
+        except Exception as e:
+            PrintUtils.print_error(f"Error ensuring list format during {mitigation_name}: {e}. Skipping mitigation.")
+            PrintUtils.end_stage(fail_message="List format conversion failed.")
+            return df # Return original df on format error
 
-        # Apply reshaping
-        df_copy['time_diffs'] = df_copy['time_diffs'].apply(self._reshape_timing)
+        # --- Calculate Dataset-wide Medians ---
+        # Use pre-calculated median time delta if available, otherwise calculate it
+        if median_time_delta is not None and median_time_delta > 0.005:
+            self.median_nonzero_time = median_time_delta
+            PrintUtils.print_extra(f"Using pre-calculated median time delta: {self.median_nonzero_time:.6f} s")
+        else:
+            self.median_nonzero_time = self._calculate_median_nonzero_time(df_copy['time_diffs'])
+            PrintUtils.print_extra(f"Calculated median non-zero time: {self.median_nonzero_time:.6f} s")
+
+        if self.size_method == 'median':
+            # Use pre-calculated median data size if available, otherwise calculate it
+            if median_data_size is not None and median_data_size >= 0:
+                self.median_packet_size = int(np.ceil(median_data_size))
+                PrintUtils.print_extra(f"Using pre-calculated median data size: {self.median_packet_size} bytes")
+            else:
+                self.median_packet_size = self._calculate_median_size(df_copy['data_lengths'])
+                PrintUtils.print_extra(f"Calculated median non-zero packet size: {self.median_packet_size} bytes")
+
+        # --- Apply Mitigation Row-wise ---
+        # Check if median calculations are valid before proceeding
+        can_apply_mitigation = self.median_nonzero_time is not None and self.median_nonzero_time > 0.005
+        if self.size_method == 'median':
+             can_apply_mitigation &= (self.median_packet_size is not None and self.median_packet_size >= 0)
+
+        if not can_apply_mitigation:
+             PrintUtils.print_extra(f"Cannot apply {mitigation_name} due to invalid median calculations. Returning unmodified data.")
+             PrintUtils.end_stage()
+             return df_copy
+
+        new_times_list = []
+        new_sizes_list = []
+        for index, row in df_copy.iterrows():
+            original_times = row['time_diffs']
+            original_sizes = row['data_lengths']
+
+            try:
+                new_t, new_s = self._apply_injection(original_times, original_sizes)
+            except Exception as e:
+                PrintUtils.print_extra(f"Error applying injection logic for row {index}: {e}. Skipping row modification.")
+                new_t, new_s = original_times, original_sizes # Keep original on error
+
+            new_times_list.append(new_t)
+            new_sizes_list.append(new_s)
+
+        # --- Update DataFrame Columns ---
+        df_copy['time_diffs'] = new_times_list
+        df_copy['data_lengths'] = new_sizes_list
+
         PrintUtils.end_stage()
         return df_copy
 
 
-class RandomTimeDelayMitigation(BaseMitigation):
+class AdaptivePacketInjectionMitigation(BaseMitigation):
     """
-    Mitigation that adds a small, random delay to each non-zero inter-packet time.
+    Mitigation that probabilistically injects noise packets, adapting the
+    injection timing based on recently observed inter-packet intervals within
+    the current sequence, while preserving the total original time duration.
 
-    This adds minimal overhead but introduces jitter.
+    Injection opportunities are dynamically scheduled based on a running average
+    of recent non-negligible inter-packet times multiplied by a factor.
+    This allows the mitigation to adjust to faster or slower parts of a sequence.
     """
-    def __init__(self, max_delay: float = 0.005):
+    def __init__(self,
+                 injection_probability: float = 0.1,
+                 median_time_multiplier: float = 1.0,
+                 adaptive_window_size: int = 10,
+                 adaptive_min_samples: int = 3,
+                 time_epsilon: float = 0.002, # Threshold below which times are ignored for adaptation
+                 size_method: str = 'median',
+                 fixed_size: int = 64,
+                 size_range: tuple[int, int] = (32, 128)):
         """
-        Initializes the random time delay mitigation.
+        Initializes the adaptive packet injection mitigation.
 
         Args:
-            max_delay: The maximum random delay to add (in seconds).
-                       The added delay will be uniform between 0 and max_delay.
-                       Defaults to 0.005 (5ms).
+            injection_probability: Probability (0.0-1.0) of injecting a packet
+                at an opportunity. Defaults to 0.1.
+            median_time_multiplier: Factor multiplied by the current adaptive
+                time estimate to set the injection check interval. Defaults to 1.0.
+            adaptive_window_size: The number of recent relevant time intervals
+                to consider for the adaptive timing calculation. Defaults to 10.
+            adaptive_min_samples: The minimum number of relevant time intervals
+                needed in the window to switch from global median to adaptive
+                timing. Defaults to 3.
+            time_epsilon: Time differences below this value (in seconds) are
+                considered negligible and ignored for adaptive calculations and
+                initial median calculation. Defaults to 0.005 (5ms).
+            size_method: Method for determining injected packet size ('median',
+                'fixed', 'range'). Defaults to 'median'.
+            fixed_size: Size used if size_method is 'fixed'. Defaults to 64.
+            size_range: Tuple (min, max) used if size_method is 'range'.
+                        Defaults to (32, 128).
         """
-        if max_delay < 0:
-            raise ValueError("Maximum delay cannot be negative.")
-        self.max_delay = max_delay
-        PrintUtils.print_extra(f"Initialized RandomTimeDelayMitigation with max_delay={self.max_delay*1000:.1f}ms")
+        # --- Input Validation ---
+        if not 0.0 <= injection_probability <= 1.0:
+            raise ValueError("Injection probability must be between 0.0 and 1.0.")
+        if median_time_multiplier <= 0:
+            raise ValueError("Median time multiplier must be positive.")
+        if not isinstance(adaptive_window_size, int) or adaptive_window_size <= 0:
+            raise ValueError("Adaptive window size must be a positive integer.")
+        if not isinstance(adaptive_min_samples, int) or adaptive_min_samples <= 0:
+             raise ValueError("Adaptive minimum samples must be a positive integer.")
+        if adaptive_min_samples > adaptive_window_size:
+            raise ValueError("Adaptive minimum samples cannot be larger than adaptive window size.")
+        if time_epsilon < 0:
+            raise ValueError("Time epsilon cannot be negative.")
+        if size_method not in ['median', 'fixed', 'range']:
+            raise ValueError("Invalid size_method. Choose 'median', 'fixed', or 'range'.")
+        if size_method == 'fixed' and fixed_size < 0:
+            raise ValueError("Fixed size cannot be negative.")
+        if size_method == 'range':
+            if not (isinstance(size_range, tuple) and len(size_range) == 2 and
+                    0 <= size_range[0] <= size_range[1]):
+                raise ValueError("Size range must be a tuple (min_size, max_size) with min_size <= max_size and both non-negative.")
 
-    def _add_random_delay(self, times: list) -> list:
-        """Adds a small random delay to non-zero times."""
-        if not isinstance(times, list): return times
-        delayed_times = []
-        for t in times:
-            t_num = t if isinstance(t, (int, float)) else 0.0
-            if t_num > 1e-9: # Use tolerance
-                delay = random.uniform(0, self.max_delay)
-                delayed_times.append(t_num + delay)
-            else:
-                delayed_times.append(t_num) # Keep zero or negative times as is
-        return delayed_times
+        # --- Store Parameters ---
+        self.injection_probability = injection_probability
+        self.median_time_multiplier = median_time_multiplier
+        self.adaptive_window_size = adaptive_window_size
+        self.adaptive_min_samples = adaptive_min_samples
+        self.time_epsilon = time_epsilon
+        self.size_method = size_method
+        self.fixed_size = fixed_size
+        self.size_range = size_range
 
-    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
+        # --- Internal State (Calculated during transform) ---
+        self.global_median_nonzero_time = None
+        self.median_packet_size = None # Only calculated if size_method is 'median'
+
+        PrintUtils.print_extra(
+            f"Initialized AdaptivePacketInjectionMitigation with prob={self.injection_probability:.2f}, "
+            f"time_mult={self.median_time_multiplier:.2f}, window={self.adaptive_window_size}, "
+            f"min_samples={self.adaptive_min_samples}, epsilon={self.time_epsilon:.4f}, "
+            f"size_method='{self.size_method}'"
+        )
+
+    def _calculate_median_size(self, series: pd.Series) -> int:
+        """Calculates the median of all non-zero packet sizes across all lists."""
+        try:
+            all_sizes = [
+                int(size) for sublist in series if isinstance(sublist, list)
+                for size in sublist if isinstance(size, (int, float)) and not math.isnan(size)
+            ]
+            non_zero_sizes = [size for size in all_sizes if size > 0]
+
+            if not non_zero_sizes:
+                PrintUtils.print_extra("No non-zero sizes found for median calculation.")
+                return 0
+            return int(np.ceil(np.median(non_zero_sizes)))
+        except Exception as e:
+            PrintUtils.print_extra(f"Could not calculate median packet size: {e}")
+            return 0
+
+    def _get_injection_size(self) -> int:
+        """Determines the size of the packet to be injected based on configuration."""
+        if self.size_method == 'median':
+            return max(0, self.median_packet_size if self.median_packet_size is not None else 0)
+        elif self.size_method == 'fixed':
+            return self.fixed_size
+        elif self.size_method == 'range':
+            return random.randint(self.size_range[0], self.size_range[1])
+        else: # Fallback
+            return 0
+
+    def _apply_adaptive_injection(self, original_times: list, original_sizes: list) -> tuple[list, list]:
         """
-        Applies random delays to the 'time_diffs' column.
+        Applies adaptive probabilistic packet injection logic to time and size sequences.
 
         Args:
-            df: The input DataFrame.
+            original_times: List of original inter-packet time differences.
+            original_sizes: List of original data lengths.
 
         Returns:
-            DataFrame with random delays added to 'time_diffs'.
+            A tuple containing the new list of time differences and the new list
+            of data lengths after applying the mitigation.
         """
-        PrintUtils.start_stage(f"Applying RandomTimeDelayMitigation (max_delay={self.max_delay*1000:.1f}ms)")
+        # --- Input Validation and Pre-checks ---
+        if not isinstance(original_times, list) or not isinstance(original_sizes, list):
+            PrintUtils.print_extra("AdaptivePacketInjectionMitigation received non-list input.")
+            return original_times, original_sizes
+        if len(original_times) != len(original_sizes):
+            PrintUtils.print_extra("AdaptivePacketInjectionMitigation requires time/size lists of equal length.")
+            return original_times, original_sizes
+        if not original_times:
+            return original_times, original_sizes
+
+        # Check if global median was calculated and is valid
+        if self.global_median_nonzero_time is None or self.global_median_nonzero_time <= self.time_epsilon:
+            PrintUtils.print_extra("Global median non-zero time is invalid or too small. Skipping injection.")
+            return original_times, original_sizes
+        if self.size_method == 'median' and (self.median_packet_size is None or self.median_packet_size < 0):
+             PrintUtils.print_extra("Median packet size is invalid for 'median' size method. Skipping injection.")
+             return original_times, original_sizes
+
+        # Ensure numeric types
+        times_numeric = [(float(t) if isinstance(t, (int, float)) and not math.isnan(t) else 0.0) for t in original_times]
+        sizes_numeric = [(int(s) if isinstance(s, (int, float)) and not math.isnan(s) else 0) for s in original_sizes]
+
+        # --- Adaptive Injection Logic ---
+        new_times = []
+        new_sizes = []
+        time_since_last_injection_check = 0.0
+        time_buffer = 0.0 # Accumulates time since the last emitted packet
+        # Moving window for recent relevant times
+        recent_relevant_times = deque(maxlen=self.adaptive_window_size)
+        current_adaptive_time_base = self.global_median_nonzero_time # Start with global
+
+        n = len(times_numeric)
+        for i in range(n):
+            t_orig = times_numeric[i]       # Original time difference leading to this packet
+            size_orig = sizes_numeric[i]    # Original size of this packet
+
+            # --- Update Adaptive Timing ---
+            # Add the *previous* interval's time to the window if relevant
+            if i > 0:
+                prev_time = times_numeric[i-1]
+                if prev_time > self.time_epsilon:
+                    recent_relevant_times.append(prev_time)
+
+            # Calculate current adaptive time base (use global until enough samples)
+            if len(recent_relevant_times) >= self.adaptive_min_samples:
+                current_adaptive_time_base = float(np.mean(recent_relevant_times))
+            else:
+                current_adaptive_time_base = self.global_median_nonzero_time
+
+            # Calculate the injection check threshold for this step
+            injection_check_threshold = current_adaptive_time_base * self.median_time_multiplier
+            # Ensure threshold is not impractically small
+            if injection_check_threshold <= self.time_epsilon / 2.0:
+                injection_check_threshold = self.global_median_nonzero_time * self.median_time_multiplier
+                if injection_check_threshold <= self.time_epsilon / 2.0:
+                    injection_check_threshold = float('inf')  # Disable injection for this interval
+
+            # --- Process Current Interval ---
+            current_interval_remaining = t_orig
+            while current_interval_remaining > self.time_epsilon: # Only check within significant time intervals
+                time_to_next_check = max(0.0, injection_check_threshold - time_since_last_injection_check)
+
+                if time_to_next_check <= current_interval_remaining + self.time_epsilon: # Allow for float tolerance
+                    # Injection Check Point Reached
+                    time_chunk_consumed = time_to_next_check
+                    time_buffer += time_chunk_consumed
+                    time_since_last_injection_check = 0.0
+
+                    if random.random() < self.injection_probability:
+                        # Inject Packet
+                        inj_size = self._get_injection_size()
+                        new_times.append(max(0.0, time_buffer))
+                        new_sizes.append(inj_size)
+                        time_buffer = 0.0 # Reset buffer
+                    # When no injection occurs, time_buffer keeps the accumulated time
+
+                    current_interval_remaining -= time_chunk_consumed
+                else:
+                    # End of Interval Reached Before Next Check Point
+                    time_chunk_consumed = current_interval_remaining
+                    time_buffer += time_chunk_consumed
+                    time_since_last_injection_check += time_chunk_consumed
+                    current_interval_remaining = 0.0  # Exit loop
+
+            # Add any remaining part of the interval (or the whole interval if < epsilon) to buffer
+            if current_interval_remaining > 0:
+                time_buffer += current_interval_remaining
+
+            # --- Emit the Original Packet ---
+            # Use the accumulated time in the buffer.
+            if time_buffer > self.time_epsilon or size_orig > 0:
+                new_times.append(max(0.0, time_buffer))
+                new_sizes.append(size_orig)
+                time_buffer = 0.0 # Reset buffer
+
+        # --- Final Time Conservation Check (Optional but Recommended) ---
+        original_total_time = sum(t for t in times_numeric if t > self.time_epsilon)
+        new_total_time = sum(t for t in new_times if t > self.time_epsilon)
+        if not math.isclose(original_total_time, new_total_time, abs_tol=0.01):
+             PrintUtils.print_extra(
+                 f"[AdaptiveInject] Potential time conservation issue: "
+                 f"Original sum={original_total_time:.6f}, New sum={new_total_time:.6f}. "
+                 f"Diff={original_total_time - new_total_time:.6f}"
+             )
+
+        return new_times, new_sizes
+
+    def transform(self, df: pd.DataFrame, median_time_delta: float = None, median_data_size: float = None) -> pd.DataFrame:
+        """
+        Applies adaptive probabilistic packet injection to the DataFrame.
+
+        Args:
+            df: The input DataFrame with 'time_diffs' and 'data_lengths'.
+            median_time_delta: Pre-calculated median time delta from the full dataset.
+            median_data_size: Pre-calculated median data size from the full dataset.
+
+        Returns:
+            A new DataFrame with the mitigation applied.
+        """
+        mitigation_name = self.__class__.__name__
+        PrintUtils.start_stage(f"Applying {mitigation_name}")
         df_copy = df.copy()
-        if 'time_diffs' not in df_copy.columns:
-            PrintUtils.print_warning("Column 'time_diffs' not found. Skipping RandomTimeDelayMitigation.")
+
+        # --- Column Checks ---
+        if 'time_diffs' not in df_copy.columns or 'data_lengths' not in df_copy.columns:
+            PrintUtils.print_extra(f"Columns 'time_diffs'/'data_lengths' required. Skipping {mitigation_name}.")
             PrintUtils.end_stage()
             return df_copy
 
-        # Ensure time_diffs are lists
-        df_copy['time_diffs'] = self._ensure_list_format(df_copy['time_diffs'])
+        # --- Ensure List Format ---
+        try:
+            df_copy['time_diffs'] = self._ensure_list_format(df_copy['time_diffs'])
+            df_copy['data_lengths'] = self._ensure_list_format(df_copy['data_lengths'])
+        except Exception as e:
+            PrintUtils.print_error(f"Error ensuring list format during {mitigation_name}: {e}. Skipping mitigation.")
+            PrintUtils.end_stage(fail_message="List format conversion failed.")
+            return df
 
-        # Apply delay
-        df_copy['time_diffs'] = df_copy['time_diffs'].apply(self._add_random_delay)
+        # --- Calculate Global Medians (Needed for initialization and potentially size) ---
+        self.global_median_nonzero_time = median_time_delta
+        PrintUtils.print_extra(f"Calculated global median non-negligible time (>{self.time_epsilon:.4f}s): {self.global_median_nonzero_time:.6f} s")
+
+        if self.size_method == 'median':
+            self.median_packet_size = self._calculate_median_size(df_copy['data_lengths'])
+            PrintUtils.print_extra(f"Calculated median non-zero packet size: {self.median_packet_size} bytes")
+
+        # --- Check if Mitigation Can Run ---
+        can_apply_mitigation = self.global_median_nonzero_time is not None and self.global_median_nonzero_time > self.time_epsilon
+        if self.size_method == 'median':
+            can_apply_mitigation &= (self.median_packet_size is not None and self.median_packet_size >= 0)
+
+        if not can_apply_mitigation:
+             PrintUtils.print_extra(f"Cannot apply {mitigation_name} due to invalid global calculations. Returning unmodified data.")
+             PrintUtils.end_stage()
+             return df_copy
+
+        # --- Apply Mitigation Row-wise ---
+        new_times_list = []
+        new_sizes_list = []
+        for index, row in df_copy.iterrows():
+            original_times = row['time_diffs']
+            original_sizes = row['data_lengths']
+
+            try:
+                new_t, new_s = self._apply_adaptive_injection(original_times, original_sizes)
+            except Exception as e:
+                PrintUtils.print_extra(f"Error applying adaptive injection to row {index}: {e}. Using original data.")
+                new_t, new_s = original_times, original_sizes
+
+            new_times_list.append(new_t)
+            new_sizes_list.append(new_s)
+
+        # --- Update DataFrame Columns ---
+        df_copy['time_diffs'] = new_times_list
+        df_copy['data_lengths'] = new_sizes_list
+
         PrintUtils.end_stage()
         return df_copy
-
 
 
 class RemoveZeroTimeEntries(BaseMitigation):
@@ -371,12 +679,14 @@ class RemoveZeroTimeEntries(BaseMitigation):
         """
         pass
 
-    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
+    def transform(self, df: pd.DataFrame, median_time_delta: float = None, median_data_size: float = None) -> pd.DataFrame:
         """
         Applies random delays to the 'time_diffs' column.
 
         Args:
             df: The input DataFrame.
+            median_time_delta: Pre-calculated median time delta from the full dataset.
+            median_data_size: Pre-calculated median data size from the full dataset.
 
         Returns:
             DataFrame with random delays added to 'time_diffs'.
@@ -384,7 +694,7 @@ class RemoveZeroTimeEntries(BaseMitigation):
         PrintUtils.start_stage(f"Applying RemoveZeroTimeEntries")
         df_copy = df.copy()
         if 'time_diffs' not in df_copy.columns:
-            PrintUtils.print_warning("Column 'time_diffs' not found. Skipping RemoveZeroTimeEntries.")
+            PrintUtils.print_extra("Column 'time_diffs' not found. Skipping RemoveZeroTimeEntries.")
             PrintUtils.end_stage()
             return df_copy
 
@@ -399,7 +709,7 @@ class RemoveZeroTimeEntries(BaseMitigation):
             new_times = []
             new_sizes = [] if sizes is not None else None
             for i, t in enumerate(times):
-                if t > 1e-9:
+                if t > 0.005:
                     new_times.append(t)
                     if new_sizes is not None:
                         new_sizes.append(sizes[i])
@@ -415,206 +725,144 @@ class RemoveZeroTimeEntries(BaseMitigation):
         PrintUtils.end_stage()
         return df_copy
 
-class TimeQuantizationMitigation(BaseMitigation):
-    """
-    Mitigation that quantizes inter-packet times by delaying packets until
-    the next time bin boundary.
 
-    This rounds *up* the effective send time, potentially adding small delays,
-    but simplifying the timing pattern.
+class PacketBatchingMitigation(BaseMitigation):
     """
-    def __init__(self, bin_interval: float = 0.010):
+    Mitigation that batches consecutive packets together.
+
+    Combines N consecutive packets into a single packet by summing their
+    inter-packet time differences and data lengths. This reduces the sequence
+    length and alters the timing and size patterns.
+    """
+    def __init__(self, batch_size: int = 2):
         """
-        Initializes the time quantization mitigation.
+        Initializes the packet batching mitigation.
 
         Args:
-            bin_interval: The time interval for quantization (in seconds).
-                          Packet send times are rounded up to the nearest
-                          multiple of this interval. Defaults to 0.010 (10ms).
+            batch_size: The number of consecutive packets to combine into one.
+                        Must be an integer >= 2. Defaults to 2.
         """
-        if bin_interval <= 0:
-            raise ValueError("Bin interval must be positive.")
-        self.bin_interval = bin_interval
-        PrintUtils.print_extra(f"Initialized TimeQuantizationMitigation with bin_interval={self.bin_interval*1000:.1f}ms")
+        if not isinstance(batch_size, int) or batch_size < 2:
+            raise ValueError("Batch size must be an integer greater than or equal to 2.")
+        self.batch_size = batch_size
+        PrintUtils.print_extra(f"Initialized PacketBatchingMitigation with batch_size={self.batch_size}")
 
-    def _quantize_times(self, original_times: list) -> list:
-        """Applies time quantization logic to a single time sequence."""
-        if not isinstance(original_times, list) or not original_times:
-            return original_times
-
-        # Ensure times are numeric
-        numeric_times = [t if isinstance(t, (int, float)) else 0.0 for t in original_times]
-
-        new_time_diffs = []
-        current_abs_time = 0.0
-        last_quantized_send_time = 0.0
-
-        for t_orig in numeric_times:
-            current_abs_time += max(0, t_orig) # Actual arrival time
-
-            # Calculate the earliest possible send time based on quantization
-            quantized_send_time = math.ceil(current_abs_time / self.bin_interval) * self.bin_interval
-
-            # Ensure send time doesn't go backwards relative to last *sent* time
-            quantized_send_time = max(quantized_send_time, last_quantized_send_time)
-
-            # Calculate the new time difference based on quantized send times
-            time_diff = quantized_send_time - last_quantized_send_time
-            new_time_diffs.append(max(0, time_diff)) # Append non-negative diff
-
-            last_quantized_send_time = quantized_send_time # Update for next iteration
-
-        return new_time_diffs
-
-    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
+    def _apply_batching(self, original_times: list, original_sizes: list) -> tuple[list, list]:
         """
-        Applies time quantization to the 'time_diffs' column.
+        Applies batching logic to a single pair of time and size sequences.
 
         Args:
-            df: The input DataFrame.
+            original_times: List of original inter-packet time differences.
+            original_sizes: List of original data lengths.
 
         Returns:
-            DataFrame with quantized 'time_diffs'.
+            A tuple containing the new list of batched time differences and the
+            new list of batched data lengths.
         """
-        PrintUtils.start_stage(f"Applying TimeQuantizationMitigation (interval={self.bin_interval*1000:.1f}ms)")
-        df_copy = df.copy()
-        if 'time_diffs' not in df_copy.columns:
-            PrintUtils.print_warning("Column 'time_diffs' not found. Skipping TimeQuantizationMitigation.")
-            PrintUtils.end_stage()
-            return df_copy
-
-        # Ensure time_diffs are lists
-        df_copy['time_diffs'] = self._ensure_list_format(df_copy['time_diffs'])
-
-        # Apply quantization
-        df_copy['time_diffs'] = df_copy['time_diffs'].apply(self._quantize_times)
-        PrintUtils.end_stage()
-        return df_copy
-
-
-class MicroBurstingMitigation(BaseMitigation):
-    """
-    Mitigation that coalesces packets arriving within a small time window.
-
-    If multiple packets arrive very close together, they are buffered and sent
-    as a single larger packet, altering both the timing and size sequences.
-    """
-    def __init__(self, time_window: float = 0.005, max_packets_in_burst: int = 5):
-        """
-        Initializes the micro-bursting mitigation.
-
-        Args:
-            time_window: The maximum time difference (seconds) between consecutive
-                         packets to be considered part of the same burst.
-                         Defaults to 0.005 (5ms).
-            max_packets_in_burst: The maximum number of original packets that can
-                                  be coalesced into a single burst packet.
-                                  Defaults to 5.
-        """
-        if time_window < 0:
-            raise ValueError("Time window cannot be negative.")
-        if max_packets_in_burst < 2:
-            raise ValueError("Max packets in burst must be at least 2.")
-        self.time_window = time_window
-        self.max_packets_in_burst = max_packets_in_burst
-        PrintUtils.print_extra(
-            f"Initialized MicroBurstingMitigation with window={self.time_window*1000:.1f}ms, "
-            f"max_packets={self.max_packets_in_burst}"
-        )
-
-    def _apply_bursting(self, original_times: list, original_sizes: list) -> tuple[list, list]:
-        """Applies micro-bursting logic to time and size sequences."""
-        if not isinstance(original_times, list) or not isinstance(original_sizes, list) or len(original_times) != len(original_sizes):
-            PrintUtils.print_warning("MicroBursting requires valid, equal-length time and size lists.")
-            return original_times, original_sizes # Return original if invalid input
-
+        # --- Input Validation ---
+        if not isinstance(original_times, list) or not isinstance(original_sizes, list):
+            PrintUtils.print_extra("PacketBatchingMitigation received non-list input.")
+            return original_times, original_sizes
+        if len(original_times) != len(original_sizes):
+            PrintUtils.print_extra("PacketBatchingMitigation requires time/size lists of equal length.")
+            return original_times, original_sizes
         if not original_times:
             return [], []
 
-        # Ensure numeric types
-        times = [t if isinstance(t, (int, float)) else 0.0 for t in original_times]
-        sizes = [s if isinstance(s, (int, float)) else 0 for s in original_sizes]
-
+        n = len(original_times)
         new_times = []
         new_sizes = []
 
-        i = 0
-        while i < len(times):
-            burst_time_sum = times[i]
-            burst_size_sum = sizes[i]
-            packets_in_burst = 1
-            j = i + 1
+        # --- Batching Loop ---
+        for i in range(0, n, self.batch_size):
+            # Define the slice for the current batch
+            start_index = i
+            end_index = min(i + self.batch_size, n) # Handle potential partial batch at the end
 
-            # Check subsequent packets for bursting
-            while (j < len(times) and
-                   times[j] <= self.time_window and
-                   packets_in_burst < self.max_packets_in_burst):
-                # Add packet to burst
-                burst_time_sum += times[j]
-                burst_size_sum += sizes[j]
-                packets_in_burst += 1
-                j += 1
+            # Extract the batch data
+            time_batch = original_times[start_index:end_index]
+            size_batch = original_sizes[start_index:end_index]
 
-            # Add the (potentially coalesced) packet info
-            new_times.append(max(0, burst_time_sum)) # Ensure non-negative time
-            new_sizes.append(int(burst_size_sum)) # Size is sum, ensure int
+            # Sum the time differences in the batch
+            # Ensure numeric conversion and handle potential NaNs
+            batched_time = sum(
+                float(t) for t in time_batch
+                if isinstance(t, (int, float)) and not math.isnan(t)
+            )
+            # Sum the data lengths in the batch
+            batched_size = sum(
+                int(s) for s in size_batch
+                if isinstance(s, (int, float)) and not math.isnan(s)
+            )
 
-            # Move main index past the processed burst
-            i = j
+            # Append the batched results
+            new_times.append(max(0.0, batched_time)) # Ensure non-negative time
+            new_sizes.append(int(batched_size))
 
         return new_times, new_sizes
 
-    def transform(self, df: pd.DataFrame) -> pd.DataFrame:
+    def transform(self, df: pd.DataFrame, median_time_delta: float = None, median_data_size: float = None) -> pd.DataFrame:
         """
-        Applies micro-bursting to 'time_diffs' and 'data_lengths' columns.
+        Applies packet batching to the 'time_diffs' and 'data_lengths' columns.
 
         Args:
-            df: The input DataFrame.
+            df: The input DataFrame. Must contain 'time_diffs' and 'data_lengths'
+                columns with list-like entries.
+            median_time_delta: Pre-calculated median time delta from the full dataset.
+            median_data_size: Pre-calculated median data size from the full dataset.
 
         Returns:
-            DataFrame with potentially coalesced packets.
+            A new DataFrame with the packet batching mitigation applied.
         """
-        PrintUtils.start_stage(
-            f"Applying MicroBurstingMitigation (window={self.time_window*1000:.1f}ms, max_pkts={self.max_packets_in_burst})"
-        )
+        mitigation_name = self.__class__.__name__
+        PrintUtils.start_stage(f"Applying {mitigation_name} (batch_size={self.batch_size})")
         df_copy = df.copy()
+
+        # --- Column Checks ---
         if 'time_diffs' not in df_copy.columns or 'data_lengths' not in df_copy.columns:
-            PrintUtils.print_warning("Columns 'time_diffs' and 'data_lengths' required. Skipping MicroBurstingMitigation.")
+            PrintUtils.print_extra(f"Columns 'time_diffs' and 'data_lengths' required. Skipping {mitigation_name}.")
             PrintUtils.end_stage()
             return df_copy
 
-        # Ensure list formats
-        df_copy['time_diffs'] = self._ensure_list_format(df_copy['time_diffs'])
-        df_copy['data_lengths'] = self._ensure_list_format(df_copy['data_lengths'])
+        # --- Ensure List Format ---
+        try:
+            df_copy['time_diffs'] = self._ensure_list_format(df_copy['time_diffs'])
+            df_copy['data_lengths'] = self._ensure_list_format(df_copy['data_lengths'])
+        except Exception as e:
+            PrintUtils.print_error(f"Error ensuring list format during {mitigation_name}: {e}. Skipping mitigation.")
+            PrintUtils.end_stage(fail_message="List format conversion failed.")
+            return df # Return original df on format error
 
-        # Apply bursting - needs careful application row-wise
+        # --- Apply Mitigation Row-wise ---
         new_times_list = []
         new_sizes_list = []
         for index, row in df_copy.iterrows():
-            times = row['time_diffs']
-            sizes = row['data_lengths']
-            new_t, new_s = self._apply_bursting(times, sizes)
+            original_times = row['time_diffs']
+            original_sizes = row['data_lengths']
+
+            try:
+                new_t, new_s = self._apply_batching(original_times, original_sizes)
+            except Exception as e:
+                PrintUtils.print_extra(f"Error applying batching logic for row {index}: {e}. Skipping row modification.")
+                new_t, new_s = original_times, original_sizes # Keep original on error
+
             new_times_list.append(new_t)
             new_sizes_list.append(new_s)
 
+        # --- Update DataFrame Columns ---
         df_copy['time_diffs'] = new_times_list
         df_copy['data_lengths'] = new_sizes_list
 
         PrintUtils.end_stage()
         return df_copy
 
-
 # --- Mitigation Factory ---
 
 # Dictionary to map mitigation type strings to classes
 _MITIGATION_CLASSES = {
-    "DataPaddingMitigation": DataPaddingMitigation,
-    "TimeNoiseMitigation": TimeNoiseMitigation,
-    "LeakyBucketMitigation": LeakyBucketMitigation,
-    "RandomTimeDelayMitigation": RandomTimeDelayMitigation,
-    "TimeQuantizationMitigation": TimeQuantizationMitigation,
-    "MicroBurstingMitigation": MicroBurstingMitigation,
     "RemoveZeroTimeEntries": RemoveZeroTimeEntries,
+    "PacketInjectionMitigation": PacketInjectionMitigation,
+    "AdaptivePacketInjectionMitigation": AdaptivePacketInjectionMitigation,
     # Add other mitigation classes here as they are created
 }
 
@@ -654,7 +902,7 @@ def create_mitigation(mitigation_config: dict) -> BaseMitigation:
         raise ValueError(f"Unexpected error initializing mitigation {mitigation_type}: {e}")
 
 
-def apply_mitigation_set(df: pd.DataFrame, mitigation_configs: list) -> pd.DataFrame:
+def apply_mitigation_set(df: pd.DataFrame, mitigation_configs: list, median_time_delta: float = None, median_data_size: float = None) -> pd.DataFrame:
     """
     Applies a sequence of mitigations to a DataFrame.
 
@@ -663,6 +911,8 @@ def apply_mitigation_set(df: pd.DataFrame, mitigation_configs: list) -> pd.DataF
         mitigation_configs: A list of mitigation configuration dictionaries.
                             Mitigations are applied in the order they appear
                             in this list.
+        median_time_delta: Pre-calculated median time delta from the full dataset.
+        median_data_size: Pre-calculated median data size from the full dataset.
 
     Returns:
         The DataFrame after all mitigations have been applied.
@@ -677,7 +927,7 @@ def apply_mitigation_set(df: pd.DataFrame, mitigation_configs: list) -> pd.DataF
         try:
             mitigation = create_mitigation(config)
             PrintUtils.print_extra(f"Applying step {i+1}/{len(mitigation_configs)}: {mitigation.__class__.__name__}")
-            df_mitigated = mitigation.transform(df_mitigated)
+            df_mitigated = mitigation.transform(df_mitigated, median_time_delta=median_time_delta, median_data_size=median_data_size)
             # Optional: Add checks here if needed (e.g., check if columns still exist)
             if df_mitigated is None or not isinstance(df_mitigated, pd.DataFrame):
                  raise RuntimeError(f"Mitigation {mitigation.__class__.__name__} returned invalid result.")
