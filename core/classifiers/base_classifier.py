@@ -55,12 +55,12 @@ class BaseClassifier(nn.Module):
         if self.norm:
             norm_filepath = filepath.replace('.pth', '_norm_params.json')
 
-            with open(norm_filepath, 'w', encoding='utf-8') as f:
-                json.dump({
-                    'normalization_params': self.norm,
-                    'class_name': self.class_name,
-                    'args': self.args,
-                }, f, indent=4)
+            #with open(norm_filepath, 'w', encoding='utf-8') as f:
+            #    json.dump({
+            #        'normalization_params': self.norm,
+            #        'class_name': self.class_name,
+            #        'args': self.args,
+            #    }, f, indent=4)
             
             PrintUtils.print_extra(f'Normalization parameters saved to {os.path.basename(norm_filepath)}')
     
