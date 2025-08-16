@@ -484,7 +484,7 @@ class BenchmarkRunner:
 
             # Apply mitigation set to the full dataframe before splitting
             median_time, median_size, median_time_delta = calculate_median_totals(df_full)
-            df_mitigated = apply_mitigation_set(df_full, mitigation_configs, median_time_delta=median_time_delta, median_data_size=median_size)
+            df_mitigated = apply_mitigation_set(df_full, mitigation_configs)
             median_time_after_mitigations, median_size_after_mitigations, median_time_delta_after_mitigations = calculate_median_totals(df_mitigated)
 
             # --- Enforce feature mode by copying columns over ---
