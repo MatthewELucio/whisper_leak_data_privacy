@@ -346,9 +346,53 @@ class PacketBatchingMitigation(BaseMitigation):
         self.batch_size = batch_size
         PrintUtils.print_extra(f"Initialized PacketBatchingMitigation with batch_size={self.batch_size}")
 
+    def _remove_zero_time_entries(self, times: list, sizes: list) -> tuple[list, list]:
+        """
+        Removes entries with zero time differences and combines their sizes
+        with the previous entry. This should be applied before batching since
+        packets with zero time differences arrive simultaneously.
+        
+        Args:
+            times: List of inter-packet time differences.
+            sizes: List of data lengths.
+            
+        Returns:
+            Tuple of cleaned time and size lists.
+        """
+        if not times or len(times) != len(sizes):
+            return times, sizes
+            
+        cleaned_times = []
+        cleaned_sizes = []
+        
+        for i, (t, s) in enumerate(zip(times, sizes)):
+            # Convert to numeric and validate
+            try:
+                time_val = float(t) if isinstance(t, (int, float)) and not math.isnan(t) else 0.0
+                size_val = int(s) if isinstance(s, (int, float)) and not math.isnan(s) else 0
+            except (ValueError, TypeError):
+                time_val, size_val = 0.0, 0
+                
+            # If time is significant (> 0.005), keep as separate entry
+            if time_val > 0.005:
+                cleaned_times.append(time_val)
+                cleaned_sizes.append(size_val)
+            # If time is near zero and we have previous entries, combine with last entry
+            elif cleaned_times:
+                cleaned_sizes[-1] += size_val
+                # Don't add to cleaned_times since this packet arrived simultaneously
+            # If it's the first packet and has zero time, still keep it
+            else:
+                cleaned_times.append(max(0.0, time_val))
+                cleaned_sizes.append(size_val)
+                
+        return cleaned_times, cleaned_sizes
+
     def _apply_batching(self, original_times: list, original_sizes: list) -> tuple[list, list]:
         """
         Applies batching logic to a single pair of time and size sequences.
+        First removes zero-time entries (simultaneous packets), then applies
+        regular batching.
 
         Args:
             original_times: List of original inter-packet time differences.
@@ -368,31 +412,30 @@ class PacketBatchingMitigation(BaseMitigation):
         if not original_times:
             return [], []
 
-        n = len(original_times)
+        # --- Step 1: Remove zero-time entries (simultaneous packets) ---
+        cleaned_times, cleaned_sizes = self._remove_zero_time_entries(original_times, original_sizes)
+        
+        if not cleaned_times:
+            return [], []
+
+        # --- Step 2: Apply regular batching to cleaned data ---
+        n = len(cleaned_times)
         new_times = []
         new_sizes = []
 
-        # --- Batching Loop ---
         for i in range(0, n, self.batch_size):
             # Define the slice for the current batch
             start_index = i
             end_index = min(i + self.batch_size, n) # Handle potential partial batch at the end
 
             # Extract the batch data
-            time_batch = original_times[start_index:end_index]
-            size_batch = original_sizes[start_index:end_index]
+            time_batch = cleaned_times[start_index:end_index]
+            size_batch = cleaned_sizes[start_index:end_index]
 
             # Sum the time differences in the batch
-            # Ensure numeric conversion and handle potential NaNs
-            batched_time = sum(
-                float(t) for t in time_batch
-                if isinstance(t, (int, float)) and not math.isnan(t)
-            )
+            batched_time = sum(time_batch)
             # Sum the data lengths in the batch
-            batched_size = sum(
-                int(s) for s in size_batch
-                if isinstance(s, (int, float)) and not math.isnan(s)
-            )
+            batched_size = sum(size_batch)
 
             # Append the batched results
             new_times.append(max(0.0, batched_time)) # Ensure non-negative time

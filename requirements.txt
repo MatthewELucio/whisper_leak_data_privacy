@@ -22,3 +22,4 @@ groq
 pandas
 tqdm
 matplotlib
+lightgbm
