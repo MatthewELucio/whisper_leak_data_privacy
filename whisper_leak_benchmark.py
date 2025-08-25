@@ -723,8 +723,7 @@ class BenchmarkRunner:
                 PrintUtils.print_extra("Model should focus on data size features.")
                 # Pass hint to model if it supports it, e.g., BERT might disable time tokens
                 if model_class_name == 'BERTTimeSeriesClassifier':
-                    model_params['use_time_tokens'] = False
-                    model_params['use_size_tokens'] = True
+                    model_params['single_feature'] = True
                     model_params['interleave'] = False # Ensure no interleaving
                 # For LSTM/CNN, the Loader still provides 2 channels, but the model
                 # might internally ignore one based on feature_mode if designed to.
@@ -734,14 +733,12 @@ class BenchmarkRunner:
             elif feature_mode == FeatureMode.TIME_ONLY:
                 PrintUtils.print_extra("Model should focus on time difference features.")
                 if model_class_name == 'BERTTimeSeriesClassifier':
-                    model_params['use_time_tokens'] = True
-                    model_params['use_size_tokens'] = False
+                    model_params['single_feature'] = True
                     model_params['interleave'] = False
             else: # FeatureMode.BOTH
                  PrintUtils.print_extra("Model should use both time and size features.")
                  if model_class_name == 'BERTTimeSeriesClassifier':
-                    model_params['use_time_tokens'] = True
-                    model_params['use_size_tokens'] = True
+                    model_params['single_feature'] = False
                     # 'interleave' could be True or False based on config
 
 
