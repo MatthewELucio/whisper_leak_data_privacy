@@ -63,48 +63,51 @@ class PacketInjectionMitigation(BaseMitigation):
     Mitigation that injects noise packets into the sequence based on timing intervals.
     
     Injections occur at intervals based on mean_diff/injection_multiplier_mean with
-    normal distribution variance. The size of injected packets is determined by 
-    a configurable method.
+    normal distribution variance. The size of injected packets uses an adaptive
+    approach that considers whether packet sizes are monotonically increasing.
+    
+    For monotonic sequences: last_size + normal(mean_size_increase, std_increase)
+    For non-monotonic sequences: normal(mean_size, std_size)
     """
     def __init__(self,
                  injections_per_mean: float = 2.0,
                  injection_stddev_multiplier: float = 2.0,
-                 size_method: str = 'median',
-                 fixed_size: int = 64,
-                 size_range: tuple[int, int] = (32, 128)):
+                 monotonic_threshold: float = 0.9,
+                 size_std_multiplier: float = 1.0):
         """
         Initializes the packet injection mitigation.
 
         Args:
-            injection_multiplier_mean: Mean for injection timing (mean_diff/this_value). Defaults to 2.0.
-            injection_multiplier_stdv: Standard deviation for injection timing. Defaults to 2.0.
-            size_method: Method to determine size of injected packets.
-                Options: 'median', 'fixed', 'range'. Defaults to 'median'.
-            fixed_size: Fixed size if size_method is 'fixed'. Defaults to 64.
-            size_range: Size range if size_method is 'range'. Defaults to (32, 128).
+            injections_per_mean: Mean for injection timing (mean_diff/this_value). Defaults to 2.0.
+            injection_stddev_multiplier: Standard deviation for injection timing. Defaults to 2.0.
+            monotonic_threshold: Threshold for considering sizes monotonically increasing (0.0-1.0). Defaults to 0.9.
+            size_std_multiplier: Multiplier for standard deviation in normal distribution sizing. Defaults to 1.0.
         """
         if injections_per_mean <= 0:
             raise ValueError("Injection multiplier mean must be positive.")
         if injection_stddev_multiplier < 0:
             raise ValueError("Injection multiplier stdv cannot be negative.")
-        if size_method not in ['median', 'fixed', 'range']:
-            raise ValueError("Invalid size_method. Choose 'median', 'fixed', or 'range'.")
-        if size_method == 'fixed' and fixed_size < 0:
-            raise ValueError("Fixed size cannot be negative.")
-        if size_method == 'range':
-            if not (isinstance(size_range, tuple) and len(size_range) == 2 and
-                    0 <= size_range[0] <= size_range[1]):
-                raise ValueError("Size range must be a tuple of two non-negative integers (min, max) with min <= max.")
+        if not (0.0 <= monotonic_threshold <= 1.0):
+            raise ValueError("Monotonic threshold must be between 0.0 and 1.0.")
+        if size_std_multiplier < 0:
+            raise ValueError("Size std multiplier cannot be negative.")
 
         self.injections_per_mean = injections_per_mean
         self.injection_stddev_multiplier = injection_stddev_multiplier
-        self.size_method = size_method
-        self.fixed_size = fixed_size
-        self.size_range = size_range
+        self.monotonic_threshold = monotonic_threshold
+        self.size_std_multiplier = size_std_multiplier
+
+        # Initialize statistics that will be calculated during transform
+        self.mean_size = None
+        self.std_size = None
+        self.mean_size_increase = None
+        self.std_size_increase = None
+        self.is_monotonic = None
 
         PrintUtils.print_extra(
             f"Initialized PacketInjectionMitigation with mult_mean={self.injections_per_mean:.2f}, "
-            f"mult_stdv={self.injection_stddev_multiplier:.2f}, size_method='{self.size_method}'"
+            f"mult_stdv={self.injection_stddev_multiplier:.2f}, "
+            f"monotonic_threshold={self.monotonic_threshold:.2f}"
         )
 
     def _calculate_time_stats(self, series: pd.Series) -> tuple[float, float]:
@@ -123,56 +126,205 @@ class PacketInjectionMitigation(BaseMitigation):
             PrintUtils.print_extra(f"Could not calculate time statistics: {e}")
             return 0.0, 0.0
 
-    def _calculate_median_size(self, series: pd.Series) -> int:
-        """Calculates the median of all non-zero packet sizes."""
+
+    def _remove_zero_time_entries(self, times: list, sizes: list) -> tuple[list, list]:
+        """
+        Removes entries with zero time differences and combines their sizes
+        with the previous entry. This should be applied before injection analysis.
+        
+        Args:
+            times: List of inter-packet time differences.
+            sizes: List of data lengths.
+            
+        Returns:
+            Tuple of cleaned time and size lists.
+        """
+        if not times or len(times) != len(sizes):
+            return times, sizes
+            
+        cleaned_times = []
+        cleaned_sizes = []
+        
+        for i, (t, s) in enumerate(zip(times, sizes)):
+            # Convert to numeric and validate
+            try:
+                time_val = float(t) if isinstance(t, (int, float)) and not math.isnan(t) else 0.0
+                size_val = int(s) if isinstance(s, (int, float)) and not math.isnan(s) else 0
+            except (ValueError, TypeError):
+                time_val, size_val = 0.0, 0
+                
+            # If time is significant (> 0.005), keep as separate entry
+            if time_val > 0.005:
+                cleaned_times.append(time_val)
+                cleaned_sizes.append(size_val)
+            # If time is near zero and we have previous entries, combine with last entry
+            elif cleaned_times:
+                cleaned_sizes[-1] += size_val
+                # Don't add to cleaned_times since this packet arrived simultaneously
+            # If it's the first packet and has zero time, still keep it
+            else:
+                cleaned_times.append(max(0.0, time_val))
+                cleaned_sizes.append(size_val)
+                
+        return cleaned_times, cleaned_sizes
+
+    def _analyze_size_monotonicity(self, sizes: list) -> bool:
+        """
+        Analyzes whether the size sequence is mostly monotonically increasing.
+        
+        Args:
+            sizes: List of packet sizes.
+            
+        Returns:
+            True if the percentage of increasing consecutive pairs exceeds the threshold.
+        """
+        if len(sizes) < 2:
+            return False
+            
+        increasing_count = 0
+        total_pairs = 0
+        
+        for i in range(len(sizes) - 1):
+            try:
+                current_size = int(sizes[i]) if isinstance(sizes[i], (int, float)) and not math.isnan(sizes[i]) else 0
+                next_size = int(sizes[i + 1]) if isinstance(sizes[i + 1], (int, float)) and not math.isnan(sizes[i + 1]) else 0
+                
+                if next_size > current_size:
+                    increasing_count += 1
+                total_pairs += 1
+            except (ValueError, TypeError):
+                continue
+                
+        if total_pairs == 0:
+            return False
+            
+        monotonic_ratio = increasing_count / total_pairs
+        return monotonic_ratio >= self.monotonic_threshold
+
+    def _calculate_size_stats(self, series: pd.Series) -> tuple[float, float, float, float, bool]:
+        """
+        Calculates comprehensive size statistics for adaptive injection.
+        
+        Args:
+            series: Pandas Series containing lists of packet sizes.
+            
+        Returns:
+            Tuple of (mean_size, std_size, mean_increase, std_increase, is_monotonic)
+        """
         try:
-            all_sizes = [
-                int(size) for sublist in series if isinstance(sublist, list)
-                for size in sublist if isinstance(size, (int, float)) and not math.isnan(size)
-            ]
-            non_zero_sizes = [size for size in all_sizes if size > 0]
-
-            if not non_zero_sizes:
-                return 0
-            return int(np.ceil(np.median(non_zero_sizes)))
+            all_sizes = []
+            all_increases = []
+            monotonic_sequences = 0
+            total_sequences = 0
+            
+            for sublist in series:
+                if not isinstance(sublist, list) or len(sublist) < 1:
+                    continue
+                    
+                # Convert to numeric and filter valid sizes
+                sizes = []
+                for size in sublist:
+                    try:
+                        size_val = int(size) if isinstance(size, (int, float)) and not math.isnan(size) else 0
+                        if size_val > 0:
+                            sizes.append(size_val)
+                    except (ValueError, TypeError):
+                        continue
+                
+                if not sizes:
+                    continue
+                    
+                all_sizes.extend(sizes)
+                total_sequences += 1
+                
+                # Analyze monotonicity and calculate increases for this sequence
+                if self._analyze_size_monotonicity(sizes):
+                    monotonic_sequences += 1
+                    
+                # Calculate size increases for this sequence
+                for i in range(len(sizes) - 1):
+                    increase = sizes[i + 1] - sizes[i]
+                    if increase > 0:  # Only consider positive increases
+                        all_increases.append(increase)
+            
+            # Calculate overall statistics
+            mean_size = float(np.mean(all_sizes)) if all_sizes else 0.0
+            std_size = float(np.std(all_sizes)) if len(all_sizes) > 1 else 0.0
+            mean_increase = float(np.mean(all_increases)) if all_increases else 0.0
+            std_increase = float(np.std(all_increases)) if len(all_increases) > 1 else 0.0
+            
+            # Overall monotonicity based on sequence-level analysis
+            is_monotonic = (monotonic_sequences / total_sequences >= self.monotonic_threshold) if total_sequences > 0 else False
+            
+            return mean_size, std_size, mean_increase, std_increase, is_monotonic
+            
         except Exception as e:
-            PrintUtils.print_extra(f"Could not calculate median packet size: {e}")
-            return 0
+            PrintUtils.print_extra(f"Could not calculate size statistics: {e}")
+            return 0.0, 0.0, 0.0, 0.0, False
 
-    def _get_injection_size(self) -> int:
-        """Determines the size of the packet to be injected."""
-        if self.size_method == 'median':
-            return max(0, self.median_packet_size if self.median_packet_size is not None else 0)
-        elif self.size_method == 'fixed':
-            return self.fixed_size
-        elif self.size_method == 'range':
-            return random.randint(self.size_range[0], self.size_range[1])
+    def _get_injection_size(self, last_size: int = None) -> int:
+        """
+        Determines the size of the packet to be injected using adaptive normal distribution.
+        
+        Args:
+            last_size: The size of the most recent packet.
+            
+        Returns:
+            The size of the injected packet.
+        """
+        if self.is_monotonic and last_size is not None and self.mean_size_increase is not None:
+            # For monotonic sequences: last_size + normal(mean_increase, std_increase)
+            increase = np.random.normal(
+                self.mean_size_increase, 
+                self.std_size_increase * self.size_std_multiplier
+            )
+            injection_size = last_size + increase
         else:
-            return 0
+            # For non-monotonic sequences: normal(mean_size, std_size)
+            injection_size = np.random.normal(
+                self.mean_size if self.mean_size is not None else 64,
+                self.std_size * self.size_std_multiplier if self.std_size is not None else 32
+            )
+        
+        # Ensure positive size with minimum value
+        return max(1, int(round(injection_size)))
 
 
     def _get_next_injection_time(self) -> float:
-        """Sample next injection interval from N(mean, stddev) using dataset stats."""
+        """
+        Sample next injection interval from N(mean, stddev) using dataset stats.
+        Uses percentage-based standard deviation to maintain consistent median timing.
+        """
         base_mean = self.mean_time_diff / self.injections_per_mean
-        base_std = self.stdv_time_diff * self.injection_stddev_multiplier
+        # Use percentage of mean for standard deviation to avoid excessive variance
+        base_std = base_mean * (self.injection_stddev_multiplier * 0.1)  # 0.1 = 10% per unit
         interval = np.random.normal(base_mean, base_std)
-        return max(0.0, interval)  # prevent negative times
+        return max(0.001, interval)  # prevent near-zero times that skew median
 
 
     def _apply_injection(self, original_times: list, original_sizes: list) -> tuple[list, list]:
-        """Applies packet injection logic to time and size sequences."""
+        """
+        Applies packet injection logic to time and size sequences.
+        First applies RemoveZeroTimeEntries preprocessing, then performs injection.
+        """
         if not isinstance(original_times, list) or not isinstance(original_sizes, list):
             return original_times, original_sizes
         if len(original_times) != len(original_sizes) or not original_times:
             return original_times, original_sizes
         if self.mean_time_diff is None or self.mean_time_diff <= 0.00001:
             return original_times, original_sizes
-        if self.size_method == 'median' and (self.median_packet_size is None or self.median_packet_size < 0):
+        if self.mean_size is None or self.mean_size <= 0:
             return original_times, original_sizes
 
+        # Step 1: Apply RemoveZeroTimeEntries preprocessing
+        cleaned_times, cleaned_sizes = self._remove_zero_time_entries(original_times, original_sizes)
+        
+        if not cleaned_times:
+            return [], []
+
         # Ensure numeric types
-        times_numeric = [(float(t) if isinstance(t, (int, float)) and not math.isnan(t) else 0.0) for t in original_times]
-        sizes_numeric = [(int(s) if isinstance(s, (int, float)) and not math.isnan(s) else 0) for s in original_sizes]
+        times_numeric = [(float(t) if isinstance(t, (int, float)) and not math.isnan(t) else 0.0) for t in cleaned_times]
+        sizes_numeric = [(int(s) if isinstance(s, (int, float)) and not math.isnan(s) else 0) for s in cleaned_sizes]
 
         new_times = []
         new_sizes = []
@@ -186,9 +338,12 @@ class PacketInjectionMitigation(BaseMitigation):
             
             # Check for injection opportunities before this packet
             while next_injection_time <= (cumulative_original_time - cumulative_emitted_time):
+                # Get the last size for adaptive injection
+                last_size = new_sizes[-1] if new_sizes else (sizes_numeric[0] if sizes_numeric else None)
+                
                 # Inject a packet
                 new_times.append(next_injection_time)
-                new_sizes.append(self._get_injection_size())
+                new_sizes.append(self._get_injection_size(last_size))
                 cumulative_emitted_time += next_injection_time
                 next_injection_time = self._get_next_injection_time()
             
@@ -233,14 +388,15 @@ class PacketInjectionMitigation(BaseMitigation):
         self.mean_time_diff, self.stdv_time_diff = self._calculate_time_stats(df_copy['time_diffs'])
         PrintUtils.print_extra(f"Calculated time stats - mean: {self.mean_time_diff:.6f} s, stdv: {self.stdv_time_diff:.6f} s")
 
-        if self.size_method == 'median':
-            self.median_packet_size = self._calculate_median_size(df_copy['data_lengths'])
-            PrintUtils.print_extra(f"Calculated median packet size: {self.median_packet_size} bytes")
+        # Calculate comprehensive size statistics for adaptive approach
+        self.mean_size, self.std_size, self.mean_size_increase, self.std_size_increase, self.is_monotonic = self._calculate_size_stats(df_copy['data_lengths'])
+        PrintUtils.print_extra(f"Calculated adaptive size stats - mean: {self.mean_size:.2f} bytes, std: {self.std_size:.2f} bytes")
+        PrintUtils.print_extra(f"Size increase stats - mean: {self.mean_size_increase:.2f} bytes, std: {self.std_size_increase:.2f} bytes")
+        PrintUtils.print_extra(f"Dataset is {'monotonic' if self.is_monotonic else 'non-monotonic'} (threshold: {self.monotonic_threshold:.1%})")
 
         # Check if we can apply mitigation
         can_apply = self.mean_time_diff is not None and self.mean_time_diff > 0.001
-        if self.size_method == 'median':
-            can_apply &= (self.median_packet_size is not None and self.median_packet_size >= 0)
+        can_apply &= (self.mean_size is not None and self.mean_size > 0)
 
         if not can_apply:
             PrintUtils.print_extra(f"Cannot apply {mitigation_name} due to invalid calculations.")
@@ -316,10 +472,10 @@ class RemoveZeroTimeEntries(BaseMitigation):
                     # Add size to the last valid entry
                     new_sizes[-1] += sizes[i] if sizes is not None else 0
 
-        # Update the DataFrame with the new lists
-        df_copy.at[index, 'time_diffs'] = new_times
-        if new_sizes is not None:
-            df_copy.at[index, 'data_lengths'] = new_sizes
+            # Update the DataFrame with the new lists
+            df_copy.at[index, 'time_diffs'] = new_times
+            if new_sizes is not None:
+                df_copy.at[index, 'data_lengths'] = new_sizes
         
         PrintUtils.end_stage()
         return df_copy
