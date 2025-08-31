@@ -12,10 +12,6 @@ feature_modes:
 
 # Chatbots to benchmark with their common names. >=0.8 AUPRC from time data.
 chatbots:
-  - azuregpt41nano
-  - gpt41nano
-  - claudehaiku
-  - geminiflash
   - mistrallarge
   - azuredeepseekr1
   - gpt4omini

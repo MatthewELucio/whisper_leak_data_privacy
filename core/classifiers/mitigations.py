@@ -73,7 +73,8 @@ class PacketInjectionMitigation(BaseMitigation):
                  injections_per_mean: float = 2.0,
                  injection_stddev_multiplier: float = 2.0,
                  monotonic_threshold: float = 0.9,
-                 size_std_multiplier: float = 1.0):
+                 size_std_multiplier: float = 1.0,
+                 max_injections_per_packet: int = 10):
         """
         Initializes the packet injection mitigation.
 
@@ -82,6 +83,7 @@ class PacketInjectionMitigation(BaseMitigation):
             injection_stddev_multiplier: Standard deviation for injection timing. Defaults to 2.0.
             monotonic_threshold: Threshold for considering sizes monotonically increasing (0.0-1.0). Defaults to 0.9.
             size_std_multiplier: Multiplier for standard deviation in normal distribution sizing. Defaults to 1.0.
+            max_injections_per_packet: Maximum number of injections allowed per original packet. Defaults to 10.
         """
         if injections_per_mean <= 0:
             raise ValueError("Injection multiplier mean must be positive.")
@@ -91,11 +93,14 @@ class PacketInjectionMitigation(BaseMitigation):
             raise ValueError("Monotonic threshold must be between 0.0 and 1.0.")
         if size_std_multiplier < 0:
             raise ValueError("Size std multiplier cannot be negative.")
+        if max_injections_per_packet < 1:
+            raise ValueError("Max injections per packet must be at least 1.")
 
         self.injections_per_mean = injections_per_mean
         self.injection_stddev_multiplier = injection_stddev_multiplier
         self.monotonic_threshold = monotonic_threshold
         self.size_std_multiplier = size_std_multiplier
+        self.max_injections_per_packet = max_injections_per_packet
 
         # Initialize statistics that will be calculated during transform
         self.mean_size = None
@@ -107,7 +112,8 @@ class PacketInjectionMitigation(BaseMitigation):
         PrintUtils.print_extra(
             f"Initialized PacketInjectionMitigation with mult_mean={self.injections_per_mean:.2f}, "
             f"mult_stdv={self.injection_stddev_multiplier:.2f}, "
-            f"monotonic_threshold={self.monotonic_threshold:.2f}"
+            f"monotonic_threshold={self.monotonic_threshold:.2f}, "
+            f"max_injections_per_packet={self.max_injections_per_packet}"
         )
 
     def _calculate_time_stats(self, series: pd.Series) -> tuple[float, float]:
@@ -306,6 +312,7 @@ class PacketInjectionMitigation(BaseMitigation):
         """
         Applies packet injection logic to time and size sequences.
         First applies RemoveZeroTimeEntries preprocessing, then performs injection.
+        Limits the number of injections per original packet to max_injections_per_packet.
         """
         if not isinstance(original_times, list) or not isinstance(original_sizes, list):
             return original_times, original_sizes
@@ -336,8 +343,12 @@ class PacketInjectionMitigation(BaseMitigation):
         for orig_time, orig_size in zip(times_numeric, sizes_numeric):
             cumulative_original_time += orig_time
             
+            # Track injections for this packet
+            injections_this_packet = 0
+            
             # Check for injection opportunities before this packet
-            while next_injection_time <= (cumulative_original_time - cumulative_emitted_time):
+            while (next_injection_time <= (cumulative_original_time - cumulative_emitted_time) and 
+                   injections_this_packet < self.max_injections_per_packet):
                 # Get the last size for adaptive injection
                 last_size = new_sizes[-1] if new_sizes else (sizes_numeric[0] if sizes_numeric else None)
                 
@@ -346,6 +357,7 @@ class PacketInjectionMitigation(BaseMitigation):
                 new_sizes.append(self._get_injection_size(last_size))
                 cumulative_emitted_time += next_injection_time
                 next_injection_time = self._get_next_injection_time()
+                injections_this_packet += 1
             
             # Emit the original packet
             time_to_emit = cumulative_original_time - cumulative_emitted_time

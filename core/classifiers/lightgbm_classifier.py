@@ -175,8 +175,9 @@ class LightGBMClassifier:
             'is_fitted': self._is_fitted # Save fitted status
         }
         try:
-            with open(meta_filepath, 'w', encoding='utf-8') as f:
-                json.dump(meta_data, f, indent=4)
+            # TODO: Re-enable
+            #with open(meta_filepath, 'w', encoding='utf-8') as f:
+            #    json.dump(meta_data, f, indent=4)
             PrintUtils.print_extra(f'Metadata saved to *{os.path.basename(meta_filepath)}*')
         except Exception as e:
              PrintUtils.print_extra(f"Error saving metadata: {e}")
