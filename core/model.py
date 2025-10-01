@@ -144,7 +144,7 @@ class Datapoint(object):
         # Return result
         return seq
 
-    def generate_seq(self, local_port, remote_port, prompt, pertubated_prompt, response, temperature):
+    def generate_seq(self, local_port, remote_port, prompt, pertubated_prompt, response, temperature, save_to_file=True):
         """
             Runs the analysis on the PCAP path and writes the sequence file.
             Note this also automatically populates the sequence data in the datapoint.
@@ -206,8 +206,9 @@ class Datapoint(object):
             # Validate some data was acquired
             assert len(self.seq) > 0, Exception(f'PCAP file has no data: {self.pcap_path}')
 
-            # Write the sequence file
-            self.save_seq()
+            # Write the sequence file if requested
+            if save_to_file:
+                self.save_seq()
 
         # Cleanup
         finally:
@@ -240,6 +241,52 @@ class TrainingSetCollector(object):
         self._out_dir = out_directory_base
         assert OsUtils.mkdir(self._out_dir), Exception(f'Could not get or make directory "{self._out_dir}"')
 
+    def _get_dataset_path(self, chatbot_name, temperature_override=None):
+        """
+            Compute the aggregated dataset path for a chatbot (optionally temperature-specific).
+        """
+        suffix = ""
+        if temperature_override is not None:
+            suffix = f"_t{str(temperature_override).replace('.','')}"
+        base_name = f'{chatbot_name}{suffix}'
+        return os.path.join(self._out_dir, f'{base_name}.json')
+
+    def get_dataset_path(self, chatbot_name, temperature_override=None):
+        """
+            Public helper to expose the aggregated dataset path used for storage.
+        """
+        return self._get_dataset_path(chatbot_name, temperature_override)
+
+    def _entry_key(self, prompt_hash, trial, extra=None):
+        """
+            Build a stable key for deduplicating aggregated entries.
+        """
+        extra_part = extra or ""
+        return f"{prompt_hash}:{trial}:{extra_part}"
+
+    def _entry_key_from_entry(self, entry):
+        """
+            Compute the dedupe key from an existing aggregated entry.
+        """
+        prompt_hash = entry.get('hash') or hashlib.sha1(entry.get('prompt', '').encode()).hexdigest()
+        trial = entry.get('trial', 0)
+        extra = entry.get('extra')
+        return self._entry_key(prompt_hash, trial, extra)
+
+    def _build_entry(self, datapoint, prompt, index, chatbot_class, temperature_override=None):
+        """
+            Construct an aggregated entry dictionary from a datapoint capture.
+        """
+        entry = dict(datapoint.seq)
+        entry['hash'] = hashlib.sha1(prompt.encode()).hexdigest()
+        entry['trial'] = index
+        entry['chatbot_name'] = chatbot_class.__name__
+        if temperature_override is not None:
+            entry['extra'] = f"t{str(temperature_override).replace('.','')}"
+        else:
+            entry.pop('extra', None)
+        return entry
+
     def get_datapoint(self, prompt, index, chatbot_name, additional_name=None):
         """
             Gets a datapoint for the given prompt, an index and the chatbot name.
@@ -261,97 +308,130 @@ class TrainingSetCollector(object):
             Gets or generates the training set for the given chatbot class.
         """
 
-        # Start as a stage
         PrintUtils.start_stage('Generating training set')
 
-        # Saves state
+        dataset_path = self._get_dataset_path(chatbot_class.__name__, temperature_override)
+        legacy_dataset_path = dataset_path[:-5] + '.seq' if dataset_path.endswith('.json') else None
+        aggregated_entries = []
+        entry_keys = set()
+
+        source_path = None
+        if os.path.exists(dataset_path):
+            source_path = dataset_path
+        elif legacy_dataset_path and os.path.exists(legacy_dataset_path):
+            source_path = legacy_dataset_path
+
+        if source_path:
+            try:
+                with open(source_path, 'r', encoding='utf-8') as fp:
+                    loaded = json.load(fp)
+                if isinstance(loaded, list):
+                    aggregated_entries = loaded
+                    for entry in aggregated_entries:
+                        try:
+                            entry_keys.add(self._entry_key_from_entry(entry))
+                        except Exception:
+                            continue
+                    PrintUtils.print_extra(f'Loaded {len(aggregated_entries)} existing entries for *{chatbot_class.__name__}*')
+                else:
+                    PrintUtils.print_warning(f'Existing dataset at {dataset_path} is not a list. Starting fresh.')
+                    aggregated_entries = []
+            except Exception as e:
+                PrintUtils.print_warning(f'Failed to load existing dataset at {dataset_path}: {e}')
+                aggregated_entries = []
+
         skip_count = 0
         curr_count = 0
-        training_set = {}
         last_local_port = 0
+        new_entries = 0
+        failed = 0
+        data_length, avg_size, token_count = 0, 0.0, 0
 
-        # Save all prompts
         all_prompts = self._negative_prompts + self._positive_prompts
-
-        # Calculate maximum repeat value
         max_repeats = max(self._positive_repeats, self._negative_repeats)
 
-        # Built the task list, [(prompt, index), ...]
         task_list = []
         for prompt in all_prompts:
             repeats = self._negative_repeats if prompt in self._negative_prompts else self._positive_repeats
             pertubated_prompts = self._perturbate_prompt(prompt, max_repeats)
-            numpy.random.shuffle(pertubated_prompts) # Shuffle
+            numpy.random.shuffle(pertubated_prompts)
 
             if len(pertubated_prompts) < max_repeats:
                 raise Exception(f'Not enough pertubated prompts for prompt: {prompt}')
 
             for index in range(repeats):
                 pertubated_prompt = pertubated_prompts[index]
-
                 task_list.append((prompt, pertubated_prompt, index))
-        
-        # Shuffle the task list
-        numpy.random.shuffle(task_list)
 
+        numpy.random.shuffle(task_list)
         total_datapoints = len(task_list)
 
-        # Iterate each prompt and either fetch existing data or truly generate data for it
-        failed = 0
-        data_length, avg_size, token_count = 0, 0.0, 0
-        training_set = {}
         for (prompt, pertubated_prompt, index) in task_list:
-            # Update progress
-            percentage = (curr_count * 100) // total_datapoints
-            PrintUtils.start_stage(f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%), {failed} failed. Latest: {data_length} events, {avg_size:.1f} bytes per event, {token_count} tokens.', override_prev=True)
+            percentage = (curr_count * 100) // total_datapoints if total_datapoints else 0
+            PrintUtils.start_stage(
+                f'Generating training set ({curr_count} / {total_datapoints} = {percentage}%), '
+                f'{failed} failed. Latest: {data_length} events, {avg_size:.1f} bytes per event, '
+                f'{token_count} tokens. New entries: {new_entries}.',
+                override_prev=True
+            )
             curr_count += 1
 
-            if prompt not in training_set:
-                training_set[prompt] = []
+            prompt_hash = hashlib.sha1(prompt.encode()).hexdigest()
+            extra_tag = f"t{str(temperature_override).replace('.','')}" if temperature_override is not None else None
+            entry_key = self._entry_key(prompt_hash, index, extra_tag)
 
-            # Fetch the datapoint for the prompt
-            datapoint = self.get_datapoint(
-                prompt, index, chatbot_class.__name__,
-                additional_name="t" + str(temperature_override).replace(".","") if temperature_override is not None else None
-            )
-            
-            if datapoint.exists():
+            if entry_key in entry_keys:
                 skip_count += 1
-                training_set[prompt].append(datapoint)
                 continue
 
-            # Start sniffing to collect data
+            datapoint = self.get_datapoint(
+                prompt,
+                index,
+                chatbot_class.__name__,
+                additional_name="t" + str(temperature_override).replace(".","") if temperature_override is not None else None
+            )
+
             NetworkUtils.start_sniffing_tls(datapoint.pcap_path, self._remote_tls_port)
 
-            # Create a chatbot object to make sure we get fresh connections
             chatbot_obj = chatbot_class(self._remote_tls_port)
-            if temperature_override is not None:
-                temperature = temperature_override
-            else:
-                temperature = chatbot_obj.get_temperature()
-            
+            temperature = temperature_override if temperature_override is not None else chatbot_obj.get_temperature()
+
             try:
                 response, local_port = chatbot_obj.send_prompt(pertubated_prompt, temperature)
                 assert isinstance(response, list), Exception('Got an invalid response from chatbot: {chatbot_class.__name__}')
                 assert len(response) > 0 and len(''.join(response)) > 0, Exception(f'Got empty response for prompt: {pertubated_prompt}')
 
-                # Discover new ports and stop sniffing (unless local port was provided by chatbot)
                 if local_port is None:
                     new_local_ports = NetworkUtils.get_self_local_ports(self._remote_tls_port)
                     NetworkUtils.stop_sniffing_tls()
-                    new_local_ports = [ port for port in new_local_ports if last_local_port != port ]
+                    new_local_ports = [port for port in new_local_ports if last_local_port != port]
                     assert len(new_local_ports) < 2, Exception('Ambiguity in local TLS ports')
                     if len(new_local_ports) == 1:
                         last_local_port = new_local_ports[0]
                 else:
-                    assert local_port > 0 and local_port <= 0xFFFF, Exception(f'Invalid port indicated by chatbot: {local_port}')
+                    assert 0 < local_port <= 0xFFFF, Exception(f'Invalid port indicated by chatbot: {local_port}')
                     last_local_port = local_port
                     NetworkUtils.stop_sniffing_tls()
 
-                # Perform the analysis and set the data
-                data_length, avg_size = datapoint.generate_seq(last_local_port, self._remote_tls_port, prompt, pertubated_prompt, response, temperature)
+                data_length, avg_size = datapoint.generate_seq(
+                    last_local_port,
+                    self._remote_tls_port,
+                    prompt,
+                    pertubated_prompt,
+                    response,
+                    temperature,
+                    save_to_file=False
+                )
                 token_count = len(response)
-                training_set[prompt].append(datapoint)
+
+                entry = self._build_entry(datapoint, prompt, index, chatbot_class, temperature_override)
+                aggregated_entries.append(entry)
+                entry_keys.add(entry_key)
+                new_entries += 1
+
+                if os.path.exists(datapoint.seq_path):
+                    OsUtils.del_file(datapoint.seq_path)
+
             except Exception as e:
                 PrintUtils.print_extra(f'Failed to generate training set for prompt: {prompt}')
                 PrintUtils.print_extra(f'Exception: {str(e)}')
@@ -359,12 +439,27 @@ class TrainingSetCollector(object):
                 failed += 1
                 continue
 
-        # Finish stage and return the training set
         PrintUtils.start_stage('Generating training set', override_prev=True)
-        if skip_count > 0:
-            PrintUtils.print_extra(f'Datapoints pre-existed: *{skip_count}*')
+        PrintUtils.print_extra(
+            f'Total tasks: *{total_datapoints}*, new entries: *{new_entries}*, '
+            f'skipped (already captured): *{skip_count}*, failed: *{failed}*'
+        )
+
+        if new_entries > 0:
+            try:
+                with open(dataset_path, 'w', encoding='utf-8') as fp:
+                    json.dump(aggregated_entries, fp, ensure_ascii=False, indent=2)
+                relative_path = os.path.relpath(dataset_path, self._out_dir)
+                PrintUtils.print_extra(
+                    f'Aggregated dataset saved to *{relative_path}* with *{len(aggregated_entries)}* total entries.'
+                )
+            except Exception as e:
+                PrintUtils.print_error(f'Failed to write aggregated dataset to {dataset_path}: {e}')
+        else:
+            PrintUtils.print_extra('No new captures added; dataset left unchanged.')
+
         PrintUtils.end_stage()
-        return training_set
+        return aggregated_entries
 
     def _perturbate_prompt(self, prompt, N):
         """

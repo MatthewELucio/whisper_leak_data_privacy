@@ -6,9 +6,9 @@ from openai import AzureOpenAI
 import httpx
 from dotenv import load_dotenv
 
-class AzureGPT4oMini(ChatbotBase):
+class AzureGPT4oMiniObf(ChatbotBase):
     """
-        Azure GPT 4o-mini chatbot.
+        Azure GPT 4o-mini chatbot with obfuscation.
     """
 
     def __init__(self, remote_tls_port=443):
@@ -50,7 +50,7 @@ class AzureGPT4oMini(ChatbotBase):
             messages=[ { 'role': 'user', 'content': prompt } ],
             stream=True,
             temperature=temperature,
-            stream_options={"include_obfuscation": False}
+            stream_options={"include_obfuscation": True}
         )
         for chunk in stream:
             if len(chunk.choices) > 0 and chunk.choices[0].delta.content:

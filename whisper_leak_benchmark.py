@@ -50,7 +50,6 @@ from core.utils import ThrowingArgparse, PrintUtils
 
 import json
 
-from core.data_sync import download_training_data
 
 
 class FeatureMode(Enum):
@@ -883,15 +882,9 @@ def main():
         if not os.path.exists(args.config):
              raise FileNotFoundError(f"Configuration file not found: {args.config}")
         
-        # Download the training data if needed
-        try:
-            PrintUtils.start_stage("Downloading training data")
-            training_data_dir = Path(__file__).parent.parent / "data"
-            training_data_dir.mkdir(parents=True, exist_ok=True)
-
-            download_training_data()
-        except:
-            PrintUtils.print_extra("Failed to download training data. Continuing...")
+        PrintUtils.start_stage("Ensuring data directory exists")
+        training_data_dir = Path(__file__).parent.parent / "data"
+        training_data_dir.mkdir(parents=True, exist_ok=True)
         PrintUtils.end_stage()
 
 

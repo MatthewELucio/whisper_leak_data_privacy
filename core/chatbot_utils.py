@@ -4,6 +4,7 @@ import importlib.util
 import inspect
 import os
 import sys
+import typing
 import httpx
 
 class ChatbotBase(ABC):
@@ -47,6 +48,78 @@ class ChatbotBase(ABC):
             Matches the TLS server name.
         """
         pass
+
+class RawLoggingTransport(httpx.BaseTransport):
+    """
+    An httpx transport wrapper that logs the raw bytes of a response.
+    This version correctly handles streaming by rebuilding the response object.
+    """
+    def __init__(self, transport: httpx.BaseTransport):
+        self._transport = transport
+
+    def handle_request(
+        self,
+        request: httpx.Request,
+    ) -> httpx.Response:
+        """
+        Handles the request, logs the raw response, and returns a new,
+        valid response object that the client can use.
+        """
+        print(f"--- Sending Request: {request.method} {request.url} ---")
+        original_response = self._transport.handle_request(request)
+        print(f"--- Received Response: {original_response.status_code} ---")
+
+        is_streaming = "text/event-stream" in original_response.headers.get("content-type", "")
+
+        if not is_streaming:
+            # For non-streaming responses, we must read the body to log it.
+            # We then return a new response with the same content, so the
+            # caller can still read it.
+            original_response.read()
+            print(f"--- RAW NON-STREAMING BODY ---\n{original_response.text}\n--- END BODY ---")
+            return httpx.Response(
+                status_code=original_response.status_code,
+                headers=original_response.headers,
+                content=original_response.content,
+                extensions=original_response.extensions,
+            )
+
+        # It IS a streaming response. We create our logging wrapper generator.
+        def logging_iterator() -> typing.Iterator[bytes]:
+            print("\n--- STARTING RAW STREAM LOG ---")
+            buffer = b''
+            # This is the key: we iterate over the *original* response's byte stream
+            for chunk in original_response.iter_bytes():
+                print(f"--- RAW CHUNK (bytes): {chunk!r} ---")
+                
+                # Optional: Decode and print line-by-line for readability
+                buffer += chunk
+                while b'\n' in buffer:
+                    line, buffer = buffer.split(b'\n', 1)
+                    decoded_line = line.decode('utf-8', errors='ignore').strip()
+                    if decoded_line:
+                        print(f"    SSE Line: {decoded_line}")
+                
+                yield chunk # Pass the original chunk along
+            
+            if buffer:
+                decoded_line = buffer.decode('utf-8', errors='ignore').strip()
+                if decoded_line:
+                    print(f"    SSE Line (final): {decoded_line}")
+
+            print("--- FINISHED RAW STREAM LOG ---\n")
+
+        # THE FIX: Create a NEW response object instead of modifying the old one.
+        # We pass our logging_iterator wrapped in a ByteStream.
+        return httpx.Response(
+            status_code=original_response.status_code,
+            headers=original_response.headers,
+            stream=httpx.ByteStream(logging_iterator()),
+            extensions=original_response.extensions,
+        )
+
+    def close(self) -> None:
+        self._transport.close()
 
 class LocalPortSaverTransport(httpx.HTTPTransport):
     """

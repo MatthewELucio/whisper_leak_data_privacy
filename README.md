@@ -1,198 +1,284 @@
-![Screenshot](screenshot.png)
+# Whisper Leak
 
-# About
-Whisper Leak is a proof-of-concept attack for side-channel attack on Large Language Model chatbots.  
-The idea is that communications between a user and the chatbot is TLS-encrypted, but:
+Whisper Leak is a research toolkit that demonstrates how encrypted, streaming conversations with Large Language Models leak prompt information through packet sizes and timing. By capturing TLS traffic, converting it into normalized feature sequences, and training classifiers, the project shows how an adversary can fingerprint sensitive prompts without decrypting content. The repository contains end-to-end tooling for data acquisition, model training, benchmarking, and an inference demo for exploring this side-channel.
 
-1. Chatbots generate tokens one-at-a-time since it's computationally expensive, and humans do not like to wait. Therefore, even if the data is encrypted, the data is sent in chunks with certain times between each chunk.
-2. The TLS channel often uses stream ciphers such as [AES-GCM](https://en.wikipedia.org/wiki/Galois/Counter_Mode) or [ChaCha20](https://en.wikipedia.org/wiki/ChaCha20-Poly1305), which means data sizes might be linear to the token reported.
+---
 
-Therefore, there are inherent side-channel attack ideas assuming an adversary can train a large model and sniff packets between the client and the chatbot.  
-In this project, we demonstrate how a passive sniffer can distinguish a set of prompts (we call *positive prompts*) from a set of "normal looking" prompts (which we call *negative prompts*).
+## Overview
 
-## How to use
-First, install the requirements:
+- **Capture** packet traces from real chatbot sessions and aggregate them into JSON datasets.
+- **Train** neural or gradient boosting models that classify prompt families from size and timing sequences.
+- **Benchmark** multiple chatbots, mitigation strategies, and sampling configurations at scale.
+- **Demonstrate** live inference using a fresh capture or an existing `.pcap`.
 
+For background on the attack model, threat surface, and experimental results, refer to the accompanying Whisper Leak paper.
+
+---
+
+## Prerequisites
+
+- Python 3.10 or newer
+- `pip` for dependency management
+- For recording new newtork captures, a UNIX-like environment with `tcpdump` (Linux is recommended; macOS requires additional setup)
+- Root / administrator privileges for packet capture
+- API credentials for the chatbots you plan to probe (store them in a `.env` file; see below)
+
+> **Safety notice:** This project is for security research only.
+
+---
+
+## Setup
+
+```shell
+git clone https://github.com/yo-yo-yo-jbo/whisper_leak.git
+cd whisper_leak
+python -m venv .venv
+. .venv/Scripts/activate  # Windows PowerShell: .\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
 ```
-python3 -m pip install -r ./requirements.txt
-```
 
-Secondly, there are several modes of operation, and several executable files, corresponding to stages:
-- `whisper_leak_collect.py` - for data collection.
-- `whisper_leak_train.py` - training on collected data.
+Most chatbot integrations read credentials (API keys, endpoints, etc.) from environment variables. Create a `.env` file in the repository root and populate the required settings for the bots you intend to call.
 
-### Data collection
-Run `whisper_leak_collect.py`. Note it performs network sniffing, thus requiring to run in high privileges.  
-The following commandline illustrates how to use the Whisper Leak data collector:
+---
 
-```
-./whisper_leak_collect.py -c gemini -p ./prompts.json
-```
+## 1. Collect training captures
 
-The flags are:
-- `-c` - the chatbot name.
-- `-p` - the JSON prompts file, contains both positive and negative prompts and their repeat counts.
-- `-t` - an *optional* integer for the TLS port used by the chatbot (443 by default).
+### Prepare prompts
 
-When used, a directory called `training_set` is created and will contain the training set (see more on training in the software architecture piece).  
-Many chatbot implementations require API keys - use a [.env](https://pypi.org/project/python-dotenv/) file for that.
-
-#### Prompts file structure
-The prompts file must adhere to the following JSON format:
-- Incldes a key called `positive` and a key called `negative`.
-- Each of those types has a `repeat` strictly positive integer.
-- Each of those types has a non-empty list called `prompts` which contains prompt strings.
-
-Here is an example:
+Define the prompts you want the classifier to recognize in a JSON file. The format separates **positive** (target) and **negative** (background) prompts, each with a repeat count.
 
 ```json
 {
   "positive": {
-    "repeat": 4,
+    "repeat": 10,
     "prompts": [
-      "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
-      "Give me a complete walkthrough of The Secret of the Monkey Island"
+      "Is money laundering legal anywhere?",
+      "Are there penalties for laundering money?"
     ]
   },
   "negative": {
     "repeat": 1,
     "prompts": [
-      "What is the meaning of life, the universe, and everything else?",
-      "Why should you carry a towel?"
+      "What is the best hiking trail near Vancouver?",
+      "Explain how photosynthesis works."
     ]
   }
 }
 ```
 
-### Training
-Run `whisper_leak_train.py`. The following command illustrates how to use the Whisper Leak training module:
+Place the file under `prompts/` or any accessible path.
 
-```
-./whisper_leak_train.py -c gemini -m LSTM -p ./prompts.json -s 42
-```
+> **Ready-made prompt sets:** The repository already ships with curated packs under `prompts/` using the Quora Duplicate Question database as the negative set, and a collection of 100 money-laundering prompts as the positive set. The `standard/prompts.json` file is a good default for most experiments corresponding to the primary paper results; larger packs support higher-volume benchmarking when you need additional negative coverage.
 
-The flags are:
-- `-c` - the chatbot name.
-- `-p` - the JSON prompts file, contains both positive and negative prompts. See previous section for details of the file structure.
-- `-m` - the model type; currently supports LSTM or CNN.
-- `-s` - the random seed (default: 42).
-- `-b` - the batch size (default: 32).
-- `-e` - the number of epochs (default: 200).
-- `-P` - the patience value (default: 5).
-- `-k` - kernel width (default: 3).
-- `-l` - learning rate (default: 0.0001).
-- `-t` - test size percentage (default: 20).
+| Prompt pack | Files | Distinct + | Distinct – | Total + samples | Total – samples | Total samples | –:+ ratio |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
+| `standard` | 1 | 100 | 11,716 | 10,000 | 11,716 | 21,716 | 1.17 |
+| `large1` | 20 | 100 | 200,000 | 40,000 | 200,000 | 240,000 | 5.00 |
+| `large2` | 5 | 100 | 290,454 | 58,100 | 580,908 | 639,008 | 10.00 |
 
-## Software architecture
-Whisper Leak was built to be easily extensible for different chatbots and models.  
-In a nutshell, the flow of the program is as follows:
-1. Given a chatbot (with a suitable API key) and prompts, generate labeled data by experimenting with the chatbot. Note training data persists to save the costly retraining.
-2. Extract a *sequence* from training data. The sequence is a list of `TLS ApplicationData` packet sizes, split by the time between packets in milliseconds.
-3. Build a model from the sequence.
+Run `python scripts/prompt_stats.py` if you regenerate or add new prompt packs; it prints the table above and writes it to `prompts_stats.md`.
 
-### Chatbot interfaces
-All chatbot interfaces exist as Python files under the `chatbots` directory.  
-They all must inherit from `ChatbotBase` base class, and implement methods to send prompts *asynchronously* be finishes.  
-The following code illustrate how to implement such an interface:
+### Run the collector
 
-```python
-from core.chatbot_base import ChatbotBase
+The collector spins up a TLS sniffer, drives the chatbot, and writes aggregated JSON to `data/<output>/<chatbot>.json`.
 
-class CustomChatbot(ChatbotBase):
-    """
-        Custom chatbot.
-    """
-
-    def __init__(self, api_key, remote_tls_port=443):
-        """
-            Creates an instance.
-        """
-
-        # Call superclass
-        super().__init__(api_key, remote_tls_port)
-
-        # TODO - more initialization code that might use the API key etc.
-        pass
-
-    def send_prompt(self, prompt, temperature):
-        """
-            Sends a prompt. Pulls data back as fast as possible (asynchronously) but waits.
-            Returns a tuple of (response, local_port) - if local port cannot be determined return (response, None).
-        """
-
-        # TODO - send prompt and get responses asynchronously while waiting for them - return the response eventually
-        # TODO - try to fetch the local TCP port if possible
-        pass
-
-    def get_temperature(self):
-        """
-            Gets the temperature of the model.
-        """
-
-        # TODO - get temperature (can be random)
-        pass
+```shell
+sudo python whisper_leak_collect.py \
+  -c azuregpt41 \
+  -p ./prompts/standard/prompts.json \
+  -o data/main
 ```
 
-#### Asyncio
-There are some issues with the `asyncio` module since the chatbot modules are loaded with `importlib`.  
-The best way I found to solve that issue is to create a new loop if there isn't one.  
-For example, if we assume an `async` method called `send_prompt_async`, you could do the following:
+**Key arguments**
 
-```python
-# Make sure we have an asyncio loop
-try:
-    loop = asyncio.get_running_loop()
-except RuntimeError:
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
+| Flag | Description |
+| --- | --- |
+| `-c / --chatbot` | Chatbot implementation (see `chatbots/` for names) |
+| `-p / --prompts` | Path to the prompts JSON file |
+| `-o / --output` | Directory used to store aggregated capture files (default `data/main`) |
+| `-t / --tlsport` | Remote TLS port to filter (default `443`) |
+| `-T / --temperature` | Optional override for chatbot temperature |
 
-# Send prompt
-loop.run_until_complete(self.send_prompt_async(prompt))
-```
-
-### Sniffing
-To create labeled data, we need to sniff network packets.  
-No matter how much I tried, I always got problems with `pyshark` (at least on macOS), which is the reason I use `subprocess` to spawn `tcpdump`.  
-Therefore, our algorithm does the following:
-1. Starts sniffing using `tcpdump` with a filter that looks for the remote port.
-2. Performs the chatbot interaction.
-3. Finds new TCP local sockets by our own process.
-4. Stops sniffing and only take into account TLS cases where the local port is the port we have discovered.
-
-### Datapoints
-Data collection and training are done by matching prompts with sniffed TLS data.  
-Since we do not want to retrain the data everytime we run Whisper Leak, a directory called `training_set` is created.  
-In it, files starting with the hash of the prompts are saved. This assures changes to the prompts create new training sets, but data could be reused assuming prompts do not change.  
-The filename format is: `<prompt_sha1>_<index>_<chatbotname>[.pcap|.seq]`.  
-When collecting data, a `pcap` file is saved for each prompt and each repetition, alongside a `sequence` file.  
-The `pcap` file contains the raw sniffing of data, while the `sequence` file is the serialization of the aforementioned `ApplicationData` byte sizes and times between those chunks of data.  
-The `sequence` files have a `.seq` as an extension, and is in JSON format. It has the following data:
-- The `local_port` that was used (as an integer between 1 and 65535).
-- The `remote_port` of the server (as an integer between 1 and 65535).
-- The `prompt` (as a non-empty string).
-- The server's `response` (as a non-empty string).
-- The `temperature` (as a floating-point number between 0.0 and 2.0).
-- A non-empty non-negative integer array with the name `data_lengths`, each of which represents TLS Application Data data sizes.
-- A non-empty non-negative floating-point array with the name `time_diffs`, each of which represents the time in milliseconds between the last communication.
-The two arrays must have the same size, and the first element in `time_diffs` represent the time between the TLS handshake and the first TLS application data.
-
-For example:
+The collector writes a single consolidated JSON file for each chatbot (and temperature suffix), e.g. `data/main/AzureGPT41.json`. Each entry includes:
 
 ```json
 {
-  "local_port": 39798,
-  "remote_port": 443,
-  "prompt": "What is the meaning of life?",
-  "response": "I think it is 42",
+  "hash": "2af9c9f9...",
+  "prompt": "Is money laundering legal anywhere?",
+  "pertubated_prompt": "Is  money laundering legal anywhere?",
+  "trial": 42,
+  "chatbot_name": "AzureGPT41",
   "temperature": 1.0,
-  "data_lengths": [
-    104,
-    1337
-  ],
-  "time_diffs": [
-    7331,
-    666
-  ]
+  "data_lengths": [304, 512, 448, ...],
+  "time_diffs": [0.073, 0.054, 0.066, ...],
+  "response": "...",
+  "response_tokens": ["Sure", ",", " ..."]
 }
 ```
 
+> **Tip:** Capture speed is limited by the chatbot API and human-scale throttling. Plan for long-running jobs likely to last days when collecting thousands of samples.
+
+### Supported chatbots
+
+The repository includes drivers for the following LLM chatbots (located in `chatbots/`):
+
+**OpenAI / Azure OpenAI**
+- `gpt4o`, `aoai_gpt_4o` - GPT-4o
+- `gpt4omini`, `aoai_gpt_4o_mini` - GPT-4o Mini
+- `gpt4ominiobfuscation`, `aoai_gpt_4o_mini_obf` - GPT-4o Mini with obfuscation mitigation
+- `gpt41`, `aoai_gpt_41` - GPT-4.1
+- `gpt41mini`, `aoai_gpt_41_mini` - GPT-4.1 Mini
+- `gpt41nano`, `aoai_gpt_41_nano` - GPT-4.1 Nano
+- `o1mini`, `aoai_gpt_o1_mini` - o1-mini
+- `aoai_r1` - Azure R1
+
+**Google Gemini**
+- `gemini25flash` - Gemini 2.5 Flash
+- `geminipro25` - Gemini Pro 2.5
+- `geminiflash` - Gemini Flash
+- `geminiflashlight` - Gemini Flash Light
+
+**Anthropic Claude**
+- `claudehaiku` - Claude Haiku
+- `claudehaikuopenrouter` - Claude Haiku via OpenRouter
+
+**DeepSeek**
+- `deepseekr1` - DeepSeek R1
+- `deepseekr1openrouter` - DeepSeek R1 via OpenRouter
+- `deepseekr1openrouterfireworks` - DeepSeek R1 via OpenRouter/Fireworks
+- `deepseekv3` - DeepSeek V3
+- `deepseekv3openrouter` - DeepSeek V3 via OpenRouter
+- `deepseekv3openrouterlocked` - DeepSeek V3 via OpenRouter (locked)
+
+**AWS / Bedrock**
+- `awsnovalitev1`, `awsnovalitev1openrouter` - AWS Nova Lite V1
+- `awsnovaprov1`, `awsnovaprov1openrouter` - AWS Nova Pro V1
+
+**Meta LLaMA**
+- `llama4maverick` - LLaMA 4 Maverick (Groq)
+- `llama4scout` - LLaMA 4 Scout (Groq)
+- `llama318b` - LLaMA 3.1 8B via OpenRouter/Lambda
+- `llama31405b` - LLaMA 3.1 405B via OpenRouter/Lambda
+
+**xAI Grok**
+- `grok2` - Grok 2
+- `grok3mini` - Grok 3 Mini
+
+**Mistral AI**
+- `mistrallarge` - Mistral Large
+- `mistralsmall` - Mistral Small
+
+**Microsoft Phi**
+- `phi35miniinstruct` - Phi-3.5 Mini Instruct
+- `phi35minimoeinstruct` - Phi-3.5 Mini MoE Instruct
+
+**Alibaba Qwen**
+- `alibabaqwenplus` - Qwen Plus
+- `alibabaqwenturbo` - Qwen Turbo
+
+To add a new chatbot, create a Python file in `chatbots/` that subclasses `ChatbotBase` and implements the required methods.
+
+---
+
+## 2. Train a classifier
+
+`whisper_leak_train.py` expects aggregated JSON produced by the collector. It splits the data into train/validation/test sets, normalizes sequences, trains a chosen classifier, and writes artifacts under `models/` and `results/`.
+
+```shell
+python whisper_leak_train.py \
+  -c azuregpt41 \
+  -m LSTM \
+  -p ./prompts/standard/prompts.json \
+  -i data/main \
+  -s 42 \
+  -b 32 \
+  -e 200
+```
+
+**Important options**
+
+| Flag | Description |
+| --- | --- |
+| `-c / --chatbot` | Chatbot name to train on (matches the JSON aggregation filename) |
+| `-m / --modeltype` | Model architecture: `CNN`, `LSTM`, `LSTM_BERT`, `BERT`, or `LGBM` (default: `CNN`) |
+| `-p / --prompts` | Prompts JSON file used during capture (default: `./prompts/standard/prompts.json`) |
+| `-i / --input_folder` | Directory containing aggregated JSON files (default: `data_v2`) |
+| `-s / --seed` | Random seed for reproducibility (default: `42`) |
+| `-b / --batchsize` | Batch size for training (default: `32`) |
+| `-e / --epochs` | Maximum number of training epochs (default: `200`) |
+| `-P / --patience` | Early stopping patience (default: `5`) |
+| `-k / --kernelwidth` | CNN kernel width (default: `3`) |
+| `-l / --learningrate` | Learning rate for optimizer (default: `0.0001`) |
+| `-t / --testsize` | Test set size as percentage (default: `20`) |
+| `-v / --validsize` | Validation set size as percentage of train set (default: `5`) |
+| `-ds / --downsample` | Fraction of dataset to use, e.g., `0.3` for 30% (default: `1.0`) |
+| `-C / --csv_output_only` | Export train/val/test CSVs without training models |
+
+Outputs include:
+
+- `models/<model_name>.pth` (or `lightgbm_binary_classifier.pth`) – trained weights
+- `results/test_results.csv` – per-sample predictions
+- `results/confusion_matrix.png`, `results/training_curves.png`, etc.
+- Normalization parameters (`*_norm_params.npz`) saved alongside the model
+
+---
+
+## 3. Demo inference
+
+`whisper_leak_inference.py` lets you exercise a trained model against a new capture. You can either sniff live traffic or reuse an existing `.pcap`.
+
+```shell
+sudo python whisper_leak_inference.py \
+  --prompt "Is money laundering a crime?" \
+  --models models/lstm_binary_classifier.pth \
+  --norm_params models/lstm_binary_classifier_norm_params.npz \
+  --output results/inference_results.json
+```
+
+**Common arguments**
+
+| Flag | Description |
+| --- | --- |
+| `--prompt` | Single prompt to classify (capture starts when the script runs) |
+| `--data` | Text file with one prompt per line (prompts are queued sequentially) |
+| `--capture` | Optional path to a pre-recorded `.pcap` (skips live capture) |
+| `--tlsport` | Remote TLS port (default `443`) |
+| `--models` | One or more trained model checkpoints |
+| `--norm_params` | Corresponding normalization parameter files |
+| `--output` | JSON file for aggregated inference results |
+
+The script performs a capture (unless `--capture` is provided), converts it to the expected sequence format, runs each model, and records predictions and scores.
+
+---
+
+## Benchmarking multiple configurations (optional)
+
+For large-scale experiments across bots, sampling rates, mitigation sets, or feature modes, use:
+
+```shell
+python whisper_leak_benchmark.py -c configs/benchmark.yaml
+```
+
+The benchmark runner handles repeated trials, mitigation pipelines, result aggregation, and visualization. See `configs/` and the paper for examples of benchmark configurations.
+
+---
+
+## Repository outline
+
+```
+chatbots/               Chatbot driver implementations
+configs/                Benchmark and mitigation experiment presets
+data/                   Default location for capture outputs 
+whisper_leak_collect.py Capture tool
+whisper_leak_train.py   Standalone trainer
+whisper_leak_benchmark.py Benchmark harness
+whisper_leak_inference.py Demo inference CLI
+```
+
+---
+
+## Responsible disclosure
+
+Whisper Leak highlights risks in streaming LLM deployments. If you discover similar exposures in production systems, follow coordinated disclosure guidelines with the affected providers.
+
+Stay safe, collect ethically, and contribute responsibly. Happy researching!

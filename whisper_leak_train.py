@@ -23,18 +23,15 @@ from core.classifiers.visualization import create_model_dashboard
 from core.utils import ThrowingArgparse
 from core.utils import PrintUtils
 from core.utils import OsUtils
-from core.utils import PromptUtils
 from core.chatbot_utils import ChatbotUtils
 
 import json
 import os
 import torch
 import torch.nn as nn
-import torch.optim as optim
 import numpy as np
 import pandas as pd
 
-from core.data_sync import download_training_data
  
 def parse_arguments():
     """
@@ -233,15 +230,9 @@ def main():
         # Parse arguments
         args = parse_arguments()
 
-        # Download the training data if needed
-        try:
-            PrintUtils.start_stage("Downloading training data")
-            training_data_dir = Path(__file__).parent.parent / "data"
-            training_data_dir.mkdir(parents=True, exist_ok=True)
-
-            download_training_data()
-        except:
-            PrintUtils.print_extra("Failed to download training data. Continuing...")
+        PrintUtils.start_stage("Ensuring data directory exists")
+        training_data_dir = Path(__file__).parent.parent / "data"
+        training_data_dir.mkdir(parents=True, exist_ok=True)
         PrintUtils.end_stage()
 
         # Setup

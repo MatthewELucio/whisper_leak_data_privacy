@@ -71,7 +71,7 @@ def generate_sequence(pcap_file, prompt, remote_port):
     base_seq_path = pcap_file.replace('.pcap', '.seq')
     datapoint = Datapoint(pcap_file, base_seq_path)
     # Assume local_port not known prior: set to detect automatically
-    datapoint.generate_seq(0, remote_port, prompt, response="N/A", temperature=0.0)
+    datapoint.generate_seq(0, remote_port, prompt, pertubated_prompt=prompt, response="N/A", temperature=0.0)
     PrintUtils.print_extra(f'Sequence saved to {base_seq_path}.')
     PrintUtils.end_stage()
     return datapoint
@@ -151,4 +151,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

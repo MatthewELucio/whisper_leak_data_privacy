@@ -608,13 +608,26 @@ def load_chatbot_data(chatbot_name, input_folder, prompts_file, downsample_rate=
         "..",
         input_folder
     )
-    files = [
-        os.path.join(training_set_dir, i) 
-        for i in os.listdir(training_set_dir) 
-        if i.lower().endswith(f'_{chatbot_name.lower()}.seq')
-            or f'_{chatbot_name.lower()}_' in i.lower()
-            or i.lower() == f'{chatbot_name.lower()}.seq'
+    aggregated_files = [
+        os.path.join(training_set_dir, filename)
+        for filename in os.listdir(training_set_dir)
+        if filename.lower() == f'{chatbot_name.lower()}.json'
+            or (
+                filename.lower().startswith(f'{chatbot_name.lower()}_')
+                and filename.lower().endswith('.json')
+            )
     ]
+
+    if aggregated_files:
+        files = aggregated_files
+    else:
+        files = [
+            os.path.join(training_set_dir, filename)
+            for filename in os.listdir(training_set_dir)
+            if filename.lower().endswith(f'_{chatbot_name.lower()}.seq')
+                or f'_{chatbot_name.lower()}_' in filename.lower()
+                or filename.lower() == f'{chatbot_name.lower()}.seq'
+        ]
     
     if not files:
         raise ValueError(f'Did not find training set files for chatbot {chatbot_name}')

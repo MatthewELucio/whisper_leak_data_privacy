@@ -2,13 +2,13 @@ import os
 from core.chatbot_utils import ChatbotBase
 from core.chatbot_utils import LocalPortSaverTransport
 
-from openai import AzureOpenAI
+from openai import OpenAI
 import httpx
 from dotenv import load_dotenv
 
-class AzureGPT4oMini(ChatbotBase):
+class GPT4oMiniObfuscation(ChatbotBase):
     """
-        Azure GPT 4o-mini chatbot.
+        OpenAI GPT 4o-mini chatbot.
     """
 
     def __init__(self, remote_tls_port=443):
@@ -23,18 +23,17 @@ class AzureGPT4oMini(ChatbotBase):
         load_dotenv()
 
         # Validate environment variables
-        if not os.getenv('AZURE_OPENAI_ENDPOINT'):
-            raise ValueError('AZURE_OPENAI_ENDPOINT is not set in the environment variables.')
-        if not os.getenv('AZURE_OPENAI_API_KEY'):
-            raise ValueError('AZURE_OPENAI_API_KEY is not set in the environment variables.')
+        api_key = os.getenv('OPENAI_API_KEY')
+        if not api_key:
+            raise ValueError('OPENAI_API_KEY is not set in the environment variables.')
 
         # Create client that also saves the local port
         self._transport = LocalPortSaverTransport()
-        self._client = AzureOpenAI(
-            azure_endpoint=os.getenv('AZURE_OPENAI_ENDPOINT'),
-            api_key=os.getenv('AZURE_OPENAI_API_KEY'),
-            api_version='2024-02-01',
-            http_client=httpx.Client(transport=self._transport))
+        self._client = OpenAI(
+            base_url=f'https://api.openai.com/v1/',
+            api_key=api_key,
+            http_client=httpx.Client(transport=self._transport)
+        )
 
     def send_prompt(self, prompt, temperature):
         """
@@ -50,7 +49,7 @@ class AzureGPT4oMini(ChatbotBase):
             messages=[ { 'role': 'user', 'content': prompt } ],
             stream=True,
             temperature=temperature,
-            stream_options={"include_obfuscation": False}
+            stream_options={"include_obfuscation": True}
         )
         for chunk in stream:
             if len(chunk.choices) > 0 and chunk.choices[0].delta.content:
@@ -73,7 +72,7 @@ class AzureGPT4oMini(ChatbotBase):
         """
 
         # Return common name
-        return 'gpt-4o-mini (Azure)'
+        return 'gpt-4o-mini'
 
     def match_tls_server_name(self, server_name):
         """
@@ -81,4 +80,4 @@ class AzureGPT4oMini(ChatbotBase):
         """
 
         # Match
-        return 'openai.azure.com' in server_name
+        return 'api.openai.com' in server_name

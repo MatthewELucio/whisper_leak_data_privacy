@@ -15,7 +15,7 @@ chatbots:
   - mistrallarge
   - azuredeepseekr1
   - gpt4omini
-  - grok3
+  - Grok3MiniBeta
 #  - mistralsmall
 #  - llama4maverickgroq
 #  - o1mini

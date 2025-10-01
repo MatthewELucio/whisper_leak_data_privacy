@@ -10,3 +10,7 @@ benchmark/
 *.swp
 *.env
 *.pcap
+*.seq
+benchmark_results/
+_consolidation_temp/
+.vscode/
