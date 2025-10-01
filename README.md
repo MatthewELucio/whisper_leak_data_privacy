@@ -33,7 +33,8 @@ For background on the attack model, threat surface, and experimental results, re
 git clone https://github.com/yo-yo-yo-jbo/whisper_leak.git
 cd whisper_leak
 python -m venv .venv
-. .venv/Scripts/activate  # Windows PowerShell: .\.venv\Scripts\Activate.ps1
+UNIX: source venv/bin/activate
+Windows: .venv/Scripts/activate  # Windows PowerShell: .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
 ```
 
@@ -83,10 +84,7 @@ Run `python scripts/prompt_stats.py` if you regenerate or add new prompt packs; 
 The collector spins up a TLS sniffer, drives the chatbot, and writes aggregated JSON to `data/<output>/<chatbot>.json`.
 
 ```shell
-sudo python whisper_leak_collect.py \
-  -c azuregpt41 \
-  -p ./prompts/standard/prompts.json \
-  -o data/main
+sudo venv/bin/python3.10 whisper_leak_collect.py -c AzureGPT4o -p ./prompts/standard/prompts.json -o data/main
 ```
 
 **Key arguments**
@@ -116,65 +114,55 @@ The collector writes a single consolidated JSON file for each chatbot (and tempe
 }
 ```
 
-> **Tip:** Capture speed is limited by the chatbot API and human-scale throttling. Plan for long-running jobs likely to last days when collecting thousands of samples.
+> **Tip:** Capture speed is limited by the chatbot API and needs to be ran in series. Plan for long-running jobs likely to last days when running a standard run. You can cancel at any time, and the job will resume with the remaining uncaptured jobs when you next begin the job.
 
 ### Supported chatbots
 
 The repository includes drivers for the following LLM chatbots (located in `chatbots/`):
 
-**OpenAI / Azure OpenAI**
-- `gpt4o`, `aoai_gpt_4o` - GPT-4o
-- `gpt4omini`, `aoai_gpt_4o_mini` - GPT-4o Mini
-- `gpt4ominiobfuscation`, `aoai_gpt_4o_mini_obf` - GPT-4o Mini with obfuscation mitigation
-- `gpt41`, `aoai_gpt_41` - GPT-4.1
-- `gpt41mini`, `aoai_gpt_41_mini` - GPT-4.1 Mini
-- `gpt41nano`, `aoai_gpt_41_nano` - GPT-4.1 Nano
-- `o1mini`, `aoai_gpt_o1_mini` - o1-mini
-- `aoai_r1` - Azure R1
-
-**Google Gemini**
-- `gemini25flash` - Gemini 2.5 Flash
-- `geminipro25` - Gemini Pro 2.5
-- `geminiflash` - Gemini Flash
-- `geminiflashlight` - Gemini Flash Light
-
-**Anthropic Claude**
-- `claudehaiku` - Claude Haiku
-- `claudehaikuopenrouter` - Claude Haiku via OpenRouter
-
-**DeepSeek**
-- `deepseekr1` - DeepSeek R1
-- `deepseekr1openrouter` - DeepSeek R1 via OpenRouter
-- `deepseekr1openrouterfireworks` - DeepSeek R1 via OpenRouter/Fireworks
-- `deepseekv3` - DeepSeek V3
-- `deepseekv3openrouter` - DeepSeek V3 via OpenRouter
-- `deepseekv3openrouterlocked` - DeepSeek V3 via OpenRouter (locked)
-
-**AWS / Bedrock**
-- `awsnovalitev1`, `awsnovalitev1openrouter` - AWS Nova Lite V1
-- `awsnovaprov1`, `awsnovaprov1openrouter` - AWS Nova Pro V1
-
-**Meta LLaMA**
-- `llama4maverick` - LLaMA 4 Maverick (Groq)
-- `llama4scout` - LLaMA 4 Scout (Groq)
-- `llama318b` - LLaMA 3.1 8B via OpenRouter/Lambda
-- `llama31405b` - LLaMA 3.1 405B via OpenRouter/Lambda
-
-**xAI Grok**
-- `grok2` - Grok 2
-- `grok3mini` - Grok 3 Mini
-
-**Mistral AI**
-- `mistrallarge` - Mistral Large
-- `mistralsmall` - Mistral Small
-
-**Microsoft Phi**
-- `phi35miniinstruct` - Phi-3.5 Mini Instruct
-- `phi35minimoeinstruct` - Phi-3.5 Mini MoE Instruct
-
-**Alibaba Qwen**
-- `alibabaqwenplus` - Qwen Plus
-- `alibabaqwenturbo` - Qwen Turbo
+- `ClaudeHaikuOpenRouter`
+- `DeepseekR1`
+- `Llama405BLambda`
+- `AzureGPT41Nano`
+- `Grok3MiniBeta`
+- `AzureGPT41`
+- `Phi35MiniMoEInstruct`
+- `ClaudeHaiku`
+- `Llama8BLambda`
+- `QwenPlus`
+- `AzureGPT4oMiniObf`
+- `O1Mini`
+- `GPT4oMini`
+- `GeminiFlashLight`
+- `GPT4o`
+- `GPT41Mini`
+- `DeepseekR1OpenRouterFireworks`
+- `Phi35MiniInstruct`
+- `GeminiPro25`
+- `AzureGPT41Mini`
+- `AzureDeepSeekR1`
+- `QwenTurbo`
+- `GPT41`
+- `AmazonNovaLiteV1`
+- `Grok2`
+- `AzureGPT4oMini`
+- `AmazonNovaProV1`
+- `GeminiFlash`
+- `GPT41Nano`
+- `MistralLarge`
+- `Gemini25Flash`
+- `AmazonNovaLiteV1OpenRouter`
+- `DeepseekV3`
+- `DeepseekV3OpenRouter`
+- `GPT4oMiniObfuscation`
+- `Llama4ScoutGroq`
+- `AzureGPTo1Mini`
+- `AzureGPT4o`
+- `DeepseekR1OpenRouter`
+- `DeepseekV3OpenRouterLocked`
+- `AmazonNovaProV1OpenRouter`
+- `MistralSmall`
+- `Llama4MaverickGroq`
 
 To add a new chatbot, create a Python file in `chatbots/` that subclasses `ChatbotBase` and implements the required methods.
 

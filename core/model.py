@@ -273,6 +273,15 @@ class TrainingSetCollector(object):
         extra = entry.get('extra')
         return self._entry_key(prompt_hash, trial, extra)
 
+    def _persist_dataset(self, entries, dataset_path):
+        """
+            Atomically persist aggregated dataset to disk.
+        """
+        tmp_path = f'{dataset_path}.tmp'
+        with open(tmp_path, 'w', encoding='utf-8') as fp:
+            json.dump(entries, fp, ensure_ascii=False, indent=2)
+        os.replace(tmp_path, dataset_path)
+
     def _build_entry(self, datapoint, prompt, index, chatbot_class, temperature_override=None):
         """
             Construct an aggregated entry dictionary from a datapoint capture.
@@ -428,6 +437,7 @@ class TrainingSetCollector(object):
                 aggregated_entries.append(entry)
                 entry_keys.add(entry_key)
                 new_entries += 1
+                self._persist_dataset(aggregated_entries, dataset_path)
 
                 if os.path.exists(datapoint.seq_path):
                     OsUtils.del_file(datapoint.seq_path)
@@ -447,11 +457,10 @@ class TrainingSetCollector(object):
 
         if new_entries > 0:
             try:
-                with open(dataset_path, 'w', encoding='utf-8') as fp:
-                    json.dump(aggregated_entries, fp, ensure_ascii=False, indent=2)
+                self._persist_dataset(aggregated_entries, dataset_path)
                 relative_path = os.path.relpath(dataset_path, self._out_dir)
                 PrintUtils.print_extra(
-                    f'Aggregated dataset saved to *{relative_path}* with *{len(aggregated_entries)}* total entries.'
+                    f'Aggregated dataset flushed to *{relative_path}* with *{len(aggregated_entries)}* total entries.'
                 )
             except Exception as e:
                 PrintUtils.print_error(f'Failed to write aggregated dataset to {dataset_path}: {e}')

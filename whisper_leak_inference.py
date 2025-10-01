@@ -1,108 +1,257 @@
 #!/usr/bin/env python3
-import os
-import json
 import argparse
-import torch
+import json
+import os
+import time
+
 import pandas as pd
-from core.utils import PrintUtils, OsUtils, ThrowingArgparse, NetworkUtils
-from core.classifier import BaseClassifier, PreprocessedTextDataset, normalize_dataframe
-from core.model import Datapoint
+import pyshark
+import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
 
+from core.classifiers.base_classifier import BaseClassifier
+from core.classifiers.lightgbm_classifier import LightGBMClassifier
+from core.classifiers.loader import Loader
+from core.utils import NetworkUtils, OsUtils, PrintUtils, ThrowingArgparse
+
+
 def get_self_dir():
-    """Get the self directory."""
+    """Return the directory containing this script."""
     return os.path.dirname(os.path.abspath(__file__))
+
 
 def parse_arguments():
     """Parse script input arguments."""
     PrintUtils.start_stage('Parsing command-line arguments')
     parser = ThrowingArgparse()
-    parser.add_argument('--prompt', type=str, help='The prompt to run inference on.')
-    parser.add_argument('--data', type=str, help='Path to input data file, expected to be a txt with one line per prompt to run.')
-    parser.add_argument('--models', nargs='+', help='Paths to trained model files (.pth). Supports multiple models.', default=["lstm_binary_classifier.pth"])
-    parser.add_argument('--norm_params', nargs='+', help='Paths to normalization param files (.npz). Should correspond exactly to the number of models.', default=["lstm_binary_classifier_norm_params.npz"])
-    parser.add_argument('--capture', type=str, help='If specified, use an existing capture (.pcap) for inference instead of capturing new data.')
-    parser.add_argument('--output', type=str, default='results/inference_results.json', help='Path to output inference results.')
-    parser.add_argument('-t', '--tlsport', type=int, default=443, help='Remote TLS port to capture data.')
+    parser.add_argument('--prompt', type=str, help='Single prompt to run inference on.')
+    parser.add_argument(
+        '--data',
+        type=str,
+        help='Path to a text file (one prompt per line) to run inference on.'
+    )
+    parser.add_argument(
+        '--models',
+        nargs='+',
+        help='Paths to trained model checkpoint files (.pth). Supports multiple models.',
+        default=['lstm_binary_classifier.pth']
+    )
+    parser.add_argument(
+        '--norm_params',
+        nargs='+',
+        help='Paths to normalization parameter files (.json). Count must match models.',
+        default=['lstm_binary_classifier_norm_params.json']
+    )
+    parser.add_argument(
+        '--capture',
+        type=str,
+        help='Existing capture (.pcap) to reuse instead of taking a new capture.'
+    )
+    parser.add_argument(
+        '--output',
+        type=str,
+        default='results/inference_results.json',
+        help='Output path for inference results.'
+    )
+    parser.add_argument(
+        '-t',
+        '--tlsport',
+        type=int,
+        default=443,
+        help='Remote TLS port to capture traffic from.'
+    )
     args = parser.parse_args()
 
-    # Validation
-    assert (args.prompt or args.data), "Either --prompt or --data must be specified"
-    assert len(args.models) == len(args.norm_params), "Model paths and normalization parameters count mismatch."
+    assert args.prompt or args.data, 'Either --prompt or --data must be specified.'
+    assert len(args.models) == len(args.norm_params), 'Models and normalization files count mismatch.'
 
     PrintUtils.end_stage()
     return args
 
+
 def load_input_prompts(args):
-    """Read prompts from input or prompt argument directly."""
+    """Load prompts either from --prompt or --data."""
     PrintUtils.start_stage('Loading input prompts')
     if args.prompt:
         prompts = [args.prompt]
     else:
-        with open(args.data, 'r') as f:
-            prompts = [line.strip() for line in f if line.strip()]
-    assert prompts, "No prompts loaded."
+        with open(args.data, 'r', encoding='utf-8') as fp:
+            prompts = [line.strip() for line in fp if line.strip()]
+    assert prompts, 'No prompts loaded.'
     PrintUtils.print_extra(f'Loaded {len(prompts)} prompts for inference.')
     PrintUtils.end_stage()
     return prompts
 
-def perform_capture(args, chatbot_class_name='inference'):
-    """Perform network capture or use existing pcap file."""
-    PrintUtils.start_stage('Network Capture')
+
+def perform_capture(args):
+    """Perform a network capture or reuse an existing pcap file."""
+    PrintUtils.start_stage('Network capture setup')
     captures_path = os.path.join(get_self_dir(), 'captures')
-    assert OsUtils.mkdir(captures_path)
+    assert OsUtils.mkdir(captures_path), 'Failed to ensure captures directory exists.'
     pcap_file = args.capture or os.path.join(captures_path, 'inference_capture.pcap')
 
     if args.capture:
-        PrintUtils.print_extra(f'Using existing capture file: {args.capture}')
+        PrintUtils.print_extra(f'Using existing capture file: {pcap_file}')
     else:
         NetworkUtils.start_sniffing_tls(pcap_file, args.tlsport)
-        PrintUtils.print_extra('Capture started. Please ensure the prompt is sent manually now...')
-        input("Press Enter once the interaction is complete.")
+        PrintUtils.print_extra('Capture started. Trigger the interaction now...')
+        input('Press Enter once the interaction is complete.')
         NetworkUtils.stop_sniffing_tls()
         PrintUtils.print_extra(f'Capture completed and saved to {pcap_file}.')
     PrintUtils.end_stage()
     return pcap_file
 
-def generate_sequence(pcap_file, prompt, remote_port):
-    """Generate the sequence from network capture."""
+
+def _infer_local_port_from_pcap(pcap_file, remote_port):
+    """Inspect the capture to infer the client source port."""
+    capture = None
+    try:
+        capture = pyshark.FileCapture(
+            pcap_file,
+            display_filter=f'tcp.port == {remote_port}'
+        )
+        for packet in capture:
+            if not hasattr(packet, 'tls'):
+                continue
+            if (
+                hasattr(packet.tls, 'handshake_type')
+                and packet.tls.handshake_type == '1'
+                and hasattr(packet, 'tcp')
+            ):
+                return int(packet.tcp.srcport)
+    finally:
+        if capture is not None:
+            capture.close()
+    return None
+
+
+def _build_sequence_from_capture(pcap_file, prompt, local_port, remote_port):
+    """Parse the capture and build a sequence dictionary."""
+    cap = None
+    sequence = {
+        'timestamp': time.time(),
+        'local_port': local_port,
+        'remote_port': remote_port,
+        'prompt': prompt,
+        'pertubated_prompt': prompt,
+        'response': '',
+        'response_tokens': [],
+        'response_token_count': 0,
+        'response_token_count_nonempty': 0,
+        'response_token_count_empty': 0,
+        'temperature': 0.0,
+        'data_lengths': [],
+        'time_diffs': []
+    }
+
+    display_filter = f'tcp.port == {local_port} || tcp.port == {remote_port}'
+    try:
+        cap = pyshark.FileCapture(pcap_file, display_filter=display_filter)
+        client_hello_found = False
+        prev_sniff_time = None
+
+        for packet in cap:
+            if not hasattr(packet, 'tls'):
+                continue
+
+            if (
+                hasattr(packet.tls, 'handshake_type')
+                and packet.tls.handshake_type == '1'
+                and int(packet.tcp.dstport) == remote_port
+                and int(packet.tcp.srcport) == local_port
+            ):
+                client_hello_found = True
+                prev_sniff_time = float(packet.sniff_time.timestamp())
+                continue
+
+            if not client_hello_found:
+                continue
+
+            if (
+                hasattr(packet.tls, 'app_data')
+                and int(packet.tcp.dstport) == local_port
+                and int(packet.tcp.srcport) == remote_port
+            ):
+                timestamp = float(packet.sniff_time.timestamp())
+                sequence['data_lengths'].append(int(packet.length))
+                sequence['time_diffs'].append(timestamp - prev_sniff_time)
+                prev_sniff_time = timestamp
+
+        if not sequence['data_lengths']:
+            raise Exception(f'No TLS application data found in capture {pcap_file}')
+
+    finally:
+        if cap is not None:
+            cap.close()
+
+    return sequence
+
+
+def generate_sequence(pcap_file, prompt, remote_port, last_known_port=0):
+    """Generate a sequence dictionary from the capture and return (sequence, local_port)."""
     PrintUtils.start_stage('Generating sequence from capture')
-    base_seq_path = pcap_file.replace('.pcap', '.seq')
-    datapoint = Datapoint(pcap_file, base_seq_path)
-    # Assume local_port not known prior: set to detect automatically
-    datapoint.generate_seq(0, remote_port, prompt, pertubated_prompt=prompt, response="N/A", temperature=0.0)
-    PrintUtils.print_extra(f'Sequence saved to {base_seq_path}.')
-    PrintUtils.end_stage()
-    return datapoint
+    local_port = _infer_local_port_from_pcap(pcap_file, remote_port)
+    if local_port is None or local_port <= 0:
+        local_port = last_known_port
 
-def prepare_data_for_model(datapoint, norm_params_path):
-    """Prepare and normalize data for the model."""
+    if local_port is None or local_port <= 0:
+        raise Exception('Unable to determine the local TLS port for the capture.')
+
+    sequence = _build_sequence_from_capture(pcap_file, prompt, local_port, remote_port)
+    PrintUtils.print_extra(f'Parsed capture using local port {local_port}.')
+    PrintUtils.end_stage()
+    return sequence, local_port
+
+
+def load_normalization(norm_path):
+    """Load normalization parameters stored alongside the trained model."""
+    with open(norm_path, 'r', encoding='utf-8') as fp:
+        data = json.load(fp)
+    if 'normalization_params' not in data or 'class_name' not in data:
+        raise Exception(f'Invalid normalization file: {norm_path}')
+    return data['normalization_params'], data['class_name'], data.get('args', {})
+
+
+def prepare_data_loader(sequence, norm_params, batch_size=1):
+    """Normalize the sequence and wrap it in Loader/DataLoader objects."""
     PrintUtils.start_stage('Preparing data for model')
-    time_norm_params, size_norm_params, max_len = BaseClassifier.load_normalization_params(norm_params_path)
-    df = pd.DataFrame([datapoint.seq])
+    df = pd.DataFrame([{
+        'prompt': sequence['prompt'],
+        'time_diffs': sequence['time_diffs'],
+        'data_lengths': sequence['data_lengths'],
+        'target': 0
+    }])
 
-    df_normalized = normalize_dataframe(df, time_norm_params, size_norm_params, max_len)
-    dataset = PreprocessedTextDataset(df_normalized, max_len)
+    dataset = Loader(df)
+    dataset.apply_normalization(norm_params)
+    dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=False)
     PrintUtils.end_stage()
-    return dataset
+    return dataset, dataloader
 
-def inference_model(model_path, norm_params_path, dataset, device):
-    """Run inference on a single model."""
-    model = BaseClassifier.load(model_path, 3, norm_params_path[2])
+
+def inference_model(model_path, norm_path, dataset, dataloader, device):
+    """Run inference using a single model and normalization file."""
+    _, class_name, _ = load_normalization(norm_path)
+
+    if class_name == 'LightGBMClassifier':
+        model = LightGBMClassifier.load(model_path)
+        features = dataset.df
+        probability = model.predict_proba(features)[0]
+        return int(probability > 0.5), float(probability)
+
+    model = BaseClassifier.load(model_path, device)
     model.eval()
-    loader = DataLoader(dataset, batch_size=1, shuffle=False)
-    predictions, scores = [], []
 
     with torch.no_grad():
-        for X, _ in loader:
-            X = X.to(device)
-            outputs = model(X)
-            pred_proba = outputs.item()
-            predictions.append(int(pred_proba > 0.5))
-            scores.append(pred_proba)
+        for batch, _ in dataloader:
+            batch = batch.to(device)
+            logits = model(batch)
+            probability = torch.sigmoid(logits).item()
+            return int(probability > 0.5), float(probability)
 
-    return predictions[0], scores[0]
+    raise Exception('No samples available for model inference.')
+
 
 def main():
     try:
@@ -110,44 +259,59 @@ def main():
 
         args = parse_arguments()
         prompts = load_input_prompts(args)
-        
+
         device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
         PrintUtils.print_extra(f'Using device: {device}')
 
         pcap_file = perform_capture(args)
-        
+        last_local_port = 0
         results = []
-        for prompt in tqdm(prompts, desc="Running prompts"):
-            datapoint = generate_sequence(pcap_file, prompt, args.tlsport)
+
+        for prompt in tqdm(prompts, desc='Running prompts'):
+            sequence, last_local_port = generate_sequence(
+                pcap_file,
+                prompt,
+                args.tlsport,
+                last_local_port
+            )
 
             prompt_results = {'prompt': prompt, 'models': []}
-            for model_path, norm_param_path in zip(args.models, args.norm_params):
-                dataset = prepare_data_for_model(datapoint, norm_param_path)
-                pred, score = inference_model(model_path, norm_param_path, dataset, device)
-                PrintUtils.print_extra(f"Prompt: {prompt} | Model: {os.path.basename(model_path)} | Prediction: {pred} | Score: {score:.4f}")
+
+            for model_path, norm_path in zip(args.models, args.norm_params):
+                norm_params, _, _ = load_normalization(norm_path)
+                dataset, dataloader = prepare_data_loader(sequence, norm_params)
+                prediction, score = inference_model(model_path, norm_path, dataset, dataloader, device)
+                PrintUtils.print_extra(
+                    f'Prompt: {prompt} | Model: {os.path.basename(model_path)} '
+                    f'| Prediction: {prediction} | Score: {score:.4f}'
+                )
 
                 prompt_results['models'].append({
                     'model': os.path.basename(model_path),
-                    'prediction': pred,
+                    'prediction': prediction,
                     'score': score
                 })
+
             results.append(prompt_results)
 
-        os.makedirs(os.path.dirname(args.output), exist_ok=True)
-        with open(args.output, 'w') as f_out:
-            json.dump(results, f_out, indent=2)
+        output_dir = os.path.dirname(args.output)
+        if output_dir:
+            os.makedirs(output_dir, exist_ok=True)
+        with open(args.output, 'w', encoding='utf-8') as fp:
+            json.dump(results, fp, indent=2)
 
-        PrintUtils.print_extra(f"Inference completed. Results saved to {args.output}")
+        PrintUtils.print_extra(f'Inference completed. Results saved to {args.output}')
 
     except KeyboardInterrupt:
         PrintUtils.print_extra('Operation cancelled by user.')
 
-    except Exception as e:
-        PrintUtils.print_error(f'Error during inference: {e}')
+    except Exception as exc:
+        PrintUtils.print_error(f'Error during inference: {exc}')
 
     finally:
         NetworkUtils.stop_sniffing_tls(best_effort=True)
         PrintUtils.print_extra('Finished inference run.')
+
 
 if __name__ == '__main__':
     main()
