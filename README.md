@@ -185,14 +185,7 @@ To add a new chatbot, create a Python file in `chatbots/` that subclasses `Chatb
 `whisper_leak_train.py` expects aggregated JSON produced by the collector. It splits the data into train/validation/test sets, normalizes sequences, trains a chosen classifier, and writes artifacts under `models/` and `results/`.
 
 ```shell
-python whisper_leak_train.py \
-  -c azuregpt41 \
-  -m LSTM \
-  -p ./prompts/standard/prompts.json \
-  -i data/main \
-  -s 42 \
-  -b 32 \
-  -e 200
+python whisper_leak_train.py -c azuregpt4o -m LGBM -p ./prompts/standard/prompts.json -i data/main -s 42 -b 32 -e 200
 ```
 
 **Important options**
