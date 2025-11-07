@@ -2,6 +2,9 @@
 
 Whisper Leak is a research toolkit that demonstrates how encrypted, streaming conversations with Large Language Models leak prompt information through packet sizes and timing. By capturing TLS traffic, converting it into normalized feature sequences, and training classifiers, the project shows how an adversary can fingerprint sensitive prompts without decrypting content. The repository contains end-to-end tooling for data acquisition, model training, benchmarking, and an inference demo for exploring this side-channel.
 
+![WhisperLeak](screenshot.png)
+
+
 ---
 
 ## Overview
